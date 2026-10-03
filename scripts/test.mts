@@ -14,7 +14,7 @@
  */
 import assert from 'node:assert/strict';
 import {spawnSync} from 'node:child_process';
-import {existsSync, readdirSync, rmSync} from 'node:fs';
+import {existsSync, readdirSync, rmSync, readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT, listProjects, loadProject, readTimings, specIds} from './lib/paths.mts';
 import {writeFakeTimings} from './lib/fake-timings.mts';
@@ -25,8 +25,12 @@ import {withDefaults, spoken} from '../src/project.ts';
 import {speakTokens} from './lib/speak.mts';
 import {numbersIn, pronunciationWatch, speechHazards, spellingProblems} from './lib/grounding.mts';
 import {parseMermaid} from '../src/art/mermaid.ts';
-import {compileScene, compileSpec, slotsFor} from '../src/compile.ts';
+import {compileScene, compileSpec, mergeSameWord, slotsFor} from '../src/compile.ts';
 import {direct, varietyProblems} from '../src/director.ts';
+import {fixSpec} from './lib/fix.mts';
+import {simplify} from './lib/simplify.mts';
+import {categorize} from './lib/categories.mts';
+import {fullForms, respellings} from '../src/dictionary.ts';
 import {revealTimes} from '../src/sync.ts';
 import {uncovered} from './lib/coverage.mts';
 import {camAt, driftAt, camFor, fitCam, placeLabel, resolve, screenWords, stageProblems} from '../src/stage.ts';
@@ -217,6 +221,23 @@ step('3 units', () => {
     const varied = [{type: 'explain'}, {type: 'scene', elements: [{kind: 'art'}, {kind: 'stat'}]}, {type: 'flow'}, {type: 'table'}, {type: 'scene', elements: [{kind: 'flow'}, {kind: 'stat'}]}, {type: 'explain'}];
     assert.deepEqual(varietyProblems(varied), []);
     assert.equal(driftAt(0, [], -1) > 1, true, 'reversed drift opens slightly in, never below the overview');
+  }
+  // self-healing: deterministic fixers, same-word beats, the fallback, failure categories
+  {
+    const broken = JSON.parse(readFileSync(join(ROOT, 'projects', 'fx-compose', 'broken', 'C02.json'), 'utf8'));
+    const {spec: fixed, fixes} = fixSpec(broken);
+    assert.ok(fixes.some((f) => f.what === 'CPR → cardiopulmonary resuscitation') && fixes.some((f) => f.kind === 'say'), 'abbreviation expanded, unspoken cue dropped');
+    assert.ok(!/\bCPR\b/.test(fixed.scenes[2].narration));
+    assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
+    assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
+    assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');
+    const fb = simplify(broken.scenes[4]);
+    assert.equal(fb.type, 'table', 'a crowded composition falls back to its densest element');
+    assert.equal(fb.narration, broken.scenes[4].narration, 'the fallback keeps the narration');
+    assert.equal(categorize('❌ C01 layout: scene[4] (stage): text too small to read (19px < 22px'), 'tiny-text');
+    assert.equal(categorize('❌ C01 timing: scene[2] (stage): ~9 s with nothing new on screen'), 'idle');
+    assert.equal(respellings('en').MedSkills, 'Medd Skills', 'the lexicon derives from the dictionary');
+    assert.equal(fullForms('en').CPR, 'cardiopulmonary resuscitation');
   }
   assert.equal(p.output.dir, 'demo');
   assert.equal(p.rules.sync, 'error');

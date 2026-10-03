@@ -1,12 +1,14 @@
 /**
- * Bulk production: a course of module PDFs → finished, QA'd videos, with ONE model call per video
- * (plus at most one repair), no agent loops, and no render until a script is proven correct.
+ * Bulk production: a course of module PDFs → finished, QA'd videos: a writer call and an editor
+ * call per video, deterministic fixers, at most three escalating repairs and a deterministic
+ * fallback — no agent loops, no human checkpoint, and no render until a script is proven correct.
  *
  *   node scripts/batch.mts <project> plan                  course.json from source/*.pdf (one video per
  *                                                          module PDF; no model call). Edit to split/merge.
  *   node scripts/batch.mts <project> write [ids…]          write missing scripts — one call each
  *   node scripts/batch.mts <project> check [ids…]          validate + preflight (no audio, no render);
- *                                                          failures get ONE repair call, then set aside
+ *                                                          failures: deterministic fixers → up to 3
+ *                                                          escalating repairs → fallback treatment
  *   node scripts/batch.mts <project> produce [ids…]        voice → render → QA for every clean script
  *   node scripts/batch.mts <project> translate <lang> [ids…]   native-language copies into <project>-<lang>
  *   node scripts/batch.mts <project> all                   plan → write → check → produce
@@ -27,6 +29,11 @@ import {ROOT, loadProject, projectDir, specPath} from './lib/paths.mts';
 import {SCRIPT_SCHEMA} from './lib/script-schema.mts';
 import {CATALOG} from '../src/art/catalog.ts';
 import {VECTOR_MANIFESTS} from '../src/art/vector/manifests.gen.ts';
+import {fullForms} from '../src/dictionary.ts';
+import {fixSpec} from './lib/fix.mts';
+import {simplify} from './lib/simplify.mts';
+import {recordStage} from './lib/metrics.mts';
+import {categorize} from './lib/categories.mts';
 
 type Video = {id: string; title?: string; source: string; pages?: [number, number]; outline?: string};
 const [project, cmd = 'all', ...rest] = process.argv.slice(2);
@@ -74,6 +81,11 @@ const arts = (cfg: any) => {
   return names.map((n) => `- ${n}: ${CATALOG[n].doc}`).join('\n');
 };
 const brief = () => readFileSync(join(ROOT, 'docs', 'SCRIPT_BRIEF.md'), 'utf8');
+const editorBrief = () => `${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}\n\n${brief()}`;
+const fullFormsNote = (cfg: any) => {
+  const f = {...fullForms(cfg.lang ?? 'en'), ...(cfg.fullForms ?? {})};
+  return Object.keys(f).length ? `FULL FORMS (say these in narration; the abbreviation may appear on screen):\n${Object.entries(f).map(([a, b]) => `${a} = ${b}`).join('; ')}` : '';
+};
 const lexiconNote = (cfg: any) => (cfg.lang === 'en' ? '' : `\nLANGUAGE: write the narration and all on-screen text in native ${cfg.lang} script (numbers as digits).`);
 
 function writerPrompt(v: Video) {
@@ -84,6 +96,7 @@ function writerPrompt(v: Video) {
     v.outline ? `OUTLINE: ${v.outline}` : '',
     `AVAILABLE ARTS:\n${arts(cfg)}\n- graph/table: use the flow and table recipes`,
     lexiconNote(cfg),
+    fullFormsNote(cfg),
     `SOURCE EXCERPT (the only allowed facts):\n<<<\n${tidy(sourceText(v)).slice(0, 60000)}\n>>>`,
   ].filter(Boolean).join('\n\n');
   return {system: brief(), user};
@@ -104,8 +117,10 @@ const claudeBin = () => {
 };
 let cliOk: boolean | null = null;
 /** One structured model call; null when headless Claude isn't available (→ agent mode). */
-function llm(system: string, user: string): any | null {
-  if (cliOk === false) return null;
+/** BATCH_OFFLINE=1: no model calls at all — fixers and the fallback only (tests, the deterministic benchmark). */
+const OFFLINE = !!process.env.BATCH_OFFLINE;
+function llm(system: string, user: string, tag: {id: string; role: string}): any | null {
+  if (cliOk === false || OFFLINE) return null;
   const tmp = join(ROOT, 'iterations', 'batch-cwd'); // outside any CLAUDE.md scope we'd load needlessly
   mkdirSync(tmp, {recursive: true});
   const r = spawnSync(claudeBin(), ['-p', '--model', 'sonnet', '--tools', '', '--no-session-persistence', '--system-prompt', system, '--output-format', 'json', '--json-schema', JSON.stringify(SCRIPT_SCHEMA)], {input: user, encoding: 'utf8', cwd: tmp, maxBuffer: 64 << 20, timeout: 15 * 60 * 1000});
@@ -122,21 +137,21 @@ function llm(system: string, user: string): any | null {
     return null;
   }
   cliOk = true;
-  logUsage(out);
+  logUsage(out, tag);
   return out.structured_output ?? JSON.parse(String(out.result).replace(/^```json\s*|```\s*$/g, ''));
 }
-const logUsage = (out: any) => {
+const logUsage = (out: any, tag: {id: string; role: string}) => {
   const u = out.usage ?? {};
-  const line = {at: new Date().toISOString(), cost: out.total_cost_usd, in: u.input_tokens, cacheRead: u.cache_read_input_tokens, cacheWrite: u.cache_creation_input_tokens, out: u.output_tokens, ms: out.duration_ms};
+  const line = {at: new Date().toISOString(), ...tag, cost: out.total_cost_usd, in: u.input_tokens, cacheRead: u.cache_read_input_tokens, cacheWrite: u.cache_creation_input_tokens, out: u.output_tokens, ms: out.duration_ms};
   mkdirSync(jobs, {recursive: true});
   writeFileSync(join(jobs, 'usage.jsonl'), JSON.stringify(line) + '\n', {flag: 'a'});
 };
-const job = (name: string, system: string, user: string, target: string) => {
+const job = (name: string, system: string, user: string, target: string, editor = false) => {
   mkdirSync(jobs, {recursive: true});
   const f = join(jobs, `${name}.md`);
   writeFileSync(
     f,
-    `# Job ${name}\nRun as ONE Sonnet subagent, single pass: read nothing else; write the JSON result to \`${target.replace(ROOT + '/', '')}\` (one Write), then stop.\n\n## System\n${system}\n\n## Schema\n\`\`\`json\n${JSON.stringify(SCRIPT_SCHEMA)}\n\`\`\`\n\n## Input\n${user}\n`,
+    `# Job ${name}\nRun as ONE Sonnet subagent: read nothing else. ${editor ? 'Write the script, then edit your own draft against the editor rubric below (a second, critical pass), then' : 'Then'} write the final JSON to \`${target.replace(ROOT + '/', '')}\` (one Write), and stop.\n\n## System\n${system}${editor ? `\n\n## Editor rubric (second pass)\n${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}` : ''}\n\n## Schema\n\`\`\`json\n${JSON.stringify(SCRIPT_SCHEMA)}\n\`\`\`\n\n## Input\n${user}\n`,
   );
   return f;
 };
@@ -146,41 +161,89 @@ function write(ids: string[]) {
   for (const v of vids) {
     const {system, user} = writerPrompt(v);
     const t0 = Date.now();
-    const out = llm(system, user);
-    if (out) {
-      writeFileSync(specPath(project, v.id), JSON.stringify({...out, id: v.id}, null, 2) + '\n');
-      console.log(`  ✍️  ${v.id}: script written in ${Math.round((Date.now() - t0) / 1000)} s`);
-    } else console.log(`  📝 ${v.id}: job → ${job(v.id, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
+    const draft = llm(system, user, {id: v.id, role: 'writer'});
+    if (draft) {
+      // the editor pass: depth, precision, picture fit, variety — the whole script back, improved
+      const edited = llm(editorBrief(), `${user.slice(user.indexOf('SOURCE EXCERPT'))}\n\nDRAFT:\n${JSON.stringify(draft)}`, {id: v.id, role: 'editor'});
+      writeFileSync(specPath(project, v.id), JSON.stringify({...(edited ?? draft), id: v.id}, null, 2) + '\n');
+      recordStage(project, v.id, 'write', {seconds: Math.round((Date.now() - t0) / 1000), edited: !!edited});
+      console.log(`  ✍️  ${v.id}: written + edited in ${Math.round((Date.now() - t0) / 1000)} s`);
+    } else console.log(`  📝 ${v.id}: job → ${job(v.id, system, user, specPath(project, v.id), true).replace(ROOT + '/', '')}`);
   }
 }
 
-/* ------------------------------------------------------------------ check + one repair */
+/* ------------------------------------------------------------------ check: fixers → repairs → fallback */
 const gate = (id: string) => {
   const r = spawnSync('node', ['scripts/preflight.mts', project, id], {cwd: ROOT, encoding: 'utf8'});
   const errs = (r.stdout + r.stderr).split('\n').filter((l) => l.includes('❌')).map((l) => l.trim());
   return {ok: r.status === 0 && !errs.length, errs};
 };
+const readJSON = (id: string) => JSON.parse(readFileSync(specPath(project, id), 'utf8'));
+const save = (id: string, spec: any) => writeFileSync(specPath(project, id), JSON.stringify({...spec, id}, null, 2) + '\n');
+/** Errors name compiled scenes (with the automatic logo intro first); map back to the script's scenes. */
+const failingScenes = (errs: string[], spec: any) => {
+  const shift = loadProject(project).frame?.ident && spec.scenes?.[0]?.type !== 'ident' ? 1 : 0;
+  return [...new Set(errs.flatMap((e) => [...e.matchAll(/scene\[(\d+)\]/g)].map((m) => +m[1] - shift)).filter((i) => i >= 0 && i < (spec.scenes?.length ?? 0)))];
+};
+
 function check(ids: string[]) {
   const vids = course().videos.filter((v) => existsSync(specPath(project, v.id)) && (!ids.length || ids.includes(v.id)));
   const clean: string[] = [];
   for (const v of vids) {
+    const t0 = Date.now();
+    const cfg = loadProject(project);
     let g = gate(v.id);
+    const firstPass = g.ok;
+    const categories = [...new Set(g.errs.map(categorize))];
+    let fixes: string[] = [];
+    let repairs = 0;
+    let fallback: number[] = [];
+    let pending = false;
+    // 1 deterministic fixers (no tokens)
     if (!g.ok) {
-      // one repair: only the errors and the script — not the source, not the brief again in full
-      const {system} = writerPrompt(v);
-      const spec = readFileSync(specPath(project, v.id), 'utf8');
-      const user = `Fix ONLY these build errors in the script below; keep everything else identical. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${spec}`;
-      const out = llm(system, user);
-      if (out) {
-        writeFileSync(specPath(project, v.id), JSON.stringify({...out, id: v.id}, null, 2) + '\n');
+      const r = fixSpec(readJSON(v.id), cfg.lang, cfg.fullForms ?? {});
+      if (r.fixes.length) {
+        save(v.id, r.spec);
+        fixes = r.fixes.map((f) => `${f.kind}: ${f.what}`);
         g = gate(v.id);
-      } else if (cliOk === false) {
-        console.log(`  📝 ${v.id}: repair job → ${job(`${v.id}.repair`, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
-        continue;
       }
     }
+    // 2 escalating repairs: the script with its errors → again, rethinking → only the failing scenes
+    const {system} = writerPrompt(v);
+    while (!g.ok && repairs < 3 && !OFFLINE) {
+      repairs++;
+      const spec = readJSON(v.id);
+      const bad = failingScenes(g.errs, spec);
+      const user =
+        repairs < 3 || !bad.length
+          ? `${repairs > 1 ? 'A previous repair did not clear these errors. Rethink the failing scenes (reword, re-order, or choose a different screen for the idea) rather than patching words. ' : ''}Fix ONLY these build errors in the script below; keep everything else identical. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`
+          : `Rewrite ONLY scenes ${bad.join(', ')} (0-based) of the script so these errors clear — same facts, same narration length; you may change the screen type. Return the complete script. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`;
+      const out = llm(system, user, {id: v.id, role: `repair${repairs}`});
+      if (!out) {
+        if (cliOk === false && !OFFLINE) {
+          console.log(`  📝 ${v.id}: repair job → ${job(`${v.id}.repair${repairs}`, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
+          pending = true;
+        }
+        break;
+      }
+      save(v.id, fixSpec(out, cfg.lang, cfg.fullForms ?? {}).spec);
+      g = gate(v.id);
+    }
+    // 3 fallback: the failing compositions in their safest treatment (deterministic, same narration)
+    if (!g.ok && !pending) {
+      const spec = readJSON(v.id);
+      // only what a simpler screen can cure: layout, legibility, idle stretches, element errors
+      const curable = g.errs.filter((e) => ['tiny-text', 'overflow', 'collision', 'layout', 'idle', 'schema', 'variety'].includes(categorize(e)));
+      fallback = failingScenes(curable, spec).filter((i) => spec.scenes[i]?.type === 'scene');
+      if (fallback.length) {
+        save(v.id, {...spec, scenes: spec.scenes.map((s: any, i: number) => (fallback.includes(i) ? simplify(s) : s))});
+        g = gate(v.id);
+      }
+    }
+    if (!pending)
+      recordStage(project, v.id, 'check', {seconds: Math.round((Date.now() - t0) / 1000), firstPass, ok: g.ok, categories, fixes, repairs, fallback, remaining: g.ok ? [] : [...new Set(g.errs.map(categorize))]});
     if (g.ok) clean.push(v.id);
-    else console.log(`  ⛔ ${v.id}: set aside after one repair —\n     ${g.errs.slice(0, 6).join('\n     ')}`);
+    else if (!pending) console.log(`  ⛔ ${v.id}: set aside after fixers, ${repairs} repair(s) and fallback —\n     ${g.errs.slice(0, 6).join('\n     ')}`);
   }
   console.log(`check: ${clean.length}/${vids.length} clean${clean.length ? ` (${clean.join(', ')})` : ''}`);
   return clean;
@@ -200,7 +263,7 @@ function translate(lang: string, ids: string[]) {
   }
   const system = `${brief()}\n\nTRANSLATION: return the SAME script with narration and all on-screen text (titles, kickers, labels, notes, flowchart node texts inside the mermaid, table cells, say words) in native ${lang} script. Keep structure, ids, arts, anchors, acts, mermaid syntax/ids and every number identical. Every say word must occur in the translated narration of its scene.`;
   for (const v of course().videos.filter((x) => existsSync(specPath(project, x.id)) && (!ids.length || ids.includes(x.id)))) {
-    const out = llm(system, readFileSync(specPath(project, v.id), 'utf8'));
+    const out = llm(system, readFileSync(specPath(project, v.id), 'utf8'), {id: v.id, role: `translate-${lang}`});
     const dst = join(tdir, 'specs', `${v.id}.json`);
     if (out) writeFileSync(dst, JSON.stringify({...out, id: v.id, outputFilename: out.outputFilename.replace(/\.mp4$/, `_${lang}.mp4`)}, null, 2) + '\n');
     else console.log(`  📝 ${v.id}: translation job → ${job(`${v.id}.${lang}`, system, readFileSync(specPath(project, v.id), 'utf8'), dst).replace(ROOT + '/', '')}`);

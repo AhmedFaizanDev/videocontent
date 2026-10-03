@@ -8,15 +8,7 @@
  * Audition a respelling first: node scripts/say.mts <project> "word or phrase"
  */
 import type {Lang} from './lang.ts';
+import {respellings} from './dictionary.ts';
 
-export const HOUSE_LEXICON: Record<Lang, Record<string, string>> = {
-  en: {
-    // brand: chosen by the owner's ear from an audition of 8 respellings (2026-10-04,
-    // `say.mts --variants`): "Med Skills" still sounded wrong in the Indian English voice
-    MedSkills: 'Medd Skills',
-    MedXL: 'Med X L',
-  },
-  hi: {MedSkills: 'मेड स्किल्स', 'मेडस्किल्स': 'मेड स्किल्स'},
-  mr: {MedSkills: 'मेड स्किल्स', 'मेडस्किल्स': 'मेड स्किल्स'},
-  kn: {MedSkills: 'ಮೆಡ್ ಸ್ಕಿಲ್ಸ್', 'ಮೆಡ್‌ಸ್ಕಿಲ್ಸ್': 'ಮೆಡ್ ಸ್ಕಿಲ್ಸ್', 'ಮೆಡ್ಸ್ಕಿಲ್ಸ್': 'ಮೆಡ್ ಸ್ಕಿಲ್ಸ್'},
-};
+/** Derived from the house dictionary (src/dictionary.ts) — add terms there, not here. */
+export const HOUSE_LEXICON: Record<Lang, Record<string, string>> = {en: respellings('en'), hi: respellings('hi'), mr: respellings('mr'), kn: respellings('kn')};

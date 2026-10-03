@@ -194,6 +194,39 @@ const echo = (words: string[], beats: any[], items: {target: string; text: strin
   return extra;
 };
 
+/**
+ * Camera breaths: a long stretch with nothing new (> `gap` words, even after echoes) gets one slow
+ * camera move — in on the shown item the words are about (else the lead element), and back out on
+ * the next — so the picture follows the explanation instead of holding still.
+ */
+const breathe = (words: string[], beats: any[], items: {target: string; text: string; at: number}[], lead?: string, gap = 64): any[] => {
+  // the gap is measured in spoken characters (≈ 4.5 s at the house pace): long clinical words take longer to say
+  const cum = words.reduce((a, w) => [...a, a[a.length - 1] + w.length + 1], [0]);
+  const len = (a: number, b: number) => cum[Math.max(0, b)] - cum[Math.max(0, a + 1)];
+  const marks = () => [...beats, ...extra].map((b) => b._pos).filter((p) => p != null && p >= 0).sort((a, b) => a - b);
+  const extra: any[] = [];
+  const said = (j: number) => [...beats, ...extra].some((b) => (b.say ?? []).some((w: string) => wordMatches(words[j], [normWord(w)])));
+  for (let guard = 0; guard < 20; guard++) {
+    const m = [-1, ...marks(), words.length];
+    const k = m.findIndex((p, i) => i > 0 && len(m[i - 1], p) > gap);
+    if (k < 0) break;
+    const [a, b] = [m[k - 1], m[k]];
+    // a content word near the middle, not spoken earlier in the gap (cues are matched in order)
+    let mid = a + 1;
+    while (mid < b - 1 && len(a, mid) < Math.min(gap * 0.8, len(a, b) / 2)) mid++;
+    const ok = (j: number) => j > a && j < b && words[j]?.length >= 4 && !STOP.has(words[j]) && !said(j) && !words.slice(a + 1, j).includes(words[j]);
+    const j = [0, 1, -1, 2, -2, 3, -3, 4, -4].map((d) => mid + d).find(ok);
+    if (j === undefined) break;
+    const near = new Set(words.slice(a + 1, b));
+    const shown = items.filter((it) => it.at < j && it.target);
+    const about = shown.find((it) => keywordsOf(it.text, 5).some((w) => near.has(w)));
+    const zoomed = [...beats, ...extra].filter((x) => x._pos < j && x.camera).sort((x, y) => x._pos - y._pos).pop()?.camera;
+    const target = about?.target ?? lead;
+    extra.push({say: [words[j]], _pos: j, camera: zoomed && zoomed !== 'overview' ? 'overview' : target ? {on: target, zoom: 1.2} : 'overview'});
+  }
+  return extra;
+};
+
 /* ------------------------------------------------------------------ illustration recipes */
 /** Fit-to-frame stage around one library art (imported or drawn). */
 const artStage = (s: any, beats: any[]) => ({
@@ -397,6 +430,7 @@ function composition(s: any): any {
   });
   const all = byPosition(words, [...auto, ...moves]);
   const echoes = echo(words, all, items.filter((x) => x.text));
+  const breaths = breathe(words, [...all, ...echoes], items.filter((x) => x.text), ordered[0]?.id);
   return {
     type: 'stage',
     kicker: s.kicker,
@@ -405,11 +439,31 @@ function composition(s: any): any {
     ...(s.drift ? {drift: s.drift} : {}),
     // the stage view is ~2.4:1 (room above for notes, below for captions): a world of that shape fills it
     world: {w: 2400, h: 1000, layers},
-    beats: byPosition(words, [...all, ...echoes]),
+    beats: byPosition(words, [...all, ...echoes, ...breaths]),
   };
 }
 
-const strip = (s: any) => (s?.beats ? {...s, beats: s.beats.map(({_pos, ...b}: any) => b)} : s);
+/**
+ * Beats cued by the same spoken word fire together: one beat (a row and its statistic both react to
+ * "children"). Sync matches cues in order, so two beats on one word would leave the second unheard.
+ */
+const ONE = ['camera', 'note', 'title', 'flash', 'inset', 'cross', 'travel', 'dim'];
+const LIST = ['act', 'pulse', 'show', 'hide', 'label', 'sfx'];
+export const mergeSameWord = (beats: any[]): any[] => {
+  const out: any[] = [];
+  for (const b of beats) {
+    const prev = out[out.length - 1];
+    const clash = prev && ONE.some((k) => prev[k] !== undefined && b[k] !== undefined);
+    if (prev && b._pos != null && b._pos >= 0 && prev._pos === b._pos && !clash) {
+      const m: any = {...prev};
+      for (const k of ONE) if (b[k] !== undefined) m[k] = b[k];
+      for (const k of LIST) if (b[k] !== undefined) m[k] = [...(prev[k] === undefined ? [] : Array.isArray(prev[k]) ? prev[k] : [prev[k]]), ...(Array.isArray(b[k]) ? b[k] : [b[k]])];
+      out[out.length - 1] = m;
+    } else out.push(b);
+  }
+  return out;
+};
+const strip = (s: any) => (s?.beats ? {...s, beats: mergeSameWord(s.beats).map(({_pos, ...b}: any) => b)} : s);
 /** One scene, any shorthand (flow/table/recipes/composition) → a stage. */
 export const compileScene = (s: any): any => strip(s?.type === 'scene' ? composition(s) : compileRecipe(shorthand(s)));
 

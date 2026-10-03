@@ -43,6 +43,8 @@ export type ProjectConfig = {
   pacing: {sentencePause: number; beat: number; breathe: number};
   /** Pronunciation fixes sent to the voice only, one token → one token: {"Purkinje": "Pur-kin-jee"}. */
   lexicon: Record<string, string>;
+  /** project abbreviations → spoken full forms (merged over the house dictionary, src/dictionary.ts) */
+  fullForms?: Record<string, string>;
   /**
    * Key terms of the subject, emphasised wherever they appear on screen (weight + brand
    * colour). Abbreviations (BP, WHO, HbA1c…) are emphasised automatically as chips; the

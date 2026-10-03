@@ -1,0 +1,31 @@
+{
+  "project": "fx-compose",
+  "id": "C02",
+  "stages": {
+    "preflight": {
+      "seconds": 3.3,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-03T23:11:58.433Z"
+    },
+    "check": {
+      "seconds": 7,
+      "firstPass": false,
+      "ok": true,
+      "categories": [
+        "sync"
+      ],
+      "fixes": [
+        "abbreviation: CPR → cardiopulmonary resuscitation",
+        "say: dropped unspoken cue \"forty-one\""
+      ],
+      "repairs": 0,
+      "fallback": [
+        4
+      ],
+      "remaining": [],
+      "at": "2026-10-03T23:11:58.448Z"
+    }
+  },
+  "authoring": []
+}
