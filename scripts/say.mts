@@ -5,7 +5,8 @@
  *   node scripts/say.mts <project> "MedSkills" --as "Med Skills"   try a respelling before adding it
  *   node scripts/say.mts <project> "Keep learning with {}." --variants "MedSkills|Med Skills|Med-Skills"
  *       one audition file: each candidate spoken in that sentence, announced "Option 1, 2…", so the
- *       owner picks by ear; put the winner in src/lexicon.ts (house) or project.json lexicon.
+ *       owner picks by ear; put the winner in src/dictionary.ts (house) or project.json lexicon.
+ *   node scripts/say.mts <project> --pending      the dictionary's pending queue as one audition file
  */
 import {execFileSync} from 'node:child_process';
 import {existsSync, mkdirSync} from 'node:fs';
@@ -13,10 +14,22 @@ import {join} from 'node:path';
 import {ROOT, loadProject} from './lib/paths.mts';
 import {speakTokens} from './lib/speak.mts';
 import {isIndic} from '../src/lang.ts';
+import {readPending} from './lib/pending.mts';
 
 const args = process.argv.slice(2);
 const varAt = args.indexOf('--variants');
-const variants = varAt >= 0 ? args.splice(varAt, 2)[1].split('|') : null;
+let variants = varAt >= 0 ? args.splice(varAt, 2)[1].split('|') : null;
+// --pending: one audition file of every term in the dictionary's pending queue (scripts/lib/pending.mts)
+if (args.includes('--pending')) {
+  args.splice(args.indexOf('--pending'), 1);
+  const q = readPending()[loadProject(args[0]).lang] ?? {};
+  variants = Object.keys(q).slice(0, 40);
+  if (!variants.length) {
+    console.log('pending queue is empty');
+    process.exit(0);
+  }
+  args[1] = '{}.';
+}
 const asAt = args.indexOf('--as');
 const as = asAt >= 0 ? args.splice(asAt, 2)[1] : null;
 const [project, text] = args;

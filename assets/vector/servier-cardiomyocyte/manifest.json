@@ -1,0 +1,17 @@
+{
+  "key": "servierCardiomyocyte",
+  "source": "https://smart.servier.com/smart_image/cardiomyocyte-adult/",
+  "licence": "CC BY 4.0",
+  "credit": "cardiomyocyte adult — Servier Medical Art (smart.servier.com), CC BY 4.0",
+  "doc": "cardiomyocyte adult (auto-imported; no labelled parts — use notes, or add anchors)",
+  "auto": true,
+  "layers": [
+    {
+      "id": "drawing",
+      "parts": [
+        "#drawing"
+      ]
+    }
+  ],
+  "anchors": {}
+}

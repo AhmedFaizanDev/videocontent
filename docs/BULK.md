@@ -15,6 +15,40 @@ rendering on this Mac overnight.
 | re-renders | after late fixes | correctness found after render | gates moved upstream; a script reaches render only when proven |
 | render time | 5–8 min per 5-min video | fanless MacBook Air: bursts ~45–50 fps, sustained ~22–25 fps (thermal) | unchanged by design — 100 videos ≈ 11 h/week overnight; the lever is never re-rendering |
 
+## Architecture v5 (2026-10-04): compositions, a director, self-healing
+- **Compositions, not templates** (`type: "scene"`, src/compile.ts): 1–3 elements on one screen —
+  illustration, flowchart, table, `stat` (count-up figure + icon array), bars, timeline, cycle,
+  hub, stack — plus the writer's teaching moves (focus, label, act, note, reveal, pulse). A slot
+  solver lays them out (main + side, halves, main + two stacked; dense tables/charts take the main
+  slot; text-bearing elements are laid out at their slot's width). Recipes remain as presets.
+- **Director** (src/director.ts, `frame.direct`): same illustration keeps its side across scenes,
+  transitions chosen by the relation between scenes, camera breath alternates direction.
+- **Variety gate** (`rules.variety`): no three identical screens in a row, no kind over 40 %, ≥ 2
+  compositions per 6 teaching scenes; course-level warning for identical scene sequences.
+- **Legibility gate**: any art text under 22 px on the frame fails preflight (`tiny-text`).
+- **Writer + editor**: the editor pass (docs/EDITOR_BRIEF.md rubric: depth, precision, picture
+  fit, variety, rhythm, voice) returns the improved script.
+- **Self-healing check** (no human): deterministic fixers (scripts/lib/fix.mts: abbreviations →
+  full forms from the dictionary, approved spellings, ratios, unspoken cues) → up to 3 escalating
+  model repairs (whole script, rethink, failing scenes only) → deterministic fallback
+  (scripts/lib/simplify.mts: a failing composition becomes its densest element full screen, same
+  narration). `BATCH_OFFLINE=1` runs fixers + fallback only. Every step is recorded.
+- **Compiler self-repair**: beats cued by one word merge; long still stretches get a camera
+  breath toward what is being said (measured in spoken characters).
+- **Pronunciation dictionary** (src/dictionary.ts): brand, medical, abbreviation, proper, tts,
+  spelling terms per language, status approved/respelled/pending; the lexicon, the fixer and the
+  writer's FULL FORMS list derive from it. Preflight queues unknown words in
+  assets/pronunciation/pending.json; `node scripts/say.mts <p> --pending` auditions the queue.
+- **Illustrations for a new subject**: `find-assets "<query>"` (NIH BioArt, Servier Medical Art,
+  Wikimedia Commons; every hit kept in assets/index.json, `--index` searches it offline) →
+  `--get <source>:<id> <dir> --auto` imports, wraps rasters (Servier PNG) as SVG, writes a starter
+  manifest with anchors measured from the drawing's labelled parts, and ingests — one command.
+  Credits go to projects/<p>/CREDITS.md and output/<dir>/CREDITS.md (scripts/credits.mts, run by
+  produce), never into the video. Nothing suitable → tables/flowcharts/stats carry the idea.
+- **Benchmark**: `node scripts/benchmark.mts <project…>` → output/BENCHMARK.md (first-pass rate,
+  fixer/repair/fallback rates, tokens mean/median, voice and render time, failure categories,
+  human-needed share, new-asset share, reusable coverage). Says "not proven" under 20 lessons.
+
 ## Built once, reused by every video
 - **Scene recipes** (`src/compile.ts`): `opener`, `explain` (any illustration, labelled points,
   camera visits), `flow` (Mermaid; living connectors, auto-tour, ghost map), `table` (progressive

@@ -55,6 +55,7 @@ for (const id of ids.filter((id) => !failed[id])) {
     }
 }
 
+step('credits', ['scripts/credits.mts', project, ...ids]);
 const done = ids.length - Object.keys(failed).length;
 console.log(`\n${done ? '✅' : '❌'} ${project}: ${done}/${ids.length} lesson(s) produced and QA'd in ${((Date.now() - t0) / 60000).toFixed(1)} min → ${outputDir(project).replace(ROOT + '/', '')}/`);
 for (const [id, where] of Object.entries(failed)) console.log(`   ❌ ${id} stopped at ${where}`);

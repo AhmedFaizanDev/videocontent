@@ -30,6 +30,7 @@ import {revealGroups, revealTimes} from '../src/sync.ts';
 import {isIndic} from '../src/lang.ts';
 import {recordStage} from './lib/metrics.mts';
 import {uncovered} from './lib/coverage.mts';
+import {addPending} from './lib/pending.mts';
 
 const {project, ids, flags} = parseArgs();
 const cfg = loadProject(project);
@@ -83,6 +84,7 @@ for (const s of specs)
 for (const s of specs) {
   if (isIndic(cfg.lang)) continue;
   const words = [...new Set(s.scenes.flatMap((sc: any) => pronunciationWatch(sc.narration ?? '', cfg.lexicon)))];
+  addPending(cfg.lang, words as string[], project);
   if (words.length) add(s.id, 'warn', 'language', `pronunciation — audition these once (node scripts/say.mts ${project} "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: ${words.join(', ')}`);
 }
 
