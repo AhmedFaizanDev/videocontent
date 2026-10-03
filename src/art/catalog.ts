@@ -133,6 +133,20 @@ export const CATALOG: Record<string, Entry> = {
     },
     callouts: (d) => (d?.segments ?? []).filter((s: any) => s?.label).map((s: any, i: number) => ({anchor: `i${i + 1}`, label: s.label, text: s.note, say: s.say})),
   },
+  stat: {
+    layout: 'full',
+    doc: 'A NUMBER MADE VISIBLE: a large figure that counts up as spoken, with an icon array filling in proportion (people for ≤20, a 10×10 dot grid for 100). data: {value, of? (10|100…), display? ("9 in 10", "41%"), label? ≤48, tone? red|blue|teal|green|ink, unit? people|dots} · anchors: figure array · event: count',
+    anchors: () => ['figure', 'array', 'count'],
+    check: (d) => {
+      const out: string[] = [];
+      if (typeof d?.value !== 'number' || d.value < 0) out.push('value must be a number ≥ 0');
+      if (d?.of !== undefined && (!Number.isInteger(d.of) || d.of < 2 || d.of > 100)) out.push('of must be an integer 2–100');
+      if (d?.label !== undefined && (typeof d.label !== 'string' || d.label.length > 48)) out.push('label ≤ 48 chars');
+      if (d?.display !== undefined && (typeof d.display !== 'string' || d.display.length > 12)) out.push('display ≤ 12 chars');
+      return out;
+    },
+    events: ['count'],
+  },
   table: {
     layout: 'full',
     doc: 'TABLES: a journal-style data table (booktabs rules), rows building in and highlighted as narrated — prefer it for any comparison, classification, list of values or parameters. data: {columns: 2–6 (≤40 chars), rows: 1–10 rows of cells (≤60 chars), align?: per column left|center|right (numeric columns default right), widths?: relative column widths, size?: font px (default 40), bars?: [column indexes] (numbers there get an inline bar; all numbers count up as their row arrives)} · anchors/events: r1…rN (row builds in + becomes current) c1…cM (column highlight) rIcJ (ring a cell) all (remaining rows build in)',

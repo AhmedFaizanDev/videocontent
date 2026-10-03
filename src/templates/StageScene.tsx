@@ -18,7 +18,7 @@ import {ADVANCE, E, clamp01, fitSize, mix, tw, useSceneFrame} from '../motion';
 import {MaskWords, Rich} from './primitives';
 import {AuditCtx} from './audit';
 import {SceneFrame, Sfx, type SfxName} from './stage';
-import {LEG, arr, camAt, driftAt, camFor, layerBox, overviewCam, placeLabel, resolve, toScreen, viewFor, type ArtInfo, type Box, type Cam, type Layer, type StageSpec as Model, type Target, type View} from '../stage';
+import {LEG, slotBox, fitCam, arr, camAt, driftAt, camFor, layerBox, overviewCam, placeLabel, resolve, toScreen, viewFor, type ArtInfo, type Box, type Cam, type Layer, type StageSpec as Model, type Target, type View} from '../stage';
 
 const HOLD = 45;
 const EDGE_FADE = 'linear-gradient(to right, transparent 0px, transparent 100px, black 190px, black 1730px, transparent 1820px, transparent 1920px)';
@@ -38,6 +38,7 @@ type Built = {
 };
 
 /** `fit` layers take the world's centre at the largest size that leaves a margin (charts, tables). */
+const SIZED = new Set(['graph', 'table', 'stat']);
 export const fitWorld = (m: Model): Model => {
   if (!m.world.layers.some((l) => l.fit)) return m;
   const W = m.world;
@@ -47,9 +48,17 @@ export const fitWorld = (m: Model): Model => {
       ...W,
       layers: W.layers.map((l) => {
         if (!l.fit) return l;
-        const a = ARTS[l.art](l.data ?? {});
-        const h = Math.min(W.h * 0.9, (W.w * 0.94 * a.h) / a.w);
-        return {...l, at: [W.w / 2, W.h / 2] as [number, number], h};
+        if (!l.slot || l.slot === 'full') {
+          const a = ARTS[l.art](l.data ?? {});
+          return {...l, at: [W.w / 2, W.h / 2] as [number, number], h: Math.min(W.h * 0.9, (W.w * 0.94 * a.h) / a.w)};
+        }
+        // a composition element: text-bearing arts (charts, tables, figures) are laid out at the
+        // slot's own width, then take the largest size that fits the slot, centred in it
+        const b = slotBox(l.slot, W);
+        const data = l.data && typeof l.data === 'object' && !Array.isArray(l.data) && SIZED.has(l.art) ? {...l.data, width: Math.round(b.w * 0.92)} : l.data;
+        const a = ARTS[l.art](data ?? {});
+        const h = Math.min(b.h * 0.92, (b.w * 0.92 * a.h) / a.w);
+        return {...l, ...(data ? {data} : {}), at: [b.x + b.w / 2, b.y + b.h / 2] as [number, number], h};
       }),
     },
   };
@@ -66,7 +75,10 @@ export const buildStage = (m: Model, view: View, beats: number[]): Built => {
   const where = (t: Target) => resolve(m.world, t, info);
   // the overview frames whatever is on stage at that beat
   const visible = new Set(m.world.layers.filter((l) => !l.hidden).map((l) => l.id));
-  const overview = () => overviewCam(m.world, view, m.world.layers.filter((l) => visible.has(l.id)).map((l) => layerBox(l, info(l)!)));
+  // a composition's slots already carry the page margins: its overview is the whole world, never a
+  // shrunken union (which would also jump when a revealed element joins)
+  const composed = m.world.layers.some((l) => l.slot && l.slot !== 'full');
+  const overview = () => (composed ? fitCam(m.world, view) : overviewCam(m.world, view, m.world.layers.filter((l) => visible.has(l.id)).map((l) => layerBox(l, info(l)!))));
   const fit = overview();
   const start = m.open ? camFor(m.world, view, {on: m.open}, fit, where) : fit;
   const keys: {f: number; cam: Cam}[] = [];
@@ -109,7 +121,7 @@ export const StageView: React.FC<{m: Model; beats: number[]; view: View; f: numb
   const acts = React.useMemo(() => actFrames(m, beats), [m, beats]);
   const cam0 = camAt(f, B.start, B.keys);
   // the slow push between moves (stage.ts driftAt): the picture is never frozen while the voice runs
-  const cam = {...cam0, s: cam0.s * driftAt(f, B.keys)};
+  const cam = {...cam0, s: cam0.s * driftAt(f, B.keys, m.drift ?? 1)};
   const scr = (p: [number, number]) => toScreen(cam, p, view);
   const fired = (i: number) => f >= beats[i];
 

@@ -24,8 +24,8 @@ const {output: _o, ...defaults} = PROJECT_DEFAULTS;
 const house = {
   ...defaults,
   length: {minutes: [4.5, 7]}, // 5:00 is the standard; validate warns past 5:45 unless the plan justifies it
-  rules: {...defaults.rules, first: 'ident', last: 'outro', requireOneOf: [], minFigures: 3, minIllustrated: 0.75, maxScreenWords: 20, requirePlan: false, maxIdle: 7},
-  frame: {ident: true, outro: defaults.brand.signoff},
+  rules: {...defaults.rules, first: 'ident', last: 'outro', requireOneOf: [], minFigures: 3, minIllustrated: 0.75, maxScreenWords: 20, requirePlan: false, maxIdle: 7, variety: true},
+  frame: {ident: true, outro: defaults.brand.signoff, direct: true},
 };
 writeFileSync(join(dir, 'project.json'), JSON.stringify({name, series: series ?? name, ...house}, null, 2) + '\n');
 console.log(`Created projects/${slug}/ — edit project.json (voice, length, rules, brand), put source material in source/, author specs/.`);

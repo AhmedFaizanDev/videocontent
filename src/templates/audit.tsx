@@ -11,7 +11,7 @@
 import React from 'react';
 import {AbsoluteFill, continueRender, delayRender} from 'remotion';
 
-type Hit = {kind: 'overflow' | 'collision'; text: string; other?: string; r: {x: number; y: number; w: number; h: number}};
+type Hit = {kind: 'overflow' | 'collision' | 'tiny'; px?: number; text: string; other?: string; r: {x: number; y: number; w: number; h: number}};
 
 const visibleOpacity = (el: Element) => {
   let o = 1;
@@ -25,6 +25,9 @@ const block = (el: Element) => {
 };
 const label = (s: string) => s.replace(/\s+/g, ' ').trim().slice(0, 40);
 
+/** Smallest readable text on a 1080p frame (a phone viewer still reads 22 px Noto Sans). */
+export const MIN_PX = 22;
+
 function measure(root: Element): Hit[] {
   const hits: Hit[] = [];
   const texts: {el: Element; blk: Element | null; r: DOMRect; t: string}[] = [];
@@ -33,6 +36,15 @@ function measure(root: Element): Hit[] {
     const nodes = Array.from(el.childNodes).filter((n) => n.nodeType === 3 && n.textContent!.trim());
     if (!nodes.length || visibleOpacity(el) < 0.3) continue;
     const t = nodes.map((n) => n.textContent).join(' ');
+    // too small to read: an art's text (chart nodes, table cells, figures) rendered under MIN_PX on the frame
+    const layer = el.closest('[data-art-text]') as HTMLElement | null;
+    if (layer && layer.offsetWidth) {
+      const px = parseFloat(getComputedStyle(el).fontSize) * (layer.getBoundingClientRect().width / layer.offsetWidth);
+      if (px < MIN_PX) {
+        const r = el.getBoundingClientRect();
+        hits.push({kind: 'tiny', px: Math.round(px), text: label(t), r: {x: r.x, y: r.y, w: r.width, h: r.height}});
+      }
+    }
     // overflow: the text's own glyphs reach past the content box of the block it lives in
     // (measured on the text, so decorative children like a strike-through line don't count)
     const blk = block(el);

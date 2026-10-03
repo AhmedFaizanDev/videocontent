@@ -20,6 +20,7 @@
 import {parseMermaid, type GStep} from './art/mermaid.ts';
 import {keywordsOf, normWord, wordMatches} from './sync.ts';
 import {spoken} from './project.ts';
+import {direct} from './director.ts';
 
 type Note = {say: string[]; note: string};
 const STOP = new Set(['with', 'from', 'that', 'this', 'into', 'than', 'then', 'when', 'what', 'your', 'their', 'there', 'about', 'after', 'before']);
@@ -40,7 +41,8 @@ const byPosition = <T extends {say?: string[]; _pos?: number}>(words: string[], 
     const j = words.findIndex((x) => w.includes(x));
     return j < 0 ? Infinity : j;
   };
-  return [...beats].sort((a, b) => pos(a) - pos(b)).map(({_pos, ...b}) => b as T);
+  // positions are kept (merging element timelines needs them); compileSpec strips them at the end
+  return [...beats].map((b) => ({...b, _pos: pos(b)})).sort((a, b) => a._pos - b._pos);
 };
 
 const derive = (words: string[], text: string, from: number): {say: string[]; at: number} | null => {
@@ -49,7 +51,7 @@ const derive = (words: string[], text: string, from: number): {say: string[]; at
   return hit ? {say: [hit[0]], at: hit[1]} : null;
 };
 
-export function compileScene(s: any): any {
+function shorthand(s: any): any {
   if (s?.type === 'flow') {
     const g = parseMermaid(s.mermaid ?? '');
     // a long left-to-right chain is too small to read at once: the camera tours it by default
@@ -196,6 +198,7 @@ const echo = (words: string[], beats: any[], items: {target: string; text: strin
 /** Fit-to-frame stage around one library art (imported or drawn). */
 const artStage = (s: any, beats: any[]) => ({
   type: 'stage',
+  ...(s.drift ? {drift: s.drift} : {}),
   kicker: s.kicker,
   narration: s.narration,
   ...(s.transition ? {transition: s.transition} : {}),
@@ -272,7 +275,7 @@ function compileRecipe(s: any): any {
 }
 
 /** The project's frame around every lesson: its logo intro first, its signoff outro last. */
-export type Frame = {ident?: boolean; outro?: string | false; identSeconds?: number};
+export type Frame = {ident?: boolean; outro?: string | false; identSeconds?: number; /** apply the director (src/director.ts): on for every new project; off keeps delivered lessons byte-identical */ direct?: boolean};
 const framed = (scenes: any[], frame?: Frame) => {
   if (!frame) return scenes;
   const out = [...scenes];
@@ -281,5 +284,134 @@ const framed = (scenes: any[], frame?: Frame) => {
   return out;
 };
 
-/** A spec with every shorthand scene compiled (idempotent: compiled scenes pass through), framed by the project's intro/outro. */
-export const compileSpec = <T extends {scenes: any[]}>(spec: T, frame?: Frame): T => ({...spec, scenes: framed(spec.scenes, frame).map((x) => compileRecipe(compileScene(x)))});
+/* ------------------------------------------------------------------ compositions */
+/**
+ * {"type": "scene", "kicker", "narration", "layout"?: "auto"|"halves"|"main",
+ *  "elements": [{"id", "kind": "art"|"flow"|"table"|"stat"|"bars"|"timeline"|"cycle"|"hub"|"stack"|"trace", …its data}],
+ *  "moves": [{"say"?, "reveal"?: id|[ids], "focus"?: "id.anchor", "zoom"?, "back"?: true,
+ *             "label"?: {"on": "id.anchor", "text"}, "act"?: "id.event"|[…], "note"?, "pulse"?, "cross"?}]}
+ * One frame composed of 1–3 elements (an illustration beside its statistic, a rhythm strip beside
+ * the decision chart…), laid out automatically, each element building as its words are spoken,
+ * plus the author's teaching moves. The director (src/director.ts) picks sides and continuity.
+ */
+const ITEM_KINDS = ['bars', 'timeline', 'cycle', 'hub', 'stack'];
+const KIND_ART: Record<string, string> = {flow: 'graph', table: 'table', stat: 'stat', bars: 'bars', timeline: 'timeline', cycle: 'cycle', hub: 'hub', stack: 'stack', trace: 'trace'};
+const retarget = (beats: any[], from: string, to: string) =>
+  beats
+    .filter((b) => !b.camera || b.act || b.note)
+    .map(({camera: _c, ...b}) => {
+      const fix = (t: any) => (typeof t === 'string' ? t.replace(new RegExp(`^${from}\\.`), `${to}.`) : t);
+      return {...b, ...(b.act ? {act: Array.isArray(b.act) ? b.act.map(fix) : fix(b.act)} : {}), ...(b.pulse ? {pulse: fix(b.pulse)} : {})};
+    });
+
+/** Slots for 1–3 elements: the first element (or the illustration) is the lead. */
+export const slotsFor = (kinds: string[], layout?: string, mirror?: boolean, dense: boolean[] = []): string[] => {
+  const n = kinds.length;
+  if (n <= 1) return ['full'];
+  const [a, b] = mirror ? ['R', 'L'] : ['L', 'R'];
+  const twoArts = kinds.filter((k) => k === 'art').length === 2;
+  if (n === 2) {
+    if (layout === 'halves' || twoArts || (layout !== 'main' && kinds[0] !== 'art' && kinds[1] !== 'art')) return [a, b];
+    // a dense chart or table needs the room more than the illustration: it takes the main slot, on the lead's side
+    return dense[1] && !dense[0] ? [`S${b}`, `M${a}`] : [`M${a}`, `S${b}`];
+  }
+  return [`M${a}`, `S${b}T`, `S${b}B`];
+};
+
+function composition(s: any): any {
+  const words = spoken(s.narration ?? '').split(/\s+/).map(normWord).filter(Boolean);
+  const els: any[] = s.elements ?? [];
+  // the lead (the illustration if there is one) goes first so it takes the main slot
+  const ordered = [...els].sort((x, y) => (x.kind === 'art' ? 0 : 1) - (y.kind === 'art' ? 0 : 1));
+  // dense: a table of 3+ columns or 4+ rows, a chart of 5+ nodes — it needs the main slot to stay readable
+  const dense = ordered.map((e) => (e.kind === 'table' && ((e.columns ?? []).length >= 3 || (e.rows ?? []).length >= 4)) || (e.kind === 'flow' && parseMermaid(e.mermaid ?? '').nodes.length >= 5));
+  const slots = slotsFor(ordered.map((e) => e.kind), s.layout, s.mirror, dense);
+  const revealed = new Set((s.moves ?? []).flatMap((m: any) => asList(m.reveal)));
+  // flow and table elements compile exactly as their full-screen scenes do (no tour: the composition owns the camera)
+  const sub = new Map<string, any>();
+  for (const e of ordered)
+    if (e.kind === 'flow') sub.set(e.id, shorthand({type: 'flow', narration: s.narration, mermaid: e.mermaid, steps: e.steps, size: e.size, tour: false}));
+    else if (e.kind === 'table') sub.set(e.id, shorthand({type: 'table', narration: s.narration, columns: e.columns, rows: e.rows, say: e.say, bars: e.bars, highlight: e.highlight, widths: e.widths, align: e.align, size: e.size, tour: false}));
+  const layers = ordered.map((e, i) => {
+    const {id, kind, art: artName, data: artData, say: _s, ...rest} = e;
+    const data = kind === 'art' ? artData : sub.has(id) ? sub.get(id).world.layers[0].data : rest;
+    return {id, art: kind === 'art' ? artName : KIND_ART[kind], fit: true, slot: slots[i], at: [1200, 500], h: 1, ...(data ? {data} : {}), ...(revealed.has(id) ? {hidden: true} : {})};
+  });
+  // each element builds itself as its own words are spoken
+  const auto: any[] = [];
+  const items: {target: string; text: string; at: number}[] = [];
+  for (const e of ordered) {
+    if (sub.has(e.id)) {
+      const st = sub.get(e.id);
+      const own = retarget(st.beats.filter((b: any) => b.act), e.kind === 'flow' ? 'chart' : 'tbl', e.id);
+      auto.push(...own);
+      // what can be echoed later: each node / row, from the moment it appears
+      const label = new Map(parseMermaid(e.mermaid ?? '').nodes.map((n) => [n.id, n.label]));
+      for (const b of own) {
+        const m = /\.(s|r)(\d+)$/.exec(String(b.act));
+        if (!m) continue;
+        const k = +m[2] - 1;
+        if (m[1] === 's') for (const id of st.world.layers[0].data.steps[k]?.show ?? []) items.push({target: `${e.id}.${id}`, text: label.get(id) ?? '', at: b._pos});
+        else items.push({target: `${e.id}.r${k + 1}`, text: (e.rows?.[k] ?? []).join(' '), at: b._pos});
+      }
+    } else if (e.kind === 'stat') {
+      const d = e.say ? {say: e.say, at: words.findIndex((w) => wordMatches(w, e.say.map(normWord)))} : derive(words, `${e.display ?? ''} ${e.label ?? ''}`, 0);
+      if (d) auto.push({say: d.say, _pos: d.at, act: `${e.id}.count`});
+      items.push({target: `${e.id}.figure`, text: `${e.label ?? ''}`, at: d?.at ?? 0});
+    } else if (ITEM_KINDS.includes(e.kind) || e.kind === 'trace') {
+      const list: any[] = e.kind === 'trace' ? (e.segments ?? []).filter((x: any) => x.label) : (e.items ?? []);
+      let cur = 0;
+      list.forEach((it, k) => {
+        const d = it.say ? {say: it.say, at: words.findIndex((w, j) => j >= cur && wordMatches(w, it.say.map(normWord)))} : derive(words, `${it.label ?? ''} ${it.when ?? ''}`, cur);
+        if (d && d.at >= 0) {
+          auto.push({say: d.say, _pos: d.at, act: `${e.id}.i${k + 1}`});
+          cur = d.at + 1;
+        }
+        items.push({target: `${e.id}.i${k + 1}`, text: it.label ?? '', at: d?.at ?? 0});
+      });
+    }
+  }
+  // the author's teaching moves
+  let cursor = 0;
+  const moves = (s.moves ?? []).map((m: any) => {
+    let say = m.say;
+    let pos = -1;
+    if (say) pos = words.findIndex((x, k) => k >= cursor && wordMatches(x, say.map(normWord)));
+    else {
+      const d = derive(words, [m.label?.text, m.note].filter(Boolean).join(' '), cursor);
+      if (d) [say, pos] = [d.say, d.at];
+    }
+    if (pos >= 0) cursor = pos + 1;
+    if (m.label?.on) items.push({target: m.label.on, text: m.label.text, at: pos});
+    return {
+      say: say ?? ['missing'],
+      _pos: pos,
+      ...(m.reveal ? {show: asList(m.reveal)} : {}),
+      ...(m.focus ? {camera: {on: m.focus, zoom: m.zoom ?? 1.5}} : m.back ? {camera: 'overview'} : {}),
+      ...(m.label ? {label: m.label} : {}),
+      ...(m.act ? {act: m.act} : {}),
+      ...(m.note ? {note: m.note} : {}),
+      ...(m.pulse ? {pulse: m.pulse} : {}),
+      ...(m.cross ? {cross: m.cross} : {}),
+    };
+  });
+  const all = byPosition(words, [...auto, ...moves]);
+  const echoes = echo(words, all, items.filter((x) => x.text));
+  return {
+    type: 'stage',
+    kicker: s.kicker,
+    narration: s.narration,
+    ...(s.transition ? {transition: s.transition} : {}),
+    ...(s.drift ? {drift: s.drift} : {}),
+    // the stage view is ~2.4:1 (room above for notes, below for captions): a world of that shape fills it
+    world: {w: 2400, h: 1000, layers},
+    beats: byPosition(words, [...all, ...echoes]),
+  };
+}
+
+const strip = (s: any) => (s?.beats ? {...s, beats: s.beats.map(({_pos, ...b}: any) => b)} : s);
+/** One scene, any shorthand (flow/table/recipes/composition) → a stage. */
+export const compileScene = (s: any): any => strip(s?.type === 'scene' ? composition(s) : compileRecipe(shorthand(s)));
+
+/** A spec with every shorthand scene compiled (idempotent: compiled scenes pass through), framed by the project's intro/outro and directed (src/director.ts). */
+export const compileSpec = <T extends {scenes: any[]}>(spec: T, frame?: Frame): T => ({...spec, scenes: (frame?.direct ? direct : (x: any[]) => x)(framed(spec.scenes, frame)).map(compileScene)});

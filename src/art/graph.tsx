@@ -114,7 +114,8 @@ const graph: ArtFactory = (raw: GData) => {
   const steps = data.steps ?? [];
   const TB = data.direction === 'TB';
   const {layer: layerOf, layers, L, back} = layout(data);
-  const W = 1680;
+  // a composition lays the chart out at its slot's width, so nodes keep their reading size
+  const W = Math.max(700, (raw as any).width ?? 1680);
   const maxRow = Math.max(...layers.map((l) => l.length));
   // sizes: main axis = layers, cross axis = nodes within a layer
   // layers leave room for their edge labels (mono ≈ 11.4 px/char at 19 px) — labels never sit on a node

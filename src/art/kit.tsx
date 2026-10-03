@@ -81,7 +81,7 @@ export const ArtView: React.FC<{art: ArtDef; ctx: ArtCtx; k: number; style?: Rea
       <art.C {...ctx} />
     </svg>
     {art.Html ? (
-      <div style={{position: 'absolute', left: 0, top: 0, width: art.w, height: art.h, overflow: 'hidden', transform: `scale(${k})`, transformOrigin: '0 0'}}>
+      <div data-art-text style={{position: 'absolute', left: 0, top: 0, width: art.w, height: art.h, overflow: 'hidden', transform: `scale(${k})`, transformOrigin: '0 0'}}>
         <art.Html {...ctx} />
       </div>
     ) : null}

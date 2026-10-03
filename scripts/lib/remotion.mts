@@ -46,7 +46,7 @@ export async function still(opts: {serveUrl: string; composition: any; inputProp
           const m = /^\[audit\] (.*)$/.exec(log.text);
           if (!m) return;
           const h = JSON.parse(m[1]);
-          found.push(h.kind === 'overflow' ? `text overflows its box: "${h.text}"` : h.kind === 'overlap' ? `stage layers overlap: "${h.text}" × "${h.other}" — move them apart in the world` : `text collides: "${h.text}" × "${h.other}"`);
+          found.push(h.kind === 'tiny' ? `text too small to read (${h.px}px < 22px on the frame): "${h.text}" — give it a bigger slot, fewer elements, or shorter content` : h.kind === 'overflow' ? `text overflows its box: "${h.text}"` : h.kind === 'overlap' ? `stage layers overlap: "${h.text}" × "${h.other}" — move them apart in the world` : `text collides: "${h.text}" × "${h.other}"`);
         },
       });
       return [...new Set(found)];

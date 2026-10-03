@@ -11,8 +11,35 @@
 
 export type Target = string; // "layer" or "layer.anchor"
 /** `fit: true` (charts, tables): the renderer sizes and centres the layer to fill the world — no hand-placed at/h. */
-export type Layer = {id: string; art: string; data?: any; at: [number, number]; h: number; hidden?: boolean; fit?: boolean};
+export type Layer = {id: string; art: string; data?: any; at: [number, number]; h: number; hidden?: boolean; fit?: boolean; /** with fit: the box this layer fills (src/stage.ts SLOTS) — compositions place 1–3 elements side by side */ slot?: Slot};
 export type World = {w: number; h: number; layers: Layer[]};
+/** Composition slots in the composition world (2400×1000, the stage view's shape): full; halves L/R; main ML/MR (60 %) beside a side SL/SR, split top/bottom as S?T/S?B. */
+export type Slot = 'full' | 'L' | 'R' | 'ML' | 'MR' | 'SL' | 'SR' | 'SLT' | 'SLB' | 'SRT' | 'SRB';
+export const slotBox = (slot: Slot | undefined, W: {w: number; h: number}): {x: number; y: number; w: number; h: number} => {
+  const M = 60;
+  const G = 80;
+  const iw = W.w - 2 * M;
+  const ih = W.h - 2 * M;
+  const half = (iw - G) / 2;
+  const main = Math.round((iw - G) * 0.6);
+  const side = iw - G - main;
+  const hh = (ih - G) / 2;
+  const b: Record<Slot, [number, number, number, number]> = {
+    full: [M, M, iw, ih],
+    L: [M, M, half, ih],
+    R: [M + half + G, M, half, ih],
+    ML: [M, M, main, ih],
+    MR: [M + side + G, M, main, ih],
+    SL: [M, M, side, ih],
+    SR: [M + main + G, M, side, ih],
+    SLT: [M, M, side, hh],
+    SLB: [M, M + hh + G, side, hh],
+    SRT: [M + main + G, M, side, hh],
+    SRB: [M + main + G, M + hh + G, side, hh],
+  };
+  const [x, y, w, h] = b[slot ?? 'full'] ?? b.full;
+  return {x, y, w, h};
+};
 export type Beat = {
   say?: string[];
   camera?: {on: Target; zoom?: number} | 'overview';
@@ -35,8 +62,9 @@ export type Beat = {
 };
 export type SfxCue = {name: string; volume?: number; every?: number; count?: number};
 export const SFX_NAMES = ['pan', 'push', 'cut', 'wipe', 'tick', 'roll', 'result', 'strike', 'title', 'logo', 'key1', 'key2', 'key3', 'drop', 'place', 'deal', 'stamp', 'chip', 'shove', 'fan', 'heartbeat', 'beep', 'flatline', 'charge', 'shock', 'boom', 'whoosh', 'riser', 'sting', 'drone', 'alarm', 'thud'];
+/** `drift: -1` reverses the slow camera push between moves (the director alternates it so consecutive scenes don't breathe identically). */
 /** `mood: 'dark'` sets the stage on deep navy (a cinematic cold open); default is the light house page. */
-export type StageSpec = {world: World; beats: Beat[]; open?: Target; mood?: 'light' | 'dark'; /** hide the chapter slug (cinematic openers) */ bare?: boolean; /** the picture is already there on the first frame (no draw-on): scenes that cut into a running moment */ drawn?: boolean};
+export type StageSpec = {world: World; beats: Beat[]; open?: Target; mood?: 'light' | 'dark'; /** hide the chapter slug (cinematic openers) */ bare?: boolean; /** the picture is already there on the first frame (no draw-on): scenes that cut into a running moment */ drawn?: boolean; drift?: 1 | -1};
 
 /** The framing rectangle on the 1920×1080 frame (the world may bleed past it). */
 export type View = {x: number; y: number; w: number; h: number};
@@ -115,7 +143,9 @@ export const LEG = {before: 8, dur: 34};
  * A multiplier on the camera scale at frame f.
  */
 export const DRIFT = 0.08;
-export const driftAt = (f: number, keys: {f: number}[]): number => {
+// sign -1 mirrors it (holds open slightly in and ease out) — never below the overview scale, so no page edge shows
+export const driftAt = (f: number, keys: {f: number}[], sign: 1 | -1 = 1): number => (sign > 0 ? pushAt(f, keys) : 2 + DRIFT - pushAt(f, keys));
+const pushAt = (f: number, keys: {f: number}[]): number => {
   const ease = (t: number) => (t <= 0 ? 0 : t >= 1 ? 1 : t * t * (3 - 2 * t));
   const starts = [0, ...keys.map((k) => k.f - LEG.before + LEG.dur)];
   const moves = keys.map((k) => k.f - LEG.before);

@@ -20,7 +20,7 @@ import {E, estLines, tw} from '../motion';
 import {INK, type ArtCtx, type ArtDef, type ArtFactory} from './kit';
 
 type Align = 'left' | 'center' | 'right';
-export type TableData = {columns: string[]; rows: string[][]; align?: Align[]; widths?: number[]; size?: number; /** cells appear on their own rIcJ events (progressive reading) */ cells?: boolean; /** columns (0-based) whose numbers also get an inline bar */ bars?: number[]};
+export type TableData = {width?: number; columns: string[]; rows: string[][]; align?: Align[]; widths?: number[]; size?: number; /** cells appear on their own rIcJ events (progressive reading) */ cells?: boolean; /** columns (0-based) whose numbers also get an inline bar */ bars?: number[]};
 
 /** "10.5%" → {pre: '', n: 10.5, dec: 1, comma: false, post: '%'}; null when the cell isn't a single number. */
 const numParts = (t: string) => {
@@ -37,7 +37,7 @@ const countUp = (t: string, p: number) => {
   return `${q.pre}${s}${q.post}`;
 };
 
-const W = 1640; // table width; M of white margin round it so the rules never touch the art's box
+const W0 = 1640; // table width; M of white margin round it so the rules never touch the art's box
 const M = 20;
 const PADX = 26;
 const isNum = (s: string) => /^[\s≈~<>≥≤±+–-]*[\d.,]+(\s*[–-]\s*[\d.,]+)?\s*(%|[a-zA-Zµ/°]{0,6})?$/.test(s.trim());
@@ -45,6 +45,8 @@ const isNum = (s: string) => /^[\s≈~<>≥≤±+–-]*[\d.,]+(\s*[–-]\s*[\d.,
 const table: ArtFactory = (data: TableData) => {
   const cols = data.columns;
   const rows = data.rows;
+  // a composition lays the table out at its slot's width, so cells keep their reading size
+  const W = data.width ? Math.max(600, data.width - 2 * M) : W0;
   const fs = data.size ?? 40;
   const hfs = Math.round(fs * 0.86);
   // column widths: authored, else by content (longest cell, header counts a little less)

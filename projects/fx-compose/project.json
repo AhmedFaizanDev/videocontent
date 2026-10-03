@@ -1,0 +1,55 @@
+{
+  "name": "Composition fixture (layout/director/variety regression \u2014 not a real series)",
+  "series": "Composition fixture",
+  "lang": "en",
+  "brand": {
+    "art": {
+      "lockup": "brand/medskills-lockup.png",
+      "icon": "brand/medskills-icon.png",
+      "lockupAspect": 3.677,
+      "iconAspect": 0.972
+    },
+    "name": "MedSkills",
+    "signoff": "Keep learning with MedSkills.",
+    "episodeLabel": "EP."
+  },
+  "voice": {
+    "name": "en-IN-NeerjaNeural",
+    "rate": "+10%",
+    "pitch": "+0Hz",
+    "wpm": 147
+  },
+  "pacing": {
+    "sentencePause": 0.15,
+    "beat": 0.45,
+    "breathe": 0.8
+  },
+  "lexicon": {},
+  "terms": [],
+  "music": "audio/music/bed.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      7
+    ]
+  },
+  "rules": {
+    "first": "ident",
+    "last": "outro",
+    "requireOneOf": [],
+    "sync": "error",
+    "minFigures": 3,
+    "grounding": "error",
+    "minIllustrated": 0.75,
+    "maxScreenWords": 20,
+    "requirePlan": false,
+    "maxIdle": 7,
+    "variety": true
+  },
+  "style": {},
+  "frame": {
+    "ident": true,
+    "outro": "Keep learning with MedSkills.",
+    "direct": true
+  }
+}

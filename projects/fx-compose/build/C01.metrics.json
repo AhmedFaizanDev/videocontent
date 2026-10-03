@@ -1,0 +1,13 @@
+{
+  "project": "fx-compose",
+  "id": "C01",
+  "stages": {
+    "preflight": {
+      "seconds": 3.4,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-03T23:00:59.915Z"
+    }
+  },
+  "authoring": []
+}

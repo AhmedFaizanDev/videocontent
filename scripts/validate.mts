@@ -19,6 +19,8 @@ import {ROOT, loadProject, parseArgs, specPath} from './lib/paths.mts';
 import {CATALOG, calloutsFor} from '../src/art/catalog.ts';
 import {syncProblems} from '../src/sync.ts';
 import {compileSpec} from '../src/compile.ts';
+import {fingerprint, varietyProblems} from '../src/director.ts';
+const sequences: {id: string; seq: string}[] = [];
 import {BREATHE_RANGE, holds, holdsRange} from '../src/schedule.ts';
 import {spoken} from '../src/project.ts';
 import {screenWords, stageProblems} from '../src/stage.ts';
@@ -178,6 +180,11 @@ function checkSpec(project: string, id: string, seenFiles: Map<string, string>):
     return err(id, `invalid JSON: ${(e as Error).message}`);
   }
   const cfg = loadProject(project, spec);
+  const raw = spec;
+  if (cfg.rules.variety && Array.isArray(raw.scenes)) {
+    for (const p of varietyProblems(raw.scenes)) err(id, `variety: ${p}`);
+    sequences.push({id, seq: raw.scenes.map(fingerprint).filter(Boolean).join(' › ')});
+  }
   try {
     spec = compileSpec(spec, cfg.frame);
   } catch (e) {
@@ -295,6 +302,10 @@ for (const id of ids) {
   const r = checkSpec(project, id, seen);
   if (r && typeof r === 'object') est.push(r);
 }
+// course level: two lessons with the same sequence of screens feel stamped from one template
+for (let i = 0; i < sequences.length; i++)
+  for (let j = i + 1; j < sequences.length; j++)
+    if (sequences[i].seq && sequences[i].seq === sequences[j].seq) warn(sequences[j].id, `variety: same sequence of screens as ${sequences[i].id} — reorder or recompose a few scenes`);
 const icon = {error: '❌', warn: '⚠️ ', note: 'ℹ️ '};
 for (const it of issues.filter((i) => i.level !== 'note' || process.argv.includes('--notes'))) console.log(`  ${icon[it.level]} ${it.id}: ${it.msg}`);
 const count = (l: Issue['level']) => issues.filter((i) => i.level === l).length;

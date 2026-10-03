@@ -1,0 +1,151 @@
+{
+  "id": "C01",
+  "title": "Cardiac Arrest in Numbers",
+  "outputFilename": "fx_C01.mp4",
+  "module": "Fixture",
+  "scenes": [
+    {
+      "type": "opener",
+      "kicker": "Fixture",
+      "narration": "Cardiac arrest is an electrical failure of the heart. Each beat begins as an electrical impulse that spreads through the muscle, and when that coordination fails, the heart stops pumping blood.",
+      "title": "Cardiac Arrest in Numbers",
+      "art": "heartExterior",
+      "act": "conduction"
+    },
+    {
+      "type": "scene",
+      "kicker": "The scale",
+      "narration": "Outside hospital, about 350,000 people a year in the United States have a cardiac arrest, and it results in death about 90% of the time. The heart produces no effective output: the aorta carries no blood to the brain, so the patient is unresponsive within seconds.",
+      "elements": [
+        {
+          "id": "heart",
+          "kind": "art",
+          "art": "heartExterior"
+        },
+        {
+          "id": "deaths",
+          "kind": "stat",
+          "value": 90,
+          "of": 100,
+          "display": "90%",
+          "label": "of out-of-hospital arrests end in death",
+          "tone": "red",
+          "say": [
+            "90"
+          ]
+        }
+      ],
+      "moves": [
+        {
+          "note": "≈ 350,000 out-of-hospital cardiac arrests a year (US)",
+          "say": [
+            "350000"
+          ]
+        },
+        {
+          "focus": "heart.aorta",
+          "zoom": 1.3,
+          "label": {
+            "on": "heart.aorta",
+            "text": "Aorta"
+          },
+          "say": [
+            "aorta"
+          ]
+        },
+        {
+          "back": true,
+          "say": [
+            "unresponsive"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "scene",
+      "kicker": "Bystanders",
+      "narration": "After a collapse outside hospital, only about 41% of adults receive bystander compressions before emergency services arrive. That matters, because compressions generate blood flow to the brain until the heart is restarted, and given immediately they can double or even triple the chance of survival.",
+      "elements": [
+        {
+          "id": "cpr",
+          "kind": "stat",
+          "value": 41,
+          "of": 100,
+          "display": "41%",
+          "label": "receive bystander compressions",
+          "tone": "teal",
+          "say": [
+            "41"
+          ]
+        },
+        {
+          "id": "why",
+          "kind": "flow",
+          "mermaid": "flowchart TD\n A([Collapse]) --> B[Bystander compressions]:::teal\n B --> C[Blood flow to the brain]\n C --> D[Survival doubles or triples]:::green"
+        }
+      ]
+    },
+    {
+      "type": "scene",
+      "kicker": "Where it happens",
+      "narration": "Where the arrest happens matters. Survival to discharge is 21.1% in a public place, where someone is likely to see the collapse, but only 8.9% at home. In hospital, adults survive 23.6% of the time, because help is close and the arrest is usually witnessed.",
+      "elements": [
+        {
+          "id": "heart",
+          "kind": "art",
+          "art": "heartExterior"
+        },
+        {
+          "id": "where",
+          "kind": "table",
+          "columns": [
+            "Setting",
+            "Survival"
+          ],
+          "rows": [
+            [
+              "Public place",
+              "21.1%"
+            ],
+            [
+              "Home",
+              "8.9%"
+            ],
+            [
+              "Hospital, adults",
+              "23.6%"
+            ]
+          ],
+          "say": [
+            [
+              "public"
+            ],
+            [
+              "home"
+            ],
+            [
+              "hospital"
+            ]
+          ],
+          "bars": [
+            1
+          ]
+        }
+      ],
+      "moves": [
+        {
+          "act": "heart.vf",
+          "say": [
+            "collapse"
+          ]
+        },
+        {
+          "note": "In hospital the arrest is usually witnessed",
+          "say": [
+            "witnessed"
+          ]
+        }
+      ]
+    }
+  ]
+}

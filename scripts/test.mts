@@ -25,10 +25,11 @@ import {withDefaults, spoken} from '../src/project.ts';
 import {speakTokens} from './lib/speak.mts';
 import {numbersIn, pronunciationWatch, speechHazards, spellingProblems} from './lib/grounding.mts';
 import {parseMermaid} from '../src/art/mermaid.ts';
-import {compileScene, compileSpec} from '../src/compile.ts';
+import {compileScene, compileSpec, slotsFor} from '../src/compile.ts';
+import {direct, varietyProblems} from '../src/director.ts';
 import {revealTimes} from '../src/sync.ts';
 import {uncovered} from './lib/coverage.mts';
-import {camAt, camFor, fitCam, placeLabel, resolve, screenWords, stageProblems} from '../src/stage.ts';
+import {camAt, driftAt, camFor, fitCam, placeLabel, resolve, screenWords, stageProblems} from '../src/stage.ts';
 
 const fast = process.argv.includes('--fast');
 let failed = 0;
@@ -178,6 +179,44 @@ step('3 units', () => {
     assert.equal(ex.beats[1].camera, 'overview', 'the last zoomed point pulls back');
     assert.equal(syncProblems(ex).length, 0);
     assert.equal(spec.scenes[1].beats[1].camera, 'overview', 'the opener act clears the title');
+  }
+  // compositions: 1–3 elements laid out in slots, each building on its own words, plus moves
+  {
+    const c = compileScene({type: 'scene', kicker: 'k', narration: 'The aorta carries blood. About 90% die. The table shows home and hospital.', elements: [
+      {id: 'pct', kind: 'stat', value: 90, of: 100, display: '90%', label: 'die', say: ['90']},
+      {id: 'heart', kind: 'art', art: 'heartExterior'},
+    ], moves: [{focus: 'heart.aorta', label: {on: 'heart.aorta', text: 'Aorta'}, say: ['aorta']}]});
+    assert.equal(c.type, 'stage');
+    assert.deepEqual(c.world.layers.map((l: any) => [l.id, l.slot]), [['heart', 'ML'], ['pct', 'SR']], 'the illustration leads, the number sits beside it');
+    assert.deepEqual(c.beats.map((b: any) => b.act ?? b.label?.text), ['Aorta', 'pct.count']);
+    assert.ok(c.beats.every((b: any) => b._pos === undefined), 'positions are stripped');
+    assert.equal(syncProblems(c).length, 0);
+    const t = compileScene({type: 'scene', kicker: 'k', narration: 'Survival is higher in public places than at home, and highest for children in hospital.', elements: [
+      {id: 'heart', kind: 'art', art: 'heartExterior'},
+      {id: 'tb', kind: 'table', columns: ['Setting', 'Survival', 'Note'], rows: [['Public', '21.1%', 'x'], ['Home', '8.9%', 'y']], say: [['public'], ['home']]},
+    ]});
+    assert.deepEqual(t.world.layers.map((l: any) => l.slot), ['SR', 'ML'], 'a dense table takes the main slot');
+    assert.deepEqual(t.beats.filter((b: any) => /\.r\d$/.test(b.act)).map((b: any) => b.act), ['tb.r1', 'tb.r2'], 'table rows retargeted to the element');
+    assert.deepEqual(slotsFor(['flow', 'stat']), ['L', 'R']);
+    assert.deepEqual(slotsFor(['art', 'stat', 'table'], undefined, true), ['MR', 'SLT', 'SLB'], 'mirrored');
+    // the director: continuity, relation-based transitions, alternating drift
+    const d = direct([
+      {type: 'scene', elements: [{kind: 'art', art: 'h'}, {kind: 'stat'}]},
+      {type: 'scene', elements: [{kind: 'art', art: 'h'}, {kind: 'table'}]},
+      {type: 'scene', elements: [{kind: 'flow'}, {kind: 'stat'}]},
+      {type: 'summary'},
+    ]);
+    assert.deepEqual(d.map((x: any) => x.mirror), [true, true, false, undefined], 'same illustration keeps its side; a new subject swaps');
+    assert.deepEqual(d.map((x: any) => x.transition), [undefined, 'pan', undefined, 'zoomout']);
+    assert.deepEqual(d.map((x: any) => x.drift), [1, -1, 1, -1]);
+    assert.equal(direct([{type: 'flow', transition: 'cut'}, {type: 'flow', transition: 'cut'}])[1].transition, 'cut', 'the author wins');
+    // the variety gate
+    const same = Array.from({length: 6}, () => ({type: 'table'}));
+    const v = varietyProblems(same);
+    assert.ok(v.some((m) => m.includes('in a row')) && v.some((m) => m.includes('40 %')) && v.some((m) => m.includes('multi-element')));
+    const varied = [{type: 'explain'}, {type: 'scene', elements: [{kind: 'art'}, {kind: 'stat'}]}, {type: 'flow'}, {type: 'table'}, {type: 'scene', elements: [{kind: 'flow'}, {kind: 'stat'}]}, {type: 'explain'}];
+    assert.deepEqual(varietyProblems(varied), []);
+    assert.equal(driftAt(0, [], -1) > 1, true, 'reversed drift opens slightly in, never below the overview');
   }
   assert.equal(p.output.dir, 'demo');
   assert.equal(p.rules.sync, 'error');
