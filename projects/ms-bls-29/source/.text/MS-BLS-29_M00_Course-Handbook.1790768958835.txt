@@ -1,0 +1,299 @@
+MS-BLS-29
+Basic and Advanced Cardiac Life Support (BLS & ACLS)
+
+MODULE 00
+
+Course Handbook and Study
+Guide
+How this course is structured, what each module covers, how you will be
+assessed, and what this course can and cannot certify.
+
+Learning hours
+
+Read before you begin
+
+Who this module is for
+
+All learners enrolled in MS-BLS-29
+
+Assessment
+
+Not assessed — orientation document
+
+Regulatory basis
+
+AHA 2025 Guidelines for CPR and Emergency Cardiovascular Care; NABH 6th
+Edition
+
+This module is one part of a certified course. Content is current as at August 2026. Fire safety requirements vary between
+States and are set for your building by its approved drawings and Fire NOC conditions; verify against those and against
+your hospital’s own fire plan before relying on this material for a compliance decision.
+
+MS-BLS-29 — Course Handbook
+Cardiac arrest is the only emergency in which the actions of the nearest person in the first
+three minutes matter more than everything done by everyone else afterwards. This course
+is built around that fact. It is written against the 2025 American Heart Association
+Guidelines for CPR and Emergency Cardiovascular Care, released in October 2025 — a
+comprehensive revision of the 2020 guidelines.
+What this course can and cannot certify
+This is a knowledge course. It builds understanding of resuscitation science, the algorithms, and the
+hospital system around them, and it produces a MedSkills certificate of completion. It is NOT a
+substitute for a hands-on BLS or ACLS provider course with manikin-based skills assessment, and it
+does not confer an AHA, ERC or equivalent provider card. Compressions, bag-mask ventilation and
+defibrillator operation are psychomotor skills that must be assessed physically at an authorised
+training centre. Use this course to prepare for and reinforce that training — not to replace it.
+
+How the course is organised
+Eleven modules, issued as separate documents so departments can assign what each role needs.
+Modules 1 to 5 are the BLS core and are for every clinical staff member. Modules 6 to 11 carry the
+advanced life support, peri-arrest, post-arrest and systems content for those who respond to or lead
+codes.
+Modul
+e
+
+Title
+
+Hours
+
+Core audience
+
+01
+
+Cardiac Arrest and the Chain of Survival
+
+1.0
+
+All clinical staff
+
+02
+
+Recognising Deterioration, Arrest and Calling for
+Help
+
+1.0
+
+All clinical staff
+
+03
+
+High-Quality Chest Compressions
+
+1.0
+
+All clinical staff
+
+04
+
+Airway, Ventilation and Choking
+
+1.0
+
+All clinical staff
+
+05
+
+Defibrillation and the AED
+
+1.0
+
+All clinical staff
+
+06
+
+The Adult Cardiac Arrest Algorithm and Drugs
+
+1.25
+
+Code responders, doctors, ICU and
+ED nurses
+
+07
+
+Advanced Airway Management and Monitoring
+
+1.25
+
+Anaesthesia, ICU, ED, code team
+
+08
+
+Peri-Arrest Rhythms: Bradycardia and Tachycardia
+
+1.25
+
+Doctors, ICU and ED nurses, code
+team
+
+09
+
+Post-Resuscitation Care, Prognostication and
+Stopping
+
+1.25
+
+ICU, ED, code team, physicians
+
+10
+
+Resuscitation in Special Circumstances
+
+1.25
+
+Obstetrics, anaesthesia, ED, ICU,
+dialysis, theatre
+
+11
+
+Team Performance, Debriefing and the Programme
+
+1.25
+
+Code team, resuscitation officers,
+quality
+
+MS-BLS-29
+
+Module 00 — Course Handbook and Study Guide
+
+BLS & ACLS
+
+Total course duration: 13 hours
+Comprising approximately 9 hours of self-paced module study, 2.5 hours of applied practice and
+scenario work, and 1.5 hours of assessment. This is in addition to the hands-on provider course and
+skills assessment required for BLS or ACLS certification.
+
+A note on the 2025 Guidelines
+The AHA released the 2025 Guidelines for CPR and ECC on 22 October 2025. If you trained on the
+2020 guidelines, most of what you know remains correct — you are updating, not relearning. The
+compression rate of 100 to 120 per minute, the 30:2 ratio for single-rescuer adult CPR, the reversible
+causes and the overall shape of the algorithms all still hold.
+What changed matters, though. There is now a single unified Chain of Survival covering adults and
+children, in-hospital and out-of-hospital. The terminology has been revised: ‘rescue breaths’ is no
+longer used, ‘breaths’ now refers to assisted breathing, and ‘ventilation’ is reserved for mechanical
+respiratory support. Opioid antagonists have entered the BLS algorithm for healthcare professionals,
+there is a new choking algorithm, and in shockable rhythms epinephrine is now positioned after initial
+defibrillation attempts have failed rather than alongside them. Vasopressin is no longer
+recommended as a substitute for epinephrine. Each module notes where the 2025 position differs
+from 2020.
+
+A note on learning hours
+NABH does not prescribe a fixed number of training hours for any individual topic. What the 6th
+Edition requires is that the organisation identifies training needs, provides training including
+resuscitation training for relevant staff, and maintains records of the date, duration and effectiveness
+of that training. The hours above are MedSkills’ recommended durations, recorded automatically
+against each learner in the LMS. Your hospital’s own resuscitation policy will set the certification and
+recertification interval, and that is binding.
+
+Assessment and certification
+•
+
+Each module carries a knowledge check written in the style of the final assessment.
+
+•
+
+The final assessment covers all eleven modules. The pass mark and permitted attempts are set by
+your institution.
+
+•
+
+On passing, a verifiable MedSkills certificate of knowledge completion is issued, with date and
+duration written to your training record.
+
+•
+
+This certificate records knowledge, not psychomotor skill. Your provider card must come from a
+hands-on course at a recognised training centre.
+
+What you should be able to do at the end
+1
+
+Recognise cardiac arrest within seconds and start compressions without waiting for permission or
+for the team.
+
+2
+
+Describe high-quality CPR precisely — rate, depth, recoil, interruptions — and explain why each
+parameter matters.
+
+3
+
+Operate an AED and describe safe manual defibrillation, including pad placement and minimising
+the peri-shock pause.
+
+4
+
+Follow the adult cardiac arrest algorithm and state the drugs, doses and timing.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+2
+
+MS-BLS-29
+
+Module 00 — Course Handbook and Study Guide
+
+BLS & ACLS
+
+5
+
+Work through the reversible causes systematically rather than reciting them.
+
+6
+
+Assess a peri-arrest bradycardia or tachycardia for instability and act accordingly.
+
+7
+
+Deliver the immediate post-ROSC bundle and explain the harm of hyperoxia and hyperventilation.
+
+8
+
+Modify resuscitation appropriately in pregnancy, hyperkalaemia, hypothermia, anaphylaxis and
+poisoning.
+
+9
+
+Function within a code team using closed-loop communication, and speak up when something is
+wrong.
+
+How to use these documents
+•
+
+Read the modules in order; each builds on the previous one.
+
+•
+
+Attempt every knowledge check before reading the answers.
+
+•
+
+Print the algorithm figures and post them beside the resuscitation trolley.
+
+•
+
+Bring this material to your hands-on provider course; the psychomotor training is far more effective
+when the reasoning is already in place.
+
+•
+
+Practise. Skills decay within months. Brief, frequent practice beats a long course every two years.
+Currency and local protocol
+This content is current as at August 2026 and is based on the AHA 2025 Guidelines. Resuscitation
+guidance is revised periodically and regional councils — including the European Resuscitation
+Council and the Indian Resuscitation Council — publish their own guidance which may differ in
+detail. Drug doses, energy settings and targets must always be checked against your own hospital’s
+resuscitation policy and your own device’s recommended settings. Where your hospital protocol
+differs from this material, follow the hospital protocol and raise the discrepancy with your
+resuscitation committee.
+
+Figures in this course
+All diagrams are original works created for MedSkills. No third-party stock imagery is used, which
+means the algorithms, doses and parameters shown are drawn to match the guidelines they cite
+rather than approximating them. They may be reproduced within the licensed institution for training
+and display purposes.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+3
+
+

@@ -1,0 +1,770 @@
+{
+  "id": "AS01",
+  "title": "Asthma: What Happens in the Airways",
+  "outputFilename": "MedSkills_EN_Asthma_What_Happens_in_the_Airways.mp4",
+  "episode": "2",
+  "module": "Respiratory System",
+  "topicGroup": "Clinical Foundations",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Asthma: What Happens in the Airways",
+      "subtitle": "Clinical Foundations",
+      "learn": [
+        "what asthma is",
+        "where it happens in the airways",
+        "what happens in an attack",
+        "how reliever and preventer inhalers help"
+      ],
+      "narration": "In this video, we're going to talk about asthma, and what happens inside the airways. [pause] By the end of this video, you'll know exactly what asthma is. You'll know where in the airways it happens. You'll know what happens during an attack. And you'll know how reliever and preventer inhalers help."
+    },
+    {
+      "type": "stage",
+      "kicker": "Hook",
+      "narration": "Here's someone out for a walk, breathing easily. Then something changes: the chest tightens, and breathing gets hard. [pause] Something has happened inside the airways. So what's going on in there?",
+      "world": {
+        "w": 2000,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              1000,
+              620
+            ],
+            "h": 1040
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "walk"
+          ],
+          "act": "person.wave"
+        },
+        {
+          "say": [
+            "changes"
+          ],
+          "act": "person.worry",
+          "label": {
+            "on": "person.chest",
+            "text": "Something's changed"
+          }
+        },
+        {
+          "say": [
+            "hard"
+          ],
+          "pulse": "person.chest",
+          "label": {
+            "on": "person.face",
+            "text": "Hard to breathe"
+          }
+        },
+        {
+          "say": [
+            "inside"
+          ],
+          "act": "person.worry"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "What it is",
+      "narration": "Asthma is a long-term condition of the airways: the tubes that carry air into and out of the lungs. It affects the bronchi, and the smaller airways beyond them, called bronchioles. Let's zoom into one of these small airways. This is where asthma lives: chronic inflammation of the airway wall.",
+      "world": {
+        "w": 2700,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "lungs",
+            "art": "lungs",
+            "at": [
+              700,
+              620
+            ],
+            "h": 1000
+          },
+          {
+            "id": "airway",
+            "art": "bronchiole",
+            "at": [
+              2150,
+              600
+            ],
+            "h": 900
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "airways"
+          ],
+          "camera": {
+            "on": "lungs"
+          },
+          "label": {
+            "on": "lungs.bronchi",
+            "text": "Bronchi"
+          }
+        },
+        {
+          "say": [
+            "bronchi"
+          ],
+          "act": "lungs.inhale"
+        },
+        {
+          "say": [
+            "bronchioles"
+          ],
+          "inset": {
+            "of": "lungs.bronchi",
+            "art": "bronchiole"
+          },
+          "camera": "overview",
+          "label": {
+            "on": "airway",
+            "text": "Bronchioles"
+          }
+        },
+        {
+          "say": [
+            "zoom"
+          ],
+          "camera": {
+            "on": "airway"
+          },
+          "label": {
+            "on": "airway.lumen",
+            "text": "Open lumen"
+          }
+        },
+        {
+          "say": [
+            "inflammation"
+          ],
+          "note": "Asthma: chronic inflammation of the airway wall"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "The mechanism",
+      "narration": "When the airway reacts to a trigger, three things happen together. The muscle ring around the wall tightens. The lining swells and becomes inflamed. And the airway produces extra, thick mucus. [pause] Watch how much less air can now get through this narrowed airway.",
+      "world": {
+        "w": 1800,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "airway",
+            "art": "bronchiole",
+            "at": [
+              900,
+              620
+            ],
+            "h": 1000
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "tightens"
+          ],
+          "camera": {
+            "on": "airway.muscle",
+            "zoom": 2
+          },
+          "act": "airway.constrict",
+          "label": {
+            "on": "airway.muscle",
+            "text": "Muscle tightens"
+          }
+        },
+        {
+          "say": [
+            "inflamed"
+          ],
+          "camera": {
+            "on": "airway.mucosa",
+            "zoom": 2
+          },
+          "act": "airway.inflame",
+          "label": {
+            "on": "airway.mucosa",
+            "text": "Lining swells"
+          }
+        },
+        {
+          "say": [
+            "mucus"
+          ],
+          "camera": {
+            "on": "airway.lumen",
+            "zoom": 1.8
+          },
+          "act": "airway.mucus",
+          "label": {
+            "on": "airway.mucus",
+            "text": "Thick mucus"
+          }
+        },
+        {
+          "say": [
+            "narrowed"
+          ],
+          "camera": "overview",
+          "travel": {
+            "along": [
+              "airway.muscle",
+              "airway.lumen"
+            ],
+            "tone": "blue",
+            "stream": true
+          },
+          "note": "Airway narrows: less air gets through"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Symptoms",
+      "narration": "This narrowing produces the symptoms of asthma. Wheezing, a whistling sound as air squeezes through. Breathlessness, a shortness of breath. A tight feeling in the chest. And a cough. [pause] Symptoms can vary over time, and are often worse at night.",
+      "world": {
+        "w": 1800,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              900,
+              620
+            ],
+            "h": 1040
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "wheezing"
+          ],
+          "camera": {
+            "on": "person.face",
+            "zoom": 1.8
+          },
+          "act": "person.worry",
+          "label": {
+            "on": "person.face",
+            "text": "Wheeze"
+          }
+        },
+        {
+          "say": [
+            "breathlessness"
+          ],
+          "camera": {
+            "on": "person.chest",
+            "zoom": 1.8
+          },
+          "pulse": "person.chest",
+          "label": {
+            "on": "person.chest",
+            "text": "Breathlessness"
+          }
+        },
+        {
+          "say": [
+            "tight"
+          ],
+          "label": {
+            "on": "person.chest",
+            "text": "Chest tightness"
+          }
+        },
+        {
+          "say": [
+            "cough"
+          ],
+          "camera": {
+            "on": "person",
+            "zoom": 1.3
+          },
+          "act": "person.worry",
+          "label": {
+            "on": "person.face",
+            "text": "Cough"
+          }
+        },
+        {
+          "say": [
+            "night"
+          ],
+          "camera": "overview"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Triggers",
+      "narration": "Different things can trigger these airways. Allergens, like pollen and dust mites. Tobacco smoke. Cold air can trigger them too. So can exercise. And respiratory infections. [pause] A trigger for one person may not affect another, but each one can set off the same narrowing.",
+      "world": {
+        "w": 3400,
+        "h": 1100,
+        "layers": [
+          {
+            "id": "smoke",
+            "art": "icon",
+            "data": {
+              "name": "cigarette"
+            },
+            "at": [
+              980,
+              560
+            ],
+            "h": 500
+          },
+          {
+            "id": "walk",
+            "art": "icon",
+            "data": {
+              "name": "walk"
+            },
+            "at": [
+              1620,
+              560
+            ],
+            "h": 560
+          },
+          {
+            "id": "airway",
+            "art": "bronchiole",
+            "at": [
+              2900,
+              560
+            ],
+            "h": 800
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "allergens"
+          ],
+          "act": "airway.constrict",
+          "note": "Allergens such as pollen and dust mites"
+        },
+        {
+          "say": [
+            "smoke"
+          ],
+          "camera": {
+            "on": "smoke.item",
+            "zoom": 2
+          },
+          "act": [
+            "smoke.act",
+            "airway.constrict"
+          ],
+          "label": {
+            "on": "smoke.item",
+            "text": "Tobacco smoke"
+          }
+        },
+        {
+          "say": [
+            "them"
+          ],
+          "note": "Cold air can also trigger asthma"
+        },
+        {
+          "say": [
+            "exercise"
+          ],
+          "camera": {
+            "on": "walk.item",
+            "zoom": 2
+          },
+          "act": [
+            "walk.act",
+            "airway.constrict"
+          ],
+          "label": {
+            "on": "walk.item",
+            "text": "Exercise"
+          }
+        },
+        {
+          "say": [
+            "infections"
+          ],
+          "camera": "overview",
+          "act": "airway.constrict",
+          "note": "Respiratory infections are triggers too"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Reliever inhaler",
+      "narration": "A reliever inhaler relieves symptoms quickly. A puff of mist is breathed in, and it acts fast on the airway: the tightened muscle relaxes, and the lumen reopens. [pause] But a reliever does not treat the underlying inflammation.",
+      "world": {
+        "w": 2650,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              560,
+              620
+            ],
+            "h": 1000
+          },
+          {
+            "id": "inhaler",
+            "art": "inhaler",
+            "data": {
+              "tone": "blue"
+            },
+            "at": [
+              1140,
+              700
+            ],
+            "h": 500
+          },
+          {
+            "id": "airway",
+            "art": "bronchiole",
+            "at": [
+              2350,
+              560
+            ],
+            "h": 900,
+            "data": {}
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "quickly"
+          ],
+          "camera": {
+            "on": "inhaler",
+            "zoom": 1.6
+          },
+          "label": {
+            "on": "inhaler.mouthpiece",
+            "text": "Reliever inhaler"
+          }
+        },
+        {
+          "say": [
+            "puff"
+          ],
+          "act": "inhaler.puff"
+        },
+        {
+          "say": [
+            "relaxes"
+          ],
+          "camera": {
+            "on": "airway.muscle",
+            "zoom": 2
+          },
+          "act": "airway.relieve",
+          "label": {
+            "on": "airway.muscle",
+            "text": "Muscle relaxes"
+          }
+        },
+        {
+          "say": [
+            "reopens"
+          ],
+          "label": {
+            "on": "airway.lumen",
+            "text": "Lumen reopens"
+          }
+        },
+        {
+          "say": [
+            "inflammation"
+          ],
+          "camera": "overview",
+          "note": "Reliever: fast, but doesn't treat inflammation"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Preventer inhaler",
+      "narration": "A preventer inhaler works differently. It is taken daily, at home, not just when symptoms strike. Used every day, it reduces inflammation in the airway over time. [pause] With regular use, the swollen lining calms, day after day, even when feeling well.",
+      "world": {
+        "w": 2650,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              560,
+              620
+            ],
+            "h": 1000
+          },
+          {
+            "id": "inhaler",
+            "art": "inhaler",
+            "data": {
+              "tone": "brown"
+            },
+            "at": [
+              1140,
+              700
+            ],
+            "h": 500
+          },
+          {
+            "id": "airway",
+            "art": "bronchiole",
+            "at": [
+              2350,
+              560
+            ],
+            "h": 900
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "differently"
+          ],
+          "camera": {
+            "on": "inhaler",
+            "zoom": 1.6
+          },
+          "label": {
+            "on": "inhaler.mouthpiece",
+            "text": "Preventer inhaler"
+          }
+        },
+        {
+          "say": [
+            "daily"
+          ],
+          "act": "inhaler.puff",
+          "label": {
+            "on": "inhaler.canister",
+            "text": "Taken daily"
+          }
+        },
+        {
+          "say": [
+            "reduces"
+          ],
+          "camera": {
+            "on": "airway.mucosa",
+            "zoom": 2
+          },
+          "act": "airway.relieve",
+          "label": {
+            "on": "airway.mucosa",
+            "text": "Inflammation eases"
+          }
+        },
+        {
+          "say": [
+            "calms"
+          ],
+          "act": "person.smile",
+          "camera": "overview",
+          "note": "Preventer: daily, calms inflammation over time"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Common mistake",
+      "narration": "A common mistake sounds like this: I feel fine, so I stopped my preventer, and just use the reliever when I need it. But overreliance on the reliever, with the preventer skipped, is linked to poorer control and a higher risk of attacks. [pause] The preventer should be taken every day, even when feeling well, and inhaler technique should be checked regularly.",
+      "world": {
+        "w": 2000,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              560,
+              620
+            ],
+            "h": 1000
+          },
+          {
+            "id": "reliever",
+            "art": "inhaler",
+            "data": {
+              "tone": "blue"
+            },
+            "at": [
+              1180,
+              500
+            ],
+            "h": 460
+          },
+          {
+            "id": "preventer",
+            "art": "inhaler",
+            "data": {
+              "tone": "brown"
+            },
+            "at": [
+              1650,
+              800
+            ],
+            "h": 460
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "fine"
+          ],
+          "act": "person.smile",
+          "label": {
+            "on": "person.face",
+            "text": "\"I feel fine\""
+          }
+        },
+        {
+          "say": [
+            "stopped"
+          ],
+          "cross": "preventer",
+          "label": {
+            "on": "preventer.canister",
+            "text": "Preventer skipped"
+          }
+        },
+        {
+          "say": [
+            "reliever"
+          ],
+          "act": "reliever.puff",
+          "label": {
+            "on": "reliever.mouthpiece",
+            "text": "Reliever only"
+          }
+        },
+        {
+          "say": [
+            "attacks"
+          ],
+          "camera": "overview",
+          "act": "person.worry",
+          "note": "Skipping the preventer: more attacks"
+        },
+        {
+          "say": [
+            "regularly"
+          ],
+          "act": "preventer.puff",
+          "label": {
+            "on": "preventer.canister",
+            "text": "Take it every day"
+          }
+        }
+      ]
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "question": "During an asthma attack, three changes narrow this airway together. What are they?",
+      "visual": {
+        "art": "bronchiole",
+        "act": [
+          "constrict",
+          "inflame",
+          "mucus"
+        ]
+      },
+      "narration": "Time for a quick check. During an asthma attack, three changes narrow this airway together. What are they? Pause the video, and think it through."
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "question": "During an asthma attack, three changes narrow this airway together. What are they?",
+      "answer": "The muscle tightens, the lining swells with inflammation, and thick mucus fills the lumen.",
+      "visual": {
+        "art": "bronchiole",
+        "act": [
+          "constrict",
+          "inflame",
+          "mucus"
+        ]
+      },
+      "points": [
+        {
+          "label": "Muscle tightens around the wall",
+          "say": [
+            "tightens"
+          ]
+        },
+        {
+          "label": "Lining swells with inflammation",
+          "say": [
+            "swells"
+          ]
+        },
+        {
+          "label": "Thick mucus fills the lumen",
+          "say": [
+            "mucus"
+          ]
+        }
+      ],
+      "narration": "Together, three changes narrow the airway. The muscle tightens around the wall. The lining swells with inflammation. And thick mucus fills the lumen."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "bullets": [
+        {
+          "label": "Asthma — chronic inflammation of the airways",
+          "say": [
+            "inflammation"
+          ],
+          "color": "accent"
+        },
+        {
+          "label": "An attack — muscle tightens, lining swells, mucus fills the lumen",
+          "say": [
+            "tightens"
+          ],
+          "color": "variable"
+        },
+        {
+          "label": "Two inhalers — reliever fast, preventer daily",
+          "say": [
+            "reliever"
+          ],
+          "color": "constant"
+        }
+      ],
+      "takeaway": "Know your triggers, and use both inhalers as prescribed.",
+      "narration": "Let's recap. Asthma is chronic inflammation of the airways. In an attack, the muscle tightens, the lining swells, and mucus fills the lumen, narrowing the airway. The reliever inhaler works fast, and the preventer inhaler works daily. [pause] Know your triggers, and use both inhalers as prescribed."
+    }
+  ]
+}

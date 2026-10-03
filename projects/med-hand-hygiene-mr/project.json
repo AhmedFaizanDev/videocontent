@@ -1,0 +1,43 @@
+{
+  "name": "हातांची स्वच्छता: पाच क्षण",
+  "series": "MedSkills · Clinical Foundations",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      6.5
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "figure"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 3
+  },
+  "lang": "mr",
+  "brand": {
+    "signoff": "MedSkills सोबत शिकत राहा.",
+    "episodeLabel": "भाग "
+  },
+  "terms": [
+    "हातांची स्वच्छता",
+    "रुग्ण क्षेत्र",
+    "पाच क्षण",
+    "हँडरब",
+    "साबण-पाणी",
+    "अल्कोहोल"
+  ],
+  "output": {
+    "dir": "MedSkills/MR_Hand_Hygiene"
+  },
+  "voice": {
+    "wpm": 99
+  }
+}

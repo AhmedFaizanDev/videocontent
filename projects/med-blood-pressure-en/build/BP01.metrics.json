@@ -1,0 +1,62 @@
+{
+  "project": "med-blood-pressure-en",
+  "id": "BP01",
+  "stages": {
+    "preflight": {
+      "seconds": 4.6,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T19:40:15.776Z"
+    },
+    "voiceover": {
+      "seconds": 20.1,
+      "scenesVoiced": 8,
+      "scenes": 12,
+      "characters": 2066,
+      "audioSeconds": 261,
+      "wpm": 129,
+      "voice": "en-IN-NeerjaExpressiveNeural",
+      "at": "2026-09-26T17:14:44.900Z"
+    },
+    "render": {
+      "seconds": 238,
+      "totalSeconds": 252,
+      "frames": 9000,
+      "fps": 37.9,
+      "bytes": 68673948,
+      "at": "2026-09-26T19:44:29.079Z"
+    },
+    "qa": {
+      "seconds": 28,
+      "pass": true,
+      "failed": [],
+      "at": "2026-09-26T19:44:57.273Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-09-26T19:40:15.870Z"
+    }
+  },
+  "authoring": [
+    {
+      "label": "ledger + spec (main session)",
+      "model": "claude-opus-5-5",
+      "requests": 19,
+      "tokens": {
+        "input": 38,
+        "cacheWrite5m": 0,
+        "cacheWrite1h": 84553,
+        "cacheRead": 9458234,
+        "output": 49603
+      },
+      "costUSD": 3.5603,
+      "wallMinutes": 10.6,
+      "from": "2026-09-25T18:52:26.603Z",
+      "to": "2026-09-25T19:03:00.243Z"
+    }
+  ],
+  "lang": "en",
+  "runtimeMinutes": 5,
+  "words": 498
+}

@@ -1,0 +1,2404 @@
+{
+  "id": "V802",
+  "fps": 30,
+  "totalDurationInFrames": 5853,
+  "voice": {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "en-IN-NeerjaExpressiveNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about the first two steps of reprocessing: the bedside pre-clean and the leak test. Both are quick, and both are the steps most often cut short. By the end, you'll know what a proper bedside clean involves, you'll see how a leak test protects the scope, and you'll understand why neither can ever be skipped.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-1.mp3",
+      "voDurationInSeconds": 22.08,
+      "voDurationInFrames": 663,
+      "leadFrames": 40,
+      "tailFrames": 44,
+      "durationInFrames": 747,
+      "startFrame": 0,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.098,
+          "end": 2.358
+        },
+        {
+          "text": "the first two steps of reprocessing:",
+          "start": 2.358,
+          "end": 4.449
+        },
+        {
+          "text": "the bedside pre-clean and the leak test.",
+          "start": 4.449,
+          "end": 6.861
+        },
+        {
+          "text": "Both are quick, and both are the steps",
+          "start": 7.536,
+          "end": 9.964
+        },
+        {
+          "text": "most often cut short.",
+          "start": 9.964,
+          "end": 11.485999999999999
+        },
+        {
+          "text": "By the end, you'll know what a proper",
+          "start": 12.2,
+          "end": 14.195
+        },
+        {
+          "text": "bedside clean involves, you'll see how a",
+          "start": 14.195,
+          "end": 16.562
+        },
+        {
+          "text": "leak test protects the scope, and you'll",
+          "start": 16.562,
+          "end": 18.858
+        },
+        {
+          "text": "understand why neither can ever be",
+          "start": 18.858,
+          "end": 20.733
+        },
+        {
+          "text": "skipped.",
+          "start": 20.733,
+          "end": 21.402
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.098,
+          "end": 0.242
+        },
+        {
+          "w": "this",
+          "start": 0.254,
+          "end": 0.471
+        },
+        {
+          "w": "video",
+          "start": 0.483,
+          "end": 0.915
+        },
+        {
+          "w": "were",
+          "start": 1.252,
+          "end": 1.384
+        },
+        {
+          "w": "going",
+          "start": 1.396,
+          "end": 1.637
+        },
+        {
+          "w": "to",
+          "start": 1.649,
+          "end": 1.745
+        },
+        {
+          "w": "talk",
+          "start": 1.757,
+          "end": 2.057
+        },
+        {
+          "w": "about",
+          "start": 2.069,
+          "end": 2.346
+        },
+        {
+          "w": "the",
+          "start": 2.358,
+          "end": 2.442
+        },
+        {
+          "w": "first",
+          "start": 2.454,
+          "end": 2.814
+        },
+        {
+          "w": "two",
+          "start": 2.826,
+          "end": 2.923
+        },
+        {
+          "w": "steps",
+          "start": 2.935,
+          "end": 3.307
+        },
+        {
+          "w": "of",
+          "start": 3.319,
+          "end": 3.475
+        },
+        {
+          "w": "reprocessing",
+          "start": 3.487,
+          "end": 4.269
+        },
+        {
+          "w": "the",
+          "start": 4.449,
+          "end": 4.545
+        },
+        {
+          "w": "bedside",
+          "start": 4.557,
+          "end": 5.098
+        },
+        {
+          "w": "preclean",
+          "start": 5.11,
+          "end": 5.651
+        },
+        {
+          "w": "and",
+          "start": 5.663,
+          "end": 5.819
+        },
+        {
+          "w": "the",
+          "start": 5.831,
+          "end": 5.891
+        },
+        {
+          "w": "leak",
+          "start": 5.903,
+          "end": 6.168
+        },
+        {
+          "w": "test",
+          "start": 6.18,
+          "end": 6.661
+        },
+        {
+          "w": "both",
+          "start": 7.536,
+          "end": 7.969
+        },
+        {
+          "w": "are",
+          "start": 7.981,
+          "end": 8.089
+        },
+        {
+          "w": "quick",
+          "start": 8.101,
+          "end": 8.498
+        },
+        {
+          "w": "and",
+          "start": 8.726,
+          "end": 8.882
+        },
+        {
+          "w": "both",
+          "start": 8.894,
+          "end": 9.315
+        },
+        {
+          "w": "are",
+          "start": 9.327,
+          "end": 9.399
+        },
+        {
+          "w": "the",
+          "start": 9.411,
+          "end": 9.507
+        },
+        {
+          "w": "steps",
+          "start": 9.519,
+          "end": 9.952
+        },
+        {
+          "w": "most",
+          "start": 9.964,
+          "end": 10.288
+        },
+        {
+          "w": "often",
+          "start": 10.3,
+          "end": 10.613
+        },
+        {
+          "w": "cut",
+          "start": 10.625,
+          "end": 10.853
+        },
+        {
+          "w": "short",
+          "start": 10.865,
+          "end": 11.286
+        },
+        {
+          "w": "by",
+          "start": 12.2,
+          "end": 12.44
+        },
+        {
+          "w": "the",
+          "start": 12.452,
+          "end": 12.62
+        },
+        {
+          "w": "end",
+          "start": 12.632,
+          "end": 12.945
+        },
+        {
+          "w": "youll",
+          "start": 13.137,
+          "end": 13.329
+        },
+        {
+          "w": "know",
+          "start": 13.341,
+          "end": 13.51
+        },
+        {
+          "w": "what",
+          "start": 13.522,
+          "end": 13.714
+        },
+        {
+          "w": "a",
+          "start": 13.726,
+          "end": 13.774
+        },
+        {
+          "w": "proper",
+          "start": 13.786,
+          "end": 14.183
+        },
+        {
+          "w": "bedside",
+          "start": 14.195,
+          "end": 14.687
+        },
+        {
+          "w": "clean",
+          "start": 14.7,
+          "end": 15
+        },
+        {
+          "w": "involves",
+          "start": 15.012,
+          "end": 15.625
+        },
+        {
+          "w": "youll",
+          "start": 15.841,
+          "end": 16.034
+        },
+        {
+          "w": "see",
+          "start": 16.046,
+          "end": 16.274
+        },
+        {
+          "w": "how",
+          "start": 16.286,
+          "end": 16.49
+        },
+        {
+          "w": "a",
+          "start": 16.502,
+          "end": 16.55
+        },
+        {
+          "w": "leak",
+          "start": 16.562,
+          "end": 16.839
+        },
+        {
+          "w": "test",
+          "start": 16.851,
+          "end": 17.151
+        },
+        {
+          "w": "protects",
+          "start": 17.163,
+          "end": 17.644
+        },
+        {
+          "w": "the",
+          "start": 17.656,
+          "end": 17.752
+        },
+        {
+          "w": "scope",
+          "start": 17.764,
+          "end": 18.173
+        },
+        {
+          "w": "and",
+          "start": 18.413,
+          "end": 18.678
+        },
+        {
+          "w": "youll",
+          "start": 18.69,
+          "end": 18.846
+        },
+        {
+          "w": "understand",
+          "start": 18.858,
+          "end": 19.459
+        },
+        {
+          "w": "why",
+          "start": 19.471,
+          "end": 19.675
+        },
+        {
+          "w": "neither",
+          "start": 19.688,
+          "end": 20.024
+        },
+        {
+          "w": "can",
+          "start": 20.036,
+          "end": 20.288
+        },
+        {
+          "w": "ever",
+          "start": 20.3,
+          "end": 20.565
+        },
+        {
+          "w": "be",
+          "start": 20.577,
+          "end": 20.721
+        },
+        {
+          "w": "skipped",
+          "start": 20.733,
+          "end": 21.202
+        }
+      ],
+      "hash": "df910638ad22"
+    },
+    {
+      "index": 2,
+      "type": "hook",
+      "narration": "Reprocessing starts in the procedure room, done by the busiest person, at the busiest moment. That's exactly why it's the step most often abbreviated.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-2.mp3",
+      "voDurationInSeconds": 10.728,
+      "voDurationInFrames": 322,
+      "leadFrames": 26,
+      "tailFrames": 36,
+      "durationInFrames": 384,
+      "startFrame": 747,
+      "captions": [
+        {
+          "text": "Reprocessing starts in the procedure room,",
+          "start": 0.098,
+          "end": 2.462
+        },
+        {
+          "text": "done by the busiest person, at the busiest",
+          "start": 2.502,
+          "end": 5.146
+        },
+        {
+          "text": "moment. That's exactly why it's the step",
+          "start": 5.146,
+          "end": 8.401
+        },
+        {
+          "text": "most often abbreviated!",
+          "start": 8.401,
+          "end": 10.032
+        }
+      ],
+      "words": [
+        {
+          "w": "reprocessing",
+          "start": 0.098,
+          "end": 0.855
+        },
+        {
+          "w": "starts",
+          "start": 0.867,
+          "end": 1.252
+        },
+        {
+          "w": "in",
+          "start": 1.264,
+          "end": 1.348
+        },
+        {
+          "w": "the",
+          "start": 1.36,
+          "end": 1.432
+        },
+        {
+          "w": "procedure",
+          "start": 1.444,
+          "end": 1.937
+        },
+        {
+          "w": "room",
+          "start": 1.949,
+          "end": 2.262
+        },
+        {
+          "w": "done",
+          "start": 2.502,
+          "end": 2.814
+        },
+        {
+          "w": "by",
+          "start": 2.826,
+          "end": 3.007
+        },
+        {
+          "w": "the",
+          "start": 3.019,
+          "end": 3.115
+        },
+        {
+          "w": "busiest",
+          "start": 3.127,
+          "end": 3.632
+        },
+        {
+          "w": "person",
+          "start": 3.644,
+          "end": 4.149
+        },
+        {
+          "w": "at",
+          "start": 4.365,
+          "end": 4.497
+        },
+        {
+          "w": "the",
+          "start": 4.509,
+          "end": 4.593
+        },
+        {
+          "w": "busiest",
+          "start": 4.605,
+          "end": 5.134
+        },
+        {
+          "w": "moment",
+          "start": 5.146,
+          "end": 5.639
+        },
+        {
+          "w": "thats",
+          "start": 6.514,
+          "end": 6.827
+        },
+        {
+          "w": "exactly",
+          "start": 6.839,
+          "end": 7.404
+        },
+        {
+          "w": "why",
+          "start": 7.416,
+          "end": 7.692
+        },
+        {
+          "w": "its",
+          "start": 7.704,
+          "end": 7.921
+        },
+        {
+          "w": "the",
+          "start": 7.933,
+          "end": 8.041
+        },
+        {
+          "w": "step",
+          "start": 8.053,
+          "end": 8.389
+        },
+        {
+          "w": "most",
+          "start": 8.401,
+          "end": 8.738
+        },
+        {
+          "w": "often",
+          "start": 8.75,
+          "end": 9.05
+        },
+        {
+          "w": "abbreviated",
+          "start": 9.062,
+          "end": 9.832
+        }
+      ],
+      "hash": "da74fd02f133"
+    },
+    {
+      "index": 3,
+      "type": "steps",
+      "narration": "The pre-clean happens immediately after the procedure, before the scope leaves the room. Wipe the insertion tube. Then suction or flush the channels with the agreed solution.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-3.mp3",
+      "voDurationInSeconds": 12.36,
+      "voDurationInFrames": 371,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 441,
+      "startFrame": 1131,
+      "captions": [
+        {
+          "text": "The pre-clean happens immediately after",
+          "start": 0.098,
+          "end": 2.322
+        },
+        {
+          "text": "the procedure, before the scope leaves the",
+          "start": 2.322,
+          "end": 4.473
+        },
+        {
+          "text": "room. Wipe the insertion tube.",
+          "start": 4.473,
+          "end": 7.412
+        },
+        {
+          "text": "Then suction or flush the channels with",
+          "start": 8.113,
+          "end": 10.252
+        },
+        {
+          "text": "the agreed solution.",
+          "start": 10.252,
+          "end": 11.713999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.098,
+          "end": 0.194
+        },
+        {
+          "w": "preclean",
+          "start": 0.206,
+          "end": 0.711
+        },
+        {
+          "w": "happens",
+          "start": 0.723,
+          "end": 1.204
+        },
+        {
+          "w": "immediately",
+          "start": 1.216,
+          "end": 1.973
+        },
+        {
+          "w": "after",
+          "start": 1.985,
+          "end": 2.31
+        },
+        {
+          "w": "the",
+          "start": 2.322,
+          "end": 2.382
+        },
+        {
+          "w": "procedure",
+          "start": 2.394,
+          "end": 3.019
+        },
+        {
+          "w": "before",
+          "start": 3.247,
+          "end": 3.572
+        },
+        {
+          "w": "the",
+          "start": 3.584,
+          "end": 3.668
+        },
+        {
+          "w": "scope",
+          "start": 3.68,
+          "end": 4.052
+        },
+        {
+          "w": "leaves",
+          "start": 4.064,
+          "end": 4.377
+        },
+        {
+          "w": "the",
+          "start": 4.389,
+          "end": 4.461
+        },
+        {
+          "w": "room",
+          "start": 4.473,
+          "end": 4.858
+        },
+        {
+          "w": "wipe",
+          "start": 5.745,
+          "end": 6.082
+        },
+        {
+          "w": "the",
+          "start": 6.094,
+          "end": 6.202
+        },
+        {
+          "w": "insertion",
+          "start": 6.214,
+          "end": 6.779
+        },
+        {
+          "w": "tube",
+          "start": 6.791,
+          "end": 7.212
+        },
+        {
+          "w": "then",
+          "start": 8.113,
+          "end": 8.401
+        },
+        {
+          "w": "suction",
+          "start": 8.413,
+          "end": 8.93
+        },
+        {
+          "w": "or",
+          "start": 8.942,
+          "end": 9.05
+        },
+        {
+          "w": "flush",
+          "start": 9.062,
+          "end": 9.447
+        },
+        {
+          "w": "the",
+          "start": 9.459,
+          "end": 9.567
+        },
+        {
+          "w": "channels",
+          "start": 9.579,
+          "end": 10.108
+        },
+        {
+          "w": "with",
+          "start": 10.12,
+          "end": 10.24
+        },
+        {
+          "w": "the",
+          "start": 10.252,
+          "end": 10.361
+        },
+        {
+          "w": "agreed",
+          "start": 10.373,
+          "end": 10.805
+        },
+        {
+          "w": "solution",
+          "start": 10.817,
+          "end": 11.514
+        }
+      ],
+      "hash": "a00000da6315"
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "Why the rush? Because organic material, like blood and mucus, starts to dry inside the channels. Bacteria settle into it, and within minutes they begin forming biofilm, a protective matrix stuck to the channel wall. Once it has formed, no later step reliably removes it.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-4.mp3",
+      "voDurationInSeconds": 20.304,
+      "voDurationInFrames": 610,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 680,
+      "startFrame": 1572,
+      "captions": [
+        {
+          "text": "Why the rush? Because organic material,",
+          "start": 0.098,
+          "end": 3.5530000000000004
+        },
+        {
+          "text": "like blood and mucus, starts to dry inside",
+          "start": 3.558,
+          "end": 6.418
+        },
+        {
+          "text": "the channels. Bacteria settle into it, and",
+          "start": 6.418,
+          "end": 10.144
+        },
+        {
+          "text": "within minutes they begin forming biofilm,",
+          "start": 10.144,
+          "end": 12.428
+        },
+        {
+          "text": "a protective matrix stuck to the channel",
+          "start": 12.428,
+          "end": 14.591
+        },
+        {
+          "text": "wall. Once it has formed, no later step",
+          "start": 14.591,
+          "end": 18.149
+        },
+        {
+          "text": "reliably removes it.",
+          "start": 18.149,
+          "end": 19.622999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "why",
+          "start": 0.098,
+          "end": 0.399
+        },
+        {
+          "w": "the",
+          "start": 0.411,
+          "end": 0.495
+        },
+        {
+          "w": "rush",
+          "start": 0.507,
+          "end": 1.024
+        },
+        {
+          "w": "because",
+          "start": 1.899,
+          "end": 2.248
+        },
+        {
+          "w": "organic",
+          "start": 2.26,
+          "end": 2.752
+        },
+        {
+          "w": "material",
+          "start": 2.764,
+          "end": 3.353
+        },
+        {
+          "w": "like",
+          "start": 3.558,
+          "end": 3.774
+        },
+        {
+          "w": "blood",
+          "start": 3.786,
+          "end": 4.147
+        },
+        {
+          "w": "and",
+          "start": 4.159,
+          "end": 4.291
+        },
+        {
+          "w": "mucus",
+          "start": 4.303,
+          "end": 4.808
+        },
+        {
+          "w": "starts",
+          "start": 5.036,
+          "end": 5.481
+        },
+        {
+          "w": "to",
+          "start": 5.493,
+          "end": 5.601
+        },
+        {
+          "w": "dry",
+          "start": 5.613,
+          "end": 5.95
+        },
+        {
+          "w": "inside",
+          "start": 5.962,
+          "end": 6.406
+        },
+        {
+          "w": "the",
+          "start": 6.418,
+          "end": 6.514
+        },
+        {
+          "w": "channels",
+          "start": 6.526,
+          "end": 7.139
+        },
+        {
+          "w": "bacteria",
+          "start": 8.053,
+          "end": 8.666
+        },
+        {
+          "w": "settle",
+          "start": 8.678,
+          "end": 9.05
+        },
+        {
+          "w": "into",
+          "start": 9.062,
+          "end": 9.423
+        },
+        {
+          "w": "it",
+          "start": 9.435,
+          "end": 9.675
+        },
+        {
+          "w": "and",
+          "start": 9.928,
+          "end": 10.132
+        },
+        {
+          "w": "within",
+          "start": 10.144,
+          "end": 10.409
+        },
+        {
+          "w": "minutes",
+          "start": 10.421,
+          "end": 10.757
+        },
+        {
+          "w": "they",
+          "start": 10.769,
+          "end": 10.853
+        },
+        {
+          "w": "begin",
+          "start": 10.865,
+          "end": 11.19
+        },
+        {
+          "w": "forming",
+          "start": 11.202,
+          "end": 11.599
+        },
+        {
+          "w": "biofilm",
+          "start": 11.611,
+          "end": 12.236
+        },
+        {
+          "w": "a",
+          "start": 12.428,
+          "end": 12.512
+        },
+        {
+          "w": "protective",
+          "start": 12.524,
+          "end": 13.137
+        },
+        {
+          "w": "matrix",
+          "start": 13.149,
+          "end": 13.642
+        },
+        {
+          "w": "stuck",
+          "start": 13.654,
+          "end": 13.906
+        },
+        {
+          "w": "to",
+          "start": 13.918,
+          "end": 14.026
+        },
+        {
+          "w": "the",
+          "start": 14.038,
+          "end": 14.135
+        },
+        {
+          "w": "channel",
+          "start": 14.147,
+          "end": 14.579
+        },
+        {
+          "w": "wall",
+          "start": 14.591,
+          "end": 14.952
+        },
+        {
+          "w": "once",
+          "start": 15.829,
+          "end": 16.202
+        },
+        {
+          "w": "it",
+          "start": 16.214,
+          "end": 16.346
+        },
+        {
+          "w": "has",
+          "start": 16.358,
+          "end": 16.55
+        },
+        {
+          "w": "formed",
+          "start": 16.562,
+          "end": 17.019
+        },
+        {
+          "w": "no",
+          "start": 17.212,
+          "end": 17.428
+        },
+        {
+          "w": "later",
+          "start": 17.44,
+          "end": 17.812
+        },
+        {
+          "w": "step",
+          "start": 17.825,
+          "end": 18.137
+        },
+        {
+          "w": "reliably",
+          "start": 18.149,
+          "end": 18.666
+        },
+        {
+          "w": "removes",
+          "start": 18.678,
+          "end": 19.135
+        },
+        {
+          "w": "it",
+          "start": 19.147,
+          "end": 19.423
+        }
+      ],
+      "hash": "6cdc3e89b55d"
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Next, the leak test, before immersion, every time, without exception. Following the manufacturer's method, the scope is pressurised with air through its connector, so fluid can't get in. If the sheath or a channel is breached, the pressure reading falls, or, with the pressurised scope in clean water, a stream of bubbles shows exactly where.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-5.mp3",
+      "voDurationInSeconds": 23.76,
+      "voDurationInFrames": 713,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 783,
+      "startFrame": 2252,
+      "captions": [
+        {
+          "text": "Next, the leak test, before immersion,",
+          "start": 0.098,
+          "end": 2.882
+        },
+        {
+          "text": "every time, without exception.",
+          "start": 2.947,
+          "end": 5.2620000000000005
+        },
+        {
+          "text": "Following the manufacturer's method, the",
+          "start": 5.901,
+          "end": 8.209
+        },
+        {
+          "text": "scope is pressurised with air through its",
+          "start": 8.209,
+          "end": 10.361
+        },
+        {
+          "text": "connector, so fluid can't get in.",
+          "start": 10.361,
+          "end": 12.94
+        },
+        {
+          "text": "If the sheath or a channel is breached,",
+          "start": 13.606,
+          "end": 15.921
+        },
+        {
+          "text": "the pressure reading falls, or, with the",
+          "start": 15.962,
+          "end": 18.305
+        },
+        {
+          "text": "pressurised scope in clean water, a stream",
+          "start": 18.305,
+          "end": 21.034
+        },
+        {
+          "text": "of bubbles shows exactly where.",
+          "start": 21.034,
+          "end": 23.096999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "next",
+          "start": 0.098,
+          "end": 0.555
+        },
+        {
+          "w": "the",
+          "start": 0.735,
+          "end": 0.819
+        },
+        {
+          "w": "leak",
+          "start": 0.831,
+          "end": 1.096
+        },
+        {
+          "w": "test",
+          "start": 1.108,
+          "end": 1.564
+        },
+        {
+          "w": "before",
+          "start": 1.757,
+          "end": 2.081
+        },
+        {
+          "w": "immersion",
+          "start": 2.093,
+          "end": 2.682
+        },
+        {
+          "w": "every",
+          "start": 2.947,
+          "end": 3.271
+        },
+        {
+          "w": "time",
+          "start": 3.283,
+          "end": 3.716
+        },
+        {
+          "w": "without",
+          "start": 3.932,
+          "end": 4.365
+        },
+        {
+          "w": "exception",
+          "start": 4.377,
+          "end": 5.062
+        },
+        {
+          "w": "following",
+          "start": 5.901,
+          "end": 6.418
+        },
+        {
+          "w": "the",
+          "start": 6.43,
+          "end": 6.514
+        },
+        {
+          "w": "manufacturers",
+          "start": 6.526,
+          "end": 7.464
+        },
+        {
+          "w": "method",
+          "start": 7.476,
+          "end": 7.897
+        },
+        {
+          "w": "the",
+          "start": 8.089,
+          "end": 8.197
+        },
+        {
+          "w": "scope",
+          "start": 8.209,
+          "end": 8.606
+        },
+        {
+          "w": "is",
+          "start": 8.618,
+          "end": 8.738
+        },
+        {
+          "w": "pressurised",
+          "start": 8.75,
+          "end": 9.435
+        },
+        {
+          "w": "with",
+          "start": 9.447,
+          "end": 9.748
+        },
+        {
+          "w": "air",
+          "start": 9.76,
+          "end": 9.952
+        },
+        {
+          "w": "through",
+          "start": 9.964,
+          "end": 10.18
+        },
+        {
+          "w": "its",
+          "start": 10.192,
+          "end": 10.349
+        },
+        {
+          "w": "connector",
+          "start": 10.361,
+          "end": 11.01
+        },
+        {
+          "w": "so",
+          "start": 11.214,
+          "end": 11.466
+        },
+        {
+          "w": "fluid",
+          "start": 11.478,
+          "end": 11.887
+        },
+        {
+          "w": "cant",
+          "start": 11.899,
+          "end": 12.224
+        },
+        {
+          "w": "get",
+          "start": 12.236,
+          "end": 12.464
+        },
+        {
+          "w": "in",
+          "start": 12.476,
+          "end": 12.74
+        },
+        {
+          "w": "if",
+          "start": 13.606,
+          "end": 13.75
+        },
+        {
+          "w": "the",
+          "start": 13.762,
+          "end": 13.894
+        },
+        {
+          "w": "sheath",
+          "start": 13.906,
+          "end": 14.327
+        },
+        {
+          "w": "or",
+          "start": 14.339,
+          "end": 14.519
+        },
+        {
+          "w": "a",
+          "start": 14.531,
+          "end": 14.603
+        },
+        {
+          "w": "channel",
+          "start": 14.615,
+          "end": 15.072
+        },
+        {
+          "w": "is",
+          "start": 15.084,
+          "end": 15.204
+        },
+        {
+          "w": "breached",
+          "start": 15.216,
+          "end": 15.721
+        },
+        {
+          "w": "the",
+          "start": 15.962,
+          "end": 16.058
+        },
+        {
+          "w": "pressure",
+          "start": 16.07,
+          "end": 16.502
+        },
+        {
+          "w": "reading",
+          "start": 16.514,
+          "end": 16.839
+        },
+        {
+          "w": "falls",
+          "start": 16.851,
+          "end": 17.356
+        },
+        {
+          "w": "or",
+          "start": 17.524,
+          "end": 17.825
+        },
+        {
+          "w": "with",
+          "start": 18.077,
+          "end": 18.197
+        },
+        {
+          "w": "the",
+          "start": 18.209,
+          "end": 18.293
+        },
+        {
+          "w": "pressurised",
+          "start": 18.305,
+          "end": 18.978
+        },
+        {
+          "w": "scope",
+          "start": 18.99,
+          "end": 19.363
+        },
+        {
+          "w": "in",
+          "start": 19.375,
+          "end": 19.495
+        },
+        {
+          "w": "clean",
+          "start": 19.507,
+          "end": 19.808
+        },
+        {
+          "w": "water",
+          "start": 19.82,
+          "end": 20.3
+        },
+        {
+          "w": "a",
+          "start": 20.565,
+          "end": 20.637
+        },
+        {
+          "w": "stream",
+          "start": 20.649,
+          "end": 21.022
+        },
+        {
+          "w": "of",
+          "start": 21.034,
+          "end": 21.202
+        },
+        {
+          "w": "bubbles",
+          "start": 21.214,
+          "end": 21.671
+        },
+        {
+          "w": "shows",
+          "start": 21.683,
+          "end": 22.055
+        },
+        {
+          "w": "exactly",
+          "start": 22.067,
+          "end": 22.62
+        },
+        {
+          "w": "where",
+          "start": 22.632,
+          "end": 22.897
+        }
+      ],
+      "hash": "811b77997ccf"
+    },
+    {
+      "index": 6,
+      "type": "mistake",
+      "narration": "Here's what happens when it's skipped. A damaged scope is immersed, and fluid gets into its interior, where it can't be cleaned or disinfected. Organisms multiply inside, and the scope keeps going to patients until the damage is found some other way. Tested properly, the damaged scope is caught and taken out of use first.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-6.mp3",
+      "voDurationInSeconds": 22.488,
+      "voDurationInFrames": 675,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 745,
+      "startFrame": 3035,
+      "captions": [
+        {
+          "text": "Here's what happens when it's skipped!",
+          "start": 0.098,
+          "end": 2.149
+        },
+        {
+          "text": "A damaged scope is immersed, and fluid",
+          "start": 2.812,
+          "end": 5.288
+        },
+        {
+          "text": "gets into its interior, where it can't be",
+          "start": 5.288,
+          "end": 7.812
+        },
+        {
+          "text": "cleaned or disinfected.",
+          "start": 7.812,
+          "end": 9.431
+        },
+        {
+          "text": "Organisms multiply inside, and the scope",
+          "start": 10.12,
+          "end": 12.837
+        },
+        {
+          "text": "keeps going to patients until the damage",
+          "start": 12.837,
+          "end": 15.072
+        },
+        {
+          "text": "is found some other way.",
+          "start": 15.072,
+          "end": 16.57
+        },
+        {
+          "text": "Tested properly, the damaged scope is",
+          "start": 17.236,
+          "end": 19.567
+        },
+        {
+          "text": "caught and taken out of use first.",
+          "start": 19.567,
+          "end": 21.811
+        }
+      ],
+      "words": [
+        {
+          "w": "heres",
+          "start": 0.098,
+          "end": 0.411
+        },
+        {
+          "w": "what",
+          "start": 0.423,
+          "end": 0.639
+        },
+        {
+          "w": "happens",
+          "start": 0.651,
+          "end": 1.072
+        },
+        {
+          "w": "when",
+          "start": 1.084,
+          "end": 1.252
+        },
+        {
+          "w": "its",
+          "start": 1.264,
+          "end": 1.432
+        },
+        {
+          "w": "skipped",
+          "start": 1.444,
+          "end": 1.949
+        },
+        {
+          "w": "a",
+          "start": 2.812,
+          "end": 2.897
+        },
+        {
+          "w": "damaged",
+          "start": 2.909,
+          "end": 3.45
+        },
+        {
+          "w": "scope",
+          "start": 3.462,
+          "end": 3.822
+        },
+        {
+          "w": "is",
+          "start": 3.834,
+          "end": 3.966
+        },
+        {
+          "w": "immersed",
+          "start": 3.978,
+          "end": 4.483
+        },
+        {
+          "w": "and",
+          "start": 4.663,
+          "end": 4.88
+        },
+        {
+          "w": "fluid",
+          "start": 4.892,
+          "end": 5.276
+        },
+        {
+          "w": "gets",
+          "start": 5.288,
+          "end": 5.601
+        },
+        {
+          "w": "into",
+          "start": 5.613,
+          "end": 5.901
+        },
+        {
+          "w": "its",
+          "start": 5.913,
+          "end": 6.07
+        },
+        {
+          "w": "interior",
+          "start": 6.082,
+          "end": 6.719
+        },
+        {
+          "w": "where",
+          "start": 7.019,
+          "end": 7.176
+        },
+        {
+          "w": "it",
+          "start": 7.188,
+          "end": 7.308
+        },
+        {
+          "w": "cant",
+          "start": 7.32,
+          "end": 7.644
+        },
+        {
+          "w": "be",
+          "start": 7.656,
+          "end": 7.8
+        },
+        {
+          "w": "cleaned",
+          "start": 7.812,
+          "end": 8.245
+        },
+        {
+          "w": "or",
+          "start": 8.257,
+          "end": 8.377
+        },
+        {
+          "w": "disinfected",
+          "start": 8.389,
+          "end": 9.231
+        },
+        {
+          "w": "organisms",
+          "start": 10.12,
+          "end": 10.829
+        },
+        {
+          "w": "multiply",
+          "start": 10.841,
+          "end": 11.454
+        },
+        {
+          "w": "inside",
+          "start": 11.466,
+          "end": 12.019
+        },
+        {
+          "w": "and",
+          "start": 12.2,
+          "end": 12.356
+        },
+        {
+          "w": "the",
+          "start": 12.368,
+          "end": 12.452
+        },
+        {
+          "w": "scope",
+          "start": 12.464,
+          "end": 12.825
+        },
+        {
+          "w": "keeps",
+          "start": 12.837,
+          "end": 13.149
+        },
+        {
+          "w": "going",
+          "start": 13.161,
+          "end": 13.413
+        },
+        {
+          "w": "to",
+          "start": 13.425,
+          "end": 13.546
+        },
+        {
+          "w": "patients",
+          "start": 13.558,
+          "end": 14.183
+        },
+        {
+          "w": "until",
+          "start": 14.195,
+          "end": 14.543
+        },
+        {
+          "w": "the",
+          "start": 14.555,
+          "end": 14.651
+        },
+        {
+          "w": "damage",
+          "start": 14.663,
+          "end": 15.06
+        },
+        {
+          "w": "is",
+          "start": 15.072,
+          "end": 15.216
+        },
+        {
+          "w": "found",
+          "start": 15.228,
+          "end": 15.517
+        },
+        {
+          "w": "some",
+          "start": 15.529,
+          "end": 15.745
+        },
+        {
+          "w": "other",
+          "start": 15.757,
+          "end": 16.082
+        },
+        {
+          "w": "way",
+          "start": 16.094,
+          "end": 16.37
+        },
+        {
+          "w": "tested",
+          "start": 17.236,
+          "end": 17.632
+        },
+        {
+          "w": "properly",
+          "start": 17.644,
+          "end": 18.173
+        },
+        {
+          "w": "the",
+          "start": 18.401,
+          "end": 18.51
+        },
+        {
+          "w": "damaged",
+          "start": 18.522,
+          "end": 19.038
+        },
+        {
+          "w": "scope",
+          "start": 19.05,
+          "end": 19.411
+        },
+        {
+          "w": "is",
+          "start": 19.423,
+          "end": 19.555
+        },
+        {
+          "w": "caught",
+          "start": 19.567,
+          "end": 19.892
+        },
+        {
+          "w": "and",
+          "start": 19.904,
+          "end": 20.06
+        },
+        {
+          "w": "taken",
+          "start": 20.072,
+          "end": 20.445
+        },
+        {
+          "w": "out",
+          "start": 20.457,
+          "end": 20.661
+        },
+        {
+          "w": "of",
+          "start": 20.673,
+          "end": 20.829
+        },
+        {
+          "w": "use",
+          "start": 20.841,
+          "end": 21.118
+        },
+        {
+          "w": "first",
+          "start": 21.13,
+          "end": 21.611
+        }
+      ],
+      "hash": "4bf952c4d14a"
+    },
+    {
+      "index": 7,
+      "type": "check",
+      "narration": "Time for a knowledge check. Why is the leak test performed before immersion, every time, without exception? Pause here and think it through.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-7.mp3",
+      "voDurationInSeconds": 10.344,
+      "voDurationInFrames": 311,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 507,
+      "startFrame": 3780,
+      "captions": [
+        {
+          "text": "Time for a knowledge check.",
+          "start": 0.098,
+          "end": 1.548
+        },
+        {
+          "text": "Why is the leak test performed before",
+          "start": 2.236,
+          "end": 4.159
+        },
+        {
+          "text": "immersion, every time, without exception?",
+          "start": 4.159,
+          "end": 7.327
+        },
+        {
+          "text": "Pause here and think it through.",
+          "start": 7.993,
+          "end": 9.719
+        }
+      ],
+      "words": [
+        {
+          "w": "time",
+          "start": 0.098,
+          "end": 0.375
+        },
+        {
+          "w": "for",
+          "start": 0.387,
+          "end": 0.531
+        },
+        {
+          "w": "a",
+          "start": 0.543,
+          "end": 0.579
+        },
+        {
+          "w": "knowledge",
+          "start": 0.591,
+          "end": 1
+        },
+        {
+          "w": "check",
+          "start": 1.012,
+          "end": 1.348
+        },
+        {
+          "w": "why",
+          "start": 2.236,
+          "end": 2.572
+        },
+        {
+          "w": "is",
+          "start": 2.584,
+          "end": 2.668
+        },
+        {
+          "w": "the",
+          "start": 2.68,
+          "end": 2.764
+        },
+        {
+          "w": "leak",
+          "start": 2.776,
+          "end": 3.029
+        },
+        {
+          "w": "test",
+          "start": 3.041,
+          "end": 3.329
+        },
+        {
+          "w": "performed",
+          "start": 3.341,
+          "end": 3.822
+        },
+        {
+          "w": "before",
+          "start": 3.834,
+          "end": 4.147
+        },
+        {
+          "w": "immersion",
+          "start": 4.159,
+          "end": 4.712
+        },
+        {
+          "w": "every",
+          "start": 5,
+          "end": 5.325
+        },
+        {
+          "w": "time",
+          "start": 5.337,
+          "end": 5.769
+        },
+        {
+          "w": "without",
+          "start": 6.034,
+          "end": 6.43
+        },
+        {
+          "w": "exception",
+          "start": 6.442,
+          "end": 7.127
+        },
+        {
+          "w": "pause",
+          "start": 7.993,
+          "end": 8.257
+        },
+        {
+          "w": "here",
+          "start": 8.269,
+          "end": 8.63
+        },
+        {
+          "w": "and",
+          "start": 8.642,
+          "end": 8.834
+        },
+        {
+          "w": "think",
+          "start": 8.846,
+          "end": 9.062
+        },
+        {
+          "w": "it",
+          "start": 9.075,
+          "end": 9.171
+        },
+        {
+          "w": "through",
+          "start": 9.183,
+          "end": 9.519
+        }
+      ],
+      "hash": "2dbac7ca8716"
+    },
+    {
+      "index": 8,
+      "type": "answer",
+      "narration": "Because a scope with a breach admits fluid into its interior when immersed. That interior can't be cleaned or disinfected, so organisms multiply there, and the scope is irreparably contaminated, while still being used on patients. The test takes about a minute, and it's skipped when the list runs late.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-8.mp3",
+      "voDurationInSeconds": 20.184,
+      "voDurationInFrames": 606,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 676,
+      "startFrame": 4287,
+      "captions": [
+        {
+          "text": "Because a scope with a breach admits fluid",
+          "start": 0.098,
+          "end": 2.43
+        },
+        {
+          "text": "into its interior when immersed.",
+          "start": 2.43,
+          "end": 4.385
+        },
+        {
+          "text": "That interior can't be cleaned or",
+          "start": 5.048,
+          "end": 6.923
+        },
+        {
+          "text": "disinfected, so organisms multiply there,",
+          "start": 6.923,
+          "end": 10.048
+        },
+        {
+          "text": "and the scope is irreparably contaminated,",
+          "start": 10.048,
+          "end": 12.616
+        },
+        {
+          "text": "while still being used on patients.",
+          "start": 12.704,
+          "end": 14.875
+        },
+        {
+          "text": "The test takes about a minute, and it's",
+          "start": 15.577,
+          "end": 17.716
+        },
+        {
+          "text": "skipped when the list runs late.",
+          "start": 17.716,
+          "end": 19.527
+        }
+      ],
+      "words": [
+        {
+          "w": "because",
+          "start": 0.098,
+          "end": 0.435
+        },
+        {
+          "w": "a",
+          "start": 0.447,
+          "end": 0.507
+        },
+        {
+          "w": "scope",
+          "start": 0.519,
+          "end": 0.915
+        },
+        {
+          "w": "with",
+          "start": 0.927,
+          "end": 1.072
+        },
+        {
+          "w": "a",
+          "start": 1.084,
+          "end": 1.144
+        },
+        {
+          "w": "breach",
+          "start": 1.156,
+          "end": 1.576
+        },
+        {
+          "w": "admits",
+          "start": 1.588,
+          "end": 2.033
+        },
+        {
+          "w": "fluid",
+          "start": 2.045,
+          "end": 2.418
+        },
+        {
+          "w": "into",
+          "start": 2.43,
+          "end": 2.73
+        },
+        {
+          "w": "its",
+          "start": 2.742,
+          "end": 2.911
+        },
+        {
+          "w": "interior",
+          "start": 2.923,
+          "end": 3.512
+        },
+        {
+          "w": "when",
+          "start": 3.524,
+          "end": 3.68
+        },
+        {
+          "w": "immersed",
+          "start": 3.692,
+          "end": 4.185
+        },
+        {
+          "w": "that",
+          "start": 5.048,
+          "end": 5.325
+        },
+        {
+          "w": "interior",
+          "start": 5.337,
+          "end": 5.877
+        },
+        {
+          "w": "cant",
+          "start": 5.889,
+          "end": 6.202
+        },
+        {
+          "w": "be",
+          "start": 6.214,
+          "end": 6.346
+        },
+        {
+          "w": "cleaned",
+          "start": 6.358,
+          "end": 6.791
+        },
+        {
+          "w": "or",
+          "start": 6.803,
+          "end": 6.911
+        },
+        {
+          "w": "disinfected",
+          "start": 6.923,
+          "end": 7.776
+        },
+        {
+          "w": "so",
+          "start": 7.993,
+          "end": 8.221
+        },
+        {
+          "w": "organisms",
+          "start": 8.233,
+          "end": 8.918
+        },
+        {
+          "w": "multiply",
+          "start": 8.93,
+          "end": 9.543
+        },
+        {
+          "w": "there",
+          "start": 9.555,
+          "end": 9.916
+        },
+        {
+          "w": "and",
+          "start": 10.048,
+          "end": 10.192
+        },
+        {
+          "w": "the",
+          "start": 10.204,
+          "end": 10.288
+        },
+        {
+          "w": "scope",
+          "start": 10.3,
+          "end": 10.685
+        },
+        {
+          "w": "is",
+          "start": 10.697,
+          "end": 10.865
+        },
+        {
+          "w": "irreparably",
+          "start": 10.877,
+          "end": 11.49
+        },
+        {
+          "w": "contaminated",
+          "start": 11.502,
+          "end": 12.416
+        },
+        {
+          "w": "while",
+          "start": 12.704,
+          "end": 12.897
+        },
+        {
+          "w": "still",
+          "start": 12.909,
+          "end": 13.245
+        },
+        {
+          "w": "being",
+          "start": 13.257,
+          "end": 13.534
+        },
+        {
+          "w": "used",
+          "start": 13.546,
+          "end": 13.822
+        },
+        {
+          "w": "on",
+          "start": 13.834,
+          "end": 13.99
+        },
+        {
+          "w": "patients",
+          "start": 14.002,
+          "end": 14.675
+        },
+        {
+          "w": "the",
+          "start": 15.577,
+          "end": 15.697
+        },
+        {
+          "w": "test",
+          "start": 15.709,
+          "end": 16.046
+        },
+        {
+          "w": "takes",
+          "start": 16.058,
+          "end": 16.31
+        },
+        {
+          "w": "about",
+          "start": 16.322,
+          "end": 16.647
+        },
+        {
+          "w": "a",
+          "start": 16.659,
+          "end": 16.707
+        },
+        {
+          "w": "minute",
+          "start": 16.719,
+          "end": 17.151
+        },
+        {
+          "w": "and",
+          "start": 17.368,
+          "end": 17.524
+        },
+        {
+          "w": "its",
+          "start": 17.536,
+          "end": 17.704
+        },
+        {
+          "w": "skipped",
+          "start": 17.716,
+          "end": 18.101
+        },
+        {
+          "w": "when",
+          "start": 18.113,
+          "end": 18.245
+        },
+        {
+          "w": "the",
+          "start": 18.257,
+          "end": 18.317
+        },
+        {
+          "w": "list",
+          "start": 18.329,
+          "end": 18.654
+        },
+        {
+          "w": "runs",
+          "start": 18.666,
+          "end": 18.954
+        },
+        {
+          "w": "late",
+          "start": 18.966,
+          "end": 19.327
+        }
+      ],
+      "hash": "b0c02b6b2912"
+    },
+    {
+      "index": 9,
+      "type": "recap",
+      "narration": "Let's recap. Pre-clean at the bedside, immediately, before organic material dries and biofilm forms. Leak test before every immersion, without exception. And remember, one skipped minute can contaminate a scope for every patient after. Next, we'll look at manual cleaning and high-level disinfection.",
+      "audioFile": "audio/vo/ms-cssd-15/V802/scene-9.mp3",
+      "voDurationInSeconds": 23.112,
+      "voDurationInFrames": 694,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 890,
+      "startFrame": 4963,
+      "captions": [
+        {
+          "text": "Let's recap! Pre-clean at the bedside,",
+          "start": 0.098,
+          "end": 3.401
+        },
+        {
+          "text": "immediately, before organic material dries",
+          "start": 3.401,
+          "end": 6.25
+        },
+        {
+          "text": "and biofilm forms.",
+          "start": 6.25,
+          "end": 7.676
+        },
+        {
+          "text": "Leak test before every immersion, without",
+          "start": 8.353,
+          "end": 10.925
+        },
+        {
+          "text": "exception. And remember, one skipped",
+          "start": 10.925,
+          "end": 14.291
+        },
+        {
+          "text": "minute can contaminate a scope for every",
+          "start": 14.291,
+          "end": 16.587
+        },
+        {
+          "text": "patient after. Next, we'll look at manual",
+          "start": 16.587,
+          "end": 20.18
+        },
+        {
+          "text": "cleaning and high-level disinfection.",
+          "start": 20.18,
+          "end": 22.471999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.098,
+          "end": 0.447
+        },
+        {
+          "w": "recap",
+          "start": 0.459,
+          "end": 1.012
+        },
+        {
+          "w": "preclean",
+          "start": 1.899,
+          "end": 2.392
+        },
+        {
+          "w": "at",
+          "start": 2.404,
+          "end": 2.524
+        },
+        {
+          "w": "the",
+          "start": 2.536,
+          "end": 2.62
+        },
+        {
+          "w": "bedside",
+          "start": 2.632,
+          "end": 3.209
+        },
+        {
+          "w": "immediately",
+          "start": 3.401,
+          "end": 4.159
+        },
+        {
+          "w": "before",
+          "start": 4.375,
+          "end": 4.796
+        },
+        {
+          "w": "organic",
+          "start": 4.808,
+          "end": 5.312
+        },
+        {
+          "w": "material",
+          "start": 5.324,
+          "end": 5.793
+        },
+        {
+          "w": "dries",
+          "start": 5.805,
+          "end": 6.238
+        },
+        {
+          "w": "and",
+          "start": 6.25,
+          "end": 6.43
+        },
+        {
+          "w": "biofilm",
+          "start": 6.442,
+          "end": 6.983
+        },
+        {
+          "w": "forms",
+          "start": 6.995,
+          "end": 7.476
+        },
+        {
+          "w": "leak",
+          "start": 8.353,
+          "end": 8.63
+        },
+        {
+          "w": "test",
+          "start": 8.642,
+          "end": 8.966
+        },
+        {
+          "w": "before",
+          "start": 8.978,
+          "end": 9.375
+        },
+        {
+          "w": "every",
+          "start": 9.387,
+          "end": 9.7
+        },
+        {
+          "w": "immersion",
+          "start": 9.712,
+          "end": 10.276
+        },
+        {
+          "w": "without",
+          "start": 10.505,
+          "end": 10.913
+        },
+        {
+          "w": "exception",
+          "start": 10.925,
+          "end": 11.611
+        },
+        {
+          "w": "and",
+          "start": 12.464,
+          "end": 12.692
+        },
+        {
+          "w": "remember",
+          "start": 12.704,
+          "end": 13.317
+        },
+        {
+          "w": "one",
+          "start": 13.522,
+          "end": 13.846
+        },
+        {
+          "w": "skipped",
+          "start": 13.858,
+          "end": 14.279
+        },
+        {
+          "w": "minute",
+          "start": 14.291,
+          "end": 14.591
+        },
+        {
+          "w": "can",
+          "start": 14.603,
+          "end": 14.784
+        },
+        {
+          "w": "contaminate",
+          "start": 14.796,
+          "end": 15.493
+        },
+        {
+          "w": "a",
+          "start": 15.505,
+          "end": 15.565
+        },
+        {
+          "w": "scope",
+          "start": 15.577,
+          "end": 15.962
+        },
+        {
+          "w": "for",
+          "start": 15.974,
+          "end": 16.226
+        },
+        {
+          "w": "every",
+          "start": 16.238,
+          "end": 16.575
+        },
+        {
+          "w": "patient",
+          "start": 16.587,
+          "end": 17.079
+        },
+        {
+          "w": "after",
+          "start": 17.091,
+          "end": 17.572
+        },
+        {
+          "w": "next",
+          "start": 18.462,
+          "end": 18.978
+        },
+        {
+          "w": "well",
+          "start": 19.195,
+          "end": 19.399
+        },
+        {
+          "w": "look",
+          "start": 19.411,
+          "end": 19.591
+        },
+        {
+          "w": "at",
+          "start": 19.603,
+          "end": 19.784
+        },
+        {
+          "w": "manual",
+          "start": 19.796,
+          "end": 20.168
+        },
+        {
+          "w": "cleaning",
+          "start": 20.18,
+          "end": 20.697
+        },
+        {
+          "w": "and",
+          "start": 20.709,
+          "end": 20.853
+        },
+        {
+          "w": "highlevel",
+          "start": 20.865,
+          "end": 21.382
+        },
+        {
+          "w": "disinfection",
+          "start": 21.394,
+          "end": 22.272
+        }
+      ],
+      "hash": "ed31e489958b"
+    }
+  ]
+}

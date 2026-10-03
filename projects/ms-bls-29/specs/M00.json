@@ -1,0 +1,200 @@
+{
+  "id": "M00",
+  "title": "Basic and Advanced Cardiac Life Support — Course Introduction",
+  "outputFilename": "MedSkills_BLS_ACLS_Course_Introduction.mp4",
+  "episode": "0",
+  "module": "Course Introduction",
+  "topicGroup": "Resuscitation",
+  "length": {
+    "minutes": [
+      1,
+      1
+    ],
+    "exact": 60,
+    "holds": [
+      0.5,
+      1.4
+    ]
+  },
+  "planExempt": "course intro delivered 2026-10-01 to the client brief, before plans were required",
+  "scenes": [
+    {
+      "type": "ident",
+      "kicker": "MedSkills",
+      "seconds": 3.2
+    },
+    {
+      "type": "stage",
+      "kicker": "Welcome",
+      "drawn": true,
+      "narration": "Welcome to Basic and Advanced Cardiac Life Support.",
+      "world": {
+        "w": 2400,
+        "h": 1300,
+        "layers": [
+          {
+            "id": "heart",
+            "art": "heartExterior",
+            "at": [
+              1200,
+              660
+            ],
+            "h": 1180
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "welcome"
+          ],
+          "act": "heart.conduction",
+          "sfx": {
+            "name": "heartbeat",
+            "volume": 0.45,
+            "every": 25,
+            "count": 3
+          }
+        },
+        {
+          "say": [
+            "basic"
+          ],
+          "title": "Basic and Advanced Cardiac Life Support",
+          "sfx": {
+            "name": "title",
+            "volume": 0.4
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Why it matters",
+      "narration": "When a heart stops, what the nearest person does in the first three minutes matters most.",
+      "world": {
+        "w": 2400,
+        "h": 1300,
+        "layers": [
+          {
+            "id": "heart",
+            "art": "heartExterior",
+            "at": [
+              1200,
+              660
+            ],
+            "h": 1180
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "stops"
+          ],
+          "act": "heart.vf",
+          "camera": {
+            "on": "heart.rv",
+            "zoom": 1.25
+          }
+        },
+        {
+          "say": [
+            "nearest"
+          ],
+          "act": "heart.compress",
+          "camera": "overview"
+        },
+        {
+          "say": [
+            "three"
+          ],
+          "note": "The first three minutes matter most"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "kicker": "What's covered",
+      "narration": "Eleven modules take you from recognition and compressions to airway, defibrillation, the arrest algorithm and post-arrest care.",
+      "mermaid": "flowchart LR\n A[Recognition] --> B[Compressions] --> C[Airway] --> D[Defibrillation] --> E[Arrest algorithm] --> F[Post-arrest care]"
+    },
+    {
+      "type": "flow",
+      "kicker": "Learning outcomes",
+      "narration": "You'll learn to recognise arrest in seconds, compress well, defibrillate safely, and work as one team.",
+      "mermaid": "flowchart LR\n A[Recognise arrest in seconds]:::red --> B[Compress well] --> C[Defibrillate safely] --> D[Work as one team]:::teal"
+    },
+    {
+      "type": "table",
+      "kicker": "Who it's for",
+      "narration": "The core is for all clinical staff. The advanced modules are for code teams.",
+      "columns": [
+        "Modules",
+        "For"
+      ],
+      "rows": [
+        [
+          "1–5 · the core",
+          "All clinical staff"
+        ],
+        [
+          "6–11 · advanced",
+          "Code teams"
+        ]
+      ],
+      "say": [
+        [
+          "core"
+        ],
+        [
+          "advanced"
+        ]
+      ],
+      "widths": [
+        1,
+        1.4
+      ]
+    },
+    {
+      "type": "flow",
+      "kicker": "How it helps",
+      "narration": "It prepares you for hands-on training, and earns you a MedSkills certificate.",
+      "mermaid": "flowchart LR\n A([This course: knowledge]) --> B[Hands-on training: skills]\n A --> C[MedSkills certificate]:::teal",
+      "steps": [
+        {
+          "show": [
+            "A"
+          ],
+          "say": [
+            "prepares"
+          ]
+        },
+        {
+          "show": [
+            "B"
+          ],
+          "focus": "B",
+          "say": [
+            "hands"
+          ]
+        },
+        {
+          "show": [
+            "C"
+          ],
+          "focus": "C",
+          "say": [
+            "certificate"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "outro",
+      "kicker": "MedSkills",
+      "transition": "slide",
+      "narration": "Keep learning with MedSkills."
+    }
+  ]
+}

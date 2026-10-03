@@ -1,0 +1,13 @@
+{
+  "project": "audit-probe",
+  "id": "P01",
+  "stages": {
+    "preflight": {
+      "seconds": 2.2,
+      "batch": 1,
+      "errors": 2,
+      "at": "2026-10-03T21:47:22.911Z"
+    }
+  },
+  "authoring": []
+}

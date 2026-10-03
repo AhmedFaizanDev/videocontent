@@ -1,0 +1,204 @@
+{
+  "id": "V802",
+  "section": "MS-CSSD-15: CSSD & Sterilization Practices",
+  "module": "Module 10 · Flexible Endoscope Reprocessing",
+  "topicGroup": "Flexible Endoscope Reprocessing",
+  "title": "Bedside Pre-clean and the Leak Test",
+  "outputFilename": "M10_V2_Bedside_Pre-clean_and_Leak_Test.mp4",
+  "episode": "10.2",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "narration": "In this video, we're going to talk about the first two steps of reprocessing: the bedside pre-clean and the leak test. Both are quick, and both are the steps most often cut short. By the end, you'll know what a proper bedside clean involves, you'll see how a leak test protects the scope, and you'll understand why neither can ever be skipped.",
+      "topic": "Bedside Pre-clean and the Leak Test",
+      "subtitle": "MS-CSSD-15 · Module 10",
+      "learn": [
+        "what a proper bedside clean involves",
+        "how a leak test protects the scope",
+        "why neither can ever be skipped"
+      ]
+    },
+    {
+      "type": "hook",
+      "kicker": "The hook",
+      "narration": "Reprocessing starts in the procedure room, done by the busiest person, at the busiest moment. That's exactly why it's the step most often abbreviated.",
+      "headline": "The busiest person. The busiest moment.",
+      "question": "That's when reprocessing begins.",
+      "highlight": [
+        "busiest"
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Bedside pre-clean",
+      "narration": "The pre-clean happens immediately after the procedure, before the scope leaves the room. Wipe the insertion tube. Then suction or flush the channels with the agreed solution.",
+      "title": "Bedside pre-clean",
+      "steps": [
+        {
+          "label": "Immediately",
+          "detail": "Before the scope leaves the room."
+        },
+        {
+          "label": "Wipe",
+          "detail": "The insertion tube, from the control end down."
+        },
+        {
+          "label": "Flush",
+          "detail": "Suction the channels with the agreed solution."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Why the rush",
+      "narration": "Why the rush? Because organic material, like blood and mucus, starts to dry inside the channels. Bacteria settle into it, and within minutes they begin forming biofilm, a protective matrix stuck to the channel wall. Once it has formed, no later step reliably removes it.",
+      "title": "Inside a channel, minutes after use",
+      "art": "biofilm",
+      "callouts": [
+        {
+          "anchor": "soil",
+          "label": "Organic material",
+          "text": "blood and mucus, drying",
+          "say": [
+            "organic"
+          ]
+        },
+        {
+          "anchor": "bacteria",
+          "label": "Bacteria settle",
+          "text": "high bacterial load",
+          "say": [
+            "bacteria"
+          ]
+        },
+        {
+          "anchor": "matrix",
+          "label": "Biofilm forms",
+          "text": "a protective matrix",
+          "say": [
+            "biofilm",
+            "matrix"
+          ]
+        },
+        {
+          "anchor": "wall",
+          "label": "Stuck to the wall",
+          "text": "no later step reliably removes it",
+          "say": [
+            "wall"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "The leak test",
+      "narration": "Next, the leak test, before immersion, every time, without exception. Following the manufacturer's method, the scope is pressurised with air through its connector, so fluid can't get in. If the sheath or a channel is breached, the pressure reading falls, or, with the pressurised scope in clean water, a stream of bubbles shows exactly where.",
+      "title": "The leak test",
+      "art": "leaktest",
+      "callouts": [
+        {
+          "anchor": "tester",
+          "label": "Pressurise the scope",
+          "text": "manufacturer's method",
+          "say": [
+            "pressurised"
+          ]
+        },
+        {
+          "anchor": "sheath",
+          "label": "Sheath and channels",
+          "text": "any breach is found",
+          "say": [
+            "sheath"
+          ]
+        },
+        {
+          "anchor": "gauge",
+          "label": "Pressure falls",
+          "text": "the reading drops",
+          "say": [
+            "pressure",
+            "reading"
+          ]
+        },
+        {
+          "anchor": "bubbles",
+          "label": "Bubbles",
+          "text": "show exactly where",
+          "say": [
+            "bubbles"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "mistake",
+      "kicker": "Common failure",
+      "narration": "Here's what happens when it's skipped. A damaged scope is immersed, and fluid gets into its interior, where it can't be cleaned or disinfected. Organisms multiply inside, and the scope keeps going to patients until the damage is found some other way. Tested properly, the damaged scope is caught and taken out of use first.",
+      "title": "Skipping the leak test",
+      "wrong": {
+        "label": "List running late",
+        "lines": [
+          "Leak test: skipped",
+          "Damaged scope immersed",
+          "Fluid inside the scope",
+          "Used on patients"
+        ]
+      },
+      "right": {
+        "label": "Every time",
+        "lines": [
+          "Leak test: FAIL",
+          "Not immersed",
+          "Taken out of use",
+          "Sent for repair"
+        ]
+      },
+      "note": "The test takes about a minute."
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "Time for a knowledge check. Why is the leak test performed before immersion, every time, without exception? Pause here and think it through.",
+      "question": "Why is the leak test performed before immersion, every time, without exception?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "narration": "Because a scope with a breach admits fluid into its interior when immersed. That interior can't be cleaned or disinfected, so organisms multiply there, and the scope is irreparably contaminated, while still being used on patients. The test takes about a minute, and it's skipped when the list runs late.",
+      "question": "Why is the leak test performed before immersion, every time, without exception?",
+      "answer": "A breached scope admits fluid inside, where it can't be cleaned.",
+      "points": [
+        "Organisms multiply inside",
+        "The scope keeps reaching patients",
+        "Takes about a minute"
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Pre-clean at the bedside, immediately, before organic material dries and biofilm forms. Leak test before every immersion, without exception. And remember, one skipped minute can contaminate a scope for every patient after. Next, we'll look at manual cleaning and high-level disinfection.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Pre-clean — immediately, at the bedside",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Leak test — before every immersion",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Never skipped — even when the list runs late",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "One minute of testing protects every patient after.",
+      "signoff": "Every scope. Every step. Every time."
+    }
+  ]
+}

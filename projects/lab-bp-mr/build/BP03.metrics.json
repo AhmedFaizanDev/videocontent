@@ -1,0 +1,65 @@
+{
+  "project": "lab-bp-mr",
+  "id": "BP03",
+  "stages": {
+    "preflight": {
+      "seconds": 5.2,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T09:29:20.237Z"
+    },
+    "voiceover": {
+      "seconds": 35.5,
+      "scenesVoiced": 12,
+      "scenes": 12,
+      "characters": 3172,
+      "audioSeconds": 338.6,
+      "wpm": 95,
+      "voice": "mr-IN-AarohiNeural",
+      "at": "2026-09-26T08:45:42.437Z"
+    },
+    "render": {
+      "seconds": 293,
+      "totalSeconds": 311,
+      "frames": 11591,
+      "fps": 39.6,
+      "bytes": 57209421,
+      "at": "2026-09-26T08:50:55.357Z"
+    },
+    "qa": {
+      "seconds": 47,
+      "pass": false,
+      "failed": [
+        "no frozen picture"
+      ],
+      "at": "2026-09-26T08:51:42.886Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-09-26T09:29:20.323Z"
+    }
+  },
+  "authoring": [
+    {
+      "label": "translate (lesson-author agent)",
+      "model": "claude-opus-5-5",
+      "requests": 11,
+      "tokens": {
+        "input": 22,
+        "cacheWrite5m": 69426,
+        "cacheWrite1h": 0,
+        "cacheRead": 454897,
+        "output": 11587
+      },
+      "costUSD": 0.6699,
+      "wallMinutes": 7.7,
+      "from": "2026-09-26T08:19:17.420Z",
+      "to": "2026-09-26T08:26:58.607Z",
+      "outputEstimated": true
+    }
+  ],
+  "lang": "mr",
+  "runtimeMinutes": 6.44,
+  "words": 492
+}

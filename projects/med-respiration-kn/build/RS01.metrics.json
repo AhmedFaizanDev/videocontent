@@ -1,0 +1,63 @@
+{
+  "project": "med-respiration-kn",
+  "id": "RS01",
+  "stages": {
+    "preflight": {
+      "seconds": 5.3,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T09:28:26.131Z"
+    },
+    "voiceover": {
+      "seconds": 35.1,
+      "scenesVoiced": 12,
+      "scenes": 12,
+      "characters": 3361,
+      "audioSeconds": 331,
+      "wpm": 83,
+      "voice": "kn-IN-SapnaNeural",
+      "at": "2026-09-25T19:37:02.697Z"
+    },
+    "render": {
+      "seconds": 344,
+      "totalSeconds": 364,
+      "frames": 11365,
+      "fps": 33,
+      "bytes": 72871951,
+      "at": "2026-09-25T20:12:18.514Z"
+    },
+    "qa": {
+      "seconds": 53,
+      "pass": true,
+      "failed": [],
+      "at": "2026-09-25T20:13:12.171Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-09-26T09:28:26.216Z"
+    }
+  },
+  "authoring": [
+    {
+      "label": "spec (subagent)",
+      "model": "claude-opus-5-5",
+      "requests": 47,
+      "tokens": {
+        "input": 94,
+        "cacheWrite5m": 225062,
+        "cacheWrite1h": 0,
+        "cacheRead": 7383865,
+        "output": 16171
+      },
+      "costUSD": 2.9259,
+      "wallMinutes": 17.1,
+      "from": "2026-09-25T19:02:13.434Z",
+      "to": "2026-09-25T19:19:17.703Z",
+      "outputEstimated": true
+    }
+  ],
+  "lang": "kn",
+  "runtimeMinutes": 6.31,
+  "words": 404
+}

@@ -1,0 +1,324 @@
+{
+  "id": "F07",
+  "title": "Medical packs",
+  "outputFilename": "F07_medical_packs_2.mp4",
+  "module": "Pack · medical",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Medical Packs",
+      "subtitle": "Fixture · every anchor",
+      "narration": "In this video, we're going to talk about the medical illustration packs. By the end, you'll see every illustration, you'll see every anchor.",
+      "learn": [
+        "every illustration",
+        "every anchor"
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "insulin",
+      "art": "insulin",
+      "data": {},
+      "narration": "Pack figure. We now look at pancreas carefully. We now look at glucose carefully. We now look at insulin carefully. We now look at receptor carefully. We now look at uptake carefully. We now look at cell carefully.",
+      "title": "Pack art: insulin",
+      "callouts": [
+        {
+          "anchor": "pancreas",
+          "label": "pancreas label",
+          "text": "pancreas note text",
+          "say": [
+            "pancreas"
+          ]
+        },
+        {
+          "anchor": "glucose",
+          "label": "glucose label",
+          "text": "glucose note text",
+          "say": [
+            "glucose"
+          ]
+        },
+        {
+          "anchor": "insulin",
+          "label": "insulin label",
+          "text": "insulin note text",
+          "say": [
+            "insulin"
+          ]
+        },
+        {
+          "anchor": "receptor",
+          "label": "receptor label",
+          "text": "receptor note text",
+          "say": [
+            "receptor"
+          ]
+        },
+        {
+          "anchor": "uptake",
+          "label": "uptake label",
+          "text": "uptake note text",
+          "say": [
+            "uptake"
+          ]
+        },
+        {
+          "anchor": "cell",
+          "label": "cell label",
+          "text": "cell note text",
+          "say": [
+            "cell"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "lungs",
+      "art": "lungs",
+      "data": {},
+      "narration": "Pack figure. We now look at trachea carefully. We now look at bronchi carefully. We now look at lungs carefully. We now look at alveoli carefully. We now look at diaphragm carefully. We now look at inhale carefully.",
+      "title": "Pack art: lungs",
+      "callouts": [
+        {
+          "anchor": "trachea",
+          "label": "trachea label",
+          "text": "trachea note text",
+          "say": [
+            "trachea"
+          ]
+        },
+        {
+          "anchor": "bronchi",
+          "label": "bronchi label",
+          "text": "bronchi note text",
+          "say": [
+            "bronchi"
+          ]
+        },
+        {
+          "anchor": "lungs",
+          "label": "lungs label",
+          "text": "lungs note text",
+          "say": [
+            "lungs"
+          ]
+        },
+        {
+          "anchor": "alveoli",
+          "label": "alveoli label",
+          "text": "alveoli note text",
+          "say": [
+            "alveoli"
+          ]
+        },
+        {
+          "anchor": "diaphragm",
+          "label": "diaphragm label",
+          "text": "diaphragm note text",
+          "say": [
+            "diaphragm"
+          ]
+        },
+        {
+          "anchor": "inhale",
+          "label": "inhale label",
+          "text": "inhale note text",
+          "say": [
+            "inhale"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "alveolus",
+      "art": "alveolus",
+      "data": {},
+      "narration": "Pack figure. We now look at alveolus carefully. We now look at wall carefully. We now look at rbc carefully. We now look at capillary carefully. We now look at oxygen carefully. We now look at co2 carefully.",
+      "title": "Pack art: alveolus",
+      "callouts": [
+        {
+          "anchor": "alveolus",
+          "label": "alveolus label",
+          "text": "alveolus note text",
+          "say": [
+            "alveolus"
+          ]
+        },
+        {
+          "anchor": "wall",
+          "label": "wall label",
+          "text": "wall note text",
+          "say": [
+            "wall"
+          ]
+        },
+        {
+          "anchor": "rbc",
+          "label": "rbc label",
+          "text": "rbc note text",
+          "say": [
+            "rbc"
+          ]
+        },
+        {
+          "anchor": "capillary",
+          "label": "capillary label",
+          "text": "capillary note text",
+          "say": [
+            "capillary"
+          ]
+        },
+        {
+          "anchor": "oxygen",
+          "label": "oxygen label",
+          "text": "oxygen note text",
+          "say": [
+            "oxygen"
+          ]
+        },
+        {
+          "anchor": "co2",
+          "label": "co2 label",
+          "text": "co2 note text",
+          "say": [
+            "co2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "moments",
+      "art": "moments",
+      "data": {},
+      "narration": "Pack figure. We now look at zone carefully. We now look at m1 carefully. We now look at m2 carefully. We now look at m3 carefully. We now look at m4 carefully. We now look at m5 carefully.",
+      "title": "Pack art: moments",
+      "callouts": [
+        {
+          "anchor": "zone",
+          "label": "zone label",
+          "text": "zone note text",
+          "say": [
+            "zone"
+          ]
+        },
+        {
+          "anchor": "m1",
+          "label": "m1 label",
+          "text": "m1 note text",
+          "say": [
+            "m1"
+          ]
+        },
+        {
+          "anchor": "m2",
+          "label": "m2 label",
+          "text": "m2 note text",
+          "say": [
+            "m2"
+          ]
+        },
+        {
+          "anchor": "m3",
+          "label": "m3 label",
+          "text": "m3 note text",
+          "say": [
+            "m3"
+          ]
+        },
+        {
+          "anchor": "m4",
+          "label": "m4 label",
+          "text": "m4 note text",
+          "say": [
+            "m4"
+          ]
+        },
+        {
+          "anchor": "m5",
+          "label": "m5 label",
+          "text": "m5 note text",
+          "say": [
+            "m5"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "hand",
+      "art": "hand",
+      "data": {},
+      "narration": "Pack figure. We now look at germs carefully. We now look at palms carefully. We now look at between carefully. We now look at thumbs carefully. We now look at tips carefully. We now look at clean carefully.",
+      "title": "Pack art: hand",
+      "callouts": [
+        {
+          "anchor": "germs",
+          "label": "germs label",
+          "text": "germs note text",
+          "say": [
+            "germs"
+          ]
+        },
+        {
+          "anchor": "palms",
+          "label": "palms label",
+          "text": "palms note text",
+          "say": [
+            "palms"
+          ]
+        },
+        {
+          "anchor": "between",
+          "label": "between label",
+          "text": "between note text",
+          "say": [
+            "between"
+          ]
+        },
+        {
+          "anchor": "thumbs",
+          "label": "thumbs label",
+          "text": "thumbs note text",
+          "say": [
+            "thumbs"
+          ]
+        },
+        {
+          "anchor": "tips",
+          "label": "tips label",
+          "text": "tips note text",
+          "say": [
+            "tips"
+          ]
+        },
+        {
+          "anchor": "clean",
+          "label": "clean label",
+          "text": "clean note text",
+          "say": [
+            "clean"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "To recap, every illustration renders, and every anchor is heard.",
+      "bullets": [
+        {
+          "label": "Illustrations — render"
+        },
+        {
+          "label": "Anchors — heard"
+        }
+      ],
+      "takeaway": "Every anchor, every art."
+    }
+  ]
+}

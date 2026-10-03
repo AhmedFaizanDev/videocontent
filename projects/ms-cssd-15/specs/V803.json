@@ -1,0 +1,222 @@
+{
+  "id": "V803",
+  "section": "MS-CSSD-15: CSSD & Sterilization Practices",
+  "module": "Module 10 · Flexible Endoscope Reprocessing",
+  "topicGroup": "Flexible Endoscope Reprocessing",
+  "title": "Manual Cleaning and High-Level Disinfection",
+  "outputFilename": "M10_V3_Manual_Cleaning_and_High-Level_Disinfection.mp4",
+  "episode": "10.3",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "narration": "In this video, we're going to talk about manual cleaning and high-level disinfection. This is where most of the work happens, and where one step can't be replaced by any other. By the end, you'll know the seven steps of manual cleaning, you'll see why brushing removes biofilm, and you'll learn how disinfection is done right.",
+      "topic": "Manual Cleaning and High-Level Disinfection",
+      "subtitle": "MS-CSSD-15 · Module 10",
+      "learn": [
+        "the seven steps of manual cleaning",
+        "why brushing removes biofilm",
+        "how disinfection is done right"
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Manual cleaning",
+      "narration": "Manual cleaning follows seven steps. Immerse the scope fully in the correct detergent, at the correct dilution and temperature. Wipe the exterior and insertion tube. Brush every channel, with the right brush for that model, until it comes out visibly clean. Then brush the ports, valves and elevator recess.",
+      "title": "Manual cleaning",
+      "steps": [
+        {
+          "label": "Immerse",
+          "detail": "Correct detergent, dilution, temperature."
+        },
+        {
+          "label": "Wipe",
+          "detail": "Exterior and insertion tube."
+        },
+        {
+          "label": "Brush every channel",
+          "detail": "Right brush, until it emerges clean."
+        },
+        {
+          "label": "Brush ports & valves",
+          "detail": "And the elevator recess."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Manual cleaning",
+      "narration": "Flush every channel with detergent, then water, using that model's connectors. Remove, clean and disinfect, or replace, the valves, buttons and caps, which are often forgotten. Finally, inspect for damage and residual soil.",
+      "title": "Manual cleaning, continued",
+      "startAt": 4,
+      "steps": [
+        {
+          "label": "Flush",
+          "detail": "Detergent, then water, correct connectors."
+        },
+        {
+          "label": "Removable parts",
+          "detail": "Valves, buttons, caps: often forgotten.",
+          "say": [
+            "remove"
+          ]
+        },
+        {
+          "label": "Inspect",
+          "detail": "Damage and residual soil."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Why brushing",
+      "narration": "Why is brushing irreplaceable? Biofilm is organisms embedded in a protective matrix on the channel wall. Disinfectant can't penetrate it. Soaking and flushing flow straight over it. Only a brush, physically contacting the wall, breaks it up. That's why brush diameter matters.",
+      "title": "Only a brush removes biofilm",
+      "art": "biofilm",
+      "callouts": [
+        {
+          "anchor": "matrix",
+          "label": "Protective matrix",
+          "text": "organisms embedded inside",
+          "say": [
+            "matrix"
+          ]
+        },
+        {
+          "anchor": "disinfectant",
+          "label": "Disinfectant",
+          "text": "cannot penetrate it",
+          "say": [
+            "disinfectant"
+          ]
+        },
+        {
+          "anchor": "flow",
+          "label": "Soaking and flushing",
+          "text": "flow straight over it",
+          "say": [
+            "soaking",
+            "flushing"
+          ]
+        },
+        {
+          "anchor": "brush",
+          "label": "The brush",
+          "text": "physical contact breaks it up",
+          "say": [
+            "brush"
+          ]
+        }
+      ],
+      "caption": "Omitting brushing has repeatedly caused outbreaks."
+    },
+    {
+      "type": "figure",
+      "kicker": "Disinfection",
+      "narration": "Next, high-level disinfection, usually in an automated endoscope reprocessor with validated cycles, giving a recorded, repeatable process. Every channel must be attached with the correct connector for that model. A channel that isn't connected isn't perfused, and isn't disinfected.",
+      "title": "The automated endoscope reprocessor",
+      "art": "aer",
+      "callouts": [
+        {
+          "anchor": "reprocessor",
+          "label": "Automated reprocessor",
+          "text": "validated, recorded cycles",
+          "say": [
+            "automated",
+            "reprocessor"
+          ]
+        },
+        {
+          "anchor": "record",
+          "label": "Recorded cycle",
+          "text": "repeatable and traceable",
+          "say": [
+            "recorded"
+          ]
+        },
+        {
+          "anchor": "connectors",
+          "label": "Correct connectors",
+          "text": "for that model",
+          "say": [
+            "connector"
+          ]
+        },
+        {
+          "anchor": "missing",
+          "label": "Not connected",
+          "text": "not perfused, not disinfected",
+          "say": [
+            "perfused"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "The disinfectant",
+      "narration": "The disinfectant must be at the correct concentration, temperature and contact time. Its minimum effective concentration is tested per protocol, and the solution is discarded at expiry, regardless of the test result. And never overload the reprocessor.",
+      "title": "Getting the chemistry right",
+      "steps": [
+        {
+          "label": "Correct conditions",
+          "detail": "Concentration, temperature, contact time."
+        },
+        {
+          "label": "Tested",
+          "detail": "Minimum effective concentration, per protocol."
+        },
+        {
+          "label": "Discarded at expiry",
+          "detail": "Regardless of the test result."
+        },
+        {
+          "label": "Never overloaded",
+          "detail": "Only scopes validated together."
+        }
+      ]
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "Time for a knowledge check. Why can chemical disinfection not substitute for channel brushing? Pause here and think it through.",
+      "question": "Why can chemical disinfection not substitute for channel brushing?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "narration": "Because biofilm, organisms embedded in a protective matrix on the channel wall, resists chemical disinfection entirely. Soaking and flushing don't remove it either. Only a brush that physically contacts the wall disrupts it. That's why brushing is specified per channel, and why omitting it has caused outbreaks.",
+      "question": "Why can chemical disinfection not substitute for channel brushing?",
+      "answer": "Biofilm resists chemical disinfection. Only a brush disrupts it.",
+      "points": [
+        "Soaking and flushing don't remove it",
+        "Brush every channel, correct diameter",
+        "Omitting it has caused outbreaks"
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Manual cleaning has seven steps, and brushing every channel is the one that removes biofilm. High-level disinfection needs validated cycles, the correct connectors and the correct chemistry. Next, we'll cover rinsing, drying, storage, and the duodenoscope elevator.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Seven steps — brushing is irreplaceable",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Connectors — every channel perfused",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Chemistry — concentration, temperature, time",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "Disinfection can only finish what cleaning started.",
+      "signoff": "Every scope. Every step. Every time."
+    }
+  ]
+}

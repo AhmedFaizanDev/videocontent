@@ -1,0 +1,153 @@
+{
+ "parts": [
+  {
+   "name": "person",
+   "usedBy": [
+    "M00"
+   ]
+  },
+  {
+   "name": "heart",
+   "usedBy": [
+    "M00"
+   ]
+  },
+  {
+   "name": "graph",
+   "usedBy": [
+    "M00"
+   ]
+  },
+  {
+   "name": "ecgmonitor",
+   "pack": "resus",
+   "usedBy": [
+    "M00"
+   ],
+   "what": "A bedside patient monitor seen from the front: dark screen with a glowing green ECG trace sweeping left to right (drawn by a moving pen, erasing ahead like a real monitor), a heart-rate box on the right showing the rate as digits, a small pulsing heart icon. Reusable for every resuscitation, cardiology and ICU lesson.",
+   "anchors": [
+    "screen",
+    "trace",
+    "rate",
+    "heart"
+   ],
+   "events": [
+    "vf \u2014 the rhythm degenerates into ventricular fibrillation: fast chaotic irregular squiggle, rate box shows dashes, screen edge flashes red",
+    "flatline \u2014 the trace goes flat (asystole), rate shows 0, everything dims except a flat green line",
+    "shock \u2014 a bright white-blue flash across the screen with a single tall spike artefact",
+    "rosc \u2014 a normal sinus rhythm returns (regular PQRST complexes), rate box shows a normal value, heart icon beats again"
+   ],
+   "accuracy": "ECG shapes: normal sinus rhythm = regular P wave, narrow QRS spike, T wave; VF = chaotic irregular waveform without identifiable complexes; asystole = flat line. Default state: normal sinus rhythm ~75/min. Monitor colours: dark screen, green ECG (medical convention)."
+  },
+  {
+   "name": "aed",
+   "pack": "resus",
+   "usedBy": [
+    "M00"
+   ],
+   "what": "An automated external defibrillator: a rounded bright (green or yellow) case with a handle, a large shock button with a lightning-bolt symbol, a small screen, and two electrode pads connected by cables. Reusable for BLS/AED lessons.",
+   "anchors": [
+    "device",
+    "button",
+    "screen",
+    "pads"
+   ],
+   "events": [
+    "pads \u2014 the two pads unfold/slide out on their cables",
+    "charge \u2014 the device charges: the shock button glows and pulses brighter and faster, a charge bar fills on the screen",
+    "shock \u2014 the button flashes, an energy burst travels along both cables to the pads"
+   ],
+   "accuracy": "AED: pads placed on the bare chest, the device analyses the rhythm and advises a shock; a shock button with a lightning bolt symbol is the universal convention. No brand names or text on the device."
+  },
+  {
+   "name": "cpr",
+   "pack": "cpr",
+   "usedBy": [
+    "M00"
+   ],
+   "what": "Chest compressions seen from the side: a patient's chest (torso in profile, lying flat) with a rescuer's two stacked hands (heel of the hand) on the centre of the chest and straight arms from above. Reusable for every CPR lesson.",
+   "anchors": [
+    "hands",
+    "chest",
+    "sternum",
+    "heart"
+   ],
+   "events": [
+    "compress \u2014 rhythmic compressions start: hands push the chest down and let it fully recoil, at 100 to 120 per minute (about 2 compressions per second at 30 fps = one every ~16 frames), a small depth arrow shows the push; blood-flow pulse glow from the heart area on each push",
+    "stop \u2014 compressions stop, hands rest"
+   ],
+   "accuracy": "High-quality CPR (AHA 2025): rate 100 to 120 per minute, full chest recoil between compressions, hands on the centre of the chest (lower half of the sternum), arms straight. Depth for adults at least 5 cm \u2014 show a clear push but no numbers on screen."
+  },
+  {
+   "name": "timer",
+   "pack": "cpr",
+   "usedBy": [
+    "M00"
+   ],
+   "what": "A countdown ring: a large circular progress ring (like a stopwatch bezel) with minutes:seconds digits in the centre (Html text, digits only), counting down from 3:00. Reusable wherever a lesson needs time pressure.",
+   "anchors": [
+    "ring",
+    "digits"
+   ],
+   "events": [
+    "start \u2014 the ring starts sweeping and the digits count down (1 real second per second at 30 fps; the ring colour shifts from teal to amber to red as it runs)",
+    "stop \u2014 the countdown freezes and the ring settles green"
+   ],
+   "accuracy": "Starts at 3:00 (the handbook's 'first three minutes'). Digits only, no words."
+  },
+  {
+   "name": "ward",
+   "pack": "ward",
+   "usedBy": [
+    "M00"
+   ],
+   "what": "A hospital ward bay at night, side view, wide (about 1600\u00d7700): floor line, a hospital bed (adjustable frame, wheels, raised head section, pillow) with a patient asleep under a blanket (head on pillow, face in profile), an IV pole with a drip bag and line to the patient's arm, a privacy curtain on a ceiling rail at one side, a window with a night sky and a crescent moon, a wall oxygen/suction panel above the bed head. Calm, quiet, beautiful; flat colours that also read on a dark stage. Reusable for any in-hospital lesson.",
+   "anchors": [
+    "bed",
+    "patient",
+    "face",
+    "chest",
+    "iv",
+    "window",
+    "curtain",
+    "panel"
+   ],
+   "events": [
+    "alarm \u2014 a red alarm light pulses across the bay (red wash on the wall and bed, pulsing ~2 per second), the patient's face goes pale",
+    "calm \u2014 the red wash fades and a soft warm night light returns"
+   ],
+   "accuracy": "Standard adult hospital bed and bay equipment; no text or brand."
+  },
+  {
+   "name": "chain",
+   "pack": "diagrams2",
+   "usedBy": [
+    "M00"
+   ],
+   "what": "A horizontal chain of interlocking oval links (like a real metal chain, flat-illustrated), data.n links (3\u20138, default 6), each link large enough to hold a small icon slot in its centre (leave the centre empty; labels are added by the lesson). Reusable: the Chain of Survival, any sequence where every step depends on the previous one.",
+   "anchors": [
+    "l1",
+    "l2",
+    "l3",
+    "l4",
+    "l5",
+    "l6",
+    "l7",
+    "l8",
+    "all"
+   ],
+   "events": [
+    "l1 \u2014 link 1 lights: fills with the brand gradient colour and glows",
+    "l2 \u2014 link 2 lights",
+    "l3 \u2014 link 3 lights",
+    "l4 \u2014 link 4 lights",
+    "l5 \u2014 link 5 lights",
+    "l6 \u2014 link 6 lights",
+    "l7 \u2014 link 7 lights",
+    "l8 \u2014 link 8 lights",
+    "all \u2014 every link lights in sequence left to right as a quick wave, then the whole chain pulses once"
+   ],
+   "accuracy": "Anchors for links beyond data.n sit on the last link. Links in the default state are soft grey outlines, clearly 'not yet'."
+  }
+ ]
+}

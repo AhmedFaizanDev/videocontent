@@ -1,0 +1,1132 @@
+{
+  "id": "F05",
+  "fps": 30,
+  "totalDurationInFrames": 2735,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about the heart pack, a living illustration used across scenes. It keeps going a little longer here. By the end, you'll see the anatomy, and you'll see the valves.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 15.143877551020408,
+      "voDurationInFrames": 455,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.05,
+          "end": 3.17
+        },
+        {
+          "text": "the heart pack, a living illustration used",
+          "start": 3.17,
+          "end": 6.442
+        },
+        {
+          "text": "across scenes. It keeps going a little",
+          "start": 6.442,
+          "end": 9.41
+        },
+        {
+          "text": "longer here. By the end, you'll see the",
+          "start": 9.41,
+          "end": 12.454
+        },
+        {
+          "text": "anatomy, and you'll see the valves.",
+          "start": 12.454,
+          "end": 15.394
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.278
+        },
+        {
+          "w": "this",
+          "start": 0.278,
+          "end": 0.659
+        },
+        {
+          "w": "video",
+          "start": 0.659,
+          "end": 1.191
+        },
+        {
+          "w": "were",
+          "start": 1.191,
+          "end": 1.648
+        },
+        {
+          "w": "going",
+          "start": 1.648,
+          "end": 2.105
+        },
+        {
+          "w": "to",
+          "start": 2.105,
+          "end": 2.333
+        },
+        {
+          "w": "talk",
+          "start": 2.333,
+          "end": 2.713
+        },
+        {
+          "w": "about",
+          "start": 2.713,
+          "end": 3.17
+        },
+        {
+          "w": "the",
+          "start": 3.17,
+          "end": 3.474
+        },
+        {
+          "w": "heart",
+          "start": 3.474,
+          "end": 3.931
+        },
+        {
+          "w": "pack",
+          "start": 3.931,
+          "end": 4.388
+        },
+        {
+          "w": "a",
+          "start": 4.388,
+          "end": 4.54
+        },
+        {
+          "w": "living",
+          "start": 4.54,
+          "end": 5.073
+        },
+        {
+          "w": "illustration",
+          "start": 5.073,
+          "end": 6.062
+        },
+        {
+          "w": "used",
+          "start": 6.062,
+          "end": 6.442
+        },
+        {
+          "w": "across",
+          "start": 6.442,
+          "end": 6.975
+        },
+        {
+          "w": "scenes",
+          "start": 6.975,
+          "end": 7.584
+        },
+        {
+          "w": "it",
+          "start": 7.584,
+          "end": 7.812
+        },
+        {
+          "w": "keeps",
+          "start": 7.812,
+          "end": 8.269
+        },
+        {
+          "w": "going",
+          "start": 8.269,
+          "end": 8.725
+        },
+        {
+          "w": "a",
+          "start": 8.725,
+          "end": 8.878
+        },
+        {
+          "w": "little",
+          "start": 8.878,
+          "end": 9.41
+        },
+        {
+          "w": "longer",
+          "start": 9.41,
+          "end": 9.943
+        },
+        {
+          "w": "here",
+          "start": 9.943,
+          "end": 10.4
+        },
+        {
+          "w": "by",
+          "start": 10.4,
+          "end": 10.628
+        },
+        {
+          "w": "the",
+          "start": 10.628,
+          "end": 10.932
+        },
+        {
+          "w": "end",
+          "start": 10.932,
+          "end": 11.313
+        },
+        {
+          "w": "youll",
+          "start": 11.313,
+          "end": 11.845
+        },
+        {
+          "w": "see",
+          "start": 11.845,
+          "end": 12.15
+        },
+        {
+          "w": "the",
+          "start": 12.15,
+          "end": 12.454
+        },
+        {
+          "w": "anatomy",
+          "start": 12.454,
+          "end": 13.139
+        },
+        {
+          "w": "and",
+          "start": 13.139,
+          "end": 13.444
+        },
+        {
+          "w": "youll",
+          "start": 13.444,
+          "end": 13.976
+        },
+        {
+          "w": "see",
+          "start": 13.976,
+          "end": 14.281
+        },
+        {
+          "w": "the",
+          "start": 14.281,
+          "end": 14.585
+        },
+        {
+          "w": "valves",
+          "start": 14.585,
+          "end": 15.194
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 522,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "figure",
+      "narration": "The right atrium receives blood. Below it, the right ventricle. The left atrium sits opposite. The thick left ventricle does the heavy work. The septum divides them. And the aorta leaves at the top.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 14.777551020408165,
+      "voDurationInFrames": 444,
+      "captions": [
+        {
+          "text": "The right atrium receives blood.",
+          "start": 0.05,
+          "end": 2.501
+        },
+        {
+          "text": "Below it, the right ventricle.",
+          "start": 2.501,
+          "end": 4.803
+        },
+        {
+          "text": "The left atrium sits opposite.",
+          "start": 4.803,
+          "end": 7.105
+        },
+        {
+          "text": "The thick left ventricle does the heavy",
+          "start": 7.105,
+          "end": 10.075
+        },
+        {
+          "text": "work. The septum divides them.",
+          "start": 10.075,
+          "end": 12.377
+        },
+        {
+          "text": "And the aorta leaves at the top.",
+          "start": 12.377,
+          "end": 15.027999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.05,
+          "end": 0.347
+        },
+        {
+          "w": "right",
+          "start": 0.347,
+          "end": 0.793
+        },
+        {
+          "w": "atrium",
+          "start": 0.793,
+          "end": 1.312
+        },
+        {
+          "w": "receives",
+          "start": 1.312,
+          "end": 1.981
+        },
+        {
+          "w": "blood",
+          "start": 1.981,
+          "end": 2.501
+        },
+        {
+          "w": "below",
+          "start": 2.501,
+          "end": 2.946
+        },
+        {
+          "w": "it",
+          "start": 2.946,
+          "end": 3.243
+        },
+        {
+          "w": "the",
+          "start": 3.243,
+          "end": 3.54
+        },
+        {
+          "w": "right",
+          "start": 3.54,
+          "end": 3.986
+        },
+        {
+          "w": "ventricle",
+          "start": 3.986,
+          "end": 4.803
+        },
+        {
+          "w": "the",
+          "start": 4.803,
+          "end": 5.1
+        },
+        {
+          "w": "left",
+          "start": 5.1,
+          "end": 5.471
+        },
+        {
+          "w": "atrium",
+          "start": 5.471,
+          "end": 5.991
+        },
+        {
+          "w": "sits",
+          "start": 5.991,
+          "end": 6.362
+        },
+        {
+          "w": "opposite",
+          "start": 6.362,
+          "end": 7.105
+        },
+        {
+          "w": "the",
+          "start": 7.105,
+          "end": 7.402
+        },
+        {
+          "w": "thick",
+          "start": 7.402,
+          "end": 7.847
+        },
+        {
+          "w": "left",
+          "start": 7.847,
+          "end": 8.218
+        },
+        {
+          "w": "ventricle",
+          "start": 8.218,
+          "end": 8.961
+        },
+        {
+          "w": "does",
+          "start": 8.961,
+          "end": 9.332
+        },
+        {
+          "w": "the",
+          "start": 9.332,
+          "end": 9.629
+        },
+        {
+          "w": "heavy",
+          "start": 9.629,
+          "end": 10.075
+        },
+        {
+          "w": "work",
+          "start": 10.075,
+          "end": 10.521
+        },
+        {
+          "w": "the",
+          "start": 10.521,
+          "end": 10.818
+        },
+        {
+          "w": "septum",
+          "start": 10.818,
+          "end": 11.337
+        },
+        {
+          "w": "divides",
+          "start": 11.337,
+          "end": 11.931
+        },
+        {
+          "w": "them",
+          "start": 11.931,
+          "end": 12.377
+        },
+        {
+          "w": "and",
+          "start": 12.377,
+          "end": 12.674
+        },
+        {
+          "w": "the",
+          "start": 12.674,
+          "end": 12.971
+        },
+        {
+          "w": "aorta",
+          "start": 12.971,
+          "end": 13.417
+        },
+        {
+          "w": "leaves",
+          "start": 13.417,
+          "end": 13.936
+        },
+        {
+          "w": "at",
+          "start": 13.936,
+          "end": 14.159
+        },
+        {
+          "w": "the",
+          "start": 14.159,
+          "end": 14.456
+        },
+        {
+          "w": "top",
+          "start": 14.456,
+          "end": 14.828
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 500,
+      "startFrame": 522
+    },
+    {
+      "index": 3,
+      "type": "figure",
+      "narration": "The tricuspid valve opens into the right ventricle. The pulmonary valve guards the exit. The mitral valve opens on the left. The aortic valve leads out to the body. And tendon cords hold the leaflets.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 15.035714285714285,
+      "voDurationInFrames": 452,
+      "captions": [
+        {
+          "text": "The tricuspid valve opens into the right",
+          "start": 0.05,
+          "end": 3.117
+        },
+        {
+          "text": "ventricle. The pulmonary valve guards the",
+          "start": 3.117,
+          "end": 6.259
+        },
+        {
+          "text": "exit. The mitral valve opens on the left.",
+          "start": 6.259,
+          "end": 9.401
+        },
+        {
+          "text": "The aortic valve leads out to the body.",
+          "start": 9.401,
+          "end": 12.393
+        },
+        {
+          "text": "And tendon cords hold the leaflets.",
+          "start": 12.393,
+          "end": 15.286
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.05,
+          "end": 0.349
+        },
+        {
+          "w": "tricuspid",
+          "start": 0.349,
+          "end": 1.097
+        },
+        {
+          "w": "valve",
+          "start": 1.097,
+          "end": 1.546
+        },
+        {
+          "w": "opens",
+          "start": 1.546,
+          "end": 1.995
+        },
+        {
+          "w": "into",
+          "start": 1.995,
+          "end": 2.369
+        },
+        {
+          "w": "the",
+          "start": 2.369,
+          "end": 2.668
+        },
+        {
+          "w": "right",
+          "start": 2.668,
+          "end": 3.117
+        },
+        {
+          "w": "ventricle",
+          "start": 3.117,
+          "end": 3.94
+        },
+        {
+          "w": "the",
+          "start": 3.94,
+          "end": 4.239
+        },
+        {
+          "w": "pulmonary",
+          "start": 4.239,
+          "end": 4.987
+        },
+        {
+          "w": "valve",
+          "start": 4.987,
+          "end": 5.436
+        },
+        {
+          "w": "guards",
+          "start": 5.436,
+          "end": 5.96
+        },
+        {
+          "w": "the",
+          "start": 5.96,
+          "end": 6.259
+        },
+        {
+          "w": "exit",
+          "start": 6.259,
+          "end": 6.708
+        },
+        {
+          "w": "the",
+          "start": 6.708,
+          "end": 7.007
+        },
+        {
+          "w": "mitral",
+          "start": 7.007,
+          "end": 7.53
+        },
+        {
+          "w": "valve",
+          "start": 7.53,
+          "end": 7.979
+        },
+        {
+          "w": "opens",
+          "start": 7.979,
+          "end": 8.428
+        },
+        {
+          "w": "on",
+          "start": 8.428,
+          "end": 8.653
+        },
+        {
+          "w": "the",
+          "start": 8.653,
+          "end": 8.952
+        },
+        {
+          "w": "left",
+          "start": 8.952,
+          "end": 9.401
+        },
+        {
+          "w": "the",
+          "start": 9.401,
+          "end": 9.7
+        },
+        {
+          "w": "aortic",
+          "start": 9.7,
+          "end": 10.223
+        },
+        {
+          "w": "valve",
+          "start": 10.223,
+          "end": 10.672
+        },
+        {
+          "w": "leads",
+          "start": 10.672,
+          "end": 11.121
+        },
+        {
+          "w": "out",
+          "start": 11.121,
+          "end": 11.42
+        },
+        {
+          "w": "to",
+          "start": 11.42,
+          "end": 11.645
+        },
+        {
+          "w": "the",
+          "start": 11.645,
+          "end": 11.944
+        },
+        {
+          "w": "body",
+          "start": 11.944,
+          "end": 12.393
+        },
+        {
+          "w": "and",
+          "start": 12.393,
+          "end": 12.692
+        },
+        {
+          "w": "tendon",
+          "start": 12.692,
+          "end": 13.216
+        },
+        {
+          "w": "cords",
+          "start": 13.216,
+          "end": 13.664
+        },
+        {
+          "w": "hold",
+          "start": 13.664,
+          "end": 14.038
+        },
+        {
+          "w": "the",
+          "start": 14.038,
+          "end": 14.338
+        },
+        {
+          "w": "leaflets",
+          "start": 14.338,
+          "end": 15.086
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 508,
+      "startFrame": 1022
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "On the right side, blood returns from the body and is pumped to the lungs. On the left side, blood returns from the lungs and is pumped out to the body.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 12.953061224489797,
+      "voDurationInFrames": 389,
+      "captions": [
+        {
+          "text": "On the right side, blood returns from the",
+          "start": 0.05,
+          "end": 3.606
+        },
+        {
+          "text": "body and is pumped to the lungs.",
+          "start": 3.606,
+          "end": 6.4
+        },
+        {
+          "text": "On the left side, blood returns from the",
+          "start": 6.4,
+          "end": 9.871
+        },
+        {
+          "text": "lungs and is pumped out to the body.",
+          "start": 9.871,
+          "end": 13.203
+        }
+      ],
+      "words": [
+        {
+          "w": "on",
+          "start": 0.05,
+          "end": 0.304
+        },
+        {
+          "w": "the",
+          "start": 0.304,
+          "end": 0.643
+        },
+        {
+          "w": "right",
+          "start": 0.643,
+          "end": 1.151
+        },
+        {
+          "w": "side",
+          "start": 1.151,
+          "end": 1.659
+        },
+        {
+          "w": "blood",
+          "start": 1.659,
+          "end": 2.167
+        },
+        {
+          "w": "returns",
+          "start": 2.167,
+          "end": 2.844
+        },
+        {
+          "w": "from",
+          "start": 2.844,
+          "end": 3.267
+        },
+        {
+          "w": "the",
+          "start": 3.267,
+          "end": 3.606
+        },
+        {
+          "w": "body",
+          "start": 3.606,
+          "end": 4.029
+        },
+        {
+          "w": "and",
+          "start": 4.029,
+          "end": 4.368
+        },
+        {
+          "w": "is",
+          "start": 4.368,
+          "end": 4.622
+        },
+        {
+          "w": "pumped",
+          "start": 4.622,
+          "end": 5.214
+        },
+        {
+          "w": "to",
+          "start": 5.214,
+          "end": 5.468
+        },
+        {
+          "w": "the",
+          "start": 5.468,
+          "end": 5.807
+        },
+        {
+          "w": "lungs",
+          "start": 5.807,
+          "end": 6.4
+        },
+        {
+          "w": "on",
+          "start": 6.4,
+          "end": 6.654
+        },
+        {
+          "w": "the",
+          "start": 6.654,
+          "end": 6.992
+        },
+        {
+          "w": "left",
+          "start": 6.992,
+          "end": 7.415
+        },
+        {
+          "w": "side",
+          "start": 7.415,
+          "end": 7.923
+        },
+        {
+          "w": "blood",
+          "start": 7.923,
+          "end": 8.431
+        },
+        {
+          "w": "returns",
+          "start": 8.431,
+          "end": 9.109
+        },
+        {
+          "w": "from",
+          "start": 9.109,
+          "end": 9.532
+        },
+        {
+          "w": "the",
+          "start": 9.532,
+          "end": 9.871
+        },
+        {
+          "w": "lungs",
+          "start": 9.871,
+          "end": 10.379
+        },
+        {
+          "w": "and",
+          "start": 10.379,
+          "end": 10.717
+        },
+        {
+          "w": "is",
+          "start": 10.717,
+          "end": 10.971
+        },
+        {
+          "w": "pumped",
+          "start": 10.971,
+          "end": 11.564
+        },
+        {
+          "w": "out",
+          "start": 11.564,
+          "end": 11.902
+        },
+        {
+          "w": "to",
+          "start": 11.902,
+          "end": 12.156
+        },
+        {
+          "w": "the",
+          "start": 12.156,
+          "end": 12.495
+        },
+        {
+          "w": "body",
+          "start": 12.495,
+          "end": 13.003
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 445,
+      "startFrame": 1530
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "The beat starts in the sinoatrial node. It pauses at the atrioventricular node. It runs down the bundle of His. Then along the bundle branches. And finally through the Purkinje fibres.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 13.403061224489797,
+      "voDurationInFrames": 403,
+      "captions": [
+        {
+          "text": "The beat starts in the sinoatrial node.",
+          "start": 0.05,
+          "end": 2.948
+        },
+        {
+          "text": "It pauses at the atrioventricular node.",
+          "start": 2.948,
+          "end": 5.846
+        },
+        {
+          "text": "It runs down the bundle of His.",
+          "start": 5.846,
+          "end": 8.164
+        },
+        {
+          "text": "Then along the bundle branches.",
+          "start": 8.164,
+          "end": 10.483
+        },
+        {
+          "text": "And finally through the Purkinje fibres.",
+          "start": 10.483,
+          "end": 13.652999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.05,
+          "end": 0.34
+        },
+        {
+          "w": "beat",
+          "start": 0.34,
+          "end": 0.702
+        },
+        {
+          "w": "starts",
+          "start": 0.702,
+          "end": 1.209
+        },
+        {
+          "w": "in",
+          "start": 1.209,
+          "end": 1.427
+        },
+        {
+          "w": "the",
+          "start": 1.427,
+          "end": 1.716
+        },
+        {
+          "w": "sinoatrial",
+          "start": 1.716,
+          "end": 2.513
+        },
+        {
+          "w": "node",
+          "start": 2.513,
+          "end": 2.948
+        },
+        {
+          "w": "it",
+          "start": 2.948,
+          "end": 3.165
+        },
+        {
+          "w": "pauses",
+          "start": 3.165,
+          "end": 3.672
+        },
+        {
+          "w": "at",
+          "start": 3.672,
+          "end": 3.89
+        },
+        {
+          "w": "the",
+          "start": 3.89,
+          "end": 4.18
+        },
+        {
+          "w": "atrioventricular",
+          "start": 4.18,
+          "end": 5.411
+        },
+        {
+          "w": "node",
+          "start": 5.411,
+          "end": 5.846
+        },
+        {
+          "w": "it",
+          "start": 5.846,
+          "end": 6.063
+        },
+        {
+          "w": "runs",
+          "start": 6.063,
+          "end": 6.426
+        },
+        {
+          "w": "down",
+          "start": 6.426,
+          "end": 6.788
+        },
+        {
+          "w": "the",
+          "start": 6.788,
+          "end": 7.078
+        },
+        {
+          "w": "bundle",
+          "start": 7.078,
+          "end": 7.585
+        },
+        {
+          "w": "of",
+          "start": 7.585,
+          "end": 7.802
+        },
+        {
+          "w": "his",
+          "start": 7.802,
+          "end": 8.164
+        },
+        {
+          "w": "then",
+          "start": 8.164,
+          "end": 8.527
+        },
+        {
+          "w": "along",
+          "start": 8.527,
+          "end": 8.961
+        },
+        {
+          "w": "the",
+          "start": 8.961,
+          "end": 9.251
+        },
+        {
+          "w": "bundle",
+          "start": 9.251,
+          "end": 9.758
+        },
+        {
+          "w": "branches",
+          "start": 9.758,
+          "end": 10.483
+        },
+        {
+          "w": "and",
+          "start": 10.483,
+          "end": 10.772
+        },
+        {
+          "w": "finally",
+          "start": 10.772,
+          "end": 11.352
+        },
+        {
+          "w": "through",
+          "start": 11.352,
+          "end": 11.932
+        },
+        {
+          "w": "the",
+          "start": 11.932,
+          "end": 12.221
+        },
+        {
+          "w": "purkinje",
+          "start": 12.221,
+          "end": 12.873
+        },
+        {
+          "w": "fibres",
+          "start": 12.873,
+          "end": 13.453
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 459,
+      "startFrame": 1975
+    },
+    {
+      "index": 6,
+      "type": "recap",
+      "narration": "Let's recap. Anatomy, valves, flow and conduction, all from one illustration.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 4.789795918367346,
+      "voDurationInFrames": 144,
+      "captions": [
+        {
+          "text": "Let's recap. Anatomy, valves, flow and",
+          "start": 0.05,
+          "end": 2.445
+        },
+        {
+          "text": "conduction, all from one illustration.",
+          "start": 2.445,
+          "end": 5.04
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.05,
+          "end": 0.418
+        },
+        {
+          "w": "recap",
+          "start": 0.418,
+          "end": 0.848
+        },
+        {
+          "w": "anatomy",
+          "start": 0.848,
+          "end": 1.401
+        },
+        {
+          "w": "valves",
+          "start": 1.401,
+          "end": 1.892
+        },
+        {
+          "w": "flow",
+          "start": 1.892,
+          "end": 2.199
+        },
+        {
+          "w": "and",
+          "start": 2.199,
+          "end": 2.445
+        },
+        {
+          "w": "conduction",
+          "start": 2.445,
+          "end": 3.182
+        },
+        {
+          "w": "all",
+          "start": 3.182,
+          "end": 3.427
+        },
+        {
+          "w": "from",
+          "start": 3.427,
+          "end": 3.734
+        },
+        {
+          "w": "one",
+          "start": 3.734,
+          "end": 3.98
+        },
+        {
+          "w": "illustration",
+          "start": 3.98,
+          "end": 4.84
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 301,
+      "startFrame": 2434
+    }
+  ]
+}

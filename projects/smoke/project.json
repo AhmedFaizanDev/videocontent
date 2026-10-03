@@ -1,0 +1,11 @@
+{
+  "name": "Smoke test",
+  "series": "Pipeline smoke",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      0.3,
+      2
+    ]
+  }
+}

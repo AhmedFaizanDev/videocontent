@@ -1,0 +1,699 @@
+{
+  "id": "F10",
+  "fps": 30,
+  "totalDurationInFrames": 1700,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to test the stage. By the end, you'll see every camera move, and every verb.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 8.46326530612245,
+      "voDurationInFrames": 254,
+      "captions": [
+        {
+          "text": "In this video, we're going to test the",
+          "start": 0.05,
+          "end": 3.224
+        },
+        {
+          "text": "stage. By the end, you'll see every camera",
+          "start": 3.224,
+          "end": 6.723
+        },
+        {
+          "text": "move, and every verb.",
+          "start": 6.723,
+          "end": 8.713
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.294
+        },
+        {
+          "w": "this",
+          "start": 0.294,
+          "end": 0.701
+        },
+        {
+          "w": "video",
+          "start": 0.701,
+          "end": 1.271
+        },
+        {
+          "w": "were",
+          "start": 1.271,
+          "end": 1.759
+        },
+        {
+          "w": "going",
+          "start": 1.759,
+          "end": 2.247
+        },
+        {
+          "w": "to",
+          "start": 2.247,
+          "end": 2.491
+        },
+        {
+          "w": "test",
+          "start": 2.491,
+          "end": 2.898
+        },
+        {
+          "w": "the",
+          "start": 2.898,
+          "end": 3.224
+        },
+        {
+          "w": "stage",
+          "start": 3.224,
+          "end": 3.793
+        },
+        {
+          "w": "by",
+          "start": 3.793,
+          "end": 4.038
+        },
+        {
+          "w": "the",
+          "start": 4.038,
+          "end": 4.363
+        },
+        {
+          "w": "end",
+          "start": 4.363,
+          "end": 4.77
+        },
+        {
+          "w": "youll",
+          "start": 4.77,
+          "end": 5.34
+        },
+        {
+          "w": "see",
+          "start": 5.34,
+          "end": 5.665
+        },
+        {
+          "w": "every",
+          "start": 5.665,
+          "end": 6.153
+        },
+        {
+          "w": "camera",
+          "start": 6.153,
+          "end": 6.723
+        },
+        {
+          "w": "move",
+          "start": 6.723,
+          "end": 7.211
+        },
+        {
+          "w": "and",
+          "start": 7.211,
+          "end": 7.537
+        },
+        {
+          "w": "every",
+          "start": 7.537,
+          "end": 8.025
+        },
+        {
+          "w": "verb",
+          "start": 8.025,
+          "end": 8.513
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 321,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "stage",
+      "narration": "Here is the whole world. First the heart beats. Its left side pumps blood. The blood enters the artery, whose wall stretches. At the peak we read the systolic pressure. Now the lungs appear on the right. Blood streams from the heart through the artery into the lungs. Inside, oxygen crosses a thin wall. This part is wrong, so we strike it. Focus only on the heart now. Finally the lungs leave, and we pull back.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 32.67040816326531,
+      "voDurationInFrames": 981,
+      "captions": [
+        {
+          "text": "Here is the whole world.",
+          "start": 0.05,
+          "end": 2.028
+        },
+        {
+          "text": "First the heart beats.",
+          "start": 2.028,
+          "end": 3.847
+        },
+        {
+          "text": "Its left side pumps blood.",
+          "start": 3.847,
+          "end": 5.983
+        },
+        {
+          "text": "The blood enters the artery, whose wall",
+          "start": 5.983,
+          "end": 9.147
+        },
+        {
+          "text": "stretches. At the peak we read the",
+          "start": 9.147,
+          "end": 11.916
+        },
+        {
+          "text": "systolic pressure.",
+          "start": 11.916,
+          "end": 13.419
+        },
+        {
+          "text": "Now the lungs appear on the right.",
+          "start": 13.419,
+          "end": 16.187
+        },
+        {
+          "text": "Blood streams from the heart through the",
+          "start": 16.187,
+          "end": 19.431
+        },
+        {
+          "text": "artery into the lungs.",
+          "start": 19.431,
+          "end": 21.25
+        },
+        {
+          "text": "Inside, oxygen crosses a thin wall.",
+          "start": 21.25,
+          "end": 24.098
+        },
+        {
+          "text": "This part is wrong, so we strike it.",
+          "start": 24.098,
+          "end": 27.025
+        },
+        {
+          "text": "Focus only on the heart now.",
+          "start": 27.025,
+          "end": 29.319
+        },
+        {
+          "text": "Finally the lungs leave, and we pull back.",
+          "start": 29.319,
+          "end": 32.92
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.05,
+          "end": 0.446
+        },
+        {
+          "w": "is",
+          "start": 0.446,
+          "end": 0.683
+        },
+        {
+          "w": "the",
+          "start": 0.683,
+          "end": 0.999
+        },
+        {
+          "w": "whole",
+          "start": 0.999,
+          "end": 1.474
+        },
+        {
+          "w": "world",
+          "start": 1.474,
+          "end": 2.028
+        },
+        {
+          "w": "first",
+          "start": 2.028,
+          "end": 2.502
+        },
+        {
+          "w": "the",
+          "start": 2.502,
+          "end": 2.819
+        },
+        {
+          "w": "heart",
+          "start": 2.819,
+          "end": 3.293
+        },
+        {
+          "w": "beats",
+          "start": 3.293,
+          "end": 3.847
+        },
+        {
+          "w": "its",
+          "start": 3.847,
+          "end": 4.163
+        },
+        {
+          "w": "left",
+          "start": 4.163,
+          "end": 4.559
+        },
+        {
+          "w": "side",
+          "start": 4.559,
+          "end": 4.955
+        },
+        {
+          "w": "pumps",
+          "start": 4.955,
+          "end": 5.429
+        },
+        {
+          "w": "blood",
+          "start": 5.429,
+          "end": 5.983
+        },
+        {
+          "w": "the",
+          "start": 5.983,
+          "end": 6.299
+        },
+        {
+          "w": "blood",
+          "start": 6.299,
+          "end": 6.774
+        },
+        {
+          "w": "enters",
+          "start": 6.774,
+          "end": 7.328
+        },
+        {
+          "w": "the",
+          "start": 7.328,
+          "end": 7.644
+        },
+        {
+          "w": "artery",
+          "start": 7.644,
+          "end": 8.277
+        },
+        {
+          "w": "whose",
+          "start": 8.277,
+          "end": 8.752
+        },
+        {
+          "w": "wall",
+          "start": 8.752,
+          "end": 9.147
+        },
+        {
+          "w": "stretches",
+          "start": 9.147,
+          "end": 10.017
+        },
+        {
+          "w": "at",
+          "start": 10.017,
+          "end": 10.255
+        },
+        {
+          "w": "the",
+          "start": 10.255,
+          "end": 10.571
+        },
+        {
+          "w": "peak",
+          "start": 10.571,
+          "end": 10.967
+        },
+        {
+          "w": "we",
+          "start": 10.967,
+          "end": 11.204
+        },
+        {
+          "w": "read",
+          "start": 11.204,
+          "end": 11.599
+        },
+        {
+          "w": "the",
+          "start": 11.599,
+          "end": 11.916
+        },
+        {
+          "w": "systolic",
+          "start": 11.916,
+          "end": 12.628
+        },
+        {
+          "w": "pressure",
+          "start": 12.628,
+          "end": 13.419
+        },
+        {
+          "w": "now",
+          "start": 13.419,
+          "end": 13.735
+        },
+        {
+          "w": "the",
+          "start": 13.735,
+          "end": 14.052
+        },
+        {
+          "w": "lungs",
+          "start": 14.052,
+          "end": 14.526
+        },
+        {
+          "w": "appear",
+          "start": 14.526,
+          "end": 15.08
+        },
+        {
+          "w": "on",
+          "start": 15.08,
+          "end": 15.317
+        },
+        {
+          "w": "the",
+          "start": 15.317,
+          "end": 15.634
+        },
+        {
+          "w": "right",
+          "start": 15.634,
+          "end": 16.187
+        },
+        {
+          "w": "blood",
+          "start": 16.187,
+          "end": 16.662
+        },
+        {
+          "w": "streams",
+          "start": 16.662,
+          "end": 17.295
+        },
+        {
+          "w": "from",
+          "start": 17.295,
+          "end": 17.69
+        },
+        {
+          "w": "the",
+          "start": 17.69,
+          "end": 18.007
+        },
+        {
+          "w": "heart",
+          "start": 18.007,
+          "end": 18.481
+        },
+        {
+          "w": "through",
+          "start": 18.481,
+          "end": 19.114
+        },
+        {
+          "w": "the",
+          "start": 19.114,
+          "end": 19.431
+        },
+        {
+          "w": "artery",
+          "start": 19.431,
+          "end": 19.984
+        },
+        {
+          "w": "into",
+          "start": 19.984,
+          "end": 20.38
+        },
+        {
+          "w": "the",
+          "start": 20.38,
+          "end": 20.696
+        },
+        {
+          "w": "lungs",
+          "start": 20.696,
+          "end": 21.25
+        },
+        {
+          "w": "inside",
+          "start": 21.25,
+          "end": 21.883
+        },
+        {
+          "w": "oxygen",
+          "start": 21.883,
+          "end": 22.437
+        },
+        {
+          "w": "crosses",
+          "start": 22.437,
+          "end": 23.07
+        },
+        {
+          "w": "a",
+          "start": 23.07,
+          "end": 23.228
+        },
+        {
+          "w": "thin",
+          "start": 23.228,
+          "end": 23.623
+        },
+        {
+          "w": "wall",
+          "start": 23.623,
+          "end": 24.098
+        },
+        {
+          "w": "this",
+          "start": 24.098,
+          "end": 24.493
+        },
+        {
+          "w": "part",
+          "start": 24.493,
+          "end": 24.889
+        },
+        {
+          "w": "is",
+          "start": 24.889,
+          "end": 25.126
+        },
+        {
+          "w": "wrong",
+          "start": 25.126,
+          "end": 25.68
+        },
+        {
+          "w": "so",
+          "start": 25.68,
+          "end": 25.917
+        },
+        {
+          "w": "we",
+          "start": 25.917,
+          "end": 26.155
+        },
+        {
+          "w": "strike",
+          "start": 26.155,
+          "end": 26.708
+        },
+        {
+          "w": "it",
+          "start": 26.708,
+          "end": 27.025
+        },
+        {
+          "w": "focus",
+          "start": 27.025,
+          "end": 27.499
+        },
+        {
+          "w": "only",
+          "start": 27.499,
+          "end": 27.895
+        },
+        {
+          "w": "on",
+          "start": 27.895,
+          "end": 28.132
+        },
+        {
+          "w": "the",
+          "start": 28.132,
+          "end": 28.449
+        },
+        {
+          "w": "heart",
+          "start": 28.449,
+          "end": 28.923
+        },
+        {
+          "w": "now",
+          "start": 28.923,
+          "end": 29.319
+        },
+        {
+          "w": "finally",
+          "start": 29.319,
+          "end": 29.952
+        },
+        {
+          "w": "the",
+          "start": 29.952,
+          "end": 30.268
+        },
+        {
+          "w": "lungs",
+          "start": 30.268,
+          "end": 30.743
+        },
+        {
+          "w": "leave",
+          "start": 30.743,
+          "end": 31.297
+        },
+        {
+          "w": "and",
+          "start": 31.297,
+          "end": 31.613
+        },
+        {
+          "w": "we",
+          "start": 31.613,
+          "end": 31.85
+        },
+        {
+          "w": "pull",
+          "start": 31.85,
+          "end": 32.246
+        },
+        {
+          "w": "back",
+          "start": 32.246,
+          "end": 32.72
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 1037,
+      "startFrame": 321
+    },
+    {
+      "index": 3,
+      "type": "recap",
+      "narration": "Let's recap. The camera moves with the story. Every verb fires on its word.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.164285714285714,
+      "voDurationInFrames": 185,
+      "captions": [
+        {
+          "text": "Let's recap. The camera moves with the",
+          "start": 0.05,
+          "end": 3.213
+        },
+        {
+          "text": "story. Every verb fires on its word.",
+          "start": 3.213,
+          "end": 6.414000000000001
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.05,
+          "end": 0.537
+        },
+        {
+          "w": "recap",
+          "start": 0.537,
+          "end": 1.104
+        },
+        {
+          "w": "the",
+          "start": 1.104,
+          "end": 1.429
+        },
+        {
+          "w": "camera",
+          "start": 1.429,
+          "end": 1.997
+        },
+        {
+          "w": "moves",
+          "start": 1.997,
+          "end": 2.483
+        },
+        {
+          "w": "with",
+          "start": 2.483,
+          "end": 2.889
+        },
+        {
+          "w": "the",
+          "start": 2.889,
+          "end": 3.213
+        },
+        {
+          "w": "story",
+          "start": 3.213,
+          "end": 3.781
+        },
+        {
+          "w": "every",
+          "start": 3.781,
+          "end": 4.268
+        },
+        {
+          "w": "verb",
+          "start": 4.268,
+          "end": 4.673
+        },
+        {
+          "w": "fires",
+          "start": 4.673,
+          "end": 5.16
+        },
+        {
+          "w": "on",
+          "start": 5.16,
+          "end": 5.403
+        },
+        {
+          "w": "its",
+          "start": 5.403,
+          "end": 5.728
+        },
+        {
+          "w": "word",
+          "start": 5.728,
+          "end": 6.214
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 342,
+      "startFrame": 1358
+    }
+  ]
+}

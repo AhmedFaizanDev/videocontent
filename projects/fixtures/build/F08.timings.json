@@ -1,0 +1,763 @@
+{
+  "id": "F08",
+  "fps": 30,
+  "totalDurationInFrames": 1925,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about the medical illustration packs. By the end, you'll see every illustration, you'll see every anchor.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 9.687755102040818,
+      "voDurationInFrames": 291,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.05,
+          "end": 2.867
+        },
+        {
+          "text": "the medical illustration packs.",
+          "start": 2.867,
+          "end": 5.066
+        },
+        {
+          "text": "By the end, you'll see every illustration,",
+          "start": 5.066,
+          "end": 8.02
+        },
+        {
+          "text": "you'll see every anchor.",
+          "start": 8.02,
+          "end": 9.937999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.256
+        },
+        {
+          "w": "this",
+          "start": 0.256,
+          "end": 0.6
+        },
+        {
+          "w": "video",
+          "start": 0.6,
+          "end": 1.081
+        },
+        {
+          "w": "were",
+          "start": 1.081,
+          "end": 1.493
+        },
+        {
+          "w": "going",
+          "start": 1.493,
+          "end": 1.905
+        },
+        {
+          "w": "to",
+          "start": 1.905,
+          "end": 2.111
+        },
+        {
+          "w": "talk",
+          "start": 2.111,
+          "end": 2.455
+        },
+        {
+          "w": "about",
+          "start": 2.455,
+          "end": 2.867
+        },
+        {
+          "w": "the",
+          "start": 2.867,
+          "end": 3.142
+        },
+        {
+          "w": "medical",
+          "start": 3.142,
+          "end": 3.691
+        },
+        {
+          "w": "illustration",
+          "start": 3.691,
+          "end": 4.585
+        },
+        {
+          "w": "packs",
+          "start": 4.585,
+          "end": 5.066
+        },
+        {
+          "w": "by",
+          "start": 5.066,
+          "end": 5.272
+        },
+        {
+          "w": "the",
+          "start": 5.272,
+          "end": 5.547
+        },
+        {
+          "w": "end",
+          "start": 5.547,
+          "end": 5.89
+        },
+        {
+          "w": "youll",
+          "start": 5.89,
+          "end": 6.371
+        },
+        {
+          "w": "see",
+          "start": 6.371,
+          "end": 6.646
+        },
+        {
+          "w": "every",
+          "start": 6.646,
+          "end": 7.058
+        },
+        {
+          "w": "illustration",
+          "start": 7.058,
+          "end": 8.02
+        },
+        {
+          "w": "youll",
+          "start": 8.02,
+          "end": 8.501
+        },
+        {
+          "w": "see",
+          "start": 8.501,
+          "end": 8.776
+        },
+        {
+          "w": "every",
+          "start": 8.776,
+          "end": 9.188
+        },
+        {
+          "w": "anchor",
+          "start": 9.188,
+          "end": 9.738
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 358,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "figure",
+      "narration": "Pack figure. We now look at diaphragm carefully. We now look at exhale carefully.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.164285714285714,
+      "voDurationInFrames": 185,
+      "captions": [
+        {
+          "text": "Pack figure. We now look at diaphragm",
+          "start": 0.05,
+          "end": 2.907
+        },
+        {
+          "text": "carefully. We now look at exhale",
+          "start": 2.907,
+          "end": 5.387
+        },
+        {
+          "text": "carefully.",
+          "start": 5.387,
+          "end": 6.414000000000001
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.426
+        },
+        {
+          "w": "figure",
+          "start": 0.426,
+          "end": 1.027
+        },
+        {
+          "w": "we",
+          "start": 1.027,
+          "end": 1.253
+        },
+        {
+          "w": "now",
+          "start": 1.253,
+          "end": 1.553
+        },
+        {
+          "w": "look",
+          "start": 1.553,
+          "end": 1.929
+        },
+        {
+          "w": "at",
+          "start": 1.929,
+          "end": 2.155
+        },
+        {
+          "w": "diaphragm",
+          "start": 2.155,
+          "end": 2.907
+        },
+        {
+          "w": "carefully",
+          "start": 2.907,
+          "end": 3.734
+        },
+        {
+          "w": "we",
+          "start": 3.734,
+          "end": 3.959
+        },
+        {
+          "w": "now",
+          "start": 3.959,
+          "end": 4.26
+        },
+        {
+          "w": "look",
+          "start": 4.26,
+          "end": 4.636
+        },
+        {
+          "w": "at",
+          "start": 4.636,
+          "end": 4.861
+        },
+        {
+          "w": "exhale",
+          "start": 4.861,
+          "end": 5.387
+        },
+        {
+          "w": "carefully",
+          "start": 5.387,
+          "end": 6.214
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 241,
+      "startFrame": 358
+    },
+    {
+      "index": 3,
+      "type": "figure",
+      "narration": "Pack figure. We now look at patient carefully. We now look at m1 carefully.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.164285714285714,
+      "voDurationInFrames": 185,
+      "captions": [
+        {
+          "text": "Pack figure. We now look at patient",
+          "start": 0.05,
+          "end": 2.97
+        },
+        {
+          "text": "carefully. We now look at m1 carefully.",
+          "start": 2.97,
+          "end": 6.414000000000001
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.456
+        },
+        {
+          "w": "figure",
+          "start": 0.456,
+          "end": 1.104
+        },
+        {
+          "w": "we",
+          "start": 1.104,
+          "end": 1.348
+        },
+        {
+          "w": "now",
+          "start": 1.348,
+          "end": 1.672
+        },
+        {
+          "w": "look",
+          "start": 1.672,
+          "end": 2.078
+        },
+        {
+          "w": "at",
+          "start": 2.078,
+          "end": 2.321
+        },
+        {
+          "w": "patient",
+          "start": 2.321,
+          "end": 2.97
+        },
+        {
+          "w": "carefully",
+          "start": 2.97,
+          "end": 3.862
+        },
+        {
+          "w": "we",
+          "start": 3.862,
+          "end": 4.105
+        },
+        {
+          "w": "now",
+          "start": 4.105,
+          "end": 4.43
+        },
+        {
+          "w": "look",
+          "start": 4.43,
+          "end": 4.835
+        },
+        {
+          "w": "at",
+          "start": 4.835,
+          "end": 5.079
+        },
+        {
+          "w": "m1",
+          "start": 5.079,
+          "end": 5.322
+        },
+        {
+          "w": "carefully",
+          "start": 5.322,
+          "end": 6.214
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 241,
+      "startFrame": 599
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "Pack figure. We now look at missed carefully. We now look at thumbs carefully.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.164285714285714,
+      "voDurationInFrames": 185,
+      "captions": [
+        {
+          "text": "Pack figure. We now look at missed",
+          "start": 0.05,
+          "end": 2.781
+        },
+        {
+          "text": "carefully. We now look at thumbs",
+          "start": 2.781,
+          "end": 5.356
+        },
+        {
+          "text": "carefully.",
+          "start": 5.356,
+          "end": 6.414000000000001
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.44
+        },
+        {
+          "w": "figure",
+          "start": 0.44,
+          "end": 1.064
+        },
+        {
+          "w": "we",
+          "start": 1.064,
+          "end": 1.298
+        },
+        {
+          "w": "now",
+          "start": 1.298,
+          "end": 1.611
+        },
+        {
+          "w": "look",
+          "start": 1.611,
+          "end": 2.001
+        },
+        {
+          "w": "at",
+          "start": 2.001,
+          "end": 2.235
+        },
+        {
+          "w": "missed",
+          "start": 2.235,
+          "end": 2.781
+        },
+        {
+          "w": "carefully",
+          "start": 2.781,
+          "end": 3.639
+        },
+        {
+          "w": "we",
+          "start": 3.639,
+          "end": 3.873
+        },
+        {
+          "w": "now",
+          "start": 3.873,
+          "end": 4.186
+        },
+        {
+          "w": "look",
+          "start": 4.186,
+          "end": 4.576
+        },
+        {
+          "w": "at",
+          "start": 4.576,
+          "end": 4.81
+        },
+        {
+          "w": "thumbs",
+          "start": 4.81,
+          "end": 5.356
+        },
+        {
+          "w": "carefully",
+          "start": 5.356,
+          "end": 6.214
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 241,
+      "startFrame": 840
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Pack figure. We now look at glucose carefully. We now look at type1 carefully.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.164285714285714,
+      "voDurationInFrames": 185,
+      "captions": [
+        {
+          "text": "Pack figure. We now look at glucose",
+          "start": 0.05,
+          "end": 2.859
+        },
+        {
+          "text": "carefully. We now look at type1 carefully.",
+          "start": 2.859,
+          "end": 6.414000000000001
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.44
+        },
+        {
+          "w": "figure",
+          "start": 0.44,
+          "end": 1.064
+        },
+        {
+          "w": "we",
+          "start": 1.064,
+          "end": 1.298
+        },
+        {
+          "w": "now",
+          "start": 1.298,
+          "end": 1.611
+        },
+        {
+          "w": "look",
+          "start": 1.611,
+          "end": 2.001
+        },
+        {
+          "w": "at",
+          "start": 2.001,
+          "end": 2.235
+        },
+        {
+          "w": "glucose",
+          "start": 2.235,
+          "end": 2.859
+        },
+        {
+          "w": "carefully",
+          "start": 2.859,
+          "end": 3.717
+        },
+        {
+          "w": "we",
+          "start": 3.717,
+          "end": 3.951
+        },
+        {
+          "w": "now",
+          "start": 3.951,
+          "end": 4.264
+        },
+        {
+          "w": "look",
+          "start": 4.264,
+          "end": 4.654
+        },
+        {
+          "w": "at",
+          "start": 4.654,
+          "end": 4.888
+        },
+        {
+          "w": "type1",
+          "start": 4.888,
+          "end": 5.356
+        },
+        {
+          "w": "carefully",
+          "start": 5.356,
+          "end": 6.214
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 241,
+      "startFrame": 1081
+    },
+    {
+      "index": 6,
+      "type": "figure",
+      "narration": "Pack figure. We now look at insulin carefully. We now look at receptor carefully. We now look at type2 carefully.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 8.763265306122449,
+      "voDurationInFrames": 263,
+      "captions": [
+        {
+          "text": "Pack figure. We now look at insulin",
+          "start": 0.05,
+          "end": 2.817
+        },
+        {
+          "text": "carefully. We now look at receptor",
+          "start": 2.817,
+          "end": 5.508
+        },
+        {
+          "text": "carefully. We now look at type2 carefully.",
+          "start": 5.508,
+          "end": 9.013
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.434
+        },
+        {
+          "w": "figure",
+          "start": 0.434,
+          "end": 1.049
+        },
+        {
+          "w": "we",
+          "start": 1.049,
+          "end": 1.28
+        },
+        {
+          "w": "now",
+          "start": 1.28,
+          "end": 1.587
+        },
+        {
+          "w": "look",
+          "start": 1.587,
+          "end": 1.972
+        },
+        {
+          "w": "at",
+          "start": 1.972,
+          "end": 2.202
+        },
+        {
+          "w": "insulin",
+          "start": 2.202,
+          "end": 2.817
+        },
+        {
+          "w": "carefully",
+          "start": 2.817,
+          "end": 3.663
+        },
+        {
+          "w": "we",
+          "start": 3.663,
+          "end": 3.894
+        },
+        {
+          "w": "now",
+          "start": 3.894,
+          "end": 4.201
+        },
+        {
+          "w": "look",
+          "start": 4.201,
+          "end": 4.585
+        },
+        {
+          "w": "at",
+          "start": 4.585,
+          "end": 4.816
+        },
+        {
+          "w": "receptor",
+          "start": 4.816,
+          "end": 5.508
+        },
+        {
+          "w": "carefully",
+          "start": 5.508,
+          "end": 6.353
+        },
+        {
+          "w": "we",
+          "start": 6.353,
+          "end": 6.584
+        },
+        {
+          "w": "now",
+          "start": 6.584,
+          "end": 6.891
+        },
+        {
+          "w": "look",
+          "start": 6.891,
+          "end": 7.276
+        },
+        {
+          "w": "at",
+          "start": 7.276,
+          "end": 7.506
+        },
+        {
+          "w": "type2",
+          "start": 7.506,
+          "end": 7.968
+        },
+        {
+          "w": "carefully",
+          "start": 7.968,
+          "end": 8.813
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 319,
+      "startFrame": 1322
+    },
+    {
+      "index": 7,
+      "type": "recap",
+      "narration": "To recap, every illustration renders, and every anchor is heard.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 4.231632653061225,
+      "voDurationInFrames": 127,
+      "captions": [
+        {
+          "text": "To recap, every illustration renders, and",
+          "start": 0.05,
+          "end": 2.784
+        },
+        {
+          "text": "every anchor is heard.",
+          "start": 2.784,
+          "end": 4.482
+        }
+      ],
+      "words": [
+        {
+          "w": "to",
+          "start": 0.05,
+          "end": 0.245
+        },
+        {
+          "w": "recap",
+          "start": 0.245,
+          "end": 0.701
+        },
+        {
+          "w": "every",
+          "start": 0.701,
+          "end": 1.092
+        },
+        {
+          "w": "illustration",
+          "start": 1.092,
+          "end": 1.938
+        },
+        {
+          "w": "renders",
+          "start": 1.938,
+          "end": 2.524
+        },
+        {
+          "w": "and",
+          "start": 2.524,
+          "end": 2.784
+        },
+        {
+          "w": "every",
+          "start": 2.784,
+          "end": 3.175
+        },
+        {
+          "w": "anchor",
+          "start": 3.175,
+          "end": 3.631
+        },
+        {
+          "w": "is",
+          "start": 3.631,
+          "end": 3.826
+        },
+        {
+          "w": "heard",
+          "start": 3.826,
+          "end": 4.282
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 284,
+      "startFrame": 1641
+    }
+  ]
+}

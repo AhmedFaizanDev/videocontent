@@ -1,0 +1,265 @@
+{
+  "id": "F01",
+  "title": "Diagram maxima",
+  "outputFilename": "F01_diagram_maxima.mp4",
+  "module": "Stress · maxima",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Maximum Everything: The Longest Allowed Title Wrapping Two Lines",
+      "subtitle": "Fixture · Stress test",
+      "narration": "In this video, we're going to talk about Maximum Everything: The Longest Allowed Title Wrapping Two Lines, a deliberately long title used to stress the layout engine at its limits. It keeps going for a while so the enumeration lands later. By the end, you'll see the longest learn bullet that is still allowed to wrap onto three lines, you'll see a second equally long bullet to fill the second card, you'll see a third bullet, you'll see a fourth bullet to force four columns.",
+      "learn": [
+        "the longest learn bullet that is still allowed to wrap onto three lines",
+        "a second equally long bullet to fill the second card",
+        "a third bullet",
+        "a fourth bullet to force four columns"
+      ]
+    },
+    {
+      "type": "hook",
+      "kicker": "The hook",
+      "narration": "A hook with chips. What happens at the maximum? First chip. Second chip. Third chip.",
+      "headline": "What happens when every field is as long as the validator allows it to be?",
+      "question": "Nothing may spill past the safe area — ever.",
+      "highlight": [
+        "every",
+        "long"
+      ],
+      "chips": [
+        {
+          "icon": "",
+          "label": "First chip"
+        },
+        {
+          "icon": "",
+          "label": "Second chip"
+        },
+        {
+          "icon": "",
+          "label": "Third chip"
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Cycle max",
+      "art": "cycle",
+      "narration": "Here is the cycle figure. Stage 1 Twenty six charact. Then Stage 2 Twenty six charact. Then Stage 3 Twenty six charact. Then Stage 4 Twenty six charact. Then Stage 5 Twenty six charact. Then Stage 6 Twenty six charact. Then Stage 7 Twenty six charact. Then Stage 8 Twenty six charact.",
+      "data": {
+        "start": "START",
+        "items": [
+          {
+            "label": "Stage 1 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 2 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 3 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 4 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 5 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 6 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 7 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          },
+          {
+            "label": "Stage 8 Twenty six charact",
+            "note": "A seventy-character note that runs along the tape under the diagram he"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Flow max",
+      "art": "flow",
+      "narration": "Here is the flow figure. 1 Twenty-eight chars label!. Then 2 Twenty-eight chars label!. Then 3 Twenty-eight chars label!. Then 4 Twenty-eight chars label!. Then 5 Twenty-eight chars label!. Then 6 Twenty-eight chars label!.",
+      "title": "A flow at six steps with the longest labels",
+      "data": {
+        "items": [
+          {
+            "label": "1 Twenty-eight chars label!",
+            "note": "note"
+          },
+          {
+            "label": "2 Twenty-eight chars label!",
+            "note": "note"
+          },
+          {
+            "label": "3 Twenty-eight chars label!",
+            "note": "note"
+          },
+          {
+            "label": "4 Twenty-eight chars label!",
+            "note": "note"
+          },
+          {
+            "label": "5 Twenty-eight chars label!",
+            "note": "note"
+          },
+          {
+            "label": "6 Twenty-eight chars label!",
+            "note": "note"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Timeline max",
+      "art": "timeline",
+      "narration": "Here is the timeline figure. Event 1: thirty char label.. Then Event 2: thirty char label.. Then Event 3: thirty char label.. Then Event 4: thirty char label.. Then Event 5: thirty char label.. Then Event 6: thirty char label.. Then Event 7: thirty char label..",
+      "title": "A timeline at seven events",
+      "data": {
+        "items": [
+          {
+            "when": "Year 1910",
+            "label": "Event 1: thirty char label."
+          },
+          {
+            "when": "Year 1920",
+            "label": "Event 2: thirty char label."
+          },
+          {
+            "when": "Year 1930",
+            "label": "Event 3: thirty char label."
+          },
+          {
+            "when": "Year 1940",
+            "label": "Event 4: thirty char label."
+          },
+          {
+            "when": "Year 1950",
+            "label": "Event 5: thirty char label."
+          },
+          {
+            "when": "Year 1960",
+            "label": "Event 6: thirty char label."
+          },
+          {
+            "when": "Year 1970",
+            "label": "Event 7: thirty char label."
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Hub max",
+      "art": "hub",
+      "narration": "Here is the hub figure. Satellite 1 label!!. Then Satellite 2 label!!. Then Satellite 3 label!!. Then Satellite 4 label!!. Then Satellite 5 label!!. Then Satellite 6 label!!.",
+      "data": {
+        "center": "Twenty-two char centre",
+        "items": [
+          {
+            "label": "Satellite 1 label!!"
+          },
+          {
+            "label": "Satellite 2 label!!"
+          },
+          {
+            "label": "Satellite 3 label!!"
+          },
+          {
+            "label": "Satellite 4 label!!"
+          },
+          {
+            "label": "Satellite 5 label!!"
+          },
+          {
+            "label": "Satellite 6 label!!"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Stack max",
+      "art": "stack",
+      "narration": "Here is the stack figure. Layer 1: thirty characters lon. Then Layer 2: thirty characters lon. Then Layer 3: thirty characters lon. Then Layer 4: thirty characters lon. Then Layer 5: thirty characters lon. Then Layer 6: thirty characters lon.",
+      "title": "A stack at seven layers",
+      "data": {
+        "items": [
+          {
+            "label": "Layer 1: thirty characters lon"
+          },
+          {
+            "label": "Layer 2: thirty characters lon"
+          },
+          {
+            "label": "Layer 3: thirty characters lon"
+          },
+          {
+            "label": "Layer 4: thirty characters lon"
+          },
+          {
+            "label": "Layer 5: thirty characters lon"
+          },
+          {
+            "label": "Layer 6: thirty characters lon"
+          }
+        ]
+      },
+      "caption": "A caption tape on a side figure, checking it stays above the captions."
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "Knowledge check. Why does a deliberately long knowledge check question, written to wrap across three full lines of the card, still sit inside the safe area without overlapping anything? Pause and think.",
+      "question": "Why does a deliberately long knowledge check question, written to wrap across three full lines of the card, still sit inside the safe area without overlapping anything?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "question": "Why does a deliberately long knowledge check question, written to wrap across three full lines of the card, still sit inside the safe area without overlapping anything?",
+      "answer": "Because every template fits its text to the space it has, and the gate checks the margins.",
+      "points": [
+        "First point, long enough to wrap onto a second line",
+        "Second point, similarly long to wrap",
+        "Third point wraps as well here",
+        "Fourth point fills the row"
+      ],
+      "narration": "The answer. Because every template fits its text to the space it has, and the gate checks the margins. First point, long enough to wrap onto a second line. Then Second point, similarly long to wrap. Then Third point wraps as well here. Then Fourth point fills the row."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Maxima hold. Then Wrapping works. Then Gates pass. That is the whole fixture.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Maxima hold — every field at its limit",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Wrapping works — long text fits",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Gates pass — nothing overflows",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "The longest allowed content still fits inside the frame without exception."
+    }
+  ]
+}

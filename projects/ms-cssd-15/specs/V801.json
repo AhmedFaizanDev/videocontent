@@ -1,0 +1,329 @@
+{
+  "id": "V801",
+  "section": "MS-CSSD-15: CSSD & Sterilization Practices",
+  "module": "Module 10 · Flexible Endoscope Reprocessing",
+  "topicGroup": "Flexible Endoscope Reprocessing",
+  "title": "Why Flexible Endoscopes Are Different",
+  "outputFilename": "M10_V1_Why_Flexible_Endoscopes_Are_Different.mp4",
+  "episode": "10.1",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "narration": "In this video, we're going to talk about flexible endoscopes, and why they're the hardest devices your department will ever reprocess. By the end, you'll know the seven traits that set these devices apart, you'll see the eight-step sequence that makes them safe again, and you'll understand why every single step matters.",
+      "topic": "Why Flexible Endoscopes Are Different",
+      "subtitle": "MS-CSSD-15 · Module 10",
+      "learn": [
+        "the seven traits that set scopes apart",
+        "the eight-step reprocessing sequence",
+        "why every step matters"
+      ]
+    },
+    {
+      "type": "hook",
+      "kicker": "The hook",
+      "narration": "Most instruments that reach CSSD have one difficult feature. A flexible endoscope has all of them, at once. That's why scopes have caused several of the most serious reprocessing outbreaks ever documented.",
+      "headline": "One device. Every reprocessing problem at once.",
+      "question": "Behind several of the most serious documented outbreaks.",
+      "highlight": [
+        "Every",
+        "problem"
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Meet the scope",
+      "narration": "At the top, the valves control suction, air and water. Below them is the control head, where the endoscopist steers, and the biopsy port lets accessories pass inside. The long insertion tube enters the patient, ending at the distal tip with its lens and light. And hidden inside, running the whole length, is a network of channels.",
+      "title": "The flexible endoscope",
+      "art": "scope",
+      "callouts": [
+        {
+          "anchor": "valves",
+          "label": "Valves",
+          "text": "suction, air and water",
+          "say": [
+            "valves"
+          ]
+        },
+        {
+          "anchor": "controlHead",
+          "label": "Control head",
+          "text": "steering and controls",
+          "say": [
+            "control"
+          ]
+        },
+        {
+          "anchor": "biopsyPort",
+          "label": "Biopsy port",
+          "text": "where accessories go in",
+          "say": [
+            "biopsy"
+          ]
+        },
+        {
+          "anchor": "insertionTube",
+          "label": "Insertion tube",
+          "text": "enters the patient",
+          "say": [
+            "insertion"
+          ]
+        },
+        {
+          "anchor": "distalTip",
+          "label": "Distal tip",
+          "text": "lens and light",
+          "say": [
+            "distal"
+          ]
+        },
+        {
+          "anchor": "channels",
+          "label": "Internal channels",
+          "text": "run the whole length",
+          "say": [
+            "channels"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Inside the tube",
+      "narration": "Now slice through the insertion tube. The widest opening is the suction and biopsy channel, which carries blood, mucus and tissue. Beside it run the much narrower air and water channels. Around them sit the light guide bundles and the angulation wires. Channels of different diameters, some hard to reach, and some easy to forget.",
+      "title": "A cross-section of the insertion tube",
+      "art": "channels",
+      "callouts": [
+        {
+          "anchor": "suction",
+          "label": "Suction / biopsy channel",
+          "text": "carries blood, mucus, tissue",
+          "say": [
+            "suction"
+          ]
+        },
+        {
+          "anchor": "air",
+          "label": "Air channel",
+          "text": "much narrower",
+          "say": [
+            "narrower",
+            "air"
+          ]
+        },
+        {
+          "anchor": "water",
+          "label": "Water channel",
+          "text": "much narrower",
+          "say": [
+            "water"
+          ]
+        },
+        {
+          "anchor": "light",
+          "label": "Light guide bundles",
+          "say": [
+            "light"
+          ]
+        },
+        {
+          "anchor": "wires",
+          "label": "Angulation wires",
+          "say": [
+            "angulation",
+            "wires"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Why it's hard",
+      "narration": "What makes scopes so difficult? They're heat-labile: heat damages them, so they can't be steam sterilised, and the high-level disinfection used instead has a smaller margin. Their narrow channels are hard to reach. They're heavily contaminated in use. And biofilm forms readily in the channels, and once established, it resists chemical disinfection entirely.",
+      "title": "The device itself",
+      "steps": [
+        {
+          "label": "Heat-labile",
+          "detail": "No steam. High-level disinfection has a smaller margin."
+        },
+        {
+          "label": "Narrow channels",
+          "detail": "Different diameters, hard to reach."
+        },
+        {
+          "label": "Heavily contaminated",
+          "detail": "Organic material, high bacterial load."
+        },
+        {
+          "label": "Biofilm",
+          "detail": "Forms readily, resists disinfection."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Why it's hard",
+      "narration": "Then there's how they're used. They're expensive, so hospitals own only a few and turn them around fast. They're fragile, and a damaged scope lets fluid into its interior, where it can't be cleaned. And they're model-specific. Two scopes that look alike can have different channels, connectors and instructions.",
+      "title": "The way it is used",
+      "startAt": 4,
+      "steps": [
+        {
+          "label": "Expensive",
+          "detail": "Few scopes, constant turnaround pressure."
+        },
+        {
+          "label": "Fragile",
+          "detail": "Damage lets fluid inside."
+        },
+        {
+          "label": "Model-specific",
+          "detail": "Look-alikes differ inside."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "The sequence",
+      "narration": "Every scope follows the same eight steps. Pre-clean at the bedside. Leak test before immersion. Clean manually, brushing every channel. Then high-level disinfection. Rinse with water of defined quality. Dry with alcohol and forced air. Store hanging vertically. And trace it all, from scope to patient to cycle to operator.",
+      "art": "cycle",
+      "callouts": [
+        {
+          "anchor": "i1",
+          "label": "Pre-clean",
+          "text": "Immediately after the procedure, before soil dries",
+          "say": [
+            "preclean",
+            "bedside"
+          ]
+        },
+        {
+          "anchor": "i2",
+          "label": "Leak test",
+          "text": "Before immersion, every time, without exception",
+          "say": [
+            "leak"
+          ]
+        },
+        {
+          "anchor": "i3",
+          "label": "Manual clean",
+          "text": "Every channel brushed, per manufacturer's instructions",
+          "say": [
+            "manually",
+            "clean"
+          ]
+        },
+        {
+          "anchor": "i4",
+          "label": "High-level disinfection",
+          "text": "Usually an automated reprocessor, validated cycles",
+          "say": [
+            "disinfection"
+          ]
+        },
+        {
+          "anchor": "i5",
+          "label": "Rinse",
+          "text": "Water of defined quality",
+          "say": [
+            "rinse"
+          ]
+        },
+        {
+          "anchor": "i6",
+          "label": "Dry",
+          "text": "Alcohol flush and forced air",
+          "say": [
+            "dry"
+          ]
+        },
+        {
+          "anchor": "i7",
+          "label": "Store",
+          "text": "Hanging vertically, in a drying cabinet",
+          "say": [
+            "store"
+          ]
+        },
+        {
+          "anchor": "i8",
+          "label": "Trace",
+          "text": "Scope to patient to cycle to operator",
+          "say": [
+            "trace"
+          ]
+        }
+      ],
+      "data": {
+        "start": "PATIENT",
+        "items": [
+          {
+            "label": "Pre-clean"
+          },
+          {
+            "label": "Leak test"
+          },
+          {
+            "label": "Manual clean"
+          },
+          {
+            "label": "High-level disinfection"
+          },
+          {
+            "label": "Rinse"
+          },
+          {
+            "label": "Dry"
+          },
+          {
+            "label": "Store"
+          },
+          {
+            "label": "Trace"
+          }
+        ]
+      }
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "Time for a quick knowledge check. Why is high-level disinfection, and not steam sterilisation, the usual process for flexible endoscopes? Pause here and think it through.",
+      "question": "Why is high-level disinfection, not steam sterilisation, the usual process for flexible endoscopes?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "narration": "Because flexible endoscopes are heat-labile. Steam would damage them, so high-level disinfection is used instead. And since disinfection has a smaller margin than sterilisation, every step before it has to be done properly.",
+      "question": "Why is high-level disinfection, not steam sterilisation, the usual process for flexible endoscopes?",
+      "answer": "Scopes are heat-labile: steam would damage them.",
+      "points": [
+        "Disinfection has a smaller margin than sterilisation",
+        "So every step before it must be done properly"
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Flexible endoscopes are heat-labile, complex and heavily soiled, so they rely on high-level disinfection. Every scope follows eight steps, from pre-clean to trace, and every step has been the point of failure in a published investigation. Next: the bedside pre-clean and the leak test.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Heat-labile — no steam, smaller margin",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Eight steps — pre-clean to trace",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Every step — has failed before",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "A scope is only as safe as its weakest step.",
+      "signoff": "Every scope. Every step. Every time."
+    }
+  ]
+}

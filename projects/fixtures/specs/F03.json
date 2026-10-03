@@ -1,0 +1,344 @@
+{
+  "id": "F03",
+  "title": "Endoscopy pack",
+  "outputFilename": "F03_endoscopy_pack.mp4",
+  "module": "Pack · endoscopy",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Endoscopy Pack",
+      "subtitle": "Fixture · Stress test",
+      "narration": "In this video, we're going to talk about Endoscopy Pack, a deliberately long title used to stress the layout engine at its limits. It keeps going for a while so the enumeration lands later. By the end, you'll see every illustration, you'll see every anchor.",
+      "learn": [
+        "every illustration",
+        "every anchor"
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "scope",
+      "art": "scope",
+      "narration": "Pack figure. valves. controlhead. biopsyport. insertiontube. distaltip. channels.",
+      "title": "Pack art: scope",
+      "callouts": [
+        {
+          "anchor": "valves",
+          "label": "valves label",
+          "say": [
+            "valves"
+          ]
+        },
+        {
+          "anchor": "controlHead",
+          "label": "controlHead label",
+          "say": [
+            "controlhead"
+          ]
+        },
+        {
+          "anchor": "biopsyPort",
+          "label": "biopsyPort label",
+          "say": [
+            "biopsyport"
+          ]
+        },
+        {
+          "anchor": "insertionTube",
+          "label": "insertionTube label",
+          "say": [
+            "insertiontube"
+          ]
+        },
+        {
+          "anchor": "distalTip",
+          "label": "distalTip label",
+          "say": [
+            "distaltip"
+          ]
+        },
+        {
+          "anchor": "channels",
+          "label": "channels label",
+          "say": [
+            "channels"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "channels",
+      "art": "channels",
+      "narration": "Pack figure. suction. air. water. light. wires.",
+      "title": "Pack art: channels",
+      "callouts": [
+        {
+          "anchor": "suction",
+          "label": "suction label",
+          "say": [
+            "suction"
+          ]
+        },
+        {
+          "anchor": "air",
+          "label": "air label",
+          "say": [
+            "air"
+          ]
+        },
+        {
+          "anchor": "water",
+          "label": "water label",
+          "say": [
+            "water"
+          ]
+        },
+        {
+          "anchor": "light",
+          "label": "light label",
+          "say": [
+            "light"
+          ]
+        },
+        {
+          "anchor": "wires",
+          "label": "wires label",
+          "say": [
+            "wires"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "biofilm",
+      "art": "biofilm",
+      "narration": "Pack figure. soil. bacteria. matrix. disinfectant. flow. brush.",
+      "title": "Pack art: biofilm",
+      "callouts": [
+        {
+          "anchor": "soil",
+          "label": "soil label",
+          "say": [
+            "soil"
+          ]
+        },
+        {
+          "anchor": "bacteria",
+          "label": "bacteria label",
+          "say": [
+            "bacteria"
+          ]
+        },
+        {
+          "anchor": "matrix",
+          "label": "matrix label",
+          "say": [
+            "matrix"
+          ]
+        },
+        {
+          "anchor": "disinfectant",
+          "label": "disinfectant label",
+          "say": [
+            "disinfectant"
+          ]
+        },
+        {
+          "anchor": "flow",
+          "label": "flow label",
+          "say": [
+            "flow"
+          ]
+        },
+        {
+          "anchor": "brush",
+          "label": "brush label",
+          "say": [
+            "brush"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "leaktest",
+      "art": "leaktest",
+      "narration": "Pack figure. tester. sheath. gauge. bubbles.",
+      "title": "Pack art: leaktest",
+      "callouts": [
+        {
+          "anchor": "tester",
+          "label": "tester label",
+          "say": [
+            "tester"
+          ]
+        },
+        {
+          "anchor": "sheath",
+          "label": "sheath label",
+          "say": [
+            "sheath"
+          ]
+        },
+        {
+          "anchor": "gauge",
+          "label": "gauge label",
+          "say": [
+            "gauge"
+          ]
+        },
+        {
+          "anchor": "bubbles",
+          "label": "bubbles label",
+          "say": [
+            "bubbles"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "elevator",
+      "art": "elevator",
+      "narration": "Pack figure. tip. elevator. accessory. recess.",
+      "title": "Pack art: elevator",
+      "callouts": [
+        {
+          "anchor": "tip",
+          "label": "tip label",
+          "say": [
+            "tip"
+          ]
+        },
+        {
+          "anchor": "elevator",
+          "label": "elevator label",
+          "say": [
+            "elevator"
+          ]
+        },
+        {
+          "anchor": "accessory",
+          "label": "accessory label",
+          "say": [
+            "accessory"
+          ]
+        },
+        {
+          "anchor": "recess",
+          "label": "recess label",
+          "say": [
+            "recess"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "drying",
+      "art": "drying",
+      "narration": "Pack figure. alcohol. air. moisture. coiled. cabinet.",
+      "title": "Pack art: drying",
+      "callouts": [
+        {
+          "anchor": "alcohol",
+          "label": "alcohol label",
+          "say": [
+            "alcohol"
+          ]
+        },
+        {
+          "anchor": "air",
+          "label": "air label",
+          "say": [
+            "air"
+          ]
+        },
+        {
+          "anchor": "moisture",
+          "label": "moisture label",
+          "say": [
+            "moisture"
+          ]
+        },
+        {
+          "anchor": "coiled",
+          "label": "coiled label",
+          "say": [
+            "coiled"
+          ]
+        },
+        {
+          "anchor": "cabinet",
+          "label": "cabinet label",
+          "say": [
+            "cabinet"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "aer",
+      "art": "aer",
+      "narration": "Pack figure. reprocessor. record. connectors. missing.",
+      "title": "Pack art: aer",
+      "callouts": [
+        {
+          "anchor": "reprocessor",
+          "label": "reprocessor label",
+          "say": [
+            "reprocessor"
+          ]
+        },
+        {
+          "anchor": "record",
+          "label": "record label",
+          "say": [
+            "record"
+          ]
+        },
+        {
+          "anchor": "connectors",
+          "label": "connectors label",
+          "say": [
+            "connectors"
+          ]
+        },
+        {
+          "anchor": "missing",
+          "label": "missing label",
+          "say": [
+            "missing"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Illustrations. Then Anchors. Then Events. That is the whole fixture.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Illustrations — all render",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Anchors — all resolve",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Events — all fire",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "Every pack illustration renders with every anchor."
+    }
+  ]
+}

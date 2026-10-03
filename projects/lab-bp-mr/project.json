@@ -1,0 +1,39 @@
+{
+  "name": "रक्तदाब: आकड्यांचा अर्थ (translation experiment)",
+  "series": "MedSkills · Clinical Foundations",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      6.5
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "figure"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 3
+  },
+  "lang": "mr",
+  "brand": {
+    "signoff": "MedSkills सोबत शिकत राहा.",
+    "episodeLabel": "भाग "
+  },
+  "terms": [
+    "उच्च रक्तदाब",
+    "सिस्टोलिक",
+    "डायस्टोलिक",
+    "हायपरटेन्शन",
+    "mmHg"
+  ],
+  "output": {
+    "dir": "_experiments/MR_Blood_Pressure_translated"
+  }
+}

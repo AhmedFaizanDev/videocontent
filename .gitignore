@@ -1,0 +1,11 @@
+node_modules/
+output/
+.env
+.DS_Store
+.venv/
+iterations/
+dist/
+archive/
+standalone/
+graphify-out/
+*.mp4

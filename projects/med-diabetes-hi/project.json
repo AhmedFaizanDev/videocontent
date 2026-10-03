@@ -1,0 +1,42 @@
+{
+  "name": "मधुमेह: इंसुलिन और रक्त शर्करा",
+  "series": "MedSkills · Clinical Foundations",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      6.5
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "figure"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 3
+  },
+  "lang": "hi",
+  "brand": {
+    "signoff": "MedSkills के साथ सीखते रहिए।",
+    "episodeLabel": "भाग "
+  },
+  "terms": [
+    "मधुमेह",
+    "इंसुलिन",
+    "ग्लूकोज़",
+    "अग्न्याशय",
+    "रक्त शर्करा",
+    "रिसेप्टर",
+    "टाइप 1",
+    "टाइप 2"
+  ],
+  "output": {
+    "dir": "MedSkills/HI_Diabetes_Mellitus"
+  }
+}

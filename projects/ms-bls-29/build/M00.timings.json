@@ -1,0 +1,665 @@
+{
+  "id": "M00",
+  "fps": 30,
+  "totalDurationInFrames": 1800,
+  "voice": {
+    "id": "en-IN-NeerjaNeural",
+    "name": "en-IN-NeerjaNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "ident",
+      "hash": "silent",
+      "narration": "",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.2,
+      "voDurationInFrames": 96,
+      "captions": [],
+      "words": [],
+      "leadFrames": 0,
+      "tailFrames": 0,
+      "durationInFrames": 96,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "stage",
+      "hash": "c7ff005f241e",
+      "narration": "Welcome to Basic and Advanced Cardiac Life Support.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-2.mp3",
+      "voDurationInSeconds": 3.96,
+      "voDurationInFrames": 119,
+      "captions": [
+        {
+          "text": "Welcome to Basic and Advanced Cardiac Life",
+          "start": 0.1,
+          "end": 2.6
+        },
+        {
+          "text": "Support.",
+          "start": 2.6,
+          "end": 3.3230000000000004
+        }
+      ],
+      "words": [
+        {
+          "w": "welcome",
+          "start": 0.1,
+          "end": 0.6
+        },
+        {
+          "w": "to",
+          "start": 0.611,
+          "end": 0.714
+        },
+        {
+          "w": "basic",
+          "start": 0.725,
+          "end": 1.157
+        },
+        {
+          "w": "and",
+          "start": 1.168,
+          "end": 1.339
+        },
+        {
+          "w": "advanced",
+          "start": 1.35,
+          "end": 1.816
+        },
+        {
+          "w": "cardiac",
+          "start": 1.827,
+          "end": 2.305
+        },
+        {
+          "w": "life",
+          "start": 2.316,
+          "end": 2.589
+        },
+        {
+          "w": "support",
+          "start": 2.6,
+          "end": 3.123
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 38,
+      "durationInFrames": 180,
+      "startFrame": 96
+    },
+    {
+      "index": 3,
+      "type": "stage",
+      "hash": "0ac4f3197352",
+      "narration": "When a heart stops, what the nearest person does in the first three minutes matters most.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-3.mp3",
+      "voDurationInSeconds": 5.76,
+      "voDurationInFrames": 173,
+      "captions": [
+        {
+          "text": "When a heart stops, what the nearest",
+          "start": 0.1,
+          "end": 2.145
+        },
+        {
+          "text": "person does in the first three minutes",
+          "start": 2.145,
+          "end": 4.009
+        },
+        {
+          "text": "matters most.",
+          "start": 4.009,
+          "end": 5.118
+        }
+      ],
+      "words": [
+        {
+          "w": "when",
+          "start": 0.1,
+          "end": 0.327
+        },
+        {
+          "w": "a",
+          "start": 0.339,
+          "end": 0.384
+        },
+        {
+          "w": "heart",
+          "start": 0.395,
+          "end": 0.657
+        },
+        {
+          "w": "stops",
+          "start": 0.668,
+          "end": 1.18
+        },
+        {
+          "w": "what",
+          "start": 1.339,
+          "end": 1.589
+        },
+        {
+          "w": "the",
+          "start": 1.6,
+          "end": 1.702
+        },
+        {
+          "w": "nearest",
+          "start": 1.714,
+          "end": 2.134
+        },
+        {
+          "w": "person",
+          "start": 2.145,
+          "end": 2.543
+        },
+        {
+          "w": "does",
+          "start": 2.555,
+          "end": 2.816
+        },
+        {
+          "w": "in",
+          "start": 2.827,
+          "end": 2.907
+        },
+        {
+          "w": "the",
+          "start": 2.918,
+          "end": 2.998
+        },
+        {
+          "w": "first",
+          "start": 3.009,
+          "end": 3.395
+        },
+        {
+          "w": "three",
+          "start": 3.407,
+          "end": 3.634
+        },
+        {
+          "w": "minutes",
+          "start": 3.645,
+          "end": 3.998
+        },
+        {
+          "w": "matters",
+          "start": 4.009,
+          "end": 4.43
+        },
+        {
+          "w": "most",
+          "start": 4.441,
+          "end": 4.918
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 38,
+      "durationInFrames": 234,
+      "startFrame": 276
+    },
+    {
+      "index": 4,
+      "type": "stage",
+      "hash": "084780344476",
+      "narration": "Eleven modules take you from recognition and compressions to airway, defibrillation, the arrest algorithm and post-arrest care.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-4.mp3",
+      "voDurationInSeconds": 8.184,
+      "voDurationInFrames": 246,
+      "captions": [
+        {
+          "text": "Eleven modules take you from recognition",
+          "start": 0.1,
+          "end": 2.282
+        },
+        {
+          "text": "and compressions to airway,",
+          "start": 2.282,
+          "end": 3.914
+        },
+        {
+          "text": "defibrillation, the arrest algorithm and",
+          "start": 3.941,
+          "end": 6.361
+        },
+        {
+          "text": "post-arrest care.",
+          "start": 6.361,
+          "end": 7.505
+        }
+      ],
+      "words": [
+        {
+          "w": "eleven",
+          "start": 0.1,
+          "end": 0.543
+        },
+        {
+          "w": "modules",
+          "start": 0.555,
+          "end": 0.998
+        },
+        {
+          "w": "take",
+          "start": 1.009,
+          "end": 1.259
+        },
+        {
+          "w": "you",
+          "start": 1.27,
+          "end": 1.384
+        },
+        {
+          "w": "from",
+          "start": 1.395,
+          "end": 1.611
+        },
+        {
+          "w": "recognition",
+          "start": 1.623,
+          "end": 2.27
+        },
+        {
+          "w": "and",
+          "start": 2.282,
+          "end": 2.475
+        },
+        {
+          "w": "compressions",
+          "start": 2.486,
+          "end": 3.1
+        },
+        {
+          "w": "to",
+          "start": 3.111,
+          "end": 3.282
+        },
+        {
+          "w": "airway",
+          "start": 3.293,
+          "end": 3.714
+        },
+        {
+          "w": "defibrillation",
+          "start": 3.941,
+          "end": 4.873
+        },
+        {
+          "w": "the",
+          "start": 5.009,
+          "end": 5.157
+        },
+        {
+          "w": "arrest",
+          "start": 5.168,
+          "end": 5.543
+        },
+        {
+          "w": "algorithm",
+          "start": 5.555,
+          "end": 6.123
+        },
+        {
+          "w": "and",
+          "start": 6.134,
+          "end": 6.35
+        },
+        {
+          "w": "postarrest",
+          "start": 6.361,
+          "end": 6.941
+        },
+        {
+          "w": "care",
+          "start": 6.952,
+          "end": 7.305
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 38,
+      "durationInFrames": 307,
+      "startFrame": 510
+    },
+    {
+      "index": 5,
+      "type": "stage",
+      "hash": "882346c75810",
+      "narration": "You'll learn to recognise arrest in seconds, compress well, defibrillate safely, and work as one team.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-5.mp3",
+      "voDurationInSeconds": 7.104,
+      "voDurationInFrames": 214,
+      "captions": [
+        {
+          "text": "You'll learn to recognise arrest in",
+          "start": 0.1,
+          "end": 1.941
+        },
+        {
+          "text": "seconds, compress well, defibrillate",
+          "start": 1.941,
+          "end": 4.27
+        },
+        {
+          "text": "safely, and work as one team.",
+          "start": 4.27,
+          "end": 6.4590000000000005
+        }
+      ],
+      "words": [
+        {
+          "w": "youll",
+          "start": 0.1,
+          "end": 0.35
+        },
+        {
+          "w": "learn",
+          "start": 0.361,
+          "end": 0.657
+        },
+        {
+          "w": "to",
+          "start": 0.668,
+          "end": 0.782
+        },
+        {
+          "w": "recognise",
+          "start": 0.793,
+          "end": 1.407
+        },
+        {
+          "w": "arrest",
+          "start": 1.418,
+          "end": 1.805
+        },
+        {
+          "w": "in",
+          "start": 1.816,
+          "end": 1.93
+        },
+        {
+          "w": "seconds",
+          "start": 1.941,
+          "end": 2.464
+        },
+        {
+          "w": "compress",
+          "start": 2.577,
+          "end": 3.02
+        },
+        {
+          "w": "well",
+          "start": 3.032,
+          "end": 3.384
+        },
+        {
+          "w": "defibrillate",
+          "start": 3.577,
+          "end": 4.259
+        },
+        {
+          "w": "safely",
+          "start": 4.27,
+          "end": 4.827
+        },
+        {
+          "w": "and",
+          "start": 4.941,
+          "end": 5.202
+        },
+        {
+          "w": "work",
+          "start": 5.214,
+          "end": 5.441
+        },
+        {
+          "w": "as",
+          "start": 5.452,
+          "end": 5.623
+        },
+        {
+          "w": "one",
+          "start": 5.634,
+          "end": 5.873
+        },
+        {
+          "w": "team",
+          "start": 5.884,
+          "end": 6.259
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 38,
+      "durationInFrames": 275,
+      "startFrame": 817
+    },
+    {
+      "index": 6,
+      "type": "stage",
+      "hash": "4c7a568da637",
+      "narration": "The core is for all clinical staff. The advanced modules are for code teams.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-6.mp3",
+      "voDurationInSeconds": 6.432,
+      "voDurationInFrames": 193,
+      "captions": [
+        {
+          "text": "The core is for all clinical staff.",
+          "start": 0.1,
+          "end": 2.4250000000000003
+        },
+        {
+          "text": "The advanced modules are for code teams.",
+          "start": 3.25,
+          "end": 5.768
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.1,
+          "end": 0.293
+        },
+        {
+          "w": "core",
+          "start": 0.305,
+          "end": 0.623
+        },
+        {
+          "w": "is",
+          "start": 0.634,
+          "end": 0.782
+        },
+        {
+          "w": "for",
+          "start": 0.793,
+          "end": 1.02
+        },
+        {
+          "w": "all",
+          "start": 1.032,
+          "end": 1.236
+        },
+        {
+          "w": "clinical",
+          "start": 1.248,
+          "end": 1.714
+        },
+        {
+          "w": "staff",
+          "start": 1.725,
+          "end": 2.225
+        },
+        {
+          "w": "the",
+          "start": 3.25,
+          "end": 3.466
+        },
+        {
+          "w": "advanced",
+          "start": 3.477,
+          "end": 3.977
+        },
+        {
+          "w": "modules",
+          "start": 3.989,
+          "end": 4.455
+        },
+        {
+          "w": "are",
+          "start": 4.466,
+          "end": 4.636
+        },
+        {
+          "w": "for",
+          "start": 4.648,
+          "end": 4.807
+        },
+        {
+          "w": "code",
+          "start": 4.818,
+          "end": 5.068
+        },
+        {
+          "w": "teams",
+          "start": 5.08,
+          "end": 5.568
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 38,
+      "durationInFrames": 254,
+      "startFrame": 1092
+    },
+    {
+      "index": 7,
+      "type": "stage",
+      "hash": "efc1f7074d9f",
+      "narration": "It prepares you for hands-on training, and earns you a MedSkills certificate.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-7.mp3",
+      "voDurationInSeconds": 4.968,
+      "voDurationInFrames": 150,
+      "captions": [
+        {
+          "text": "It prepares you for hands-on training, and",
+          "start": 0.1,
+          "end": 2.35
+        },
+        {
+          "text": "earns you a MedSkills certificate.",
+          "start": 2.35,
+          "end": 4.311
+        }
+      ],
+      "words": [
+        {
+          "w": "it",
+          "start": 0.1,
+          "end": 0.282
+        },
+        {
+          "w": "prepares",
+          "start": 0.293,
+          "end": 0.759
+        },
+        {
+          "w": "you",
+          "start": 0.77,
+          "end": 0.873
+        },
+        {
+          "w": "for",
+          "start": 0.884,
+          "end": 1.043
+        },
+        {
+          "w": "handson",
+          "start": 1.055,
+          "end": 1.486
+        },
+        {
+          "w": "training",
+          "start": 1.498,
+          "end": 1.986
+        },
+        {
+          "w": "and",
+          "start": 2.111,
+          "end": 2.339
+        },
+        {
+          "w": "earns",
+          "start": 2.35,
+          "end": 2.6
+        },
+        {
+          "w": "you",
+          "start": 2.611,
+          "end": 2.702
+        },
+        {
+          "w": "a",
+          "start": 2.714,
+          "end": 2.759
+        },
+        {
+          "w": "medskills",
+          "start": 2.77,
+          "end": 3.395
+        },
+        {
+          "w": "certificate",
+          "start": 3.407,
+          "end": 4.111
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 38,
+      "durationInFrames": 211,
+      "startFrame": 1346
+    },
+    {
+      "index": 8,
+      "type": "outro",
+      "hash": "08f07abbf7d3",
+      "narration": "Keep learning with MedSkills.",
+      "audioFile": "audio/vo/ms-bls-29/M00/scene-8.mp3",
+      "voDurationInSeconds": 2.496,
+      "voDurationInFrames": 75,
+      "captions": [
+        {
+          "text": "Keep learning with MedSkills.",
+          "start": 0.1,
+          "end": 1.8679999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "keep",
+          "start": 0.1,
+          "end": 0.407
+        },
+        {
+          "w": "learning",
+          "start": 0.418,
+          "end": 0.816
+        },
+        {
+          "w": "with",
+          "start": 0.827,
+          "end": 0.986
+        },
+        {
+          "w": "medskills",
+          "start": 0.998,
+          "end": 1.668
+        }
+      ],
+      "leadFrames": 23,
+      "tailFrames": 145,
+      "durationInFrames": 243,
+      "startFrame": 1557
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "project": "human-heart",
+  "id": "H01",
+  "stages": {
+    "preflight": {
+      "seconds": 9.6,
+      "batch": 1,
+      "errors": 14,
+      "at": "2026-10-03T14:11:40.979Z"
+    }
+  },
+  "authoring": []
+}

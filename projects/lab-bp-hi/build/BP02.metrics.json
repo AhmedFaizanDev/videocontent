@@ -1,0 +1,63 @@
+{
+  "project": "lab-bp-hi",
+  "id": "BP02",
+  "stages": {
+    "preflight": {
+      "seconds": 5.3,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T09:29:06.882Z"
+    },
+    "voiceover": {
+      "seconds": 31.1,
+      "scenesVoiced": 12,
+      "scenes": 12,
+      "characters": 3047,
+      "audioSeconds": 329.1,
+      "wpm": 123,
+      "voice": "hi-IN-SwaraNeural",
+      "at": "2026-09-26T08:20:46.109Z"
+    },
+    "render": {
+      "seconds": 341,
+      "totalSeconds": 360,
+      "frames": 11305,
+      "fps": 33.2,
+      "bytes": 57552457,
+      "at": "2026-09-26T08:44:09.664Z"
+    },
+    "qa": {
+      "seconds": 51,
+      "pass": true,
+      "failed": [],
+      "at": "2026-09-26T08:45:01.126Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-09-26T09:29:06.966Z"
+    }
+  },
+  "authoring": [
+    {
+      "label": "translate (lean workflow)",
+      "model": "claude-opus-5-5",
+      "requests": 16,
+      "tokens": {
+        "input": 32,
+        "cacheWrite5m": 112198,
+        "cacheWrite1h": 0,
+        "cacheRead": 1326293,
+        "output": 15804
+      },
+      "costUSD": 1.1425,
+      "wallMinutes": 7.7,
+      "from": "2026-09-26T08:07:55.003Z",
+      "to": "2026-09-26T08:15:39.857Z",
+      "outputEstimated": true
+    }
+  ],
+  "lang": "hi",
+  "runtimeMinutes": 6.28,
+  "words": 618
+}

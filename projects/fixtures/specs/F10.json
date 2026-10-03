@@ -1,0 +1,50 @@
+{
+  "id": "F10",
+  "title": "Stage verbs",
+  "outputFilename": "F10_stage_verbs.mp4",
+  "module": "Stage · every verb",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Stage Verbs",
+      "subtitle": "Fixture · every verb",
+      "narration": "In this video, we're going to test the stage. By the end, you'll see every camera move, and every verb.",
+      "learn": ["every camera move", "every verb"]
+    },
+    {
+      "type": "stage",
+      "kicker": "The world",
+      "narration": "Here is the whole world. First the heart beats. Its left side pumps blood. The blood enters the artery, whose wall stretches. At the peak we read the systolic pressure. Now the lungs appear on the right. Blood streams from the heart through the artery into the lungs. Inside, oxygen crosses a thin wall. This part is wrong, so we strike it. Focus only on the heart now. Finally the lungs leave, and we pull back.",
+      "world": {"w": 3200, "h": 1500, "layers": [
+        {"id": "heart", "art": "heart", "at": [620, 760], "h": 900},
+        {"id": "artery", "art": "artery", "at": [1760, 760], "h": 620},
+        {"id": "lungs", "art": "lungs", "at": [2760, 760], "h": 820, "hidden": true}
+      ]},
+      "beats": [
+        {"say": ["whole"], "note": "One world, many beats"},
+        {"say": ["heart"], "camera": {"on": "heart"}, "pulse": "heart", "label": {"on": "heart", "text": "Heart"}},
+        {"say": ["pumps"], "camera": {"on": "heart.lv", "zoom": 2.6}, "act": "heart.flowLeft", "label": {"on": "heart.lv", "text": "Left ventricle"}},
+        {"say": ["stretches"], "camera": {"on": "artery"}, "label": {"on": "artery.wall", "text": "Elastic wall"}},
+        {"say": ["systolic"], "act": "artery.systole", "label": {"on": "artery.systole", "text": "Systolic peak"}},
+        {"say": ["appear"], "show": "lungs", "camera": "overview", "note": "The lungs join the world"},
+        {"say": ["streams"], "travel": {"along": ["heart.lv", "artery.blood", "lungs.lungs"], "tone": "red", "stream": true}},
+        {"say": ["oxygen"], "inset": {"of": "lungs.alveoli", "art": "alveolus", "act": ["oxygen"]}, "label": {"on": "lungs.alveoli", "text": "Air sacs"}},
+        {"say": ["wrong"], "cross": "lungs.lungs"},
+        {"say": ["focus"], "dim": ["heart"]},
+        {"say": ["leave"], "hide": "lungs", "dim": false, "camera": "overview"}
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. The camera moves with the story. Every verb fires on its word.",
+      "bullets": [
+        {"icon": "", "label": "Camera — moves with the story", "say": ["camera"]},
+        {"icon": "", "label": "Verbs — fire on their word", "say": ["verb"]}
+      ],
+      "takeaway": "The picture explains."
+    }
+  ]
+}

@@ -1,0 +1,906 @@
+{
+  "id": "BP01",
+  "title": "Blood Pressure: What the Numbers Mean",
+  "outputFilename": "MedSkills_EN_Blood_Pressure_What_the_Numbers_Mean.mp4",
+  "episode": "1",
+  "module": "Cardiovascular System",
+  "topicGroup": "Clinical Foundations",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Blood Pressure: What the Numbers Mean",
+      "subtitle": "Clinical Foundations",
+      "learn": [
+        "what blood pressure measures",
+        "what systolic and diastolic mean",
+        "when a reading counts as high",
+        "how to keep it healthy"
+      ],
+      "narration": "In this video, we're going to talk about blood pressure and its two numbers. [pause] By the end, you'll know what blood pressure measures, what systolic and diastolic mean, when a reading counts as high, and how to keep it healthy."
+    },
+    {
+      "type": "stage",
+      "kicker": "Why it matters",
+      "narration": "Most people with high blood pressure feel perfectly well, with no warning signs at all. [pause] Yet inside, the pressure can stay high for years. The World Health Organization estimates that 46 percent of them don't know it. So how would you know?",
+      "world": {
+        "w": 2000,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              640,
+              620
+            ],
+            "h": 1040
+          },
+          {
+            "id": "gauge",
+            "art": "gauge",
+            "at": [
+              1420,
+              560
+            ],
+            "h": 600,
+            "hidden": true
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "well"
+          ],
+          "act": "person.smile",
+          "label": {
+            "on": "person.face",
+            "text": "Feels fine"
+          }
+        },
+        {
+          "say": [
+            "inside"
+          ],
+          "show": "gauge",
+          "camera": "overview",
+          "travel": {
+            "along": [
+              "person.heart",
+              "gauge.dial"
+            ],
+            "tone": "red"
+          },
+          "act": "gauge.rise",
+          "label": {
+            "on": "gauge.high",
+            "text": "Pressure: high"
+          }
+        },
+        {
+          "say": [
+            "percent"
+          ],
+          "note": "About 46% of adults with high blood pressure don't know it"
+        },
+        {
+          "say": [
+            "know"
+          ],
+          "act": "person.worry",
+          "pulse": "gauge"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "What it is",
+      "narration": "So what is blood pressure? It is the force of blood pushing against the walls of your arteries. Let's look inside one. With every heartbeat, blood surges in and presses outward on the wall. The elastic wall stretches, then springs back. We measure this pressure in millimetres of mercury.",
+      "world": {
+        "w": 2600,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "heart",
+            "art": "heart",
+            "at": [
+              560,
+              620
+            ],
+            "h": 760
+          },
+          {
+            "id": "artery",
+            "art": "vessel",
+            "at": [
+              1840,
+              600
+            ],
+            "h": 980
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "force"
+          ],
+          "note": "Blood pressure: the force of blood on artery walls"
+        },
+        {
+          "say": [
+            "inside"
+          ],
+          "camera": {
+            "on": "artery"
+          },
+          "label": {
+            "on": "artery.wall",
+            "text": "Artery wall"
+          }
+        },
+        {
+          "say": [
+            "heartbeat"
+          ],
+          "camera": "overview",
+          "travel": {
+            "along": [
+              "heart.lv",
+              "artery.lumen"
+            ],
+            "tone": "red",
+            "stream": true
+          },
+          "act": "artery.push"
+        },
+        {
+          "say": [
+            "outward"
+          ],
+          "camera": {
+            "on": "artery"
+          },
+          "label": {
+            "on": "artery.push",
+            "text": "Blood presses outward"
+          }
+        },
+        {
+          "say": [
+            "stretches"
+          ],
+          "act": "artery.stretch",
+          "label": {
+            "on": "artery.stretch",
+            "text": "Stretches, springs back"
+          }
+        },
+        {
+          "say": [
+            "millimetres"
+          ],
+          "note": "Measured in millimetres of mercury (mmHg)"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "The pressure wave",
+      "narration": "Now watch one heartbeat. The heart contracts, and a pressure wave travels along the artery. The pressure peaks: this is the systolic pressure. Then the heart rests, and the pressure falls to its lowest: the diastolic pressure. [pause] Together, these two values make your reading.",
+      "world": {
+        "w": 2000,
+        "h": 1560,
+        "layers": [
+          {
+            "id": "artery",
+            "art": "artery",
+            "at": [
+              1000,
+              440
+            ],
+            "h": 680
+          },
+          {
+            "id": "trace",
+            "art": "trace",
+            "hidden": true,
+            "at": [
+              1000,
+              1180
+            ],
+            "h": 520,
+            "data": {
+              "repeat": 3,
+              "grid": true,
+              "segments": [
+                {
+                  "shape": "rise",
+                  "w": 0.35,
+                  "h": 1,
+                  "label": "Systolic"
+                },
+                {
+                  "shape": "fall",
+                  "w": 1.3,
+                  "h": 1,
+                  "label": "Diastolic"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "contracts"
+          ],
+          "camera": {
+            "on": "artery.heart",
+            "zoom": 2.2
+          },
+          "label": {
+            "on": "artery.heart",
+            "text": "Heart contracts"
+          }
+        },
+        {
+          "say": [
+            "wave"
+          ],
+          "camera": {
+            "on": "artery"
+          },
+          "label": {
+            "on": "artery.wall",
+            "text": "Pressure wave"
+          }
+        },
+        {
+          "say": [
+            "systolic"
+          ],
+          "show": "trace",
+          "camera": {
+            "on": "trace"
+          },
+          "act": [
+            "artery.systole",
+            "trace.i1"
+          ],
+          "label": {
+            "on": "trace.i1",
+            "text": "Systolic: highest"
+          }
+        },
+        {
+          "say": [
+            "diastolic"
+          ],
+          "act": [
+            "artery.diastole",
+            "trace.i2"
+          ],
+          "label": {
+            "on": "trace.i2",
+            "text": "Diastolic: lowest"
+          }
+        },
+        {
+          "say": [
+            "reading"
+          ],
+          "note": "Systolic over diastolic: your reading",
+          "camera": "overview"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Taking a reading",
+      "narration": "To measure it, an inflatable cuff goes around the upper arm. It squeezes the arm, and a monitor shows two numbers. The top number is the systolic pressure, here 120. The bottom number is the diastolic, here 80. We say this reading is 120 over 80.",
+      "world": {
+        "w": 1500,
+        "h": 950,
+        "layers": [
+          {
+            "id": "kit",
+            "art": "bpmonitor",
+            "data": {
+              "sys": 120,
+              "dia": 80
+            },
+            "at": [
+              750,
+              470
+            ],
+            "h": 800
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "cuff"
+          ],
+          "camera": {
+            "on": "kit.cuff",
+            "zoom": 1.7
+          },
+          "label": {
+            "on": "kit.cuff",
+            "text": "Inflatable cuff"
+          }
+        },
+        {
+          "say": [
+            "squeezes"
+          ],
+          "act": [
+            "kit.cuff",
+            "kit.artery"
+          ]
+        },
+        {
+          "say": [
+            "top"
+          ],
+          "camera": {
+            "on": "kit.sys",
+            "zoom": 1.6
+          },
+          "act": "kit.sys",
+          "label": {
+            "on": "kit.sys",
+            "text": "Systolic"
+          }
+        },
+        {
+          "say": [
+            "bottom"
+          ],
+          "act": "kit.dia",
+          "label": {
+            "on": "kit.dia",
+            "text": "Diastolic"
+          }
+        },
+        {
+          "say": [
+            "over"
+          ],
+          "camera": "overview",
+          "act": "kit.unit",
+          "note": "120/80 mmHg is said “120 over 80”"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "What's normal",
+      "narration": "For most adults, 90 over 60 or lower is low. The ideal range is between 90 over 60 and 120 over 80. Between 120 over 80 and 140 over 90, you're at risk. And 140 over 90 or higher is high blood pressure, called hypertension. [pause] It is diagnosed when readings are that high on two different days.",
+      "world": {
+        "w": 2300,
+        "h": 1000,
+        "layers": [
+          {
+            "id": "scale",
+            "art": "bpscale",
+            "at": [
+              820,
+              520
+            ],
+            "h": 640
+          },
+          {
+            "id": "days",
+            "art": "icon",
+            "data": {
+              "name": "calendar"
+            },
+            "at": [
+              1900,
+              500
+            ],
+            "h": 560,
+            "hidden": true
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "low"
+          ],
+          "act": "scale.low",
+          "label": {
+            "on": "scale.low",
+            "text": "Low"
+          }
+        },
+        {
+          "say": [
+            "ideal"
+          ],
+          "act": "scale.ideal",
+          "label": {
+            "on": "scale.ideal",
+            "text": "Ideal"
+          }
+        },
+        {
+          "say": [
+            "risk"
+          ],
+          "act": "scale.raised",
+          "label": {
+            "on": "scale.raised",
+            "text": "At risk"
+          }
+        },
+        {
+          "say": [
+            "hypertension"
+          ],
+          "act": "scale.high",
+          "label": {
+            "on": "scale.high",
+            "text": "High: hypertension"
+          }
+        },
+        {
+          "say": [
+            "diagnosed"
+          ],
+          "show": "days",
+          "camera": "overview",
+          "act": "days.act",
+          "note": "Diagnosed on two different days"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "The damage",
+      "narration": "Year after year, high pressure strains the arteries and damages their walls. In the heart, that can mean a heart attack. In the brain, a stroke. In the kidneys, kidney damage. [pause] And a heart forced to pump harder can eventually fail: that is heart failure.",
+      "world": {
+        "w": 1500,
+        "h": 1300,
+        "layers": [
+          {
+            "id": "body",
+            "art": "body",
+            "at": [
+              750,
+              650
+            ],
+            "h": 1200
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "strain"
+          ],
+          "act": "body.strain",
+          "inset": {
+            "of": "body.arteries",
+            "art": "vessel",
+            "act": [
+              "push",
+              "stiff",
+              "tear"
+            ]
+          },
+          "label": {
+            "on": "body.arteries",
+            "text": "Artery walls damaged"
+          }
+        },
+        {
+          "say": [
+            "attack"
+          ],
+          "camera": {
+            "on": "body.heart",
+            "zoom": 2.2
+          },
+          "act": "body.heart",
+          "label": {
+            "on": "body.heart",
+            "text": "Heart attack"
+          }
+        },
+        {
+          "say": [
+            "stroke"
+          ],
+          "camera": {
+            "on": "body.brain",
+            "zoom": 2.2
+          },
+          "act": "body.brain",
+          "label": {
+            "on": "body.brain",
+            "text": "Stroke"
+          }
+        },
+        {
+          "say": [
+            "kidneys"
+          ],
+          "camera": {
+            "on": "body.kidneys",
+            "zoom": 2.2
+          },
+          "act": "body.kidneys",
+          "label": {
+            "on": "body.kidneys",
+            "text": "Kidney damage"
+          }
+        },
+        {
+          "say": [
+            "harder"
+          ],
+          "camera": "overview",
+          "pulse": "body.heart",
+          "label": {
+            "on": "body.heart",
+            "text": "Heart failure"
+          },
+          "note": "The heart pumps harder, and can fail"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Prevention",
+      "narration": "The good news: you can keep it healthy. Eat less than 5 grams of salt a day, just under a teaspoon. Eat more vegetables and fruit. Be physically active. Avoid tobacco, and limit alcohol. [pause] And have your blood pressure checked regularly.",
+      "world": {
+        "w": 4000,
+        "h": 1100,
+        "layers": [
+          {
+            "id": "salt",
+            "art": "icon",
+            "data": {
+              "name": "salt"
+            },
+            "at": [
+              320,
+              560
+            ],
+            "h": 560
+          },
+          {
+            "id": "veg",
+            "art": "icon",
+            "data": {
+              "name": "vegetables"
+            },
+            "at": [
+              900,
+              560
+            ],
+            "h": 560
+          },
+          {
+            "id": "fruit",
+            "art": "icon",
+            "data": {
+              "name": "fruit"
+            },
+            "at": [
+              1340,
+              580
+            ],
+            "h": 420
+          },
+          {
+            "id": "walk",
+            "art": "icon",
+            "data": {
+              "name": "walk"
+            },
+            "at": [
+              1900,
+              540
+            ],
+            "h": 620
+          },
+          {
+            "id": "smoke",
+            "art": "icon",
+            "data": {
+              "name": "cigarette"
+            },
+            "at": [
+              2440,
+              560
+            ],
+            "h": 500
+          },
+          {
+            "id": "drink",
+            "art": "icon",
+            "data": {
+              "name": "alcohol"
+            },
+            "at": [
+              2960,
+              560
+            ],
+            "h": 500
+          },
+          {
+            "id": "check",
+            "art": "bpmonitor",
+            "data": {
+              "sys": 120,
+              "dia": 80
+            },
+            "at": [
+              3600,
+              560
+            ],
+            "h": 460
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "good"
+          ],
+          "note": "Six habits that keep blood pressure healthy"
+        },
+        {
+          "say": [
+            "salt"
+          ],
+          "camera": {
+            "on": "salt.item",
+            "zoom": 2.2
+          },
+          "act": "salt.act",
+          "label": {
+            "on": "salt.item",
+            "text": "Less than 5 g a day"
+          }
+        },
+        {
+          "say": [
+            "vegetables"
+          ],
+          "camera": {
+            "on": "veg.item",
+            "zoom": 2.2
+          },
+          "act": [
+            "veg.act",
+            "fruit.act"
+          ],
+          "label": {
+            "on": "veg.item",
+            "text": "More vegetables and fruit"
+          }
+        },
+        {
+          "say": [
+            "active"
+          ],
+          "camera": {
+            "on": "walk.item",
+            "zoom": 2.2
+          },
+          "act": "walk.act",
+          "label": {
+            "on": "walk.item",
+            "text": "Be active"
+          }
+        },
+        {
+          "say": [
+            "tobacco"
+          ],
+          "camera": {
+            "on": "smoke.item",
+            "zoom": 2
+          },
+          "act": "smoke.act",
+          "cross": "smoke.item",
+          "label": {
+            "on": "smoke.item",
+            "text": "No tobacco"
+          }
+        },
+        {
+          "say": [
+            "alcohol"
+          ],
+          "label": {
+            "on": "drink.item",
+            "text": "Limit alcohol"
+          }
+        },
+        {
+          "say": [
+            "checked"
+          ],
+          "camera": "overview",
+          "act": [
+            "check.cuff",
+            "check.sys",
+            "check.dia"
+          ],
+          "label": {
+            "on": "check.monitor",
+            "text": "Check it regularly"
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Common mistake",
+      "narration": "The most common mistake is thinking: I feel fine, so my blood pressure must be normal. But most people with it feel nothing at all. Only a measurement can tell. [pause] So measure it, and remember: a diagnosis needs high readings on two different days.",
+      "world": {
+        "w": 2300,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "person",
+            "art": "person",
+            "at": [
+              560,
+              590
+            ],
+            "h": 1000
+          },
+          {
+            "id": "reading",
+            "art": "bpmonitor",
+            "data": {
+              "sys": 150,
+              "dia": 95
+            },
+            "at": [
+              1640,
+              560
+            ],
+            "h": 640,
+            "hidden": true
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "fine"
+          ],
+          "act": "person.smile",
+          "label": {
+            "on": "person.face",
+            "text": "“I feel fine”"
+          }
+        },
+        {
+          "say": [
+            "nothing"
+          ],
+          "note": "Feeling fine doesn't mean the pressure is normal",
+          "pulse": "person.chest"
+        },
+        {
+          "say": [
+            "measurement"
+          ],
+          "show": "reading",
+          "camera": "overview",
+          "act": [
+            "reading.cuff",
+            "reading.sys",
+            "reading.dia",
+            "person.worry"
+          ],
+          "label": {
+            "on": "reading.sys",
+            "text": "Only a reading can tell"
+          }
+        },
+        {
+          "say": [
+            "diagnosis"
+          ],
+          "note": "Diagnosis: high readings on two different days"
+        }
+      ]
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "question": "A patient's blood pressure is 150 over 95 on two different days. What does that suggest?",
+      "visual": {
+        "art": "bpmonitor",
+        "data": {
+          "sys": 150,
+          "dia": 95
+        },
+        "act": [
+          "sys",
+          "dia"
+        ]
+      },
+      "narration": "Time for a quick check. A patient's blood pressure is 150 over 95, on two different days. What does that suggest? Pause the video, and think it through."
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "question": "A patient's blood pressure is 150 over 95 on two different days. What does that suggest?",
+      "answer": "High blood pressure: both numbers are at or above 140 over 90, on two different days.",
+      "visual": {
+        "art": "bpscale",
+        "act": [
+          "high"
+        ]
+      },
+      "points": [
+        {
+          "label": "Systolic 150 is above 140",
+          "say": [
+            "systolic"
+          ]
+        },
+        {
+          "label": "Diastolic 95 is above 90",
+          "say": [
+            "diastolic"
+          ]
+        },
+        {
+          "label": "Confirmed on two different days",
+          "say": [
+            "confirmed"
+          ]
+        }
+      ],
+      "narration": "It suggests high blood pressure, or hypertension. The systolic value, 150, is above 140. The diastolic value, 95, is above 90. And it was confirmed on two different days."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Two numbers — systolic over diastolic",
+          "say": [
+            "numbers"
+          ],
+          "color": "accent"
+        },
+        {
+          "icon": "",
+          "label": "140 over 90 — or higher is high",
+          "say": [
+            "140"
+          ],
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Usually silent — so measure it",
+          "say": [
+            "silent"
+          ],
+          "color": "constant"
+        }
+      ],
+      "takeaway": "Know your numbers. Measure, don't guess.",
+      "narration": "Let's recap. Blood pressure is two numbers, systolic over diastolic. A reading of 140 over 90 or higher is high blood pressure. And because it is usually silent, measure it. [pause] Know your numbers."
+    }
+  ]
+}

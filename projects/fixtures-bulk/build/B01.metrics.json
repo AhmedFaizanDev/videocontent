@@ -1,0 +1,13 @@
+{
+  "project": "fixtures-bulk",
+  "id": "B01",
+  "stages": {
+    "preflight": {
+      "seconds": 3.5,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-03T20:06:29.271Z"
+    }
+  },
+  "authoring": []
+}

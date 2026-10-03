@@ -1,0 +1,901 @@
+{
+  "id": "H01",
+  "title": "The Human Heart: Structure, Flow and Rhythm",
+  "outputFilename": "The_Human_Heart_Structure_Flow_and_Rhythm.mp4",
+  "episode": "1",
+  "module": "Cardiovascular System",
+  "topicGroup": "The Human Heart",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "The Human Heart: Structure, Flow and Rhythm",
+      "subtitle": "Physiology for Nursing & Medical Students",
+      "learn": [
+        "the anatomy of the chambers and valves",
+        "the route blood travels through both circulations",
+        "the electrical rhythm behind every beat"
+      ],
+      "narration": "In this video, we're going to talk about the human heart: how it is built, how blood moves through it, and what makes it beat. We'll be precise, and connect each idea to what you see on the ward. By the end, you'll know the anatomy of its chambers and valves, you'll be able to trace the route blood travels through both circulations, and you'll understand the electrical rhythm behind every beat."
+    },
+    {
+      "type": "hook",
+      "kicker": "Why it matters",
+      "headline": "About 100,000 beats a day.",
+      "question": "And not a single day off.",
+      "highlight": [
+        "100,000"
+      ],
+      "narration": "Your heart beats about 100,000 times a day. At rest it moves roughly 5 litres of blood every minute: more than 7,000 litres a day. [pause] And it never takes a day off. To care for patients with heart disease, you first need to understand this pump."
+    },
+    {
+      "type": "definition",
+      "kicker": "What it is",
+      "term": "the heart",
+      "plain": "A four-chambered muscular pump in the mediastinum, about the size of a closed fist.",
+      "highlight": {
+        "pump": "#D7263D",
+        "mediastinum": "#2B45D6"
+      },
+      "chips": [
+        {
+          "icon": "",
+          "label": "Mediastinum",
+          "say": [
+            "mediastinum"
+          ]
+        },
+        {
+          "icon": "",
+          "label": "250–350 g",
+          "say": [
+            "weighs"
+          ]
+        },
+        {
+          "icon": "",
+          "label": "Apex points left",
+          "say": [
+            "apex"
+          ]
+        }
+      ],
+      "narration": "So what exactly is the heart? It is a four-chambered muscular pump in the mediastinum, the space between the lungs, just behind the sternum. It is about the size of a closed fist and weighs roughly 250 to 350 grams. Its base faces up and to the right, and its apex points down and to the left."
+    },
+    {
+      "type": "figure",
+      "kicker": "The heart wall",
+      "title": "The heart wall, from the outside in",
+      "art": "stack",
+      "data": {
+        "items": [
+          {
+            "label": "Fibrous pericardium",
+            "note": "A tough sac that anchors and protects",
+            "say": [
+              "fibrous"
+            ]
+          },
+          {
+            "label": "Parietal pericardium",
+            "note": "The serous layer lining the sac",
+            "say": [
+              "parietal"
+            ]
+          },
+          {
+            "label": "Pericardial cavity",
+            "note": "A film of fluid: beating without friction",
+            "say": [
+              "cavity"
+            ]
+          },
+          {
+            "label": "Epicardium",
+            "note": "The visceral layer, on the heart's surface",
+            "say": [
+              "epicardium"
+            ]
+          },
+          {
+            "label": "Myocardium",
+            "note": "Cardiac muscle: the pump itself",
+            "say": [
+              "myocardium"
+            ]
+          },
+          {
+            "label": "Endocardium",
+            "note": "The smooth lining of chambers and valves",
+            "say": [
+              "endocardium"
+            ]
+          }
+        ]
+      },
+      "narration": "Let's build the heart wall from the outside in. First, the fibrous pericardium, a tough sac that anchors and protects the heart. Inside it, the parietal layer of the serous pericardium. Then the pericardial cavity, holding a film of fluid so the heart can beat without friction. Next, the epicardium, the visceral layer on the heart's surface. Then the thick myocardium, the muscle that does the pumping. And finally the endocardium, the smooth lining of the chambers and valves."
+    },
+    {
+      "type": "figure",
+      "kicker": "Four chambers",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "ra",
+          "label": "Right atrium",
+          "text": "receives blood from the body",
+          "say": [
+            "atrium"
+          ]
+        },
+        {
+          "anchor": "rv",
+          "label": "Right ventricle",
+          "text": "pumps to the lungs",
+          "say": [
+            "ventricle"
+          ]
+        },
+        {
+          "anchor": "la",
+          "label": "Left atrium",
+          "text": "receives blood from the lungs",
+          "say": [
+            "left"
+          ]
+        },
+        {
+          "anchor": "lv",
+          "label": "Left ventricle",
+          "text": "the thickest wall",
+          "say": [
+            "ventricle"
+          ]
+        },
+        {
+          "anchor": "septum",
+          "label": "Interventricular septum",
+          "text": "divides the ventricles",
+          "say": [
+            "septum"
+          ]
+        },
+        {
+          "anchor": "aorta",
+          "label": "Aorta",
+          "text": "the body's largest artery",
+          "say": [
+            "aorta"
+          ]
+        }
+      ],
+      "narration": "Here is the heart in section, facing the patient, so the patient's right side is on your left. Blood returning from the body enters the right atrium. It drops into the right ventricle below. On the other side, the left atrium receives blood from the lungs and passes it to the left ventricle, whose wall is by far the thickest. The ventricles are divided by the interventricular septum. And rising from the left ventricle is the aorta, the body's largest artery."
+    },
+    {
+      "type": "figure",
+      "kicker": "Four valves",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "tricuspid",
+          "label": "Tricuspid valve",
+          "text": "right atrium to right ventricle",
+          "say": [
+            "tricuspid"
+          ]
+        },
+        {
+          "anchor": "pulmonary",
+          "label": "Pulmonary valve",
+          "text": "exit to the lungs",
+          "say": [
+            "pulmonary"
+          ]
+        },
+        {
+          "anchor": "mitral",
+          "label": "Mitral valve",
+          "text": "left atrium to left ventricle",
+          "say": [
+            "mitral"
+          ]
+        },
+        {
+          "anchor": "aortic",
+          "label": "Aortic valve",
+          "text": "exit to the body",
+          "say": [
+            "aortic"
+          ]
+        },
+        {
+          "anchor": "chordae",
+          "label": "Chordae tendineae",
+          "text": "tether the cusps to papillary muscles",
+          "say": [
+            "chordae"
+          ]
+        }
+      ],
+      "narration": "Four valves keep blood moving one way. Between the right atrium and right ventricle sits the tricuspid valve. The pulmonary valve guards the exit to the lungs. On the left, the mitral valve separates the atrium from the ventricle. And the aortic valve opens into the aorta. [pause] Fine cords called chordae tendineae tie the cusps of the atrioventricular valves to papillary muscles, so they cannot flip back when the ventricles contract."
+    },
+    {
+      "type": "figure",
+      "kicker": "Blood flow",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "svc",
+          "label": "Venae cavae",
+          "text": "deoxygenated blood returns",
+          "say": [
+            "cavae"
+          ]
+        },
+        {
+          "anchor": "flowRight",
+          "label": "To the lungs",
+          "text": "through the pulmonary valve",
+          "say": [
+            "lungs"
+          ]
+        },
+        {
+          "anchor": "pv",
+          "label": "Pulmonary veins",
+          "text": "oxygenated blood returns",
+          "say": [
+            "veins"
+          ]
+        },
+        {
+          "anchor": "flowLeft",
+          "label": "To the body",
+          "text": "through the aortic valve",
+          "say": [
+            "aorta"
+          ]
+        }
+      ],
+      "narration": "Now follow the blood. Deoxygenated blood returns from the body through the venae cavae into the right atrium. The right ventricle pumps it through the pulmonary valve to the lungs, where it picks up oxygen. Oxygenated blood returns through the pulmonary veins into the left atrium. [pause] The left ventricle then pumps it through the aortic valve into the aorta, and on to every tissue."
+    },
+    {
+      "type": "figure",
+      "kicker": "Two circulations",
+      "title": "Two circulations, in series",
+      "art": "graph",
+      "data": {
+        "direction": "LR",
+        "nodes": [
+          {
+            "id": "rh",
+            "label": "Right heart",
+            "tone": "blue"
+          },
+          {
+            "id": "lungs",
+            "label": "Lungs",
+            "shape": "pill",
+            "tone": "green"
+          },
+          {
+            "id": "lh",
+            "label": "Left heart",
+            "tone": "red"
+          },
+          {
+            "id": "body",
+            "label": "Body tissues",
+            "shape": "pill",
+            "tone": "sun"
+          }
+        ],
+        "edges": [
+          {
+            "from": "rh",
+            "to": "lungs",
+            "tone": "blue",
+            "label": "pulmonary artery"
+          },
+          {
+            "from": "lungs",
+            "to": "lh",
+            "tone": "red",
+            "label": "pulmonary veins"
+          },
+          {
+            "from": "lh",
+            "to": "body",
+            "tone": "red",
+            "label": "aorta"
+          },
+          {
+            "from": "body",
+            "to": "rh",
+            "tone": "blue",
+            "label": "venae cavae"
+          }
+        ],
+        "steps": [
+          {
+            "say": [
+              "pulmonary"
+            ],
+            "show": [
+              "rh",
+              "lungs",
+              "lh"
+            ],
+            "flow": [
+              "rh>lungs",
+              "lungs>lh"
+            ],
+            "focus": "lungs",
+            "note": "Pulmonary circulation: low pressure, to the lungs and back"
+          },
+          {
+            "say": [
+              "systemic"
+            ],
+            "show": [
+              "body"
+            ],
+            "flow": [
+              "lh>body",
+              "body>rh"
+            ],
+            "focus": "body",
+            "note": "Systemic circulation: high pressure, to every tissue"
+          },
+          {
+            "say": [
+              "both"
+            ],
+            "token": [
+              "rh",
+              "lungs",
+              "lh",
+              "body",
+              "rh"
+            ],
+            "loop": true,
+            "note": "Every drop passes through both circuits"
+          }
+        ]
+      },
+      "narration": "Together, that makes two circuits in series. The pulmonary circulation carries blood from the right heart to the lungs and back to the left heart. The systemic circulation carries it from the left heart to the body tissues and back to the right heart. [pause] Every drop passes through both, one after the other."
+    },
+    {
+      "type": "mistake",
+      "kicker": "Common mistake",
+      "title": "Do arteries always carry oxygen?",
+      "wrong": {
+        "label": "Common belief",
+        "lines": [
+          "Arteries: oxygenated",
+          "Veins: deoxygenated"
+        ]
+      },
+      "right": {
+        "label": "The rule",
+        "lines": [
+          "Arteries: away from heart",
+          "Veins: toward the heart",
+          "Pulmonary artery: low O2",
+          "Pulmonary veins: high O2"
+        ]
+      },
+      "note": "Name vessels by direction, not by oxygen.",
+      "narration": "A common mistake is to think arteries always carry oxygenated blood and veins always carry deoxygenated blood. It isn't true. Arteries carry blood away from the heart; veins carry it toward the heart. So the pulmonary arteries carry deoxygenated blood to the lungs, and the pulmonary veins bring oxygenated blood back. Name vessels by direction, not by oxygen."
+    },
+    {
+      "type": "figure",
+      "kicker": "The spark",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "sa",
+          "label": "SA node",
+          "text": "the natural pacemaker",
+          "say": [
+            "sinoatrial"
+          ]
+        },
+        {
+          "anchor": "av",
+          "label": "AV node",
+          "text": "holds the impulse ~0.1 s",
+          "say": [
+            "atrioventricular"
+          ]
+        },
+        {
+          "anchor": "his",
+          "label": "Bundle of His",
+          "text": "into the septum",
+          "say": [
+            "bundle"
+          ]
+        },
+        {
+          "anchor": "branches",
+          "label": "Bundle branches",
+          "text": "right and left",
+          "say": [
+            "branches"
+          ]
+        },
+        {
+          "anchor": "purkinje",
+          "label": "Purkinje fibres",
+          "text": "apex upward",
+          "say": [
+            "purkinje"
+          ]
+        }
+      ],
+      "narration": "What makes the heart beat? Each beat starts in the sinoatrial node, the natural pacemaker in the wall of the right atrium. The impulse spreads across both atria, and they contract. It then reaches the atrioventricular node, which holds it back for about 0.1 seconds, so the atria can finish emptying. [pause] Then it races down the bundle of His, splits into the right and left bundle branches, and spreads through the Purkinje fibres, so the ventricles contract from the apex upward."
+    },
+    {
+      "type": "figure",
+      "kicker": "Backup pacemakers",
+      "title": "Each pacemaker's own rate, per minute",
+      "art": "bars",
+      "data": {
+        "unit": "/min",
+        "items": [
+          {
+            "label": "SA node",
+            "value": 80,
+            "display": "60–100",
+            "tone": "orange",
+            "say": [
+              "node"
+            ]
+          },
+          {
+            "label": "AV node",
+            "value": 50,
+            "display": "40–60",
+            "tone": "sun",
+            "say": [
+              "node"
+            ]
+          },
+          {
+            "label": "Purkinje fibres",
+            "value": 30,
+            "display": "20–40",
+            "tone": "blue",
+            "say": [
+              "purkinje"
+            ]
+          }
+        ]
+      },
+      "narration": "Every part of this system can generate beats on its own, at different rates. The SA node fires 60 to 100 times a minute. The AV node, 40 to 60. The Purkinje fibres, only 20 to 40. [pause] The fastest pacemaker sets the pace, which is why the SA node leads, and why a failing SA node leaves a slower backup rhythm."
+    },
+    {
+      "type": "figure",
+      "kicker": "The ECG",
+      "title": "One beat on the ECG",
+      "art": "trace",
+      "data": {
+        "repeat": 2,
+        "segments": [
+          {
+            "shape": "flat",
+            "w": 1.2
+          },
+          {
+            "shape": "bump",
+            "w": 0.8,
+            "h": 0.18,
+            "label": "P",
+            "say": [
+              "small"
+            ],
+            "note": "Atrial depolarisation"
+          },
+          {
+            "shape": "flat",
+            "w": 0.55
+          },
+          {
+            "shape": "dip",
+            "w": 0.18,
+            "h": -0.12
+          },
+          {
+            "shape": "spike",
+            "w": 0.32,
+            "h": 1,
+            "label": "QRS",
+            "say": [
+              "qrs"
+            ],
+            "note": "Ventricular depolarisation, under 0.12 s"
+          },
+          {
+            "shape": "dip",
+            "w": 0.24,
+            "h": -0.25
+          },
+          {
+            "shape": "flat",
+            "w": 0.75
+          },
+          {
+            "shape": "bump",
+            "w": 1.1,
+            "h": 0.3,
+            "label": "T",
+            "say": [
+              "repolarisation"
+            ],
+            "note": "Ventricular repolarisation"
+          },
+          {
+            "shape": "flat",
+            "w": 1.6
+          }
+        ]
+      },
+      "narration": "On an ECG, this sequence becomes a familiar shape. The small P wave is atrial depolarisation. The tall QRS complex is ventricular depolarisation, normally under 0.12 seconds. The T wave that follows is ventricular repolarisation. [pause] The PR interval, from the start of the P wave to the start of the QRS, is normally 0.12 to 0.20 seconds."
+    },
+    {
+      "type": "figure",
+      "kicker": "The cardiac cycle",
+      "title": "One heartbeat, five phases",
+      "art": "cycle",
+      "data": {
+        "items": [
+          {
+            "label": "Atrial systole",
+            "note": "The atria top up the ventricles",
+            "say": [
+              "atrial"
+            ]
+          },
+          {
+            "label": "Isovolumetric contraction",
+            "note": "Every valve shut: S1, the 'lub'",
+            "say": [
+              "isovolumetric"
+            ]
+          },
+          {
+            "label": "Ventricular ejection",
+            "note": "Semilunar valves open, blood leaves",
+            "say": [
+              "ejection"
+            ]
+          },
+          {
+            "label": "Isovolumetric relaxation",
+            "note": "Semilunar valves shut: S2, the 'dub'",
+            "say": [
+              "relaxation"
+            ]
+          },
+          {
+            "label": "Ventricular filling",
+            "note": "AV valves open, blood flows in",
+            "say": [
+              "filling"
+            ]
+          }
+        ]
+      },
+      "narration": "One heartbeat is a cycle of five phases. In atrial systole, the atria top up the ventricles. In isovolumetric contraction, the ventricles squeeze with every valve shut; the AV valves have just closed, giving the first heart sound, lub. During ventricular ejection, the semilunar valves open and blood leaves. In isovolumetric relaxation, they snap shut: the second heart sound, dub. And in ventricular filling, the AV valves open and it all begins again."
+    },
+    {
+      "type": "figure",
+      "kicker": "Two pumps, two pressures",
+      "title": "Systolic pressure",
+      "art": "bars",
+      "data": {
+        "unit": "mmHg",
+        "items": [
+          {
+            "label": "Left ventricle",
+            "value": 120,
+            "tone": "red",
+            "say": [
+              "left"
+            ]
+          },
+          {
+            "label": "Aorta",
+            "value": 120,
+            "tone": "red",
+            "say": [
+              "aorta"
+            ]
+          },
+          {
+            "label": "Right ventricle",
+            "value": 25,
+            "tone": "blue",
+            "say": [
+              "right"
+            ]
+          },
+          {
+            "label": "Pulmonary artery",
+            "value": 25,
+            "tone": "blue",
+            "say": [
+              "pulmonary"
+            ]
+          }
+        ]
+      },
+      "narration": "Both ventricles pump the same volume, but not against the same pressure. The left ventricle generates about 120 millimetres of mercury, matched in the aorta. The right ventricle needs only about 25, matched in the pulmonary artery. [pause] That is why the left ventricular wall is about three times thicker."
+    },
+    {
+      "type": "example",
+      "kicker": "Cardiac output",
+      "title": "Cardiac output = heart rate × stroke volume",
+      "boxes": [
+        {
+          "label": "HR",
+          "value": "?",
+          "color": "variable"
+        },
+        {
+          "label": "SV",
+          "value": "?",
+          "color": "variable"
+        },
+        {
+          "label": "CO",
+          "value": "?",
+          "color": "constant"
+        }
+      ],
+      "trace": [
+        {
+          "note": "Heart rate: 70 beats per minute",
+          "set": {
+            "HR": "70/min"
+          },
+          "highlight": "HR",
+          "say": [
+            "resting"
+          ]
+        },
+        {
+          "note": "Stroke volume: 70 mL per beat",
+          "set": {
+            "SV": "70 mL"
+          },
+          "highlight": "SV",
+          "say": [
+            "millilitres"
+          ]
+        },
+        {
+          "note": "70 × 70 = 4,900 mL per minute",
+          "set": {
+            "CO": "4,900 mL"
+          },
+          "highlight": "CO",
+          "say": [
+            "multiply"
+          ]
+        },
+        {
+          "note": "≈ 4.9 litres every minute",
+          "set": {
+            "CO": "4.9 L/min"
+          },
+          "highlight": "CO",
+          "result": true,
+          "say": [
+            "about"
+          ]
+        }
+      ],
+      "narration": "Now a worked example: cardiac output, the volume each ventricle pumps per minute. It equals heart rate times stroke volume. Take a resting heart rate of 70 beats per minute, and a stroke volume of 70 millilitres per beat. Multiply: 70 times 70 gives 4,900 millilitres per minute. [pause] That is about 4.9 litres, close to an adult's entire blood volume, every minute."
+    },
+    {
+      "type": "figure",
+      "kicker": "The heart's own supply",
+      "art": "graph",
+      "data": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "root",
+            "label": "Aortic root",
+            "shape": "pill",
+            "tone": "red"
+          },
+          {
+            "id": "lm",
+            "label": "Left main",
+            "tone": "red"
+          },
+          {
+            "id": "rca",
+            "label": "Right coronary artery",
+            "tone": "red"
+          },
+          {
+            "id": "lad",
+            "label": "Left anterior descending",
+            "tone": "red"
+          },
+          {
+            "id": "cx",
+            "label": "Circumflex",
+            "tone": "red"
+          }
+        ],
+        "edges": [
+          {
+            "from": "root",
+            "to": "lm",
+            "tone": "red"
+          },
+          {
+            "from": "root",
+            "to": "rca",
+            "tone": "red"
+          },
+          {
+            "from": "lm",
+            "to": "lad",
+            "tone": "red"
+          },
+          {
+            "from": "lm",
+            "to": "cx",
+            "tone": "red"
+          }
+        ],
+        "steps": [
+          {
+            "say": [
+              "aortic"
+            ],
+            "show": [
+              "root"
+            ],
+            "focus": "root",
+            "note": "They leave the aorta just above the aortic valve"
+          },
+          {
+            "say": [
+              "main"
+            ],
+            "show": [
+              "lm"
+            ],
+            "flow": [
+              "root>lm"
+            ],
+            "focus": "lm",
+            "note": "The left main divides quickly"
+          },
+          {
+            "say": [
+              "anterior"
+            ],
+            "show": [
+              "lad"
+            ],
+            "flow": [
+              "lm>lad"
+            ],
+            "focus": "lad",
+            "note": "Front of the left ventricle and the septum"
+          },
+          {
+            "say": [
+              "circumflex"
+            ],
+            "show": [
+              "cx"
+            ],
+            "flow": [
+              "lm>cx"
+            ],
+            "focus": "cx",
+            "note": "Side and back of the left ventricle"
+          },
+          {
+            "say": [
+              "right"
+            ],
+            "show": [
+              "rca"
+            ],
+            "flow": [
+              "root>rca"
+            ],
+            "focus": "rca",
+            "note": "Right heart, and usually the SA and AV nodes"
+          },
+          {
+            "say": [
+              "blocked"
+            ],
+            "cut": [
+              "lm>lad"
+            ],
+            "focus": "lad",
+            "note": "A blocked coronary artery: myocardial infarction"
+          }
+        ]
+      },
+      "narration": "The heart muscle has its own supply: the coronary arteries, which leave the aortic root just above the aortic valve. The left main coronary artery divides quickly. The left anterior descending artery feeds the front of the left ventricle and the septum. The circumflex wraps around to the side and back. The right coronary artery supplies the right heart, and usually the SA and AV nodes. [pause] The left ventricle is perfused mainly during diastole. And a blocked coronary artery starves the muscle beyond it: a myocardial infarction."
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "question": "Why is the wall of the left ventricle so much thicker than the wall of the right ventricle?",
+      "narration": "Time for a knowledge check. Why is the wall of the left ventricle so much thicker than the wall of the right ventricle? Pause here and think it through."
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "question": "Why is the wall of the left ventricle so much thicker than the wall of the right ventricle?",
+      "answer": "It pumps against systemic pressure, about 120 mmHg, versus about 25 mmHg in the pulmonary circuit.",
+      "points": [
+        {
+          "label": "Systemic circuit: long, high resistance",
+          "say": [
+            "long"
+          ]
+        },
+        {
+          "label": "Pulmonary circuit: short, low pressure",
+          "say": [
+            "short"
+          ]
+        },
+        {
+          "label": "More pressure demands more muscle",
+          "say": [
+            "demands"
+          ]
+        }
+      ],
+      "narration": "Because the left ventricle must push blood through the entire systemic circulation, against a pressure of about 120 millimetres of mercury. The right ventricle only has to reach the lungs, against about 25. [pause] The systemic circuit is long, with high resistance. The pulmonary circuit is short, with low pressure. And more pressure demands more muscle."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Four chambers — two pumps in series",
+          "color": "variable",
+          "say": [
+            "chambers"
+          ]
+        },
+        {
+          "icon": "",
+          "label": "Four valves — one-way flow",
+          "color": "constant",
+          "say": [
+            "valves"
+          ]
+        },
+        {
+          "icon": "",
+          "label": "SA node to Purkinje — the rhythm",
+          "color": "accent",
+          "say": [
+            "node"
+          ]
+        }
+      ],
+      "takeaway": "Two pumps, four valves, one rhythm.",
+      "narration": "Let's recap. Four chambers work as two pumps in series. Four valves keep blood moving one way, from the venae cavae to the lungs, and from the lungs to the aorta. And every beat is timed by the conduction system, from the SA node to the Purkinje fibres, which you can read on the ECG. [pause] Know this pump well, and every cardiac assessment you make will make sense."
+    }
+  ]
+}

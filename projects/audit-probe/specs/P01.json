@@ -1,0 +1,81 @@
+{
+  "id": "P01",
+  "title": "Audit probe",
+  "outputFilename": "P01_audit_probe.mp4",
+  "module": "Probe",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Audit probe",
+      "subtitle": "Fixture",
+      "narration": "In this video, we're going to talk about the audit probe. By the end, you'll see overflow detection.",
+      "learn": [
+        "overflow",
+        "detection"
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "flow",
+      "art": "flow",
+      "title": "Flow with a very long word",
+      "data": {
+        "items": [
+          {
+            "label": "ಶ್ವಾಸಕೋಶಗಳಲ್ಲಿರುವವಾಯು",
+            "say": [
+              "first"
+            ]
+          },
+          {
+            "label": "Short",
+            "say": [
+              "second"
+            ]
+          },
+          {
+            "label": "Third",
+            "say": [
+              "third"
+            ]
+          },
+          {
+            "label": "Fourth",
+            "say": [
+              "fourth"
+            ]
+          },
+          {
+            "label": "Fifth",
+            "say": [
+              "fifth"
+            ]
+          },
+          {
+            "label": "Sixth",
+            "say": [
+              "sixth"
+            ]
+          }
+        ]
+      },
+      "narration": "First we look. Then second. Then third. Then fourth. Then fifth. Then sixth."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "To recap, overflow is detected, and detection works.",
+      "bullets": [
+        {
+          "label": "Overflow — detected"
+        },
+        {
+          "label": "Detection — works"
+        }
+      ],
+      "takeaway": "Probe."
+    }
+  ]
+}

@@ -1,0 +1,1113 @@
+{
+  "id": "F04",
+  "fps": 30,
+  "totalDurationInFrames": 2686,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about the diagram engine and how it animates ideas instead of showing slides. It keeps going a little longer here. By the end, you'll see graphs, you'll see bars, and you'll see traces.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 16.776530612244898,
+      "voDurationInFrames": 504,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.05,
+          "end": 3.162
+        },
+        {
+          "text": "the diagram engine and how it animates",
+          "start": 3.162,
+          "end": 6.123
+        },
+        {
+          "text": "ideas instead of showing slides.",
+          "start": 6.123,
+          "end": 8.628
+        },
+        {
+          "text": "It keeps going a little longer here.",
+          "start": 8.628,
+          "end": 11.437
+        },
+        {
+          "text": "By the end, you'll see graphs, you'll see",
+          "start": 11.437,
+          "end": 14.625
+        },
+        {
+          "text": "bars, and you'll see traces.",
+          "start": 14.625,
+          "end": 17.027
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.278
+        },
+        {
+          "w": "this",
+          "start": 0.278,
+          "end": 0.657
+        },
+        {
+          "w": "video",
+          "start": 0.657,
+          "end": 1.189
+        },
+        {
+          "w": "were",
+          "start": 1.189,
+          "end": 1.644
+        },
+        {
+          "w": "going",
+          "start": 1.644,
+          "end": 2.1
+        },
+        {
+          "w": "to",
+          "start": 2.1,
+          "end": 2.327
+        },
+        {
+          "w": "talk",
+          "start": 2.327,
+          "end": 2.707
+        },
+        {
+          "w": "about",
+          "start": 2.707,
+          "end": 3.162
+        },
+        {
+          "w": "the",
+          "start": 3.162,
+          "end": 3.466
+        },
+        {
+          "w": "diagram",
+          "start": 3.466,
+          "end": 4.073
+        },
+        {
+          "w": "engine",
+          "start": 4.073,
+          "end": 4.605
+        },
+        {
+          "w": "and",
+          "start": 4.605,
+          "end": 4.908
+        },
+        {
+          "w": "how",
+          "start": 4.908,
+          "end": 5.212
+        },
+        {
+          "w": "it",
+          "start": 5.212,
+          "end": 5.44
+        },
+        {
+          "w": "animates",
+          "start": 5.44,
+          "end": 6.123
+        },
+        {
+          "w": "ideas",
+          "start": 6.123,
+          "end": 6.578
+        },
+        {
+          "w": "instead",
+          "start": 6.578,
+          "end": 7.186
+        },
+        {
+          "w": "of",
+          "start": 7.186,
+          "end": 7.413
+        },
+        {
+          "w": "showing",
+          "start": 7.413,
+          "end": 8.021
+        },
+        {
+          "w": "slides",
+          "start": 8.021,
+          "end": 8.628
+        },
+        {
+          "w": "it",
+          "start": 8.628,
+          "end": 8.856
+        },
+        {
+          "w": "keeps",
+          "start": 8.856,
+          "end": 9.311
+        },
+        {
+          "w": "going",
+          "start": 9.311,
+          "end": 9.767
+        },
+        {
+          "w": "a",
+          "start": 9.767,
+          "end": 9.919
+        },
+        {
+          "w": "little",
+          "start": 9.919,
+          "end": 10.45
+        },
+        {
+          "w": "longer",
+          "start": 10.45,
+          "end": 10.981
+        },
+        {
+          "w": "here",
+          "start": 10.981,
+          "end": 11.437
+        },
+        {
+          "w": "by",
+          "start": 11.437,
+          "end": 11.665
+        },
+        {
+          "w": "the",
+          "start": 11.665,
+          "end": 11.968
+        },
+        {
+          "w": "end",
+          "start": 11.968,
+          "end": 12.348
+        },
+        {
+          "w": "youll",
+          "start": 12.348,
+          "end": 12.879
+        },
+        {
+          "w": "see",
+          "start": 12.879,
+          "end": 13.183
+        },
+        {
+          "w": "graphs",
+          "start": 13.183,
+          "end": 13.79
+        },
+        {
+          "w": "youll",
+          "start": 13.79,
+          "end": 14.321
+        },
+        {
+          "w": "see",
+          "start": 14.321,
+          "end": 14.625
+        },
+        {
+          "w": "bars",
+          "start": 14.625,
+          "end": 15.081
+        },
+        {
+          "w": "and",
+          "start": 15.081,
+          "end": 15.384
+        },
+        {
+          "w": "youll",
+          "start": 15.384,
+          "end": 15.916
+        },
+        {
+          "w": "see",
+          "start": 15.916,
+          "end": 16.219
+        },
+        {
+          "w": "traces",
+          "start": 16.219,
+          "end": 16.827
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 571,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "figure",
+      "narration": "It starts at the farm. The mill turns wheat into flour. The bakery turns flour into bread. The shop sells it to customers. And customer demand flows back to the farm, closing the loop.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 14.627551020408164,
+      "voDurationInFrames": 439,
+      "captions": [
+        {
+          "text": "It starts at the farm.",
+          "start": 0.05,
+          "end": 1.869
+        },
+        {
+          "text": "The mill turns wheat into flour.",
+          "start": 1.869,
+          "end": 4.478
+        },
+        {
+          "text": "The bakery turns flour into bread.",
+          "start": 4.478,
+          "end": 7.245
+        },
+        {
+          "text": "The shop sells it to customers.",
+          "start": 7.245,
+          "end": 9.775
+        },
+        {
+          "text": "And customer demand flows back to the",
+          "start": 9.775,
+          "end": 12.78
+        },
+        {
+          "text": "farm, closing the loop.",
+          "start": 12.78,
+          "end": 14.878
+        }
+      ],
+      "words": [
+        {
+          "w": "it",
+          "start": 0.05,
+          "end": 0.287
+        },
+        {
+          "w": "starts",
+          "start": 0.287,
+          "end": 0.841
+        },
+        {
+          "w": "at",
+          "start": 0.841,
+          "end": 1.078
+        },
+        {
+          "w": "the",
+          "start": 1.078,
+          "end": 1.394
+        },
+        {
+          "w": "farm",
+          "start": 1.394,
+          "end": 1.869
+        },
+        {
+          "w": "the",
+          "start": 1.869,
+          "end": 2.185
+        },
+        {
+          "w": "mill",
+          "start": 2.185,
+          "end": 2.58
+        },
+        {
+          "w": "turns",
+          "start": 2.58,
+          "end": 3.055
+        },
+        {
+          "w": "wheat",
+          "start": 3.055,
+          "end": 3.529
+        },
+        {
+          "w": "into",
+          "start": 3.529,
+          "end": 3.924
+        },
+        {
+          "w": "flour",
+          "start": 3.924,
+          "end": 4.478
+        },
+        {
+          "w": "the",
+          "start": 4.478,
+          "end": 4.794
+        },
+        {
+          "w": "bakery",
+          "start": 4.794,
+          "end": 5.348
+        },
+        {
+          "w": "turns",
+          "start": 5.348,
+          "end": 5.822
+        },
+        {
+          "w": "flour",
+          "start": 5.822,
+          "end": 6.296
+        },
+        {
+          "w": "into",
+          "start": 6.296,
+          "end": 6.692
+        },
+        {
+          "w": "bread",
+          "start": 6.692,
+          "end": 7.245
+        },
+        {
+          "w": "the",
+          "start": 7.245,
+          "end": 7.561
+        },
+        {
+          "w": "shop",
+          "start": 7.561,
+          "end": 7.957
+        },
+        {
+          "w": "sells",
+          "start": 7.957,
+          "end": 8.431
+        },
+        {
+          "w": "it",
+          "start": 8.431,
+          "end": 8.668
+        },
+        {
+          "w": "to",
+          "start": 8.668,
+          "end": 8.906
+        },
+        {
+          "w": "customers",
+          "start": 8.906,
+          "end": 9.775
+        },
+        {
+          "w": "and",
+          "start": 9.775,
+          "end": 10.092
+        },
+        {
+          "w": "customer",
+          "start": 10.092,
+          "end": 10.803
+        },
+        {
+          "w": "demand",
+          "start": 10.803,
+          "end": 11.357
+        },
+        {
+          "w": "flows",
+          "start": 11.357,
+          "end": 11.831
+        },
+        {
+          "w": "back",
+          "start": 11.831,
+          "end": 12.226
+        },
+        {
+          "w": "to",
+          "start": 12.226,
+          "end": 12.464
+        },
+        {
+          "w": "the",
+          "start": 12.464,
+          "end": 12.78
+        },
+        {
+          "w": "farm",
+          "start": 12.78,
+          "end": 13.254
+        },
+        {
+          "w": "closing",
+          "start": 13.254,
+          "end": 13.887
+        },
+        {
+          "w": "the",
+          "start": 13.887,
+          "end": 14.203
+        },
+        {
+          "w": "loop",
+          "start": 14.203,
+          "end": 14.678
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 495,
+      "startFrame": 571
+    },
+    {
+      "index": 3,
+      "type": "figure",
+      "narration": "At the top is the director. Below sit three leads. And under them, the teams that do the work.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 8.205102040816326,
+      "voDurationInFrames": 247,
+      "captions": [
+        {
+          "text": "At the top is the director.",
+          "start": 0.05,
+          "end": 2.468
+        },
+        {
+          "text": "Below sit three leads.",
+          "start": 2.468,
+          "end": 4.455
+        },
+        {
+          "text": "And under them, the teams that do the",
+          "start": 4.455,
+          "end": 7.737
+        },
+        {
+          "text": "work.",
+          "start": 7.737,
+          "end": 8.455
+        }
+      ],
+      "words": [
+        {
+          "w": "at",
+          "start": 0.05,
+          "end": 0.309
+        },
+        {
+          "w": "the",
+          "start": 0.309,
+          "end": 0.655
+        },
+        {
+          "w": "top",
+          "start": 0.655,
+          "end": 1
+        },
+        {
+          "w": "is",
+          "start": 1,
+          "end": 1.259
+        },
+        {
+          "w": "the",
+          "start": 1.259,
+          "end": 1.605
+        },
+        {
+          "w": "director",
+          "start": 1.605,
+          "end": 2.468
+        },
+        {
+          "w": "below",
+          "start": 2.468,
+          "end": 2.987
+        },
+        {
+          "w": "sit",
+          "start": 2.987,
+          "end": 3.332
+        },
+        {
+          "w": "three",
+          "start": 3.332,
+          "end": 3.85
+        },
+        {
+          "w": "leads",
+          "start": 3.85,
+          "end": 4.455
+        },
+        {
+          "w": "and",
+          "start": 4.455,
+          "end": 4.8
+        },
+        {
+          "w": "under",
+          "start": 4.8,
+          "end": 5.319
+        },
+        {
+          "w": "them",
+          "start": 5.319,
+          "end": 5.837
+        },
+        {
+          "w": "the",
+          "start": 5.837,
+          "end": 6.182
+        },
+        {
+          "w": "teams",
+          "start": 6.182,
+          "end": 6.7
+        },
+        {
+          "w": "that",
+          "start": 6.7,
+          "end": 7.132
+        },
+        {
+          "w": "do",
+          "start": 7.132,
+          "end": 7.391
+        },
+        {
+          "w": "the",
+          "start": 7.391,
+          "end": 7.737
+        },
+        {
+          "w": "work",
+          "start": 7.737,
+          "end": 8.255
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 303,
+      "startFrame": 1066
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "How far can you go in a day? Walk about five. Cycle forty. Drive one hundred and eighty. Fly nine hundred or more.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 10.137755102040817,
+      "voDurationInFrames": 305,
+      "captions": [
+        {
+          "text": "How far can you go in a day?",
+          "start": 0.05,
+          "end": 2.606
+        },
+        {
+          "text": "Walk about five. Cycle forty.",
+          "start": 2.606,
+          "end": 5.251
+        },
+        {
+          "text": "Drive one hundred and eighty.",
+          "start": 5.251,
+          "end": 7.896
+        },
+        {
+          "text": "Fly nine hundred or more.",
+          "start": 7.896,
+          "end": 10.388
+        }
+      ],
+      "words": [
+        {
+          "w": "how",
+          "start": 0.05,
+          "end": 0.403
+        },
+        {
+          "w": "far",
+          "start": 0.403,
+          "end": 0.755
+        },
+        {
+          "w": "can",
+          "start": 0.755,
+          "end": 1.108
+        },
+        {
+          "w": "you",
+          "start": 1.108,
+          "end": 1.46
+        },
+        {
+          "w": "go",
+          "start": 1.46,
+          "end": 1.725
+        },
+        {
+          "w": "in",
+          "start": 1.725,
+          "end": 1.989
+        },
+        {
+          "w": "a",
+          "start": 1.989,
+          "end": 2.166
+        },
+        {
+          "w": "day",
+          "start": 2.166,
+          "end": 2.606
+        },
+        {
+          "w": "walk",
+          "start": 2.606,
+          "end": 3.047
+        },
+        {
+          "w": "about",
+          "start": 3.047,
+          "end": 3.576
+        },
+        {
+          "w": "five",
+          "start": 3.576,
+          "end": 4.105
+        },
+        {
+          "w": "cycle",
+          "start": 4.105,
+          "end": 4.634
+        },
+        {
+          "w": "forty",
+          "start": 4.634,
+          "end": 5.251
+        },
+        {
+          "w": "drive",
+          "start": 5.251,
+          "end": 5.78
+        },
+        {
+          "w": "one",
+          "start": 5.78,
+          "end": 6.133
+        },
+        {
+          "w": "hundred",
+          "start": 6.133,
+          "end": 6.838
+        },
+        {
+          "w": "and",
+          "start": 6.838,
+          "end": 7.191
+        },
+        {
+          "w": "eighty",
+          "start": 7.191,
+          "end": 7.896
+        },
+        {
+          "w": "fly",
+          "start": 7.896,
+          "end": 8.248
+        },
+        {
+          "w": "nine",
+          "start": 8.248,
+          "end": 8.689
+        },
+        {
+          "w": "hundred",
+          "start": 8.689,
+          "end": 9.394
+        },
+        {
+          "w": "or",
+          "start": 9.394,
+          "end": 9.659
+        },
+        {
+          "w": "more",
+          "start": 9.659,
+          "end": 10.188
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 361,
+      "startFrame": 1369
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Watch the pen. A small first bump. Then the tall spike. Then a broad, rounded wave, before it all repeats.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 8.763265306122449,
+      "voDurationInFrames": 263,
+      "captions": [
+        {
+          "text": "Watch the pen. A small first bump.",
+          "start": 0.05,
+          "end": 2.916
+        },
+        {
+          "text": "Then the tall spike.",
+          "start": 2.916,
+          "end": 4.636
+        },
+        {
+          "text": "Then a broad, rounded wave, before it all",
+          "start": 4.636,
+          "end": 8.076
+        },
+        {
+          "text": "repeats.",
+          "start": 8.076,
+          "end": 9.013
+        }
+      ],
+      "words": [
+        {
+          "w": "watch",
+          "start": 0.05,
+          "end": 0.541
+        },
+        {
+          "w": "the",
+          "start": 0.541,
+          "end": 0.869
+        },
+        {
+          "w": "pen",
+          "start": 0.869,
+          "end": 1.278
+        },
+        {
+          "w": "a",
+          "start": 1.278,
+          "end": 1.442
+        },
+        {
+          "w": "small",
+          "start": 1.442,
+          "end": 1.934
+        },
+        {
+          "w": "first",
+          "start": 1.934,
+          "end": 2.425
+        },
+        {
+          "w": "bump",
+          "start": 2.425,
+          "end": 2.916
+        },
+        {
+          "w": "then",
+          "start": 2.916,
+          "end": 3.326
+        },
+        {
+          "w": "the",
+          "start": 3.326,
+          "end": 3.654
+        },
+        {
+          "w": "tall",
+          "start": 3.654,
+          "end": 4.063
+        },
+        {
+          "w": "spike",
+          "start": 4.063,
+          "end": 4.636
+        },
+        {
+          "w": "then",
+          "start": 4.636,
+          "end": 5.046
+        },
+        {
+          "w": "a",
+          "start": 5.046,
+          "end": 5.21
+        },
+        {
+          "w": "broad",
+          "start": 5.21,
+          "end": 5.783
+        },
+        {
+          "w": "rounded",
+          "start": 5.783,
+          "end": 6.438
+        },
+        {
+          "w": "wave",
+          "start": 6.438,
+          "end": 6.93
+        },
+        {
+          "w": "before",
+          "start": 6.93,
+          "end": 7.503
+        },
+        {
+          "w": "it",
+          "start": 7.503,
+          "end": 7.749
+        },
+        {
+          "w": "all",
+          "start": 7.749,
+          "end": 8.076
+        },
+        {
+          "w": "repeats",
+          "start": 8.076,
+          "end": 8.813
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 319,
+      "startFrame": 1730
+    },
+    {
+      "index": 6,
+      "type": "figure",
+      "narration": "At rest the line is flat. Then it jumps up and holds a long plateau. Finally it falls and we recover.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 9.02142857142857,
+      "voDurationInFrames": 271,
+      "captions": [
+        {
+          "text": "At rest the line is flat.",
+          "start": 0.05,
+          "end": 2.35
+        },
+        {
+          "text": "Then it jumps up and holds a long plateau.",
+          "start": 2.35,
+          "end": 6.153
+        },
+        {
+          "text": "Finally it falls and we recover.",
+          "start": 6.153,
+          "end": 9.270999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "at",
+          "start": 0.05,
+          "end": 0.315
+        },
+        {
+          "w": "rest",
+          "start": 0.315,
+          "end": 0.758
+        },
+        {
+          "w": "the",
+          "start": 0.758,
+          "end": 1.111
+        },
+        {
+          "w": "line",
+          "start": 1.111,
+          "end": 1.554
+        },
+        {
+          "w": "is",
+          "start": 1.554,
+          "end": 1.819
+        },
+        {
+          "w": "flat",
+          "start": 1.819,
+          "end": 2.35
+        },
+        {
+          "w": "then",
+          "start": 2.35,
+          "end": 2.792
+        },
+        {
+          "w": "it",
+          "start": 2.792,
+          "end": 3.057
+        },
+        {
+          "w": "jumps",
+          "start": 3.057,
+          "end": 3.588
+        },
+        {
+          "w": "up",
+          "start": 3.588,
+          "end": 3.853
+        },
+        {
+          "w": "and",
+          "start": 3.853,
+          "end": 4.207
+        },
+        {
+          "w": "holds",
+          "start": 4.207,
+          "end": 4.738
+        },
+        {
+          "w": "a",
+          "start": 4.738,
+          "end": 4.914
+        },
+        {
+          "w": "long",
+          "start": 4.914,
+          "end": 5.357
+        },
+        {
+          "w": "plateau",
+          "start": 5.357,
+          "end": 6.153
+        },
+        {
+          "w": "finally",
+          "start": 6.153,
+          "end": 6.86
+        },
+        {
+          "w": "it",
+          "start": 6.86,
+          "end": 7.126
+        },
+        {
+          "w": "falls",
+          "start": 7.126,
+          "end": 7.656
+        },
+        {
+          "w": "and",
+          "start": 7.656,
+          "end": 8.01
+        },
+        {
+          "w": "we",
+          "start": 8.01,
+          "end": 8.275
+        },
+        {
+          "w": "recover",
+          "start": 8.275,
+          "end": 9.071
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 327,
+      "startFrame": 2049
+    },
+    {
+      "index": 7,
+      "type": "recap",
+      "narration": "Let's recap. Graphs build systems. Bars grow quantities. Traces draw waves.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 5.089795918367346,
+      "voDurationInFrames": 153,
+      "captions": [
+        {
+          "text": "Let's recap. Graphs build systems.",
+          "start": 0.05,
+          "end": 2.394
+        },
+        {
+          "text": "Bars grow quantities.",
+          "start": 2.394,
+          "end": 3.867
+        },
+        {
+          "text": "Traces draw waves.",
+          "start": 3.867,
+          "end": 5.34
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.05,
+          "end": 0.452
+        },
+        {
+          "w": "recap",
+          "start": 0.452,
+          "end": 0.921
+        },
+        {
+          "w": "graphs",
+          "start": 0.921,
+          "end": 1.389
+        },
+        {
+          "w": "build",
+          "start": 1.389,
+          "end": 1.791
+        },
+        {
+          "w": "systems",
+          "start": 1.791,
+          "end": 2.394
+        },
+        {
+          "w": "bars",
+          "start": 2.394,
+          "end": 2.729
+        },
+        {
+          "w": "grow",
+          "start": 2.729,
+          "end": 3.064
+        },
+        {
+          "w": "quantities",
+          "start": 3.064,
+          "end": 3.867
+        },
+        {
+          "w": "traces",
+          "start": 3.867,
+          "end": 4.336
+        },
+        {
+          "w": "draw",
+          "start": 4.336,
+          "end": 4.671
+        },
+        {
+          "w": "waves",
+          "start": 4.671,
+          "end": 5.14
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 310,
+      "startFrame": 2376
+    }
+  ]
+}

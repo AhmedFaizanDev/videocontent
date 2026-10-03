@@ -1,0 +1,172 @@
+{
+  "id": "F08",
+  "title": "Medical packs",
+  "outputFilename": "F08_medical_packs_3.mp4",
+  "module": "Pack · medical",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Medical Packs",
+      "subtitle": "Fixture · every anchor",
+      "narration": "In this video, we're going to talk about the medical illustration packs. By the end, you'll see every illustration, you'll see every anchor.",
+      "learn": [
+        "every illustration",
+        "every anchor"
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "lungs",
+      "art": "lungs",
+      "data": {},
+      "narration": "Pack figure. We now look at diaphragm carefully. We now look at exhale carefully.",
+      "title": "Pack art: lungs",
+      "callouts": [
+        {
+          "anchor": "diaphragm",
+          "label": "diaphragm label",
+          "text": "diaphragm note text",
+          "say": [
+            "diaphragm"
+          ]
+        },
+        {
+          "anchor": "exhale",
+          "label": "exhale label",
+          "text": "exhale note text",
+          "say": [
+            "exhale"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "moments",
+      "art": "moments",
+      "data": {},
+      "narration": "Pack figure. We now look at patient carefully. We now look at m1 carefully.",
+      "title": "Pack art: moments",
+      "callouts": [
+        {
+          "anchor": "patient",
+          "label": "patient label",
+          "text": "patient note text",
+          "say": [
+            "patient"
+          ]
+        },
+        {
+          "anchor": "m1",
+          "label": "m1 label",
+          "text": "m1 note text",
+          "say": [
+            "m1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "hand",
+      "art": "hand",
+      "data": {},
+      "narration": "Pack figure. We now look at missed carefully. We now look at thumbs carefully.",
+      "title": "Pack art: hand",
+      "callouts": [
+        {
+          "anchor": "missed",
+          "label": "missed label",
+          "text": "missed note text",
+          "say": [
+            "missed"
+          ]
+        },
+        {
+          "anchor": "thumbs",
+          "label": "thumbs label",
+          "text": "thumbs note text",
+          "say": [
+            "thumbs"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "insulin",
+      "art": "insulin",
+      "data": {},
+      "narration": "Pack figure. We now look at glucose carefully. We now look at type1 carefully.",
+      "title": "Pack art: insulin",
+      "callouts": [
+        {
+          "anchor": "glucose",
+          "label": "glucose label",
+          "text": "glucose note text",
+          "say": [
+            "glucose"
+          ]
+        },
+        {
+          "anchor": "type1",
+          "label": "type1 label",
+          "text": "type1 note text",
+          "say": [
+            "type1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "insulin2",
+      "art": "insulin",
+      "data": {},
+      "title": "Pack art: insulin type 2",
+      "narration": "Pack figure. We now look at insulin carefully. We now look at receptor carefully. We now look at type2 carefully.",
+      "callouts": [
+        {
+          "anchor": "insulin",
+          "label": "insulin label",
+          "text": "insulin note text",
+          "say": [
+            "insulin"
+          ]
+        },
+        {
+          "anchor": "receptor",
+          "label": "receptor label",
+          "text": "receptor note text",
+          "say": [
+            "receptor"
+          ]
+        },
+        {
+          "anchor": "type2",
+          "label": "type2 label",
+          "text": "type2 note text",
+          "say": [
+            "type2"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "To recap, every illustration renders, and every anchor is heard.",
+      "bullets": [
+        {
+          "label": "Illustrations — render"
+        },
+        {
+          "label": "Anchors — heard"
+        }
+      ],
+      "takeaway": "Every anchor, every art."
+    }
+  ]
+}

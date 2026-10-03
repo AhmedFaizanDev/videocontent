@@ -1,0 +1,2516 @@
+{
+  "id": "F01",
+  "fps": 30,
+  "totalDurationInFrames": 5892,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about Maximum Everything: The Longest Allowed Title Wrapping Two Lines, a deliberately long title used to stress the layout engine at its limits. It keeps going for a while so the enumeration lands later. By the end, you'll see the longest learn bullet that is still allowed to wrap onto three lines, you'll see a second equally long bullet to fill the second card, you'll see a third bullet, you'll see a fourth bullet to force four columns.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 35.14387755102041,
+      "voDurationInFrames": 1055,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.05,
+          "end": 3.064
+        },
+        {
+          "text": "Maximum Everything:",
+          "start": 3.064,
+          "end": 4.535
+        },
+        {
+          "text": "The Longest Allowed Title Wrapping Two",
+          "start": 4.535,
+          "end": 7.402
+        },
+        {
+          "text": "Lines, a deliberately long title used to",
+          "start": 7.402,
+          "end": 10.417
+        },
+        {
+          "text": "stress the layout engine at its limits.",
+          "start": 10.417,
+          "end": 13.358
+        },
+        {
+          "text": "It keeps going for a while so the",
+          "start": 13.358,
+          "end": 15.857
+        },
+        {
+          "text": "enumeration lands later.",
+          "start": 15.857,
+          "end": 17.695
+        },
+        {
+          "text": "By the end, you'll see the longest learn",
+          "start": 17.695,
+          "end": 20.71
+        },
+        {
+          "text": "bullet that is still allowed to wrap onto",
+          "start": 20.71,
+          "end": 23.798
+        },
+        {
+          "text": "three lines, you'll see a second equally",
+          "start": 23.798,
+          "end": 26.812
+        },
+        {
+          "text": "long bullet to fill the second card,",
+          "start": 26.812,
+          "end": 29.533
+        },
+        {
+          "text": "you'll see a third bullet, you'll see a",
+          "start": 29.533,
+          "end": 32.474
+        },
+        {
+          "text": "fourth bullet to force four columns.",
+          "start": 32.474,
+          "end": 35.394000000000005
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.271
+        },
+        {
+          "w": "this",
+          "start": 0.271,
+          "end": 0.638
+        },
+        {
+          "w": "video",
+          "start": 0.638,
+          "end": 1.153
+        },
+        {
+          "w": "were",
+          "start": 1.153,
+          "end": 1.594
+        },
+        {
+          "w": "going",
+          "start": 1.594,
+          "end": 2.035
+        },
+        {
+          "w": "to",
+          "start": 2.035,
+          "end": 2.256
+        },
+        {
+          "w": "talk",
+          "start": 2.256,
+          "end": 2.623
+        },
+        {
+          "w": "about",
+          "start": 2.623,
+          "end": 3.064
+        },
+        {
+          "w": "maximum",
+          "start": 3.064,
+          "end": 3.653
+        },
+        {
+          "w": "everything",
+          "start": 3.653,
+          "end": 4.535
+        },
+        {
+          "w": "the",
+          "start": 4.535,
+          "end": 4.829
+        },
+        {
+          "w": "longest",
+          "start": 4.829,
+          "end": 5.417
+        },
+        {
+          "w": "allowed",
+          "start": 5.417,
+          "end": 6.005
+        },
+        {
+          "w": "title",
+          "start": 6.005,
+          "end": 6.446
+        },
+        {
+          "w": "wrapping",
+          "start": 6.446,
+          "end": 7.108
+        },
+        {
+          "w": "two",
+          "start": 7.108,
+          "end": 7.402
+        },
+        {
+          "w": "lines",
+          "start": 7.402,
+          "end": 7.917
+        },
+        {
+          "w": "a",
+          "start": 7.917,
+          "end": 8.064
+        },
+        {
+          "w": "deliberately",
+          "start": 8.064,
+          "end": 9.02
+        },
+        {
+          "w": "long",
+          "start": 9.02,
+          "end": 9.387
+        },
+        {
+          "w": "title",
+          "start": 9.387,
+          "end": 9.829
+        },
+        {
+          "w": "used",
+          "start": 9.829,
+          "end": 10.196
+        },
+        {
+          "w": "to",
+          "start": 10.196,
+          "end": 10.417
+        },
+        {
+          "w": "stress",
+          "start": 10.417,
+          "end": 10.931
+        },
+        {
+          "w": "the",
+          "start": 10.931,
+          "end": 11.225
+        },
+        {
+          "w": "layout",
+          "start": 11.225,
+          "end": 11.74
+        },
+        {
+          "w": "engine",
+          "start": 11.74,
+          "end": 12.255
+        },
+        {
+          "w": "at",
+          "start": 12.255,
+          "end": 12.475
+        },
+        {
+          "w": "its",
+          "start": 12.475,
+          "end": 12.769
+        },
+        {
+          "w": "limits",
+          "start": 12.769,
+          "end": 13.358
+        },
+        {
+          "w": "it",
+          "start": 13.358,
+          "end": 13.578
+        },
+        {
+          "w": "keeps",
+          "start": 13.578,
+          "end": 14.019
+        },
+        {
+          "w": "going",
+          "start": 14.019,
+          "end": 14.46
+        },
+        {
+          "w": "for",
+          "start": 14.46,
+          "end": 14.755
+        },
+        {
+          "w": "a",
+          "start": 14.755,
+          "end": 14.902
+        },
+        {
+          "w": "while",
+          "start": 14.902,
+          "end": 15.343
+        },
+        {
+          "w": "so",
+          "start": 15.343,
+          "end": 15.563
+        },
+        {
+          "w": "the",
+          "start": 15.563,
+          "end": 15.857
+        },
+        {
+          "w": "enumeration",
+          "start": 15.857,
+          "end": 16.74
+        },
+        {
+          "w": "lands",
+          "start": 16.74,
+          "end": 17.181
+        },
+        {
+          "w": "later",
+          "start": 17.181,
+          "end": 17.695
+        },
+        {
+          "w": "by",
+          "start": 17.695,
+          "end": 17.916
+        },
+        {
+          "w": "the",
+          "start": 17.916,
+          "end": 18.21
+        },
+        {
+          "w": "end",
+          "start": 18.21,
+          "end": 18.578
+        },
+        {
+          "w": "youll",
+          "start": 18.578,
+          "end": 19.092
+        },
+        {
+          "w": "see",
+          "start": 19.092,
+          "end": 19.386
+        },
+        {
+          "w": "the",
+          "start": 19.386,
+          "end": 19.681
+        },
+        {
+          "w": "longest",
+          "start": 19.681,
+          "end": 20.269
+        },
+        {
+          "w": "learn",
+          "start": 20.269,
+          "end": 20.71
+        },
+        {
+          "w": "bullet",
+          "start": 20.71,
+          "end": 21.225
+        },
+        {
+          "w": "that",
+          "start": 21.225,
+          "end": 21.592
+        },
+        {
+          "w": "is",
+          "start": 21.592,
+          "end": 21.813
+        },
+        {
+          "w": "still",
+          "start": 21.813,
+          "end": 22.254
+        },
+        {
+          "w": "allowed",
+          "start": 22.254,
+          "end": 22.842
+        },
+        {
+          "w": "to",
+          "start": 22.842,
+          "end": 23.063
+        },
+        {
+          "w": "wrap",
+          "start": 23.063,
+          "end": 23.43
+        },
+        {
+          "w": "onto",
+          "start": 23.43,
+          "end": 23.798
+        },
+        {
+          "w": "three",
+          "start": 23.798,
+          "end": 24.239
+        },
+        {
+          "w": "lines",
+          "start": 24.239,
+          "end": 24.754
+        },
+        {
+          "w": "youll",
+          "start": 24.754,
+          "end": 25.268
+        },
+        {
+          "w": "see",
+          "start": 25.268,
+          "end": 25.562
+        },
+        {
+          "w": "a",
+          "start": 25.562,
+          "end": 25.709
+        },
+        {
+          "w": "second",
+          "start": 25.709,
+          "end": 26.224
+        },
+        {
+          "w": "equally",
+          "start": 26.224,
+          "end": 26.812
+        },
+        {
+          "w": "long",
+          "start": 26.812,
+          "end": 27.18
+        },
+        {
+          "w": "bullet",
+          "start": 27.18,
+          "end": 27.695
+        },
+        {
+          "w": "to",
+          "start": 27.695,
+          "end": 27.915
+        },
+        {
+          "w": "fill",
+          "start": 27.915,
+          "end": 28.283
+        },
+        {
+          "w": "the",
+          "start": 28.283,
+          "end": 28.577
+        },
+        {
+          "w": "second",
+          "start": 28.577,
+          "end": 29.091
+        },
+        {
+          "w": "card",
+          "start": 29.091,
+          "end": 29.533
+        },
+        {
+          "w": "youll",
+          "start": 29.533,
+          "end": 30.047
+        },
+        {
+          "w": "see",
+          "start": 30.047,
+          "end": 30.341
+        },
+        {
+          "w": "a",
+          "start": 30.341,
+          "end": 30.488
+        },
+        {
+          "w": "third",
+          "start": 30.488,
+          "end": 30.93
+        },
+        {
+          "w": "bullet",
+          "start": 30.93,
+          "end": 31.518
+        },
+        {
+          "w": "youll",
+          "start": 31.518,
+          "end": 32.032
+        },
+        {
+          "w": "see",
+          "start": 32.032,
+          "end": 32.326
+        },
+        {
+          "w": "a",
+          "start": 32.326,
+          "end": 32.474
+        },
+        {
+          "w": "fourth",
+          "start": 32.474,
+          "end": 32.988
+        },
+        {
+          "w": "bullet",
+          "start": 32.988,
+          "end": 33.503
+        },
+        {
+          "w": "to",
+          "start": 33.503,
+          "end": 33.723
+        },
+        {
+          "w": "force",
+          "start": 33.723,
+          "end": 34.165
+        },
+        {
+          "w": "four",
+          "start": 34.165,
+          "end": 34.532
+        },
+        {
+          "w": "columns",
+          "start": 34.532,
+          "end": 35.194
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 1122,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "hook",
+      "narration": "A hook with chips. What happens at the maximum? First chip. Second chip. Third chip.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.872448979591837,
+      "voDurationInFrames": 207,
+      "captions": [
+        {
+          "text": "A hook with chips.",
+          "start": 0.05,
+          "end": 1.586
+        },
+        {
+          "text": "What happens at the maximum?",
+          "start": 1.586,
+          "end": 3.931
+        },
+        {
+          "text": "First chip. Second chip.",
+          "start": 3.931,
+          "end": 5.952
+        },
+        {
+          "text": "Third chip.",
+          "start": 5.952,
+          "end": 7.122
+        }
+      ],
+      "words": [
+        {
+          "w": "a",
+          "start": 0.05,
+          "end": 0.212
+        },
+        {
+          "w": "hook",
+          "start": 0.212,
+          "end": 0.616
+        },
+        {
+          "w": "with",
+          "start": 0.616,
+          "end": 1.02
+        },
+        {
+          "w": "chips",
+          "start": 1.02,
+          "end": 1.586
+        },
+        {
+          "w": "what",
+          "start": 1.586,
+          "end": 1.99
+        },
+        {
+          "w": "happens",
+          "start": 1.99,
+          "end": 2.637
+        },
+        {
+          "w": "at",
+          "start": 2.637,
+          "end": 2.88
+        },
+        {
+          "w": "the",
+          "start": 2.88,
+          "end": 3.203
+        },
+        {
+          "w": "maximum",
+          "start": 3.203,
+          "end": 3.931
+        },
+        {
+          "w": "first",
+          "start": 3.931,
+          "end": 4.416
+        },
+        {
+          "w": "chip",
+          "start": 4.416,
+          "end": 4.901
+        },
+        {
+          "w": "second",
+          "start": 4.901,
+          "end": 5.467
+        },
+        {
+          "w": "chip",
+          "start": 5.467,
+          "end": 5.952
+        },
+        {
+          "w": "third",
+          "start": 5.952,
+          "end": 6.437
+        },
+        {
+          "w": "chip",
+          "start": 6.437,
+          "end": 6.922
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 29,
+      "durationInFrames": 257,
+      "startFrame": 1122
+    },
+    {
+      "index": 3,
+      "type": "figure",
+      "narration": "Here is the cycle figure. Stage 1 Twenty six charact. Then Stage 2 Twenty six charact. Then Stage 3 Twenty six charact. Then Stage 4 Twenty six charact. Then Stage 5 Twenty six charact. Then Stage 6 Twenty six charact. Then Stage 7 Twenty six charact. Then Stage 8 Twenty six charact.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 22.574489795918367,
+      "voDurationInFrames": 678,
+      "captions": [
+        {
+          "text": "Here is the cycle figure.",
+          "start": 0.05,
+          "end": 2.109
+        },
+        {
+          "text": "Stage 1 Twenty six charact.",
+          "start": 2.109,
+          "end": 4.327
+        },
+        {
+          "text": "Then Stage 2 Twenty six charact.",
+          "start": 4.327,
+          "end": 6.941
+        },
+        {
+          "text": "Then Stage 3 Twenty six charact.",
+          "start": 6.941,
+          "end": 9.555
+        },
+        {
+          "text": "Then Stage 4 Twenty six charact.",
+          "start": 9.555,
+          "end": 12.169
+        },
+        {
+          "text": "Then Stage 5 Twenty six charact.",
+          "start": 12.169,
+          "end": 14.783
+        },
+        {
+          "text": "Then Stage 6 Twenty six charact.",
+          "start": 14.783,
+          "end": 17.397
+        },
+        {
+          "text": "Then Stage 7 Twenty six charact.",
+          "start": 17.397,
+          "end": 20.011
+        },
+        {
+          "text": "Then Stage 8 Twenty six charact.",
+          "start": 20.011,
+          "end": 22.823999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.05,
+          "end": 0.446
+        },
+        {
+          "w": "is",
+          "start": 0.446,
+          "end": 0.684
+        },
+        {
+          "w": "the",
+          "start": 0.684,
+          "end": 1.001
+        },
+        {
+          "w": "cycle",
+          "start": 1.001,
+          "end": 1.476
+        },
+        {
+          "w": "figure",
+          "start": 1.476,
+          "end": 2.109
+        },
+        {
+          "w": "stage",
+          "start": 2.109,
+          "end": 2.585
+        },
+        {
+          "w": "1",
+          "start": 2.585,
+          "end": 2.743
+        },
+        {
+          "w": "twenty",
+          "start": 2.743,
+          "end": 3.298
+        },
+        {
+          "w": "six",
+          "start": 3.298,
+          "end": 3.614
+        },
+        {
+          "w": "charact",
+          "start": 3.614,
+          "end": 4.327
+        },
+        {
+          "w": "then",
+          "start": 4.327,
+          "end": 4.723
+        },
+        {
+          "w": "stage",
+          "start": 4.723,
+          "end": 5.199
+        },
+        {
+          "w": "2",
+          "start": 5.199,
+          "end": 5.357
+        },
+        {
+          "w": "twenty",
+          "start": 5.357,
+          "end": 5.911
+        },
+        {
+          "w": "six",
+          "start": 5.911,
+          "end": 6.228
+        },
+        {
+          "w": "charact",
+          "start": 6.228,
+          "end": 6.941
+        },
+        {
+          "w": "then",
+          "start": 6.941,
+          "end": 7.337
+        },
+        {
+          "w": "stage",
+          "start": 7.337,
+          "end": 7.812
+        },
+        {
+          "w": "3",
+          "start": 7.812,
+          "end": 7.971
+        },
+        {
+          "w": "twenty",
+          "start": 7.971,
+          "end": 8.525
+        },
+        {
+          "w": "six",
+          "start": 8.525,
+          "end": 8.842
+        },
+        {
+          "w": "charact",
+          "start": 8.842,
+          "end": 9.555
+        },
+        {
+          "w": "then",
+          "start": 9.555,
+          "end": 9.951
+        },
+        {
+          "w": "stage",
+          "start": 9.951,
+          "end": 10.426
+        },
+        {
+          "w": "4",
+          "start": 10.426,
+          "end": 10.585
+        },
+        {
+          "w": "twenty",
+          "start": 10.585,
+          "end": 11.139
+        },
+        {
+          "w": "six",
+          "start": 11.139,
+          "end": 11.456
+        },
+        {
+          "w": "charact",
+          "start": 11.456,
+          "end": 12.169
+        },
+        {
+          "w": "then",
+          "start": 12.169,
+          "end": 12.565
+        },
+        {
+          "w": "stage",
+          "start": 12.565,
+          "end": 13.04
+        },
+        {
+          "w": "5",
+          "start": 13.04,
+          "end": 13.199
+        },
+        {
+          "w": "twenty",
+          "start": 13.199,
+          "end": 13.753
+        },
+        {
+          "w": "six",
+          "start": 13.753,
+          "end": 14.07
+        },
+        {
+          "w": "charact",
+          "start": 14.07,
+          "end": 14.783
+        },
+        {
+          "w": "then",
+          "start": 14.783,
+          "end": 15.179
+        },
+        {
+          "w": "stage",
+          "start": 15.179,
+          "end": 15.654
+        },
+        {
+          "w": "6",
+          "start": 15.654,
+          "end": 15.813
+        },
+        {
+          "w": "twenty",
+          "start": 15.813,
+          "end": 16.367
+        },
+        {
+          "w": "six",
+          "start": 16.367,
+          "end": 16.684
+        },
+        {
+          "w": "charact",
+          "start": 16.684,
+          "end": 17.397
+        },
+        {
+          "w": "then",
+          "start": 17.397,
+          "end": 17.793
+        },
+        {
+          "w": "stage",
+          "start": 17.793,
+          "end": 18.268
+        },
+        {
+          "w": "7",
+          "start": 18.268,
+          "end": 18.426
+        },
+        {
+          "w": "twenty",
+          "start": 18.426,
+          "end": 18.981
+        },
+        {
+          "w": "six",
+          "start": 18.981,
+          "end": 19.298
+        },
+        {
+          "w": "charact",
+          "start": 19.298,
+          "end": 20.011
+        },
+        {
+          "w": "then",
+          "start": 20.011,
+          "end": 20.407
+        },
+        {
+          "w": "stage",
+          "start": 20.407,
+          "end": 20.882
+        },
+        {
+          "w": "8",
+          "start": 20.882,
+          "end": 21.04
+        },
+        {
+          "w": "twenty",
+          "start": 21.04,
+          "end": 21.595
+        },
+        {
+          "w": "six",
+          "start": 21.595,
+          "end": 21.912
+        },
+        {
+          "w": "charact",
+          "start": 21.912,
+          "end": 22.624
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 734,
+      "startFrame": 1379
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "Here is the flow figure. 1 Twenty-eight chars label!. Then 2 Twenty-eight chars label!. Then 3 Twenty-eight chars label!. Then 4 Twenty-eight chars label!. Then 5 Twenty-eight chars label!. Then 6 Twenty-eight chars label!.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 14.927551020408165,
+      "voDurationInFrames": 448,
+      "captions": [
+        {
+          "text": "Here is the flow figure.",
+          "start": 0.05,
+          "end": 1.716
+        },
+        {
+          "text": "1 Twenty-eight chars label!.",
+          "start": 1.716,
+          "end": 3.649
+        },
+        {
+          "text": "Then 2 Twenty-eight chars label!.",
+          "start": 3.649,
+          "end": 5.914
+        },
+        {
+          "text": "Then 3 Twenty-eight chars label!.",
+          "start": 5.914,
+          "end": 8.18
+        },
+        {
+          "text": "Then 4 Twenty-eight chars label!.",
+          "start": 8.18,
+          "end": 10.446
+        },
+        {
+          "text": "Then 5 Twenty-eight chars label!.",
+          "start": 10.446,
+          "end": 12.712
+        },
+        {
+          "text": "Then 6 Twenty-eight chars label!.",
+          "start": 12.712,
+          "end": 15.177999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.05,
+          "end": 0.383
+        },
+        {
+          "w": "is",
+          "start": 0.383,
+          "end": 0.583
+        },
+        {
+          "w": "the",
+          "start": 0.583,
+          "end": 0.85
+        },
+        {
+          "w": "flow",
+          "start": 0.85,
+          "end": 1.183
+        },
+        {
+          "w": "figure",
+          "start": 1.183,
+          "end": 1.716
+        },
+        {
+          "w": "1",
+          "start": 1.716,
+          "end": 1.849
+        },
+        {
+          "w": "twentyeight",
+          "start": 1.849,
+          "end": 2.716
+        },
+        {
+          "w": "chars",
+          "start": 2.716,
+          "end": 3.115
+        },
+        {
+          "w": "label",
+          "start": 3.115,
+          "end": 3.649
+        },
+        {
+          "w": "then",
+          "start": 3.649,
+          "end": 3.982
+        },
+        {
+          "w": "2",
+          "start": 3.982,
+          "end": 4.115
+        },
+        {
+          "w": "twentyeight",
+          "start": 4.115,
+          "end": 4.981
+        },
+        {
+          "w": "chars",
+          "start": 4.981,
+          "end": 5.381
+        },
+        {
+          "w": "label",
+          "start": 5.381,
+          "end": 5.914
+        },
+        {
+          "w": "then",
+          "start": 5.914,
+          "end": 6.248
+        },
+        {
+          "w": "3",
+          "start": 6.248,
+          "end": 6.381
+        },
+        {
+          "w": "twentyeight",
+          "start": 6.381,
+          "end": 7.247
+        },
+        {
+          "w": "chars",
+          "start": 7.247,
+          "end": 7.647
+        },
+        {
+          "w": "label",
+          "start": 7.647,
+          "end": 8.18
+        },
+        {
+          "w": "then",
+          "start": 8.18,
+          "end": 8.513
+        },
+        {
+          "w": "4",
+          "start": 8.513,
+          "end": 8.647
+        },
+        {
+          "w": "twentyeight",
+          "start": 8.647,
+          "end": 9.513
+        },
+        {
+          "w": "chars",
+          "start": 9.513,
+          "end": 9.913
+        },
+        {
+          "w": "label",
+          "start": 9.913,
+          "end": 10.446
+        },
+        {
+          "w": "then",
+          "start": 10.446,
+          "end": 10.779
+        },
+        {
+          "w": "5",
+          "start": 10.779,
+          "end": 10.912
+        },
+        {
+          "w": "twentyeight",
+          "start": 10.912,
+          "end": 11.779
+        },
+        {
+          "w": "chars",
+          "start": 11.779,
+          "end": 12.179
+        },
+        {
+          "w": "label",
+          "start": 12.179,
+          "end": 12.712
+        },
+        {
+          "w": "then",
+          "start": 12.712,
+          "end": 13.045
+        },
+        {
+          "w": "6",
+          "start": 13.045,
+          "end": 13.178
+        },
+        {
+          "w": "twentyeight",
+          "start": 13.178,
+          "end": 14.045
+        },
+        {
+          "w": "chars",
+          "start": 14.045,
+          "end": 14.444
+        },
+        {
+          "w": "label",
+          "start": 14.444,
+          "end": 14.978
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 504,
+      "startFrame": 2113
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Here is the timeline figure. Event 1: thirty char label.. Then Event 2: thirty char label.. Then Event 3: thirty char label.. Then Event 4: thirty char label.. Then Event 5: thirty char label.. Then Event 6: thirty char label.. Then Event 7: thirty char label..",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 19.975510204081633,
+      "voDurationInFrames": 600,
+      "captions": [
+        {
+          "text": "Here is the timeline figure.",
+          "start": 0.05,
+          "end": 2.261
+        },
+        {
+          "text": "Event 1: thirty char label..",
+          "start": 2.261,
+          "end": 4.472
+        },
+        {
+          "text": "Then Event 2: thirty char label..",
+          "start": 4.472,
+          "end": 7.064
+        },
+        {
+          "text": "Then Event 3: thirty char label..",
+          "start": 7.064,
+          "end": 9.657
+        },
+        {
+          "text": "Then Event 4: thirty char label..",
+          "start": 9.657,
+          "end": 12.249
+        },
+        {
+          "text": "Then Event 5: thirty char label..",
+          "start": 12.249,
+          "end": 14.841
+        },
+        {
+          "text": "Then Event 6: thirty char label..",
+          "start": 14.841,
+          "end": 17.433
+        },
+        {
+          "text": "Then Event 7: thirty char label..",
+          "start": 17.433,
+          "end": 20.226
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.05,
+          "end": 0.431
+        },
+        {
+          "w": "is",
+          "start": 0.431,
+          "end": 0.66
+        },
+        {
+          "w": "the",
+          "start": 0.66,
+          "end": 0.965
+        },
+        {
+          "w": "timeline",
+          "start": 0.965,
+          "end": 1.651
+        },
+        {
+          "w": "figure",
+          "start": 1.651,
+          "end": 2.261
+        },
+        {
+          "w": "event",
+          "start": 2.261,
+          "end": 2.718
+        },
+        {
+          "w": "1",
+          "start": 2.718,
+          "end": 2.947
+        },
+        {
+          "w": "thirty",
+          "start": 2.947,
+          "end": 3.481
+        },
+        {
+          "w": "char",
+          "start": 3.481,
+          "end": 3.862
+        },
+        {
+          "w": "label",
+          "start": 3.862,
+          "end": 4.472
+        },
+        {
+          "w": "then",
+          "start": 4.472,
+          "end": 4.853
+        },
+        {
+          "w": "event",
+          "start": 4.853,
+          "end": 5.311
+        },
+        {
+          "w": "2",
+          "start": 5.311,
+          "end": 5.539
+        },
+        {
+          "w": "thirty",
+          "start": 5.539,
+          "end": 6.073
+        },
+        {
+          "w": "char",
+          "start": 6.073,
+          "end": 6.454
+        },
+        {
+          "w": "label",
+          "start": 6.454,
+          "end": 7.064
+        },
+        {
+          "w": "then",
+          "start": 7.064,
+          "end": 7.446
+        },
+        {
+          "w": "event",
+          "start": 7.446,
+          "end": 7.903
+        },
+        {
+          "w": "3",
+          "start": 7.903,
+          "end": 8.132
+        },
+        {
+          "w": "thirty",
+          "start": 8.132,
+          "end": 8.665
+        },
+        {
+          "w": "char",
+          "start": 8.665,
+          "end": 9.047
+        },
+        {
+          "w": "label",
+          "start": 9.047,
+          "end": 9.657
+        },
+        {
+          "w": "then",
+          "start": 9.657,
+          "end": 10.038
+        },
+        {
+          "w": "event",
+          "start": 10.038,
+          "end": 10.495
+        },
+        {
+          "w": "4",
+          "start": 10.495,
+          "end": 10.724
+        },
+        {
+          "w": "thirty",
+          "start": 10.724,
+          "end": 11.258
+        },
+        {
+          "w": "char",
+          "start": 11.258,
+          "end": 11.639
+        },
+        {
+          "w": "label",
+          "start": 11.639,
+          "end": 12.249
+        },
+        {
+          "w": "then",
+          "start": 12.249,
+          "end": 12.63
+        },
+        {
+          "w": "event",
+          "start": 12.63,
+          "end": 13.087
+        },
+        {
+          "w": "5",
+          "start": 13.087,
+          "end": 13.316
+        },
+        {
+          "w": "thirty",
+          "start": 13.316,
+          "end": 13.85
+        },
+        {
+          "w": "char",
+          "start": 13.85,
+          "end": 14.231
+        },
+        {
+          "w": "label",
+          "start": 14.231,
+          "end": 14.841
+        },
+        {
+          "w": "then",
+          "start": 14.841,
+          "end": 15.222
+        },
+        {
+          "w": "event",
+          "start": 15.222,
+          "end": 15.68
+        },
+        {
+          "w": "6",
+          "start": 15.68,
+          "end": 15.908
+        },
+        {
+          "w": "thirty",
+          "start": 15.908,
+          "end": 16.442
+        },
+        {
+          "w": "char",
+          "start": 16.442,
+          "end": 16.823
+        },
+        {
+          "w": "label",
+          "start": 16.823,
+          "end": 17.433
+        },
+        {
+          "w": "then",
+          "start": 17.433,
+          "end": 17.814
+        },
+        {
+          "w": "event",
+          "start": 17.814,
+          "end": 18.272
+        },
+        {
+          "w": "7",
+          "start": 18.272,
+          "end": 18.501
+        },
+        {
+          "w": "thirty",
+          "start": 18.501,
+          "end": 19.034
+        },
+        {
+          "w": "char",
+          "start": 19.034,
+          "end": 19.416
+        },
+        {
+          "w": "label",
+          "start": 19.416,
+          "end": 20.026
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 656,
+      "startFrame": 2617
+    },
+    {
+      "index": 6,
+      "type": "figure",
+      "narration": "Here is the hub figure. Satellite 1 label!!. Then Satellite 2 label!!. Then Satellite 3 label!!. Then Satellite 4 label!!. Then Satellite 5 label!!. Then Satellite 6 label!!.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 12.478571428571428,
+      "voDurationInFrames": 375,
+      "captions": [
+        {
+          "text": "Here is the hub figure.",
+          "start": 0.05,
+          "end": 1.761
+        },
+        {
+          "text": "Satellite 1 label!!.",
+          "start": 1.761,
+          "end": 3.259
+        },
+        {
+          "text": "Then Satellite 2 label!!.",
+          "start": 3.259,
+          "end": 5.113
+        },
+        {
+          "text": "Then Satellite 3 label!!.",
+          "start": 5.113,
+          "end": 6.967
+        },
+        {
+          "text": "Then Satellite 4 label!!.",
+          "start": 6.967,
+          "end": 8.821
+        },
+        {
+          "text": "Then Satellite 5 label!!.",
+          "start": 8.821,
+          "end": 10.675
+        },
+        {
+          "text": "Then Satellite 6 label!!.",
+          "start": 10.675,
+          "end": 12.729
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.05,
+          "end": 0.407
+        },
+        {
+          "w": "is",
+          "start": 0.407,
+          "end": 0.62
+        },
+        {
+          "w": "the",
+          "start": 0.62,
+          "end": 0.906
+        },
+        {
+          "w": "hub",
+          "start": 0.906,
+          "end": 1.191
+        },
+        {
+          "w": "figure",
+          "start": 1.191,
+          "end": 1.761
+        },
+        {
+          "w": "satellite",
+          "start": 1.761,
+          "end": 2.474
+        },
+        {
+          "w": "1",
+          "start": 2.474,
+          "end": 2.617
+        },
+        {
+          "w": "label",
+          "start": 2.617,
+          "end": 3.259
+        },
+        {
+          "w": "then",
+          "start": 3.259,
+          "end": 3.615
+        },
+        {
+          "w": "satellite",
+          "start": 3.615,
+          "end": 4.328
+        },
+        {
+          "w": "2",
+          "start": 4.328,
+          "end": 4.471
+        },
+        {
+          "w": "label",
+          "start": 4.471,
+          "end": 5.113
+        },
+        {
+          "w": "then",
+          "start": 5.113,
+          "end": 5.469
+        },
+        {
+          "w": "satellite",
+          "start": 5.469,
+          "end": 6.182
+        },
+        {
+          "w": "3",
+          "start": 6.182,
+          "end": 6.325
+        },
+        {
+          "w": "label",
+          "start": 6.325,
+          "end": 6.967
+        },
+        {
+          "w": "then",
+          "start": 6.967,
+          "end": 7.323
+        },
+        {
+          "w": "satellite",
+          "start": 7.323,
+          "end": 8.036
+        },
+        {
+          "w": "4",
+          "start": 8.036,
+          "end": 8.179
+        },
+        {
+          "w": "label",
+          "start": 8.179,
+          "end": 8.821
+        },
+        {
+          "w": "then",
+          "start": 8.821,
+          "end": 9.177
+        },
+        {
+          "w": "satellite",
+          "start": 9.177,
+          "end": 9.89
+        },
+        {
+          "w": "5",
+          "start": 9.89,
+          "end": 10.033
+        },
+        {
+          "w": "label",
+          "start": 10.033,
+          "end": 10.675
+        },
+        {
+          "w": "then",
+          "start": 10.675,
+          "end": 11.031
+        },
+        {
+          "w": "satellite",
+          "start": 11.031,
+          "end": 11.744
+        },
+        {
+          "w": "6",
+          "start": 11.744,
+          "end": 11.887
+        },
+        {
+          "w": "label",
+          "start": 11.887,
+          "end": 12.529
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 431,
+      "startFrame": 3273
+    },
+    {
+      "index": 7,
+      "type": "figure",
+      "narration": "Here is the stack figure. Layer 1: thirty characters lon. Then Layer 2: thirty characters lon. Then Layer 3: thirty characters lon. Then Layer 4: thirty characters lon. Then Layer 5: thirty characters lon. Then Layer 6: thirty characters lon.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 17.3765306122449,
+      "voDurationInFrames": 522,
+      "captions": [
+        {
+          "text": "Here is the stack figure.",
+          "start": 0.05,
+          "end": 1.909
+        },
+        {
+          "text": "Layer 1: thirty characters lon.",
+          "start": 1.909,
+          "end": 4.197
+        },
+        {
+          "text": "Then Layer 2: thirty characters lon.",
+          "start": 4.197,
+          "end": 6.843
+        },
+        {
+          "text": "Then Layer 3: thirty characters lon.",
+          "start": 6.843,
+          "end": 9.489
+        },
+        {
+          "text": "Then Layer 4: thirty characters lon.",
+          "start": 9.489,
+          "end": 12.135
+        },
+        {
+          "text": "Then Layer 5: thirty characters lon.",
+          "start": 12.135,
+          "end": 14.781
+        },
+        {
+          "text": "Then Layer 6: thirty characters lon.",
+          "start": 14.781,
+          "end": 17.627
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.05,
+          "end": 0.408
+        },
+        {
+          "w": "is",
+          "start": 0.408,
+          "end": 0.622
+        },
+        {
+          "w": "the",
+          "start": 0.622,
+          "end": 0.908
+        },
+        {
+          "w": "stack",
+          "start": 0.908,
+          "end": 1.337
+        },
+        {
+          "w": "figure",
+          "start": 1.337,
+          "end": 1.909
+        },
+        {
+          "w": "layer",
+          "start": 1.909,
+          "end": 2.338
+        },
+        {
+          "w": "1",
+          "start": 2.338,
+          "end": 2.553
+        },
+        {
+          "w": "thirty",
+          "start": 2.553,
+          "end": 3.053
+        },
+        {
+          "w": "characters",
+          "start": 3.053,
+          "end": 3.84
+        },
+        {
+          "w": "lon",
+          "start": 3.84,
+          "end": 4.197
+        },
+        {
+          "w": "then",
+          "start": 4.197,
+          "end": 4.555
+        },
+        {
+          "w": "layer",
+          "start": 4.555,
+          "end": 4.984
+        },
+        {
+          "w": "2",
+          "start": 4.984,
+          "end": 5.199
+        },
+        {
+          "w": "thirty",
+          "start": 5.199,
+          "end": 5.699
+        },
+        {
+          "w": "characters",
+          "start": 5.699,
+          "end": 6.486
+        },
+        {
+          "w": "lon",
+          "start": 6.486,
+          "end": 6.843
+        },
+        {
+          "w": "then",
+          "start": 6.843,
+          "end": 7.201
+        },
+        {
+          "w": "layer",
+          "start": 7.201,
+          "end": 7.63
+        },
+        {
+          "w": "3",
+          "start": 7.63,
+          "end": 7.844
+        },
+        {
+          "w": "thirty",
+          "start": 7.844,
+          "end": 8.345
+        },
+        {
+          "w": "characters",
+          "start": 8.345,
+          "end": 9.132
+        },
+        {
+          "w": "lon",
+          "start": 9.132,
+          "end": 9.489
+        },
+        {
+          "w": "then",
+          "start": 9.489,
+          "end": 9.847
+        },
+        {
+          "w": "layer",
+          "start": 9.847,
+          "end": 10.276
+        },
+        {
+          "w": "4",
+          "start": 10.276,
+          "end": 10.49
+        },
+        {
+          "w": "thirty",
+          "start": 10.49,
+          "end": 10.991
+        },
+        {
+          "w": "characters",
+          "start": 10.991,
+          "end": 11.777
+        },
+        {
+          "w": "lon",
+          "start": 11.777,
+          "end": 12.135
+        },
+        {
+          "w": "then",
+          "start": 12.135,
+          "end": 12.492
+        },
+        {
+          "w": "layer",
+          "start": 12.492,
+          "end": 12.922
+        },
+        {
+          "w": "5",
+          "start": 12.922,
+          "end": 13.136
+        },
+        {
+          "w": "thirty",
+          "start": 13.136,
+          "end": 13.637
+        },
+        {
+          "w": "characters",
+          "start": 13.637,
+          "end": 14.423
+        },
+        {
+          "w": "lon",
+          "start": 14.423,
+          "end": 14.781
+        },
+        {
+          "w": "then",
+          "start": 14.781,
+          "end": 15.138
+        },
+        {
+          "w": "layer",
+          "start": 15.138,
+          "end": 15.567
+        },
+        {
+          "w": "6",
+          "start": 15.567,
+          "end": 15.782
+        },
+        {
+          "w": "thirty",
+          "start": 15.782,
+          "end": 16.282
+        },
+        {
+          "w": "characters",
+          "start": 16.282,
+          "end": 17.069
+        },
+        {
+          "w": "lon",
+          "start": 17.069,
+          "end": 17.427
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 578,
+      "startFrame": 3704
+    },
+    {
+      "index": 8,
+      "type": "check",
+      "narration": "Knowledge check. Why does a deliberately long knowledge check question, written to wrap across three full lines of the card, still sit inside the safe area without overlapping anything? Pause and think.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 13.511224489795918,
+      "voDurationInFrames": 406,
+      "captions": [
+        {
+          "text": "Knowledge check. Why does a deliberately",
+          "start": 0.05,
+          "end": 2.779
+        },
+        {
+          "text": "long knowledge check question, written to",
+          "start": 2.779,
+          "end": 5.574
+        },
+        {
+          "text": "wrap across three full lines of the card,",
+          "start": 5.574,
+          "end": 8.37
+        },
+        {
+          "text": "still sit inside the safe area without",
+          "start": 8.37,
+          "end": 10.965
+        },
+        {
+          "text": "overlapping anything?",
+          "start": 10.965,
+          "end": 12.43
+        },
+        {
+          "text": "Pause and think.",
+          "start": 12.43,
+          "end": 13.761
+        }
+      ],
+      "words": [
+        {
+          "w": "knowledge",
+          "start": 0.05,
+          "end": 0.716
+        },
+        {
+          "w": "check",
+          "start": 0.716,
+          "end": 1.181
+        },
+        {
+          "w": "why",
+          "start": 1.181,
+          "end": 1.448
+        },
+        {
+          "w": "does",
+          "start": 1.448,
+          "end": 1.781
+        },
+        {
+          "w": "a",
+          "start": 1.781,
+          "end": 1.914
+        },
+        {
+          "w": "deliberately",
+          "start": 1.914,
+          "end": 2.779
+        },
+        {
+          "w": "long",
+          "start": 2.779,
+          "end": 3.112
+        },
+        {
+          "w": "knowledge",
+          "start": 3.112,
+          "end": 3.777
+        },
+        {
+          "w": "check",
+          "start": 3.777,
+          "end": 4.177
+        },
+        {
+          "w": "question",
+          "start": 4.177,
+          "end": 4.842
+        },
+        {
+          "w": "written",
+          "start": 4.842,
+          "end": 5.375
+        },
+        {
+          "w": "to",
+          "start": 5.375,
+          "end": 5.574
+        },
+        {
+          "w": "wrap",
+          "start": 5.574,
+          "end": 5.907
+        },
+        {
+          "w": "across",
+          "start": 5.907,
+          "end": 6.373
+        },
+        {
+          "w": "three",
+          "start": 6.373,
+          "end": 6.772
+        },
+        {
+          "w": "full",
+          "start": 6.772,
+          "end": 7.105
+        },
+        {
+          "w": "lines",
+          "start": 7.105,
+          "end": 7.504
+        },
+        {
+          "w": "of",
+          "start": 7.504,
+          "end": 7.704
+        },
+        {
+          "w": "the",
+          "start": 7.704,
+          "end": 7.97
+        },
+        {
+          "w": "card",
+          "start": 7.97,
+          "end": 8.37
+        },
+        {
+          "w": "still",
+          "start": 8.37,
+          "end": 8.769
+        },
+        {
+          "w": "sit",
+          "start": 8.769,
+          "end": 9.035
+        },
+        {
+          "w": "inside",
+          "start": 9.035,
+          "end": 9.501
+        },
+        {
+          "w": "the",
+          "start": 9.501,
+          "end": 9.767
+        },
+        {
+          "w": "safe",
+          "start": 9.767,
+          "end": 10.1
+        },
+        {
+          "w": "area",
+          "start": 10.1,
+          "end": 10.433
+        },
+        {
+          "w": "without",
+          "start": 10.433,
+          "end": 10.965
+        },
+        {
+          "w": "overlapping",
+          "start": 10.965,
+          "end": 11.764
+        },
+        {
+          "w": "anything",
+          "start": 11.764,
+          "end": 12.43
+        },
+        {
+          "w": "pause",
+          "start": 12.43,
+          "end": 12.829
+        },
+        {
+          "w": "and",
+          "start": 12.829,
+          "end": 13.095
+        },
+        {
+          "w": "think",
+          "start": 13.095,
+          "end": 13.561
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 563,
+      "startFrame": 4282
+    },
+    {
+      "index": 9,
+      "type": "answer",
+      "narration": "The answer. Because every template fits its text to the space it has, and the gate checks the margins. First point, long enough to wrap onto a second line. Then Second point, similarly long to wrap. Then Third point wraps as well here. Then Fourth point fills the row.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 20.9,
+      "voDurationInFrames": 627,
+      "captions": [
+        {
+          "text": "The answer. Because every template fits",
+          "start": 0.05,
+          "end": 3.158
+        },
+        {
+          "text": "its text to the space it has, and the gate",
+          "start": 3.158,
+          "end": 6.499
+        },
+        {
+          "text": "checks the margins.",
+          "start": 6.499,
+          "end": 8.053
+        },
+        {
+          "text": "First point, long enough to wrap onto a",
+          "start": 8.053,
+          "end": 11.16
+        },
+        {
+          "text": "second line. Then Second point, similarly",
+          "start": 11.16,
+          "end": 14.424
+        },
+        {
+          "text": "long to wrap. Then Third point wraps as",
+          "start": 14.424,
+          "end": 17.531
+        },
+        {
+          "text": "well here. Then Fourth point fills the",
+          "start": 17.531,
+          "end": 20.562
+        },
+        {
+          "text": "row.",
+          "start": 20.562,
+          "end": 21.15
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.05,
+          "end": 0.361
+        },
+        {
+          "w": "answer",
+          "start": 0.361,
+          "end": 0.982
+        },
+        {
+          "w": "because",
+          "start": 0.982,
+          "end": 1.604
+        },
+        {
+          "w": "every",
+          "start": 1.604,
+          "end": 2.07
+        },
+        {
+          "w": "template",
+          "start": 2.07,
+          "end": 2.769
+        },
+        {
+          "w": "fits",
+          "start": 2.769,
+          "end": 3.158
+        },
+        {
+          "w": "its",
+          "start": 3.158,
+          "end": 3.469
+        },
+        {
+          "w": "text",
+          "start": 3.469,
+          "end": 3.857
+        },
+        {
+          "w": "to",
+          "start": 3.857,
+          "end": 4.09
+        },
+        {
+          "w": "the",
+          "start": 4.09,
+          "end": 4.401
+        },
+        {
+          "w": "space",
+          "start": 4.401,
+          "end": 4.867
+        },
+        {
+          "w": "it",
+          "start": 4.867,
+          "end": 5.1
+        },
+        {
+          "w": "has",
+          "start": 5.1,
+          "end": 5.489
+        },
+        {
+          "w": "and",
+          "start": 5.489,
+          "end": 5.799
+        },
+        {
+          "w": "the",
+          "start": 5.799,
+          "end": 6.11
+        },
+        {
+          "w": "gate",
+          "start": 6.11,
+          "end": 6.499
+        },
+        {
+          "w": "checks",
+          "start": 6.499,
+          "end": 7.043
+        },
+        {
+          "w": "the",
+          "start": 7.043,
+          "end": 7.353
+        },
+        {
+          "w": "margins",
+          "start": 7.353,
+          "end": 8.053
+        },
+        {
+          "w": "first",
+          "start": 8.053,
+          "end": 8.519
+        },
+        {
+          "w": "point",
+          "start": 8.519,
+          "end": 9.063
+        },
+        {
+          "w": "long",
+          "start": 9.063,
+          "end": 9.451
+        },
+        {
+          "w": "enough",
+          "start": 9.451,
+          "end": 9.995
+        },
+        {
+          "w": "to",
+          "start": 9.995,
+          "end": 10.228
+        },
+        {
+          "w": "wrap",
+          "start": 10.228,
+          "end": 10.617
+        },
+        {
+          "w": "onto",
+          "start": 10.617,
+          "end": 11.005
+        },
+        {
+          "w": "a",
+          "start": 11.005,
+          "end": 11.16
+        },
+        {
+          "w": "second",
+          "start": 11.16,
+          "end": 11.704
+        },
+        {
+          "w": "line",
+          "start": 11.704,
+          "end": 12.17
+        },
+        {
+          "w": "then",
+          "start": 12.17,
+          "end": 12.559
+        },
+        {
+          "w": "second",
+          "start": 12.559,
+          "end": 13.103
+        },
+        {
+          "w": "point",
+          "start": 13.103,
+          "end": 13.647
+        },
+        {
+          "w": "similarly",
+          "start": 13.647,
+          "end": 14.424
+        },
+        {
+          "w": "long",
+          "start": 14.424,
+          "end": 14.812
+        },
+        {
+          "w": "to",
+          "start": 14.812,
+          "end": 15.045
+        },
+        {
+          "w": "wrap",
+          "start": 15.045,
+          "end": 15.511
+        },
+        {
+          "w": "then",
+          "start": 15.511,
+          "end": 15.9
+        },
+        {
+          "w": "third",
+          "start": 15.9,
+          "end": 16.366
+        },
+        {
+          "w": "point",
+          "start": 16.366,
+          "end": 16.832
+        },
+        {
+          "w": "wraps",
+          "start": 16.832,
+          "end": 17.298
+        },
+        {
+          "w": "as",
+          "start": 17.298,
+          "end": 17.531
+        },
+        {
+          "w": "well",
+          "start": 17.531,
+          "end": 17.92
+        },
+        {
+          "w": "here",
+          "start": 17.92,
+          "end": 18.386
+        },
+        {
+          "w": "then",
+          "start": 18.386,
+          "end": 18.775
+        },
+        {
+          "w": "fourth",
+          "start": 18.775,
+          "end": 19.318
+        },
+        {
+          "w": "point",
+          "start": 19.318,
+          "end": 19.785
+        },
+        {
+          "w": "fills",
+          "start": 19.785,
+          "end": 20.251
+        },
+        {
+          "w": "the",
+          "start": 20.251,
+          "end": 20.562
+        },
+        {
+          "w": "row",
+          "start": 20.562,
+          "end": 20.95
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 683,
+      "startFrame": 4845
+    },
+    {
+      "index": 10,
+      "type": "recap",
+      "narration": "Let's recap. Maxima hold. Then Wrapping works. Then Gates pass. That is the whole fixture.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 6.872448979591837,
+      "voDurationInFrames": 207,
+      "captions": [
+        {
+          "text": "Let's recap. Maxima hold.",
+          "start": 0.05,
+          "end": 2.014
+        },
+        {
+          "text": "Then Wrapping works.",
+          "start": 2.014,
+          "end": 3.6
+        },
+        {
+          "text": "Then Gates pass. That is the whole",
+          "start": 3.6,
+          "end": 6.243
+        },
+        {
+          "text": "fixture.",
+          "start": 6.243,
+          "end": 7.122
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.05,
+          "end": 0.503
+        },
+        {
+          "w": "recap",
+          "start": 0.503,
+          "end": 1.032
+        },
+        {
+          "w": "maxima",
+          "start": 1.032,
+          "end": 1.56
+        },
+        {
+          "w": "hold",
+          "start": 1.56,
+          "end": 2.014
+        },
+        {
+          "w": "then",
+          "start": 2.014,
+          "end": 2.391
+        },
+        {
+          "w": "wrapping",
+          "start": 2.391,
+          "end": 3.071
+        },
+        {
+          "w": "works",
+          "start": 3.071,
+          "end": 3.6
+        },
+        {
+          "w": "then",
+          "start": 3.6,
+          "end": 3.977
+        },
+        {
+          "w": "gates",
+          "start": 3.977,
+          "end": 4.43
+        },
+        {
+          "w": "pass",
+          "start": 4.43,
+          "end": 4.883
+        },
+        {
+          "w": "that",
+          "start": 4.883,
+          "end": 5.261
+        },
+        {
+          "w": "is",
+          "start": 5.261,
+          "end": 5.488
+        },
+        {
+          "w": "the",
+          "start": 5.488,
+          "end": 5.79
+        },
+        {
+          "w": "whole",
+          "start": 5.79,
+          "end": 6.243
+        },
+        {
+          "w": "fixture",
+          "start": 6.243,
+          "end": 6.922
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 364,
+      "startFrame": 5528
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "project": "med-hand-hygiene-mr",
+  "id": "HH01",
+  "stages": {
+    "preflight": {
+      "seconds": 4.9,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T09:28:39.358Z"
+    },
+    "voiceover": {
+      "seconds": 26,
+      "scenesVoiced": 12,
+      "scenes": 12,
+      "characters": 2796,
+      "audioSeconds": 311.4,
+      "wpm": 96,
+      "voice": "mr-IN-AarohiNeural",
+      "at": "2026-09-25T19:43:41.142Z"
+    },
+    "render": {
+      "seconds": 311,
+      "totalSeconds": 329,
+      "frames": 10777,
+      "fps": 34.7,
+      "bytes": 53956838,
+      "at": "2026-09-25T20:18:48.232Z"
+    },
+    "qa": {
+      "seconds": 46,
+      "pass": true,
+      "failed": [],
+      "at": "2026-09-25T20:19:35.116Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-09-26T09:28:39.446Z"
+    }
+  },
+  "authoring": [
+    {
+      "label": "spec (subagent)",
+      "model": "claude-opus-5-5",
+      "requests": 41,
+      "tokens": {
+        "input": 84,
+        "cacheWrite5m": 184387,
+        "cacheWrite1h": 0,
+        "cacheRead": 5267651,
+        "output": 14990
+      },
+      "costUSD": 2.2756,
+      "wallMinutes": 13.7,
+      "from": "2026-09-25T19:02:13.564Z",
+      "to": "2026-09-25T19:15:57.685Z",
+      "outputEstimated": true
+    }
+  ],
+  "lang": "mr",
+  "runtimeMinutes": 5.99,
+  "words": 446
+}

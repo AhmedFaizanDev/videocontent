@@ -1,0 +1,200 @@
+{
+  "id": "F05",
+  "title": "Heart pack",
+  "outputFilename": "F05_heart_pack.mp4",
+  "module": "Pack \u00b7 heart",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Heart Pack",
+      "subtitle": "Fixture \u00b7 Pack",
+      "learn": [
+        "the anatomy",
+        "the valves"
+      ],
+      "narration": "In this video, we're going to talk about the heart pack, a living illustration used across scenes. It keeps going a little longer here. By the end, you'll see the anatomy, and you'll see the valves."
+    },
+    {
+      "type": "figure",
+      "kicker": "Anatomy",
+      "title": "Anatomy",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "ra",
+          "label": "Right atrium",
+          "say": [
+            "right"
+          ]
+        },
+        {
+          "anchor": "rv",
+          "label": "Right ventricle",
+          "say": [
+            "ventricle"
+          ]
+        },
+        {
+          "anchor": "la",
+          "label": "Left atrium",
+          "say": [
+            "left"
+          ]
+        },
+        {
+          "anchor": "lv",
+          "label": "Left ventricle",
+          "say": [
+            "thick"
+          ]
+        },
+        {
+          "anchor": "septum",
+          "label": "Septum",
+          "say": [
+            "septum"
+          ]
+        },
+        {
+          "anchor": "aorta",
+          "label": "Aorta",
+          "say": [
+            "aorta"
+          ]
+        }
+      ],
+      "narration": "The right atrium receives blood. Below it, the right ventricle. The left atrium sits opposite. The thick left ventricle does the heavy work. The septum divides them. And the aorta leaves at the top."
+    },
+    {
+      "type": "figure",
+      "kicker": "Valves",
+      "title": "Valves",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "tricuspid",
+          "label": "Tricuspid valve",
+          "say": [
+            "tricuspid"
+          ]
+        },
+        {
+          "anchor": "pulmonary",
+          "label": "Pulmonary valve",
+          "say": [
+            "pulmonary"
+          ]
+        },
+        {
+          "anchor": "mitral",
+          "label": "Mitral valve",
+          "say": [
+            "mitral"
+          ]
+        },
+        {
+          "anchor": "aortic",
+          "label": "Aortic valve",
+          "say": [
+            "aortic"
+          ]
+        },
+        {
+          "anchor": "chordae",
+          "label": "Chordae tendineae",
+          "say": [
+            "cords"
+          ]
+        }
+      ],
+      "narration": "The tricuspid valve opens into the right ventricle. The pulmonary valve guards the exit. The mitral valve opens on the left. The aortic valve leads out to the body. And tendon cords hold the leaflets."
+    },
+    {
+      "type": "figure",
+      "kicker": "Flow",
+      "title": "Flow",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "flowRight",
+          "label": "Right side: to the lungs",
+          "say": [
+            "right"
+          ]
+        },
+        {
+          "anchor": "flowLeft",
+          "label": "Left side: to the body",
+          "say": [
+            "left"
+          ]
+        }
+      ],
+      "narration": "On the right side, blood returns from the body and is pumped to the lungs. On the left side, blood returns from the lungs and is pumped out to the body."
+    },
+    {
+      "type": "figure",
+      "kicker": "Conduction",
+      "title": "Conduction",
+      "art": "heart",
+      "callouts": [
+        {
+          "anchor": "sa",
+          "label": "SA node",
+          "say": [
+            "sinoatrial"
+          ]
+        },
+        {
+          "anchor": "av",
+          "label": "AV node",
+          "say": [
+            "atrioventricular"
+          ]
+        },
+        {
+          "anchor": "his",
+          "label": "Bundle of His",
+          "say": [
+            "bundle"
+          ]
+        },
+        {
+          "anchor": "branches",
+          "label": "Bundle branches",
+          "say": [
+            "branches"
+          ]
+        },
+        {
+          "anchor": "purkinje",
+          "label": "Purkinje fibres",
+          "say": [
+            "purkinje"
+          ]
+        }
+      ],
+      "narration": "The beat starts in the sinoatrial node. It pauses at the atrioventricular node. It runs down the bundle of His. Then along the bundle branches. And finally through the Purkinje fibres."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Anatomy, valves, flow and conduction, all from one illustration.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Anatomy \u2014 four chambers",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Valves \u2014 open and close",
+          "color": "constant"
+        }
+      ],
+      "takeaway": "One living illustration, many lessons."
+    }
+  ]
+}

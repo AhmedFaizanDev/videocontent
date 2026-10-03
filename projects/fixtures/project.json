@@ -1,0 +1,19 @@
+{
+  "name": "Pipeline fixtures (layout + sync regression \u2014 not a real series)",
+  "series": "Pipeline Fixtures",
+  "music": null,
+  "length": {
+    "minutes": [
+      0,
+      100
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": []
+  },
+  "brand": {
+    "signoff": "Fixture sign-off line for layout testing."
+  }
+}

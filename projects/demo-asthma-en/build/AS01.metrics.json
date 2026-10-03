@@ -1,0 +1,40 @@
+{
+  "project": "demo-asthma-en",
+  "id": "AS01",
+  "stages": {
+    "preflight": {
+      "seconds": 4.5,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T19:35:12.455Z"
+    },
+    "voiceover": {
+      "seconds": 29.6,
+      "scenesVoiced": 12,
+      "scenes": 12,
+      "characters": 2943,
+      "audioSeconds": 254.5,
+      "wpm": 131,
+      "voice": "en-IN-NeerjaExpressiveNeural",
+      "at": "2026-09-26T19:35:42.199Z"
+    },
+    "render": {
+      "seconds": 222,
+      "totalSeconds": 236,
+      "frames": 9000,
+      "fps": 40.6,
+      "bytes": 63752922,
+      "at": "2026-09-26T19:39:39.615Z"
+    },
+    "qa": {
+      "seconds": 30,
+      "pass": true,
+      "failed": [],
+      "at": "2026-09-26T19:40:10.703Z"
+    }
+  },
+  "authoring": [],
+  "lang": "en",
+  "runtimeMinutes": 5,
+  "words": 491
+}

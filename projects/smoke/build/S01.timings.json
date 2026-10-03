@@ -1,0 +1,432 @@
+{
+  "id": "S01",
+  "fps": 30,
+  "totalDurationInFrames": 1442,
+  "voice": {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "en-IN-NeerjaExpressiveNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "hash": "f9f34f5bbcf2",
+      "narration": "In this video, we're going to talk about photosynthesis, the way plants make food from light. By the end, you'll know what goes in, and what comes out.",
+      "audioFile": "audio/vo/smoke/S01/scene-1.mp3",
+      "voDurationInSeconds": 12.024,
+      "voDurationInFrames": 361,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.1,
+          "end": 2.55
+        },
+        {
+          "text": "photosynthesis, the way plants make food",
+          "start": 2.55,
+          "end": 5.325
+        },
+        {
+          "text": "from light. By the end, you'll know what",
+          "start": 5.325,
+          "end": 9.086
+        },
+        {
+          "text": "goes in, and what comes out.",
+          "start": 9.086,
+          "end": 11.223999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.1,
+          "end": 0.25
+        },
+        {
+          "w": "this",
+          "start": 0.263,
+          "end": 0.5
+        },
+        {
+          "w": "video",
+          "start": 0.512,
+          "end": 0.962
+        },
+        {
+          "w": "were",
+          "start": 1.275,
+          "end": 1.45
+        },
+        {
+          "w": "going",
+          "start": 1.462,
+          "end": 1.737
+        },
+        {
+          "w": "to",
+          "start": 1.75,
+          "end": 1.85
+        },
+        {
+          "w": "talk",
+          "start": 1.863,
+          "end": 2.175
+        },
+        {
+          "w": "about",
+          "start": 2.188,
+          "end": 2.538
+        },
+        {
+          "w": "photosynthesis",
+          "start": 2.55,
+          "end": 3.65
+        },
+        {
+          "w": "the",
+          "start": 3.913,
+          "end": 4.05
+        },
+        {
+          "w": "way",
+          "start": 4.062,
+          "end": 4.237
+        },
+        {
+          "w": "plants",
+          "start": 4.25,
+          "end": 4.775
+        },
+        {
+          "w": "make",
+          "start": 4.787,
+          "end": 5.025
+        },
+        {
+          "w": "food",
+          "start": 5.037,
+          "end": 5.312
+        },
+        {
+          "w": "from",
+          "start": 5.325,
+          "end": 5.575
+        },
+        {
+          "w": "light",
+          "start": 5.588,
+          "end": 6
+        },
+        {
+          "w": "by",
+          "start": 7.436,
+          "end": 7.686
+        },
+        {
+          "w": "the",
+          "start": 7.699,
+          "end": 7.886
+        },
+        {
+          "w": "end",
+          "start": 7.899,
+          "end": 8.236
+        },
+        {
+          "w": "youll",
+          "start": 8.436,
+          "end": 8.661
+        },
+        {
+          "w": "know",
+          "start": 8.674,
+          "end": 8.836
+        },
+        {
+          "w": "what",
+          "start": 8.848,
+          "end": 9.074
+        },
+        {
+          "w": "goes",
+          "start": 9.086,
+          "end": 9.373
+        },
+        {
+          "w": "in",
+          "start": 9.386,
+          "end": 9.636
+        },
+        {
+          "w": "and",
+          "start": 9.836,
+          "end": 10.024
+        },
+        {
+          "w": "what",
+          "start": 10.036,
+          "end": 10.274
+        },
+        {
+          "w": "comes",
+          "start": 10.286,
+          "end": 10.636
+        },
+        {
+          "w": "out",
+          "start": 10.649,
+          "end": 11.024
+        }
+      ],
+      "leadFrames": 52,
+      "tailFrames": 57,
+      "durationInFrames": 470,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "figure",
+      "hash": "c6e0cece2468",
+      "narration": "The leaf absorbs light and water. It takes in carbon dioxide from the air. And it produces glucose and oxygen.",
+      "audioFile": "audio/vo/smoke/S01/scene-2.mp3",
+      "voDurationInSeconds": 10.536,
+      "voDurationInFrames": 317,
+      "captions": [
+        {
+          "text": "The leaf absorbs light and water.",
+          "start": 0.1,
+          "end": 2.3880000000000003
+        },
+        {
+          "text": "It takes in carbon dioxide from the air.",
+          "start": 3.572,
+          "end": 6.097
+        },
+        {
+          "text": "And it produces glucose and oxygen.",
+          "start": 7.308,
+          "end": 9.77
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.1,
+          "end": 0.238
+        },
+        {
+          "w": "leaf",
+          "start": 0.25,
+          "end": 0.6
+        },
+        {
+          "w": "absorbs",
+          "start": 0.613,
+          "end": 1.163
+        },
+        {
+          "w": "light",
+          "start": 1.175,
+          "end": 1.525
+        },
+        {
+          "w": "and",
+          "start": 1.538,
+          "end": 1.7
+        },
+        {
+          "w": "water",
+          "start": 1.712,
+          "end": 2.188
+        },
+        {
+          "w": "it",
+          "start": 3.572,
+          "end": 3.747
+        },
+        {
+          "w": "takes",
+          "start": 3.76,
+          "end": 4.059
+        },
+        {
+          "w": "in",
+          "start": 4.072,
+          "end": 4.21
+        },
+        {
+          "w": "carbon",
+          "start": 4.222,
+          "end": 4.659
+        },
+        {
+          "w": "dioxide",
+          "start": 4.672,
+          "end": 5.297
+        },
+        {
+          "w": "from",
+          "start": 5.309,
+          "end": 5.51
+        },
+        {
+          "w": "the",
+          "start": 5.522,
+          "end": 5.647
+        },
+        {
+          "w": "air",
+          "start": 5.659,
+          "end": 5.897
+        },
+        {
+          "w": "and",
+          "start": 7.308,
+          "end": 7.471
+        },
+        {
+          "w": "it",
+          "start": 7.483,
+          "end": 7.583
+        },
+        {
+          "w": "produces",
+          "start": 7.596,
+          "end": 8.171
+        },
+        {
+          "w": "glucose",
+          "start": 8.183,
+          "end": 8.733
+        },
+        {
+          "w": "and",
+          "start": 8.745,
+          "end": 8.908
+        },
+        {
+          "w": "oxygen",
+          "start": 8.921,
+          "end": 9.57
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 408,
+      "startFrame": 470
+    },
+    {
+      "index": 3,
+      "type": "recap",
+      "hash": "ac6bf8ce57fd",
+      "narration": "Let's recap. The inputs are light, water and carbon dioxide. The outputs are glucose and oxygen.",
+      "audioFile": "audio/vo/smoke/S01/scene-3.mp3",
+      "voDurationInSeconds": 10.272,
+      "voDurationInFrames": 309,
+      "captions": [
+        {
+          "text": "Let's recap! The inputs are light, water",
+          "start": 0.1,
+          "end": 4.317
+        },
+        {
+          "text": "and carbon dioxide.",
+          "start": 4.317,
+          "end": 5.917
+        },
+        {
+          "text": "The outputs are glucose and oxygen.",
+          "start": 7.14,
+          "end": 9.503
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.1,
+          "end": 0.463
+        },
+        {
+          "w": "recap",
+          "start": 0.475,
+          "end": 1.05
+        },
+        {
+          "w": "the",
+          "start": 2.492,
+          "end": 2.655
+        },
+        {
+          "w": "inputs",
+          "start": 2.667,
+          "end": 3.054
+        },
+        {
+          "w": "are",
+          "start": 3.067,
+          "end": 3.167
+        },
+        {
+          "w": "light",
+          "start": 3.179,
+          "end": 3.604
+        },
+        {
+          "w": "water",
+          "start": 3.779,
+          "end": 4.304
+        },
+        {
+          "w": "and",
+          "start": 4.317,
+          "end": 4.554
+        },
+        {
+          "w": "carbon",
+          "start": 4.567,
+          "end": 4.942
+        },
+        {
+          "w": "dioxide",
+          "start": 4.954,
+          "end": 5.717
+        },
+        {
+          "w": "the",
+          "start": 7.14,
+          "end": 7.303
+        },
+        {
+          "w": "outputs",
+          "start": 7.315,
+          "end": 7.815
+        },
+        {
+          "w": "are",
+          "start": 7.828,
+          "end": 7.928
+        },
+        {
+          "w": "glucose",
+          "start": 7.94,
+          "end": 8.465
+        },
+        {
+          "w": "and",
+          "start": 8.478,
+          "end": 8.615
+        },
+        {
+          "w": "oxygen",
+          "start": 8.628,
+          "end": 9.303
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 221,
+      "durationInFrames": 564,
+      "startFrame": 878
+    }
+  ]
+}

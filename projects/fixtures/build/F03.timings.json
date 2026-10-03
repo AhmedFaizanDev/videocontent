@@ -1,0 +1,840 @@
+{
+  "id": "F03",
+  "fps": 30,
+  "totalDurationInFrames": 2125,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about Endoscopy Pack, a deliberately long title used to stress the layout engine at its limits. It keeps going for a while so the enumeration lands later. By the end, you'll see every illustration, you'll see every anchor.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 18.81734693877551,
+      "voDurationInFrames": 565,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.05,
+          "end": 3.04
+        },
+        {
+          "text": "Endoscopy Pack, a deliberately long title",
+          "start": 3.04,
+          "end": 6.104
+        },
+        {
+          "text": "used to stress the layout engine at its",
+          "start": 6.104,
+          "end": 9.021
+        },
+        {
+          "text": "limits. It keeps going for a while so the",
+          "start": 9.021,
+          "end": 12.084
+        },
+        {
+          "text": "enumeration lands later.",
+          "start": 12.084,
+          "end": 13.908
+        },
+        {
+          "text": "By the end, you'll see every illustration,",
+          "start": 13.908,
+          "end": 17.044
+        },
+        {
+          "text": "you'll see every anchor.",
+          "start": 17.044,
+          "end": 19.067
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.269
+        },
+        {
+          "w": "this",
+          "start": 0.269,
+          "end": 0.633
+        },
+        {
+          "w": "video",
+          "start": 0.633,
+          "end": 1.144
+        },
+        {
+          "w": "were",
+          "start": 1.144,
+          "end": 1.582
+        },
+        {
+          "w": "going",
+          "start": 1.582,
+          "end": 2.019
+        },
+        {
+          "w": "to",
+          "start": 2.019,
+          "end": 2.238
+        },
+        {
+          "w": "talk",
+          "start": 2.238,
+          "end": 2.603
+        },
+        {
+          "w": "about",
+          "start": 2.603,
+          "end": 3.04
+        },
+        {
+          "w": "endoscopy",
+          "start": 3.04,
+          "end": 3.77
+        },
+        {
+          "w": "pack",
+          "start": 3.77,
+          "end": 4.207
+        },
+        {
+          "w": "a",
+          "start": 4.207,
+          "end": 4.353
+        },
+        {
+          "w": "deliberately",
+          "start": 4.353,
+          "end": 5.301
+        },
+        {
+          "w": "long",
+          "start": 5.301,
+          "end": 5.666
+        },
+        {
+          "w": "title",
+          "start": 5.666,
+          "end": 6.104
+        },
+        {
+          "w": "used",
+          "start": 6.104,
+          "end": 6.468
+        },
+        {
+          "w": "to",
+          "start": 6.468,
+          "end": 6.687
+        },
+        {
+          "w": "stress",
+          "start": 6.687,
+          "end": 7.198
+        },
+        {
+          "w": "the",
+          "start": 7.198,
+          "end": 7.489
+        },
+        {
+          "w": "layout",
+          "start": 7.489,
+          "end": 8
+        },
+        {
+          "w": "engine",
+          "start": 8,
+          "end": 8.511
+        },
+        {
+          "w": "at",
+          "start": 8.511,
+          "end": 8.729
+        },
+        {
+          "w": "its",
+          "start": 8.729,
+          "end": 9.021
+        },
+        {
+          "w": "limits",
+          "start": 9.021,
+          "end": 9.605
+        },
+        {
+          "w": "it",
+          "start": 9.605,
+          "end": 9.823
+        },
+        {
+          "w": "keeps",
+          "start": 9.823,
+          "end": 10.261
+        },
+        {
+          "w": "going",
+          "start": 10.261,
+          "end": 10.699
+        },
+        {
+          "w": "for",
+          "start": 10.699,
+          "end": 10.99
+        },
+        {
+          "w": "a",
+          "start": 10.99,
+          "end": 11.136
+        },
+        {
+          "w": "while",
+          "start": 11.136,
+          "end": 11.574
+        },
+        {
+          "w": "so",
+          "start": 11.574,
+          "end": 11.793
+        },
+        {
+          "w": "the",
+          "start": 11.793,
+          "end": 12.084
+        },
+        {
+          "w": "enumeration",
+          "start": 12.084,
+          "end": 12.96
+        },
+        {
+          "w": "lands",
+          "start": 12.96,
+          "end": 13.397
+        },
+        {
+          "w": "later",
+          "start": 13.397,
+          "end": 13.908
+        },
+        {
+          "w": "by",
+          "start": 13.908,
+          "end": 14.127
+        },
+        {
+          "w": "the",
+          "start": 14.127,
+          "end": 14.418
+        },
+        {
+          "w": "end",
+          "start": 14.418,
+          "end": 14.783
+        },
+        {
+          "w": "youll",
+          "start": 14.783,
+          "end": 15.294
+        },
+        {
+          "w": "see",
+          "start": 15.294,
+          "end": 15.585
+        },
+        {
+          "w": "every",
+          "start": 15.585,
+          "end": 16.023
+        },
+        {
+          "w": "illustration",
+          "start": 16.023,
+          "end": 17.044
+        },
+        {
+          "w": "youll",
+          "start": 17.044,
+          "end": 17.555
+        },
+        {
+          "w": "see",
+          "start": 17.555,
+          "end": 17.846
+        },
+        {
+          "w": "every",
+          "start": 17.846,
+          "end": 18.284
+        },
+        {
+          "w": "anchor",
+          "start": 18.284,
+          "end": 18.867
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 632,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "figure",
+      "narration": "Pack figure. valves. controlhead. biopsyport. insertiontube. distaltip. channels.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 4.3153061224489795,
+      "voDurationInFrames": 130,
+      "captions": [
+        {
+          "text": "Pack figure. valves.",
+          "start": 0.05,
+          "end": 1.155
+        },
+        {
+          "text": "controlhead. biopsyport.",
+          "start": 1.155,
+          "end": 2.471
+        },
+        {
+          "text": "insertiontube. distaltip.",
+          "start": 2.471,
+          "end": 3.839
+        },
+        {
+          "text": "channels.",
+          "start": 3.839,
+          "end": 4.565
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.313
+        },
+        {
+          "w": "figure",
+          "start": 0.313,
+          "end": 0.734
+        },
+        {
+          "w": "valves",
+          "start": 0.734,
+          "end": 1.155
+        },
+        {
+          "w": "controlhead",
+          "start": 1.155,
+          "end": 1.839
+        },
+        {
+          "w": "biopsyport",
+          "start": 1.839,
+          "end": 2.471
+        },
+        {
+          "w": "insertiontube",
+          "start": 2.471,
+          "end": 3.26
+        },
+        {
+          "w": "distaltip",
+          "start": 3.26,
+          "end": 3.839
+        },
+        {
+          "w": "channels",
+          "start": 3.839,
+          "end": 4.365
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 186,
+      "startFrame": 632
+    },
+    {
+      "index": 3,
+      "type": "figure",
+      "narration": "Pack figure. suction. air. water. light. wires.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.7571428571428567,
+      "voDurationInFrames": 113,
+      "captions": [
+        {
+          "text": "Pack figure. suction.",
+          "start": 0.05,
+          "end": 1.772
+        },
+        {
+          "text": "air. water. light.",
+          "start": 1.772,
+          "end": 3.259
+        },
+        {
+          "text": "wires.",
+          "start": 3.259,
+          "end": 4.007
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.441
+        },
+        {
+          "w": "figure",
+          "start": 0.441,
+          "end": 1.068
+        },
+        {
+          "w": "suction",
+          "start": 1.068,
+          "end": 1.772
+        },
+        {
+          "w": "air",
+          "start": 1.772,
+          "end": 2.163
+        },
+        {
+          "w": "water",
+          "start": 2.163,
+          "end": 2.711
+        },
+        {
+          "w": "light",
+          "start": 2.711,
+          "end": 3.259
+        },
+        {
+          "w": "wires",
+          "start": 3.259,
+          "end": 3.807
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 169,
+      "startFrame": 818
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "Pack figure. soil. bacteria. matrix. disinfectant. flow. brush.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 4.3153061224489795,
+      "voDurationInFrames": 130,
+      "captions": [
+        {
+          "text": "Pack figure. soil.",
+          "start": 0.05,
+          "end": 1.331
+        },
+        {
+          "text": "bacteria. matrix.",
+          "start": 1.331,
+          "end": 2.545
+        },
+        {
+          "text": "disinfectant. flow.",
+          "start": 2.545,
+          "end": 3.893
+        },
+        {
+          "text": "brush.",
+          "start": 3.893,
+          "end": 4.565
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.387
+        },
+        {
+          "w": "figure",
+          "start": 0.387,
+          "end": 0.927
+        },
+        {
+          "w": "soil",
+          "start": 0.927,
+          "end": 1.331
+        },
+        {
+          "w": "bacteria",
+          "start": 1.331,
+          "end": 2.005
+        },
+        {
+          "w": "matrix",
+          "start": 2.005,
+          "end": 2.545
+        },
+        {
+          "w": "disinfectant",
+          "start": 2.545,
+          "end": 3.489
+        },
+        {
+          "w": "flow",
+          "start": 3.489,
+          "end": 3.893
+        },
+        {
+          "w": "brush",
+          "start": 3.893,
+          "end": 4.365
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 186,
+      "startFrame": 987
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Pack figure. tester. sheath. gauge. bubbles.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.1989795918367343,
+      "voDurationInFrames": 96,
+      "captions": [
+        {
+          "text": "Pack figure. tester.",
+          "start": 0.05,
+          "end": 1.543
+        },
+        {
+          "text": "sheath. gauge. bubbles.",
+          "start": 1.543,
+          "end": 3.4490000000000003
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.405
+        },
+        {
+          "w": "figure",
+          "start": 0.405,
+          "end": 0.974
+        },
+        {
+          "w": "tester",
+          "start": 0.974,
+          "end": 1.543
+        },
+        {
+          "w": "sheath",
+          "start": 1.543,
+          "end": 2.112
+        },
+        {
+          "w": "gauge",
+          "start": 2.112,
+          "end": 2.609
+        },
+        {
+          "w": "bubbles",
+          "start": 2.609,
+          "end": 3.249
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 152,
+      "startFrame": 1173
+    },
+    {
+      "index": 6,
+      "type": "figure",
+      "narration": "Pack figure. tip. elevator. accessory. recess.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.1989795918367343,
+      "voDurationInFrames": 96,
+      "captions": [
+        {
+          "text": "Pack figure. tip.",
+          "start": 0.05,
+          "end": 1.275
+        },
+        {
+          "text": "elevator. accessory.",
+          "start": 1.275,
+          "end": 2.704
+        },
+        {
+          "text": "recess.",
+          "start": 2.704,
+          "end": 3.4490000000000003
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.39
+        },
+        {
+          "w": "figure",
+          "start": 0.39,
+          "end": 0.935
+        },
+        {
+          "w": "tip",
+          "start": 0.935,
+          "end": 1.275
+        },
+        {
+          "w": "elevator",
+          "start": 1.275,
+          "end": 1.956
+        },
+        {
+          "w": "accessory",
+          "start": 1.956,
+          "end": 2.704
+        },
+        {
+          "w": "recess",
+          "start": 2.704,
+          "end": 3.249
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 152,
+      "startFrame": 1325
+    },
+    {
+      "index": 7,
+      "type": "figure",
+      "narration": "Pack figure. alcohol. air. moisture. coiled. cabinet.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.7571428571428567,
+      "voDurationInFrames": 113,
+      "captions": [
+        {
+          "text": "Pack figure. alcohol.",
+          "start": 0.05,
+          "end": 1.581
+        },
+        {
+          "text": "air. moisture. coiled.",
+          "start": 1.581,
+          "end": 3.181
+        },
+        {
+          "text": "cabinet.",
+          "start": 3.181,
+          "end": 4.007
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.398
+        },
+        {
+          "w": "figure",
+          "start": 0.398,
+          "end": 0.954
+        },
+        {
+          "w": "alcohol",
+          "start": 0.954,
+          "end": 1.581
+        },
+        {
+          "w": "air",
+          "start": 1.581,
+          "end": 1.929
+        },
+        {
+          "w": "moisture",
+          "start": 1.929,
+          "end": 2.624
+        },
+        {
+          "w": "coiled",
+          "start": 2.624,
+          "end": 3.181
+        },
+        {
+          "w": "cabinet",
+          "start": 3.181,
+          "end": 3.807
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 169,
+      "startFrame": 1477
+    },
+    {
+      "index": 8,
+      "type": "figure",
+      "narration": "Pack figure. reprocessor. record. connectors. missing.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.1989795918367343,
+      "voDurationInFrames": 96,
+      "captions": [
+        {
+          "text": "Pack figure. reprocessor.",
+          "start": 0.05,
+          "end": 1.562
+        },
+        {
+          "text": "record. connectors.",
+          "start": 1.562,
+          "end": 2.726
+        },
+        {
+          "text": "missing.",
+          "start": 2.726,
+          "end": 3.4490000000000003
+        }
+      ],
+      "words": [
+        {
+          "w": "pack",
+          "start": 0.05,
+          "end": 0.341
+        },
+        {
+          "w": "figure",
+          "start": 0.341,
+          "end": 0.806
+        },
+        {
+          "w": "reprocessor",
+          "start": 0.806,
+          "end": 1.562
+        },
+        {
+          "w": "record",
+          "start": 1.562,
+          "end": 2.028
+        },
+        {
+          "w": "connectors",
+          "start": 2.028,
+          "end": 2.726
+        },
+        {
+          "w": "missing",
+          "start": 2.726,
+          "end": 3.249
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 152,
+      "startFrame": 1646
+    },
+    {
+      "index": 9,
+      "type": "recap",
+      "narration": "Let's recap. Illustrations. Then Anchors. Then Events. That is the whole fixture.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 5.647959183673469,
+      "voDurationInFrames": 170,
+      "captions": [
+        {
+          "text": "Let's recap. Illustrations.",
+          "start": 0.05,
+          "end": 1.979
+        },
+        {
+          "text": "Then Anchors. Then Events.",
+          "start": 1.979,
+          "end": 3.838
+        },
+        {
+          "text": "That is the whole fixture.",
+          "start": 3.838,
+          "end": 5.898000000000001
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.05,
+          "end": 0.463
+        },
+        {
+          "w": "recap",
+          "start": 0.463,
+          "end": 0.945
+        },
+        {
+          "w": "illustrations",
+          "start": 0.945,
+          "end": 1.979
+        },
+        {
+          "w": "then",
+          "start": 1.979,
+          "end": 2.323
+        },
+        {
+          "w": "anchors",
+          "start": 2.323,
+          "end": 2.943
+        },
+        {
+          "w": "then",
+          "start": 2.943,
+          "end": 3.287
+        },
+        {
+          "w": "events",
+          "start": 3.287,
+          "end": 3.838
+        },
+        {
+          "w": "that",
+          "start": 3.838,
+          "end": 4.183
+        },
+        {
+          "w": "is",
+          "start": 4.183,
+          "end": 4.389
+        },
+        {
+          "w": "the",
+          "start": 4.389,
+          "end": 4.665
+        },
+        {
+          "w": "whole",
+          "start": 4.665,
+          "end": 5.078
+        },
+        {
+          "w": "fixture",
+          "start": 5.078,
+          "end": 5.698
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 327,
+      "startFrame": 1798
+    }
+  ]
+}

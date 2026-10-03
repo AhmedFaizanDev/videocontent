@@ -1,0 +1,20 @@
+{
+  "id": "B01",
+  "title": "Recipes fixture",
+  "outputFilename": "B01_recipes.mp4",
+  "module": "Fixture",
+  "scenes": [
+    {"type": "opener", "kicker": "Fixture", "title": "Cardiac arrest in brief", "art": "heartExterior", "act": ["conduction"],
+     "narration": "Cardiac arrest in brief. Each heartbeat starts as an electrical impulse; in cardiac arrest the heart stops beating effectively."},
+    {"type": "explain", "kicker": "What happens", "art": "heartExterior",
+     "narration": "In ventricular fibrillation the ventricles quiver. The right ventricle and the left ventricle eject no blood, so the aorta carries nothing. Chest compressions push blood out of the heart again.",
+     "points": [{"act": "vf", "say": ["quiver"]}, {"on": "rv", "label": "Right ventricle"}, {"on": "lv", "label": "Left ventricle", "zoom": false}, {"on": "aorta", "label": "Aorta"}, {"act": "compress", "say": ["compressions"], "note": "Compressions: 100–120 a minute"}]},
+    {"type": "flow", "kicker": "The chain", "mermaid": "flowchart LR\n A[Recognition] --> B[Compressions] --> C[Defibrillation] --> D[Advanced care]",
+     "narration": "Survival depends on a chain. Recognition comes first. Compressions keep blood moving. Defibrillation restores a rhythm. Advanced care follows."},
+    {"type": "table", "kicker": "Survival", "columns": ["Setting", "Survival to discharge"], "rows": [["Out of hospital", "10.5%"], ["In hospital, adults", "23.6%"]], "bars": [1],
+     "narration": "Survival to discharge is low. Out of hospital it is about 10.5%. In hospital, for adults, it is about 23.6%."},
+    {"type": "summary", "kicker": "Summary", "art": "heartExterior", "act": ["rosc"],
+     "narration": "To summarise: cardiac arrest is electrical, compressions move the blood, and the chain starts with recognition.",
+     "notes": [{"say": ["electrical"], "note": "Cardiac arrest is electrical"}, {"say": ["move"], "note": "Compressions move the blood"}]}
+  ]
+}

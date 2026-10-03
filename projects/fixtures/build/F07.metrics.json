@@ -1,0 +1,13 @@
+{
+  "project": "fixtures",
+  "id": "F07",
+  "stages": {
+    "preflight": {
+      "seconds": 0,
+      "batch": 10,
+      "errors": 0,
+      "at": "2026-10-03T21:45:49.023Z"
+    }
+  },
+  "authoring": []
+}

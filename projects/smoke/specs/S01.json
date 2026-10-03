@@ -1,0 +1,60 @@
+{
+  "id": "S01",
+  "title": "Photosynthesis in one minute",
+  "outputFilename": "S01_photosynthesis.mp4",
+  "module": "Biology",
+  "topicGroup": "Smoke",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Photosynthesis",
+      "subtitle": "Biology \u00b7 Smoke test",
+      "learn": [
+        "what goes in",
+        "what comes out"
+      ],
+      "narration": "In this video, we're going to talk about photosynthesis, the way plants make food from light. By the end, you'll know what goes in, and what comes out."
+    },
+    {
+      "type": "figure",
+      "kicker": "The process",
+      "art": "flow",
+      "data": {
+        "items": [
+          {
+            "label": "Light and water",
+            "note": "Absorbed by the leaf"
+          },
+          {
+            "label": "Carbon dioxide",
+            "note": "Taken from the air"
+          },
+          {
+            "label": "Glucose and oxygen",
+            "note": "Food for the plant, oxygen for us"
+          }
+        ]
+      },
+      "narration": "The leaf absorbs light and water. It takes in carbon dioxide from the air. And it produces glucose and oxygen."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Inputs \u2014 light, water, carbon dioxide",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Outputs \u2014 glucose and oxygen",
+          "color": "constant"
+        }
+      ],
+      "takeaway": "Plants turn light into food.",
+      "narration": "Let's recap. The inputs are light, water and carbon dioxide. The outputs are glucose and oxygen."
+    }
+  ]
+}

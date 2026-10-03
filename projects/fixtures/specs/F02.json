@@ -1,0 +1,459 @@
+{
+  "id": "F02",
+  "title": "Diagram minima and every scene type",
+  "outputFilename": "F02_minima_and_scene_types.mp4",
+  "module": "Stress · minima",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Minimums",
+      "subtitle": "Fixture · Stress test",
+      "narration": "In this video, we're going to talk about Minimums, a deliberately long title used to stress the layout engine at its limits. It keeps going for a while so the enumeration lands later. By the end, you'll see short one, you'll see short two.",
+      "learn": [
+        "short one",
+        "short two"
+      ]
+    },
+    {
+      "type": "definition",
+      "kicker": "Definition",
+      "narration": "A definition with chips. Alpha chip. Beta chip. Gamma chip.",
+      "term": "fixture",
+      "plain": "A known input used to check that a system behaves the same every time.",
+      "highlight": {
+        "known": "#2FA69A"
+      },
+      "chips": [
+        {
+          "icon": "",
+          "label": "Alpha chip"
+        },
+        {
+          "icon": "",
+          "label": "Beta chip"
+        },
+        {
+          "icon": "",
+          "label": "Gamma chip"
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Cycle min",
+      "art": "cycle",
+      "narration": "Here is the cycle figure. One. Then Two. Then Three.",
+      "data": {
+        "items": [
+          {
+            "label": "One"
+          },
+          {
+            "label": "Two"
+          },
+          {
+            "label": "Three"
+          }
+        ]
+      },
+      "callouts": [
+        {
+          "anchor": "i1",
+          "label": "One",
+          "say": [
+            "one"
+          ]
+        },
+        {
+          "anchor": "i2",
+          "label": "Two",
+          "say": [
+            "two"
+          ]
+        },
+        {
+          "anchor": "i3",
+          "label": "Three",
+          "say": [
+            "three"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Flow min",
+      "art": "flow",
+      "narration": "Here is the flow figure. Input. Then Output.",
+      "data": {
+        "items": [
+          {
+            "label": "Input"
+          },
+          {
+            "label": "Output"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Timeline min",
+      "art": "timeline",
+      "narration": "Here is the timeline figure. Start. Then Middle. Then Finish.",
+      "data": {
+        "items": [
+          {
+            "when": "Day 1",
+            "label": "Start"
+          },
+          {
+            "when": "Day 2",
+            "label": "Middle"
+          },
+          {
+            "when": "Day 3",
+            "label": "Finish"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Hub min",
+      "art": "hub",
+      "narration": "Here is the hub figure. Alpha. Then Beta. Then Gamma.",
+      "data": {
+        "center": "Core",
+        "items": [
+          {
+            "label": "Alpha"
+          },
+          {
+            "label": "Beta"
+          },
+          {
+            "label": "Gamma"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Stack min",
+      "art": "stack",
+      "narration": "Here is the stack figure. Upper. Then Lower.",
+      "data": {
+        "items": [
+          {
+            "label": "Upper"
+          },
+          {
+            "label": "Lower"
+          }
+        ]
+      }
+    },
+    {
+      "type": "figure",
+      "kicker": "Image",
+      "art": "image",
+      "narration": "Here is the image figure. Left point. Then Centre point. Then Right point.",
+      "title": "A labelled image",
+      "data": {
+        "src": "fixtures/sample.png",
+        "credit": "Fixture image · generated test pattern",
+        "points": {
+          "left": [
+            0.2,
+            0.5
+          ],
+          "centre": [
+            0.5,
+            0.5
+          ],
+          "right": [
+            0.8,
+            0.3
+          ]
+        }
+      },
+      "callouts": [
+        {
+          "anchor": "left",
+          "label": "Left point",
+          "text": "at 20%, 50%"
+        },
+        {
+          "anchor": "centre",
+          "label": "Centre point"
+        },
+        {
+          "anchor": "right",
+          "label": "Right point"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Steps",
+      "narration": "Six steps. Alpha. Bravo. Charlie. Delta. Echo. Foxtrot.",
+      "title": "Six steps",
+      "steps": [
+        {
+          "label": "Alpha",
+          "detail": "A supporting detail line."
+        },
+        {
+          "label": "Bravo",
+          "detail": "A supporting detail line."
+        },
+        {
+          "label": "Charlie",
+          "detail": "A supporting detail line."
+        },
+        {
+          "label": "Delta",
+          "detail": "A supporting detail line."
+        },
+        {
+          "label": "Echo",
+          "detail": "A supporting detail line."
+        },
+        {
+          "label": "Foxtrot",
+          "detail": "A supporting detail line."
+        }
+      ]
+    },
+    {
+      "type": "pseudocode",
+      "kicker": "The logic",
+      "narration": "Set total to zero. For each price in the basket, total adds price. Then print total.",
+      "title": "Sum a basket",
+      "lines": [
+        "SET total <- 0",
+        "FOR EACH price IN basket",
+        "    total <- total + price",
+        "END FOR",
+        "PRINT total"
+      ],
+      "caption": "Runs once per item",
+      "callouts": [
+        {
+          "line": 3,
+          "text": "adds each price"
+        }
+      ]
+    },
+    {
+      "type": "code",
+      "kicker": "Real code",
+      "narration": "The same logic in real code, with an annotation and a caption.",
+      "fileName": "sum.py",
+      "lines": [
+        {
+          "segments": [
+            {
+              "t": "total = 0"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "for "
+            },
+            {
+              "t": "price",
+              "c": "variable"
+            },
+            {
+              "t": " in basket:"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "    total += price"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "print(total)"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "line": 1,
+          "col": 0,
+          "text": "loop over items",
+          "color": "accent",
+          "beat": 1
+        }
+      ],
+      "caption": "Same result"
+    },
+    {
+      "type": "example",
+      "kicker": "Worked example",
+      "narration": "Start at zero. Adding three gives three. Adding four gives seven. Adding five gives twelve. Twelve is the answer.",
+      "title": "Six boxes",
+      "boxes": [
+        {
+          "label": "a",
+          "value": "3"
+        },
+        {
+          "label": "b",
+          "value": "4"
+        },
+        {
+          "label": "c",
+          "value": "5"
+        },
+        {
+          "label": "n",
+          "value": "0"
+        },
+        {
+          "label": "step",
+          "value": "0"
+        },
+        {
+          "label": "total",
+          "value": "0",
+          "color": "constant"
+        }
+      ],
+      "trace": [
+        {
+          "note": "adding three gives three",
+          "set": {
+            "total": "3",
+            "step": "1"
+          },
+          "highlight": "total"
+        },
+        {
+          "note": "adding four gives seven",
+          "set": {
+            "total": "7",
+            "step": "2"
+          },
+          "highlight": "total"
+        },
+        {
+          "note": "adding five gives twelve",
+          "set": {
+            "total": "12",
+            "step": "3"
+          },
+          "highlight": "total"
+        },
+        {
+          "note": "twelve is the answer",
+          "set": {},
+          "highlight": "total",
+          "result": true
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "kicker": "Compare",
+      "narration": "Left side first: fast, simple, cheap. Right side: slower, thorough, robust.",
+      "question": "Which one?",
+      "left": {
+        "keyword": "QUICK",
+        "title": "left",
+        "color": "variable",
+        "items": [
+          {
+            "icon": "",
+            "label": "Fast"
+          },
+          {
+            "icon": "",
+            "label": "Simple"
+          },
+          {
+            "icon": "",
+            "label": "Cheap"
+          }
+        ]
+      },
+      "right": {
+        "keyword": "CAREFUL",
+        "title": "right",
+        "color": "constant",
+        "items": [
+          {
+            "icon": "",
+            "label": "Slower"
+          },
+          {
+            "icon": "",
+            "label": "Thorough"
+          },
+          {
+            "icon": "",
+            "label": "Robust"
+          }
+        ]
+      },
+      "tip": "A tip tape that must stay above the caption band."
+    },
+    {
+      "type": "mistake",
+      "kicker": "Common mistake",
+      "narration": "The wrong way and the right way.",
+      "title": "Wrong vs right",
+      "wrong": {
+        "label": "wrong",
+        "lines": [
+          "total = total",
+          "// never adds"
+        ]
+      },
+      "right": {
+        "label": "right",
+        "lines": [
+          "total = total + price",
+          "// adds each"
+        ]
+      },
+      "note": "A note tape under the slips."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Minima hold. Then Every scene renders. Then Short text centres. That is the whole fixture.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Minima hold",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Every scene renders",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Short text centres",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "Short content looks deliberate, not empty."
+    }
+  ]
+}

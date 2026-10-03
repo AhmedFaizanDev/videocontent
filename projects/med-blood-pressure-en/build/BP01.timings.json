@@ -1,0 +1,3130 @@
+{
+  "id": "BP01",
+  "fps": 30,
+  "totalDurationInFrames": 9000,
+  "voice": {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "en-IN-NeerjaExpressiveNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "hash": "40c3c606bb32",
+      "narration": "In this video, we're going to talk about blood pressure and its two numbers. By the end, you'll know what blood pressure measures, what systolic and diastolic mean, when a reading counts as high, and how to keep it healthy.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-1.mp3",
+      "voDurationInSeconds": 16.224,
+      "voDurationInFrames": 487,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.1,
+          "end": 2.5
+        },
+        {
+          "text": "blood pressure and its two numbers.",
+          "start": 2.5,
+          "end": 4.8
+        },
+        {
+          "text": "By the end, you'll know what blood",
+          "start": 6.544,
+          "end": 8.569
+        },
+        {
+          "text": "pressure measures, what systolic and",
+          "start": 8.569,
+          "end": 10.694
+        },
+        {
+          "text": "diastolic mean, when a reading counts as",
+          "start": 10.694,
+          "end": 13.169
+        },
+        {
+          "text": "high, and how to keep it healthy.",
+          "start": 13.169,
+          "end": 15.431999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.1,
+          "end": 0.238
+        },
+        {
+          "w": "this",
+          "start": 0.25,
+          "end": 0.487
+        },
+        {
+          "w": "video",
+          "start": 0.5,
+          "end": 0.95
+        },
+        {
+          "w": "were",
+          "start": 1.275,
+          "end": 1.425
+        },
+        {
+          "w": "going",
+          "start": 1.438,
+          "end": 1.712
+        },
+        {
+          "w": "to",
+          "start": 1.725,
+          "end": 1.825
+        },
+        {
+          "w": "talk",
+          "start": 1.837,
+          "end": 2.15
+        },
+        {
+          "w": "about",
+          "start": 2.163,
+          "end": 2.488
+        },
+        {
+          "w": "blood",
+          "start": 2.5,
+          "end": 2.812
+        },
+        {
+          "w": "pressure",
+          "start": 2.825,
+          "end": 3.4
+        },
+        {
+          "w": "and",
+          "start": 3.413,
+          "end": 3.613
+        },
+        {
+          "w": "its",
+          "start": 3.625,
+          "end": 3.812
+        },
+        {
+          "w": "two",
+          "start": 3.825,
+          "end": 3.95
+        },
+        {
+          "w": "numbers",
+          "start": 3.962,
+          "end": 4.6
+        },
+        {
+          "w": "by",
+          "start": 6.544,
+          "end": 6.794
+        },
+        {
+          "w": "the",
+          "start": 6.806,
+          "end": 6.994
+        },
+        {
+          "w": "end",
+          "start": 7.006,
+          "end": 7.356
+        },
+        {
+          "w": "youll",
+          "start": 7.556,
+          "end": 7.794
+        },
+        {
+          "w": "know",
+          "start": 7.806,
+          "end": 7.982
+        },
+        {
+          "w": "what",
+          "start": 7.994,
+          "end": 8.256
+        },
+        {
+          "w": "blood",
+          "start": 8.269,
+          "end": 8.556
+        },
+        {
+          "w": "pressure",
+          "start": 8.569,
+          "end": 8.969
+        },
+        {
+          "w": "measures",
+          "start": 8.982,
+          "end": 9.506
+        },
+        {
+          "w": "what",
+          "start": 9.719,
+          "end": 9.919
+        },
+        {
+          "w": "systolic",
+          "start": 9.931,
+          "end": 10.519
+        },
+        {
+          "w": "and",
+          "start": 10.532,
+          "end": 10.681
+        },
+        {
+          "w": "diastolic",
+          "start": 10.694,
+          "end": 11.344
+        },
+        {
+          "w": "mean",
+          "start": 11.357,
+          "end": 11.756
+        },
+        {
+          "w": "when",
+          "start": 12.019,
+          "end": 12.157
+        },
+        {
+          "w": "a",
+          "start": 12.169,
+          "end": 12.219
+        },
+        {
+          "w": "reading",
+          "start": 12.232,
+          "end": 12.619
+        },
+        {
+          "w": "counts",
+          "start": 12.631,
+          "end": 12.982
+        },
+        {
+          "w": "as",
+          "start": 12.994,
+          "end": 13.156
+        },
+        {
+          "w": "high",
+          "start": 13.169,
+          "end": 13.506
+        },
+        {
+          "w": "and",
+          "start": 13.719,
+          "end": 13.881
+        },
+        {
+          "w": "how",
+          "start": 13.894,
+          "end": 14.169
+        },
+        {
+          "w": "to",
+          "start": 14.181,
+          "end": 14.319
+        },
+        {
+          "w": "keep",
+          "start": 14.332,
+          "end": 14.607
+        },
+        {
+          "w": "it",
+          "start": 14.619,
+          "end": 14.744
+        },
+        {
+          "w": "healthy",
+          "start": 14.756,
+          "end": 15.232
+        }
+      ],
+      "leadFrames": 42,
+      "tailFrames": 46,
+      "durationInFrames": 575,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "stage",
+      "hash": "77f5cb456d28",
+      "narration": "Most people with high blood pressure feel perfectly well, with no warning signs at all. Yet inside, the pressure can stay high for years. The World Health Organization estimates that 46 percent of them don't know it. So how would you know?",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-2.mp3",
+      "voDurationInSeconds": 20.208,
+      "voDurationInFrames": 607,
+      "captions": [
+        {
+          "text": "Most people with high blood pressure feel",
+          "start": 0.1,
+          "end": 2.375
+        },
+        {
+          "text": "perfectly well, with no warning signs at",
+          "start": 2.375,
+          "end": 5.263
+        },
+        {
+          "text": "all. Yet inside, the pressure can stay",
+          "start": 5.263,
+          "end": 9.679
+        },
+        {
+          "text": "high for years. The World Health",
+          "start": 9.679,
+          "end": 12.722
+        },
+        {
+          "text": "Organization estimates that 46 percent of",
+          "start": 12.722,
+          "end": 15.646
+        },
+        {
+          "text": "them don't know it.",
+          "start": 15.646,
+          "end": 16.959
+        },
+        {
+          "text": "So how would you know?",
+          "start": 18.192,
+          "end": 19.479
+        }
+      ],
+      "words": [
+        {
+          "w": "most",
+          "start": 0.1,
+          "end": 0.463
+        },
+        {
+          "w": "people",
+          "start": 0.475,
+          "end": 0.863
+        },
+        {
+          "w": "with",
+          "start": 0.875,
+          "end": 1.038
+        },
+        {
+          "w": "high",
+          "start": 1.05,
+          "end": 1.325
+        },
+        {
+          "w": "blood",
+          "start": 1.337,
+          "end": 1.662
+        },
+        {
+          "w": "pressure",
+          "start": 1.675,
+          "end": 2.087
+        },
+        {
+          "w": "feel",
+          "start": 2.1,
+          "end": 2.363
+        },
+        {
+          "w": "perfectly",
+          "start": 2.375,
+          "end": 2.987
+        },
+        {
+          "w": "well",
+          "start": 3,
+          "end": 3.413
+        },
+        {
+          "w": "with",
+          "start": 3.725,
+          "end": 3.888
+        },
+        {
+          "w": "no",
+          "start": 3.9,
+          "end": 4.325
+        },
+        {
+          "w": "warning",
+          "start": 4.338,
+          "end": 4.688
+        },
+        {
+          "w": "signs",
+          "start": 4.7,
+          "end": 5.088
+        },
+        {
+          "w": "at",
+          "start": 5.1,
+          "end": 5.25
+        },
+        {
+          "w": "all",
+          "start": 5.263,
+          "end": 5.575
+        },
+        {
+          "w": "yet",
+          "start": 7.504,
+          "end": 7.804
+        },
+        {
+          "w": "inside",
+          "start": 7.816,
+          "end": 8.367
+        },
+        {
+          "w": "the",
+          "start": 8.591,
+          "end": 8.691
+        },
+        {
+          "w": "pressure",
+          "start": 8.704,
+          "end": 9.129
+        },
+        {
+          "w": "can",
+          "start": 9.142,
+          "end": 9.341
+        },
+        {
+          "w": "stay",
+          "start": 9.354,
+          "end": 9.666
+        },
+        {
+          "w": "high",
+          "start": 9.679,
+          "end": 9.941
+        },
+        {
+          "w": "for",
+          "start": 9.954,
+          "end": 10.154
+        },
+        {
+          "w": "years",
+          "start": 10.166,
+          "end": 10.541
+        },
+        {
+          "w": "the",
+          "start": 11.984,
+          "end": 12.134
+        },
+        {
+          "w": "world",
+          "start": 12.146,
+          "end": 12.421
+        },
+        {
+          "w": "health",
+          "start": 12.434,
+          "end": 12.709
+        },
+        {
+          "w": "organization",
+          "start": 12.722,
+          "end": 13.484
+        },
+        {
+          "w": "estimates",
+          "start": 13.497,
+          "end": 14.222
+        },
+        {
+          "w": "that",
+          "start": 14.234,
+          "end": 14.421
+        },
+        {
+          "w": "46",
+          "start": 14.434,
+          "end": 15.084
+        },
+        {
+          "w": "percent",
+          "start": 15.097,
+          "end": 15.521
+        },
+        {
+          "w": "of",
+          "start": 15.534,
+          "end": 15.634
+        },
+        {
+          "w": "them",
+          "start": 15.646,
+          "end": 15.872
+        },
+        {
+          "w": "dont",
+          "start": 15.884,
+          "end": 16.271
+        },
+        {
+          "w": "know",
+          "start": 16.284,
+          "end": 16.484
+        },
+        {
+          "w": "it",
+          "start": 16.497,
+          "end": 16.759
+        },
+        {
+          "w": "so",
+          "start": 18.192,
+          "end": 18.442
+        },
+        {
+          "w": "how",
+          "start": 18.454,
+          "end": 18.679
+        },
+        {
+          "w": "would",
+          "start": 18.692,
+          "end": 18.842
+        },
+        {
+          "w": "you",
+          "start": 18.854,
+          "end": 18.954
+        },
+        {
+          "w": "know",
+          "start": 18.967,
+          "end": 19.279
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 680,
+      "startFrame": 575
+    },
+    {
+      "index": 3,
+      "type": "stage",
+      "hash": "cb3ad40b9d09",
+      "narration": "So what is blood pressure? It is the force of blood pushing against the walls of your arteries. Let's look inside one. With every heartbeat, blood surges in and presses outward on the wall. The elastic wall stretches, then springs back. We measure this pressure in millimetres of mercury.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-3.mp3",
+      "voDurationInSeconds": 24.984,
+      "voDurationInFrames": 750,
+      "captions": [
+        {
+          "text": "So what is blood pressure?",
+          "start": 0.1,
+          "end": 1.813
+        },
+        {
+          "text": "It is the force of blood pushing against",
+          "start": 2.996,
+          "end": 5.096
+        },
+        {
+          "text": "the walls of your arteries.",
+          "start": 5.096,
+          "end": 6.721
+        },
+        {
+          "text": "Let's look inside one!",
+          "start": 7.932,
+          "end": 9.556999999999999
+        },
+        {
+          "text": "With every heartbeat, blood surges in and",
+          "start": 10.756,
+          "end": 13.556
+        },
+        {
+          "text": "presses outward on the wall.",
+          "start": 13.556,
+          "end": 15.443999999999999
+        },
+        {
+          "text": "The elastic wall stretches, then springs",
+          "start": 16.7,
+          "end": 19.287
+        },
+        {
+          "text": "back. We measure this pressure in",
+          "start": 19.287,
+          "end": 22.668
+        },
+        {
+          "text": "millimetres of mercury.",
+          "start": 22.668,
+          "end": 24.230999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "so",
+          "start": 0.1,
+          "end": 0.387
+        },
+        {
+          "w": "what",
+          "start": 0.4,
+          "end": 0.613
+        },
+        {
+          "w": "is",
+          "start": 0.625,
+          "end": 0.75
+        },
+        {
+          "w": "blood",
+          "start": 0.762,
+          "end": 1.05
+        },
+        {
+          "w": "pressure",
+          "start": 1.062,
+          "end": 1.613
+        },
+        {
+          "w": "it",
+          "start": 2.996,
+          "end": 3.146
+        },
+        {
+          "w": "is",
+          "start": 3.159,
+          "end": 3.258
+        },
+        {
+          "w": "the",
+          "start": 3.271,
+          "end": 3.371
+        },
+        {
+          "w": "force",
+          "start": 3.383,
+          "end": 3.746
+        },
+        {
+          "w": "of",
+          "start": 3.758,
+          "end": 3.896
+        },
+        {
+          "w": "blood",
+          "start": 3.909,
+          "end": 4.221
+        },
+        {
+          "w": "pushing",
+          "start": 4.233,
+          "end": 4.596
+        },
+        {
+          "w": "against",
+          "start": 4.608,
+          "end": 5.083
+        },
+        {
+          "w": "the",
+          "start": 5.096,
+          "end": 5.208
+        },
+        {
+          "w": "walls",
+          "start": 5.221,
+          "end": 5.559
+        },
+        {
+          "w": "of",
+          "start": 5.571,
+          "end": 5.721
+        },
+        {
+          "w": "your",
+          "start": 5.733,
+          "end": 5.909
+        },
+        {
+          "w": "arteries",
+          "start": 5.921,
+          "end": 6.521
+        },
+        {
+          "w": "lets",
+          "start": 7.932,
+          "end": 8.257
+        },
+        {
+          "w": "look",
+          "start": 8.27,
+          "end": 8.482
+        },
+        {
+          "w": "inside",
+          "start": 8.495,
+          "end": 8.907
+        },
+        {
+          "w": "one",
+          "start": 8.919,
+          "end": 9.357
+        },
+        {
+          "w": "with",
+          "start": 10.756,
+          "end": 10.994
+        },
+        {
+          "w": "every",
+          "start": 11.006,
+          "end": 11.381
+        },
+        {
+          "w": "heartbeat",
+          "start": 11.394,
+          "end": 12.131
+        },
+        {
+          "w": "blood",
+          "start": 12.369,
+          "end": 12.643
+        },
+        {
+          "w": "surges",
+          "start": 12.656,
+          "end": 13.206
+        },
+        {
+          "w": "in",
+          "start": 13.219,
+          "end": 13.356
+        },
+        {
+          "w": "and",
+          "start": 13.369,
+          "end": 13.543
+        },
+        {
+          "w": "presses",
+          "start": 13.556,
+          "end": 14.094
+        },
+        {
+          "w": "outward",
+          "start": 14.106,
+          "end": 14.619
+        },
+        {
+          "w": "on",
+          "start": 14.631,
+          "end": 14.756
+        },
+        {
+          "w": "the",
+          "start": 14.768,
+          "end": 14.856
+        },
+        {
+          "w": "wall",
+          "start": 14.869,
+          "end": 15.244
+        },
+        {
+          "w": "the",
+          "start": 16.7,
+          "end": 16.875
+        },
+        {
+          "w": "elastic",
+          "start": 16.887,
+          "end": 17.437
+        },
+        {
+          "w": "wall",
+          "start": 17.45,
+          "end": 17.75
+        },
+        {
+          "w": "stretches",
+          "start": 17.762,
+          "end": 18.375
+        },
+        {
+          "w": "then",
+          "start": 18.562,
+          "end": 18.812
+        },
+        {
+          "w": "springs",
+          "start": 18.825,
+          "end": 19.275
+        },
+        {
+          "w": "back",
+          "start": 19.287,
+          "end": 19.712
+        },
+        {
+          "w": "we",
+          "start": 21.156,
+          "end": 21.368
+        },
+        {
+          "w": "measure",
+          "start": 21.381,
+          "end": 21.818
+        },
+        {
+          "w": "this",
+          "start": 21.831,
+          "end": 22.006
+        },
+        {
+          "w": "pressure",
+          "start": 22.018,
+          "end": 22.506
+        },
+        {
+          "w": "in",
+          "start": 22.518,
+          "end": 22.656
+        },
+        {
+          "w": "millimetres",
+          "start": 22.668,
+          "end": 23.293
+        },
+        {
+          "w": "of",
+          "start": 23.306,
+          "end": 23.468
+        },
+        {
+          "w": "mercury",
+          "start": 23.481,
+          "end": 24.031
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 823,
+      "startFrame": 1255
+    },
+    {
+      "index": 4,
+      "type": "stage",
+      "hash": "69a389098062",
+      "narration": "Now watch one heartbeat. The heart contracts, and a pressure wave travels along the artery. The pressure peaks: this is the systolic pressure. Then the heart rests, and the pressure falls to its lowest: the diastolic pressure. Together, these two values make your reading.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-4.mp3",
+      "voDurationInSeconds": 23.904,
+      "voDurationInFrames": 718,
+      "captions": [
+        {
+          "text": "Now watch one heartbeat.",
+          "start": 0.1,
+          "end": 1.925
+        },
+        {
+          "text": "The heart contracts, and a pressure wave",
+          "start": 3.164,
+          "end": 5.689
+        },
+        {
+          "text": "travels along the artery.",
+          "start": 5.689,
+          "end": 7.464
+        },
+        {
+          "text": "The pressure peaks:",
+          "start": 8.7,
+          "end": 10
+        },
+        {
+          "text": "this is the systolic pressure.",
+          "start": 10,
+          "end": 11.911999999999999
+        },
+        {
+          "text": "Then the heart rests, and the pressure",
+          "start": 13.132,
+          "end": 15.294
+        },
+        {
+          "text": "falls to its lowest:",
+          "start": 15.294,
+          "end": 16.77
+        },
+        {
+          "text": "the diastolic pressure.",
+          "start": 16.77,
+          "end": 18.332
+        },
+        {
+          "text": "Together, these two values make your",
+          "start": 20.056,
+          "end": 22.444
+        },
+        {
+          "text": "reading.",
+          "start": 22.444,
+          "end": 23.131
+        }
+      ],
+      "words": [
+        {
+          "w": "now",
+          "start": 0.1,
+          "end": 0.45
+        },
+        {
+          "w": "watch",
+          "start": 0.463,
+          "end": 0.75
+        },
+        {
+          "w": "one",
+          "start": 0.762,
+          "end": 1
+        },
+        {
+          "w": "heartbeat",
+          "start": 1.012,
+          "end": 1.725
+        },
+        {
+          "w": "the",
+          "start": 3.164,
+          "end": 3.301
+        },
+        {
+          "w": "heart",
+          "start": 3.314,
+          "end": 3.639
+        },
+        {
+          "w": "contracts",
+          "start": 3.651,
+          "end": 4.452
+        },
+        {
+          "w": "and",
+          "start": 4.702,
+          "end": 4.851
+        },
+        {
+          "w": "a",
+          "start": 4.864,
+          "end": 4.914
+        },
+        {
+          "w": "pressure",
+          "start": 4.926,
+          "end": 5.439
+        },
+        {
+          "w": "wave",
+          "start": 5.452,
+          "end": 5.677
+        },
+        {
+          "w": "travels",
+          "start": 5.689,
+          "end": 6.252
+        },
+        {
+          "w": "along",
+          "start": 6.264,
+          "end": 6.614
+        },
+        {
+          "w": "the",
+          "start": 6.627,
+          "end": 6.752
+        },
+        {
+          "w": "artery",
+          "start": 6.764,
+          "end": 7.264
+        },
+        {
+          "w": "the",
+          "start": 8.7,
+          "end": 8.812
+        },
+        {
+          "w": "pressure",
+          "start": 8.825,
+          "end": 9.325
+        },
+        {
+          "w": "peaks",
+          "start": 9.338,
+          "end": 9.875
+        },
+        {
+          "w": "this",
+          "start": 10,
+          "end": 10.25
+        },
+        {
+          "w": "is",
+          "start": 10.262,
+          "end": 10.387
+        },
+        {
+          "w": "the",
+          "start": 10.4,
+          "end": 10.512
+        },
+        {
+          "w": "systolic",
+          "start": 10.525,
+          "end": 11.15
+        },
+        {
+          "w": "pressure",
+          "start": 11.162,
+          "end": 11.712
+        },
+        {
+          "w": "then",
+          "start": 13.132,
+          "end": 13.47
+        },
+        {
+          "w": "the",
+          "start": 13.482,
+          "end": 13.582
+        },
+        {
+          "w": "heart",
+          "start": 13.595,
+          "end": 13.932
+        },
+        {
+          "w": "rests",
+          "start": 13.944,
+          "end": 14.457
+        },
+        {
+          "w": "and",
+          "start": 14.645,
+          "end": 14.782
+        },
+        {
+          "w": "the",
+          "start": 14.794,
+          "end": 14.87
+        },
+        {
+          "w": "pressure",
+          "start": 14.882,
+          "end": 15.282
+        },
+        {
+          "w": "falls",
+          "start": 15.294,
+          "end": 15.682
+        },
+        {
+          "w": "to",
+          "start": 15.694,
+          "end": 15.819
+        },
+        {
+          "w": "its",
+          "start": 15.832,
+          "end": 16.007
+        },
+        {
+          "w": "lowest",
+          "start": 16.02,
+          "end": 16.595
+        },
+        {
+          "w": "the",
+          "start": 16.77,
+          "end": 16.882
+        },
+        {
+          "w": "diastolic",
+          "start": 16.895,
+          "end": 17.582
+        },
+        {
+          "w": "pressure",
+          "start": 17.595,
+          "end": 18.132
+        },
+        {
+          "w": "together",
+          "start": 20.056,
+          "end": 20.681
+        },
+        {
+          "w": "these",
+          "start": 20.931,
+          "end": 21.268
+        },
+        {
+          "w": "two",
+          "start": 21.281,
+          "end": 21.444
+        },
+        {
+          "w": "values",
+          "start": 21.456,
+          "end": 22.006
+        },
+        {
+          "w": "make",
+          "start": 22.018,
+          "end": 22.256
+        },
+        {
+          "w": "your",
+          "start": 22.268,
+          "end": 22.431
+        },
+        {
+          "w": "reading",
+          "start": 22.444,
+          "end": 22.931
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 791,
+      "startFrame": 2078
+    },
+    {
+      "index": 5,
+      "type": "stage",
+      "hash": "98f6c07caa6f",
+      "narration": "To measure it, an inflatable cuff goes around the upper arm. It squeezes the arm, and a monitor shows two numbers. The top number is the systolic pressure, here 120. The bottom number is the diastolic, here 80. We say this reading is 120 over 80.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-5.mp3",
+      "voDurationInSeconds": 24.408,
+      "voDurationInFrames": 733,
+      "captions": [
+        {
+          "text": "To measure it, an inflatable cuff goes",
+          "start": 0.1,
+          "end": 2.7
+        },
+        {
+          "text": "around the upper arm.",
+          "start": 2.7,
+          "end": 4.15
+        },
+        {
+          "text": "It squeezes the arm, and a monitor shows",
+          "start": 5.348,
+          "end": 7.948
+        },
+        {
+          "text": "two numbers. The top number is the",
+          "start": 7.948,
+          "end": 11.364
+        },
+        {
+          "text": "systolic pressure, here 120.",
+          "start": 11.364,
+          "end": 14.626999999999999
+        },
+        {
+          "text": "The bottom number is the diastolic, here",
+          "start": 15.844,
+          "end": 18.482
+        },
+        {
+          "text": "80. We say this reading is 120 over 80.",
+          "start": 18.482,
+          "end": 23.648
+        }
+      ],
+      "words": [
+        {
+          "w": "to",
+          "start": 0.1,
+          "end": 0.225
+        },
+        {
+          "w": "measure",
+          "start": 0.237,
+          "end": 0.775
+        },
+        {
+          "w": "it",
+          "start": 0.787,
+          "end": 1.025
+        },
+        {
+          "w": "an",
+          "start": 1.2,
+          "end": 1.35
+        },
+        {
+          "w": "inflatable",
+          "start": 1.363,
+          "end": 2.087
+        },
+        {
+          "w": "cuff",
+          "start": 2.1,
+          "end": 2.388
+        },
+        {
+          "w": "goes",
+          "start": 2.4,
+          "end": 2.688
+        },
+        {
+          "w": "around",
+          "start": 2.7,
+          "end": 3.088
+        },
+        {
+          "w": "the",
+          "start": 3.1,
+          "end": 3.212
+        },
+        {
+          "w": "upper",
+          "start": 3.225,
+          "end": 3.6
+        },
+        {
+          "w": "arm",
+          "start": 3.612,
+          "end": 3.95
+        },
+        {
+          "w": "it",
+          "start": 5.348,
+          "end": 5.498
+        },
+        {
+          "w": "squeezes",
+          "start": 5.511,
+          "end": 6.073
+        },
+        {
+          "w": "the",
+          "start": 6.086,
+          "end": 6.211
+        },
+        {
+          "w": "arm",
+          "start": 6.223,
+          "end": 6.561
+        },
+        {
+          "w": "and",
+          "start": 6.835,
+          "end": 6.986
+        },
+        {
+          "w": "a",
+          "start": 6.998,
+          "end": 7.048
+        },
+        {
+          "w": "monitor",
+          "start": 7.061,
+          "end": 7.548
+        },
+        {
+          "w": "shows",
+          "start": 7.561,
+          "end": 7.936
+        },
+        {
+          "w": "two",
+          "start": 7.948,
+          "end": 8.073
+        },
+        {
+          "w": "numbers",
+          "start": 8.085,
+          "end": 8.723
+        },
+        {
+          "w": "the",
+          "start": 10.164,
+          "end": 10.289
+        },
+        {
+          "w": "top",
+          "start": 10.302,
+          "end": 10.614
+        },
+        {
+          "w": "number",
+          "start": 10.627,
+          "end": 11.102
+        },
+        {
+          "w": "is",
+          "start": 11.114,
+          "end": 11.239
+        },
+        {
+          "w": "the",
+          "start": 11.252,
+          "end": 11.352
+        },
+        {
+          "w": "systolic",
+          "start": 11.364,
+          "end": 11.977
+        },
+        {
+          "w": "pressure",
+          "start": 11.989,
+          "end": 12.527
+        },
+        {
+          "w": "here",
+          "start": 12.764,
+          "end": 13.152
+        },
+        {
+          "w": "120",
+          "start": 13.164,
+          "end": 14.427
+        },
+        {
+          "w": "the",
+          "start": 15.844,
+          "end": 15.957
+        },
+        {
+          "w": "bottom",
+          "start": 15.969,
+          "end": 16.344
+        },
+        {
+          "w": "number",
+          "start": 16.357,
+          "end": 16.832
+        },
+        {
+          "w": "is",
+          "start": 16.844,
+          "end": 16.957
+        },
+        {
+          "w": "the",
+          "start": 16.969,
+          "end": 17.069
+        },
+        {
+          "w": "diastolic",
+          "start": 17.082,
+          "end": 17.844
+        },
+        {
+          "w": "here",
+          "start": 18.056,
+          "end": 18.469
+        },
+        {
+          "w": "80",
+          "start": 18.482,
+          "end": 18.919
+        },
+        {
+          "w": "we",
+          "start": 20.348,
+          "end": 20.573
+        },
+        {
+          "w": "say",
+          "start": 20.585,
+          "end": 20.835
+        },
+        {
+          "w": "this",
+          "start": 20.848,
+          "end": 21.073
+        },
+        {
+          "w": "reading",
+          "start": 21.085,
+          "end": 21.398
+        },
+        {
+          "w": "is",
+          "start": 21.411,
+          "end": 21.561
+        },
+        {
+          "w": "120",
+          "start": 21.573,
+          "end": 22.623
+        },
+        {
+          "w": "over",
+          "start": 22.636,
+          "end": 22.973
+        },
+        {
+          "w": "80",
+          "start": 22.986,
+          "end": 23.448
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 806,
+      "startFrame": 2869
+    },
+    {
+      "index": 6,
+      "type": "stage",
+      "hash": "d3fb102fdae3",
+      "narration": "For most adults, 90 over 60 or lower is low. The ideal range is between 90 over 60 and 120 over 80. Between 120 over 80 and 140 over 90, you're at risk. And 140 over 90 or higher is high blood pressure, called hypertension. It is diagnosed when readings are that high on two different days.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-6.mp3",
+      "voDurationInSeconds": 29.712,
+      "voDurationInFrames": 892,
+      "captions": [
+        {
+          "text": "For most adults, 90 over 60 or lower is",
+          "start": 0.1,
+          "end": 3.438
+        },
+        {
+          "text": "low. The ideal range is between 90 over 60",
+          "start": 3.438,
+          "end": 7.893
+        },
+        {
+          "text": "and 120 over 80. Between 120 over 80 and",
+          "start": 7.893,
+          "end": 13.914
+        },
+        {
+          "text": "140 over 90, you're at risk.",
+          "start": 13.914,
+          "end": 17.052
+        },
+        {
+          "text": "And 140 over 90 or higher is high blood",
+          "start": 18.268,
+          "end": 21.318
+        },
+        {
+          "text": "pressure, called hypertension.",
+          "start": 21.318,
+          "end": 23.48
+        },
+        {
+          "text": "It is diagnosed when readings are that",
+          "start": 25.168,
+          "end": 27.23
+        },
+        {
+          "text": "high on two different days.",
+          "start": 27.23,
+          "end": 28.955
+        }
+      ],
+      "words": [
+        {
+          "w": "for",
+          "start": 0.1,
+          "end": 0.25
+        },
+        {
+          "w": "most",
+          "start": 0.263,
+          "end": 0.6
+        },
+        {
+          "w": "adults",
+          "start": 0.613,
+          "end": 1.15
+        },
+        {
+          "w": "90",
+          "start": 1.413,
+          "end": 1.875
+        },
+        {
+          "w": "over",
+          "start": 1.887,
+          "end": 2.175
+        },
+        {
+          "w": "60",
+          "start": 2.188,
+          "end": 2.688
+        },
+        {
+          "w": "or",
+          "start": 2.7,
+          "end": 2.863
+        },
+        {
+          "w": "lower",
+          "start": 2.875,
+          "end": 3.25
+        },
+        {
+          "w": "is",
+          "start": 3.263,
+          "end": 3.425
+        },
+        {
+          "w": "low",
+          "start": 3.438,
+          "end": 3.75
+        },
+        {
+          "w": "the",
+          "start": 5.156,
+          "end": 5.343
+        },
+        {
+          "w": "ideal",
+          "start": 5.356,
+          "end": 5.744
+        },
+        {
+          "w": "range",
+          "start": 5.756,
+          "end": 6.119
+        },
+        {
+          "w": "is",
+          "start": 6.131,
+          "end": 6.268
+        },
+        {
+          "w": "between",
+          "start": 6.281,
+          "end": 6.644
+        },
+        {
+          "w": "90",
+          "start": 6.656,
+          "end": 7.081
+        },
+        {
+          "w": "over",
+          "start": 7.094,
+          "end": 7.369
+        },
+        {
+          "w": "60",
+          "start": 7.381,
+          "end": 7.881
+        },
+        {
+          "w": "and",
+          "start": 7.893,
+          "end": 8.119
+        },
+        {
+          "w": "120",
+          "start": 8.131,
+          "end": 9.106
+        },
+        {
+          "w": "over",
+          "start": 9.119,
+          "end": 9.481
+        },
+        {
+          "w": "80",
+          "start": 9.494,
+          "end": 9.931
+        },
+        {
+          "w": "between",
+          "start": 11.364,
+          "end": 11.802
+        },
+        {
+          "w": "120",
+          "start": 11.814,
+          "end": 12.864
+        },
+        {
+          "w": "over",
+          "start": 12.877,
+          "end": 13.264
+        },
+        {
+          "w": "80",
+          "start": 13.277,
+          "end": 13.677
+        },
+        {
+          "w": "and",
+          "start": 13.689,
+          "end": 13.902
+        },
+        {
+          "w": "140",
+          "start": 13.914,
+          "end": 14.927
+        },
+        {
+          "w": "over",
+          "start": 14.939,
+          "end": 15.189
+        },
+        {
+          "w": "90",
+          "start": 15.202,
+          "end": 15.764
+        },
+        {
+          "w": "youre",
+          "start": 16.014,
+          "end": 16.214
+        },
+        {
+          "w": "at",
+          "start": 16.227,
+          "end": 16.402
+        },
+        {
+          "w": "risk",
+          "start": 16.414,
+          "end": 16.852
+        },
+        {
+          "w": "and",
+          "start": 18.268,
+          "end": 18.456
+        },
+        {
+          "w": "140",
+          "start": 18.468,
+          "end": 19.105
+        },
+        {
+          "w": "over",
+          "start": 19.118,
+          "end": 19.393
+        },
+        {
+          "w": "90",
+          "start": 19.405,
+          "end": 19.943
+        },
+        {
+          "w": "or",
+          "start": 19.956,
+          "end": 20.105
+        },
+        {
+          "w": "higher",
+          "start": 20.118,
+          "end": 20.543
+        },
+        {
+          "w": "is",
+          "start": 20.555,
+          "end": 20.693
+        },
+        {
+          "w": "high",
+          "start": 20.706,
+          "end": 20.968
+        },
+        {
+          "w": "blood",
+          "start": 20.98,
+          "end": 21.305
+        },
+        {
+          "w": "pressure",
+          "start": 21.318,
+          "end": 21.843
+        },
+        {
+          "w": "called",
+          "start": 22.118,
+          "end": 22.393
+        },
+        {
+          "w": "hypertension",
+          "start": 22.405,
+          "end": 23.28
+        },
+        {
+          "w": "it",
+          "start": 25.168,
+          "end": 25.305
+        },
+        {
+          "w": "is",
+          "start": 25.318,
+          "end": 25.48
+        },
+        {
+          "w": "diagnosed",
+          "start": 25.493,
+          "end": 26.13
+        },
+        {
+          "w": "when",
+          "start": 26.143,
+          "end": 26.355
+        },
+        {
+          "w": "readings",
+          "start": 26.368,
+          "end": 26.843
+        },
+        {
+          "w": "are",
+          "start": 26.855,
+          "end": 26.993
+        },
+        {
+          "w": "that",
+          "start": 27.005,
+          "end": 27.218
+        },
+        {
+          "w": "high",
+          "start": 27.23,
+          "end": 27.543
+        },
+        {
+          "w": "on",
+          "start": 27.555,
+          "end": 27.718
+        },
+        {
+          "w": "two",
+          "start": 27.73,
+          "end": 27.893
+        },
+        {
+          "w": "different",
+          "start": 27.905,
+          "end": 28.33
+        },
+        {
+          "w": "days",
+          "start": 28.343,
+          "end": 28.755
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 965,
+      "startFrame": 3675
+    },
+    {
+      "index": 7,
+      "type": "stage",
+      "hash": "508e33b9d1a5",
+      "narration": "Year after year, high pressure strains the arteries and damages their walls. In the heart, that can mean a heart attack. In the brain, a stroke. In the kidneys, kidney damage. And a heart forced to pump harder can eventually fail: that is heart failure.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-7.mp3",
+      "voDurationInSeconds": 22.44,
+      "voDurationInFrames": 674,
+      "captions": [
+        {
+          "text": "Year after year, high pressure strains the",
+          "start": 0.1,
+          "end": 2.725
+        },
+        {
+          "text": "arteries and damages their walls.",
+          "start": 2.725,
+          "end": 4.837
+        },
+        {
+          "text": "In the heart, that can mean a heart",
+          "start": 6.068,
+          "end": 8.081
+        },
+        {
+          "text": "attack. In the brain, a stroke.",
+          "start": 8.081,
+          "end": 11.770999999999999
+        },
+        {
+          "text": "In the kidneys, kidney damage.",
+          "start": 13.012,
+          "end": 15.187
+        },
+        {
+          "text": "And a heart forced to pump harder can",
+          "start": 16.888,
+          "end": 18.863
+        },
+        {
+          "text": "eventually fail: that is heart failure.",
+          "start": 18.863,
+          "end": 21.663
+        }
+      ],
+      "words": [
+        {
+          "w": "year",
+          "start": 0.1,
+          "end": 0.525
+        },
+        {
+          "w": "after",
+          "start": 0.537,
+          "end": 0.875
+        },
+        {
+          "w": "year",
+          "start": 0.887,
+          "end": 1.15
+        },
+        {
+          "w": "high",
+          "start": 1.425,
+          "end": 1.637
+        },
+        {
+          "w": "pressure",
+          "start": 1.65,
+          "end": 2.1
+        },
+        {
+          "w": "strains",
+          "start": 2.112,
+          "end": 2.55
+        },
+        {
+          "w": "the",
+          "start": 2.562,
+          "end": 2.712
+        },
+        {
+          "w": "arteries",
+          "start": 2.725,
+          "end": 3.263
+        },
+        {
+          "w": "and",
+          "start": 3.275,
+          "end": 3.438
+        },
+        {
+          "w": "damages",
+          "start": 3.45,
+          "end": 3.963
+        },
+        {
+          "w": "their",
+          "start": 3.975,
+          "end": 4.15
+        },
+        {
+          "w": "walls",
+          "start": 4.162,
+          "end": 4.637
+        },
+        {
+          "w": "in",
+          "start": 6.068,
+          "end": 6.193
+        },
+        {
+          "w": "the",
+          "start": 6.205,
+          "end": 6.306
+        },
+        {
+          "w": "heart",
+          "start": 6.318,
+          "end": 6.768
+        },
+        {
+          "w": "that",
+          "start": 7.018,
+          "end": 7.231
+        },
+        {
+          "w": "can",
+          "start": 7.243,
+          "end": 7.405
+        },
+        {
+          "w": "mean",
+          "start": 7.418,
+          "end": 7.643
+        },
+        {
+          "w": "a",
+          "start": 7.655,
+          "end": 7.731
+        },
+        {
+          "w": "heart",
+          "start": 7.743,
+          "end": 8.068
+        },
+        {
+          "w": "attack",
+          "start": 8.081,
+          "end": 8.593
+        },
+        {
+          "w": "in",
+          "start": 9.996,
+          "end": 10.121
+        },
+        {
+          "w": "the",
+          "start": 10.134,
+          "end": 10.209
+        },
+        {
+          "w": "brain",
+          "start": 10.221,
+          "end": 10.771
+        },
+        {
+          "w": "a",
+          "start": 10.959,
+          "end": 11.034
+        },
+        {
+          "w": "stroke",
+          "start": 11.046,
+          "end": 11.571
+        },
+        {
+          "w": "in",
+          "start": 13.012,
+          "end": 13.125
+        },
+        {
+          "w": "the",
+          "start": 13.137,
+          "end": 13.225
+        },
+        {
+          "w": "kidneys",
+          "start": 13.237,
+          "end": 13.887
+        },
+        {
+          "w": "kidney",
+          "start": 14.012,
+          "end": 14.387
+        },
+        {
+          "w": "damage",
+          "start": 14.4,
+          "end": 14.987
+        },
+        {
+          "w": "and",
+          "start": 16.888,
+          "end": 17.05
+        },
+        {
+          "w": "a",
+          "start": 17.063,
+          "end": 17.125
+        },
+        {
+          "w": "heart",
+          "start": 17.138,
+          "end": 17.413
+        },
+        {
+          "w": "forced",
+          "start": 17.425,
+          "end": 17.8
+        },
+        {
+          "w": "to",
+          "start": 17.813,
+          "end": 17.925
+        },
+        {
+          "w": "pump",
+          "start": 17.938,
+          "end": 18.276
+        },
+        {
+          "w": "harder",
+          "start": 18.288,
+          "end": 18.651
+        },
+        {
+          "w": "can",
+          "start": 18.663,
+          "end": 18.851
+        },
+        {
+          "w": "eventually",
+          "start": 18.863,
+          "end": 19.488
+        },
+        {
+          "w": "fail",
+          "start": 19.5,
+          "end": 19.951
+        },
+        {
+          "w": "that",
+          "start": 20.201,
+          "end": 20.413
+        },
+        {
+          "w": "is",
+          "start": 20.425,
+          "end": 20.563
+        },
+        {
+          "w": "heart",
+          "start": 20.576,
+          "end": 20.876
+        },
+        {
+          "w": "failure",
+          "start": 20.888,
+          "end": 21.463
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 747,
+      "startFrame": 4640
+    },
+    {
+      "index": 8,
+      "type": "stage",
+      "hash": "6c7709410d06",
+      "narration": "The good news: you can keep it healthy. Eat less than 5 grams of salt a day, just under a teaspoon. Eat more vegetables and fruit. Be physically active. Avoid tobacco, and limit alcohol. And have your blood pressure checked regularly.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-8.mp3",
+      "voDurationInSeconds": 23.472,
+      "voDurationInFrames": 705,
+      "captions": [
+        {
+          "text": "The good news: you can keep it healthy.",
+          "start": 0.1,
+          "end": 2.6500000000000004
+        },
+        {
+          "text": "Eat less than 5 grams of salt a day, just",
+          "start": 3.86,
+          "end": 6.848
+        },
+        {
+          "text": "under a teaspoon.",
+          "start": 6.848,
+          "end": 8.084999999999999
+        },
+        {
+          "text": "Eat more vegetables and fruit.",
+          "start": 9.324,
+          "end": 11.399
+        },
+        {
+          "text": "Be physically active.",
+          "start": 12.652,
+          "end": 14.327
+        },
+        {
+          "text": "Avoid tobacco, and limit alcohol.",
+          "start": 15.596,
+          "end": 18.409
+        },
+        {
+          "text": "And have your blood pressure checked",
+          "start": 20.144,
+          "end": 21.844
+        },
+        {
+          "text": "regularly.",
+          "start": 21.844,
+          "end": 22.669
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.1,
+          "end": 0.213
+        },
+        {
+          "w": "good",
+          "start": 0.225,
+          "end": 0.475
+        },
+        {
+          "w": "news",
+          "start": 0.487,
+          "end": 0.962
+        },
+        {
+          "w": "you",
+          "start": 1.15,
+          "end": 1.262
+        },
+        {
+          "w": "can",
+          "start": 1.275,
+          "end": 1.462
+        },
+        {
+          "w": "keep",
+          "start": 1.475,
+          "end": 1.775
+        },
+        {
+          "w": "it",
+          "start": 1.788,
+          "end": 1.913
+        },
+        {
+          "w": "healthy",
+          "start": 1.925,
+          "end": 2.45
+        },
+        {
+          "w": "eat",
+          "start": 3.86,
+          "end": 4.098
+        },
+        {
+          "w": "less",
+          "start": 4.11,
+          "end": 4.385
+        },
+        {
+          "w": "than",
+          "start": 4.397,
+          "end": 4.585
+        },
+        {
+          "w": "5",
+          "start": 4.598,
+          "end": 4.973
+        },
+        {
+          "w": "grams",
+          "start": 4.985,
+          "end": 5.397
+        },
+        {
+          "w": "of",
+          "start": 5.41,
+          "end": 5.535
+        },
+        {
+          "w": "salt",
+          "start": 5.547,
+          "end": 5.91
+        },
+        {
+          "w": "a",
+          "start": 5.922,
+          "end": 5.998
+        },
+        {
+          "w": "day",
+          "start": 6.01,
+          "end": 6.348
+        },
+        {
+          "w": "just",
+          "start": 6.51,
+          "end": 6.835
+        },
+        {
+          "w": "under",
+          "start": 6.848,
+          "end": 7.11
+        },
+        {
+          "w": "a",
+          "start": 7.122,
+          "end": 7.185
+        },
+        {
+          "w": "teaspoon",
+          "start": 7.197,
+          "end": 7.885
+        },
+        {
+          "w": "eat",
+          "start": 9.324,
+          "end": 9.562
+        },
+        {
+          "w": "more",
+          "start": 9.574,
+          "end": 9.861
+        },
+        {
+          "w": "vegetables",
+          "start": 9.874,
+          "end": 10.511
+        },
+        {
+          "w": "and",
+          "start": 10.524,
+          "end": 10.724
+        },
+        {
+          "w": "fruit",
+          "start": 10.736,
+          "end": 11.199
+        },
+        {
+          "w": "be",
+          "start": 12.652,
+          "end": 12.827
+        },
+        {
+          "w": "physically",
+          "start": 12.84,
+          "end": 13.502
+        },
+        {
+          "w": "active",
+          "start": 13.515,
+          "end": 14.127
+        },
+        {
+          "w": "avoid",
+          "start": 15.596,
+          "end": 16.046
+        },
+        {
+          "w": "tobacco",
+          "start": 16.059,
+          "end": 16.721
+        },
+        {
+          "w": "and",
+          "start": 16.821,
+          "end": 17.009
+        },
+        {
+          "w": "limit",
+          "start": 17.021,
+          "end": 17.434
+        },
+        {
+          "w": "alcohol",
+          "start": 17.446,
+          "end": 18.209
+        },
+        {
+          "w": "and",
+          "start": 20.144,
+          "end": 20.332
+        },
+        {
+          "w": "have",
+          "start": 20.344,
+          "end": 20.569
+        },
+        {
+          "w": "your",
+          "start": 20.582,
+          "end": 20.732
+        },
+        {
+          "w": "blood",
+          "start": 20.744,
+          "end": 21.056
+        },
+        {
+          "w": "pressure",
+          "start": 21.069,
+          "end": 21.494
+        },
+        {
+          "w": "checked",
+          "start": 21.506,
+          "end": 21.832
+        },
+        {
+          "w": "regularly",
+          "start": 21.844,
+          "end": 22.469
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 778,
+      "startFrame": 5387
+    },
+    {
+      "index": 9,
+      "type": "stage",
+      "hash": "0ced17974f16",
+      "narration": "The most common mistake is thinking: I feel fine, so my blood pressure must be normal. But most people with it feel nothing at all. Only a measurement can tell. So measure it, and remember: a diagnosis needs high readings on two different days.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-9.mp3",
+      "voDurationInSeconds": 20.76,
+      "voDurationInFrames": 623,
+      "captions": [
+        {
+          "text": "The most common mistake is thinking:",
+          "start": 0.1,
+          "end": 2.2880000000000003
+        },
+        {
+          "text": "I feel fine, so my blood pressure must be",
+          "start": 2.35,
+          "end": 5.037
+        },
+        {
+          "text": "normal. But most people with it feel",
+          "start": 5.037,
+          "end": 8.469
+        },
+        {
+          "text": "nothing at all. Only a measurement can",
+          "start": 8.469,
+          "end": 11.978
+        },
+        {
+          "text": "tell. So measure it, and remember:",
+          "start": 11.978,
+          "end": 16.578
+        },
+        {
+          "text": "a diagnosis needs high readings on two",
+          "start": 16.591,
+          "end": 18.891
+        },
+        {
+          "text": "different days.",
+          "start": 18.891,
+          "end": 19.965999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.1,
+          "end": 0.213
+        },
+        {
+          "w": "most",
+          "start": 0.225,
+          "end": 0.6
+        },
+        {
+          "w": "common",
+          "start": 0.613,
+          "end": 0.913
+        },
+        {
+          "w": "mistake",
+          "start": 0.925,
+          "end": 1.312
+        },
+        {
+          "w": "is",
+          "start": 1.325,
+          "end": 1.462
+        },
+        {
+          "w": "thinking",
+          "start": 1.475,
+          "end": 2.088
+        },
+        {
+          "w": "i",
+          "start": 2.35,
+          "end": 2.5
+        },
+        {
+          "w": "feel",
+          "start": 2.513,
+          "end": 2.775
+        },
+        {
+          "w": "fine",
+          "start": 2.788,
+          "end": 3.238
+        },
+        {
+          "w": "so",
+          "start": 3.487,
+          "end": 3.625
+        },
+        {
+          "w": "my",
+          "start": 3.638,
+          "end": 3.812
+        },
+        {
+          "w": "blood",
+          "start": 3.825,
+          "end": 4.163
+        },
+        {
+          "w": "pressure",
+          "start": 4.175,
+          "end": 4.6
+        },
+        {
+          "w": "must",
+          "start": 4.612,
+          "end": 4.875
+        },
+        {
+          "w": "be",
+          "start": 4.888,
+          "end": 5.025
+        },
+        {
+          "w": "normal",
+          "start": 5.037,
+          "end": 5.537
+        },
+        {
+          "w": "but",
+          "start": 6.956,
+          "end": 7.156
+        },
+        {
+          "w": "most",
+          "start": 7.169,
+          "end": 7.506
+        },
+        {
+          "w": "people",
+          "start": 7.519,
+          "end": 7.906
+        },
+        {
+          "w": "with",
+          "start": 7.919,
+          "end": 8.069
+        },
+        {
+          "w": "it",
+          "start": 8.081,
+          "end": 8.206
+        },
+        {
+          "w": "feel",
+          "start": 8.219,
+          "end": 8.456
+        },
+        {
+          "w": "nothing",
+          "start": 8.469,
+          "end": 8.844
+        },
+        {
+          "w": "at",
+          "start": 8.856,
+          "end": 9.019
+        },
+        {
+          "w": "all",
+          "start": 9.031,
+          "end": 9.356
+        },
+        {
+          "w": "only",
+          "start": 10.74,
+          "end": 11.065
+        },
+        {
+          "w": "a",
+          "start": 11.078,
+          "end": 11.128
+        },
+        {
+          "w": "measurement",
+          "start": 11.14,
+          "end": 11.74
+        },
+        {
+          "w": "can",
+          "start": 11.753,
+          "end": 11.965
+        },
+        {
+          "w": "tell",
+          "start": 11.978,
+          "end": 12.402
+        },
+        {
+          "w": "so",
+          "start": 14.328,
+          "end": 14.628
+        },
+        {
+          "w": "measure",
+          "start": 14.641,
+          "end": 15.103
+        },
+        {
+          "w": "it",
+          "start": 15.116,
+          "end": 15.328
+        },
+        {
+          "w": "and",
+          "start": 15.528,
+          "end": 15.728
+        },
+        {
+          "w": "remember",
+          "start": 15.741,
+          "end": 16.378
+        },
+        {
+          "w": "a",
+          "start": 16.591,
+          "end": 16.666
+        },
+        {
+          "w": "diagnosis",
+          "start": 16.678,
+          "end": 17.453
+        },
+        {
+          "w": "needs",
+          "start": 17.466,
+          "end": 17.753
+        },
+        {
+          "w": "high",
+          "start": 17.766,
+          "end": 18.066
+        },
+        {
+          "w": "readings",
+          "start": 18.078,
+          "end": 18.516
+        },
+        {
+          "w": "on",
+          "start": 18.528,
+          "end": 18.691
+        },
+        {
+          "w": "two",
+          "start": 18.703,
+          "end": 18.878
+        },
+        {
+          "w": "different",
+          "start": 18.891,
+          "end": 19.341
+        },
+        {
+          "w": "days",
+          "start": 19.353,
+          "end": 19.766
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 696,
+      "startFrame": 6165
+    },
+    {
+      "index": 10,
+      "type": "check",
+      "hash": "1b438a3d2d47",
+      "narration": "Time for a quick check. A patient's blood pressure is 150 over 95, on two different days. What does that suggest? Pause the video, and think it through.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-10.mp3",
+      "voDurationInSeconds": 15.288,
+      "voDurationInFrames": 459,
+      "captions": [
+        {
+          "text": "Time for a quick check.",
+          "start": 0.1,
+          "end": 1.5
+        },
+        {
+          "text": "A patient's blood pressure is 150 over 95,",
+          "start": 2.732,
+          "end": 6.794
+        },
+        {
+          "text": "on two different days.",
+          "start": 6.794,
+          "end": 8.157
+        },
+        {
+          "text": "What does that suggest?",
+          "start": 9.396,
+          "end": 11.084
+        },
+        {
+          "text": "Pause the video, and think it through.",
+          "start": 12.292,
+          "end": 14.53
+        }
+      ],
+      "words": [
+        {
+          "w": "time",
+          "start": 0.1,
+          "end": 0.4
+        },
+        {
+          "w": "for",
+          "start": 0.412,
+          "end": 0.575
+        },
+        {
+          "w": "a",
+          "start": 0.588,
+          "end": 0.638
+        },
+        {
+          "w": "quick",
+          "start": 0.65,
+          "end": 0.913
+        },
+        {
+          "w": "check",
+          "start": 0.925,
+          "end": 1.3
+        },
+        {
+          "w": "a",
+          "start": 2.732,
+          "end": 2.807
+        },
+        {
+          "w": "patients",
+          "start": 2.82,
+          "end": 3.37
+        },
+        {
+          "w": "blood",
+          "start": 3.382,
+          "end": 3.695
+        },
+        {
+          "w": "pressure",
+          "start": 3.707,
+          "end": 4.194
+        },
+        {
+          "w": "is",
+          "start": 4.207,
+          "end": 4.345
+        },
+        {
+          "w": "150",
+          "start": 4.357,
+          "end": 5.495
+        },
+        {
+          "w": "over",
+          "start": 5.507,
+          "end": 5.77
+        },
+        {
+          "w": "95",
+          "start": 5.782,
+          "end": 6.607
+        },
+        {
+          "w": "on",
+          "start": 6.794,
+          "end": 6.97
+        },
+        {
+          "w": "two",
+          "start": 6.982,
+          "end": 7.12
+        },
+        {
+          "w": "different",
+          "start": 7.132,
+          "end": 7.544
+        },
+        {
+          "w": "days",
+          "start": 7.557,
+          "end": 7.957
+        },
+        {
+          "w": "what",
+          "start": 9.396,
+          "end": 9.684
+        },
+        {
+          "w": "does",
+          "start": 9.696,
+          "end": 9.959
+        },
+        {
+          "w": "that",
+          "start": 9.971,
+          "end": 10.221
+        },
+        {
+          "w": "suggest",
+          "start": 10.234,
+          "end": 10.884
+        },
+        {
+          "w": "pause",
+          "start": 12.292,
+          "end": 12.53
+        },
+        {
+          "w": "the",
+          "start": 12.542,
+          "end": 12.642
+        },
+        {
+          "w": "video",
+          "start": 12.655,
+          "end": 13.13
+        },
+        {
+          "w": "and",
+          "start": 13.33,
+          "end": 13.542
+        },
+        {
+          "w": "think",
+          "start": 13.555,
+          "end": 13.842
+        },
+        {
+          "w": "it",
+          "start": 13.855,
+          "end": 13.967
+        },
+        {
+          "w": "through",
+          "start": 13.98,
+          "end": 14.33
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 179,
+      "durationInFrames": 665,
+      "startFrame": 6861
+    },
+    {
+      "index": 11,
+      "type": "answer",
+      "hash": "48da840dde08",
+      "narration": "It suggests high blood pressure, or hypertension. The systolic value, 150, is above 140. The diastolic value, 95, is above 90. And it was confirmed on two different days.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-11.mp3",
+      "voDurationInSeconds": 19.32,
+      "voDurationInFrames": 580,
+      "captions": [
+        {
+          "text": "It suggests high blood pressure, or",
+          "start": 0.1,
+          "end": 2.312
+        },
+        {
+          "text": "hypertension. The systolic value, 150, is",
+          "start": 2.312,
+          "end": 7.753
+        },
+        {
+          "text": "above 140. The diastolic value, 95, is",
+          "start": 7.753,
+          "end": 13.628
+        },
+        {
+          "text": "above 90. And it was confirmed on two",
+          "start": 13.628,
+          "end": 17.45
+        },
+        {
+          "text": "different days.",
+          "start": 17.45,
+          "end": 18.525
+        }
+      ],
+      "words": [
+        {
+          "w": "it",
+          "start": 0.1,
+          "end": 0.238
+        },
+        {
+          "w": "suggests",
+          "start": 0.25,
+          "end": 0.812
+        },
+        {
+          "w": "high",
+          "start": 0.825,
+          "end": 1.1
+        },
+        {
+          "w": "blood",
+          "start": 1.113,
+          "end": 1.413
+        },
+        {
+          "w": "pressure",
+          "start": 1.425,
+          "end": 1.975
+        },
+        {
+          "w": "or",
+          "start": 2.15,
+          "end": 2.3
+        },
+        {
+          "w": "hypertension",
+          "start": 2.312,
+          "end": 3.25
+        },
+        {
+          "w": "the",
+          "start": 4.628,
+          "end": 4.728
+        },
+        {
+          "w": "systolic",
+          "start": 4.741,
+          "end": 5.316
+        },
+        {
+          "w": "value",
+          "start": 5.328,
+          "end": 5.828
+        },
+        {
+          "w": "150",
+          "start": 6.078,
+          "end": 7.328
+        },
+        {
+          "w": "is",
+          "start": 7.591,
+          "end": 7.741
+        },
+        {
+          "w": "above",
+          "start": 7.753,
+          "end": 8.116
+        },
+        {
+          "w": "140",
+          "start": 8.128,
+          "end": 9.316
+        },
+        {
+          "w": "the",
+          "start": 10.74,
+          "end": 10.865
+        },
+        {
+          "w": "diastolic",
+          "start": 10.878,
+          "end": 11.59
+        },
+        {
+          "w": "value",
+          "start": 11.603,
+          "end": 12.103
+        },
+        {
+          "w": "95",
+          "start": 12.328,
+          "end": 13.215
+        },
+        {
+          "w": "is",
+          "start": 13.453,
+          "end": 13.615
+        },
+        {
+          "w": "above",
+          "start": 13.628,
+          "end": 13.965
+        },
+        {
+          "w": "90",
+          "start": 13.978,
+          "end": 14.565
+        },
+        {
+          "w": "and",
+          "start": 15.988,
+          "end": 16.163
+        },
+        {
+          "w": "it",
+          "start": 16.175,
+          "end": 16.288
+        },
+        {
+          "w": "was",
+          "start": 16.3,
+          "end": 16.463
+        },
+        {
+          "w": "confirmed",
+          "start": 16.476,
+          "end": 17.05
+        },
+        {
+          "w": "on",
+          "start": 17.063,
+          "end": 17.238
+        },
+        {
+          "w": "two",
+          "start": 17.25,
+          "end": 17.438
+        },
+        {
+          "w": "different",
+          "start": 17.45,
+          "end": 17.913
+        },
+        {
+          "w": "days",
+          "start": 17.925,
+          "end": 18.325
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 46,
+      "durationInFrames": 653,
+      "startFrame": 7526
+    },
+    {
+      "index": 12,
+      "type": "recap",
+      "hash": "cc0734281fd3",
+      "narration": "Let's recap. Blood pressure is two numbers, systolic over diastolic. A reading of 140 over 90 or higher is high blood pressure. And because it is usually silent, measure it. Know your numbers.",
+      "audioFile": "audio/vo/med-blood-pressure-en/BP01/scene-12.mp3",
+      "voDurationInSeconds": 20.232,
+      "voDurationInFrames": 607,
+      "captions": [
+        {
+          "text": "Let's recap! Blood pressure is two",
+          "start": 0.1,
+          "end": 3.667
+        },
+        {
+          "text": "numbers, systolic over diastolic.",
+          "start": 3.667,
+          "end": 6.367
+        },
+        {
+          "text": "A reading of 140 over 90 or higher is high",
+          "start": 7.572,
+          "end": 11.084
+        },
+        {
+          "text": "blood pressure. And because it is usually",
+          "start": 11.084,
+          "end": 14.588
+        },
+        {
+          "text": "silent, measure it.",
+          "start": 14.588,
+          "end": 16.375
+        },
+        {
+          "text": "Know your numbers.",
+          "start": 18.136,
+          "end": 19.424
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.1,
+          "end": 0.463
+        },
+        {
+          "w": "recap",
+          "start": 0.475,
+          "end": 1.05
+        },
+        {
+          "w": "blood",
+          "start": 2.492,
+          "end": 2.842
+        },
+        {
+          "w": "pressure",
+          "start": 2.854,
+          "end": 3.38
+        },
+        {
+          "w": "is",
+          "start": 3.392,
+          "end": 3.529
+        },
+        {
+          "w": "two",
+          "start": 3.542,
+          "end": 3.654
+        },
+        {
+          "w": "numbers",
+          "start": 3.667,
+          "end": 4.204
+        },
+        {
+          "w": "systolic",
+          "start": 4.467,
+          "end": 5.092
+        },
+        {
+          "w": "over",
+          "start": 5.104,
+          "end": 5.442
+        },
+        {
+          "w": "diastolic",
+          "start": 5.454,
+          "end": 6.167
+        },
+        {
+          "w": "a",
+          "start": 7.572,
+          "end": 7.647
+        },
+        {
+          "w": "reading",
+          "start": 7.659,
+          "end": 8.009
+        },
+        {
+          "w": "of",
+          "start": 8.022,
+          "end": 8.21
+        },
+        {
+          "w": "140",
+          "start": 8.222,
+          "end": 9.284
+        },
+        {
+          "w": "over",
+          "start": 9.297,
+          "end": 9.559
+        },
+        {
+          "w": "90",
+          "start": 9.572,
+          "end": 10.059
+        },
+        {
+          "w": "or",
+          "start": 10.072,
+          "end": 10.235
+        },
+        {
+          "w": "higher",
+          "start": 10.247,
+          "end": 10.659
+        },
+        {
+          "w": "is",
+          "start": 10.672,
+          "end": 10.797
+        },
+        {
+          "w": "high",
+          "start": 10.809,
+          "end": 11.072
+        },
+        {
+          "w": "blood",
+          "start": 11.084,
+          "end": 11.409
+        },
+        {
+          "w": "pressure",
+          "start": 11.422,
+          "end": 11.947
+        },
+        {
+          "w": "and",
+          "start": 13.3,
+          "end": 13.475
+        },
+        {
+          "w": "because",
+          "start": 13.488,
+          "end": 13.825
+        },
+        {
+          "w": "it",
+          "start": 13.838,
+          "end": 13.95
+        },
+        {
+          "w": "is",
+          "start": 13.963,
+          "end": 14.125
+        },
+        {
+          "w": "usually",
+          "start": 14.138,
+          "end": 14.575
+        },
+        {
+          "w": "silent",
+          "start": 14.588,
+          "end": 15.225
+        },
+        {
+          "w": "measure",
+          "start": 15.413,
+          "end": 15.9
+        },
+        {
+          "w": "it",
+          "start": 15.913,
+          "end": 16.175
+        },
+        {
+          "w": "know",
+          "start": 18.136,
+          "end": 18.386
+        },
+        {
+          "w": "your",
+          "start": 18.399,
+          "end": 18.599
+        },
+        {
+          "w": "numbers",
+          "start": 18.611,
+          "end": 19.224
+        }
+      ],
+      "leadFrames": 27,
+      "tailFrames": 187,
+      "durationInFrames": 821,
+      "startFrame": 8179
+    }
+  ]
+}

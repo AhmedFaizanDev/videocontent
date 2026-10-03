@@ -1,0 +1,45 @@
+{
+  "project": "ms-bls-29",
+  "id": "M00",
+  "stages": {
+    "preflight": {
+      "seconds": 3.9,
+      "batch": 2,
+      "errors": 0,
+      "at": "2026-10-03T19:55:00.878Z"
+    },
+    "voiceover": {
+      "seconds": 12.5,
+      "scenesVoiced": 7,
+      "scenes": 8,
+      "characters": 551,
+      "audioSeconds": 42.1,
+      "wpm": 128,
+      "voice": "en-IN-NeerjaNeural",
+      "at": "2026-10-03T18:40:45.909Z"
+    },
+    "render": {
+      "seconds": 47,
+      "totalSeconds": 51,
+      "frames": 1800,
+      "fps": 38,
+      "bytes": 9871166,
+      "at": "2026-10-03T19:03:28.350Z"
+    },
+    "qa": {
+      "seconds": 9,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-03T19:03:37.696Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-10-03T19:02:36.832Z"
+    }
+  },
+  "authoring": [],
+  "lang": "en",
+  "runtimeMinutes": 1,
+  "words": 87
+}

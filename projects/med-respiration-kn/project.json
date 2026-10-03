@@ -1,0 +1,43 @@
+{
+  "name": "ಉಸಿರಾಟ ಮತ್ತು ಅನಿಲ ವಿನಿಮಯ",
+  "series": "MedSkills · Clinical Foundations",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      6.5
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "figure"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 3
+  },
+  "lang": "kn",
+  "brand": {
+    "signoff": "MedSkills ಜೊತೆ ಕಲಿಯುತ್ತಲೇ ಇರಿ.",
+    "episodeLabel": "ಭಾಗ "
+  },
+  "terms": [
+    "ವಪೆ",
+    "ಡಯಾಫ್ರಮ್",
+    "ಶ್ವಾಸನಾಳ",
+    "ಶ್ವಾಸಕೋಶ",
+    "ವಾಯುಕೋಶ",
+    "ಲೋಮನಾಳ",
+    "ಆಮ್ಲಜನಕ",
+    "ಇಂಗಾಲದ ಡೈಆಕ್ಸೈಡ್",
+    "ವಿಸರಣ"
+  ],
+  "output": {
+    "dir": "MedSkills/KN_Respiration_Gas_Exchange"
+  }
+}

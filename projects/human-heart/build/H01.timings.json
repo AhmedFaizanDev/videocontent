@@ -1,0 +1,7329 @@
+{
+  "id": "H01",
+  "fps": 30,
+  "totalDurationInFrames": 19409,
+  "voice": {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "en-IN-NeerjaExpressiveNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "hash": "6f9fa94b3a1a",
+      "narration": "In this video, we're going to talk about the human heart: how it is built, how blood moves through it, and what makes it beat. We'll be precise, and connect each idea to what you see on the ward. By the end, you'll know the anatomy of its chambers and valves, you'll be able to trace the route blood travels through both circulations, and you'll understand the electrical rhythm behind every beat.",
+      "audioFile": "audio/vo/human-heart/H01/scene-1.mp3",
+      "voDurationInSeconds": 27.672,
+      "voDurationInFrames": 831,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.1,
+          "end": 2.538
+        },
+        {
+          "text": "the human heart: how it is built, how",
+          "start": 2.538,
+          "end": 5.15
+        },
+        {
+          "text": "blood moves through it, and what makes it",
+          "start": 5.15,
+          "end": 7.537
+        },
+        {
+          "text": "beat. We'll be precise, and connect each",
+          "start": 7.537,
+          "end": 11.63
+        },
+        {
+          "text": "idea to what you see on the ward.",
+          "start": 11.63,
+          "end": 13.718
+        },
+        {
+          "text": "By the end, you'll know the anatomy of its",
+          "start": 14.94,
+          "end": 17.49
+        },
+        {
+          "text": "chambers and valves, you'll be able to",
+          "start": 17.49,
+          "end": 19.903
+        },
+        {
+          "text": "trace the route blood travels through both",
+          "start": 19.903,
+          "end": 22.065
+        },
+        {
+          "text": "circulations, and you'll understand the",
+          "start": 22.065,
+          "end": 24.34
+        },
+        {
+          "text": "electrical rhythm behind every beat.",
+          "start": 24.34,
+          "end": 26.878
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.1,
+          "end": 0.238
+        },
+        {
+          "w": "this",
+          "start": 0.25,
+          "end": 0.487
+        },
+        {
+          "w": "video",
+          "start": 0.5,
+          "end": 0.963
+        },
+        {
+          "w": "were",
+          "start": 1.325,
+          "end": 1.475
+        },
+        {
+          "w": "going",
+          "start": 1.488,
+          "end": 1.763
+        },
+        {
+          "w": "to",
+          "start": 1.775,
+          "end": 1.875
+        },
+        {
+          "w": "talk",
+          "start": 1.887,
+          "end": 2.2
+        },
+        {
+          "w": "about",
+          "start": 2.212,
+          "end": 2.525
+        },
+        {
+          "w": "the",
+          "start": 2.538,
+          "end": 2.675
+        },
+        {
+          "w": "human",
+          "start": 2.688,
+          "end": 3.038
+        },
+        {
+          "w": "heart",
+          "start": 3.05,
+          "end": 3.487
+        },
+        {
+          "w": "how",
+          "start": 3.737,
+          "end": 4
+        },
+        {
+          "w": "it",
+          "start": 4.013,
+          "end": 4.112
+        },
+        {
+          "w": "is",
+          "start": 4.125,
+          "end": 4.275
+        },
+        {
+          "w": "built",
+          "start": 4.287,
+          "end": 4.662
+        },
+        {
+          "w": "how",
+          "start": 4.888,
+          "end": 5.138
+        },
+        {
+          "w": "blood",
+          "start": 5.15,
+          "end": 5.488
+        },
+        {
+          "w": "moves",
+          "start": 5.5,
+          "end": 5.825
+        },
+        {
+          "w": "through",
+          "start": 5.838,
+          "end": 6.088
+        },
+        {
+          "w": "it",
+          "start": 6.1,
+          "end": 6.337
+        },
+        {
+          "w": "and",
+          "start": 6.588,
+          "end": 6.8
+        },
+        {
+          "w": "what",
+          "start": 6.812,
+          "end": 7.1
+        },
+        {
+          "w": "makes",
+          "start": 7.112,
+          "end": 7.4
+        },
+        {
+          "w": "it",
+          "start": 7.412,
+          "end": 7.525
+        },
+        {
+          "w": "beat",
+          "start": 7.537,
+          "end": 7.95
+        },
+        {
+          "w": "well",
+          "start": 9.38,
+          "end": 9.73
+        },
+        {
+          "w": "be",
+          "start": 9.743,
+          "end": 9.88
+        },
+        {
+          "w": "precise",
+          "start": 9.893,
+          "end": 10.53
+        },
+        {
+          "w": "and",
+          "start": 10.743,
+          "end": 10.943
+        },
+        {
+          "w": "connect",
+          "start": 10.955,
+          "end": 11.355
+        },
+        {
+          "w": "each",
+          "start": 11.368,
+          "end": 11.618
+        },
+        {
+          "w": "idea",
+          "start": 11.63,
+          "end": 12.068
+        },
+        {
+          "w": "to",
+          "start": 12.08,
+          "end": 12.23
+        },
+        {
+          "w": "what",
+          "start": 12.243,
+          "end": 12.505
+        },
+        {
+          "w": "you",
+          "start": 12.518,
+          "end": 12.63
+        },
+        {
+          "w": "see",
+          "start": 12.643,
+          "end": 12.855
+        },
+        {
+          "w": "on",
+          "start": 12.868,
+          "end": 13.043
+        },
+        {
+          "w": "the",
+          "start": 13.055,
+          "end": 13.143
+        },
+        {
+          "w": "ward",
+          "start": 13.155,
+          "end": 13.518
+        },
+        {
+          "w": "by",
+          "start": 14.94,
+          "end": 15.19
+        },
+        {
+          "w": "the",
+          "start": 15.203,
+          "end": 15.39
+        },
+        {
+          "w": "end",
+          "start": 15.403,
+          "end": 15.753
+        },
+        {
+          "w": "youll",
+          "start": 15.94,
+          "end": 16.153
+        },
+        {
+          "w": "know",
+          "start": 16.165,
+          "end": 16.353
+        },
+        {
+          "w": "the",
+          "start": 16.365,
+          "end": 16.503
+        },
+        {
+          "w": "anatomy",
+          "start": 16.515,
+          "end": 17.128
+        },
+        {
+          "w": "of",
+          "start": 17.14,
+          "end": 17.29
+        },
+        {
+          "w": "its",
+          "start": 17.303,
+          "end": 17.478
+        },
+        {
+          "w": "chambers",
+          "start": 17.49,
+          "end": 18.04
+        },
+        {
+          "w": "and",
+          "start": 18.053,
+          "end": 18.228
+        },
+        {
+          "w": "valves",
+          "start": 18.24,
+          "end": 18.753
+        },
+        {
+          "w": "youll",
+          "start": 19.003,
+          "end": 19.203
+        },
+        {
+          "w": "be",
+          "start": 19.215,
+          "end": 19.415
+        },
+        {
+          "w": "able",
+          "start": 19.428,
+          "end": 19.765
+        },
+        {
+          "w": "to",
+          "start": 19.778,
+          "end": 19.89
+        },
+        {
+          "w": "trace",
+          "start": 19.903,
+          "end": 20.278
+        },
+        {
+          "w": "the",
+          "start": 20.29,
+          "end": 20.378
+        },
+        {
+          "w": "route",
+          "start": 20.39,
+          "end": 20.74
+        },
+        {
+          "w": "blood",
+          "start": 20.753,
+          "end": 21.04
+        },
+        {
+          "w": "travels",
+          "start": 21.053,
+          "end": 21.553
+        },
+        {
+          "w": "through",
+          "start": 21.565,
+          "end": 21.74
+        },
+        {
+          "w": "both",
+          "start": 21.753,
+          "end": 22.053
+        },
+        {
+          "w": "circulations",
+          "start": 22.065,
+          "end": 23.015
+        },
+        {
+          "w": "and",
+          "start": 23.227,
+          "end": 23.44
+        },
+        {
+          "w": "youll",
+          "start": 23.453,
+          "end": 23.628
+        },
+        {
+          "w": "understand",
+          "start": 23.64,
+          "end": 24.215
+        },
+        {
+          "w": "the",
+          "start": 24.227,
+          "end": 24.328
+        },
+        {
+          "w": "electrical",
+          "start": 24.34,
+          "end": 24.977
+        },
+        {
+          "w": "rhythm",
+          "start": 24.99,
+          "end": 25.328
+        },
+        {
+          "w": "behind",
+          "start": 25.34,
+          "end": 25.852
+        },
+        {
+          "w": "every",
+          "start": 25.865,
+          "end": 26.24
+        },
+        {
+          "w": "beat",
+          "start": 26.253,
+          "end": 26.678
+        }
+      ],
+      "leadFrames": 52,
+      "tailFrames": 57,
+      "durationInFrames": 940,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "hook",
+      "hash": "3d31cf230f77",
+      "narration": "Your heart beats about 100,000 times a day. At rest it moves roughly 5 litres of blood every minute: more than 7,000 litres a day. And it never takes a day off. To care for patients with heart disease, you first need to understand this pump.",
+      "audioFile": "audio/vo/human-heart/H01/scene-2.mp3",
+      "voDurationInSeconds": 21.024,
+      "voDurationInFrames": 631,
+      "captions": [
+        {
+          "text": "Your heart beats about 100,000 times a",
+          "start": 0.1,
+          "end": 2.962
+        },
+        {
+          "text": "day. At rest it moves roughly 5 litres of",
+          "start": 2.962,
+          "end": 7.1
+        },
+        {
+          "text": "blood every minute:",
+          "start": 7.1,
+          "end": 8.537999999999998
+        },
+        {
+          "text": "more than 7,000 litres a day.",
+          "start": 8.538,
+          "end": 10.812999999999999
+        },
+        {
+          "text": "And it never takes a day off.",
+          "start": 12.512,
+          "end": 14.362
+        },
+        {
+          "text": "To care for patients with heart disease,",
+          "start": 15.6,
+          "end": 17.887999999999998
+        },
+        {
+          "text": "you first need to understand this pump.",
+          "start": 17.925,
+          "end": 20.213
+        }
+      ],
+      "words": [
+        {
+          "w": "your",
+          "start": 0.1,
+          "end": 0.287
+        },
+        {
+          "w": "heart",
+          "start": 0.3,
+          "end": 0.625
+        },
+        {
+          "w": "beats",
+          "start": 0.637,
+          "end": 0.962
+        },
+        {
+          "w": "about",
+          "start": 0.975,
+          "end": 1.387
+        },
+        {
+          "w": "100000",
+          "start": 1.4,
+          "end": 2.5
+        },
+        {
+          "w": "times",
+          "start": 2.513,
+          "end": 2.863
+        },
+        {
+          "w": "a",
+          "start": 2.875,
+          "end": 2.95
+        },
+        {
+          "w": "day",
+          "start": 2.962,
+          "end": 3.3
+        },
+        {
+          "w": "at",
+          "start": 4.7,
+          "end": 4.888
+        },
+        {
+          "w": "rest",
+          "start": 4.9,
+          "end": 5.163
+        },
+        {
+          "w": "it",
+          "start": 5.175,
+          "end": 5.312
+        },
+        {
+          "w": "moves",
+          "start": 5.325,
+          "end": 5.7
+        },
+        {
+          "w": "roughly",
+          "start": 5.713,
+          "end": 6.088
+        },
+        {
+          "w": "5",
+          "start": 6.1,
+          "end": 6.525
+        },
+        {
+          "w": "litres",
+          "start": 6.538,
+          "end": 6.95
+        },
+        {
+          "w": "of",
+          "start": 6.963,
+          "end": 7.088
+        },
+        {
+          "w": "blood",
+          "start": 7.1,
+          "end": 7.538
+        },
+        {
+          "w": "every",
+          "start": 7.55,
+          "end": 7.888
+        },
+        {
+          "w": "minute",
+          "start": 7.9,
+          "end": 8.338
+        },
+        {
+          "w": "more",
+          "start": 8.538,
+          "end": 8.75
+        },
+        {
+          "w": "than",
+          "start": 8.762,
+          "end": 8.938
+        },
+        {
+          "w": "7000",
+          "start": 8.95,
+          "end": 9.762
+        },
+        {
+          "w": "litres",
+          "start": 9.775,
+          "end": 10.2
+        },
+        {
+          "w": "a",
+          "start": 10.213,
+          "end": 10.275
+        },
+        {
+          "w": "day",
+          "start": 10.288,
+          "end": 10.613
+        },
+        {
+          "w": "and",
+          "start": 12.512,
+          "end": 12.675
+        },
+        {
+          "w": "it",
+          "start": 12.687,
+          "end": 12.837
+        },
+        {
+          "w": "never",
+          "start": 12.85,
+          "end": 13.175
+        },
+        {
+          "w": "takes",
+          "start": 13.187,
+          "end": 13.487
+        },
+        {
+          "w": "a",
+          "start": 13.5,
+          "end": 13.562
+        },
+        {
+          "w": "day",
+          "start": 13.575,
+          "end": 13.8
+        },
+        {
+          "w": "off",
+          "start": 13.812,
+          "end": 14.162
+        },
+        {
+          "w": "to",
+          "start": 15.6,
+          "end": 15.7
+        },
+        {
+          "w": "care",
+          "start": 15.713,
+          "end": 16
+        },
+        {
+          "w": "for",
+          "start": 16.013,
+          "end": 16.188
+        },
+        {
+          "w": "patients",
+          "start": 16.2,
+          "end": 16.688
+        },
+        {
+          "w": "with",
+          "start": 16.7,
+          "end": 16.85
+        },
+        {
+          "w": "heart",
+          "start": 16.863,
+          "end": 17.175
+        },
+        {
+          "w": "disease",
+          "start": 17.188,
+          "end": 17.688
+        },
+        {
+          "w": "you",
+          "start": 17.925,
+          "end": 18.05
+        },
+        {
+          "w": "first",
+          "start": 18.062,
+          "end": 18.488
+        },
+        {
+          "w": "need",
+          "start": 18.5,
+          "end": 18.7
+        },
+        {
+          "w": "to",
+          "start": 18.713,
+          "end": 18.825
+        },
+        {
+          "w": "understand",
+          "start": 18.838,
+          "end": 19.413
+        },
+        {
+          "w": "this",
+          "start": 19.425,
+          "end": 19.588
+        },
+        {
+          "w": "pump",
+          "start": 19.6,
+          "end": 20.013
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 47,
+      "durationInFrames": 712,
+      "startFrame": 940
+    },
+    {
+      "index": 3,
+      "type": "definition",
+      "hash": "44291faba9f5",
+      "narration": "So what exactly is the heart? It is a four-chambered muscular pump in the mediastinum, the space between the lungs, just behind the sternum. It is about the size of a closed fist and weighs roughly 250 to 350 grams. Its base faces up and to the right, and its apex points down and to the left.",
+      "audioFile": "audio/vo/human-heart/H01/scene-3.mp3",
+      "voDurationInSeconds": 24.792,
+      "voDurationInFrames": 744,
+      "captions": [
+        {
+          "text": "So what exactly is the heart?",
+          "start": 0.1,
+          "end": 2.037
+        },
+        {
+          "text": "It is a four-chambered muscular pump in",
+          "start": 3.188,
+          "end": 5.351
+        },
+        {
+          "text": "the mediastinum, the space between the",
+          "start": 5.351,
+          "end": 7.713
+        },
+        {
+          "text": "lungs, just behind the sternum.",
+          "start": 7.713,
+          "end": 10
+        },
+        {
+          "text": "It is about the size of a closed fist and",
+          "start": 11.244,
+          "end": 13.532
+        },
+        {
+          "text": "weighs roughly 250 to 350 grams.",
+          "start": 13.532,
+          "end": 17.381
+        },
+        {
+          "text": "Its base faces up and to the right, and",
+          "start": 18.556,
+          "end": 21.231
+        },
+        {
+          "text": "its apex points down and to the left.",
+          "start": 21.231,
+          "end": 24.006
+        }
+      ],
+      "words": [
+        {
+          "w": "so",
+          "start": 0.1,
+          "end": 0.387
+        },
+        {
+          "w": "what",
+          "start": 0.4,
+          "end": 0.575
+        },
+        {
+          "w": "exactly",
+          "start": 0.588,
+          "end": 1.138
+        },
+        {
+          "w": "is",
+          "start": 1.15,
+          "end": 1.275
+        },
+        {
+          "w": "the",
+          "start": 1.288,
+          "end": 1.375
+        },
+        {
+          "w": "heart",
+          "start": 1.387,
+          "end": 1.837
+        },
+        {
+          "w": "it",
+          "start": 3.188,
+          "end": 3.325
+        },
+        {
+          "w": "is",
+          "start": 3.338,
+          "end": 3.463
+        },
+        {
+          "w": "a",
+          "start": 3.476,
+          "end": 3.526
+        },
+        {
+          "w": "fourchambered",
+          "start": 3.538,
+          "end": 4.3
+        },
+        {
+          "w": "muscular",
+          "start": 4.313,
+          "end": 4.901
+        },
+        {
+          "w": "pump",
+          "start": 4.913,
+          "end": 5.238
+        },
+        {
+          "w": "in",
+          "start": 5.251,
+          "end": 5.338
+        },
+        {
+          "w": "the",
+          "start": 5.351,
+          "end": 5.438
+        },
+        {
+          "w": "mediastinum",
+          "start": 5.45,
+          "end": 6.363
+        },
+        {
+          "w": "the",
+          "start": 6.688,
+          "end": 6.8
+        },
+        {
+          "w": "space",
+          "start": 6.813,
+          "end": 7.213
+        },
+        {
+          "w": "between",
+          "start": 7.226,
+          "end": 7.601
+        },
+        {
+          "w": "the",
+          "start": 7.613,
+          "end": 7.701
+        },
+        {
+          "w": "lungs",
+          "start": 7.713,
+          "end": 8.163
+        },
+        {
+          "w": "just",
+          "start": 8.363,
+          "end": 8.701
+        },
+        {
+          "w": "behind",
+          "start": 8.713,
+          "end": 9.113
+        },
+        {
+          "w": "the",
+          "start": 9.125,
+          "end": 9.2
+        },
+        {
+          "w": "sternum",
+          "start": 9.213,
+          "end": 9.8
+        },
+        {
+          "w": "it",
+          "start": 11.244,
+          "end": 11.382
+        },
+        {
+          "w": "is",
+          "start": 11.394,
+          "end": 11.519
+        },
+        {
+          "w": "about",
+          "start": 11.531,
+          "end": 11.869
+        },
+        {
+          "w": "the",
+          "start": 11.882,
+          "end": 11.982
+        },
+        {
+          "w": "size",
+          "start": 11.994,
+          "end": 12.357
+        },
+        {
+          "w": "of",
+          "start": 12.369,
+          "end": 12.494
+        },
+        {
+          "w": "a",
+          "start": 12.507,
+          "end": 12.569
+        },
+        {
+          "w": "closed",
+          "start": 12.582,
+          "end": 12.994
+        },
+        {
+          "w": "fist",
+          "start": 13.007,
+          "end": 13.344
+        },
+        {
+          "w": "and",
+          "start": 13.357,
+          "end": 13.519
+        },
+        {
+          "w": "weighs",
+          "start": 13.532,
+          "end": 13.882
+        },
+        {
+          "w": "roughly",
+          "start": 13.894,
+          "end": 14.269
+        },
+        {
+          "w": "250",
+          "start": 14.282,
+          "end": 15.344
+        },
+        {
+          "w": "to",
+          "start": 15.357,
+          "end": 15.519
+        },
+        {
+          "w": "350",
+          "start": 15.532,
+          "end": 16.619
+        },
+        {
+          "w": "grams",
+          "start": 16.631,
+          "end": 17.181
+        },
+        {
+          "w": "its",
+          "start": 18.556,
+          "end": 18.756
+        },
+        {
+          "w": "base",
+          "start": 18.768,
+          "end": 19.119
+        },
+        {
+          "w": "faces",
+          "start": 19.131,
+          "end": 19.581
+        },
+        {
+          "w": "up",
+          "start": 19.593,
+          "end": 19.881
+        },
+        {
+          "w": "and",
+          "start": 19.893,
+          "end": 20.131
+        },
+        {
+          "w": "to",
+          "start": 20.143,
+          "end": 20.244
+        },
+        {
+          "w": "the",
+          "start": 20.256,
+          "end": 20.331
+        },
+        {
+          "w": "right",
+          "start": 20.343,
+          "end": 20.781
+        },
+        {
+          "w": "and",
+          "start": 21.056,
+          "end": 21.218
+        },
+        {
+          "w": "its",
+          "start": 21.231,
+          "end": 21.506
+        },
+        {
+          "w": "apex",
+          "start": 21.518,
+          "end": 21.981
+        },
+        {
+          "w": "points",
+          "start": 21.994,
+          "end": 22.381
+        },
+        {
+          "w": "down",
+          "start": 22.393,
+          "end": 22.806
+        },
+        {
+          "w": "and",
+          "start": 22.819,
+          "end": 23.106
+        },
+        {
+          "w": "to",
+          "start": 23.118,
+          "end": 23.218
+        },
+        {
+          "w": "the",
+          "start": 23.231,
+          "end": 23.319
+        },
+        {
+          "w": "left",
+          "start": 23.331,
+          "end": 23.806
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 835,
+      "startFrame": 1652
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "hash": "9ddc021a7b9d",
+      "narration": "Let's build the heart wall from the outside in. First, the fibrous pericardium, a tough sac that anchors and protects the heart. Inside it, the parietal layer of the serous pericardium. Then the pericardial cavity, holding a film of fluid so the heart can beat without friction. Next, the epicardium, the visceral layer on the heart's surface. Then the thick myocardium, the muscle that does the pumping. And finally the endocardium, the smooth lining of the chambers and valves.",
+      "audioFile": "audio/vo/human-heart/H01/scene-4.mp3",
+      "voDurationInSeconds": 39.6,
+      "voDurationInFrames": 1188,
+      "captions": [
+        {
+          "text": "Let's build the heart wall from the",
+          "start": 0.1,
+          "end": 1.775
+        },
+        {
+          "text": "outside in! First, the fibrous",
+          "start": 1.775,
+          "end": 5.492
+        },
+        {
+          "text": "pericardium, a tough sac that anchors and",
+          "start": 5.492,
+          "end": 8.529
+        },
+        {
+          "text": "protects the heart.",
+          "start": 8.529,
+          "end": 9.828999999999999
+        },
+        {
+          "text": "Inside it, the parietal layer of the",
+          "start": 11.076,
+          "end": 13.401
+        },
+        {
+          "text": "serous pericardium.",
+          "start": 13.401,
+          "end": 14.838999999999999
+        },
+        {
+          "text": "Then the pericardial cavity, holding a",
+          "start": 16.06,
+          "end": 18.573
+        },
+        {
+          "text": "film of fluid so the heart can beat",
+          "start": 18.573,
+          "end": 20.748
+        },
+        {
+          "text": "without friction.",
+          "start": 20.748,
+          "end": 21.997
+        },
+        {
+          "text": "Next, the epicardium, the visceral layer",
+          "start": 23.18,
+          "end": 26.255
+        },
+        {
+          "text": "on the heart's surface.",
+          "start": 26.255,
+          "end": 27.73
+        },
+        {
+          "text": "Then the thick myocardium, the muscle that",
+          "start": 28.932,
+          "end": 31.657
+        },
+        {
+          "text": "does the pumping.",
+          "start": 31.657,
+          "end": 32.832
+        },
+        {
+          "text": "And finally the endocardium, the smooth",
+          "start": 34.036,
+          "end": 36.661
+        },
+        {
+          "text": "lining of the chambers and valves.",
+          "start": 36.661,
+          "end": 38.798
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.1,
+          "end": 0.425
+        },
+        {
+          "w": "build",
+          "start": 0.438,
+          "end": 0.725
+        },
+        {
+          "w": "the",
+          "start": 0.738,
+          "end": 0.838
+        },
+        {
+          "w": "heart",
+          "start": 0.85,
+          "end": 1.175
+        },
+        {
+          "w": "wall",
+          "start": 1.188,
+          "end": 1.45
+        },
+        {
+          "w": "from",
+          "start": 1.462,
+          "end": 1.662
+        },
+        {
+          "w": "the",
+          "start": 1.675,
+          "end": 1.762
+        },
+        {
+          "w": "outside",
+          "start": 1.775,
+          "end": 2.3
+        },
+        {
+          "w": "in",
+          "start": 2.312,
+          "end": 2.587
+        },
+        {
+          "w": "first",
+          "start": 4.004,
+          "end": 4.554
+        },
+        {
+          "w": "the",
+          "start": 4.804,
+          "end": 4.904
+        },
+        {
+          "w": "fibrous",
+          "start": 4.917,
+          "end": 5.479
+        },
+        {
+          "w": "pericardium",
+          "start": 5.492,
+          "end": 6.354
+        },
+        {
+          "w": "a",
+          "start": 6.641,
+          "end": 6.729
+        },
+        {
+          "w": "tough",
+          "start": 6.742,
+          "end": 7.054
+        },
+        {
+          "w": "sac",
+          "start": 7.066,
+          "end": 7.417
+        },
+        {
+          "w": "that",
+          "start": 7.429,
+          "end": 7.779
+        },
+        {
+          "w": "anchors",
+          "start": 7.792,
+          "end": 8.354
+        },
+        {
+          "w": "and",
+          "start": 8.367,
+          "end": 8.517
+        },
+        {
+          "w": "protects",
+          "start": 8.529,
+          "end": 9.054
+        },
+        {
+          "w": "the",
+          "start": 9.066,
+          "end": 9.191
+        },
+        {
+          "w": "heart",
+          "start": 9.204,
+          "end": 9.629
+        },
+        {
+          "w": "inside",
+          "start": 11.076,
+          "end": 11.601
+        },
+        {
+          "w": "it",
+          "start": 11.614,
+          "end": 11.851
+        },
+        {
+          "w": "the",
+          "start": 12.076,
+          "end": 12.176
+        },
+        {
+          "w": "parietal",
+          "start": 12.189,
+          "end": 12.801
+        },
+        {
+          "w": "layer",
+          "start": 12.814,
+          "end": 13.151
+        },
+        {
+          "w": "of",
+          "start": 13.164,
+          "end": 13.264
+        },
+        {
+          "w": "the",
+          "start": 13.276,
+          "end": 13.389
+        },
+        {
+          "w": "serous",
+          "start": 13.401,
+          "end": 13.826
+        },
+        {
+          "w": "pericardium",
+          "start": 13.838,
+          "end": 14.639
+        },
+        {
+          "w": "then",
+          "start": 16.06,
+          "end": 16.373
+        },
+        {
+          "w": "the",
+          "start": 16.385,
+          "end": 16.473
+        },
+        {
+          "w": "pericardial",
+          "start": 16.485,
+          "end": 17.248
+        },
+        {
+          "w": "cavity",
+          "start": 17.26,
+          "end": 17.873
+        },
+        {
+          "w": "holding",
+          "start": 18.123,
+          "end": 18.485
+        },
+        {
+          "w": "a",
+          "start": 18.498,
+          "end": 18.56
+        },
+        {
+          "w": "film",
+          "start": 18.573,
+          "end": 18.885
+        },
+        {
+          "w": "of",
+          "start": 18.898,
+          "end": 19.023
+        },
+        {
+          "w": "fluid",
+          "start": 19.035,
+          "end": 19.448
+        },
+        {
+          "w": "so",
+          "start": 19.46,
+          "end": 19.723
+        },
+        {
+          "w": "the",
+          "start": 19.735,
+          "end": 19.86
+        },
+        {
+          "w": "heart",
+          "start": 19.873,
+          "end": 20.185
+        },
+        {
+          "w": "can",
+          "start": 20.198,
+          "end": 20.41
+        },
+        {
+          "w": "beat",
+          "start": 20.422,
+          "end": 20.735
+        },
+        {
+          "w": "without",
+          "start": 20.748,
+          "end": 21.198
+        },
+        {
+          "w": "friction",
+          "start": 21.21,
+          "end": 21.797
+        },
+        {
+          "w": "next",
+          "start": 23.18,
+          "end": 23.692
+        },
+        {
+          "w": "the",
+          "start": 23.892,
+          "end": 24.055
+        },
+        {
+          "w": "epicardium",
+          "start": 24.067,
+          "end": 24.917
+        },
+        {
+          "w": "the",
+          "start": 25.205,
+          "end": 25.317
+        },
+        {
+          "w": "visceral",
+          "start": 25.33,
+          "end": 25.83
+        },
+        {
+          "w": "layer",
+          "start": 25.842,
+          "end": 26.242
+        },
+        {
+          "w": "on",
+          "start": 26.255,
+          "end": 26.367
+        },
+        {
+          "w": "the",
+          "start": 26.38,
+          "end": 26.48
+        },
+        {
+          "w": "hearts",
+          "start": 26.492,
+          "end": 26.88
+        },
+        {
+          "w": "surface",
+          "start": 26.892,
+          "end": 27.53
+        },
+        {
+          "w": "then",
+          "start": 28.932,
+          "end": 29.232
+        },
+        {
+          "w": "the",
+          "start": 29.244,
+          "end": 29.332
+        },
+        {
+          "w": "thick",
+          "start": 29.344,
+          "end": 29.619
+        },
+        {
+          "w": "myocardium",
+          "start": 29.632,
+          "end": 30.482
+        },
+        {
+          "w": "the",
+          "start": 30.769,
+          "end": 30.894
+        },
+        {
+          "w": "muscle",
+          "start": 30.907,
+          "end": 31.407
+        },
+        {
+          "w": "that",
+          "start": 31.419,
+          "end": 31.644
+        },
+        {
+          "w": "does",
+          "start": 31.657,
+          "end": 31.932
+        },
+        {
+          "w": "the",
+          "start": 31.944,
+          "end": 32.032
+        },
+        {
+          "w": "pumping",
+          "start": 32.044,
+          "end": 32.632
+        },
+        {
+          "w": "and",
+          "start": 34.036,
+          "end": 34.198
+        },
+        {
+          "w": "finally",
+          "start": 34.211,
+          "end": 34.761
+        },
+        {
+          "w": "the",
+          "start": 34.773,
+          "end": 35.011
+        },
+        {
+          "w": "endocardium",
+          "start": 35.023,
+          "end": 35.873
+        },
+        {
+          "w": "the",
+          "start": 36.148,
+          "end": 36.248
+        },
+        {
+          "w": "smooth",
+          "start": 36.261,
+          "end": 36.648
+        },
+        {
+          "w": "lining",
+          "start": 36.661,
+          "end": 37.073
+        },
+        {
+          "w": "of",
+          "start": 37.086,
+          "end": 37.198
+        },
+        {
+          "w": "the",
+          "start": 37.211,
+          "end": 37.311
+        },
+        {
+          "w": "chambers",
+          "start": 37.323,
+          "end": 37.873
+        },
+        {
+          "w": "and",
+          "start": 37.886,
+          "end": 38.048
+        },
+        {
+          "w": "valves",
+          "start": 38.061,
+          "end": 38.598
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1279,
+      "startFrame": 2487
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "hash": "b291af4b8904",
+      "narration": "Here is the heart in section, facing the patient, so the patient's right side is on your left. Blood returning from the body enters the right atrium. It drops into the right ventricle below. On the other side, the left atrium receives blood from the lungs and passes it to the left ventricle, whose wall is by far the thickest. The ventricles are divided by the interventricular septum. And rising from the left ventricle is the aorta, the body's largest artery.",
+      "audioFile": "audio/vo/human-heart/H01/scene-5.mp3",
+      "voDurationInSeconds": 36.096,
+      "voDurationInFrames": 1083,
+      "captions": [
+        {
+          "text": "Here is the heart in section, facing the",
+          "start": 0.1,
+          "end": 2.538
+        },
+        {
+          "text": "patient, so the patient's right side is on",
+          "start": 2.538,
+          "end": 5.25
+        },
+        {
+          "text": "your left. Blood returning from the body",
+          "start": 5.25,
+          "end": 9.016
+        },
+        {
+          "text": "enters the right atrium.",
+          "start": 9.016,
+          "end": 10.766
+        },
+        {
+          "text": "It drops into the right ventricle below.",
+          "start": 11.988,
+          "end": 14.488
+        },
+        {
+          "text": "On the other side, the left atrium",
+          "start": 15.7,
+          "end": 18
+        },
+        {
+          "text": "receives blood from the lungs and passes",
+          "start": 18,
+          "end": 20.2
+        },
+        {
+          "text": "it to the left ventricle, whose wall is by",
+          "start": 20.2,
+          "end": 22.725
+        },
+        {
+          "text": "far the thickest.",
+          "start": 22.725,
+          "end": 23.974999999999998
+        },
+        {
+          "text": "The ventricles are divided by the",
+          "start": 25.196,
+          "end": 27.221
+        },
+        {
+          "text": "interventricular septum.",
+          "start": 27.221,
+          "end": 28.896
+        },
+        {
+          "text": "And rising from the left ventricle is the",
+          "start": 30.108,
+          "end": 32.558
+        },
+        {
+          "text": "aorta, the body's largest artery.",
+          "start": 32.558,
+          "end": 35.308
+        }
+      ],
+      "words": [
+        {
+          "w": "here",
+          "start": 0.1,
+          "end": 0.488
+        },
+        {
+          "w": "is",
+          "start": 0.5,
+          "end": 0.6
+        },
+        {
+          "w": "the",
+          "start": 0.613,
+          "end": 0.713
+        },
+        {
+          "w": "heart",
+          "start": 0.725,
+          "end": 1.038
+        },
+        {
+          "w": "in",
+          "start": 1.05,
+          "end": 1.163
+        },
+        {
+          "w": "section",
+          "start": 1.175,
+          "end": 1.763
+        },
+        {
+          "w": "facing",
+          "start": 2.025,
+          "end": 2.438
+        },
+        {
+          "w": "the",
+          "start": 2.45,
+          "end": 2.525
+        },
+        {
+          "w": "patient",
+          "start": 2.538,
+          "end": 3.175
+        },
+        {
+          "w": "so",
+          "start": 3.438,
+          "end": 3.612
+        },
+        {
+          "w": "the",
+          "start": 3.625,
+          "end": 3.725
+        },
+        {
+          "w": "patients",
+          "start": 3.737,
+          "end": 4.275
+        },
+        {
+          "w": "right",
+          "start": 4.287,
+          "end": 4.587
+        },
+        {
+          "w": "side",
+          "start": 4.6,
+          "end": 4.938
+        },
+        {
+          "w": "is",
+          "start": 4.95,
+          "end": 5.075
+        },
+        {
+          "w": "on",
+          "start": 5.088,
+          "end": 5.238
+        },
+        {
+          "w": "your",
+          "start": 5.25,
+          "end": 5.4
+        },
+        {
+          "w": "left",
+          "start": 5.412,
+          "end": 5.887
+        },
+        {
+          "w": "blood",
+          "start": 7.316,
+          "end": 7.691
+        },
+        {
+          "w": "returning",
+          "start": 7.704,
+          "end": 8.204
+        },
+        {
+          "w": "from",
+          "start": 8.216,
+          "end": 8.404
+        },
+        {
+          "w": "the",
+          "start": 8.416,
+          "end": 8.504
+        },
+        {
+          "w": "body",
+          "start": 8.516,
+          "end": 9.004
+        },
+        {
+          "w": "enters",
+          "start": 9.016,
+          "end": 9.479
+        },
+        {
+          "w": "the",
+          "start": 9.491,
+          "end": 9.579
+        },
+        {
+          "w": "right",
+          "start": 9.591,
+          "end": 10.004
+        },
+        {
+          "w": "atrium",
+          "start": 10.016,
+          "end": 10.566
+        },
+        {
+          "w": "it",
+          "start": 11.988,
+          "end": 12.101
+        },
+        {
+          "w": "drops",
+          "start": 12.113,
+          "end": 12.55
+        },
+        {
+          "w": "into",
+          "start": 12.563,
+          "end": 12.8
+        },
+        {
+          "w": "the",
+          "start": 12.813,
+          "end": 12.888
+        },
+        {
+          "w": "right",
+          "start": 12.9,
+          "end": 13.3
+        },
+        {
+          "w": "ventricle",
+          "start": 13.313,
+          "end": 13.851
+        },
+        {
+          "w": "below",
+          "start": 13.863,
+          "end": 14.288
+        },
+        {
+          "w": "on",
+          "start": 15.7,
+          "end": 15.862
+        },
+        {
+          "w": "the",
+          "start": 15.875,
+          "end": 16
+        },
+        {
+          "w": "other",
+          "start": 16.012,
+          "end": 16.262
+        },
+        {
+          "w": "side",
+          "start": 16.275,
+          "end": 16.712
+        },
+        {
+          "w": "the",
+          "start": 16.988,
+          "end": 17.087
+        },
+        {
+          "w": "left",
+          "start": 17.1,
+          "end": 17.5
+        },
+        {
+          "w": "atrium",
+          "start": 17.512,
+          "end": 17.988
+        },
+        {
+          "w": "receives",
+          "start": 18,
+          "end": 18.462
+        },
+        {
+          "w": "blood",
+          "start": 18.475,
+          "end": 18.775
+        },
+        {
+          "w": "from",
+          "start": 18.788,
+          "end": 19.012
+        },
+        {
+          "w": "the",
+          "start": 19.025,
+          "end": 19.1
+        },
+        {
+          "w": "lungs",
+          "start": 19.113,
+          "end": 19.5
+        },
+        {
+          "w": "and",
+          "start": 19.512,
+          "end": 19.675
+        },
+        {
+          "w": "passes",
+          "start": 19.688,
+          "end": 20.188
+        },
+        {
+          "w": "it",
+          "start": 20.2,
+          "end": 20.337
+        },
+        {
+          "w": "to",
+          "start": 20.35,
+          "end": 20.45
+        },
+        {
+          "w": "the",
+          "start": 20.462,
+          "end": 20.55
+        },
+        {
+          "w": "left",
+          "start": 20.562,
+          "end": 20.925
+        },
+        {
+          "w": "ventricle",
+          "start": 20.938,
+          "end": 21.6
+        },
+        {
+          "w": "whose",
+          "start": 21.913,
+          "end": 22.075
+        },
+        {
+          "w": "wall",
+          "start": 22.087,
+          "end": 22.363
+        },
+        {
+          "w": "is",
+          "start": 22.375,
+          "end": 22.5
+        },
+        {
+          "w": "by",
+          "start": 22.512,
+          "end": 22.712
+        },
+        {
+          "w": "far",
+          "start": 22.725,
+          "end": 23.025
+        },
+        {
+          "w": "the",
+          "start": 23.038,
+          "end": 23.125
+        },
+        {
+          "w": "thickest",
+          "start": 23.137,
+          "end": 23.775
+        },
+        {
+          "w": "the",
+          "start": 25.196,
+          "end": 25.371
+        },
+        {
+          "w": "ventricles",
+          "start": 25.383,
+          "end": 26.046
+        },
+        {
+          "w": "are",
+          "start": 26.058,
+          "end": 26.196
+        },
+        {
+          "w": "divided",
+          "start": 26.208,
+          "end": 26.796
+        },
+        {
+          "w": "by",
+          "start": 26.808,
+          "end": 27.021
+        },
+        {
+          "w": "the",
+          "start": 27.033,
+          "end": 27.208
+        },
+        {
+          "w": "interventricular",
+          "start": 27.221,
+          "end": 28.108
+        },
+        {
+          "w": "septum",
+          "start": 28.121,
+          "end": 28.696
+        },
+        {
+          "w": "and",
+          "start": 30.108,
+          "end": 30.345
+        },
+        {
+          "w": "rising",
+          "start": 30.358,
+          "end": 30.845
+        },
+        {
+          "w": "from",
+          "start": 30.858,
+          "end": 31.033
+        },
+        {
+          "w": "the",
+          "start": 31.045,
+          "end": 31.133
+        },
+        {
+          "w": "left",
+          "start": 31.145,
+          "end": 31.508
+        },
+        {
+          "w": "ventricle",
+          "start": 31.52,
+          "end": 32.183
+        },
+        {
+          "w": "is",
+          "start": 32.195,
+          "end": 32.345
+        },
+        {
+          "w": "the",
+          "start": 32.358,
+          "end": 32.545
+        },
+        {
+          "w": "aorta",
+          "start": 32.558,
+          "end": 33.158
+        },
+        {
+          "w": "the",
+          "start": 33.433,
+          "end": 33.545
+        },
+        {
+          "w": "bodys",
+          "start": 33.558,
+          "end": 34.07
+        },
+        {
+          "w": "largest",
+          "start": 34.083,
+          "end": 34.57
+        },
+        {
+          "w": "artery",
+          "start": 34.583,
+          "end": 35.108
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1174,
+      "startFrame": 3766
+    },
+    {
+      "index": 6,
+      "type": "figure",
+      "hash": "ae92a25463f7",
+      "narration": "Four valves keep blood moving one way. Between the right atrium and right ventricle sits the tricuspid valve. The pulmonary valve guards the exit to the lungs. On the left, the mitral valve separates the atrium from the ventricle. And the aortic valve opens into the aorta. Fine cords called chordae tendineae tie the cusps of the atrioventricular valves to papillary muscles, so they cannot flip back when the ventricles contract.",
+      "audioFile": "audio/vo/human-heart/H01/scene-6.mp3",
+      "voDurationInSeconds": 34.392,
+      "voDurationInFrames": 1032,
+      "captions": [
+        {
+          "text": "Four valves keep blood moving one way.",
+          "start": 0.1,
+          "end": 2.6870000000000003
+        },
+        {
+          "text": "Between the right atrium and right",
+          "start": 3.932,
+          "end": 6.032
+        },
+        {
+          "text": "ventricle sits the tricuspid valve.",
+          "start": 6.032,
+          "end": 8.431999999999999
+        },
+        {
+          "text": "The pulmonary valve guards the exit to the",
+          "start": 9.732,
+          "end": 12.182
+        },
+        {
+          "text": "lungs. On the left, the mitral valve",
+          "start": 12.182,
+          "end": 16.032
+        },
+        {
+          "text": "separates the atrium from the ventricle.",
+          "start": 16.032,
+          "end": 18.532
+        },
+        {
+          "text": "And the aortic valve opens into the aorta.",
+          "start": 19.748,
+          "end": 22.398
+        },
+        {
+          "text": "Fine cords called chordae tendineae tie",
+          "start": 24.152,
+          "end": 26.577
+        },
+        {
+          "text": "the cusps of the atrioventricular valves",
+          "start": 26.577,
+          "end": 28.915
+        },
+        {
+          "text": "to papillary muscles, so they cannot flip",
+          "start": 28.915,
+          "end": 31.402
+        },
+        {
+          "text": "back when the ventricles contract.",
+          "start": 31.402,
+          "end": 33.602000000000004
+        }
+      ],
+      "words": [
+        {
+          "w": "four",
+          "start": 0.1,
+          "end": 0.512
+        },
+        {
+          "w": "valves",
+          "start": 0.525,
+          "end": 0.938
+        },
+        {
+          "w": "keep",
+          "start": 0.95,
+          "end": 1.2
+        },
+        {
+          "w": "blood",
+          "start": 1.212,
+          "end": 1.525
+        },
+        {
+          "w": "moving",
+          "start": 1.538,
+          "end": 1.888
+        },
+        {
+          "w": "one",
+          "start": 1.9,
+          "end": 2.163
+        },
+        {
+          "w": "way",
+          "start": 2.175,
+          "end": 2.487
+        },
+        {
+          "w": "between",
+          "start": 3.932,
+          "end": 4.332
+        },
+        {
+          "w": "the",
+          "start": 4.345,
+          "end": 4.432
+        },
+        {
+          "w": "right",
+          "start": 4.444,
+          "end": 4.87
+        },
+        {
+          "w": "atrium",
+          "start": 4.882,
+          "end": 5.444
+        },
+        {
+          "w": "and",
+          "start": 5.457,
+          "end": 5.694
+        },
+        {
+          "w": "right",
+          "start": 5.707,
+          "end": 6.019
+        },
+        {
+          "w": "ventricle",
+          "start": 6.032,
+          "end": 6.607
+        },
+        {
+          "w": "sits",
+          "start": 6.62,
+          "end": 6.944
+        },
+        {
+          "w": "the",
+          "start": 6.957,
+          "end": 7.069
+        },
+        {
+          "w": "tricuspid",
+          "start": 7.082,
+          "end": 7.757
+        },
+        {
+          "w": "valve",
+          "start": 7.769,
+          "end": 8.232
+        },
+        {
+          "w": "the",
+          "start": 9.732,
+          "end": 9.845
+        },
+        {
+          "w": "pulmonary",
+          "start": 9.857,
+          "end": 10.544
+        },
+        {
+          "w": "valve",
+          "start": 10.557,
+          "end": 10.995
+        },
+        {
+          "w": "guards",
+          "start": 11.007,
+          "end": 11.37
+        },
+        {
+          "w": "the",
+          "start": 11.382,
+          "end": 11.582
+        },
+        {
+          "w": "exit",
+          "start": 11.595,
+          "end": 11.97
+        },
+        {
+          "w": "to",
+          "start": 11.982,
+          "end": 12.069
+        },
+        {
+          "w": "the",
+          "start": 12.082,
+          "end": 12.169
+        },
+        {
+          "w": "lungs",
+          "start": 12.182,
+          "end": 12.619
+        },
+        {
+          "w": "on",
+          "start": 14.044,
+          "end": 14.207
+        },
+        {
+          "w": "the",
+          "start": 14.219,
+          "end": 14.294
+        },
+        {
+          "w": "left",
+          "start": 14.307,
+          "end": 14.769
+        },
+        {
+          "w": "the",
+          "start": 15.032,
+          "end": 15.144
+        },
+        {
+          "w": "mitral",
+          "start": 15.157,
+          "end": 15.681
+        },
+        {
+          "w": "valve",
+          "start": 15.694,
+          "end": 16.019
+        },
+        {
+          "w": "separates",
+          "start": 16.032,
+          "end": 16.632
+        },
+        {
+          "w": "the",
+          "start": 16.644,
+          "end": 16.832
+        },
+        {
+          "w": "atrium",
+          "start": 16.844,
+          "end": 17.306
+        },
+        {
+          "w": "from",
+          "start": 17.319,
+          "end": 17.544
+        },
+        {
+          "w": "the",
+          "start": 17.556,
+          "end": 17.657
+        },
+        {
+          "w": "ventricle",
+          "start": 17.669,
+          "end": 18.332
+        },
+        {
+          "w": "and",
+          "start": 19.748,
+          "end": 19.886
+        },
+        {
+          "w": "the",
+          "start": 19.898,
+          "end": 20.023
+        },
+        {
+          "w": "aortic",
+          "start": 20.035,
+          "end": 20.473
+        },
+        {
+          "w": "valve",
+          "start": 20.485,
+          "end": 20.886
+        },
+        {
+          "w": "opens",
+          "start": 20.898,
+          "end": 21.285
+        },
+        {
+          "w": "into",
+          "start": 21.298,
+          "end": 21.548
+        },
+        {
+          "w": "the",
+          "start": 21.561,
+          "end": 21.673
+        },
+        {
+          "w": "aorta",
+          "start": 21.686,
+          "end": 22.198
+        },
+        {
+          "w": "fine",
+          "start": 24.152,
+          "end": 24.577
+        },
+        {
+          "w": "cords",
+          "start": 24.59,
+          "end": 24.952
+        },
+        {
+          "w": "called",
+          "start": 24.965,
+          "end": 25.29
+        },
+        {
+          "w": "chordae",
+          "start": 25.302,
+          "end": 25.702
+        },
+        {
+          "w": "tendineae",
+          "start": 25.715,
+          "end": 26.314
+        },
+        {
+          "w": "tie",
+          "start": 26.327,
+          "end": 26.564
+        },
+        {
+          "w": "the",
+          "start": 26.577,
+          "end": 26.677
+        },
+        {
+          "w": "cusps",
+          "start": 26.689,
+          "end": 27.114
+        },
+        {
+          "w": "of",
+          "start": 27.127,
+          "end": 27.239
+        },
+        {
+          "w": "the",
+          "start": 27.252,
+          "end": 27.489
+        },
+        {
+          "w": "atrioventricular",
+          "start": 27.502,
+          "end": 28.54
+        },
+        {
+          "w": "valves",
+          "start": 28.552,
+          "end": 28.902
+        },
+        {
+          "w": "to",
+          "start": 28.915,
+          "end": 29.052
+        },
+        {
+          "w": "papillary",
+          "start": 29.064,
+          "end": 29.627
+        },
+        {
+          "w": "muscles",
+          "start": 29.639,
+          "end": 30.227
+        },
+        {
+          "w": "so",
+          "start": 30.477,
+          "end": 30.652
+        },
+        {
+          "w": "they",
+          "start": 30.665,
+          "end": 30.764
+        },
+        {
+          "w": "cannot",
+          "start": 30.777,
+          "end": 31.152
+        },
+        {
+          "w": "flip",
+          "start": 31.165,
+          "end": 31.389
+        },
+        {
+          "w": "back",
+          "start": 31.402,
+          "end": 31.727
+        },
+        {
+          "w": "when",
+          "start": 31.739,
+          "end": 31.915
+        },
+        {
+          "w": "the",
+          "start": 31.927,
+          "end": 32.027
+        },
+        {
+          "w": "ventricles",
+          "start": 32.039,
+          "end": 32.677
+        },
+        {
+          "w": "contract",
+          "start": 32.689,
+          "end": 33.402
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1123,
+      "startFrame": 4940
+    },
+    {
+      "index": 7,
+      "type": "figure",
+      "hash": "93266f720bd2",
+      "narration": "Now follow the blood. Deoxygenated blood returns from the body through the venae cavae into the right atrium. The right ventricle pumps it through the pulmonary valve to the lungs, where it picks up oxygen. Oxygenated blood returns through the pulmonary veins into the left atrium. The left ventricle then pumps it through the aortic valve into the aorta, and on to every tissue.",
+      "audioFile": "audio/vo/human-heart/H01/scene-7.mp3",
+      "voDurationInSeconds": 29.664,
+      "voDurationInFrames": 890,
+      "captions": [
+        {
+          "text": "Now follow the blood.",
+          "start": 0.1,
+          "end": 1.575
+        },
+        {
+          "text": "Deoxygenated blood returns from the body",
+          "start": 2.804,
+          "end": 5.291
+        },
+        {
+          "text": "through the venae cavae into the right",
+          "start": 5.291,
+          "end": 7.254
+        },
+        {
+          "text": "atrium. The right ventricle pumps it",
+          "start": 7.254,
+          "end": 10.828
+        },
+        {
+          "text": "through the pulmonary valve to the lungs,",
+          "start": 10.828,
+          "end": 13.078
+        },
+        {
+          "text": "where it picks up oxygen.",
+          "start": 13.165,
+          "end": 14.864999999999998
+        },
+        {
+          "text": "Oxygenated blood returns through the",
+          "start": 16.084,
+          "end": 18.072
+        },
+        {
+          "text": "pulmonary veins into the left atrium.",
+          "start": 18.072,
+          "end": 20.834
+        },
+        {
+          "text": "The left ventricle then pumps it through",
+          "start": 22.528,
+          "end": 24.628
+        },
+        {
+          "text": "the aortic valve into the aorta, and on to",
+          "start": 24.628,
+          "end": 27.765
+        },
+        {
+          "text": "every tissue.",
+          "start": 27.765,
+          "end": 28.89
+        }
+      ],
+      "words": [
+        {
+          "w": "now",
+          "start": 0.1,
+          "end": 0.4
+        },
+        {
+          "w": "follow",
+          "start": 0.412,
+          "end": 0.825
+        },
+        {
+          "w": "the",
+          "start": 0.838,
+          "end": 0.95
+        },
+        {
+          "w": "blood",
+          "start": 0.963,
+          "end": 1.375
+        },
+        {
+          "w": "deoxygenated",
+          "start": 2.804,
+          "end": 3.804
+        },
+        {
+          "w": "blood",
+          "start": 3.816,
+          "end": 4.117
+        },
+        {
+          "w": "returns",
+          "start": 4.129,
+          "end": 4.566
+        },
+        {
+          "w": "from",
+          "start": 4.579,
+          "end": 4.766
+        },
+        {
+          "w": "the",
+          "start": 4.779,
+          "end": 4.867
+        },
+        {
+          "w": "body",
+          "start": 4.879,
+          "end": 5.279
+        },
+        {
+          "w": "through",
+          "start": 5.291,
+          "end": 5.504
+        },
+        {
+          "w": "the",
+          "start": 5.516,
+          "end": 5.654
+        },
+        {
+          "w": "venae",
+          "start": 5.666,
+          "end": 6.029
+        },
+        {
+          "w": "cavae",
+          "start": 6.041,
+          "end": 6.466
+        },
+        {
+          "w": "into",
+          "start": 6.479,
+          "end": 6.729
+        },
+        {
+          "w": "the",
+          "start": 6.741,
+          "end": 6.829
+        },
+        {
+          "w": "right",
+          "start": 6.841,
+          "end": 7.242
+        },
+        {
+          "w": "atrium",
+          "start": 7.254,
+          "end": 7.816
+        },
+        {
+          "w": "the",
+          "start": 9.228,
+          "end": 9.353
+        },
+        {
+          "w": "right",
+          "start": 9.366,
+          "end": 9.741
+        },
+        {
+          "w": "ventricle",
+          "start": 9.753,
+          "end": 10.29
+        },
+        {
+          "w": "pumps",
+          "start": 10.303,
+          "end": 10.653
+        },
+        {
+          "w": "it",
+          "start": 10.665,
+          "end": 10.816
+        },
+        {
+          "w": "through",
+          "start": 10.828,
+          "end": 11.003
+        },
+        {
+          "w": "the",
+          "start": 11.015,
+          "end": 11.116
+        },
+        {
+          "w": "pulmonary",
+          "start": 11.128,
+          "end": 11.765
+        },
+        {
+          "w": "valve",
+          "start": 11.778,
+          "end": 12.153
+        },
+        {
+          "w": "to",
+          "start": 12.165,
+          "end": 12.29
+        },
+        {
+          "w": "the",
+          "start": 12.303,
+          "end": 12.39
+        },
+        {
+          "w": "lungs",
+          "start": 12.403,
+          "end": 12.878
+        },
+        {
+          "w": "where",
+          "start": 13.165,
+          "end": 13.366
+        },
+        {
+          "w": "it",
+          "start": 13.378,
+          "end": 13.503
+        },
+        {
+          "w": "picks",
+          "start": 13.515,
+          "end": 13.828
+        },
+        {
+          "w": "up",
+          "start": 13.841,
+          "end": 13.991
+        },
+        {
+          "w": "oxygen",
+          "start": 14.003,
+          "end": 14.665
+        },
+        {
+          "w": "oxygenated",
+          "start": 16.084,
+          "end": 16.947
+        },
+        {
+          "w": "blood",
+          "start": 16.959,
+          "end": 17.247
+        },
+        {
+          "w": "returns",
+          "start": 17.259,
+          "end": 17.771
+        },
+        {
+          "w": "through",
+          "start": 17.784,
+          "end": 17.959
+        },
+        {
+          "w": "the",
+          "start": 17.971,
+          "end": 18.059
+        },
+        {
+          "w": "pulmonary",
+          "start": 18.072,
+          "end": 18.734
+        },
+        {
+          "w": "veins",
+          "start": 18.747,
+          "end": 19.234
+        },
+        {
+          "w": "into",
+          "start": 19.247,
+          "end": 19.509
+        },
+        {
+          "w": "the",
+          "start": 19.521,
+          "end": 19.596
+        },
+        {
+          "w": "left",
+          "start": 19.609,
+          "end": 20.021
+        },
+        {
+          "w": "atrium",
+          "start": 20.034,
+          "end": 20.634
+        },
+        {
+          "w": "the",
+          "start": 22.528,
+          "end": 22.653
+        },
+        {
+          "w": "left",
+          "start": 22.665,
+          "end": 23.028
+        },
+        {
+          "w": "ventricle",
+          "start": 23.04,
+          "end": 23.615
+        },
+        {
+          "w": "then",
+          "start": 23.628,
+          "end": 23.853
+        },
+        {
+          "w": "pumps",
+          "start": 23.865,
+          "end": 24.24
+        },
+        {
+          "w": "it",
+          "start": 24.253,
+          "end": 24.415
+        },
+        {
+          "w": "through",
+          "start": 24.428,
+          "end": 24.615
+        },
+        {
+          "w": "the",
+          "start": 24.628,
+          "end": 24.84
+        },
+        {
+          "w": "aortic",
+          "start": 24.853,
+          "end": 25.34
+        },
+        {
+          "w": "valve",
+          "start": 25.353,
+          "end": 25.765
+        },
+        {
+          "w": "into",
+          "start": 25.778,
+          "end": 26.028
+        },
+        {
+          "w": "the",
+          "start": 26.04,
+          "end": 26.228
+        },
+        {
+          "w": "aorta",
+          "start": 26.24,
+          "end": 26.84
+        },
+        {
+          "w": "and",
+          "start": 27.128,
+          "end": 27.34
+        },
+        {
+          "w": "on",
+          "start": 27.353,
+          "end": 27.515
+        },
+        {
+          "w": "to",
+          "start": 27.528,
+          "end": 27.753
+        },
+        {
+          "w": "every",
+          "start": 27.765,
+          "end": 28.178
+        },
+        {
+          "w": "tissue",
+          "start": 28.19,
+          "end": 28.69
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 981,
+      "startFrame": 6063
+    },
+    {
+      "index": 8,
+      "type": "figure",
+      "hash": "aec479f6b310",
+      "narration": "Together, that makes two circuits in series. The pulmonary circulation carries blood from the right heart to the lungs and back to the left heart. The systemic circulation carries it from the left heart to the body tissues and back to the right heart. Every drop passes through both, one after the other.",
+      "audioFile": "audio/vo/human-heart/H01/scene-8.mp3",
+      "voDurationInSeconds": 22.704,
+      "voDurationInFrames": 682,
+      "captions": [
+        {
+          "text": "Together, that makes two circuits in",
+          "start": 0.1,
+          "end": 2.337
+        },
+        {
+          "text": "series. The pulmonary circulation carries",
+          "start": 2.337,
+          "end": 6.302
+        },
+        {
+          "text": "blood from the right heart to the lungs",
+          "start": 6.302,
+          "end": 8.189
+        },
+        {
+          "text": "and back to the left heart.",
+          "start": 8.189,
+          "end": 9.814
+        },
+        {
+          "text": "The systemic circulation carries it from",
+          "start": 10.98,
+          "end": 13.242
+        },
+        {
+          "text": "the left heart to the body tissues and",
+          "start": 13.242,
+          "end": 15.355
+        },
+        {
+          "text": "back to the right heart.",
+          "start": 15.355,
+          "end": 16.83
+        },
+        {
+          "text": "Every drop passes through both, one after",
+          "start": 18.504,
+          "end": 21.166
+        },
+        {
+          "text": "the other.",
+          "start": 21.166,
+          "end": 21.904
+        }
+      ],
+      "words": [
+        {
+          "w": "together",
+          "start": 0.1,
+          "end": 0.725
+        },
+        {
+          "w": "that",
+          "start": 0.975,
+          "end": 1.225
+        },
+        {
+          "w": "makes",
+          "start": 1.238,
+          "end": 1.55
+        },
+        {
+          "w": "two",
+          "start": 1.562,
+          "end": 1.688
+        },
+        {
+          "w": "circuits",
+          "start": 1.7,
+          "end": 2.175
+        },
+        {
+          "w": "in",
+          "start": 2.188,
+          "end": 2.325
+        },
+        {
+          "w": "series",
+          "start": 2.337,
+          "end": 2.95
+        },
+        {
+          "w": "the",
+          "start": 4.364,
+          "end": 4.477
+        },
+        {
+          "w": "pulmonary",
+          "start": 4.489,
+          "end": 5.127
+        },
+        {
+          "w": "circulation",
+          "start": 5.139,
+          "end": 5.877
+        },
+        {
+          "w": "carries",
+          "start": 5.889,
+          "end": 6.289
+        },
+        {
+          "w": "blood",
+          "start": 6.302,
+          "end": 6.601
+        },
+        {
+          "w": "from",
+          "start": 6.614,
+          "end": 6.814
+        },
+        {
+          "w": "the",
+          "start": 6.827,
+          "end": 6.902
+        },
+        {
+          "w": "right",
+          "start": 6.914,
+          "end": 7.264
+        },
+        {
+          "w": "heart",
+          "start": 7.277,
+          "end": 7.564
+        },
+        {
+          "w": "to",
+          "start": 7.577,
+          "end": 7.677
+        },
+        {
+          "w": "the",
+          "start": 7.689,
+          "end": 7.764
+        },
+        {
+          "w": "lungs",
+          "start": 7.777,
+          "end": 8.177
+        },
+        {
+          "w": "and",
+          "start": 8.189,
+          "end": 8.351
+        },
+        {
+          "w": "back",
+          "start": 8.364,
+          "end": 8.664
+        },
+        {
+          "w": "to",
+          "start": 8.677,
+          "end": 8.789
+        },
+        {
+          "w": "the",
+          "start": 8.802,
+          "end": 8.877
+        },
+        {
+          "w": "left",
+          "start": 8.889,
+          "end": 9.214
+        },
+        {
+          "w": "heart",
+          "start": 9.227,
+          "end": 9.614
+        },
+        {
+          "w": "the",
+          "start": 10.98,
+          "end": 11.105
+        },
+        {
+          "w": "systemic",
+          "start": 11.118,
+          "end": 11.705
+        },
+        {
+          "w": "circulation",
+          "start": 11.718,
+          "end": 12.443
+        },
+        {
+          "w": "carries",
+          "start": 12.455,
+          "end": 12.88
+        },
+        {
+          "w": "it",
+          "start": 12.893,
+          "end": 13.03
+        },
+        {
+          "w": "from",
+          "start": 13.043,
+          "end": 13.23
+        },
+        {
+          "w": "the",
+          "start": 13.242,
+          "end": 13.33
+        },
+        {
+          "w": "left",
+          "start": 13.343,
+          "end": 13.693
+        },
+        {
+          "w": "heart",
+          "start": 13.705,
+          "end": 13.993
+        },
+        {
+          "w": "to",
+          "start": 14.005,
+          "end": 14.105
+        },
+        {
+          "w": "the",
+          "start": 14.117,
+          "end": 14.205
+        },
+        {
+          "w": "body",
+          "start": 14.218,
+          "end": 14.605
+        },
+        {
+          "w": "tissues",
+          "start": 14.617,
+          "end": 15.168
+        },
+        {
+          "w": "and",
+          "start": 15.18,
+          "end": 15.343
+        },
+        {
+          "w": "back",
+          "start": 15.355,
+          "end": 15.655
+        },
+        {
+          "w": "to",
+          "start": 15.668,
+          "end": 15.78
+        },
+        {
+          "w": "the",
+          "start": 15.793,
+          "end": 15.867
+        },
+        {
+          "w": "right",
+          "start": 15.88,
+          "end": 16.218
+        },
+        {
+          "w": "heart",
+          "start": 16.23,
+          "end": 16.63
+        },
+        {
+          "w": "every",
+          "start": 18.504,
+          "end": 18.866
+        },
+        {
+          "w": "drop",
+          "start": 18.879,
+          "end": 19.192
+        },
+        {
+          "w": "passes",
+          "start": 19.204,
+          "end": 19.616
+        },
+        {
+          "w": "through",
+          "start": 19.629,
+          "end": 19.804
+        },
+        {
+          "w": "both",
+          "start": 19.817,
+          "end": 20.304
+        },
+        {
+          "w": "one",
+          "start": 20.541,
+          "end": 20.829
+        },
+        {
+          "w": "after",
+          "start": 20.841,
+          "end": 21.154
+        },
+        {
+          "w": "the",
+          "start": 21.166,
+          "end": 21.279
+        },
+        {
+          "w": "other",
+          "start": 21.291,
+          "end": 21.704
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 773,
+      "startFrame": 7044
+    },
+    {
+      "index": 9,
+      "type": "mistake",
+      "hash": "3530581cce83",
+      "narration": "A common mistake is to think arteries always carry oxygenated blood and veins always carry deoxygenated blood. It isn't true. Arteries carry blood away from the heart; veins carry it toward the heart. So the pulmonary arteries carry deoxygenated blood to the lungs, and the pulmonary veins bring oxygenated blood back. Name vessels by direction, not by oxygen.",
+      "audioFile": "audio/vo/human-heart/H01/scene-9.mp3",
+      "voDurationInSeconds": 29.736,
+      "voDurationInFrames": 893,
+      "captions": [
+        {
+          "text": "A common mistake is to think arteries",
+          "start": 0.1,
+          "end": 2.25
+        },
+        {
+          "text": "always carry oxygenated blood and veins",
+          "start": 2.25,
+          "end": 4.963
+        },
+        {
+          "text": "always carry deoxygenated blood.",
+          "start": 4.963,
+          "end": 7.3
+        },
+        {
+          "text": "It isn't true. Arteries carry blood away",
+          "start": 8.516,
+          "end": 12.288
+        },
+        {
+          "text": "from the heart; veins carry it toward the",
+          "start": 12.288,
+          "end": 14.638
+        },
+        {
+          "text": "heart. So the pulmonary arteries carry",
+          "start": 14.638,
+          "end": 18.542
+        },
+        {
+          "text": "deoxygenated blood to the lungs, and the",
+          "start": 18.542,
+          "end": 21.067
+        },
+        {
+          "text": "pulmonary veins bring oxygenated blood",
+          "start": 21.067,
+          "end": 23.617
+        },
+        {
+          "text": "back. Name vessels by direction, not by",
+          "start": 23.617,
+          "end": 28.11
+        },
+        {
+          "text": "oxygen.",
+          "start": 28.11,
+          "end": 28.935
+        }
+      ],
+      "words": [
+        {
+          "w": "a",
+          "start": 0.1,
+          "end": 0.163
+        },
+        {
+          "w": "common",
+          "start": 0.175,
+          "end": 0.562
+        },
+        {
+          "w": "mistake",
+          "start": 0.575,
+          "end": 1
+        },
+        {
+          "w": "is",
+          "start": 1.012,
+          "end": 1.162
+        },
+        {
+          "w": "to",
+          "start": 1.175,
+          "end": 1.325
+        },
+        {
+          "w": "think",
+          "start": 1.337,
+          "end": 1.7
+        },
+        {
+          "w": "arteries",
+          "start": 1.712,
+          "end": 2.237
+        },
+        {
+          "w": "always",
+          "start": 2.25,
+          "end": 2.675
+        },
+        {
+          "w": "carry",
+          "start": 2.688,
+          "end": 3.025
+        },
+        {
+          "w": "oxygenated",
+          "start": 3.038,
+          "end": 3.812
+        },
+        {
+          "w": "blood",
+          "start": 3.825,
+          "end": 4.25
+        },
+        {
+          "w": "and",
+          "start": 4.263,
+          "end": 4.538
+        },
+        {
+          "w": "veins",
+          "start": 4.55,
+          "end": 4.95
+        },
+        {
+          "w": "always",
+          "start": 4.963,
+          "end": 5.425
+        },
+        {
+          "w": "carry",
+          "start": 5.438,
+          "end": 5.775
+        },
+        {
+          "w": "deoxygenated",
+          "start": 5.787,
+          "end": 6.712
+        },
+        {
+          "w": "blood",
+          "start": 6.725,
+          "end": 7.1
+        },
+        {
+          "w": "it",
+          "start": 8.516,
+          "end": 8.666
+        },
+        {
+          "w": "isnt",
+          "start": 8.678,
+          "end": 8.979
+        },
+        {
+          "w": "true",
+          "start": 8.991,
+          "end": 9.366
+        },
+        {
+          "w": "arteries",
+          "start": 10.788,
+          "end": 11.325
+        },
+        {
+          "w": "carry",
+          "start": 11.338,
+          "end": 11.688
+        },
+        {
+          "w": "blood",
+          "start": 11.7,
+          "end": 11.988
+        },
+        {
+          "w": "away",
+          "start": 12.001,
+          "end": 12.276
+        },
+        {
+          "w": "from",
+          "start": 12.288,
+          "end": 12.501
+        },
+        {
+          "w": "the",
+          "start": 12.513,
+          "end": 12.601
+        },
+        {
+          "w": "heart",
+          "start": 12.613,
+          "end": 13.063
+        },
+        {
+          "w": "veins",
+          "start": 13.288,
+          "end": 13.663
+        },
+        {
+          "w": "carry",
+          "start": 13.675,
+          "end": 14.001
+        },
+        {
+          "w": "it",
+          "start": 14.013,
+          "end": 14.138
+        },
+        {
+          "w": "toward",
+          "start": 14.151,
+          "end": 14.501
+        },
+        {
+          "w": "the",
+          "start": 14.513,
+          "end": 14.626
+        },
+        {
+          "w": "heart",
+          "start": 14.638,
+          "end": 15.076
+        },
+        {
+          "w": "so",
+          "start": 16.492,
+          "end": 16.755
+        },
+        {
+          "w": "the",
+          "start": 16.767,
+          "end": 16.88
+        },
+        {
+          "w": "pulmonary",
+          "start": 16.892,
+          "end": 17.642
+        },
+        {
+          "w": "arteries",
+          "start": 17.654,
+          "end": 18.167
+        },
+        {
+          "w": "carry",
+          "start": 18.18,
+          "end": 18.529
+        },
+        {
+          "w": "deoxygenated",
+          "start": 18.542,
+          "end": 19.454
+        },
+        {
+          "w": "blood",
+          "start": 19.467,
+          "end": 19.779
+        },
+        {
+          "w": "to",
+          "start": 19.792,
+          "end": 19.904
+        },
+        {
+          "w": "the",
+          "start": 19.917,
+          "end": 20.005
+        },
+        {
+          "w": "lungs",
+          "start": 20.017,
+          "end": 20.467
+        },
+        {
+          "w": "and",
+          "start": 20.779,
+          "end": 20.954
+        },
+        {
+          "w": "the",
+          "start": 20.967,
+          "end": 21.055
+        },
+        {
+          "w": "pulmonary",
+          "start": 21.067,
+          "end": 21.704
+        },
+        {
+          "w": "veins",
+          "start": 21.717,
+          "end": 22.154
+        },
+        {
+          "w": "bring",
+          "start": 22.167,
+          "end": 22.442
+        },
+        {
+          "w": "oxygenated",
+          "start": 22.454,
+          "end": 23.304
+        },
+        {
+          "w": "blood",
+          "start": 23.317,
+          "end": 23.604
+        },
+        {
+          "w": "back",
+          "start": 23.617,
+          "end": 24.042
+        },
+        {
+          "w": "name",
+          "start": 25.46,
+          "end": 25.848
+        },
+        {
+          "w": "vessels",
+          "start": 25.86,
+          "end": 26.372
+        },
+        {
+          "w": "by",
+          "start": 26.385,
+          "end": 26.572
+        },
+        {
+          "w": "direction",
+          "start": 26.585,
+          "end": 27.348
+        },
+        {
+          "w": "not",
+          "start": 27.547,
+          "end": 27.86
+        },
+        {
+          "w": "by",
+          "start": 27.872,
+          "end": 28.098
+        },
+        {
+          "w": "oxygen",
+          "start": 28.11,
+          "end": 28.735
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 984,
+      "startFrame": 7817
+    },
+    {
+      "index": 10,
+      "type": "figure",
+      "hash": "3f6ac8631585",
+      "narration": "What makes the heart beat? Each beat starts in the sinoatrial node, the natural pacemaker in the wall of the right atrium. The impulse spreads across both atria, and they contract. It then reaches the atrioventricular node, which holds it back for about 0.1 seconds, so the atria can finish emptying. Then it races down the bundle of His, splits into the right and left bundle branches, and spreads through the Purkinje fibres, so the ventricles contract from the apex upward.",
+      "audioFile": "audio/vo/human-heart/H01/scene-10.mp3",
+      "voDurationInSeconds": 37.8,
+      "voDurationInFrames": 1134,
+      "captions": [
+        {
+          "text": "What makes the heart beat?",
+          "start": 0.1,
+          "end": 1.775
+        },
+        {
+          "text": "Each beat starts in the sinoatrial node,",
+          "start": 2.924,
+          "end": 5.487
+        },
+        {
+          "text": "the natural pacemaker in the wall of the",
+          "start": 5.549,
+          "end": 7.724
+        },
+        {
+          "text": "right atrium. The impulse spreads across",
+          "start": 7.724,
+          "end": 11.662
+        },
+        {
+          "text": "both atria, and they contract.",
+          "start": 11.662,
+          "end": 14.112
+        },
+        {
+          "text": "It then reaches the atrioventricular node,",
+          "start": 15.364,
+          "end": 18.052
+        },
+        {
+          "text": "which holds it back for about 0.1 seconds,",
+          "start": 18.164,
+          "end": 21.552
+        },
+        {
+          "text": "so the atria can finish emptying.",
+          "start": 21.602,
+          "end": 23.913999999999998
+        },
+        {
+          "text": "Then it races down the bundle of His,",
+          "start": 25.6,
+          "end": 28.05
+        },
+        {
+          "text": "splits into the right and left bundle",
+          "start": 28.1,
+          "end": 30.3
+        },
+        {
+          "text": "branches, and spreads through the Purkinje",
+          "start": 30.3,
+          "end": 32.925
+        },
+        {
+          "text": "fibres, so the ventricles contract from",
+          "start": 32.925,
+          "end": 35.625
+        },
+        {
+          "text": "the apex upward.",
+          "start": 35.625,
+          "end": 37.037000000000006
+        }
+      ],
+      "words": [
+        {
+          "w": "what",
+          "start": 0.1,
+          "end": 0.363
+        },
+        {
+          "w": "makes",
+          "start": 0.375,
+          "end": 0.662
+        },
+        {
+          "w": "the",
+          "start": 0.675,
+          "end": 0.788
+        },
+        {
+          "w": "heart",
+          "start": 0.8,
+          "end": 1.1
+        },
+        {
+          "w": "beat",
+          "start": 1.113,
+          "end": 1.575
+        },
+        {
+          "w": "each",
+          "start": 2.924,
+          "end": 3.212
+        },
+        {
+          "w": "beat",
+          "start": 3.224,
+          "end": 3.511
+        },
+        {
+          "w": "starts",
+          "start": 3.524,
+          "end": 3.949
+        },
+        {
+          "w": "in",
+          "start": 3.962,
+          "end": 4.061
+        },
+        {
+          "w": "the",
+          "start": 4.074,
+          "end": 4.174
+        },
+        {
+          "w": "sinoatrial",
+          "start": 4.186,
+          "end": 4.912
+        },
+        {
+          "w": "node",
+          "start": 4.924,
+          "end": 5.287
+        },
+        {
+          "w": "the",
+          "start": 5.549,
+          "end": 5.662
+        },
+        {
+          "w": "natural",
+          "start": 5.674,
+          "end": 6.199
+        },
+        {
+          "w": "pacemaker",
+          "start": 6.212,
+          "end": 6.962
+        },
+        {
+          "w": "in",
+          "start": 6.974,
+          "end": 7.087
+        },
+        {
+          "w": "the",
+          "start": 7.099,
+          "end": 7.199
+        },
+        {
+          "w": "wall",
+          "start": 7.212,
+          "end": 7.474
+        },
+        {
+          "w": "of",
+          "start": 7.486,
+          "end": 7.599
+        },
+        {
+          "w": "the",
+          "start": 7.611,
+          "end": 7.711
+        },
+        {
+          "w": "right",
+          "start": 7.724,
+          "end": 8.174
+        },
+        {
+          "w": "atrium",
+          "start": 8.186,
+          "end": 8.774
+        },
+        {
+          "w": "the",
+          "start": 10.212,
+          "end": 10.35
+        },
+        {
+          "w": "impulse",
+          "start": 10.362,
+          "end": 10.774
+        },
+        {
+          "w": "spreads",
+          "start": 10.787,
+          "end": 11.175
+        },
+        {
+          "w": "across",
+          "start": 11.187,
+          "end": 11.649
+        },
+        {
+          "w": "both",
+          "start": 11.662,
+          "end": 12.062
+        },
+        {
+          "w": "atria",
+          "start": 12.075,
+          "end": 12.625
+        },
+        {
+          "w": "and",
+          "start": 12.837,
+          "end": 13.037
+        },
+        {
+          "w": "they",
+          "start": 13.05,
+          "end": 13.162
+        },
+        {
+          "w": "contract",
+          "start": 13.175,
+          "end": 13.912
+        },
+        {
+          "w": "it",
+          "start": 15.364,
+          "end": 15.514
+        },
+        {
+          "w": "then",
+          "start": 15.527,
+          "end": 15.789
+        },
+        {
+          "w": "reaches",
+          "start": 15.802,
+          "end": 16.214
+        },
+        {
+          "w": "the",
+          "start": 16.227,
+          "end": 16.439
+        },
+        {
+          "w": "atrioventricular",
+          "start": 16.452,
+          "end": 17.439
+        },
+        {
+          "w": "node",
+          "start": 17.452,
+          "end": 17.852
+        },
+        {
+          "w": "which",
+          "start": 18.164,
+          "end": 18.364
+        },
+        {
+          "w": "holds",
+          "start": 18.377,
+          "end": 18.677
+        },
+        {
+          "w": "it",
+          "start": 18.689,
+          "end": 18.814
+        },
+        {
+          "w": "back",
+          "start": 18.827,
+          "end": 19.139
+        },
+        {
+          "w": "for",
+          "start": 19.152,
+          "end": 19.327
+        },
+        {
+          "w": "about",
+          "start": 19.339,
+          "end": 19.689
+        },
+        {
+          "w": "01",
+          "start": 19.702,
+          "end": 20.752
+        },
+        {
+          "w": "seconds",
+          "start": 20.764,
+          "end": 21.352
+        },
+        {
+          "w": "so",
+          "start": 21.602,
+          "end": 21.789
+        },
+        {
+          "w": "the",
+          "start": 21.802,
+          "end": 22.014
+        },
+        {
+          "w": "atria",
+          "start": 22.027,
+          "end": 22.464
+        },
+        {
+          "w": "can",
+          "start": 22.477,
+          "end": 22.689
+        },
+        {
+          "w": "finish",
+          "start": 22.702,
+          "end": 23.127
+        },
+        {
+          "w": "emptying",
+          "start": 23.139,
+          "end": 23.714
+        },
+        {
+          "w": "then",
+          "start": 25.6,
+          "end": 25.875
+        },
+        {
+          "w": "it",
+          "start": 25.887,
+          "end": 26.05
+        },
+        {
+          "w": "races",
+          "start": 26.062,
+          "end": 26.475
+        },
+        {
+          "w": "down",
+          "start": 26.488,
+          "end": 26.775
+        },
+        {
+          "w": "the",
+          "start": 26.788,
+          "end": 26.875
+        },
+        {
+          "w": "bundle",
+          "start": 26.887,
+          "end": 27.288
+        },
+        {
+          "w": "of",
+          "start": 27.3,
+          "end": 27.462
+        },
+        {
+          "w": "his",
+          "start": 27.475,
+          "end": 27.85
+        },
+        {
+          "w": "splits",
+          "start": 28.1,
+          "end": 28.562
+        },
+        {
+          "w": "into",
+          "start": 28.575,
+          "end": 28.8
+        },
+        {
+          "w": "the",
+          "start": 28.812,
+          "end": 28.9
+        },
+        {
+          "w": "right",
+          "start": 28.913,
+          "end": 29.387
+        },
+        {
+          "w": "and",
+          "start": 29.4,
+          "end": 29.562
+        },
+        {
+          "w": "left",
+          "start": 29.575,
+          "end": 29.887
+        },
+        {
+          "w": "bundle",
+          "start": 29.9,
+          "end": 30.288
+        },
+        {
+          "w": "branches",
+          "start": 30.3,
+          "end": 30.975
+        },
+        {
+          "w": "and",
+          "start": 31.25,
+          "end": 31.475
+        },
+        {
+          "w": "spreads",
+          "start": 31.488,
+          "end": 31.988
+        },
+        {
+          "w": "through",
+          "start": 32,
+          "end": 32.188
+        },
+        {
+          "w": "the",
+          "start": 32.2,
+          "end": 32.3
+        },
+        {
+          "w": "purkinje",
+          "start": 32.312,
+          "end": 32.913
+        },
+        {
+          "w": "fibres",
+          "start": 32.925,
+          "end": 33.55
+        },
+        {
+          "w": "so",
+          "start": 33.788,
+          "end": 33.987
+        },
+        {
+          "w": "the",
+          "start": 34,
+          "end": 34.125
+        },
+        {
+          "w": "ventricles",
+          "start": 34.138,
+          "end": 34.775
+        },
+        {
+          "w": "contract",
+          "start": 34.788,
+          "end": 35.388
+        },
+        {
+          "w": "from",
+          "start": 35.4,
+          "end": 35.612
+        },
+        {
+          "w": "the",
+          "start": 35.625,
+          "end": 35.837
+        },
+        {
+          "w": "apex",
+          "start": 35.85,
+          "end": 36.337
+        },
+        {
+          "w": "upward",
+          "start": 36.35,
+          "end": 36.837
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1225,
+      "startFrame": 8801
+    },
+    {
+      "index": 11,
+      "type": "figure",
+      "hash": "fc3f2ca5f4b6",
+      "narration": "Every part of this system can generate beats on its own, at different rates. The SA node fires 60 to 100 times a minute. The AV node, 40 to 60. The Purkinje fibres, only 20 to 40. The fastest pacemaker sets the pace, which is why the SA node leads, and why a failing SA node leaves a slower backup rhythm.",
+      "audioFile": "audio/vo/human-heart/H01/scene-11.mp3",
+      "voDurationInSeconds": 28.872,
+      "voDurationInFrames": 867,
+      "captions": [
+        {
+          "text": "Every part of this system can generate",
+          "start": 0.1,
+          "end": 2.2
+        },
+        {
+          "text": "beats on its own, at different rates.",
+          "start": 2.2,
+          "end": 4.925
+        },
+        {
+          "text": "The SA node fires 60 to 100 times a",
+          "start": 6.188,
+          "end": 9.05
+        },
+        {
+          "text": "minute. The AV node, 40 to 60.",
+          "start": 9.05,
+          "end": 13.581
+        },
+        {
+          "text": "The Purkinje fibres, only 20 to 40.",
+          "start": 14.812,
+          "end": 17.962
+        },
+        {
+          "text": "The fastest pacemaker sets the pace, which",
+          "start": 19.696,
+          "end": 22.496
+        },
+        {
+          "text": "is why the SA node leads, and why a",
+          "start": 22.496,
+          "end": 24.896
+        },
+        {
+          "text": "failing SA node leaves a slower backup",
+          "start": 24.896,
+          "end": 27.383
+        },
+        {
+          "text": "rhythm.",
+          "start": 27.383,
+          "end": 28.046
+        }
+      ],
+      "words": [
+        {
+          "w": "every",
+          "start": 0.1,
+          "end": 0.463
+        },
+        {
+          "w": "part",
+          "start": 0.475,
+          "end": 0.775
+        },
+        {
+          "w": "of",
+          "start": 0.787,
+          "end": 0.887
+        },
+        {
+          "w": "this",
+          "start": 0.9,
+          "end": 1.087
+        },
+        {
+          "w": "system",
+          "start": 1.1,
+          "end": 1.513
+        },
+        {
+          "w": "can",
+          "start": 1.525,
+          "end": 1.725
+        },
+        {
+          "w": "generate",
+          "start": 1.738,
+          "end": 2.188
+        },
+        {
+          "w": "beats",
+          "start": 2.2,
+          "end": 2.6
+        },
+        {
+          "w": "on",
+          "start": 2.612,
+          "end": 2.75
+        },
+        {
+          "w": "its",
+          "start": 2.763,
+          "end": 3
+        },
+        {
+          "w": "own",
+          "start": 3.013,
+          "end": 3.35
+        },
+        {
+          "w": "at",
+          "start": 3.6,
+          "end": 3.75
+        },
+        {
+          "w": "different",
+          "start": 3.763,
+          "end": 4.225
+        },
+        {
+          "w": "rates",
+          "start": 4.237,
+          "end": 4.725
+        },
+        {
+          "w": "the",
+          "start": 6.188,
+          "end": 6.325
+        },
+        {
+          "w": "sa",
+          "start": 6.338,
+          "end": 6.575
+        },
+        {
+          "w": "node",
+          "start": 6.588,
+          "end": 6.901
+        },
+        {
+          "w": "fires",
+          "start": 6.913,
+          "end": 7.338
+        },
+        {
+          "w": "60",
+          "start": 7.351,
+          "end": 7.763
+        },
+        {
+          "w": "to",
+          "start": 7.776,
+          "end": 7.95
+        },
+        {
+          "w": "100",
+          "start": 7.963,
+          "end": 8.588
+        },
+        {
+          "w": "times",
+          "start": 8.601,
+          "end": 8.963
+        },
+        {
+          "w": "a",
+          "start": 8.976,
+          "end": 9.038
+        },
+        {
+          "w": "minute",
+          "start": 9.05,
+          "end": 9.526
+        },
+        {
+          "w": "the",
+          "start": 10.956,
+          "end": 11.219
+        },
+        {
+          "w": "av",
+          "start": 11.231,
+          "end": 11.581
+        },
+        {
+          "w": "node",
+          "start": 11.594,
+          "end": 12.018
+        },
+        {
+          "w": "40",
+          "start": 12.256,
+          "end": 12.656
+        },
+        {
+          "w": "to",
+          "start": 12.668,
+          "end": 12.793
+        },
+        {
+          "w": "60",
+          "start": 12.806,
+          "end": 13.381
+        },
+        {
+          "w": "the",
+          "start": 14.812,
+          "end": 14.912
+        },
+        {
+          "w": "purkinje",
+          "start": 14.925,
+          "end": 15.474
+        },
+        {
+          "w": "fibres",
+          "start": 15.487,
+          "end": 16.137
+        },
+        {
+          "w": "only",
+          "start": 16.349,
+          "end": 16.662
+        },
+        {
+          "w": "20",
+          "start": 16.674,
+          "end": 17.062
+        },
+        {
+          "w": "to",
+          "start": 17.075,
+          "end": 17.212
+        },
+        {
+          "w": "40",
+          "start": 17.224,
+          "end": 17.762
+        },
+        {
+          "w": "the",
+          "start": 19.696,
+          "end": 19.796
+        },
+        {
+          "w": "fastest",
+          "start": 19.808,
+          "end": 20.383
+        },
+        {
+          "w": "pacemaker",
+          "start": 20.396,
+          "end": 21.058
+        },
+        {
+          "w": "sets",
+          "start": 21.071,
+          "end": 21.433
+        },
+        {
+          "w": "the",
+          "start": 21.446,
+          "end": 21.558
+        },
+        {
+          "w": "pace",
+          "start": 21.571,
+          "end": 22.046
+        },
+        {
+          "w": "which",
+          "start": 22.308,
+          "end": 22.483
+        },
+        {
+          "w": "is",
+          "start": 22.496,
+          "end": 22.633
+        },
+        {
+          "w": "why",
+          "start": 22.646,
+          "end": 22.871
+        },
+        {
+          "w": "the",
+          "start": 22.883,
+          "end": 22.996
+        },
+        {
+          "w": "sa",
+          "start": 23.008,
+          "end": 23.246
+        },
+        {
+          "w": "node",
+          "start": 23.258,
+          "end": 23.596
+        },
+        {
+          "w": "leads",
+          "start": 23.608,
+          "end": 24.058
+        },
+        {
+          "w": "and",
+          "start": 24.321,
+          "end": 24.571
+        },
+        {
+          "w": "why",
+          "start": 24.583,
+          "end": 24.821
+        },
+        {
+          "w": "a",
+          "start": 24.833,
+          "end": 24.883
+        },
+        {
+          "w": "failing",
+          "start": 24.896,
+          "end": 25.358
+        },
+        {
+          "w": "sa",
+          "start": 25.371,
+          "end": 25.583
+        },
+        {
+          "w": "node",
+          "start": 25.596,
+          "end": 25.908
+        },
+        {
+          "w": "leaves",
+          "start": 25.921,
+          "end": 26.371
+        },
+        {
+          "w": "a",
+          "start": 26.383,
+          "end": 26.483
+        },
+        {
+          "w": "slower",
+          "start": 26.496,
+          "end": 26.933
+        },
+        {
+          "w": "backup",
+          "start": 26.946,
+          "end": 27.371
+        },
+        {
+          "w": "rhythm",
+          "start": 27.383,
+          "end": 27.846
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 958,
+      "startFrame": 10026
+    },
+    {
+      "index": 12,
+      "type": "figure",
+      "hash": "2f04f5f538fe",
+      "narration": "On an ECG, this sequence becomes a familiar shape. The small P wave is atrial depolarisation. The tall QRS complex is ventricular depolarisation, normally under 0.12 seconds. The T wave that follows is ventricular repolarisation. The PR interval, from the start of the P wave to the start of the QRS, is normally 0.12 to 0.20 seconds.",
+      "audioFile": "audio/vo/human-heart/H01/scene-12.mp3",
+      "voDurationInSeconds": 32.832,
+      "voDurationInFrames": 985,
+      "captions": [
+        {
+          "text": "On an ECG, this sequence becomes a",
+          "start": 0.1,
+          "end": 2.712
+        },
+        {
+          "text": "familiar shape. The small P wave is atrial",
+          "start": 2.712,
+          "end": 6.946
+        },
+        {
+          "text": "depolarisation. The tall QRS complex is",
+          "start": 6.946,
+          "end": 11.405
+        },
+        {
+          "text": "ventricular depolarisation, normally under",
+          "start": 11.405,
+          "end": 14.405
+        },
+        {
+          "text": "0.12 seconds. The T wave that follows is",
+          "start": 14.405,
+          "end": 19.27
+        },
+        {
+          "text": "ventricular repolarisation.",
+          "start": 19.27,
+          "end": 21.307
+        },
+        {
+          "text": "The PR interval, from the start of the P",
+          "start": 22.96,
+          "end": 25.585
+        },
+        {
+          "text": "wave to the start of the QRS, is normally",
+          "start": 25.585,
+          "end": 28.485
+        },
+        {
+          "text": "0.12 to 0.20 seconds.",
+          "start": 28.485,
+          "end": 32.06
+        }
+      ],
+      "words": [
+        {
+          "w": "on",
+          "start": 0.1,
+          "end": 0.263
+        },
+        {
+          "w": "an",
+          "start": 0.275,
+          "end": 0.425
+        },
+        {
+          "w": "ecg",
+          "start": 0.438,
+          "end": 1.1
+        },
+        {
+          "w": "this",
+          "start": 1.35,
+          "end": 1.55
+        },
+        {
+          "w": "sequence",
+          "start": 1.562,
+          "end": 2.138
+        },
+        {
+          "w": "becomes",
+          "start": 2.15,
+          "end": 2.612
+        },
+        {
+          "w": "a",
+          "start": 2.625,
+          "end": 2.7
+        },
+        {
+          "w": "familiar",
+          "start": 2.712,
+          "end": 3.263
+        },
+        {
+          "w": "shape",
+          "start": 3.275,
+          "end": 3.637
+        },
+        {
+          "w": "the",
+          "start": 5.108,
+          "end": 5.221
+        },
+        {
+          "w": "small",
+          "start": 5.233,
+          "end": 5.67
+        },
+        {
+          "w": "p",
+          "start": 5.683,
+          "end": 5.883
+        },
+        {
+          "w": "wave",
+          "start": 5.896,
+          "end": 6.208
+        },
+        {
+          "w": "is",
+          "start": 6.22,
+          "end": 6.495
+        },
+        {
+          "w": "atrial",
+          "start": 6.508,
+          "end": 6.933
+        },
+        {
+          "w": "depolarisation",
+          "start": 6.946,
+          "end": 8.108
+        },
+        {
+          "w": "the",
+          "start": 9.492,
+          "end": 9.63
+        },
+        {
+          "w": "tall",
+          "start": 9.642,
+          "end": 9.992
+        },
+        {
+          "w": "qrs",
+          "start": 10.005,
+          "end": 10.567
+        },
+        {
+          "w": "complex",
+          "start": 10.58,
+          "end": 11.205
+        },
+        {
+          "w": "is",
+          "start": 11.217,
+          "end": 11.392
+        },
+        {
+          "w": "ventricular",
+          "start": 11.405,
+          "end": 12.105
+        },
+        {
+          "w": "depolarisation",
+          "start": 12.117,
+          "end": 13.28
+        },
+        {
+          "w": "normally",
+          "start": 13.505,
+          "end": 14.117
+        },
+        {
+          "w": "under",
+          "start": 14.13,
+          "end": 14.392
+        },
+        {
+          "w": "012",
+          "start": 14.405,
+          "end": 15.592
+        },
+        {
+          "w": "seconds",
+          "start": 15.605,
+          "end": 16.205
+        },
+        {
+          "w": "the",
+          "start": 17.62,
+          "end": 17.758
+        },
+        {
+          "w": "t",
+          "start": 17.77,
+          "end": 18.032
+        },
+        {
+          "w": "wave",
+          "start": 18.045,
+          "end": 18.345
+        },
+        {
+          "w": "that",
+          "start": 18.357,
+          "end": 18.532
+        },
+        {
+          "w": "follows",
+          "start": 18.545,
+          "end": 19.082
+        },
+        {
+          "w": "is",
+          "start": 19.095,
+          "end": 19.258
+        },
+        {
+          "w": "ventricular",
+          "start": 19.27,
+          "end": 19.945
+        },
+        {
+          "w": "repolarisation",
+          "start": 19.957,
+          "end": 21.107
+        },
+        {
+          "w": "the",
+          "start": 22.96,
+          "end": 23.072
+        },
+        {
+          "w": "pr",
+          "start": 23.085,
+          "end": 23.51
+        },
+        {
+          "w": "interval",
+          "start": 23.523,
+          "end": 24.122
+        },
+        {
+          "w": "from",
+          "start": 24.398,
+          "end": 24.61
+        },
+        {
+          "w": "the",
+          "start": 24.622,
+          "end": 24.723
+        },
+        {
+          "w": "start",
+          "start": 24.735,
+          "end": 25.11
+        },
+        {
+          "w": "of",
+          "start": 25.122,
+          "end": 25.21
+        },
+        {
+          "w": "the",
+          "start": 25.223,
+          "end": 25.322
+        },
+        {
+          "w": "p",
+          "start": 25.335,
+          "end": 25.572
+        },
+        {
+          "w": "wave",
+          "start": 25.585,
+          "end": 25.885
+        },
+        {
+          "w": "to",
+          "start": 25.898,
+          "end": 26.01
+        },
+        {
+          "w": "the",
+          "start": 26.023,
+          "end": 26.122
+        },
+        {
+          "w": "start",
+          "start": 26.135,
+          "end": 26.497
+        },
+        {
+          "w": "of",
+          "start": 26.51,
+          "end": 26.598
+        },
+        {
+          "w": "the",
+          "start": 26.61,
+          "end": 26.71
+        },
+        {
+          "w": "qrs",
+          "start": 26.723,
+          "end": 27.485
+        },
+        {
+          "w": "is",
+          "start": 27.785,
+          "end": 27.947
+        },
+        {
+          "w": "normally",
+          "start": 27.96,
+          "end": 28.473
+        },
+        {
+          "w": "012",
+          "start": 28.485,
+          "end": 29.71
+        },
+        {
+          "w": "to",
+          "start": 29.723,
+          "end": 29.872
+        },
+        {
+          "w": "020",
+          "start": 29.885,
+          "end": 31.21
+        },
+        {
+          "w": "seconds",
+          "start": 31.223,
+          "end": 31.86
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1076,
+      "startFrame": 10984
+    },
+    {
+      "index": 13,
+      "type": "figure",
+      "hash": "702bced3b3d3",
+      "narration": "One heartbeat is a cycle of five phases. In atrial systole, the atria top up the ventricles. In isovolumetric contraction, the ventricles squeeze with every valve shut; the AV valves have just closed, giving the first heart sound, lub. During ventricular ejection, the semilunar valves open and blood leaves. In isovolumetric relaxation, they snap shut: the second heart sound, dub. And in ventricular filling, the AV valves open and it all begins again.",
+      "audioFile": "audio/vo/human-heart/H01/scene-13.mp3",
+      "voDurationInSeconds": 39.24,
+      "voDurationInFrames": 1178,
+      "captions": [
+        {
+          "text": "One heartbeat is a cycle of five phases.",
+          "start": 0.1,
+          "end": 2.988
+        },
+        {
+          "text": "In atrial systole, the atria top up the",
+          "start": 4.22,
+          "end": 7.195
+        },
+        {
+          "text": "ventricles. In isovolumetric contraction,",
+          "start": 7.195,
+          "end": 11.569999999999999
+        },
+        {
+          "text": "the ventricles squeeze with every valve",
+          "start": 11.645,
+          "end": 13.832
+        },
+        {
+          "text": "shut; the AV valves have just closed,",
+          "start": 13.832,
+          "end": 16.782
+        },
+        {
+          "text": "giving the first heart sound, lub.",
+          "start": 16.832,
+          "end": 19.157
+        },
+        {
+          "text": "During ventricular ejection, the semilunar",
+          "start": 20.38,
+          "end": 23.343
+        },
+        {
+          "text": "valves open and blood leaves.",
+          "start": 23.343,
+          "end": 25.43
+        },
+        {
+          "text": "In isovolumetric relaxation, they snap",
+          "start": 26.684,
+          "end": 29.559
+        },
+        {
+          "text": "shut: the second heart sound, dub.",
+          "start": 29.559,
+          "end": 32.372
+        },
+        {
+          "text": "And in ventricular filling, the AV valves",
+          "start": 33.612,
+          "end": 36.337
+        },
+        {
+          "text": "open and it all begins again.",
+          "start": 36.337,
+          "end": 38.462
+        }
+      ],
+      "words": [
+        {
+          "w": "one",
+          "start": 0.1,
+          "end": 0.412
+        },
+        {
+          "w": "heartbeat",
+          "start": 0.425,
+          "end": 1.05
+        },
+        {
+          "w": "is",
+          "start": 1.062,
+          "end": 1.2
+        },
+        {
+          "w": "a",
+          "start": 1.212,
+          "end": 1.275
+        },
+        {
+          "w": "cycle",
+          "start": 1.288,
+          "end": 1.725
+        },
+        {
+          "w": "of",
+          "start": 1.738,
+          "end": 1.863
+        },
+        {
+          "w": "five",
+          "start": 1.875,
+          "end": 2.175
+        },
+        {
+          "w": "phases",
+          "start": 2.188,
+          "end": 2.788
+        },
+        {
+          "w": "in",
+          "start": 4.22,
+          "end": 4.47
+        },
+        {
+          "w": "atrial",
+          "start": 4.482,
+          "end": 4.957
+        },
+        {
+          "w": "systole",
+          "start": 4.97,
+          "end": 5.62
+        },
+        {
+          "w": "the",
+          "start": 5.895,
+          "end": 6.107
+        },
+        {
+          "w": "atria",
+          "start": 6.12,
+          "end": 6.582
+        },
+        {
+          "w": "top",
+          "start": 6.595,
+          "end": 6.883
+        },
+        {
+          "w": "up",
+          "start": 6.895,
+          "end": 7.033
+        },
+        {
+          "w": "the",
+          "start": 7.045,
+          "end": 7.183
+        },
+        {
+          "w": "ventricles",
+          "start": 7.195,
+          "end": 7.982
+        },
+        {
+          "w": "in",
+          "start": 9.42,
+          "end": 9.607
+        },
+        {
+          "w": "isovolumetric",
+          "start": 9.62,
+          "end": 10.545
+        },
+        {
+          "w": "contraction",
+          "start": 10.558,
+          "end": 11.37
+        },
+        {
+          "w": "the",
+          "start": 11.645,
+          "end": 11.783
+        },
+        {
+          "w": "ventricles",
+          "start": 11.795,
+          "end": 12.395
+        },
+        {
+          "w": "squeeze",
+          "start": 12.408,
+          "end": 12.82
+        },
+        {
+          "w": "with",
+          "start": 12.832,
+          "end": 13.107
+        },
+        {
+          "w": "every",
+          "start": 13.12,
+          "end": 13.47
+        },
+        {
+          "w": "valve",
+          "start": 13.482,
+          "end": 13.82
+        },
+        {
+          "w": "shut",
+          "start": 13.832,
+          "end": 14.258
+        },
+        {
+          "w": "the",
+          "start": 14.558,
+          "end": 14.758
+        },
+        {
+          "w": "av",
+          "start": 14.77,
+          "end": 15.108
+        },
+        {
+          "w": "valves",
+          "start": 15.12,
+          "end": 15.558
+        },
+        {
+          "w": "have",
+          "start": 15.57,
+          "end": 15.732
+        },
+        {
+          "w": "just",
+          "start": 15.745,
+          "end": 16.07
+        },
+        {
+          "w": "closed",
+          "start": 16.082,
+          "end": 16.582
+        },
+        {
+          "w": "giving",
+          "start": 16.832,
+          "end": 17.145
+        },
+        {
+          "w": "the",
+          "start": 17.157,
+          "end": 17.245
+        },
+        {
+          "w": "first",
+          "start": 17.258,
+          "end": 17.657
+        },
+        {
+          "w": "heart",
+          "start": 17.67,
+          "end": 17.97
+        },
+        {
+          "w": "sound",
+          "start": 17.983,
+          "end": 18.457
+        },
+        {
+          "w": "lub",
+          "start": 18.582,
+          "end": 18.957
+        },
+        {
+          "w": "during",
+          "start": 20.38,
+          "end": 20.805
+        },
+        {
+          "w": "ventricular",
+          "start": 20.818,
+          "end": 21.58
+        },
+        {
+          "w": "ejection",
+          "start": 21.593,
+          "end": 22.218
+        },
+        {
+          "w": "the",
+          "start": 22.443,
+          "end": 22.555
+        },
+        {
+          "w": "semilunar",
+          "start": 22.568,
+          "end": 23.33
+        },
+        {
+          "w": "valves",
+          "start": 23.343,
+          "end": 23.793
+        },
+        {
+          "w": "open",
+          "start": 23.805,
+          "end": 24.218
+        },
+        {
+          "w": "and",
+          "start": 24.23,
+          "end": 24.468
+        },
+        {
+          "w": "blood",
+          "start": 24.48,
+          "end": 24.755
+        },
+        {
+          "w": "leaves",
+          "start": 24.768,
+          "end": 25.23
+        },
+        {
+          "w": "in",
+          "start": 26.684,
+          "end": 26.846
+        },
+        {
+          "w": "isovolumetric",
+          "start": 26.859,
+          "end": 27.796
+        },
+        {
+          "w": "relaxation",
+          "start": 27.809,
+          "end": 28.659
+        },
+        {
+          "w": "they",
+          "start": 28.934,
+          "end": 29.146
+        },
+        {
+          "w": "snap",
+          "start": 29.159,
+          "end": 29.547
+        },
+        {
+          "w": "shut",
+          "start": 29.559,
+          "end": 29.971
+        },
+        {
+          "w": "the",
+          "start": 30.221,
+          "end": 30.334
+        },
+        {
+          "w": "second",
+          "start": 30.346,
+          "end": 30.784
+        },
+        {
+          "w": "heart",
+          "start": 30.797,
+          "end": 31.109
+        },
+        {
+          "w": "sound",
+          "start": 31.121,
+          "end": 31.596
+        },
+        {
+          "w": "dub",
+          "start": 31.771,
+          "end": 32.172
+        },
+        {
+          "w": "and",
+          "start": 33.612,
+          "end": 33.8
+        },
+        {
+          "w": "in",
+          "start": 33.812,
+          "end": 33.962
+        },
+        {
+          "w": "ventricular",
+          "start": 33.974,
+          "end": 34.575
+        },
+        {
+          "w": "filling",
+          "start": 34.587,
+          "end": 35.037
+        },
+        {
+          "w": "the",
+          "start": 35.312,
+          "end": 35.525
+        },
+        {
+          "w": "av",
+          "start": 35.537,
+          "end": 35.862
+        },
+        {
+          "w": "valves",
+          "start": 35.874,
+          "end": 36.325
+        },
+        {
+          "w": "open",
+          "start": 36.337,
+          "end": 36.762
+        },
+        {
+          "w": "and",
+          "start": 36.775,
+          "end": 36.962
+        },
+        {
+          "w": "it",
+          "start": 36.974,
+          "end": 37.112
+        },
+        {
+          "w": "all",
+          "start": 37.124,
+          "end": 37.349
+        },
+        {
+          "w": "begins",
+          "start": 37.362,
+          "end": 37.749
+        },
+        {
+          "w": "again",
+          "start": 37.762,
+          "end": 38.262
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1269,
+      "startFrame": 12060
+    },
+    {
+      "index": 14,
+      "type": "figure",
+      "hash": "fb6b014cc486",
+      "narration": "Both ventricles pump the same volume, but not against the same pressure. The left ventricle generates about 120 millimetres of mercury, matched in the aorta. The right ventricle needs only about 25, matched in the pulmonary artery. That is why the left ventricular wall is about three times thicker.",
+      "audioFile": "audio/vo/human-heart/H01/scene-14.mp3",
+      "voDurationInSeconds": 25.704,
+      "voDurationInFrames": 772,
+      "captions": [
+        {
+          "text": "Both ventricles pump the same volume, but",
+          "start": 0.1,
+          "end": 3.013
+        },
+        {
+          "text": "not against the same pressure.",
+          "start": 3.013,
+          "end": 4.913
+        },
+        {
+          "text": "The left ventricle generates about 120",
+          "start": 6.092,
+          "end": 9.292
+        },
+        {
+          "text": "millimetres of mercury, matched in the",
+          "start": 9.292,
+          "end": 11.692
+        },
+        {
+          "text": "aorta. The right ventricle needs only",
+          "start": 11.692,
+          "end": 15.544
+        },
+        {
+          "text": "about 25, matched in the pulmonary artery.",
+          "start": 15.544,
+          "end": 19.044
+        },
+        {
+          "text": "That is why the left ventricular wall is",
+          "start": 20.76,
+          "end": 23.185
+        },
+        {
+          "text": "about three times thicker.",
+          "start": 23.185,
+          "end": 24.985
+        }
+      ],
+      "words": [
+        {
+          "w": "both",
+          "start": 0.1,
+          "end": 0.475
+        },
+        {
+          "w": "ventricles",
+          "start": 0.487,
+          "end": 1.175
+        },
+        {
+          "w": "pump",
+          "start": 1.188,
+          "end": 1.512
+        },
+        {
+          "w": "the",
+          "start": 1.525,
+          "end": 1.625
+        },
+        {
+          "w": "same",
+          "start": 1.637,
+          "end": 1.987
+        },
+        {
+          "w": "volume",
+          "start": 2,
+          "end": 2.538
+        },
+        {
+          "w": "but",
+          "start": 2.8,
+          "end": 3
+        },
+        {
+          "w": "not",
+          "start": 3.013,
+          "end": 3.263
+        },
+        {
+          "w": "against",
+          "start": 3.275,
+          "end": 3.725
+        },
+        {
+          "w": "the",
+          "start": 3.737,
+          "end": 3.85
+        },
+        {
+          "w": "same",
+          "start": 3.862,
+          "end": 4.188
+        },
+        {
+          "w": "pressure",
+          "start": 4.2,
+          "end": 4.713
+        },
+        {
+          "w": "the",
+          "start": 6.092,
+          "end": 6.229
+        },
+        {
+          "w": "left",
+          "start": 6.242,
+          "end": 6.604
+        },
+        {
+          "w": "ventricle",
+          "start": 6.617,
+          "end": 7.155
+        },
+        {
+          "w": "generates",
+          "start": 7.167,
+          "end": 7.717
+        },
+        {
+          "w": "about",
+          "start": 7.729,
+          "end": 8.117
+        },
+        {
+          "w": "120",
+          "start": 8.13,
+          "end": 9.28
+        },
+        {
+          "w": "millimetres",
+          "start": 9.292,
+          "end": 9.942
+        },
+        {
+          "w": "of",
+          "start": 9.954,
+          "end": 10.104
+        },
+        {
+          "w": "mercury",
+          "start": 10.117,
+          "end": 10.692
+        },
+        {
+          "w": "matched",
+          "start": 10.93,
+          "end": 11.417
+        },
+        {
+          "w": "in",
+          "start": 11.43,
+          "end": 11.542
+        },
+        {
+          "w": "the",
+          "start": 11.555,
+          "end": 11.68
+        },
+        {
+          "w": "aorta",
+          "start": 11.692,
+          "end": 12.192
+        },
+        {
+          "w": "the",
+          "start": 13.644,
+          "end": 13.782
+        },
+        {
+          "w": "right",
+          "start": 13.794,
+          "end": 14.157
+        },
+        {
+          "w": "ventricle",
+          "start": 14.169,
+          "end": 14.719
+        },
+        {
+          "w": "needs",
+          "start": 14.732,
+          "end": 15.169
+        },
+        {
+          "w": "only",
+          "start": 15.181,
+          "end": 15.532
+        },
+        {
+          "w": "about",
+          "start": 15.544,
+          "end": 15.894
+        },
+        {
+          "w": "25",
+          "start": 15.907,
+          "end": 16.719
+        },
+        {
+          "w": "matched",
+          "start": 16.944,
+          "end": 17.407
+        },
+        {
+          "w": "in",
+          "start": 17.419,
+          "end": 17.506
+        },
+        {
+          "w": "the",
+          "start": 17.519,
+          "end": 17.607
+        },
+        {
+          "w": "pulmonary",
+          "start": 17.619,
+          "end": 18.344
+        },
+        {
+          "w": "artery",
+          "start": 18.357,
+          "end": 18.844
+        },
+        {
+          "w": "that",
+          "start": 20.76,
+          "end": 21.047
+        },
+        {
+          "w": "is",
+          "start": 21.06,
+          "end": 21.21
+        },
+        {
+          "w": "why",
+          "start": 21.223,
+          "end": 21.46
+        },
+        {
+          "w": "the",
+          "start": 21.473,
+          "end": 21.56
+        },
+        {
+          "w": "left",
+          "start": 21.573,
+          "end": 21.91
+        },
+        {
+          "w": "ventricular",
+          "start": 21.922,
+          "end": 22.61
+        },
+        {
+          "w": "wall",
+          "start": 22.622,
+          "end": 23.023
+        },
+        {
+          "w": "is",
+          "start": 23.035,
+          "end": 23.172
+        },
+        {
+          "w": "about",
+          "start": 23.185,
+          "end": 23.598
+        },
+        {
+          "w": "three",
+          "start": 23.61,
+          "end": 23.885
+        },
+        {
+          "w": "times",
+          "start": 23.898,
+          "end": 24.322
+        },
+        {
+          "w": "thicker",
+          "start": 24.335,
+          "end": 24.785
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 863,
+      "startFrame": 13329
+    },
+    {
+      "index": 15,
+      "type": "example",
+      "hash": "1296d5cac9db",
+      "narration": "Now a worked example: cardiac output, the volume each ventricle pumps per minute. It equals heart rate times stroke volume. Take a resting heart rate of 70 beats per minute, and a stroke volume of 70 millilitres per beat. Multiply: 70 times 70 gives 4,900 millilitres per minute. That is about 4.9 litres, close to an adult's entire blood volume, every minute.",
+      "audioFile": "audio/vo/human-heart/H01/scene-15.mp3",
+      "voDurationInSeconds": 34.008,
+      "voDurationInFrames": 1021,
+      "captions": [
+        {
+          "text": "Now a worked example:",
+          "start": 0.1,
+          "end": 1.912
+        },
+        {
+          "text": "cardiac output, the volume each ventricle",
+          "start": 1.962,
+          "end": 4.938
+        },
+        {
+          "text": "pumps per minute.",
+          "start": 4.938,
+          "end": 6.2
+        },
+        {
+          "text": "It equals heart rate times stroke volume.",
+          "start": 7.436,
+          "end": 10.235999999999999
+        },
+        {
+          "text": "Take a resting heart rate of 70 beats per",
+          "start": 11.46,
+          "end": 14.023
+        },
+        {
+          "text": "minute, and a stroke volume of 70",
+          "start": 14.023,
+          "end": 16.535
+        },
+        {
+          "text": "millilitres per beat.",
+          "start": 16.535,
+          "end": 18.06
+        },
+        {
+          "text": "Multiply: 70 times 70 gives 4,900",
+          "start": 19.276,
+          "end": 23.464
+        },
+        {
+          "text": "millilitres per minute.",
+          "start": 23.464,
+          "end": 25.026
+        },
+        {
+          "text": "That is about 4.9 litres, close to an",
+          "start": 26.728,
+          "end": 30.041
+        },
+        {
+          "text": "adult's entire blood volume, every minute.",
+          "start": 30.041,
+          "end": 33.241
+        }
+      ],
+      "words": [
+        {
+          "w": "now",
+          "start": 0.1,
+          "end": 0.463
+        },
+        {
+          "w": "a",
+          "start": 0.475,
+          "end": 0.6
+        },
+        {
+          "w": "worked",
+          "start": 0.613,
+          "end": 0.963
+        },
+        {
+          "w": "example",
+          "start": 0.975,
+          "end": 1.712
+        },
+        {
+          "w": "cardiac",
+          "start": 1.962,
+          "end": 2.537
+        },
+        {
+          "w": "output",
+          "start": 2.55,
+          "end": 3.188
+        },
+        {
+          "w": "the",
+          "start": 3.4,
+          "end": 3.512
+        },
+        {
+          "w": "volume",
+          "start": 3.525,
+          "end": 4.088
+        },
+        {
+          "w": "each",
+          "start": 4.1,
+          "end": 4.387
+        },
+        {
+          "w": "ventricle",
+          "start": 4.4,
+          "end": 4.925
+        },
+        {
+          "w": "pumps",
+          "start": 4.938,
+          "end": 5.325
+        },
+        {
+          "w": "per",
+          "start": 5.338,
+          "end": 5.538
+        },
+        {
+          "w": "minute",
+          "start": 5.55,
+          "end": 6
+        },
+        {
+          "w": "it",
+          "start": 7.436,
+          "end": 7.623
+        },
+        {
+          "w": "equals",
+          "start": 7.636,
+          "end": 8.074
+        },
+        {
+          "w": "heart",
+          "start": 8.086,
+          "end": 8.399
+        },
+        {
+          "w": "rate",
+          "start": 8.411,
+          "end": 8.661
+        },
+        {
+          "w": "times",
+          "start": 8.674,
+          "end": 9.086
+        },
+        {
+          "w": "stroke",
+          "start": 9.098,
+          "end": 9.474
+        },
+        {
+          "w": "volume",
+          "start": 9.486,
+          "end": 10.036
+        },
+        {
+          "w": "take",
+          "start": 11.46,
+          "end": 11.673
+        },
+        {
+          "w": "a",
+          "start": 11.685,
+          "end": 11.723
+        },
+        {
+          "w": "resting",
+          "start": 11.735,
+          "end": 12.21
+        },
+        {
+          "w": "heart",
+          "start": 12.223,
+          "end": 12.548
+        },
+        {
+          "w": "rate",
+          "start": 12.56,
+          "end": 12.785
+        },
+        {
+          "w": "of",
+          "start": 12.798,
+          "end": 12.923
+        },
+        {
+          "w": "70",
+          "start": 12.935,
+          "end": 13.398
+        },
+        {
+          "w": "beats",
+          "start": 13.41,
+          "end": 13.798
+        },
+        {
+          "w": "per",
+          "start": 13.81,
+          "end": 14.01
+        },
+        {
+          "w": "minute",
+          "start": 14.023,
+          "end": 14.423
+        },
+        {
+          "w": "and",
+          "start": 14.76,
+          "end": 14.91
+        },
+        {
+          "w": "a",
+          "start": 14.923,
+          "end": 14.973
+        },
+        {
+          "w": "stroke",
+          "start": 14.985,
+          "end": 15.398
+        },
+        {
+          "w": "volume",
+          "start": 15.41,
+          "end": 15.848
+        },
+        {
+          "w": "of",
+          "start": 15.86,
+          "end": 16.01
+        },
+        {
+          "w": "70",
+          "start": 16.023,
+          "end": 16.523
+        },
+        {
+          "w": "millilitres",
+          "start": 16.535,
+          "end": 17.198
+        },
+        {
+          "w": "per",
+          "start": 17.21,
+          "end": 17.41
+        },
+        {
+          "w": "beat",
+          "start": 17.422,
+          "end": 17.86
+        },
+        {
+          "w": "multiply",
+          "start": 19.276,
+          "end": 20.064
+        },
+        {
+          "w": "70",
+          "start": 20.251,
+          "end": 20.751
+        },
+        {
+          "w": "times",
+          "start": 20.764,
+          "end": 21.151
+        },
+        {
+          "w": "70",
+          "start": 21.164,
+          "end": 21.626
+        },
+        {
+          "w": "gives",
+          "start": 21.639,
+          "end": 22.001
+        },
+        {
+          "w": "4900",
+          "start": 22.014,
+          "end": 23.451
+        },
+        {
+          "w": "millilitres",
+          "start": 23.464,
+          "end": 24.139
+        },
+        {
+          "w": "per",
+          "start": 24.151,
+          "end": 24.376
+        },
+        {
+          "w": "minute",
+          "start": 24.389,
+          "end": 24.826
+        },
+        {
+          "w": "that",
+          "start": 26.728,
+          "end": 27.015
+        },
+        {
+          "w": "is",
+          "start": 27.028,
+          "end": 27.153
+        },
+        {
+          "w": "about",
+          "start": 27.166,
+          "end": 27.553
+        },
+        {
+          "w": "49",
+          "start": 27.566,
+          "end": 28.503
+        },
+        {
+          "w": "litres",
+          "start": 28.515,
+          "end": 29.09
+        },
+        {
+          "w": "close",
+          "start": 29.39,
+          "end": 29.715
+        },
+        {
+          "w": "to",
+          "start": 29.728,
+          "end": 29.866
+        },
+        {
+          "w": "an",
+          "start": 29.878,
+          "end": 30.028
+        },
+        {
+          "w": "adults",
+          "start": 30.041,
+          "end": 30.578
+        },
+        {
+          "w": "entire",
+          "start": 30.59,
+          "end": 31.09
+        },
+        {
+          "w": "blood",
+          "start": 31.103,
+          "end": 31.428
+        },
+        {
+          "w": "volume",
+          "start": 31.441,
+          "end": 31.978
+        },
+        {
+          "w": "every",
+          "start": 32.215,
+          "end": 32.553
+        },
+        {
+          "w": "minute",
+          "start": 32.566,
+          "end": 33.041
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1112,
+      "startFrame": 14192
+    },
+    {
+      "index": 16,
+      "type": "figure",
+      "hash": "ec2890b7bbfc",
+      "narration": "The heart muscle has its own supply: the coronary arteries, which leave the aortic root just above the aortic valve. The left main coronary artery divides quickly. The left anterior descending artery feeds the front of the left ventricle and the septum. The circumflex wraps around to the side and back. The right coronary artery supplies the right heart, and usually the SA and AV nodes. The left ventricle is perfused mainly during diastole. And a blocked coronary artery starves the muscle beyond it: a myocardial infarction.",
+      "audioFile": "audio/vo/human-heart/H01/scene-16.mp3",
+      "voDurationInSeconds": 42.936,
+      "voDurationInFrames": 1289,
+      "captions": [
+        {
+          "text": "The heart muscle has its own supply:",
+          "start": 0.1,
+          "end": 2.562
+        },
+        {
+          "text": "the coronary arteries, which leave the",
+          "start": 2.562,
+          "end": 4.987
+        },
+        {
+          "text": "aortic root just above the aortic valve.",
+          "start": 4.987,
+          "end": 7.825
+        },
+        {
+          "text": "The left main coronary artery divides",
+          "start": 9.092,
+          "end": 11.442
+        },
+        {
+          "text": "quickly. The left anterior descending",
+          "start": 11.442,
+          "end": 15.13
+        },
+        {
+          "text": "artery feeds the front of the left",
+          "start": 15.13,
+          "end": 17.18
+        },
+        {
+          "text": "ventricle and the septum.",
+          "start": 17.18,
+          "end": 18.88
+        },
+        {
+          "text": "The circumflex wraps around to the side",
+          "start": 20.092,
+          "end": 22.467
+        },
+        {
+          "text": "and back. The right coronary artery",
+          "start": 22.467,
+          "end": 26.075
+        },
+        {
+          "text": "supplies the right heart, and usually the",
+          "start": 26.075,
+          "end": 28.65
+        },
+        {
+          "text": "SA and AV nodes. The left ventricle is",
+          "start": 28.65,
+          "end": 33.178
+        },
+        {
+          "text": "perfused mainly during diastole.",
+          "start": 33.178,
+          "end": 35.653000000000006
+        },
+        {
+          "text": "And a blocked coronary artery starves the",
+          "start": 36.816,
+          "end": 39.103
+        },
+        {
+          "text": "muscle beyond it:",
+          "start": 39.103,
+          "end": 40.416000000000004
+        },
+        {
+          "text": "a myocardial infarction.",
+          "start": 40.428,
+          "end": 42.203
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.1,
+          "end": 0.238
+        },
+        {
+          "w": "heart",
+          "start": 0.25,
+          "end": 0.6
+        },
+        {
+          "w": "muscle",
+          "start": 0.613,
+          "end": 1.025
+        },
+        {
+          "w": "has",
+          "start": 1.038,
+          "end": 1.288
+        },
+        {
+          "w": "its",
+          "start": 1.3,
+          "end": 1.512
+        },
+        {
+          "w": "own",
+          "start": 1.525,
+          "end": 1.737
+        },
+        {
+          "w": "supply",
+          "start": 1.75,
+          "end": 2.362
+        },
+        {
+          "w": "the",
+          "start": 2.562,
+          "end": 2.675
+        },
+        {
+          "w": "coronary",
+          "start": 2.688,
+          "end": 3.325
+        },
+        {
+          "w": "arteries",
+          "start": 3.337,
+          "end": 3.962
+        },
+        {
+          "w": "which",
+          "start": 4.263,
+          "end": 4.475
+        },
+        {
+          "w": "leave",
+          "start": 4.487,
+          "end": 4.737
+        },
+        {
+          "w": "the",
+          "start": 4.75,
+          "end": 4.975
+        },
+        {
+          "w": "aortic",
+          "start": 4.987,
+          "end": 5.438
+        },
+        {
+          "w": "root",
+          "start": 5.45,
+          "end": 5.725
+        },
+        {
+          "w": "just",
+          "start": 5.737,
+          "end": 6.075
+        },
+        {
+          "w": "above",
+          "start": 6.088,
+          "end": 6.413
+        },
+        {
+          "w": "the",
+          "start": 6.425,
+          "end": 6.675
+        },
+        {
+          "w": "aortic",
+          "start": 6.688,
+          "end": 7.125
+        },
+        {
+          "w": "valve",
+          "start": 7.138,
+          "end": 7.625
+        },
+        {
+          "w": "the",
+          "start": 9.092,
+          "end": 9.217
+        },
+        {
+          "w": "left",
+          "start": 9.23,
+          "end": 9.58
+        },
+        {
+          "w": "main",
+          "start": 9.592,
+          "end": 9.817
+        },
+        {
+          "w": "coronary",
+          "start": 9.83,
+          "end": 10.517
+        },
+        {
+          "w": "artery",
+          "start": 10.53,
+          "end": 10.905
+        },
+        {
+          "w": "divides",
+          "start": 10.917,
+          "end": 11.43
+        },
+        {
+          "w": "quickly",
+          "start": 11.442,
+          "end": 11.992
+        },
+        {
+          "w": "the",
+          "start": 13.38,
+          "end": 13.518
+        },
+        {
+          "w": "left",
+          "start": 13.53,
+          "end": 13.905
+        },
+        {
+          "w": "anterior",
+          "start": 13.918,
+          "end": 14.455
+        },
+        {
+          "w": "descending",
+          "start": 14.468,
+          "end": 15.118
+        },
+        {
+          "w": "artery",
+          "start": 15.13,
+          "end": 15.605
+        },
+        {
+          "w": "feeds",
+          "start": 15.618,
+          "end": 16.018
+        },
+        {
+          "w": "the",
+          "start": 16.03,
+          "end": 16.155
+        },
+        {
+          "w": "front",
+          "start": 16.168,
+          "end": 16.543
+        },
+        {
+          "w": "of",
+          "start": 16.555,
+          "end": 16.655
+        },
+        {
+          "w": "the",
+          "start": 16.668,
+          "end": 16.78
+        },
+        {
+          "w": "left",
+          "start": 16.793,
+          "end": 17.168
+        },
+        {
+          "w": "ventricle",
+          "start": 17.18,
+          "end": 17.768
+        },
+        {
+          "w": "and",
+          "start": 17.78,
+          "end": 17.968
+        },
+        {
+          "w": "the",
+          "start": 17.98,
+          "end": 18.068
+        },
+        {
+          "w": "septum",
+          "start": 18.08,
+          "end": 18.68
+        },
+        {
+          "w": "the",
+          "start": 20.092,
+          "end": 20.23
+        },
+        {
+          "w": "circumflex",
+          "start": 20.242,
+          "end": 21.067
+        },
+        {
+          "w": "wraps",
+          "start": 21.079,
+          "end": 21.417
+        },
+        {
+          "w": "around",
+          "start": 21.43,
+          "end": 21.817
+        },
+        {
+          "w": "to",
+          "start": 21.829,
+          "end": 21.917
+        },
+        {
+          "w": "the",
+          "start": 21.93,
+          "end": 22.042
+        },
+        {
+          "w": "side",
+          "start": 22.055,
+          "end": 22.454
+        },
+        {
+          "w": "and",
+          "start": 22.467,
+          "end": 22.642
+        },
+        {
+          "w": "back",
+          "start": 22.655,
+          "end": 23.067
+        },
+        {
+          "w": "the",
+          "start": 24.5,
+          "end": 24.637
+        },
+        {
+          "w": "right",
+          "start": 24.65,
+          "end": 24.987
+        },
+        {
+          "w": "coronary",
+          "start": 25,
+          "end": 25.662
+        },
+        {
+          "w": "artery",
+          "start": 25.675,
+          "end": 26.062
+        },
+        {
+          "w": "supplies",
+          "start": 26.075,
+          "end": 26.637
+        },
+        {
+          "w": "the",
+          "start": 26.65,
+          "end": 26.737
+        },
+        {
+          "w": "right",
+          "start": 26.75,
+          "end": 27.125
+        },
+        {
+          "w": "heart",
+          "start": 27.137,
+          "end": 27.537
+        },
+        {
+          "w": "and",
+          "start": 27.75,
+          "end": 28.025
+        },
+        {
+          "w": "usually",
+          "start": 28.037,
+          "end": 28.487
+        },
+        {
+          "w": "the",
+          "start": 28.5,
+          "end": 28.637
+        },
+        {
+          "w": "sa",
+          "start": 28.65,
+          "end": 28.962
+        },
+        {
+          "w": "and",
+          "start": 28.975,
+          "end": 29.225
+        },
+        {
+          "w": "av",
+          "start": 29.237,
+          "end": 29.525
+        },
+        {
+          "w": "nodes",
+          "start": 29.537,
+          "end": 30
+        },
+        {
+          "w": "the",
+          "start": 31.928,
+          "end": 32.053
+        },
+        {
+          "w": "left",
+          "start": 32.065,
+          "end": 32.428
+        },
+        {
+          "w": "ventricle",
+          "start": 32.44,
+          "end": 33.003
+        },
+        {
+          "w": "is",
+          "start": 33.015,
+          "end": 33.165
+        },
+        {
+          "w": "perfused",
+          "start": 33.178,
+          "end": 33.853
+        },
+        {
+          "w": "mainly",
+          "start": 33.865,
+          "end": 34.315
+        },
+        {
+          "w": "during",
+          "start": 34.328,
+          "end": 34.728
+        },
+        {
+          "w": "diastole",
+          "start": 34.74,
+          "end": 35.453
+        },
+        {
+          "w": "and",
+          "start": 36.816,
+          "end": 36.978
+        },
+        {
+          "w": "a",
+          "start": 36.991,
+          "end": 37.041
+        },
+        {
+          "w": "blocked",
+          "start": 37.053,
+          "end": 37.453
+        },
+        {
+          "w": "coronary",
+          "start": 37.466,
+          "end": 38.116
+        },
+        {
+          "w": "artery",
+          "start": 38.128,
+          "end": 38.528
+        },
+        {
+          "w": "starves",
+          "start": 38.541,
+          "end": 38.966
+        },
+        {
+          "w": "the",
+          "start": 38.978,
+          "end": 39.091
+        },
+        {
+          "w": "muscle",
+          "start": 39.103,
+          "end": 39.566
+        },
+        {
+          "w": "beyond",
+          "start": 39.578,
+          "end": 39.966
+        },
+        {
+          "w": "it",
+          "start": 39.978,
+          "end": 40.216
+        },
+        {
+          "w": "a",
+          "start": 40.428,
+          "end": 40.441
+        },
+        {
+          "w": "myocardial",
+          "start": 40.453,
+          "end": 41.228
+        },
+        {
+          "w": "infarction",
+          "start": 41.241,
+          "end": 42.003
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 1380,
+      "startFrame": 15304
+    },
+    {
+      "index": 17,
+      "type": "check",
+      "hash": "eca310bbad6b",
+      "narration": "Time for a knowledge check. Why is the wall of the left ventricle so much thicker than the wall of the right ventricle? Pause here and think it through.",
+      "audioFile": "audio/vo/human-heart/H01/scene-17.mp3",
+      "voDurationInSeconds": 11.424,
+      "voDurationInFrames": 343,
+      "captions": [
+        {
+          "text": "Time for a knowledge check.",
+          "start": 0.1,
+          "end": 1.5999999999999999
+        },
+        {
+          "text": "Why is the wall of the left ventricle so",
+          "start": 2.828,
+          "end": 5.14
+        },
+        {
+          "text": "much thicker than the wall of the right",
+          "start": 5.14,
+          "end": 6.903
+        },
+        {
+          "text": "ventricle? Pause here and think it",
+          "start": 6.903,
+          "end": 10.154
+        },
+        {
+          "text": "through.",
+          "start": 10.154,
+          "end": 10.703999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "time",
+          "start": 0.1,
+          "end": 0.387
+        },
+        {
+          "w": "for",
+          "start": 0.4,
+          "end": 0.55
+        },
+        {
+          "w": "a",
+          "start": 0.562,
+          "end": 0.6
+        },
+        {
+          "w": "knowledge",
+          "start": 0.613,
+          "end": 1.038
+        },
+        {
+          "w": "check",
+          "start": 1.05,
+          "end": 1.4
+        },
+        {
+          "w": "why",
+          "start": 2.828,
+          "end": 3.19
+        },
+        {
+          "w": "is",
+          "start": 3.203,
+          "end": 3.303
+        },
+        {
+          "w": "the",
+          "start": 3.315,
+          "end": 3.428
+        },
+        {
+          "w": "wall",
+          "start": 3.44,
+          "end": 3.715
+        },
+        {
+          "w": "of",
+          "start": 3.728,
+          "end": 3.828
+        },
+        {
+          "w": "the",
+          "start": 3.84,
+          "end": 3.941
+        },
+        {
+          "w": "left",
+          "start": 3.953,
+          "end": 4.303
+        },
+        {
+          "w": "ventricle",
+          "start": 4.316,
+          "end": 4.853
+        },
+        {
+          "w": "so",
+          "start": 4.865,
+          "end": 5.128
+        },
+        {
+          "w": "much",
+          "start": 5.14,
+          "end": 5.428
+        },
+        {
+          "w": "thicker",
+          "start": 5.441,
+          "end": 5.728
+        },
+        {
+          "w": "than",
+          "start": 5.74,
+          "end": 5.89
+        },
+        {
+          "w": "the",
+          "start": 5.903,
+          "end": 6.003
+        },
+        {
+          "w": "wall",
+          "start": 6.015,
+          "end": 6.29
+        },
+        {
+          "w": "of",
+          "start": 6.303,
+          "end": 6.415
+        },
+        {
+          "w": "the",
+          "start": 6.428,
+          "end": 6.515
+        },
+        {
+          "w": "right",
+          "start": 6.528,
+          "end": 6.89
+        },
+        {
+          "w": "ventricle",
+          "start": 6.903,
+          "end": 7.54
+        },
+        {
+          "w": "pause",
+          "start": 8.916,
+          "end": 9.191
+        },
+        {
+          "w": "here",
+          "start": 9.204,
+          "end": 9.579
+        },
+        {
+          "w": "and",
+          "start": 9.591,
+          "end": 9.791
+        },
+        {
+          "w": "think",
+          "start": 9.804,
+          "end": 10.029
+        },
+        {
+          "w": "it",
+          "start": 10.041,
+          "end": 10.141
+        },
+        {
+          "w": "through",
+          "start": 10.154,
+          "end": 10.504
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 221,
+      "durationInFrames": 598,
+      "startFrame": 16684
+    },
+    {
+      "index": 18,
+      "type": "answer",
+      "hash": "d7e3e577d8b5",
+      "narration": "Because the left ventricle must push blood through the entire systemic circulation, against a pressure of about 120 millimetres of mercury. The right ventricle only has to reach the lungs, against about 25. The systemic circuit is long, with high resistance. The pulmonary circuit is short, with low pressure. And more pressure demands more muscle.",
+      "audioFile": "audio/vo/human-heart/H01/scene-18.mp3",
+      "voDurationInSeconds": 29.424,
+      "voDurationInFrames": 883,
+      "captions": [
+        {
+          "text": "Because the left ventricle must push blood",
+          "start": 0.1,
+          "end": 2.5
+        },
+        {
+          "text": "through the entire systemic circulation,",
+          "start": 2.5,
+          "end": 5.025
+        },
+        {
+          "text": "against a pressure of about 120",
+          "start": 5.088,
+          "end": 7.812
+        },
+        {
+          "text": "millimetres of mercury.",
+          "start": 7.812,
+          "end": 9.362
+        },
+        {
+          "text": "The right ventricle only has to reach the",
+          "start": 10.58,
+          "end": 12.918
+        },
+        {
+          "text": "lungs, against about 25.",
+          "start": 12.918,
+          "end": 15.543
+        },
+        {
+          "text": "The systemic circuit is long, with high",
+          "start": 17.288,
+          "end": 19.726
+        },
+        {
+          "text": "resistance. The pulmonary circuit is",
+          "start": 19.726,
+          "end": 23.224
+        },
+        {
+          "text": "short, with low pressure.",
+          "start": 23.224,
+          "end": 25.061999999999998
+        },
+        {
+          "text": "And more pressure demands more muscle.",
+          "start": 26.296,
+          "end": 28.657999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "because",
+          "start": 0.1,
+          "end": 0.475
+        },
+        {
+          "w": "the",
+          "start": 0.487,
+          "end": 0.588
+        },
+        {
+          "w": "left",
+          "start": 0.6,
+          "end": 0.975
+        },
+        {
+          "w": "ventricle",
+          "start": 0.988,
+          "end": 1.538
+        },
+        {
+          "w": "must",
+          "start": 1.55,
+          "end": 1.837
+        },
+        {
+          "w": "push",
+          "start": 1.85,
+          "end": 2.138
+        },
+        {
+          "w": "blood",
+          "start": 2.15,
+          "end": 2.487
+        },
+        {
+          "w": "through",
+          "start": 2.5,
+          "end": 2.712
+        },
+        {
+          "w": "the",
+          "start": 2.725,
+          "end": 2.888
+        },
+        {
+          "w": "entire",
+          "start": 2.9,
+          "end": 3.387
+        },
+        {
+          "w": "systemic",
+          "start": 3.4,
+          "end": 3.962
+        },
+        {
+          "w": "circulation",
+          "start": 3.975,
+          "end": 4.825
+        },
+        {
+          "w": "against",
+          "start": 5.088,
+          "end": 5.575
+        },
+        {
+          "w": "a",
+          "start": 5.588,
+          "end": 5.65
+        },
+        {
+          "w": "pressure",
+          "start": 5.662,
+          "end": 6.137
+        },
+        {
+          "w": "of",
+          "start": 6.15,
+          "end": 6.288
+        },
+        {
+          "w": "about",
+          "start": 6.3,
+          "end": 6.675
+        },
+        {
+          "w": "120",
+          "start": 6.688,
+          "end": 7.8
+        },
+        {
+          "w": "millimetres",
+          "start": 7.812,
+          "end": 8.438
+        },
+        {
+          "w": "of",
+          "start": 8.45,
+          "end": 8.612
+        },
+        {
+          "w": "mercury",
+          "start": 8.625,
+          "end": 9.162
+        },
+        {
+          "w": "the",
+          "start": 10.58,
+          "end": 10.705
+        },
+        {
+          "w": "right",
+          "start": 10.718,
+          "end": 11.068
+        },
+        {
+          "w": "ventricle",
+          "start": 11.08,
+          "end": 11.742
+        },
+        {
+          "w": "only",
+          "start": 11.755,
+          "end": 12.13
+        },
+        {
+          "w": "has",
+          "start": 12.143,
+          "end": 12.355
+        },
+        {
+          "w": "to",
+          "start": 12.367,
+          "end": 12.492
+        },
+        {
+          "w": "reach",
+          "start": 12.505,
+          "end": 12.78
+        },
+        {
+          "w": "the",
+          "start": 12.793,
+          "end": 12.905
+        },
+        {
+          "w": "lungs",
+          "start": 12.918,
+          "end": 13.393
+        },
+        {
+          "w": "against",
+          "start": 13.668,
+          "end": 14.143
+        },
+        {
+          "w": "about",
+          "start": 14.155,
+          "end": 14.505
+        },
+        {
+          "w": "25",
+          "start": 14.518,
+          "end": 15.343
+        },
+        {
+          "w": "the",
+          "start": 17.288,
+          "end": 17.4
+        },
+        {
+          "w": "systemic",
+          "start": 17.413,
+          "end": 18
+        },
+        {
+          "w": "circuit",
+          "start": 18.013,
+          "end": 18.438
+        },
+        {
+          "w": "is",
+          "start": 18.45,
+          "end": 18.625
+        },
+        {
+          "w": "long",
+          "start": 18.638,
+          "end": 19.05
+        },
+        {
+          "w": "with",
+          "start": 19.25,
+          "end": 19.413
+        },
+        {
+          "w": "high",
+          "start": 19.425,
+          "end": 19.713
+        },
+        {
+          "w": "resistance",
+          "start": 19.726,
+          "end": 20.513
+        },
+        {
+          "w": "the",
+          "start": 21.912,
+          "end": 22.012
+        },
+        {
+          "w": "pulmonary",
+          "start": 22.024,
+          "end": 22.649
+        },
+        {
+          "w": "circuit",
+          "start": 22.662,
+          "end": 23.112
+        },
+        {
+          "w": "is",
+          "start": 23.124,
+          "end": 23.212
+        },
+        {
+          "w": "short",
+          "start": 23.224,
+          "end": 23.624
+        },
+        {
+          "w": "with",
+          "start": 23.849,
+          "end": 24.012
+        },
+        {
+          "w": "low",
+          "start": 24.024,
+          "end": 24.249
+        },
+        {
+          "w": "pressure",
+          "start": 24.262,
+          "end": 24.862
+        },
+        {
+          "w": "and",
+          "start": 26.296,
+          "end": 26.496
+        },
+        {
+          "w": "more",
+          "start": 26.508,
+          "end": 26.721
+        },
+        {
+          "w": "pressure",
+          "start": 26.733,
+          "end": 27.183
+        },
+        {
+          "w": "demands",
+          "start": 27.196,
+          "end": 27.758
+        },
+        {
+          "w": "more",
+          "start": 27.771,
+          "end": 27.971
+        },
+        {
+          "w": "muscle",
+          "start": 27.983,
+          "end": 28.458
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 57,
+      "durationInFrames": 974,
+      "startFrame": 17282
+    },
+    {
+      "index": 19,
+      "type": "recap",
+      "hash": "53687bfad885",
+      "narration": "Let's recap. Four chambers work as two pumps in series. Four valves keep blood moving one way, from the venae cavae to the lungs, and from the lungs to the aorta. And every beat is timed by the conduction system, from the SA node to the Purkinje fibres, which you can read on the ECG. Know this pump well, and every cardiac assessment you make will make sense.",
+      "audioFile": "audio/vo/human-heart/H01/scene-19.mp3",
+      "voDurationInSeconds": 29.904,
+      "voDurationInFrames": 898,
+      "captions": [
+        {
+          "text": "Let's recap! Four chambers work as two",
+          "start": 0.1,
+          "end": 4.13
+        },
+        {
+          "text": "pumps in series. Four valves keep blood",
+          "start": 4.13,
+          "end": 8.158
+        },
+        {
+          "text": "moving one way, from the venae cavae to",
+          "start": 8.158,
+          "end": 10.783
+        },
+        {
+          "text": "the lungs, and from the lungs to the",
+          "start": 10.783,
+          "end": 12.833
+        },
+        {
+          "text": "aorta. And every beat is timed by the",
+          "start": 12.833,
+          "end": 16.649
+        },
+        {
+          "text": "conduction system, from the SA node to the",
+          "start": 16.649,
+          "end": 19.286
+        },
+        {
+          "text": "Purkinje fibres, which you can read on the",
+          "start": 19.286,
+          "end": 21.936
+        },
+        {
+          "text": "ECG. Know this pump well, and every",
+          "start": 21.936,
+          "end": 26.519
+        },
+        {
+          "text": "cardiac assessment you make will make",
+          "start": 26.519,
+          "end": 28.444
+        },
+        {
+          "text": "sense.",
+          "start": 28.444,
+          "end": 29.144
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.1,
+          "end": 0.463
+        },
+        {
+          "w": "recap",
+          "start": 0.475,
+          "end": 1.05
+        },
+        {
+          "w": "four",
+          "start": 2.492,
+          "end": 2.854
+        },
+        {
+          "w": "chambers",
+          "start": 2.867,
+          "end": 3.417
+        },
+        {
+          "w": "work",
+          "start": 3.429,
+          "end": 3.755
+        },
+        {
+          "w": "as",
+          "start": 3.767,
+          "end": 3.967
+        },
+        {
+          "w": "two",
+          "start": 3.979,
+          "end": 4.117
+        },
+        {
+          "w": "pumps",
+          "start": 4.13,
+          "end": 4.505
+        },
+        {
+          "w": "in",
+          "start": 4.517,
+          "end": 4.655
+        },
+        {
+          "w": "series",
+          "start": 4.667,
+          "end": 5.267
+        },
+        {
+          "w": "four",
+          "start": 6.708,
+          "end": 7.121
+        },
+        {
+          "w": "valves",
+          "start": 7.133,
+          "end": 7.533
+        },
+        {
+          "w": "keep",
+          "start": 7.546,
+          "end": 7.821
+        },
+        {
+          "w": "blood",
+          "start": 7.833,
+          "end": 8.146
+        },
+        {
+          "w": "moving",
+          "start": 8.158,
+          "end": 8.521
+        },
+        {
+          "w": "one",
+          "start": 8.533,
+          "end": 8.846
+        },
+        {
+          "w": "way",
+          "start": 8.858,
+          "end": 9.183
+        },
+        {
+          "w": "from",
+          "start": 9.533,
+          "end": 9.745
+        },
+        {
+          "w": "the",
+          "start": 9.758,
+          "end": 9.908
+        },
+        {
+          "w": "venae",
+          "start": 9.921,
+          "end": 10.271
+        },
+        {
+          "w": "cavae",
+          "start": 10.283,
+          "end": 10.633
+        },
+        {
+          "w": "to",
+          "start": 10.646,
+          "end": 10.771
+        },
+        {
+          "w": "the",
+          "start": 10.783,
+          "end": 10.87
+        },
+        {
+          "w": "lungs",
+          "start": 10.883,
+          "end": 11.346
+        },
+        {
+          "w": "and",
+          "start": 11.596,
+          "end": 11.796
+        },
+        {
+          "w": "from",
+          "start": 11.808,
+          "end": 12.021
+        },
+        {
+          "w": "the",
+          "start": 12.033,
+          "end": 12.12
+        },
+        {
+          "w": "lungs",
+          "start": 12.133,
+          "end": 12.471
+        },
+        {
+          "w": "to",
+          "start": 12.483,
+          "end": 12.608
+        },
+        {
+          "w": "the",
+          "start": 12.62,
+          "end": 12.821
+        },
+        {
+          "w": "aorta",
+          "start": 12.833,
+          "end": 13.383
+        },
+        {
+          "w": "and",
+          "start": 14.836,
+          "end": 15.099
+        },
+        {
+          "w": "every",
+          "start": 15.111,
+          "end": 15.511
+        },
+        {
+          "w": "beat",
+          "start": 15.524,
+          "end": 15.824
+        },
+        {
+          "w": "is",
+          "start": 15.836,
+          "end": 15.986
+        },
+        {
+          "w": "timed",
+          "start": 15.998,
+          "end": 16.336
+        },
+        {
+          "w": "by",
+          "start": 16.349,
+          "end": 16.524
+        },
+        {
+          "w": "the",
+          "start": 16.536,
+          "end": 16.636
+        },
+        {
+          "w": "conduction",
+          "start": 16.649,
+          "end": 17.248
+        },
+        {
+          "w": "system",
+          "start": 17.261,
+          "end": 17.823
+        },
+        {
+          "w": "from",
+          "start": 18.123,
+          "end": 18.324
+        },
+        {
+          "w": "the",
+          "start": 18.336,
+          "end": 18.436
+        },
+        {
+          "w": "sa",
+          "start": 18.448,
+          "end": 18.698
+        },
+        {
+          "w": "node",
+          "start": 18.711,
+          "end": 19.049
+        },
+        {
+          "w": "to",
+          "start": 19.061,
+          "end": 19.161
+        },
+        {
+          "w": "the",
+          "start": 19.174,
+          "end": 19.273
+        },
+        {
+          "w": "purkinje",
+          "start": 19.286,
+          "end": 19.898
+        },
+        {
+          "w": "fibres",
+          "start": 19.911,
+          "end": 20.573
+        },
+        {
+          "w": "which",
+          "start": 20.824,
+          "end": 21.024
+        },
+        {
+          "w": "you",
+          "start": 21.036,
+          "end": 21.099
+        },
+        {
+          "w": "can",
+          "start": 21.111,
+          "end": 21.324
+        },
+        {
+          "w": "read",
+          "start": 21.336,
+          "end": 21.599
+        },
+        {
+          "w": "on",
+          "start": 21.611,
+          "end": 21.773
+        },
+        {
+          "w": "the",
+          "start": 21.786,
+          "end": 21.924
+        },
+        {
+          "w": "ecg",
+          "start": 21.936,
+          "end": 22.623
+        },
+        {
+          "w": "know",
+          "start": 24.544,
+          "end": 24.794
+        },
+        {
+          "w": "this",
+          "start": 24.806,
+          "end": 25.019
+        },
+        {
+          "w": "pump",
+          "start": 25.031,
+          "end": 25.331
+        },
+        {
+          "w": "well",
+          "start": 25.344,
+          "end": 25.732
+        },
+        {
+          "w": "and",
+          "start": 25.982,
+          "end": 26.156
+        },
+        {
+          "w": "every",
+          "start": 26.169,
+          "end": 26.506
+        },
+        {
+          "w": "cardiac",
+          "start": 26.519,
+          "end": 27.056
+        },
+        {
+          "w": "assessment",
+          "start": 27.069,
+          "end": 27.694
+        },
+        {
+          "w": "you",
+          "start": 27.706,
+          "end": 27.782
+        },
+        {
+          "w": "make",
+          "start": 27.794,
+          "end": 28.031
+        },
+        {
+          "w": "will",
+          "start": 28.044,
+          "end": 28.194
+        },
+        {
+          "w": "make",
+          "start": 28.206,
+          "end": 28.431
+        },
+        {
+          "w": "sense",
+          "start": 28.444,
+          "end": 28.944
+        }
+      ],
+      "leadFrames": 34,
+      "tailFrames": 221,
+      "durationInFrames": 1153,
+      "startFrame": 18256
+    }
+  ]
+}

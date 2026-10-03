@@ -1,0 +1,2314 @@
+{
+  "id": "V803",
+  "fps": 30,
+  "totalDurationInFrames": 6084,
+  "voice": {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "en-IN-NeerjaExpressiveNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about manual cleaning and high-level disinfection. This is where most of the work happens, and where one step can't be replaced by any other. By the end, you'll know the seven steps of manual cleaning, you'll see why brushing removes biofilm, and you'll learn how disinfection is done right.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-1.mp3",
+      "voDurationInSeconds": 21.24,
+      "voDurationInFrames": 638,
+      "leadFrames": 40,
+      "tailFrames": 44,
+      "durationInFrames": 722,
+      "startFrame": 0,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.098,
+          "end": 2.466
+        },
+        {
+          "text": "manual cleaning and high-level",
+          "start": 2.466,
+          "end": 4.149
+        },
+        {
+          "text": "disinfection. This is where most of the",
+          "start": 4.149,
+          "end": 7.079
+        },
+        {
+          "text": "work happens, and where one step can't be",
+          "start": 7.079,
+          "end": 9.603
+        },
+        {
+          "text": "replaced by any other.",
+          "start": 9.603,
+          "end": 11.27
+        },
+        {
+          "text": "By the end, you'll know the seven steps of",
+          "start": 11.935,
+          "end": 14.291
+        },
+        {
+          "text": "manual cleaning, you'll see why brushing",
+          "start": 14.291,
+          "end": 16.466
+        },
+        {
+          "text": "removes biofilm, and you'll learn how",
+          "start": 16.466,
+          "end": 18.69
+        },
+        {
+          "text": "disinfection is done right.",
+          "start": 18.69,
+          "end": 20.549
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.098,
+          "end": 0.23
+        },
+        {
+          "w": "this",
+          "start": 0.242,
+          "end": 0.471
+        },
+        {
+          "w": "video",
+          "start": 0.483,
+          "end": 0.927
+        },
+        {
+          "w": "were",
+          "start": 1.24,
+          "end": 1.372
+        },
+        {
+          "w": "going",
+          "start": 1.384,
+          "end": 1.625
+        },
+        {
+          "w": "to",
+          "start": 1.637,
+          "end": 1.733
+        },
+        {
+          "w": "talk",
+          "start": 1.745,
+          "end": 2.045
+        },
+        {
+          "w": "about",
+          "start": 2.057,
+          "end": 2.454
+        },
+        {
+          "w": "manual",
+          "start": 2.466,
+          "end": 2.899
+        },
+        {
+          "w": "cleaning",
+          "start": 2.911,
+          "end": 3.439
+        },
+        {
+          "w": "and",
+          "start": 3.451,
+          "end": 3.596
+        },
+        {
+          "w": "highlevel",
+          "start": 3.608,
+          "end": 4.137
+        },
+        {
+          "w": "disinfection",
+          "start": 4.149,
+          "end": 5.026
+        },
+        {
+          "w": "this",
+          "start": 5.877,
+          "end": 6.13
+        },
+        {
+          "w": "is",
+          "start": 6.142,
+          "end": 6.286
+        },
+        {
+          "w": "where",
+          "start": 6.298,
+          "end": 6.49
+        },
+        {
+          "w": "most",
+          "start": 6.502,
+          "end": 6.827
+        },
+        {
+          "w": "of",
+          "start": 6.839,
+          "end": 6.923
+        },
+        {
+          "w": "the",
+          "start": 6.935,
+          "end": 7.067
+        },
+        {
+          "w": "work",
+          "start": 7.079,
+          "end": 7.356
+        },
+        {
+          "w": "happens",
+          "start": 7.368,
+          "end": 7.873
+        },
+        {
+          "w": "and",
+          "start": 8.137,
+          "end": 8.365
+        },
+        {
+          "w": "where",
+          "start": 8.377,
+          "end": 8.582
+        },
+        {
+          "w": "one",
+          "start": 8.594,
+          "end": 8.822
+        },
+        {
+          "w": "step",
+          "start": 8.834,
+          "end": 9.147
+        },
+        {
+          "w": "cant",
+          "start": 9.159,
+          "end": 9.459
+        },
+        {
+          "w": "be",
+          "start": 9.471,
+          "end": 9.591
+        },
+        {
+          "w": "replaced",
+          "start": 9.603,
+          "end": 10.132
+        },
+        {
+          "w": "by",
+          "start": 10.144,
+          "end": 10.433
+        },
+        {
+          "w": "any",
+          "start": 10.445,
+          "end": 10.697
+        },
+        {
+          "w": "other",
+          "start": 10.709,
+          "end": 11.07
+        },
+        {
+          "w": "by",
+          "start": 11.935,
+          "end": 12.163
+        },
+        {
+          "w": "the",
+          "start": 12.175,
+          "end": 12.344
+        },
+        {
+          "w": "end",
+          "start": 12.356,
+          "end": 12.68
+        },
+        {
+          "w": "youll",
+          "start": 12.849,
+          "end": 13.029
+        },
+        {
+          "w": "know",
+          "start": 13.041,
+          "end": 13.221
+        },
+        {
+          "w": "the",
+          "start": 13.233,
+          "end": 13.353
+        },
+        {
+          "w": "seven",
+          "start": 13.365,
+          "end": 13.726
+        },
+        {
+          "w": "steps",
+          "start": 13.738,
+          "end": 14.111
+        },
+        {
+          "w": "of",
+          "start": 14.123,
+          "end": 14.279
+        },
+        {
+          "w": "manual",
+          "start": 14.291,
+          "end": 14.688
+        },
+        {
+          "w": "cleaning",
+          "start": 14.7,
+          "end": 15.204
+        },
+        {
+          "w": "youll",
+          "start": 15.433,
+          "end": 15.625
+        },
+        {
+          "w": "see",
+          "start": 15.637,
+          "end": 15.817
+        },
+        {
+          "w": "why",
+          "start": 15.829,
+          "end": 16.01
+        },
+        {
+          "w": "brushing",
+          "start": 16.022,
+          "end": 16.454
+        },
+        {
+          "w": "removes",
+          "start": 16.466,
+          "end": 16.899
+        },
+        {
+          "w": "biofilm",
+          "start": 16.911,
+          "end": 17.56
+        },
+        {
+          "w": "and",
+          "start": 17.776,
+          "end": 17.981
+        },
+        {
+          "w": "youll",
+          "start": 17.993,
+          "end": 18.137
+        },
+        {
+          "w": "learn",
+          "start": 18.149,
+          "end": 18.425
+        },
+        {
+          "w": "how",
+          "start": 18.438,
+          "end": 18.678
+        },
+        {
+          "w": "disinfection",
+          "start": 18.69,
+          "end": 19.495
+        },
+        {
+          "w": "is",
+          "start": 19.507,
+          "end": 19.651
+        },
+        {
+          "w": "done",
+          "start": 19.663,
+          "end": 19.916
+        },
+        {
+          "w": "right",
+          "start": 19.928,
+          "end": 20.349
+        }
+      ],
+      "hash": "3d47e5baf37f"
+    },
+    {
+      "index": 2,
+      "type": "steps",
+      "narration": "Manual cleaning follows seven steps. Immerse the scope fully in the correct detergent, at the correct dilution and temperature. Wipe the exterior and insertion tube. Brush every channel, with the right brush for that model, until it comes out visibly clean. Then brush the ports, valves and elevator recess.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-2.mp3",
+      "voDurationInSeconds": 22.344,
+      "voDurationInFrames": 671,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 741,
+      "startFrame": 722,
+      "captions": [
+        {
+          "text": "Manual cleaning follows seven steps.",
+          "start": 0.098,
+          "end": 2.365
+        },
+        {
+          "text": "Immerse the scope fully in the correct",
+          "start": 3.077,
+          "end": 4.856
+        },
+        {
+          "text": "detergent, at the correct dilution and",
+          "start": 4.856,
+          "end": 7.199
+        },
+        {
+          "text": "temperature. Wipe the exterior and",
+          "start": 7.199,
+          "end": 10.012
+        },
+        {
+          "text": "insertion tube. Brush every channel, with",
+          "start": 10.012,
+          "end": 13.51
+        },
+        {
+          "text": "the right brush for that model, until it",
+          "start": 13.51,
+          "end": 15.829
+        },
+        {
+          "text": "comes out visibly clean.",
+          "start": 15.829,
+          "end": 17.616
+        },
+        {
+          "text": "Then brush the ports, valves and elevator",
+          "start": 18.293,
+          "end": 20.913
+        },
+        {
+          "text": "recess.",
+          "start": 20.913,
+          "end": 21.63
+        }
+      ],
+      "words": [
+        {
+          "w": "manual",
+          "start": 0.098,
+          "end": 0.531
+        },
+        {
+          "w": "cleaning",
+          "start": 0.543,
+          "end": 0.939
+        },
+        {
+          "w": "follows",
+          "start": 0.951,
+          "end": 1.36
+        },
+        {
+          "w": "seven",
+          "start": 1.372,
+          "end": 1.673
+        },
+        {
+          "w": "steps",
+          "start": 1.685,
+          "end": 2.165
+        },
+        {
+          "w": "immerse",
+          "start": 3.077,
+          "end": 3.449
+        },
+        {
+          "w": "the",
+          "start": 3.462,
+          "end": 3.558
+        },
+        {
+          "w": "scope",
+          "start": 3.57,
+          "end": 3.918
+        },
+        {
+          "w": "fully",
+          "start": 3.93,
+          "end": 4.243
+        },
+        {
+          "w": "in",
+          "start": 4.255,
+          "end": 4.375
+        },
+        {
+          "w": "the",
+          "start": 4.387,
+          "end": 4.459
+        },
+        {
+          "w": "correct",
+          "start": 4.471,
+          "end": 4.844
+        },
+        {
+          "w": "detergent",
+          "start": 4.856,
+          "end": 5.493
+        },
+        {
+          "w": "at",
+          "start": 5.697,
+          "end": 5.805
+        },
+        {
+          "w": "the",
+          "start": 5.817,
+          "end": 5.901
+        },
+        {
+          "w": "correct",
+          "start": 5.913,
+          "end": 6.286
+        },
+        {
+          "w": "dilution",
+          "start": 6.298,
+          "end": 6.959
+        },
+        {
+          "w": "and",
+          "start": 6.971,
+          "end": 7.187
+        },
+        {
+          "w": "temperature",
+          "start": 7.199,
+          "end": 7.909
+        },
+        {
+          "w": "wipe",
+          "start": 8.774,
+          "end": 9.087
+        },
+        {
+          "w": "the",
+          "start": 9.099,
+          "end": 9.195
+        },
+        {
+          "w": "exterior",
+          "start": 9.207,
+          "end": 9.904
+        },
+        {
+          "w": "and",
+          "start": 9.916,
+          "end": 10
+        },
+        {
+          "w": "insertion",
+          "start": 10.012,
+          "end": 10.529
+        },
+        {
+          "w": "tube",
+          "start": 10.541,
+          "end": 10.95
+        },
+        {
+          "w": "brush",
+          "start": 11.851,
+          "end": 12.236
+        },
+        {
+          "w": "every",
+          "start": 12.248,
+          "end": 12.596
+        },
+        {
+          "w": "channel",
+          "start": 12.608,
+          "end": 13.137
+        },
+        {
+          "w": "with",
+          "start": 13.377,
+          "end": 13.498
+        },
+        {
+          "w": "the",
+          "start": 13.51,
+          "end": 13.582
+        },
+        {
+          "w": "right",
+          "start": 13.594,
+          "end": 13.966
+        },
+        {
+          "w": "brush",
+          "start": 13.978,
+          "end": 14.279
+        },
+        {
+          "w": "for",
+          "start": 14.291,
+          "end": 14.399
+        },
+        {
+          "w": "that",
+          "start": 14.411,
+          "end": 14.663
+        },
+        {
+          "w": "model",
+          "start": 14.675,
+          "end": 15.096
+        },
+        {
+          "w": "until",
+          "start": 15.373,
+          "end": 15.673
+        },
+        {
+          "w": "it",
+          "start": 15.685,
+          "end": 15.817
+        },
+        {
+          "w": "comes",
+          "start": 15.829,
+          "end": 16.142
+        },
+        {
+          "w": "out",
+          "start": 16.154,
+          "end": 16.406
+        },
+        {
+          "w": "visibly",
+          "start": 16.418,
+          "end": 16.887
+        },
+        {
+          "w": "clean",
+          "start": 16.899,
+          "end": 17.416
+        },
+        {
+          "w": "then",
+          "start": 18.293,
+          "end": 18.654
+        },
+        {
+          "w": "brush",
+          "start": 18.666,
+          "end": 19.002
+        },
+        {
+          "w": "the",
+          "start": 19.014,
+          "end": 19.111
+        },
+        {
+          "w": "ports",
+          "start": 19.123,
+          "end": 19.591
+        },
+        {
+          "w": "valves",
+          "start": 19.76,
+          "end": 20.18
+        },
+        {
+          "w": "and",
+          "start": 20.192,
+          "end": 20.361
+        },
+        {
+          "w": "elevator",
+          "start": 20.373,
+          "end": 20.901
+        },
+        {
+          "w": "recess",
+          "start": 20.913,
+          "end": 21.43
+        }
+      ],
+      "hash": "6ff058c392bd"
+    },
+    {
+      "index": 3,
+      "type": "steps",
+      "narration": "Flush every channel with detergent, then water, using that model's connectors. Remove, clean and disinfect, or replace, the valves, buttons and caps, which are often forgotten. Finally, inspect for damage and residual soil.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-3.mp3",
+      "voDurationInSeconds": 17.52,
+      "voDurationInFrames": 526,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 596,
+      "startFrame": 1463,
+      "captions": [
+        {
+          "text": "Flush every channel with detergent, then",
+          "start": 0.098,
+          "end": 2.682
+        },
+        {
+          "text": "water, using that model's connectors.",
+          "start": 2.682,
+          "end": 5.406000000000001
+        },
+        {
+          "text": "Remove, clean and disinfect, or replace,",
+          "start": 6.094,
+          "end": 9.099
+        },
+        {
+          "text": "the valves, buttons and caps, which are",
+          "start": 9.099,
+          "end": 11.647
+        },
+        {
+          "text": "often forgotten. Finally, inspect for",
+          "start": 11.647,
+          "end": 15.06
+        },
+        {
+          "text": "damage and residual soil.",
+          "start": 15.06,
+          "end": 16.846999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "flush",
+          "start": 0.098,
+          "end": 0.543
+        },
+        {
+          "w": "every",
+          "start": 0.555,
+          "end": 0.903
+        },
+        {
+          "w": "channel",
+          "start": 0.915,
+          "end": 1.336
+        },
+        {
+          "w": "with",
+          "start": 1.348,
+          "end": 1.48
+        },
+        {
+          "w": "detergent",
+          "start": 1.492,
+          "end": 2.165
+        },
+        {
+          "w": "then",
+          "start": 2.346,
+          "end": 2.67
+        },
+        {
+          "w": "water",
+          "start": 2.682,
+          "end": 3.187
+        },
+        {
+          "w": "using",
+          "start": 3.379,
+          "end": 3.776
+        },
+        {
+          "w": "that",
+          "start": 3.788,
+          "end": 4.016
+        },
+        {
+          "w": "models",
+          "start": 4.028,
+          "end": 4.473
+        },
+        {
+          "w": "connectors",
+          "start": 4.485,
+          "end": 5.206
+        },
+        {
+          "w": "remove",
+          "start": 6.094,
+          "end": 6.611
+        },
+        {
+          "w": "clean",
+          "start": 6.803,
+          "end": 7.139
+        },
+        {
+          "w": "and",
+          "start": 7.151,
+          "end": 7.32
+        },
+        {
+          "w": "disinfect",
+          "start": 7.332,
+          "end": 8.017
+        },
+        {
+          "w": "or",
+          "start": 8.185,
+          "end": 8.329
+        },
+        {
+          "w": "replace",
+          "start": 8.341,
+          "end": 8.918
+        },
+        {
+          "w": "the",
+          "start": 9.099,
+          "end": 9.231
+        },
+        {
+          "w": "valves",
+          "start": 9.243,
+          "end": 9.748
+        },
+        {
+          "w": "buttons",
+          "start": 9.952,
+          "end": 10.385
+        },
+        {
+          "w": "and",
+          "start": 10.397,
+          "end": 10.565
+        },
+        {
+          "w": "caps",
+          "start": 10.577,
+          "end": 11.046
+        },
+        {
+          "w": "which",
+          "start": 11.286,
+          "end": 11.442
+        },
+        {
+          "w": "are",
+          "start": 11.454,
+          "end": 11.635
+        },
+        {
+          "w": "often",
+          "start": 11.647,
+          "end": 11.971
+        },
+        {
+          "w": "forgotten",
+          "start": 11.983,
+          "end": 12.632
+        },
+        {
+          "w": "finally",
+          "start": 13.486,
+          "end": 14.159
+        },
+        {
+          "w": "inspect",
+          "start": 14.375,
+          "end": 14.88
+        },
+        {
+          "w": "for",
+          "start": 14.892,
+          "end": 15.048
+        },
+        {
+          "w": "damage",
+          "start": 15.06,
+          "end": 15.517
+        },
+        {
+          "w": "and",
+          "start": 15.529,
+          "end": 15.709
+        },
+        {
+          "w": "residual",
+          "start": 15.721,
+          "end": 16.19
+        },
+        {
+          "w": "soil",
+          "start": 16.202,
+          "end": 16.647
+        }
+      ],
+      "hash": "89117d75ae7e"
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "Why is brushing irreplaceable? Biofilm is organisms embedded in a protective matrix on the channel wall. Disinfectant can't penetrate it. Soaking and flushing flow straight over it. Only a brush, physically contacting the wall, breaks it up. That's why brush diameter matters.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-4.mp3",
+      "voDurationInSeconds": 21.672,
+      "voDurationInFrames": 651,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 721,
+      "startFrame": 2059,
+      "captions": [
+        {
+          "text": "Why is brushing irreplaceable?",
+          "start": 0.098,
+          "end": 2.089
+        },
+        {
+          "text": "Biofilm is organisms embedded in a",
+          "start": 2.788,
+          "end": 5.012
+        },
+        {
+          "text": "protective matrix on the channel wall.",
+          "start": 5.012,
+          "end": 7.412
+        },
+        {
+          "text": "Disinfectant can't penetrate it.",
+          "start": 8.089,
+          "end": 10.223999999999998
+        },
+        {
+          "text": "Soaking and flushing flow straight over",
+          "start": 10.925,
+          "end": 12.945
+        },
+        {
+          "text": "it. Only a brush, physically contacting",
+          "start": 12.945,
+          "end": 16.322
+        },
+        {
+          "text": "the wall, breaks it up.",
+          "start": 16.322,
+          "end": 18.025
+        },
+        {
+          "text": "That's why brush diameter matters!",
+          "start": 18.738,
+          "end": 21.005
+        }
+      ],
+      "words": [
+        {
+          "w": "why",
+          "start": 0.098,
+          "end": 0.459
+        },
+        {
+          "w": "is",
+          "start": 0.471,
+          "end": 0.627
+        },
+        {
+          "w": "brushing",
+          "start": 0.639,
+          "end": 1.108
+        },
+        {
+          "w": "irreplaceable",
+          "start": 1.12,
+          "end": 1.889
+        },
+        {
+          "w": "biofilm",
+          "start": 2.788,
+          "end": 3.401
+        },
+        {
+          "w": "is",
+          "start": 3.413,
+          "end": 3.534
+        },
+        {
+          "w": "organisms",
+          "start": 3.546,
+          "end": 4.243
+        },
+        {
+          "w": "embedded",
+          "start": 4.255,
+          "end": 4.796
+        },
+        {
+          "w": "in",
+          "start": 4.808,
+          "end": 4.928
+        },
+        {
+          "w": "a",
+          "start": 4.94,
+          "end": 5
+        },
+        {
+          "w": "protective",
+          "start": 5.012,
+          "end": 5.637
+        },
+        {
+          "w": "matrix",
+          "start": 5.649,
+          "end": 6.178
+        },
+        {
+          "w": "on",
+          "start": 6.19,
+          "end": 6.334
+        },
+        {
+          "w": "the",
+          "start": 6.346,
+          "end": 6.442
+        },
+        {
+          "w": "channel",
+          "start": 6.454,
+          "end": 6.839
+        },
+        {
+          "w": "wall",
+          "start": 6.851,
+          "end": 7.212
+        },
+        {
+          "w": "disinfectant",
+          "start": 8.089,
+          "end": 8.858
+        },
+        {
+          "w": "cant",
+          "start": 8.87,
+          "end": 9.183
+        },
+        {
+          "w": "penetrate",
+          "start": 9.195,
+          "end": 9.76
+        },
+        {
+          "w": "it",
+          "start": 9.772,
+          "end": 10.024
+        },
+        {
+          "w": "soaking",
+          "start": 10.925,
+          "end": 11.406
+        },
+        {
+          "w": "and",
+          "start": 11.418,
+          "end": 11.526
+        },
+        {
+          "w": "flushing",
+          "start": 11.538,
+          "end": 11.971
+        },
+        {
+          "w": "flow",
+          "start": 11.983,
+          "end": 12.272
+        },
+        {
+          "w": "straight",
+          "start": 12.284,
+          "end": 12.656
+        },
+        {
+          "w": "over",
+          "start": 12.668,
+          "end": 12.933
+        },
+        {
+          "w": "it",
+          "start": 12.945,
+          "end": 13.185
+        },
+        {
+          "w": "only",
+          "start": 14.075,
+          "end": 14.423
+        },
+        {
+          "w": "a",
+          "start": 14.435,
+          "end": 14.495
+        },
+        {
+          "w": "brush",
+          "start": 14.507,
+          "end": 15
+        },
+        {
+          "w": "physically",
+          "start": 15.18,
+          "end": 15.685
+        },
+        {
+          "w": "contacting",
+          "start": 15.697,
+          "end": 16.31
+        },
+        {
+          "w": "the",
+          "start": 16.322,
+          "end": 16.418
+        },
+        {
+          "w": "wall",
+          "start": 16.43,
+          "end": 16.827
+        },
+        {
+          "w": "breaks",
+          "start": 17.019,
+          "end": 17.44
+        },
+        {
+          "w": "it",
+          "start": 17.452,
+          "end": 17.572
+        },
+        {
+          "w": "up",
+          "start": 17.584,
+          "end": 17.825
+        },
+        {
+          "w": "thats",
+          "start": 18.738,
+          "end": 19.087
+        },
+        {
+          "w": "why",
+          "start": 19.099,
+          "end": 19.267
+        },
+        {
+          "w": "brush",
+          "start": 19.279,
+          "end": 19.639
+        },
+        {
+          "w": "diameter",
+          "start": 19.651,
+          "end": 20.18
+        },
+        {
+          "w": "matters",
+          "start": 20.192,
+          "end": 20.805
+        }
+      ],
+      "hash": "8ced1e6142a9"
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Next, high-level disinfection, usually in an automated endoscope reprocessor with validated cycles, giving a recorded, repeatable process. Every channel must be attached with the correct connector for that model. A channel that isn't connected isn't perfused, and isn't disinfected.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-5.mp3",
+      "voDurationInSeconds": 20.04,
+      "voDurationInFrames": 602,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 672,
+      "startFrame": 2780,
+      "captions": [
+        {
+          "text": "Next, high-level disinfection, usually in",
+          "start": 0.098,
+          "end": 3.091
+        },
+        {
+          "text": "an automated endoscope reprocessor with",
+          "start": 3.091,
+          "end": 5.483
+        },
+        {
+          "text": "validated cycles, giving a recorded,",
+          "start": 5.483,
+          "end": 8.123
+        },
+        {
+          "text": "repeatable process.",
+          "start": 8.211,
+          "end": 9.636999999999999
+        },
+        {
+          "text": "Every channel must be attached with the",
+          "start": 10.337,
+          "end": 12.308
+        },
+        {
+          "text": "correct connector for that model.",
+          "start": 12.308,
+          "end": 14.261999999999999
+        },
+        {
+          "text": "A channel that isn't connected isn't",
+          "start": 14.952,
+          "end": 16.971
+        },
+        {
+          "text": "perfused, and isn't disinfected.",
+          "start": 16.971,
+          "end": 19.346999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "next",
+          "start": 0.098,
+          "end": 0.555
+        },
+        {
+          "w": "highlevel",
+          "start": 0.747,
+          "end": 1.264
+        },
+        {
+          "w": "disinfection",
+          "start": 1.276,
+          "end": 2.189
+        },
+        {
+          "w": "usually",
+          "start": 2.406,
+          "end": 2.947
+        },
+        {
+          "w": "in",
+          "start": 2.959,
+          "end": 3.079
+        },
+        {
+          "w": "an",
+          "start": 3.091,
+          "end": 3.199
+        },
+        {
+          "w": "automated",
+          "start": 3.211,
+          "end": 3.884
+        },
+        {
+          "w": "endoscope",
+          "start": 3.896,
+          "end": 4.545
+        },
+        {
+          "w": "reprocessor",
+          "start": 4.557,
+          "end": 5.278
+        },
+        {
+          "w": "with",
+          "start": 5.29,
+          "end": 5.471
+        },
+        {
+          "w": "validated",
+          "start": 5.483,
+          "end": 6.108
+        },
+        {
+          "w": "cycles",
+          "start": 6.12,
+          "end": 6.721
+        },
+        {
+          "w": "giving",
+          "start": 6.949,
+          "end": 7.237
+        },
+        {
+          "w": "a",
+          "start": 7.25,
+          "end": 7.298
+        },
+        {
+          "w": "recorded",
+          "start": 7.31,
+          "end": 7.923
+        },
+        {
+          "w": "repeatable",
+          "start": 8.211,
+          "end": 8.824
+        },
+        {
+          "w": "process",
+          "start": 8.836,
+          "end": 9.437
+        },
+        {
+          "w": "every",
+          "start": 10.337,
+          "end": 10.673
+        },
+        {
+          "w": "channel",
+          "start": 10.685,
+          "end": 11.142
+        },
+        {
+          "w": "must",
+          "start": 11.154,
+          "end": 11.418
+        },
+        {
+          "w": "be",
+          "start": 11.43,
+          "end": 11.575
+        },
+        {
+          "w": "attached",
+          "start": 11.587,
+          "end": 12.079
+        },
+        {
+          "w": "with",
+          "start": 12.091,
+          "end": 12.199
+        },
+        {
+          "w": "the",
+          "start": 12.212,
+          "end": 12.296
+        },
+        {
+          "w": "correct",
+          "start": 12.308,
+          "end": 12.704
+        },
+        {
+          "w": "connector",
+          "start": 12.716,
+          "end": 13.197
+        },
+        {
+          "w": "for",
+          "start": 13.209,
+          "end": 13.353
+        },
+        {
+          "w": "that",
+          "start": 13.365,
+          "end": 13.606
+        },
+        {
+          "w": "model",
+          "start": 13.618,
+          "end": 14.062
+        },
+        {
+          "w": "a",
+          "start": 14.952,
+          "end": 15.036
+        },
+        {
+          "w": "channel",
+          "start": 15.048,
+          "end": 15.493
+        },
+        {
+          "w": "that",
+          "start": 15.505,
+          "end": 15.781
+        },
+        {
+          "w": "isnt",
+          "start": 15.793,
+          "end": 16.082
+        },
+        {
+          "w": "connected",
+          "start": 16.094,
+          "end": 16.683
+        },
+        {
+          "w": "isnt",
+          "start": 16.695,
+          "end": 16.959
+        },
+        {
+          "w": "perfused",
+          "start": 16.971,
+          "end": 17.62
+        },
+        {
+          "w": "and",
+          "start": 17.873,
+          "end": 18.041
+        },
+        {
+          "w": "isnt",
+          "start": 18.053,
+          "end": 18.341
+        },
+        {
+          "w": "disinfected",
+          "start": 18.353,
+          "end": 19.147
+        }
+      ],
+      "hash": "2b4377f59dc9"
+    },
+    {
+      "index": 6,
+      "type": "steps",
+      "narration": "The disinfectant must be at the correct concentration, temperature and contact time. Its minimum effective concentration is tested per protocol, and the solution is discarded at expiry, regardless of the test result. And never overload the reprocessor.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-6.mp3",
+      "voDurationInSeconds": 18.072,
+      "voDurationInFrames": 543,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 613,
+      "startFrame": 3452,
+      "captions": [
+        {
+          "text": "The disinfectant must be at the correct",
+          "start": 0.098,
+          "end": 2.189
+        },
+        {
+          "text": "concentration, temperature and contact",
+          "start": 2.189,
+          "end": 4.726
+        },
+        {
+          "text": "time. Its minimum effective concentration",
+          "start": 4.726,
+          "end": 7.945
+        },
+        {
+          "text": "is tested per protocol, and the solution",
+          "start": 7.945,
+          "end": 10.433
+        },
+        {
+          "text": "is discarded at expiry, regardless of the",
+          "start": 10.433,
+          "end": 13.305
+        },
+        {
+          "text": "test result. And never overload the",
+          "start": 13.305,
+          "end": 16.322
+        },
+        {
+          "text": "reprocessor.",
+          "start": 16.322,
+          "end": 17.326999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "the",
+          "start": 0.098,
+          "end": 0.23
+        },
+        {
+          "w": "disinfectant",
+          "start": 0.242,
+          "end": 1.036
+        },
+        {
+          "w": "must",
+          "start": 1.048,
+          "end": 1.288
+        },
+        {
+          "w": "be",
+          "start": 1.3,
+          "end": 1.552
+        },
+        {
+          "w": "at",
+          "start": 1.564,
+          "end": 1.697
+        },
+        {
+          "w": "the",
+          "start": 1.709,
+          "end": 1.793
+        },
+        {
+          "w": "correct",
+          "start": 1.805,
+          "end": 2.177
+        },
+        {
+          "w": "concentration",
+          "start": 2.189,
+          "end": 3.055
+        },
+        {
+          "w": "temperature",
+          "start": 3.283,
+          "end": 4.004
+        },
+        {
+          "w": "and",
+          "start": 4.016,
+          "end": 4.197
+        },
+        {
+          "w": "contact",
+          "start": 4.209,
+          "end": 4.713
+        },
+        {
+          "w": "time",
+          "start": 4.726,
+          "end": 5.11
+        },
+        {
+          "w": "its",
+          "start": 5.974,
+          "end": 6.19
+        },
+        {
+          "w": "minimum",
+          "start": 6.202,
+          "end": 6.562
+        },
+        {
+          "w": "effective",
+          "start": 6.574,
+          "end": 7.127
+        },
+        {
+          "w": "concentration",
+          "start": 7.139,
+          "end": 7.933
+        },
+        {
+          "w": "is",
+          "start": 7.945,
+          "end": 8.089
+        },
+        {
+          "w": "tested",
+          "start": 8.101,
+          "end": 8.522
+        },
+        {
+          "w": "per",
+          "start": 8.534,
+          "end": 8.69
+        },
+        {
+          "w": "protocol",
+          "start": 8.702,
+          "end": 9.363
+        },
+        {
+          "w": "and",
+          "start": 9.615,
+          "end": 9.808
+        },
+        {
+          "w": "the",
+          "start": 9.82,
+          "end": 9.904
+        },
+        {
+          "w": "solution",
+          "start": 9.916,
+          "end": 10.421
+        },
+        {
+          "w": "is",
+          "start": 10.433,
+          "end": 10.565
+        },
+        {
+          "w": "discarded",
+          "start": 10.577,
+          "end": 11.226
+        },
+        {
+          "w": "at",
+          "start": 11.238,
+          "end": 11.382
+        },
+        {
+          "w": "expiry",
+          "start": 11.394,
+          "end": 12.091
+        },
+        {
+          "w": "regardless",
+          "start": 12.344,
+          "end": 13.041
+        },
+        {
+          "w": "of",
+          "start": 13.053,
+          "end": 13.161
+        },
+        {
+          "w": "the",
+          "start": 13.173,
+          "end": 13.293
+        },
+        {
+          "w": "test",
+          "start": 13.305,
+          "end": 13.666
+        },
+        {
+          "w": "result",
+          "start": 13.678,
+          "end": 14.207
+        },
+        {
+          "w": "and",
+          "start": 15.096,
+          "end": 15.264
+        },
+        {
+          "w": "never",
+          "start": 15.276,
+          "end": 15.697
+        },
+        {
+          "w": "overload",
+          "start": 15.709,
+          "end": 16.214
+        },
+        {
+          "w": "the",
+          "start": 16.226,
+          "end": 16.31
+        },
+        {
+          "w": "reprocessor",
+          "start": 16.322,
+          "end": 17.127
+        }
+      ],
+      "hash": "9ca759898a08"
+    },
+    {
+      "index": 7,
+      "type": "check",
+      "narration": "Time for a knowledge check. Why can chemical disinfection not substitute for channel brushing? Pause here and think it through.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-7.mp3",
+      "voDurationInSeconds": 8.976,
+      "voDurationInFrames": 270,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 466,
+      "startFrame": 4065,
+      "captions": [
+        {
+          "text": "Time for a knowledge check.",
+          "start": 0.098,
+          "end": 1.548
+        },
+        {
+          "text": "Why can chemical disinfection not",
+          "start": 2.236,
+          "end": 4.087
+        },
+        {
+          "text": "substitute for channel brushing?",
+          "start": 4.087,
+          "end": 5.957
+        },
+        {
+          "text": "Pause here and think it through.",
+          "start": 6.611,
+          "end": 8.337
+        }
+      ],
+      "words": [
+        {
+          "w": "time",
+          "start": 0.098,
+          "end": 0.375
+        },
+        {
+          "w": "for",
+          "start": 0.387,
+          "end": 0.531
+        },
+        {
+          "w": "a",
+          "start": 0.543,
+          "end": 0.579
+        },
+        {
+          "w": "knowledge",
+          "start": 0.591,
+          "end": 1
+        },
+        {
+          "w": "check",
+          "start": 1.012,
+          "end": 1.348
+        },
+        {
+          "w": "why",
+          "start": 2.236,
+          "end": 2.488
+        },
+        {
+          "w": "can",
+          "start": 2.5,
+          "end": 2.692
+        },
+        {
+          "w": "chemical",
+          "start": 2.704,
+          "end": 3.137
+        },
+        {
+          "w": "disinfection",
+          "start": 3.149,
+          "end": 3.846
+        },
+        {
+          "w": "not",
+          "start": 3.858,
+          "end": 4.074
+        },
+        {
+          "w": "substitute",
+          "start": 4.087,
+          "end": 4.663
+        },
+        {
+          "w": "for",
+          "start": 4.676,
+          "end": 4.832
+        },
+        {
+          "w": "channel",
+          "start": 4.844,
+          "end": 5.216
+        },
+        {
+          "w": "brushing",
+          "start": 5.228,
+          "end": 5.757
+        },
+        {
+          "w": "pause",
+          "start": 6.611,
+          "end": 6.875
+        },
+        {
+          "w": "here",
+          "start": 6.887,
+          "end": 7.248
+        },
+        {
+          "w": "and",
+          "start": 7.26,
+          "end": 7.452
+        },
+        {
+          "w": "think",
+          "start": 7.464,
+          "end": 7.68
+        },
+        {
+          "w": "it",
+          "start": 7.692,
+          "end": 7.788
+        },
+        {
+          "w": "through",
+          "start": 7.801,
+          "end": 8.137
+        }
+      ],
+      "hash": "66ca1eb8fb50"
+    },
+    {
+      "index": 8,
+      "type": "answer",
+      "narration": "Because biofilm, organisms embedded in a protective matrix on the channel wall, resists chemical disinfection entirely. Soaking and flushing don't remove it either. Only a brush that physically contacts the wall disrupts it. That's why brushing is specified per channel, and why omitting it has caused outbreaks.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-8.mp3",
+      "voDurationInSeconds": 21.744,
+      "voDurationInFrames": 653,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 723,
+      "startFrame": 4531,
+      "captions": [
+        {
+          "text": "Because biofilm, organisms embedded in a",
+          "start": 0.098,
+          "end": 2.706
+        },
+        {
+          "text": "protective matrix on the channel wall,",
+          "start": 2.706,
+          "end": 5.082
+        },
+        {
+          "text": "resists chemical disinfection entirely.",
+          "start": 5.134,
+          "end": 7.7860000000000005
+        },
+        {
+          "text": "Soaking and flushing don't remove it",
+          "start": 8.474,
+          "end": 10.373
+        },
+        {
+          "text": "either. Only a brush that physically",
+          "start": 10.373,
+          "end": 13.125
+        },
+        {
+          "text": "contacts the wall disrupts it.",
+          "start": 13.125,
+          "end": 15.152
+        },
+        {
+          "text": "That's why brushing is specified per",
+          "start": 15.841,
+          "end": 17.764
+        },
+        {
+          "text": "channel, and why omitting it has caused",
+          "start": 17.764,
+          "end": 20.156
+        },
+        {
+          "text": "outbreaks!",
+          "start": 20.156,
+          "end": 21.064999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "because",
+          "start": 0.098,
+          "end": 0.423
+        },
+        {
+          "w": "biofilm",
+          "start": 0.435,
+          "end": 1.12
+        },
+        {
+          "w": "organisms",
+          "start": 1.288,
+          "end": 1.985
+        },
+        {
+          "w": "embedded",
+          "start": 1.997,
+          "end": 2.49
+        },
+        {
+          "w": "in",
+          "start": 2.502,
+          "end": 2.634
+        },
+        {
+          "w": "a",
+          "start": 2.646,
+          "end": 2.694
+        },
+        {
+          "w": "protective",
+          "start": 2.706,
+          "end": 3.331
+        },
+        {
+          "w": "matrix",
+          "start": 3.343,
+          "end": 3.86
+        },
+        {
+          "w": "on",
+          "start": 3.872,
+          "end": 3.992
+        },
+        {
+          "w": "the",
+          "start": 4.004,
+          "end": 4.088
+        },
+        {
+          "w": "channel",
+          "start": 4.101,
+          "end": 4.521
+        },
+        {
+          "w": "wall",
+          "start": 4.533,
+          "end": 4.882
+        },
+        {
+          "w": "resists",
+          "start": 5.134,
+          "end": 5.627
+        },
+        {
+          "w": "chemical",
+          "start": 5.639,
+          "end": 6.12
+        },
+        {
+          "w": "disinfection",
+          "start": 6.132,
+          "end": 6.973
+        },
+        {
+          "w": "entirely",
+          "start": 6.985,
+          "end": 7.586
+        },
+        {
+          "w": "soaking",
+          "start": 8.474,
+          "end": 8.966
+        },
+        {
+          "w": "and",
+          "start": 8.978,
+          "end": 9.099
+        },
+        {
+          "w": "flushing",
+          "start": 9.111,
+          "end": 9.543
+        },
+        {
+          "w": "dont",
+          "start": 9.555,
+          "end": 9.832
+        },
+        {
+          "w": "remove",
+          "start": 9.844,
+          "end": 10.216
+        },
+        {
+          "w": "it",
+          "start": 10.228,
+          "end": 10.361
+        },
+        {
+          "w": "either",
+          "start": 10.373,
+          "end": 10.745
+        },
+        {
+          "w": "only",
+          "start": 11.599,
+          "end": 11.899
+        },
+        {
+          "w": "a",
+          "start": 11.911,
+          "end": 11.983
+        },
+        {
+          "w": "brush",
+          "start": 11.995,
+          "end": 12.392
+        },
+        {
+          "w": "that",
+          "start": 12.404,
+          "end": 12.62
+        },
+        {
+          "w": "physically",
+          "start": 12.632,
+          "end": 13.113
+        },
+        {
+          "w": "contacts",
+          "start": 13.125,
+          "end": 13.726
+        },
+        {
+          "w": "the",
+          "start": 13.738,
+          "end": 13.87
+        },
+        {
+          "w": "wall",
+          "start": 13.882,
+          "end": 14.123
+        },
+        {
+          "w": "disrupts",
+          "start": 14.135,
+          "end": 14.688
+        },
+        {
+          "w": "it",
+          "start": 14.7,
+          "end": 14.952
+        },
+        {
+          "w": "thats",
+          "start": 15.841,
+          "end": 16.178
+        },
+        {
+          "w": "why",
+          "start": 16.19,
+          "end": 16.358
+        },
+        {
+          "w": "brushing",
+          "start": 16.37,
+          "end": 16.791
+        },
+        {
+          "w": "is",
+          "start": 16.803,
+          "end": 16.911
+        },
+        {
+          "w": "specified",
+          "start": 16.923,
+          "end": 17.572
+        },
+        {
+          "w": "per",
+          "start": 17.584,
+          "end": 17.752
+        },
+        {
+          "w": "channel",
+          "start": 17.764,
+          "end": 18.281
+        },
+        {
+          "w": "and",
+          "start": 18.522,
+          "end": 18.726
+        },
+        {
+          "w": "why",
+          "start": 18.738,
+          "end": 18.99
+        },
+        {
+          "w": "omitting",
+          "start": 19.002,
+          "end": 19.411
+        },
+        {
+          "w": "it",
+          "start": 19.423,
+          "end": 19.543
+        },
+        {
+          "w": "has",
+          "start": 19.555,
+          "end": 19.772
+        },
+        {
+          "w": "caused",
+          "start": 19.784,
+          "end": 20.144
+        },
+        {
+          "w": "outbreaks",
+          "start": 20.156,
+          "end": 20.865
+        }
+      ],
+      "hash": "518ac850958e"
+    },
+    {
+      "index": 9,
+      "type": "recap",
+      "narration": "Let's recap. Manual cleaning has seven steps, and brushing every channel is the one that removes biofilm. High-level disinfection needs validated cycles, the correct connectors and the correct chemistry. Next, we'll cover rinsing, drying, storage, and the duodenoscope elevator.",
+      "audioFile": "audio/vo/ms-cssd-15/V803/scene-9.mp3",
+      "voDurationInSeconds": 21.12,
+      "voDurationInFrames": 634,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 830,
+      "startFrame": 5254,
+      "captions": [
+        {
+          "text": "Let's recap! Manual cleaning has seven",
+          "start": 0.098,
+          "end": 3.293
+        },
+        {
+          "text": "steps, and brushing every channel is the",
+          "start": 3.293,
+          "end": 5.757
+        },
+        {
+          "text": "one that removes biofilm.",
+          "start": 5.757,
+          "end": 7.628
+        },
+        {
+          "text": "High-level disinfection needs validated",
+          "start": 8.281,
+          "end": 10.493
+        },
+        {
+          "text": "cycles, the correct connectors and the",
+          "start": 10.493,
+          "end": 12.764
+        },
+        {
+          "text": "correct chemistry.",
+          "start": 12.764,
+          "end": 13.998
+        },
+        {
+          "text": "Next, we'll cover rinsing, drying,",
+          "start": 14.663,
+          "end": 17.416
+        },
+        {
+          "text": "storage, and the duodenoscope elevator.",
+          "start": 17.416,
+          "end": 20.428
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.098,
+          "end": 0.447
+        },
+        {
+          "w": "recap",
+          "start": 0.459,
+          "end": 1.012
+        },
+        {
+          "w": "manual",
+          "start": 1.899,
+          "end": 2.368
+        },
+        {
+          "w": "cleaning",
+          "start": 2.38,
+          "end": 2.776
+        },
+        {
+          "w": "has",
+          "start": 2.788,
+          "end": 2.957
+        },
+        {
+          "w": "seven",
+          "start": 2.969,
+          "end": 3.281
+        },
+        {
+          "w": "steps",
+          "start": 3.293,
+          "end": 3.774
+        },
+        {
+          "w": "and",
+          "start": 4.002,
+          "end": 4.171
+        },
+        {
+          "w": "brushing",
+          "start": 4.183,
+          "end": 4.639
+        },
+        {
+          "w": "every",
+          "start": 4.651,
+          "end": 4.988
+        },
+        {
+          "w": "channel",
+          "start": 5,
+          "end": 5.493
+        },
+        {
+          "w": "is",
+          "start": 5.505,
+          "end": 5.625
+        },
+        {
+          "w": "the",
+          "start": 5.637,
+          "end": 5.745
+        },
+        {
+          "w": "one",
+          "start": 5.757,
+          "end": 6.034
+        },
+        {
+          "w": "that",
+          "start": 6.046,
+          "end": 6.262
+        },
+        {
+          "w": "removes",
+          "start": 6.274,
+          "end": 6.707
+        },
+        {
+          "w": "biofilm",
+          "start": 6.719,
+          "end": 7.428
+        },
+        {
+          "w": "highlevel",
+          "start": 8.281,
+          "end": 8.81
+        },
+        {
+          "w": "disinfection",
+          "start": 8.822,
+          "end": 9.543
+        },
+        {
+          "w": "needs",
+          "start": 9.555,
+          "end": 9.844
+        },
+        {
+          "w": "validated",
+          "start": 9.856,
+          "end": 10.481
+        },
+        {
+          "w": "cycles",
+          "start": 10.493,
+          "end": 11.082
+        },
+        {
+          "w": "the",
+          "start": 11.298,
+          "end": 11.394
+        },
+        {
+          "w": "correct",
+          "start": 11.406,
+          "end": 11.767
+        },
+        {
+          "w": "connectors",
+          "start": 11.779,
+          "end": 12.5
+        },
+        {
+          "w": "and",
+          "start": 12.512,
+          "end": 12.68
+        },
+        {
+          "w": "the",
+          "start": 12.692,
+          "end": 12.752
+        },
+        {
+          "w": "correct",
+          "start": 12.764,
+          "end": 13.137
+        },
+        {
+          "w": "chemistry",
+          "start": 13.149,
+          "end": 13.798
+        },
+        {
+          "w": "next",
+          "start": 14.663,
+          "end": 15.144
+        },
+        {
+          "w": "well",
+          "start": 15.349,
+          "end": 15.589
+        },
+        {
+          "w": "cover",
+          "start": 15.601,
+          "end": 15.962
+        },
+        {
+          "w": "rinsing",
+          "start": 15.974,
+          "end": 16.538
+        },
+        {
+          "w": "drying",
+          "start": 16.707,
+          "end": 17.272
+        },
+        {
+          "w": "storage",
+          "start": 17.416,
+          "end": 18.089
+        },
+        {
+          "w": "and",
+          "start": 18.317,
+          "end": 18.462
+        },
+        {
+          "w": "the",
+          "start": 18.474,
+          "end": 18.558
+        },
+        {
+          "w": "duodenoscope",
+          "start": 18.57,
+          "end": 19.567
+        },
+        {
+          "w": "elevator",
+          "start": 19.579,
+          "end": 20.228
+        }
+      ],
+      "hash": "ebfe729933de"
+    }
+  ]
+}

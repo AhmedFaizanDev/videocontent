@@ -1,0 +1,45 @@
+{
+  "name": "Blood Pressure: What the Numbers Mean",
+  "series": "MedSkills \u00b7 Clinical Foundations",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      5,
+      5
+    ],
+    "exact": 300
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "stage"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 5,
+    "minIllustrated": 0.75,
+    "maxScreenWords": 20
+  },
+  "lang": "en",
+  "brand": {
+    "signoff": "Keep learning with MedSkills."
+  },
+  "style": {
+    "spelling": "en-GB"
+  },
+  "terms": [
+    "systolic",
+    "diastolic",
+    "hypertension"
+  ],
+  "output": {
+    "dir": "MedSkills/EN_Blood_Pressure"
+  },
+  "voice": {
+    "wpm": 132
+  }
+}

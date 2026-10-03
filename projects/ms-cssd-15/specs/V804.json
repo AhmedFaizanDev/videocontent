@@ -1,0 +1,200 @@
+{
+  "id": "V804",
+  "section": "MS-CSSD-15: CSSD & Sterilization Practices",
+  "module": "Module 10 · Flexible Endoscope Reprocessing",
+  "topicGroup": "Flexible Endoscope Reprocessing",
+  "title": "Rinse, Dry, Store and the Duodenoscope Elevator",
+  "outputFilename": "M10_V4_Rinse_Dry_Store_and_the_Duodenoscope_Elevator.mp4",
+  "episode": "10.4",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "narration": "In this video, we're going to talk about the final steps of the cycle, and one mechanism that needs special attention. By the end, you'll know why rinse water quality matters, you'll see how drying and storage stop regrowth, and you'll understand the risk hidden in the duodenoscope elevator.",
+      "topic": "Rinse, Dry, Store and the Duodenoscope Elevator",
+      "subtitle": "MS-CSSD-15 · Module 10",
+      "learn": [
+        "why rinse water quality matters",
+        "how drying and storage stop regrowth",
+        "the risk in the duodenoscope elevator"
+      ]
+    },
+    {
+      "type": "hook",
+      "kicker": "The hook",
+      "narration": "A perfectly disinfected scope can still become contaminated, in the rinse, in the drying, or in storage.",
+      "headline": "Perfectly disinfected. Still contaminated.",
+      "question": "In the rinse, the drying, or storage.",
+      "highlight": [
+        "Still",
+        "contaminated."
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Rinse",
+      "narration": "After disinfection, rinse with water of defined quality. Residual disinfectant left on the scope causes chemical colitis and mucosal injury. And contaminated rinse water recontaminates the scope at the very last step.",
+      "title": "Rinse with water of defined quality",
+      "steps": [
+        {
+          "label": "Residual disinfectant",
+          "detail": "Causes chemical colitis and mucosal injury."
+        },
+        {
+          "label": "Contaminated rinse water",
+          "detail": "Recontaminates the scope at the last step."
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "Dry and store",
+      "narration": "Then dry the scope, with an alcohol flush where the protocol specifies, followed by forced air through every channel. Residual moisture lets waterborne organisms, especially Pseudomonas, multiply between uses. A coiled scope retains fluid. So store it hanging vertically, uncoiled, valves removed, in a controlled drying cabinet.",
+      "title": "Drying and storage",
+      "art": "drying",
+      "callouts": [
+        {
+          "anchor": "alcohol",
+          "label": "Alcohol flush",
+          "text": "where protocol specifies",
+          "say": [
+            "alcohol"
+          ]
+        },
+        {
+          "anchor": "air",
+          "label": "Forced air",
+          "text": "through every channel",
+          "say": [
+            "forced"
+          ]
+        },
+        {
+          "anchor": "moisture",
+          "label": "Residual moisture",
+          "text": "Pseudomonas multiplies",
+          "say": [
+            "moisture"
+          ]
+        },
+        {
+          "anchor": "coiled",
+          "label": "Coiled storage",
+          "text": "retains fluid",
+          "say": [
+            "coiled"
+          ]
+        },
+        {
+          "anchor": "cabinet",
+          "label": "Drying cabinet",
+          "text": "vertical, uncoiled, valves off",
+          "say": [
+            "vertically",
+            "cabinet"
+          ]
+        }
+      ],
+      "caption": "Plus a defined maximum storage interval, per protocol."
+    },
+    {
+      "type": "figure",
+      "kicker": "The elevator",
+      "narration": "Now, the duodenoscope. At its distal tip is an elevator, a small lever that raises to direct accessories. Its recess is narrow, mechanically complex and extremely difficult to clean. It has been implicated in international outbreaks of multidrug-resistant organisms. Follow the manufacturer's elevator instructions exactly.",
+      "title": "The duodenoscope distal tip",
+      "art": "elevator",
+      "callouts": [
+        {
+          "anchor": "tip",
+          "label": "Side-viewing distal tip",
+          "say": [
+            "distal"
+          ]
+        },
+        {
+          "anchor": "elevator",
+          "label": "The elevator",
+          "text": "a lever that raises",
+          "say": [
+            "elevator",
+            "lever"
+          ]
+        },
+        {
+          "anchor": "accessory",
+          "label": "Directs accessories",
+          "say": [
+            "accessories"
+          ]
+        },
+        {
+          "anchor": "recess",
+          "label": "The recess",
+          "text": "narrow, extremely hard to clean",
+          "say": [
+            "recess"
+          ]
+        }
+      ],
+      "caption": "Plus any extra measures your infection control team specifies."
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "Knowledge check. What is the duodenoscope elevator, and why does it matter? Pause here and think it through.",
+      "question": "What is the duodenoscope elevator, and why does it matter?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "narration": "It's a mechanism at the duodenoscope's distal tip that directs accessories. Its recess is narrow, complex and extremely hard to clean, and it has been implicated in outbreaks of multidrug-resistant organisms. So its specific instructions are followed exactly.",
+      "question": "What is the duodenoscope elevator, and why does it matter?",
+      "answer": "A lever at the tip that directs accessories, with a recess that's extremely hard to clean.",
+      "points": [
+        "Implicated in multidrug-resistant outbreaks",
+        "Follow the manufacturer's instructions exactly"
+      ]
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "One more. Why must a scope be dried thoroughly and stored hanging vertically and uncoiled? Pause here and think it through.",
+      "question": "Why must a scope be dried thoroughly and stored hanging vertically and uncoiled?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "narration": "Because residual moisture lets Pseudomonas and other Gram-negative organisms multiply between uses, so a correctly disinfected scope becomes contaminated in storage. A coiled scope holds fluid. Hanging vertically and uncoiled, with valves removed, lets every channel drain and dry.",
+      "question": "Why must a scope be dried thoroughly and stored hanging vertically and uncoiled?",
+      "answer": "Moisture lets organisms multiply; hanging vertically lets every channel drain.",
+      "points": [
+        "Coiled scopes retain fluid",
+        "Valves removed, in a drying cabinet"
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Rinse with water of defined quality. Dry every channel, and store scopes hanging vertically in a drying cabinet. And give the duodenoscope elevator the specific attention its manufacturer requires. In the final video, we'll cover traceability, surveillance, and the pressure behind most failures.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Rinse — defined water quality",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Dry and store — vertical, uncoiled",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Elevator — follow instructions exactly",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "Clean is not safe until it stays clean.",
+      "signoff": "Every scope. Every step. Every time."
+    }
+  ]
+}

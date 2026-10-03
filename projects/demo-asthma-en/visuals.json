@@ -1,0 +1,32 @@
+{
+  "parts": [
+    {"name": "lungs", "usedBy": ["AS01"]},
+    {"name": "person", "usedBy": ["AS01"]},
+    {"name": "icon", "usedBy": ["AS01"]},
+    {
+      "name": "bronchiole",
+      "pack": "airways",
+      "usedBy": ["AS01"],
+      "what": "A small airway in cross-section: a smooth-muscle ring around the wall, a mucosal lining, and an open lumen with air flowing through. Generic and reusable for any lesson on asthma, COPD or other obstructive airway disease.",
+      "anchors": ["muscle", "mucosa", "lumen", "mucus", "airflow"],
+      "events": [
+        "constrict — the muscle ring tightens, narrowing the lumen",
+        "inflame — the mucosal lining swells and thickens",
+        "mucus — thick mucus appears in the lumen",
+        "relieve — the muscle ring relaxes back and the lumen reopens"
+      ],
+      "accuracy": "In an asthma attack the airway smooth muscle tightens (bronchoconstriction), the mucosal lining becomes swollen and inflamed, and the airway produces extra, thicker mucus — together narrowing the lumen and reducing airflow (ledger: GINA 2024 ch.1 'Pathophysiology'; NHS 'Asthma' — Causes). A reliever relaxes the tightened muscle quickly; a preventer reduces the inflammation over time (ledger: NHS 'Asthma' — Treatment; GINA 2024 ch.3 'Reliever medications' / 'Controller medications')."
+    },
+    {
+      "name": "inhaler",
+      "pack": "airways",
+      "usedBy": ["AS01"],
+      "what": "A handheld metered-dose inhaler: canister and mouthpiece. Generic device, reusable wherever a lesson needs to show inhaled medicine being taken (asthma, COPD, any respiratory-drug delivery).",
+      "anchors": ["canister", "mouthpiece", "mist"],
+      "events": [
+        "puff — the canister is pressed and a fine mist releases from the mouthpiece"
+      ],
+      "accuracy": "Reliever inhalers act quickly to relax airway muscle; preventer inhalers are taken regularly (usually daily) to reduce airway inflammation over time, and must be used even when feeling well (ledger: NHS 'Asthma' — Treatment; GINA 2024 ch.3 'Reliever medications' / 'Controller medications' / 'Adherence')."
+    }
+  ]
+}

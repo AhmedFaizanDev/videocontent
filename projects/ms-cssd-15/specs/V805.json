@@ -1,0 +1,244 @@
+{
+  "id": "V805",
+  "section": "MS-CSSD-15: CSSD & Sterilization Practices",
+  "module": "Module 10 · Flexible Endoscope Reprocessing",
+  "topicGroup": "Flexible Endoscope Reprocessing",
+  "title": "Traceability, Surveillance and Pressure",
+  "outputFilename": "M10_V5_Traceability_Surveillance_and_Pressure.mp4",
+  "episode": "10.5",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "narration": "In this video, we're going to talk about the systems that keep endoscope reprocessing safe. By the end, you'll know what traceability must link, you'll see how to respond to a suspected transmission, and you'll understand why pressure causes most failures.",
+      "topic": "Traceability, Surveillance and Pressure",
+      "subtitle": "MS-CSSD-15 · Module 10",
+      "learn": [
+        "what traceability must link",
+        "how to respond to a suspected transmission",
+        "why pressure causes most failures"
+      ]
+    },
+    {
+      "type": "hook",
+      "kicker": "The hook",
+      "narration": "A patient develops an unusual infection after an endoscopy. Was it the scope? Who else was exposed? Only your records can answer that.",
+      "headline": "Was it the scope? Who else was exposed?",
+      "question": "Only your records can answer.",
+      "highlight": [
+        "scope?",
+        "exposed?"
+      ]
+    },
+    {
+      "type": "example",
+      "kicker": "Traceability",
+      "narration": "Traceability links four things for every procedure. The scope, say scope seven, used on patient forty-four seventy-one. The reprocessing cycle, cycle eleven forty-two, which passed. And the operator, technician twelve. With that chain, a suspected transmission can be traced to exactly who was exposed.",
+      "title": "One procedure, one record",
+      "boxes": [
+        {
+          "label": "Scope",
+          "value": "?",
+          "color": "accent"
+        },
+        {
+          "label": "Patient",
+          "value": "?",
+          "color": "variable"
+        },
+        {
+          "label": "Cycle",
+          "value": "?",
+          "color": "constant"
+        },
+        {
+          "label": "Operator",
+          "value": "?",
+          "color": "variable"
+        }
+      ],
+      "trace": [
+        {
+          "note": "Scope 07 used on patient 4471",
+          "set": {
+            "Scope": "SCOPE 07",
+            "Patient": "PT 4471"
+          },
+          "highlight": "Patient"
+        },
+        {
+          "note": "Reprocessing cycle 1142 passed",
+          "set": {
+            "Cycle": "1142 OK"
+          },
+          "highlight": "Cycle"
+        },
+        {
+          "note": "Run by technician 12",
+          "set": {
+            "Operator": "TECH 12"
+          },
+          "highlight": "Operator"
+        },
+        {
+          "note": "Chain complete: traceable",
+          "set": {},
+          "highlight": "Scope",
+          "result": true
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Surveillance",
+      "narration": "Around that chain sit four more safeguards. Microbiological surveillance of scopes at defined intervals, with defined actions on a positive result. Reprocessor validation, including final rinse water quality. Records of every cycle. And a damage and repair log, since a scope back from repair is reprocessed before use.",
+      "title": "Surveillance and records",
+      "steps": [
+        {
+          "label": "Microbiological surveillance",
+          "detail": "Defined intervals, defined actions."
+        },
+        {
+          "label": "Reprocessor validation",
+          "detail": "Including final rinse water."
+        },
+        {
+          "label": "Records of every cycle",
+          "detail": "Scope, result, operator."
+        },
+        {
+          "label": "Damage and repair log",
+          "detail": "Reprocess after every repair."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "kicker": "Suspected transmission",
+      "narration": "If transmission is suspected, first quarantine the scope. Don't reprocess it: that destroys the evidence. Notify infection control and microbiology. Retrieve the records of every exposed patient. Review practice, and sample the scope and reprocessor. Check its repair history. Then consider patient notification, report externally where required, and write it up.",
+      "title": "Responding to a suspected transmission",
+      "steps": [
+        {
+          "label": "Quarantine",
+          "detail": "Do NOT reprocess: it destroys evidence."
+        },
+        {
+          "label": "Notify",
+          "detail": "Infection control and microbiology."
+        },
+        {
+          "label": "Retrieve records",
+          "detail": "Which patients, in what order."
+        },
+        {
+          "label": "Review and sample",
+          "detail": "Practice, scope, reprocessor."
+        },
+        {
+          "label": "Repair history",
+          "detail": "Damage is relevant."
+        },
+        {
+          "label": "Notify, report, write up",
+          "detail": "Including what records couldn't show."
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "kicker": "The pressure",
+      "narration": "Most of these failures share one cause: time pressure. When a list runs late and one scope is available, a technician decides alone whether brushing was adequate. That decision shouldn't rest on individual courage. It needs written policy, a defined right to hold a scope back, adequate inventory and staffing, and recorded deviations.",
+      "question": "Where the pressure lands",
+      "left": {
+        "keyword": "COURAGE",
+        "title": "Individual",
+        "color": "variable",
+        "items": [
+          {
+            "icon": "",
+            "label": "A technician decides alone",
+            "say": [
+              "technician"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "A room full of waiting staff",
+            "say": [
+              "decision"
+            ]
+          },
+          {
+            "icon": "",
+            "label": "Shortcuts happen anyway",
+            "say": [
+              "courage"
+            ]
+          }
+        ]
+      },
+      "right": {
+        "keyword": "SYSTEM",
+        "title": "Organisational",
+        "color": "constant",
+        "items": [
+          {
+            "icon": "",
+            "label": "Written policy, right to hold back"
+          },
+          {
+            "icon": "",
+            "label": "Adequate inventory and staffing"
+          },
+          {
+            "icon": "",
+            "label": "Deviations recorded"
+          }
+        ]
+      },
+      "tip": "Make the pressure visible rather than absorbed."
+    },
+    {
+      "type": "check",
+      "kicker": "Knowledge check",
+      "narration": "Final knowledge check. A list is running late, one scope is available, and a technician is unsure the brushing was adequate. What should decide the outcome? Pause here and think it through.",
+      "question": "A list is running late, one scope is available, and a technician is unsure the brushing was adequate. What should decide the outcome?"
+    },
+    {
+      "type": "answer",
+      "kicker": "Answer",
+      "narration": "Written policy and a defined right to hold the scope back, supported by named management, not the courage of one technician under pressure. The root causes are inadequate inventory and capacity, so escalate with the patient risk stated, and record the deviation.",
+      "question": "A list is running late, one scope is available, and a technician is unsure the brushing was adequate. What should decide the outcome?",
+      "answer": "Written policy and the right to hold the scope back, not individual courage.",
+      "points": [
+        "Backed by named management",
+        "Escalate, stating the patient risk",
+        "Record the deviation"
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Trace every procedure: scope, patient, cycle and operator. If transmission is suspected, quarantine the scope and never reprocess it. And protect staff from pressure with policy, inventory and management backing. That completes this module on flexible endoscope reprocessing.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Traceability — scope, patient, cycle, operator",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Quarantine — never reprocess the evidence",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Pressure — solved by systems, not courage",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "Safe reprocessing is a system, not a heroic act.",
+      "signoff": "Every scope. Every step. Every time."
+    }
+  ]
+}

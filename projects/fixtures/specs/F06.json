@@ -1,0 +1,192 @@
+{
+  "id": "F06",
+  "title": "Medical packs",
+  "outputFilename": "F06_medical_packs.mp4",
+  "module": "Pack · medical",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "Medical Packs",
+      "subtitle": "Fixture · every anchor",
+      "narration": "In this video, we're going to talk about the medical illustration packs. By the end, you'll see every illustration, you'll see every anchor.",
+      "learn": [
+        "every illustration",
+        "every anchor"
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "artery",
+      "art": "artery",
+      "data": {},
+      "narration": "Pack figure. We now look at heart carefully. We now look at wall carefully. We now look at blood carefully. We now look at systole carefully. We now look at diastole carefully. We now look at gauge carefully.",
+      "title": "Pack art: artery",
+      "callouts": [
+        {
+          "anchor": "heart",
+          "label": "heart label",
+          "text": "heart note text",
+          "say": [
+            "heart"
+          ]
+        },
+        {
+          "anchor": "wall",
+          "label": "wall label",
+          "text": "wall note text",
+          "say": [
+            "wall"
+          ]
+        },
+        {
+          "anchor": "blood",
+          "label": "blood label",
+          "text": "blood note text",
+          "say": [
+            "blood"
+          ]
+        },
+        {
+          "anchor": "systole",
+          "label": "systole label",
+          "text": "systole note text",
+          "say": [
+            "systole"
+          ]
+        },
+        {
+          "anchor": "diastole",
+          "label": "diastole label",
+          "text": "diastole note text",
+          "say": [
+            "diastole"
+          ]
+        },
+        {
+          "anchor": "gauge",
+          "label": "gauge label",
+          "text": "gauge note text",
+          "say": [
+            "gauge"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "bpmonitor",
+      "art": "bpmonitor",
+      "data": {},
+      "narration": "Pack figure. We now look at cuff carefully. We now look at artery carefully. We now look at monitor carefully. We now look at sys carefully. We now look at dia carefully. We now look at unit carefully.",
+      "title": "Pack art: bpmonitor",
+      "callouts": [
+        {
+          "anchor": "cuff",
+          "label": "cuff label",
+          "text": "cuff note text",
+          "say": [
+            "cuff"
+          ]
+        },
+        {
+          "anchor": "artery",
+          "label": "artery label",
+          "text": "artery note text",
+          "say": [
+            "artery"
+          ]
+        },
+        {
+          "anchor": "monitor",
+          "label": "monitor label",
+          "text": "monitor note text",
+          "say": [
+            "monitor"
+          ]
+        },
+        {
+          "anchor": "sys",
+          "label": "sys label",
+          "text": "sys note text",
+          "say": [
+            "sys"
+          ]
+        },
+        {
+          "anchor": "dia",
+          "label": "dia label",
+          "text": "dia note text",
+          "say": [
+            "dia"
+          ]
+        },
+        {
+          "anchor": "unit",
+          "label": "unit label",
+          "text": "unit note text",
+          "say": [
+            "unit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "figure",
+      "kicker": "bpscale",
+      "art": "bpscale",
+      "data": {},
+      "narration": "Pack figure. We now look at low carefully. We now look at ideal carefully. We now look at raised carefully. We now look at high carefully.",
+      "title": "Pack art: bpscale",
+      "callouts": [
+        {
+          "anchor": "low",
+          "label": "low label",
+          "text": "low note text",
+          "say": [
+            "low"
+          ]
+        },
+        {
+          "anchor": "ideal",
+          "label": "ideal label",
+          "text": "ideal note text",
+          "say": [
+            "ideal"
+          ]
+        },
+        {
+          "anchor": "raised",
+          "label": "raised label",
+          "text": "raised note text",
+          "say": [
+            "raised"
+          ]
+        },
+        {
+          "anchor": "high",
+          "label": "high label",
+          "text": "high note text",
+          "say": [
+            "high"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "To recap, every illustration renders, and every anchor is heard.",
+      "bullets": [
+        {
+          "label": "Illustrations — render"
+        },
+        {
+          "label": "Anchors — heard"
+        }
+      ],
+      "takeaway": "Every anchor, every art."
+    }
+  ]
+}

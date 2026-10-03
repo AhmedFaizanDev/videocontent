@@ -1,0 +1,39 @@
+{
+  "name": "MS-CSSD-15 \u00b7 Module 10 \u00b7 Flexible Endoscope Reprocessing",
+  "series": "CSSD & Sterilization Practices",
+  "voice": {
+    "name": "en-IN-NeerjaExpressiveNeural",
+    "rate": "+4%",
+    "pitch": "+0Hz",
+    "wpm": 128
+  },
+  "length": {
+    "minutes": [
+      3,
+      4
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "check"
+      ]
+    ]
+  },
+  "brand": {
+    "signoff": "Every scope. Every step. Every time."
+  },
+  "output": {
+    "dir": "MS_CSSD_15_CSSD_and_Sterilization_Practices/01_Module_10_Flexible_Endoscope_Reprocessing/01_Flexible_Endoscope_Reprocessing"
+  },
+  "pacing": {
+    "sentencePause": 0,
+    "beat": 0.9,
+    "breathe": 1
+  },
+  "style": {
+    "spelling": "en-GB"
+  }
+}

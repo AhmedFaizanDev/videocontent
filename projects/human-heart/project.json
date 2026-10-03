@@ -1,0 +1,36 @@
+{
+  "name": "The Human Heart",
+  "series": "Physiology for Nursing & Medical Students",
+  "brand": {
+    "signoff": "Keep learning. See you in the next one."
+  },
+  "length": {
+    "minutes": [
+      9.5,
+      12
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "figure"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 5
+  },
+  "style": {
+    "spelling": "en-GB"
+  },
+  "lexicon": {
+    "His": "Hiss",
+    "chordae": "kor-dee",
+    "tendineae": "ten-din-ee-ee",
+    "venae": "vee-nee",
+    "cavae": "kay-vee"
+  }
+}

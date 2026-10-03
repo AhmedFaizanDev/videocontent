@@ -1,0 +1,334 @@
+{
+ "id": "F11",
+ "title": "Body pack",
+ "outputFilename": "F11_body_pack.mp4",
+ "module": "Pack \u00b7 body",
+ "topicGroup": "Fixtures",
+ "scenes": [
+  {
+   "type": "intro",
+   "kicker": "Introduction",
+   "topic": "Body Pack",
+   "subtitle": "Fixture \u00b7 every part",
+   "narration": "In this video, we're going to test the body pack. By the end, you'll see every part, and every icon.",
+   "learn": [
+    "every part",
+    "every icon"
+   ]
+  },
+  {
+   "type": "stage",
+   "kicker": "Parts",
+   "narration": "A person stands and waves. Then the person looks worried. The body map shows the brain, the heart and the kidneys. Under strain the arteries swell. The vessel wall stretches as blood pushes outward. Then it turns stiff and the lining tears. The gauge rises into the red.",
+   "world": {
+    "w": 3600,
+    "h": 1300,
+    "layers": [
+     {
+      "id": "p",
+      "art": "person",
+      "at": [
+       380,
+       650
+      ],
+      "h": 1100
+     },
+     {
+      "id": "b",
+      "art": "body",
+      "at": [
+       1180,
+       650
+      ],
+      "h": 1150
+     },
+     {
+      "id": "v",
+      "art": "vessel",
+      "at": [
+       2150,
+       650
+      ],
+      "h": 820
+     },
+     {
+      "id": "g",
+      "art": "gauge",
+      "at": [
+       3100,
+       650
+      ],
+      "h": 700
+     }
+    ]
+   },
+   "beats": [
+    {
+     "say": [
+      "waves"
+     ],
+     "act": "p.wave"
+    },
+    {
+     "say": [
+      "worried"
+     ],
+     "act": "p.worry",
+     "camera": {
+      "on": "p"
+     }
+    },
+    {
+     "say": [
+      "brain"
+     ],
+     "camera": {
+      "on": "b"
+     },
+     "act": [
+      "b.brain",
+      "b.heart",
+      "b.kidneys"
+     ]
+    },
+    {
+     "say": [
+      "strain"
+     ],
+     "act": "b.strain"
+    },
+    {
+     "say": [
+      "pushes"
+     ],
+     "camera": {
+      "on": "v"
+     },
+     "act": [
+      "v.push",
+      "v.stretch"
+     ]
+    },
+    {
+     "say": [
+      "stiff"
+     ],
+     "act": "v.stiff"
+    },
+    {
+     "say": [
+      "tears"
+     ],
+     "act": "v.tear"
+    },
+    {
+     "say": [
+      "gauge"
+     ],
+     "camera": {
+      "on": "g"
+     },
+     "act": "g.rise"
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "kicker": "Icons",
+   "narration": "Every icon now acts at once, so we can check them all.",
+   "world": {
+    "w": 3400,
+    "h": 1300,
+    "layers": [
+     {
+      "id": "salt",
+      "art": "icon",
+      "data": {
+       "name": "salt"
+      },
+      "at": [
+       300,
+       330
+      ],
+      "h": 520
+     },
+     {
+      "id": "vegetables",
+      "art": "icon",
+      "data": {
+       "name": "vegetables"
+      },
+      "at": [
+       860,
+       330
+      ],
+      "h": 520
+     },
+     {
+      "id": "fruit",
+      "art": "icon",
+      "data": {
+       "name": "fruit"
+      },
+      "at": [
+       1420,
+       330
+      ],
+      "h": 520
+     },
+     {
+      "id": "walk",
+      "art": "icon",
+      "data": {
+       "name": "walk"
+      },
+      "at": [
+       1980,
+       330
+      ],
+      "h": 520
+     },
+     {
+      "id": "cigarette",
+      "art": "icon",
+      "data": {
+       "name": "cigarette"
+      },
+      "at": [
+       2540,
+       330
+      ],
+      "h": 520
+     },
+     {
+      "id": "alcohol",
+      "art": "icon",
+      "data": {
+       "name": "alcohol"
+      },
+      "at": [
+       3100,
+       330
+      ],
+      "h": 520
+     },
+     {
+      "id": "calendar",
+      "art": "icon",
+      "data": {
+       "name": "calendar"
+      },
+      "at": [
+       300,
+       950
+      ],
+      "h": 520
+     },
+     {
+      "id": "scale",
+      "art": "icon",
+      "data": {
+       "name": "scale"
+      },
+      "at": [
+       860,
+       950
+      ],
+      "h": 520
+     },
+     {
+      "id": "pill",
+      "art": "icon",
+      "data": {
+       "name": "pill"
+      },
+      "at": [
+       1420,
+       950
+      ],
+      "h": 520
+     },
+     {
+      "id": "water",
+      "art": "icon",
+      "data": {
+       "name": "water"
+      },
+      "at": [
+       1980,
+       950
+      ],
+      "h": 520
+     },
+     {
+      "id": "sleep",
+      "art": "icon",
+      "data": {
+       "name": "sleep"
+      },
+      "at": [
+       2540,
+       950
+      ],
+      "h": 520
+     },
+     {
+      "id": "stethoscope",
+      "art": "icon",
+      "data": {
+       "name": "stethoscope"
+      },
+      "at": [
+       3100,
+       950
+      ],
+      "h": 520
+     }
+    ]
+   },
+   "beats": [
+    {
+     "say": [
+      "icon"
+     ],
+     "act": [
+      "salt.act",
+      "vegetables.act",
+      "fruit.act",
+      "walk.act",
+      "cigarette.act",
+      "alcohol.act",
+      "calendar.act",
+      "scale.act",
+      "pill.act",
+      "water.act",
+      "sleep.act",
+      "stethoscope.act"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "recap",
+   "kicker": "Recap",
+   "narration": "Let's recap. The parts act. The icons act.",
+   "bullets": [
+    {
+     "icon": "",
+     "label": "Parts \u2014 act on their word",
+     "say": [
+      "parts"
+     ]
+    },
+    {
+     "icon": "",
+     "label": "Icons \u2014 act too",
+     "say": [
+      "icons"
+     ]
+    }
+   ],
+   "takeaway": "Drawn in code."
+  }
+ ]
+}

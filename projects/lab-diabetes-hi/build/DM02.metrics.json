@@ -1,0 +1,63 @@
+{
+  "project": "lab-diabetes-hi",
+  "id": "DM02",
+  "stages": {
+    "preflight": {
+      "seconds": 5.5,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-09-26T09:28:52.952Z"
+    },
+    "voiceover": {
+      "seconds": 1.6,
+      "scenesVoiced": 1,
+      "scenes": 13,
+      "characters": 179,
+      "audioSeconds": 321.4,
+      "wpm": 120,
+      "voice": "hi-IN-SwaraNeural",
+      "at": "2026-09-26T08:30:32.633Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-09-26T09:28:53.040Z"
+    },
+    "render": {
+      "seconds": 283,
+      "totalSeconds": 302,
+      "frames": 11170,
+      "fps": 39.5,
+      "bytes": 59801919,
+      "at": "2026-09-26T08:37:07.225Z"
+    },
+    "qa": {
+      "seconds": 54,
+      "pass": true,
+      "failed": [],
+      "at": "2026-09-26T08:38:02.059Z"
+    }
+  },
+  "authoring": [
+    {
+      "label": "spec (lean workflow)",
+      "model": "claude-opus-5-5",
+      "requests": 18,
+      "tokens": {
+        "input": 36,
+        "cacheWrite5m": 116606,
+        "cacheWrite1h": 0,
+        "cacheRead": 1592003,
+        "output": 8115
+      },
+      "costUSD": 1.0639,
+      "wallMinutes": 9.9,
+      "from": "2026-09-26T08:07:55.552Z",
+      "to": "2026-09-26T08:17:49.705Z",
+      "outputEstimated": true
+    }
+  ],
+  "lang": "hi",
+  "runtimeMinutes": 6.21,
+  "words": 572
+}

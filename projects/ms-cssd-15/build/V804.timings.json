@@ -1,0 +1,2281 @@
+{
+  "id": "V804",
+  "fps": 30,
+  "totalDurationInFrames": 6236,
+  "voice": {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "en-IN-NeerjaExpressiveNeural"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to talk about the final steps of the cycle, and one mechanism that needs special attention. By the end, you'll know why rinse water quality matters, you'll see how drying and storage stop regrowth, and you'll understand the risk hidden in the duodenoscope elevator.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-1.mp3",
+      "voDurationInSeconds": 18.816,
+      "voDurationInFrames": 565,
+      "leadFrames": 40,
+      "tailFrames": 44,
+      "durationInFrames": 649,
+      "startFrame": 0,
+      "captions": [
+        {
+          "text": "In this video, we're going to talk about",
+          "start": 0.098,
+          "end": 2.322
+        },
+        {
+          "text": "the final steps of the cycle, and one",
+          "start": 2.322,
+          "end": 4.798
+        },
+        {
+          "text": "mechanism that needs special attention.",
+          "start": 4.798,
+          "end": 7.221
+        },
+        {
+          "text": "By the end, you'll know why rinse water",
+          "start": 7.873,
+          "end": 10.108
+        },
+        {
+          "text": "quality matters, you'll see how drying and",
+          "start": 10.108,
+          "end": 12.692
+        },
+        {
+          "text": "storage stop regrowth, and you'll",
+          "start": 12.692,
+          "end": 14.651
+        },
+        {
+          "text": "understand the risk hidden in the",
+          "start": 14.651,
+          "end": 16.31
+        },
+        {
+          "text": "duodenoscope elevator.",
+          "start": 16.31,
+          "end": 18.133
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.098,
+          "end": 0.23
+        },
+        {
+          "w": "this",
+          "start": 0.242,
+          "end": 0.471
+        },
+        {
+          "w": "video",
+          "start": 0.483,
+          "end": 0.927
+        },
+        {
+          "w": "were",
+          "start": 1.204,
+          "end": 1.348
+        },
+        {
+          "w": "going",
+          "start": 1.36,
+          "end": 1.612
+        },
+        {
+          "w": "to",
+          "start": 1.625,
+          "end": 1.721
+        },
+        {
+          "w": "talk",
+          "start": 1.733,
+          "end": 2.033
+        },
+        {
+          "w": "about",
+          "start": 2.045,
+          "end": 2.31
+        },
+        {
+          "w": "the",
+          "start": 2.322,
+          "end": 2.406
+        },
+        {
+          "w": "final",
+          "start": 2.418,
+          "end": 2.875
+        },
+        {
+          "w": "steps",
+          "start": 2.887,
+          "end": 3.259
+        },
+        {
+          "w": "of",
+          "start": 3.271,
+          "end": 3.367
+        },
+        {
+          "w": "the",
+          "start": 3.379,
+          "end": 3.475
+        },
+        {
+          "w": "cycle",
+          "start": 3.487,
+          "end": 4.04
+        },
+        {
+          "w": "and",
+          "start": 4.317,
+          "end": 4.545
+        },
+        {
+          "w": "one",
+          "start": 4.557,
+          "end": 4.786
+        },
+        {
+          "w": "mechanism",
+          "start": 4.798,
+          "end": 5.423
+        },
+        {
+          "w": "that",
+          "start": 5.435,
+          "end": 5.675
+        },
+        {
+          "w": "needs",
+          "start": 5.687,
+          "end": 5.939
+        },
+        {
+          "w": "special",
+          "start": 5.951,
+          "end": 6.384
+        },
+        {
+          "w": "attention",
+          "start": 6.396,
+          "end": 7.021
+        },
+        {
+          "w": "by",
+          "start": 7.873,
+          "end": 8.113
+        },
+        {
+          "w": "the",
+          "start": 8.125,
+          "end": 8.293
+        },
+        {
+          "w": "end",
+          "start": 8.305,
+          "end": 8.618
+        },
+        {
+          "w": "youll",
+          "start": 8.798,
+          "end": 9.014
+        },
+        {
+          "w": "know",
+          "start": 9.026,
+          "end": 9.207
+        },
+        {
+          "w": "why",
+          "start": 9.219,
+          "end": 9.435
+        },
+        {
+          "w": "rinse",
+          "start": 9.447,
+          "end": 9.76
+        },
+        {
+          "w": "water",
+          "start": 9.772,
+          "end": 10.096
+        },
+        {
+          "w": "quality",
+          "start": 10.108,
+          "end": 10.541
+        },
+        {
+          "w": "matters",
+          "start": 10.553,
+          "end": 11.154
+        },
+        {
+          "w": "youll",
+          "start": 11.37,
+          "end": 11.562
+        },
+        {
+          "w": "see",
+          "start": 11.575,
+          "end": 11.815
+        },
+        {
+          "w": "how",
+          "start": 11.827,
+          "end": 12.055
+        },
+        {
+          "w": "drying",
+          "start": 12.067,
+          "end": 12.5
+        },
+        {
+          "w": "and",
+          "start": 12.512,
+          "end": 12.68
+        },
+        {
+          "w": "storage",
+          "start": 12.692,
+          "end": 13.125
+        },
+        {
+          "w": "stop",
+          "start": 13.137,
+          "end": 13.522
+        },
+        {
+          "w": "regrowth",
+          "start": 13.534,
+          "end": 14.062
+        },
+        {
+          "w": "and",
+          "start": 14.231,
+          "end": 14.459
+        },
+        {
+          "w": "youll",
+          "start": 14.471,
+          "end": 14.639
+        },
+        {
+          "w": "understand",
+          "start": 14.651,
+          "end": 15.18
+        },
+        {
+          "w": "the",
+          "start": 15.192,
+          "end": 15.252
+        },
+        {
+          "w": "risk",
+          "start": 15.264,
+          "end": 15.625
+        },
+        {
+          "w": "hidden",
+          "start": 15.637,
+          "end": 16.058
+        },
+        {
+          "w": "in",
+          "start": 16.07,
+          "end": 16.202
+        },
+        {
+          "w": "the",
+          "start": 16.214,
+          "end": 16.298
+        },
+        {
+          "w": "duodenoscope",
+          "start": 16.31,
+          "end": 17.272
+        },
+        {
+          "w": "elevator",
+          "start": 17.284,
+          "end": 17.933
+        }
+      ],
+      "hash": "d4cd8520ab87"
+    },
+    {
+      "index": 2,
+      "type": "hook",
+      "narration": "A perfectly disinfected scope can still become contaminated, in the rinse, in the drying, or in storage.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-2.mp3",
+      "voDurationInSeconds": 7.56,
+      "voDurationInFrames": 227,
+      "leadFrames": 26,
+      "tailFrames": 36,
+      "durationInFrames": 289,
+      "startFrame": 649,
+      "captions": [
+        {
+          "text": "A perfectly disinfected scope can still",
+          "start": 0.098,
+          "end": 2.49
+        },
+        {
+          "text": "become contaminated, in the rinse, in the",
+          "start": 2.49,
+          "end": 5.086
+        },
+        {
+          "text": "drying, or in storage.",
+          "start": 5.086,
+          "end": 6.897
+        }
+      ],
+      "words": [
+        {
+          "w": "a",
+          "start": 0.098,
+          "end": 0.17
+        },
+        {
+          "w": "perfectly",
+          "start": 0.182,
+          "end": 0.795
+        },
+        {
+          "w": "disinfected",
+          "start": 0.807,
+          "end": 1.576
+        },
+        {
+          "w": "scope",
+          "start": 1.588,
+          "end": 1.961
+        },
+        {
+          "w": "can",
+          "start": 1.973,
+          "end": 2.141
+        },
+        {
+          "w": "still",
+          "start": 2.153,
+          "end": 2.478
+        },
+        {
+          "w": "become",
+          "start": 2.49,
+          "end": 2.838
+        },
+        {
+          "w": "contaminated",
+          "start": 2.85,
+          "end": 3.74
+        },
+        {
+          "w": "in",
+          "start": 3.992,
+          "end": 4.112
+        },
+        {
+          "w": "the",
+          "start": 4.125,
+          "end": 4.197
+        },
+        {
+          "w": "rinse",
+          "start": 4.209,
+          "end": 4.653
+        },
+        {
+          "w": "in",
+          "start": 4.858,
+          "end": 4.978
+        },
+        {
+          "w": "the",
+          "start": 4.99,
+          "end": 5.074
+        },
+        {
+          "w": "drying",
+          "start": 5.086,
+          "end": 5.603
+        },
+        {
+          "w": "or",
+          "start": 5.759,
+          "end": 5.963
+        },
+        {
+          "w": "in",
+          "start": 5.976,
+          "end": 6.084
+        },
+        {
+          "w": "storage",
+          "start": 6.096,
+          "end": 6.697
+        }
+      ],
+      "hash": "449ec2d86ed6"
+    },
+    {
+      "index": 3,
+      "type": "steps",
+      "narration": "After disinfection, rinse with water of defined quality. Residual disinfectant left on the scope causes chemical colitis and mucosal injury. And contaminated rinse water recontaminates the scope at the very last step.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-3.mp3",
+      "voDurationInSeconds": 15.912,
+      "voDurationInFrames": 478,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 548,
+      "startFrame": 938,
+      "captions": [
+        {
+          "text": "After disinfection, rinse with water of",
+          "start": 0.098,
+          "end": 2.622
+        },
+        {
+          "text": "defined quality. Residual disinfectant",
+          "start": 2.622,
+          "end": 5.913
+        },
+        {
+          "text": "left on the scope causes chemical colitis",
+          "start": 5.913,
+          "end": 8.305
+        },
+        {
+          "text": "and mucosal injury.",
+          "start": 8.305,
+          "end": 9.779
+        },
+        {
+          "text": "And contaminated rinse water",
+          "start": 10.469,
+          "end": 12.2
+        },
+        {
+          "text": "recontaminates the scope at the very last",
+          "start": 12.2,
+          "end": 14.651
+        },
+        {
+          "text": "step.",
+          "start": 14.651,
+          "end": 15.187999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "after",
+          "start": 0.098,
+          "end": 0.447
+        },
+        {
+          "w": "disinfection",
+          "start": 0.459,
+          "end": 1.312
+        },
+        {
+          "w": "rinse",
+          "start": 1.564,
+          "end": 1.937
+        },
+        {
+          "w": "with",
+          "start": 1.949,
+          "end": 2.105
+        },
+        {
+          "w": "water",
+          "start": 2.117,
+          "end": 2.466
+        },
+        {
+          "w": "of",
+          "start": 2.478,
+          "end": 2.61
+        },
+        {
+          "w": "defined",
+          "start": 2.622,
+          "end": 3.091
+        },
+        {
+          "w": "quality",
+          "start": 3.103,
+          "end": 3.692
+        },
+        {
+          "w": "residual",
+          "start": 4.579,
+          "end": 5.12
+        },
+        {
+          "w": "disinfectant",
+          "start": 5.132,
+          "end": 5.901
+        },
+        {
+          "w": "left",
+          "start": 5.913,
+          "end": 6.214
+        },
+        {
+          "w": "on",
+          "start": 6.226,
+          "end": 6.322
+        },
+        {
+          "w": "the",
+          "start": 6.334,
+          "end": 6.406
+        },
+        {
+          "w": "scope",
+          "start": 6.418,
+          "end": 6.779
+        },
+        {
+          "w": "causes",
+          "start": 6.791,
+          "end": 7.2
+        },
+        {
+          "w": "chemical",
+          "start": 7.212,
+          "end": 7.632
+        },
+        {
+          "w": "colitis",
+          "start": 7.644,
+          "end": 8.293
+        },
+        {
+          "w": "and",
+          "start": 8.305,
+          "end": 8.474
+        },
+        {
+          "w": "mucosal",
+          "start": 8.486,
+          "end": 9.038
+        },
+        {
+          "w": "injury",
+          "start": 9.05,
+          "end": 9.579
+        },
+        {
+          "w": "and",
+          "start": 10.469,
+          "end": 10.673
+        },
+        {
+          "w": "contaminated",
+          "start": 10.685,
+          "end": 11.502
+        },
+        {
+          "w": "rinse",
+          "start": 11.514,
+          "end": 11.827
+        },
+        {
+          "w": "water",
+          "start": 11.839,
+          "end": 12.187
+        },
+        {
+          "w": "recontaminates",
+          "start": 12.2,
+          "end": 13.089
+        },
+        {
+          "w": "the",
+          "start": 13.101,
+          "end": 13.209
+        },
+        {
+          "w": "scope",
+          "start": 13.221,
+          "end": 13.69
+        },
+        {
+          "w": "at",
+          "start": 13.702,
+          "end": 13.81
+        },
+        {
+          "w": "the",
+          "start": 13.822,
+          "end": 13.918
+        },
+        {
+          "w": "very",
+          "start": 13.93,
+          "end": 14.267
+        },
+        {
+          "w": "last",
+          "start": 14.279,
+          "end": 14.639
+        },
+        {
+          "w": "step",
+          "start": 14.651,
+          "end": 14.988
+        }
+      ],
+      "hash": "a7b0a122c398"
+    },
+    {
+      "index": 4,
+      "type": "figure",
+      "narration": "Then dry the scope, with an alcohol flush where the protocol specifies, followed by forced air through every channel. Residual moisture lets waterborne organisms, especially Pseudomonas, multiply between uses. A coiled scope retains fluid. So store it hanging vertically, uncoiled, valves removed, in a controlled drying cabinet.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-4.mp3",
+      "voDurationInSeconds": 24.624,
+      "voDurationInFrames": 739,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 809,
+      "startFrame": 1486,
+      "captions": [
+        {
+          "text": "Then dry the scope, with an alcohol flush",
+          "start": 0.098,
+          "end": 2.706
+        },
+        {
+          "text": "where the protocol specifies, followed by",
+          "start": 2.706,
+          "end": 5.206
+        },
+        {
+          "text": "forced air through every channel.",
+          "start": 5.206,
+          "end": 7.173
+        },
+        {
+          "text": "Residual moisture lets waterborne",
+          "start": 7.849,
+          "end": 9.832
+        },
+        {
+          "text": "organisms, especially Pseudomonas,",
+          "start": 9.832,
+          "end": 12.543999999999999
+        },
+        {
+          "text": "multiply between uses.",
+          "start": 12.584,
+          "end": 14.359
+        },
+        {
+          "text": "A coiled scope retains fluid.",
+          "start": 15.06,
+          "end": 17.159
+        },
+        {
+          "text": "So store it hanging vertically, uncoiled,",
+          "start": 17.873,
+          "end": 20.721
+        },
+        {
+          "text": "valves removed, in a controlled drying",
+          "start": 20.721,
+          "end": 23.137
+        },
+        {
+          "text": "cabinet.",
+          "start": 23.137,
+          "end": 23.902
+        }
+      ],
+      "words": [
+        {
+          "w": "then",
+          "start": 0.098,
+          "end": 0.423
+        },
+        {
+          "w": "dry",
+          "start": 0.435,
+          "end": 0.711
+        },
+        {
+          "w": "the",
+          "start": 0.723,
+          "end": 0.819
+        },
+        {
+          "w": "scope",
+          "start": 0.831,
+          "end": 1.264
+        },
+        {
+          "w": "with",
+          "start": 1.54,
+          "end": 1.685
+        },
+        {
+          "w": "an",
+          "start": 1.697,
+          "end": 1.829
+        },
+        {
+          "w": "alcohol",
+          "start": 1.841,
+          "end": 2.31
+        },
+        {
+          "w": "flush",
+          "start": 2.322,
+          "end": 2.694
+        },
+        {
+          "w": "where",
+          "start": 2.706,
+          "end": 2.862
+        },
+        {
+          "w": "the",
+          "start": 2.874,
+          "end": 2.959
+        },
+        {
+          "w": "protocol",
+          "start": 2.971,
+          "end": 3.548
+        },
+        {
+          "w": "specifies",
+          "start": 3.56,
+          "end": 4.329
+        },
+        {
+          "w": "followed",
+          "start": 4.593,
+          "end": 5.014
+        },
+        {
+          "w": "by",
+          "start": 5.026,
+          "end": 5.194
+        },
+        {
+          "w": "forced",
+          "start": 5.206,
+          "end": 5.627
+        },
+        {
+          "w": "air",
+          "start": 5.639,
+          "end": 5.795
+        },
+        {
+          "w": "through",
+          "start": 5.807,
+          "end": 6.084
+        },
+        {
+          "w": "every",
+          "start": 6.096,
+          "end": 6.456
+        },
+        {
+          "w": "channel",
+          "start": 6.468,
+          "end": 6.973
+        },
+        {
+          "w": "residual",
+          "start": 7.849,
+          "end": 8.401
+        },
+        {
+          "w": "moisture",
+          "start": 8.413,
+          "end": 8.918
+        },
+        {
+          "w": "lets",
+          "start": 8.93,
+          "end": 9.231
+        },
+        {
+          "w": "waterborne",
+          "start": 9.243,
+          "end": 9.82
+        },
+        {
+          "w": "organisms",
+          "start": 9.832,
+          "end": 10.577
+        },
+        {
+          "w": "especially",
+          "start": 10.853,
+          "end": 11.49
+        },
+        {
+          "w": "pseudomonas",
+          "start": 11.502,
+          "end": 12.344
+        },
+        {
+          "w": "multiply",
+          "start": 12.584,
+          "end": 13.209
+        },
+        {
+          "w": "between",
+          "start": 13.221,
+          "end": 13.63
+        },
+        {
+          "w": "uses",
+          "start": 13.642,
+          "end": 14.159
+        },
+        {
+          "w": "a",
+          "start": 15.06,
+          "end": 15.132
+        },
+        {
+          "w": "coiled",
+          "start": 15.144,
+          "end": 15.481
+        },
+        {
+          "w": "scope",
+          "start": 15.493,
+          "end": 15.925
+        },
+        {
+          "w": "retains",
+          "start": 15.938,
+          "end": 16.442
+        },
+        {
+          "w": "fluid",
+          "start": 16.454,
+          "end": 16.959
+        },
+        {
+          "w": "so",
+          "start": 17.873,
+          "end": 18.185
+        },
+        {
+          "w": "store",
+          "start": 18.197,
+          "end": 18.57
+        },
+        {
+          "w": "it",
+          "start": 18.582,
+          "end": 18.69
+        },
+        {
+          "w": "hanging",
+          "start": 18.702,
+          "end": 19.087
+        },
+        {
+          "w": "vertically",
+          "start": 19.099,
+          "end": 19.736
+        },
+        {
+          "w": "uncoiled",
+          "start": 19.94,
+          "end": 20.553
+        },
+        {
+          "w": "valves",
+          "start": 20.721,
+          "end": 21.106
+        },
+        {
+          "w": "removed",
+          "start": 21.118,
+          "end": 21.647
+        },
+        {
+          "w": "in",
+          "start": 21.923,
+          "end": 22.031
+        },
+        {
+          "w": "a",
+          "start": 22.043,
+          "end": 22.091
+        },
+        {
+          "w": "controlled",
+          "start": 22.103,
+          "end": 22.74
+        },
+        {
+          "w": "drying",
+          "start": 22.752,
+          "end": 23.125
+        },
+        {
+          "w": "cabinet",
+          "start": 23.137,
+          "end": 23.702
+        }
+      ],
+      "hash": "cdcff777a3fb"
+    },
+    {
+      "index": 5,
+      "type": "figure",
+      "narration": "Now, the duodenoscope. At its distal tip is an elevator, a small lever that raises to direct accessories. Its recess is narrow, mechanically complex and extremely difficult to clean. It has been implicated in international outbreaks of multidrug-resistant organisms. Follow the manufacturer's elevator instructions exactly.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-5.mp3",
+      "voDurationInSeconds": 24.576,
+      "voDurationInFrames": 738,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 808,
+      "startFrame": 2295,
+      "captions": [
+        {
+          "text": "Now, the duodenoscope.",
+          "start": 0.098,
+          "end": 2.197
+        },
+        {
+          "text": "At its distal tip is an elevator, a small",
+          "start": 2.861,
+          "end": 5.757
+        },
+        {
+          "text": "lever that raises to direct accessories.",
+          "start": 5.757,
+          "end": 8.481
+        },
+        {
+          "text": "Its recess is narrow, mechanically complex",
+          "start": 9.171,
+          "end": 11.875
+        },
+        {
+          "text": "and extremely difficult to clean.",
+          "start": 11.875,
+          "end": 13.998
+        },
+        {
+          "text": "It has been implicated in international",
+          "start": 14.688,
+          "end": 16.815
+        },
+        {
+          "text": "outbreaks of multidrug-resistant",
+          "start": 16.815,
+          "end": 18.618
+        },
+        {
+          "text": "organisms. Follow the manufacturer's",
+          "start": 18.618,
+          "end": 21.755
+        },
+        {
+          "text": "elevator instructions exactly.",
+          "start": 21.755,
+          "end": 23.902
+        }
+      ],
+      "words": [
+        {
+          "w": "now",
+          "start": 0.098,
+          "end": 0.615
+        },
+        {
+          "w": "the",
+          "start": 0.819,
+          "end": 0.939
+        },
+        {
+          "w": "duodenoscope",
+          "start": 0.951,
+          "end": 1.997
+        },
+        {
+          "w": "at",
+          "start": 2.861,
+          "end": 3.017
+        },
+        {
+          "w": "its",
+          "start": 3.029,
+          "end": 3.197
+        },
+        {
+          "w": "distal",
+          "start": 3.209,
+          "end": 3.666
+        },
+        {
+          "w": "tip",
+          "start": 3.678,
+          "end": 3.942
+        },
+        {
+          "w": "is",
+          "start": 3.954,
+          "end": 4.087
+        },
+        {
+          "w": "an",
+          "start": 4.099,
+          "end": 4.231
+        },
+        {
+          "w": "elevator",
+          "start": 4.243,
+          "end": 4.94
+        },
+        {
+          "w": "a",
+          "start": 5.24,
+          "end": 5.325
+        },
+        {
+          "w": "small",
+          "start": 5.337,
+          "end": 5.745
+        },
+        {
+          "w": "lever",
+          "start": 5.757,
+          "end": 6.118
+        },
+        {
+          "w": "that",
+          "start": 6.13,
+          "end": 6.346
+        },
+        {
+          "w": "raises",
+          "start": 6.358,
+          "end": 6.755
+        },
+        {
+          "w": "to",
+          "start": 6.767,
+          "end": 6.875
+        },
+        {
+          "w": "direct",
+          "start": 6.887,
+          "end": 7.416
+        },
+        {
+          "w": "accessories",
+          "start": 7.428,
+          "end": 8.281
+        },
+        {
+          "w": "its",
+          "start": 9.171,
+          "end": 9.363
+        },
+        {
+          "w": "recess",
+          "start": 9.375,
+          "end": 9.76
+        },
+        {
+          "w": "is",
+          "start": 9.772,
+          "end": 9.928
+        },
+        {
+          "w": "narrow",
+          "start": 9.94,
+          "end": 10.421
+        },
+        {
+          "w": "mechanically",
+          "start": 10.637,
+          "end": 11.262
+        },
+        {
+          "w": "complex",
+          "start": 11.274,
+          "end": 11.863
+        },
+        {
+          "w": "and",
+          "start": 11.875,
+          "end": 12.007
+        },
+        {
+          "w": "extremely",
+          "start": 12.019,
+          "end": 12.584
+        },
+        {
+          "w": "difficult",
+          "start": 12.596,
+          "end": 13.161
+        },
+        {
+          "w": "to",
+          "start": 13.173,
+          "end": 13.293
+        },
+        {
+          "w": "clean",
+          "start": 13.305,
+          "end": 13.798
+        },
+        {
+          "w": "it",
+          "start": 14.688,
+          "end": 14.832
+        },
+        {
+          "w": "has",
+          "start": 14.844,
+          "end": 15.024
+        },
+        {
+          "w": "been",
+          "start": 15.036,
+          "end": 15.216
+        },
+        {
+          "w": "implicated",
+          "start": 15.228,
+          "end": 15.889
+        },
+        {
+          "w": "in",
+          "start": 15.901,
+          "end": 16.022
+        },
+        {
+          "w": "international",
+          "start": 16.034,
+          "end": 16.803
+        },
+        {
+          "w": "outbreaks",
+          "start": 16.815,
+          "end": 17.344
+        },
+        {
+          "w": "of",
+          "start": 17.356,
+          "end": 17.536
+        },
+        {
+          "w": "multidrugresistant",
+          "start": 17.548,
+          "end": 18.606
+        },
+        {
+          "w": "organisms",
+          "start": 18.618,
+          "end": 19.327
+        },
+        {
+          "w": "follow",
+          "start": 20.216,
+          "end": 20.625
+        },
+        {
+          "w": "the",
+          "start": 20.637,
+          "end": 20.745
+        },
+        {
+          "w": "manufacturers",
+          "start": 20.757,
+          "end": 21.743
+        },
+        {
+          "w": "elevator",
+          "start": 21.755,
+          "end": 22.32
+        },
+        {
+          "w": "instructions",
+          "start": 22.332,
+          "end": 23.041
+        },
+        {
+          "w": "exactly",
+          "start": 23.053,
+          "end": 23.702
+        }
+      ],
+      "hash": "2e38fa4abbed"
+    },
+    {
+      "index": 6,
+      "type": "check",
+      "narration": "Knowledge check. What is the duodenoscope elevator, and why does it matter? Pause here and think it through.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-6.mp3",
+      "voDurationInSeconds": 8.952,
+      "voDurationInFrames": 269,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 465,
+      "startFrame": 3103,
+      "captions": [
+        {
+          "text": "Knowledge check. What is the duodenoscope",
+          "start": 0.098,
+          "end": 3.269
+        },
+        {
+          "text": "elevator, and why does it matter?",
+          "start": 3.269,
+          "end": 5.909
+        },
+        {
+          "text": "Pause here and think it through.",
+          "start": 6.587,
+          "end": 8.312999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "knowledge",
+          "start": 0.098,
+          "end": 0.543
+        },
+        {
+          "w": "check",
+          "start": 0.555,
+          "end": 0.951
+        },
+        {
+          "w": "what",
+          "start": 1.839,
+          "end": 2.067
+        },
+        {
+          "w": "is",
+          "start": 2.079,
+          "end": 2.175
+        },
+        {
+          "w": "the",
+          "start": 2.188,
+          "end": 2.284
+        },
+        {
+          "w": "duodenoscope",
+          "start": 2.296,
+          "end": 3.257
+        },
+        {
+          "w": "elevator",
+          "start": 3.269,
+          "end": 3.966
+        },
+        {
+          "w": "and",
+          "start": 4.243,
+          "end": 4.507
+        },
+        {
+          "w": "why",
+          "start": 4.519,
+          "end": 4.772
+        },
+        {
+          "w": "does",
+          "start": 4.784,
+          "end": 5.024
+        },
+        {
+          "w": "it",
+          "start": 5.036,
+          "end": 5.18
+        },
+        {
+          "w": "matter",
+          "start": 5.192,
+          "end": 5.709
+        },
+        {
+          "w": "pause",
+          "start": 6.587,
+          "end": 6.851
+        },
+        {
+          "w": "here",
+          "start": 6.863,
+          "end": 7.224
+        },
+        {
+          "w": "and",
+          "start": 7.236,
+          "end": 7.428
+        },
+        {
+          "w": "think",
+          "start": 7.44,
+          "end": 7.656
+        },
+        {
+          "w": "it",
+          "start": 7.668,
+          "end": 7.764
+        },
+        {
+          "w": "through",
+          "start": 7.776,
+          "end": 8.113
+        }
+      ],
+      "hash": "8b1aa0bd8844"
+    },
+    {
+      "index": 7,
+      "type": "answer",
+      "narration": "It's a mechanism at the duodenoscope's distal tip that directs accessories. Its recess is narrow, complex and extremely hard to clean, and it has been implicated in outbreaks of multidrug-resistant organisms. So its specific instructions are followed exactly.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-7.mp3",
+      "voDurationInSeconds": 18.456,
+      "voDurationInFrames": 554,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 624,
+      "startFrame": 3568,
+      "captions": [
+        {
+          "text": "It's a mechanism at the duodenoscope's",
+          "start": 0.098,
+          "end": 2.322
+        },
+        {
+          "text": "distal tip that directs accessories.",
+          "start": 2.322,
+          "end": 4.805000000000001
+        },
+        {
+          "text": "Its recess is narrow, complex and",
+          "start": 5.481,
+          "end": 7.584
+        },
+        {
+          "text": "extremely hard to clean, and it has been",
+          "start": 7.584,
+          "end": 10.084
+        },
+        {
+          "text": "implicated in outbreaks of",
+          "start": 10.084,
+          "end": 11.755
+        },
+        {
+          "text": "multidrug-resistant organisms.",
+          "start": 11.755,
+          "end": 13.782
+        },
+        {
+          "text": "So its specific instructions are followed",
+          "start": 14.471,
+          "end": 16.899
+        },
+        {
+          "text": "exactly.",
+          "start": 16.899,
+          "end": 17.759999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "its",
+          "start": 0.098,
+          "end": 0.266
+        },
+        {
+          "w": "a",
+          "start": 0.278,
+          "end": 0.338
+        },
+        {
+          "w": "mechanism",
+          "start": 0.35,
+          "end": 1.036
+        },
+        {
+          "w": "at",
+          "start": 1.048,
+          "end": 1.192
+        },
+        {
+          "w": "the",
+          "start": 1.204,
+          "end": 1.312
+        },
+        {
+          "w": "duodenoscopes",
+          "start": 1.324,
+          "end": 2.31
+        },
+        {
+          "w": "distal",
+          "start": 2.322,
+          "end": 2.73
+        },
+        {
+          "w": "tip",
+          "start": 2.742,
+          "end": 2.983
+        },
+        {
+          "w": "that",
+          "start": 2.995,
+          "end": 3.199
+        },
+        {
+          "w": "directs",
+          "start": 3.211,
+          "end": 3.704
+        },
+        {
+          "w": "accessories",
+          "start": 3.716,
+          "end": 4.605
+        },
+        {
+          "w": "its",
+          "start": 5.481,
+          "end": 5.697
+        },
+        {
+          "w": "recess",
+          "start": 5.709,
+          "end": 6.094
+        },
+        {
+          "w": "is",
+          "start": 6.106,
+          "end": 6.25
+        },
+        {
+          "w": "narrow",
+          "start": 6.262,
+          "end": 6.719
+        },
+        {
+          "w": "complex",
+          "start": 6.923,
+          "end": 7.464
+        },
+        {
+          "w": "and",
+          "start": 7.476,
+          "end": 7.572
+        },
+        {
+          "w": "extremely",
+          "start": 7.584,
+          "end": 8.197
+        },
+        {
+          "w": "hard",
+          "start": 8.209,
+          "end": 8.498
+        },
+        {
+          "w": "to",
+          "start": 8.51,
+          "end": 8.63
+        },
+        {
+          "w": "clean",
+          "start": 8.642,
+          "end": 9.075
+        },
+        {
+          "w": "and",
+          "start": 9.399,
+          "end": 9.555
+        },
+        {
+          "w": "it",
+          "start": 9.567,
+          "end": 9.675
+        },
+        {
+          "w": "has",
+          "start": 9.688,
+          "end": 9.892
+        },
+        {
+          "w": "been",
+          "start": 9.904,
+          "end": 10.072
+        },
+        {
+          "w": "implicated",
+          "start": 10.084,
+          "end": 10.757
+        },
+        {
+          "w": "in",
+          "start": 10.769,
+          "end": 10.938
+        },
+        {
+          "w": "outbreaks",
+          "start": 10.95,
+          "end": 11.538
+        },
+        {
+          "w": "of",
+          "start": 11.55,
+          "end": 11.743
+        },
+        {
+          "w": "multidrugresistant",
+          "start": 11.755,
+          "end": 12.837
+        },
+        {
+          "w": "organisms",
+          "start": 12.849,
+          "end": 13.582
+        },
+        {
+          "w": "so",
+          "start": 14.471,
+          "end": 14.784
+        },
+        {
+          "w": "its",
+          "start": 14.796,
+          "end": 14.928
+        },
+        {
+          "w": "specific",
+          "start": 14.94,
+          "end": 15.493
+        },
+        {
+          "w": "instructions",
+          "start": 15.505,
+          "end": 16.226
+        },
+        {
+          "w": "are",
+          "start": 16.238,
+          "end": 16.37
+        },
+        {
+          "w": "followed",
+          "start": 16.382,
+          "end": 16.887
+        },
+        {
+          "w": "exactly",
+          "start": 16.899,
+          "end": 17.56
+        }
+      ],
+      "hash": "dd1c47d8c0ee"
+    },
+    {
+      "index": 8,
+      "type": "check",
+      "narration": "One more. Why must a scope be dried thoroughly and stored hanging vertically and uncoiled? Pause here and think it through.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-8.mp3",
+      "voDurationInSeconds": 9.264,
+      "voDurationInFrames": 278,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 474,
+      "startFrame": 4192,
+      "captions": [
+        {
+          "text": "One more. Why must a scope be dried",
+          "start": 0.098,
+          "end": 3.161
+        },
+        {
+          "text": "thoroughly and stored hanging vertically",
+          "start": 3.161,
+          "end": 5.301
+        },
+        {
+          "text": "and uncoiled? Pause here and think it",
+          "start": 5.301,
+          "end": 8.101
+        },
+        {
+          "text": "through.",
+          "start": 8.101,
+          "end": 8.636999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "one",
+          "start": 0.098,
+          "end": 0.459
+        },
+        {
+          "w": "more",
+          "start": 0.471,
+          "end": 0.831
+        },
+        {
+          "w": "why",
+          "start": 1.707,
+          "end": 1.959
+        },
+        {
+          "w": "must",
+          "start": 1.971,
+          "end": 2.212
+        },
+        {
+          "w": "a",
+          "start": 2.224,
+          "end": 2.272
+        },
+        {
+          "w": "scope",
+          "start": 2.284,
+          "end": 2.608
+        },
+        {
+          "w": "be",
+          "start": 2.62,
+          "end": 2.764
+        },
+        {
+          "w": "dried",
+          "start": 2.776,
+          "end": 3.149
+        },
+        {
+          "w": "thoroughly",
+          "start": 3.161,
+          "end": 3.714
+        },
+        {
+          "w": "and",
+          "start": 3.726,
+          "end": 3.918
+        },
+        {
+          "w": "stored",
+          "start": 3.93,
+          "end": 4.243
+        },
+        {
+          "w": "hanging",
+          "start": 4.255,
+          "end": 4.675
+        },
+        {
+          "w": "vertically",
+          "start": 4.688,
+          "end": 5.288
+        },
+        {
+          "w": "and",
+          "start": 5.301,
+          "end": 5.481
+        },
+        {
+          "w": "uncoiled",
+          "start": 5.493,
+          "end": 6.058
+        },
+        {
+          "w": "pause",
+          "start": 6.911,
+          "end": 7.175
+        },
+        {
+          "w": "here",
+          "start": 7.188,
+          "end": 7.548
+        },
+        {
+          "w": "and",
+          "start": 7.56,
+          "end": 7.752
+        },
+        {
+          "w": "think",
+          "start": 7.764,
+          "end": 7.981
+        },
+        {
+          "w": "it",
+          "start": 7.993,
+          "end": 8.089
+        },
+        {
+          "w": "through",
+          "start": 8.101,
+          "end": 8.437
+        }
+      ],
+      "hash": "f7a0ec0b85be"
+    },
+    {
+      "index": 9,
+      "type": "answer",
+      "narration": "Because residual moisture lets Pseudomonas and other Gram-negative organisms multiply between uses, so a correctly disinfected scope becomes contaminated in storage. A coiled scope holds fluid. Hanging vertically and uncoiled, with valves removed, lets every channel drain and dry.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-9.mp3",
+      "voDurationInSeconds": 19.896,
+      "voDurationInFrames": 597,
+      "leadFrames": 26,
+      "tailFrames": 44,
+      "durationInFrames": 667,
+      "startFrame": 4666,
+      "captions": [
+        {
+          "text": "Because residual moisture lets Pseudomonas",
+          "start": 0.098,
+          "end": 2.514
+        },
+        {
+          "text": "and other Gram-negative organisms multiply",
+          "start": 2.514,
+          "end": 4.906
+        },
+        {
+          "text": "between uses, so a correctly disinfected",
+          "start": 4.906,
+          "end": 7.562
+        },
+        {
+          "text": "scope becomes contaminated in storage.",
+          "start": 7.562,
+          "end": 10.081999999999999
+        },
+        {
+          "text": "A coiled scope holds fluid.",
+          "start": 10.757,
+          "end": 12.639999999999999
+        },
+        {
+          "text": "Hanging vertically and uncoiled, with",
+          "start": 13.329,
+          "end": 15.601
+        },
+        {
+          "text": "valves removed, lets every channel drain",
+          "start": 15.601,
+          "end": 18.401
+        },
+        {
+          "text": "and dry.",
+          "start": 18.401,
+          "end": 19.201999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "because",
+          "start": 0.098,
+          "end": 0.483
+        },
+        {
+          "w": "residual",
+          "start": 0.495,
+          "end": 0.987
+        },
+        {
+          "w": "moisture",
+          "start": 1,
+          "end": 1.48
+        },
+        {
+          "w": "lets",
+          "start": 1.492,
+          "end": 1.733
+        },
+        {
+          "w": "pseudomonas",
+          "start": 1.745,
+          "end": 2.502
+        },
+        {
+          "w": "and",
+          "start": 2.514,
+          "end": 2.706
+        },
+        {
+          "w": "other",
+          "start": 2.718,
+          "end": 2.947
+        },
+        {
+          "w": "gramnegative",
+          "start": 2.959,
+          "end": 3.644
+        },
+        {
+          "w": "organisms",
+          "start": 3.656,
+          "end": 4.293
+        },
+        {
+          "w": "multiply",
+          "start": 4.305,
+          "end": 4.894
+        },
+        {
+          "w": "between",
+          "start": 4.906,
+          "end": 5.29
+        },
+        {
+          "w": "uses",
+          "start": 5.302,
+          "end": 5.795
+        },
+        {
+          "w": "so",
+          "start": 6.048,
+          "end": 6.192
+        },
+        {
+          "w": "a",
+          "start": 6.204,
+          "end": 6.252
+        },
+        {
+          "w": "correctly",
+          "start": 6.264,
+          "end": 6.757
+        },
+        {
+          "w": "disinfected",
+          "start": 6.769,
+          "end": 7.55
+        },
+        {
+          "w": "scope",
+          "start": 7.562,
+          "end": 7.875
+        },
+        {
+          "w": "becomes",
+          "start": 7.887,
+          "end": 8.319
+        },
+        {
+          "w": "contaminated",
+          "start": 8.331,
+          "end": 9.161
+        },
+        {
+          "w": "in",
+          "start": 9.173,
+          "end": 9.281
+        },
+        {
+          "w": "storage",
+          "start": 9.293,
+          "end": 9.882
+        },
+        {
+          "w": "a",
+          "start": 10.757,
+          "end": 10.841
+        },
+        {
+          "w": "coiled",
+          "start": 10.853,
+          "end": 11.202
+        },
+        {
+          "w": "scope",
+          "start": 11.214,
+          "end": 11.611
+        },
+        {
+          "w": "holds",
+          "start": 11.623,
+          "end": 11.947
+        },
+        {
+          "w": "fluid",
+          "start": 11.959,
+          "end": 12.44
+        },
+        {
+          "w": "hanging",
+          "start": 13.329,
+          "end": 13.75
+        },
+        {
+          "w": "vertically",
+          "start": 13.762,
+          "end": 14.411
+        },
+        {
+          "w": "and",
+          "start": 14.423,
+          "end": 14.603
+        },
+        {
+          "w": "uncoiled",
+          "start": 14.615,
+          "end": 15.216
+        },
+        {
+          "w": "with",
+          "start": 15.433,
+          "end": 15.589
+        },
+        {
+          "w": "valves",
+          "start": 15.601,
+          "end": 15.986
+        },
+        {
+          "w": "removed",
+          "start": 15.998,
+          "end": 16.562
+        },
+        {
+          "w": "lets",
+          "start": 16.827,
+          "end": 17.139
+        },
+        {
+          "w": "every",
+          "start": 17.151,
+          "end": 17.512
+        },
+        {
+          "w": "channel",
+          "start": 17.524,
+          "end": 17.933
+        },
+        {
+          "w": "drain",
+          "start": 17.945,
+          "end": 18.389
+        },
+        {
+          "w": "and",
+          "start": 18.401,
+          "end": 18.57
+        },
+        {
+          "w": "dry",
+          "start": 18.582,
+          "end": 19.002
+        }
+      ],
+      "hash": "96e808431bfd"
+    },
+    {
+      "index": 10,
+      "type": "recap",
+      "narration": "Let's recap. Rinse with water of defined quality. Dry every channel, and store scopes hanging vertically in a drying cabinet. And give the duodenoscope elevator the specific attention its manufacturer requires. In the final video, we'll cover traceability, surveillance, and the pressure behind most failures.",
+      "audioFile": "audio/vo/ms-cssd-15/V804/scene-10.mp3",
+      "voDurationInSeconds": 23.544,
+      "voDurationInFrames": 707,
+      "leadFrames": 26,
+      "tailFrames": 170,
+      "durationInFrames": 903,
+      "startFrame": 5333,
+      "captions": [
+        {
+          "text": "Let's recap! Rinse with water of defined",
+          "start": 0.098,
+          "end": 3.486
+        },
+        {
+          "text": "quality. Dry every channel, and store",
+          "start": 3.486,
+          "end": 7.019
+        },
+        {
+          "text": "scopes hanging vertically in a drying",
+          "start": 7.019,
+          "end": 9.135
+        },
+        {
+          "text": "cabinet. And give the duodenoscope",
+          "start": 9.135,
+          "end": 12.115
+        },
+        {
+          "text": "elevator the specific attention its",
+          "start": 12.115,
+          "end": 14.243
+        },
+        {
+          "text": "manufacturer requires.",
+          "start": 14.243,
+          "end": 15.896999999999998
+        },
+        {
+          "text": "In the final video, we'll cover",
+          "start": 16.611,
+          "end": 18.594
+        },
+        {
+          "text": "traceability, surveillance, and the",
+          "start": 18.594,
+          "end": 20.781
+        },
+        {
+          "text": "pressure behind most failures.",
+          "start": 20.781,
+          "end": 22.868
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.098,
+          "end": 0.447
+        },
+        {
+          "w": "recap",
+          "start": 0.459,
+          "end": 1.012
+        },
+        {
+          "w": "rinse",
+          "start": 1.899,
+          "end": 2.284
+        },
+        {
+          "w": "with",
+          "start": 2.296,
+          "end": 2.464
+        },
+        {
+          "w": "water",
+          "start": 2.476,
+          "end": 2.824
+        },
+        {
+          "w": "of",
+          "start": 2.837,
+          "end": 2.981
+        },
+        {
+          "w": "defined",
+          "start": 2.993,
+          "end": 3.474
+        },
+        {
+          "w": "quality",
+          "start": 3.486,
+          "end": 4.05
+        },
+        {
+          "w": "dry",
+          "start": 4.94,
+          "end": 5.373
+        },
+        {
+          "w": "every",
+          "start": 5.385,
+          "end": 5.709
+        },
+        {
+          "w": "channel",
+          "start": 5.721,
+          "end": 6.238
+        },
+        {
+          "w": "and",
+          "start": 6.442,
+          "end": 6.647
+        },
+        {
+          "w": "store",
+          "start": 6.659,
+          "end": 7.007
+        },
+        {
+          "w": "scopes",
+          "start": 7.019,
+          "end": 7.416
+        },
+        {
+          "w": "hanging",
+          "start": 7.428,
+          "end": 7.873
+        },
+        {
+          "w": "vertically",
+          "start": 7.885,
+          "end": 8.462
+        },
+        {
+          "w": "in",
+          "start": 8.474,
+          "end": 8.606
+        },
+        {
+          "w": "a",
+          "start": 8.618,
+          "end": 8.69
+        },
+        {
+          "w": "drying",
+          "start": 8.702,
+          "end": 9.123
+        },
+        {
+          "w": "cabinet",
+          "start": 9.135,
+          "end": 9.688
+        },
+        {
+          "w": "and",
+          "start": 10.601,
+          "end": 10.793
+        },
+        {
+          "w": "give",
+          "start": 10.805,
+          "end": 10.986
+        },
+        {
+          "w": "the",
+          "start": 10.998,
+          "end": 11.118
+        },
+        {
+          "w": "duodenoscope",
+          "start": 11.13,
+          "end": 12.103
+        },
+        {
+          "w": "elevator",
+          "start": 12.115,
+          "end": 12.668
+        },
+        {
+          "w": "the",
+          "start": 12.68,
+          "end": 12.776
+        },
+        {
+          "w": "specific",
+          "start": 12.788,
+          "end": 13.413
+        },
+        {
+          "w": "attention",
+          "start": 13.425,
+          "end": 14.014
+        },
+        {
+          "w": "its",
+          "start": 14.026,
+          "end": 14.231
+        },
+        {
+          "w": "manufacturer",
+          "start": 14.243,
+          "end": 15.012
+        },
+        {
+          "w": "requires",
+          "start": 15.024,
+          "end": 15.697
+        },
+        {
+          "w": "in",
+          "start": 16.611,
+          "end": 16.719
+        },
+        {
+          "w": "the",
+          "start": 16.731,
+          "end": 16.815
+        },
+        {
+          "w": "final",
+          "start": 16.827,
+          "end": 17.272
+        },
+        {
+          "w": "video",
+          "start": 17.284,
+          "end": 17.74
+        },
+        {
+          "w": "well",
+          "start": 18.005,
+          "end": 18.221
+        },
+        {
+          "w": "cover",
+          "start": 18.233,
+          "end": 18.582
+        },
+        {
+          "w": "traceability",
+          "start": 18.594,
+          "end": 19.399
+        },
+        {
+          "w": "surveillance",
+          "start": 19.591,
+          "end": 20.324
+        },
+        {
+          "w": "and",
+          "start": 20.565,
+          "end": 20.697
+        },
+        {
+          "w": "the",
+          "start": 20.709,
+          "end": 20.769
+        },
+        {
+          "w": "pressure",
+          "start": 20.781,
+          "end": 21.19
+        },
+        {
+          "w": "behind",
+          "start": 21.202,
+          "end": 21.671
+        },
+        {
+          "w": "most",
+          "start": 21.683,
+          "end": 22.031
+        },
+        {
+          "w": "failures",
+          "start": 22.043,
+          "end": 22.668
+        }
+      ],
+      "hash": "82e9f233b9c8"
+    }
+  ]
+}

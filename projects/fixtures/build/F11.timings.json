@@ -1,0 +1,590 @@
+{
+  "id": "F11",
+  "fps": 30,
+  "totalDurationInFrames": 1474,
+  "voice": {
+    "id": "synthetic",
+    "name": "synthetic"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "intro",
+      "narration": "In this video, we're going to test the body pack. By the end, you'll see every part, and every icon.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 8.46326530612245,
+      "voDurationInFrames": 254,
+      "captions": [
+        {
+          "text": "In this video, we're going to test the",
+          "start": 0.05,
+          "end": 3.318
+        },
+        {
+          "text": "body pack. By the end, you'll see every",
+          "start": 3.318,
+          "end": 6.67
+        },
+        {
+          "text": "part, and every icon.",
+          "start": 6.67,
+          "end": 8.713
+        }
+      ],
+      "words": [
+        {
+          "w": "in",
+          "start": 0.05,
+          "end": 0.301
+        },
+        {
+          "w": "this",
+          "start": 0.301,
+          "end": 0.72
+        },
+        {
+          "w": "video",
+          "start": 0.72,
+          "end": 1.307
+        },
+        {
+          "w": "were",
+          "start": 1.307,
+          "end": 1.81
+        },
+        {
+          "w": "going",
+          "start": 1.81,
+          "end": 2.312
+        },
+        {
+          "w": "to",
+          "start": 2.312,
+          "end": 2.564
+        },
+        {
+          "w": "test",
+          "start": 2.564,
+          "end": 2.983
+        },
+        {
+          "w": "the",
+          "start": 2.983,
+          "end": 3.318
+        },
+        {
+          "w": "body",
+          "start": 3.318,
+          "end": 3.737
+        },
+        {
+          "w": "pack",
+          "start": 3.737,
+          "end": 4.24
+        },
+        {
+          "w": "by",
+          "start": 4.24,
+          "end": 4.491
+        },
+        {
+          "w": "the",
+          "start": 4.491,
+          "end": 4.826
+        },
+        {
+          "w": "end",
+          "start": 4.826,
+          "end": 5.245
+        },
+        {
+          "w": "youll",
+          "start": 5.245,
+          "end": 5.832
+        },
+        {
+          "w": "see",
+          "start": 5.832,
+          "end": 6.167
+        },
+        {
+          "w": "every",
+          "start": 6.167,
+          "end": 6.67
+        },
+        {
+          "w": "part",
+          "start": 6.67,
+          "end": 7.173
+        },
+        {
+          "w": "and",
+          "start": 7.173,
+          "end": 7.508
+        },
+        {
+          "w": "every",
+          "start": 7.508,
+          "end": 8.01
+        },
+        {
+          "w": "icon",
+          "start": 8.01,
+          "end": 8.513
+        }
+      ],
+      "leadFrames": 32,
+      "tailFrames": 35,
+      "durationInFrames": 321,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "stage",
+      "narration": "A person stands and waves. Then the person looks worried. The body map shows the brain, the heart and the kidneys. Under strain the arteries swell. The vessel wall stretches as blood pushes outward. Then it turns stiff and the lining tears. The gauge rises into the red.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 20.641836734693875,
+      "voDurationInFrames": 620,
+      "captions": [
+        {
+          "text": "A person stands and waves.",
+          "start": 0.05,
+          "end": 2.107
+        },
+        {
+          "text": "Then the person looks worried.",
+          "start": 2.107,
+          "end": 4.468
+        },
+        {
+          "text": "The body map shows the brain, the heart",
+          "start": 4.468,
+          "end": 7.515
+        },
+        {
+          "text": "and the kidneys. Under strain the arteries",
+          "start": 7.515,
+          "end": 10.79
+        },
+        {
+          "text": "swell. The vessel wall stretches as blood",
+          "start": 10.79,
+          "end": 13.989
+        },
+        {
+          "text": "pushes outward. Then it turns stiff and",
+          "start": 13.989,
+          "end": 17.036
+        },
+        {
+          "text": "the lining tears.",
+          "start": 17.036,
+          "end": 18.407
+        },
+        {
+          "text": "The gauge rises into the red.",
+          "start": 18.407,
+          "end": 20.892
+        }
+      ],
+      "words": [
+        {
+          "w": "a",
+          "start": 0.05,
+          "end": 0.202
+        },
+        {
+          "w": "person",
+          "start": 0.202,
+          "end": 0.736
+        },
+        {
+          "w": "stands",
+          "start": 0.736,
+          "end": 1.269
+        },
+        {
+          "w": "and",
+          "start": 1.269,
+          "end": 1.573
+        },
+        {
+          "w": "waves",
+          "start": 1.573,
+          "end": 2.107
+        },
+        {
+          "w": "then",
+          "start": 2.107,
+          "end": 2.487
+        },
+        {
+          "w": "the",
+          "start": 2.487,
+          "end": 2.792
+        },
+        {
+          "w": "person",
+          "start": 2.792,
+          "end": 3.325
+        },
+        {
+          "w": "looks",
+          "start": 3.325,
+          "end": 3.782
+        },
+        {
+          "w": "worried",
+          "start": 3.782,
+          "end": 4.468
+        },
+        {
+          "w": "the",
+          "start": 4.468,
+          "end": 4.772
+        },
+        {
+          "w": "body",
+          "start": 4.772,
+          "end": 5.153
+        },
+        {
+          "w": "map",
+          "start": 5.153,
+          "end": 5.458
+        },
+        {
+          "w": "shows",
+          "start": 5.458,
+          "end": 5.915
+        },
+        {
+          "w": "the",
+          "start": 5.915,
+          "end": 6.22
+        },
+        {
+          "w": "brain",
+          "start": 6.22,
+          "end": 6.753
+        },
+        {
+          "w": "the",
+          "start": 6.753,
+          "end": 7.058
+        },
+        {
+          "w": "heart",
+          "start": 7.058,
+          "end": 7.515
+        },
+        {
+          "w": "and",
+          "start": 7.515,
+          "end": 7.819
+        },
+        {
+          "w": "the",
+          "start": 7.819,
+          "end": 8.124
+        },
+        {
+          "w": "kidneys",
+          "start": 8.124,
+          "end": 8.809
+        },
+        {
+          "w": "under",
+          "start": 8.809,
+          "end": 9.266
+        },
+        {
+          "w": "strain",
+          "start": 9.266,
+          "end": 9.8
+        },
+        {
+          "w": "the",
+          "start": 9.8,
+          "end": 10.104
+        },
+        {
+          "w": "arteries",
+          "start": 10.104,
+          "end": 10.79
+        },
+        {
+          "w": "swell",
+          "start": 10.79,
+          "end": 11.323
+        },
+        {
+          "w": "the",
+          "start": 11.323,
+          "end": 11.628
+        },
+        {
+          "w": "vessel",
+          "start": 11.628,
+          "end": 12.161
+        },
+        {
+          "w": "wall",
+          "start": 12.161,
+          "end": 12.542
+        },
+        {
+          "w": "stretches",
+          "start": 12.542,
+          "end": 13.303
+        },
+        {
+          "w": "as",
+          "start": 13.303,
+          "end": 13.532
+        },
+        {
+          "w": "blood",
+          "start": 13.532,
+          "end": 13.989
+        },
+        {
+          "w": "pushes",
+          "start": 13.989,
+          "end": 14.522
+        },
+        {
+          "w": "outward",
+          "start": 14.522,
+          "end": 15.208
+        },
+        {
+          "w": "then",
+          "start": 15.208,
+          "end": 15.589
+        },
+        {
+          "w": "it",
+          "start": 15.589,
+          "end": 15.817
+        },
+        {
+          "w": "turns",
+          "start": 15.817,
+          "end": 16.274
+        },
+        {
+          "w": "stiff",
+          "start": 16.274,
+          "end": 16.731
+        },
+        {
+          "w": "and",
+          "start": 16.731,
+          "end": 17.036
+        },
+        {
+          "w": "the",
+          "start": 17.036,
+          "end": 17.34
+        },
+        {
+          "w": "lining",
+          "start": 17.34,
+          "end": 17.874
+        },
+        {
+          "w": "tears",
+          "start": 17.874,
+          "end": 18.407
+        },
+        {
+          "w": "the",
+          "start": 18.407,
+          "end": 18.711
+        },
+        {
+          "w": "gauge",
+          "start": 18.711,
+          "end": 19.168
+        },
+        {
+          "w": "rises",
+          "start": 19.168,
+          "end": 19.625
+        },
+        {
+          "w": "into",
+          "start": 19.625,
+          "end": 20.006
+        },
+        {
+          "w": "the",
+          "start": 20.006,
+          "end": 20.311
+        },
+        {
+          "w": "red",
+          "start": 20.311,
+          "end": 20.692
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 676,
+      "startFrame": 321
+    },
+    {
+      "index": 3,
+      "type": "stage",
+      "narration": "Every icon now acts at once, so we can check them all.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 5.047959183673469,
+      "voDurationInFrames": 152,
+      "captions": [
+        {
+          "text": "Every icon now acts at once, so we can",
+          "start": 0.05,
+          "end": 3.629
+        },
+        {
+          "text": "check them all.",
+          "start": 3.629,
+          "end": 5.298
+        }
+      ],
+      "words": [
+        {
+          "w": "every",
+          "start": 0.05,
+          "end": 0.601
+        },
+        {
+          "w": "icon",
+          "start": 0.601,
+          "end": 1.06
+        },
+        {
+          "w": "now",
+          "start": 1.06,
+          "end": 1.427
+        },
+        {
+          "w": "acts",
+          "start": 1.427,
+          "end": 1.886
+        },
+        {
+          "w": "at",
+          "start": 1.886,
+          "end": 2.161
+        },
+        {
+          "w": "once",
+          "start": 2.161,
+          "end": 2.712
+        },
+        {
+          "w": "so",
+          "start": 2.712,
+          "end": 2.987
+        },
+        {
+          "w": "we",
+          "start": 2.987,
+          "end": 3.262
+        },
+        {
+          "w": "can",
+          "start": 3.262,
+          "end": 3.629
+        },
+        {
+          "w": "check",
+          "start": 3.629,
+          "end": 4.18
+        },
+        {
+          "w": "them",
+          "start": 4.18,
+          "end": 4.639
+        },
+        {
+          "w": "all",
+          "start": 4.639,
+          "end": 5.098
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 208,
+      "startFrame": 997
+    },
+    {
+      "index": 4,
+      "type": "recap",
+      "narration": "Let's recap. The parts act. The icons act.",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.71530612244898,
+      "voDurationInFrames": 112,
+      "captions": [
+        {
+          "text": "Let's recap. The parts act.",
+          "start": 0.05,
+          "end": 2.469
+        },
+        {
+          "text": "The icons act.",
+          "start": 2.469,
+          "end": 3.9650000000000003
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0.05,
+          "end": 0.568
+        },
+        {
+          "w": "recap",
+          "start": 0.568,
+          "end": 1.173
+        },
+        {
+          "w": "the",
+          "start": 1.173,
+          "end": 1.519
+        },
+        {
+          "w": "parts",
+          "start": 1.519,
+          "end": 2.037
+        },
+        {
+          "w": "act",
+          "start": 2.037,
+          "end": 2.469
+        },
+        {
+          "w": "the",
+          "start": 2.469,
+          "end": 2.815
+        },
+        {
+          "w": "icons",
+          "start": 2.815,
+          "end": 3.333
+        },
+        {
+          "w": "act",
+          "start": 3.333,
+          "end": 3.765
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 269,
+      "startFrame": 1205
+    }
+  ]
+}

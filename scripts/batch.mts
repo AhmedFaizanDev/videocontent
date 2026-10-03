@@ -1,0 +1,222 @@
+/**
+ * Bulk production: a course of module PDFs → finished, QA'd videos, with ONE model call per video
+ * (plus at most one repair), no agent loops, and no render until a script is proven correct.
+ *
+ *   node scripts/batch.mts <project> plan                  course.json from source/*.pdf (one video per
+ *                                                          module PDF; no model call). Edit to split/merge.
+ *   node scripts/batch.mts <project> write [ids…]          write missing scripts — one call each
+ *   node scripts/batch.mts <project> check [ids…]          validate + preflight (no audio, no render);
+ *                                                          failures get ONE repair call, then set aside
+ *   node scripts/batch.mts <project> produce [ids…]        voice → render → QA for every clean script
+ *   node scripts/batch.mts <project> translate <lang> [ids…]   native-language copies into <project>-<lang>
+ *   node scripts/batch.mts <project> all                   plan → write → check → produce
+ *
+ * Writer: headless Claude Code (`claude -p`, Sonnet, no tools, JSON-schema output) when it is
+ * logged in (CLAUDE_BIN overrides the binary); otherwise "agent mode": job files are written to
+ * projects/<p>/jobs/ and the orchestrating Claude session runs one Sonnet subagent per job
+ * ("run the jobs in projects/<p>/jobs"), then `check` continues. Same prompts either way.
+ *
+ * Each job carries only: the script brief (docs/SCRIPT_BRIEF.md), the arts it may use, and its
+ * own module's source text — never the whole repo, the guide or other lessons.
+ */
+import {execFileSync, spawnSync} from 'node:child_process';
+import {existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync} from 'node:fs';
+import {homedir} from 'node:os';
+import {join} from 'node:path';
+import {ROOT, loadProject, projectDir, specPath} from './lib/paths.mts';
+import {SCRIPT_SCHEMA} from './lib/script-schema.mts';
+import {CATALOG} from '../src/art/catalog.ts';
+import {VECTOR_MANIFESTS} from '../src/art/vector/manifests.gen.ts';
+
+type Video = {id: string; title?: string; source: string; pages?: [number, number]; outline?: string};
+const [project, cmd = 'all', ...rest] = process.argv.slice(2);
+if (!project) {
+  console.error('usage: node scripts/batch.mts <project> plan|write|check|produce|translate|all [ids…]');
+  process.exit(1);
+}
+const PD = projectDir(project);
+const coursePath = join(PD, 'course.json');
+const jobs = join(PD, 'jobs');
+const course = (): {videos: Video[]} => JSON.parse(readFileSync(coursePath, 'utf8'));
+
+/* ------------------------------------------------------------------ plan (no model call) */
+function plan() {
+  const src = join(PD, 'source');
+  const pdfs = existsSync(src) ? readdirSync(src).filter((f) => /\.pdf$/i.test(f)).sort() : [];
+  const prev = existsSync(coursePath) ? course().videos : [];
+  const videos: Video[] = pdfs.map((f) => {
+    const m = /M(\d{2})/i.exec(f);
+    const id = m ? `M${m[1]}` : f.replace(/\.pdf$/i, '').replace(/\W+/g, '').slice(0, 8);
+    return prev.find((v) => v.source === f) ?? {id, source: f};
+  });
+  writeFileSync(coursePath, JSON.stringify({videos}, null, 2) + '\n');
+  console.log(`course.json: ${videos.length} video(s) — ${videos.map((v) => `${v.id}←${v.source}`).join(', ')}`);
+}
+
+/* ------------------------------------------------------------------ prompts */
+const sourceText = (v: Video) => {
+  const p = join(PD, 'source', v.source);
+  if (/\.pdf$/i.test(v.source)) {
+    const args = ['-enc', 'UTF-8', '-layout', ...(v.pages ? ['-f', String(v.pages[0]), '-l', String(v.pages[1])] : []), p, '-'];
+    return execFileSync('pdftotext', args, {encoding: 'utf8', maxBuffer: 64 << 20});
+  }
+  return readFileSync(p, 'utf8');
+};
+// compact: running headers/footers and blank runs cost tokens and carry nothing
+const tidy = (t: string) => {
+  const lines = t.split('\n').map((l) => l.replace(/\s+$/, ''));
+  const freq = new Map<string, number>();
+  for (const l of lines) if (l.trim()) freq.set(l.trim(), (freq.get(l.trim()) ?? 0) + 1);
+  return lines.filter((l) => !(l.trim() && (freq.get(l.trim()) ?? 0) > 2 && l.trim().length < 120)).join('\n').replace(/\n{3,}/g, '\n\n').replace(/[ \t]{3,}/g, '  ');
+};
+const arts = (cfg: any) => {
+  const names = [...new Set([...Object.keys(VECTOR_MANIFESTS), ...((cfg.arts as string[]) ?? [])])].filter((n) => CATALOG[n]);
+  return names.map((n) => `- ${n}: ${CATALOG[n].doc}`).join('\n');
+};
+const brief = () => readFileSync(join(ROOT, 'docs', 'SCRIPT_BRIEF.md'), 'utf8');
+const lexiconNote = (cfg: any) => (cfg.lang === 'en' ? '' : `\nLANGUAGE: write the narration and all on-screen text in native ${cfg.lang} script (numbers as digits).`);
+
+function writerPrompt(v: Video) {
+  const cfg = loadProject(project);
+  const user = [
+    `COURSE: ${cfg.name} — ${cfg.series}. Audience: clinical staff.`,
+    `LESSON: id "${v.id}"${v.title ? `, title "${v.title}"` : ''}. outputFilename: "${(cfg.brand?.name ?? 'Lesson').replace(/\W+/g, '')}_${project.replace(/\W+/g, '_')}_${v.id}.mp4". module: "${v.title ?? v.id}".`,
+    v.outline ? `OUTLINE: ${v.outline}` : '',
+    `AVAILABLE ARTS:\n${arts(cfg)}\n- graph/table: use the flow and table recipes`,
+    lexiconNote(cfg),
+    `SOURCE EXCERPT (the only allowed facts):\n<<<\n${tidy(sourceText(v)).slice(0, 60000)}\n>>>`,
+  ].filter(Boolean).join('\n\n');
+  return {system: brief(), user};
+}
+
+/* ------------------------------------------------------------------ the writer */
+const claudeBin = () => {
+  if (process.env.CLAUDE_BIN) return process.env.CLAUDE_BIN;
+  const base = join(homedir(), 'Library', 'Application Support', 'Claude', 'claude-code');
+  if (!existsSync(base)) return 'claude';
+  const vers = readdirSync(base).filter((d) => /^\d/.test(d)).sort((a, b) => a.localeCompare(b, undefined, {numeric: true}));
+  for (const ver of vers.reverse())
+    for (const h of readdirSync(join(base, ver))) {
+      const b = join(base, ver, h, 'claude.app', 'Contents', 'MacOS', 'claude');
+      if (existsSync(b)) return b;
+    }
+  return 'claude';
+};
+let cliOk: boolean | null = null;
+/** One structured model call; null when headless Claude isn't available (→ agent mode). */
+function llm(system: string, user: string): any | null {
+  if (cliOk === false) return null;
+  const tmp = join(ROOT, 'iterations', 'batch-cwd'); // outside any CLAUDE.md scope we'd load needlessly
+  mkdirSync(tmp, {recursive: true});
+  const r = spawnSync(claudeBin(), ['-p', '--model', 'sonnet', '--tools', '', '--no-session-persistence', '--system-prompt', system, '--output-format', 'json', '--json-schema', JSON.stringify(SCRIPT_SCHEMA)], {input: user, encoding: 'utf8', cwd: tmp, maxBuffer: 64 << 20, timeout: 15 * 60 * 1000});
+  let out: any;
+  try {
+    out = JSON.parse(r.stdout);
+  } catch {
+    cliOk = false;
+    return null;
+  }
+  if (out.is_error) {
+    if (/log ?in/i.test(String(out.result))) console.log('  ⚠️  headless Claude is not logged in — switching to agent mode (job files). Log in once with: "<claude binary>" then /login');
+    cliOk = false;
+    return null;
+  }
+  cliOk = true;
+  logUsage(out);
+  return out.structured_output ?? JSON.parse(String(out.result).replace(/^```json\s*|```\s*$/g, ''));
+}
+const logUsage = (out: any) => {
+  const u = out.usage ?? {};
+  const line = {at: new Date().toISOString(), cost: out.total_cost_usd, in: u.input_tokens, cacheRead: u.cache_read_input_tokens, cacheWrite: u.cache_creation_input_tokens, out: u.output_tokens, ms: out.duration_ms};
+  mkdirSync(jobs, {recursive: true});
+  writeFileSync(join(jobs, 'usage.jsonl'), JSON.stringify(line) + '\n', {flag: 'a'});
+};
+const job = (name: string, system: string, user: string, target: string) => {
+  mkdirSync(jobs, {recursive: true});
+  const f = join(jobs, `${name}.md`);
+  writeFileSync(
+    f,
+    `# Job ${name}\nRun as ONE Sonnet subagent, single pass: read nothing else; write the JSON result to \`${target.replace(ROOT + '/', '')}\` (one Write), then stop.\n\n## System\n${system}\n\n## Schema\n\`\`\`json\n${JSON.stringify(SCRIPT_SCHEMA)}\n\`\`\`\n\n## Input\n${user}\n`,
+  );
+  return f;
+};
+
+function write(ids: string[]) {
+  const vids = course().videos.filter((v) => (ids.length ? ids.includes(v.id) : !existsSync(specPath(project, v.id))));
+  for (const v of vids) {
+    const {system, user} = writerPrompt(v);
+    const t0 = Date.now();
+    const out = llm(system, user);
+    if (out) {
+      writeFileSync(specPath(project, v.id), JSON.stringify({...out, id: v.id}, null, 2) + '\n');
+      console.log(`  ✍️  ${v.id}: script written in ${Math.round((Date.now() - t0) / 1000)} s`);
+    } else console.log(`  📝 ${v.id}: job → ${job(v.id, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
+  }
+}
+
+/* ------------------------------------------------------------------ check + one repair */
+const gate = (id: string) => {
+  const r = spawnSync('node', ['scripts/preflight.mts', project, id], {cwd: ROOT, encoding: 'utf8'});
+  const errs = (r.stdout + r.stderr).split('\n').filter((l) => l.includes('❌')).map((l) => l.trim());
+  return {ok: r.status === 0 && !errs.length, errs};
+};
+function check(ids: string[]) {
+  const vids = course().videos.filter((v) => existsSync(specPath(project, v.id)) && (!ids.length || ids.includes(v.id)));
+  const clean: string[] = [];
+  for (const v of vids) {
+    let g = gate(v.id);
+    if (!g.ok) {
+      // one repair: only the errors and the script — not the source, not the brief again in full
+      const {system} = writerPrompt(v);
+      const spec = readFileSync(specPath(project, v.id), 'utf8');
+      const user = `Fix ONLY these build errors in the script below; keep everything else identical. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${spec}`;
+      const out = llm(system, user);
+      if (out) {
+        writeFileSync(specPath(project, v.id), JSON.stringify({...out, id: v.id}, null, 2) + '\n');
+        g = gate(v.id);
+      } else if (cliOk === false) {
+        console.log(`  📝 ${v.id}: repair job → ${job(`${v.id}.repair`, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
+        continue;
+      }
+    }
+    if (g.ok) clean.push(v.id);
+    else console.log(`  ⛔ ${v.id}: set aside after one repair —\n     ${g.errs.slice(0, 6).join('\n     ')}`);
+  }
+  console.log(`check: ${clean.length}/${vids.length} clean${clean.length ? ` (${clean.join(', ')})` : ''}`);
+  return clean;
+}
+
+/* ------------------------------------------------------------------ translate */
+function translate(lang: string, ids: string[]) {
+  const target = `${project}-${lang}`;
+  const tdir = projectDir(target);
+  if (!existsSync(join(tdir, 'project.json'))) {
+    const p = JSON.parse(readFileSync(join(PD, 'project.json'), 'utf8'));
+    mkdirSync(join(tdir, 'specs'), {recursive: true});
+    const {voice: _v, lexicon: _l, ...keep} = p;
+    writeFileSync(join(tdir, 'project.json'), JSON.stringify({...keep, lang, output: {dir: `${p.output?.dir ?? project}_${lang.toUpperCase()}`}}, null, 2) + '\n');
+    // the same source ledger grounds the translation
+    execFileSync('ln', ['-s', join(PD, 'source'), join(tdir, 'source')]);
+  }
+  const system = `${brief()}\n\nTRANSLATION: return the SAME script with narration and all on-screen text (titles, kickers, labels, notes, flowchart node texts inside the mermaid, table cells, say words) in native ${lang} script. Keep structure, ids, arts, anchors, acts, mermaid syntax/ids and every number identical. Every say word must occur in the translated narration of its scene.`;
+  for (const v of course().videos.filter((x) => existsSync(specPath(project, x.id)) && (!ids.length || ids.includes(x.id)))) {
+    const out = llm(system, readFileSync(specPath(project, v.id), 'utf8'));
+    const dst = join(tdir, 'specs', `${v.id}.json`);
+    if (out) writeFileSync(dst, JSON.stringify({...out, id: v.id, outputFilename: out.outputFilename.replace(/\.mp4$/, `_${lang}.mp4`)}, null, 2) + '\n');
+    else console.log(`  📝 ${v.id}: translation job → ${job(`${v.id}.${lang}`, system, readFileSync(specPath(project, v.id), 'utf8'), dst).replace(ROOT + '/', '')}`);
+  }
+}
+
+const ids = rest.filter((x) => !x.startsWith('-'));
+if (cmd === 'plan') plan();
+else if (cmd === 'write') write(ids);
+else if (cmd === 'check') check(ids);
+else if (cmd === 'translate') translate(rest[0], rest.slice(1));
+else if (cmd === 'produce' || cmd === 'all') {
+  if (cmd === 'all') {
+    if (!existsSync(coursePath)) plan();
+    write(ids);
+  }
+  const clean = check(ids);
+  if (clean.length) spawnSync('node', ['scripts/produce.mts', project, ...clean], {cwd: ROOT, stdio: 'inherit'});
+}

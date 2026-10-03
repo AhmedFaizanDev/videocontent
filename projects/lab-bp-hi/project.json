@@ -1,0 +1,38 @@
+{
+  "name": "रक्तचाप: संख्याओं का अर्थ (translation experiment)",
+  "series": "MedSkills · Clinical Foundations",
+  "music": "audio/music/deliberate-thought.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      6.5
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [
+      [
+        "figure"
+      ],
+      [
+        "check"
+      ]
+    ],
+    "minFigures": 3
+  },
+  "lang": "hi",
+  "brand": {
+    "signoff": "MedSkills के साथ सीखते रहिए।",
+    "episodeLabel": "भाग "
+  },
+  "terms": [
+    "सिस्टोलिक",
+    "डायस्टोलिक",
+    "उच्च रक्तचाप",
+    "हाइपरटेंशन"
+  ],
+  "output": {
+    "dir": "_experiments/HI_Blood_Pressure_translated"
+  }
+}

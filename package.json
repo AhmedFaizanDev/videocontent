@@ -1,0 +1,35 @@
+{
+  "name": "edu-video-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Spec-driven educational video pipeline (Remotion + free Edge neural TTS)",
+  "scripts": {
+    "studio": "remotion studio",
+    "validate": "node scripts/lint-art.mts && node scripts/validate.mts",
+    "voiceover": "node scripts/voiceover.mts",
+    "review": "node scripts/review.mts",
+    "render": "node scripts/render.mts",
+    "qa": "node scripts/qa.mts",
+    "produce": "node scripts/produce.mts",
+    "test": "node scripts/test.mts",
+    "preflight": "node scripts/preflight.mts",
+    "metrics": "node scripts/metrics.mts"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.484",
+    "@remotion/google-fonts": "4.0.484",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "^4.0.484",
+    "@remotion/renderer": "^4.0.484",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "jimp": "^1.6.1",
+    "music-metadata": "^11.0.0",
+    "typescript": "^5.8.0"
+  },
+  "type": "module"
+}

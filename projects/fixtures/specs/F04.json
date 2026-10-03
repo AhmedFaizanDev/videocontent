@@ -1,0 +1,435 @@
+{
+  "id": "F04",
+  "title": "Diagram engine",
+  "outputFilename": "F04_diagram_engine.mp4",
+  "module": "Engine",
+  "topicGroup": "Fixtures",
+  "scenes": [
+    {
+      "type": "intro",
+      "kicker": "Introduction",
+      "topic": "The Diagram Engine",
+      "subtitle": "Fixture \u00b7 Engine",
+      "learn": [
+        "graphs that build",
+        "bars that grow",
+        "traces that draw"
+      ],
+      "narration": "In this video, we're going to talk about the diagram engine and how it animates ideas instead of showing slides. It keeps going a little longer here. By the end, you'll see graphs, you'll see bars, and you'll see traces."
+    },
+    {
+      "type": "figure",
+      "kicker": "A system",
+      "title": "A supply chain with a feedback loop",
+      "art": "graph",
+      "data": {
+        "direction": "LR",
+        "groups": [
+          {
+            "id": "make",
+            "label": "Production"
+          }
+        ],
+        "nodes": [
+          {
+            "id": "farm",
+            "label": "Farm",
+            "shape": "circle",
+            "tone": "green"
+          },
+          {
+            "id": "mill",
+            "label": "Mill",
+            "group": "make"
+          },
+          {
+            "id": "bakery",
+            "label": "Bakery",
+            "group": "make",
+            "tone": "sun"
+          },
+          {
+            "id": "shop",
+            "label": "Shop"
+          },
+          {
+            "id": "buyer",
+            "label": "Customer",
+            "shape": "pill",
+            "tone": "blue"
+          }
+        ],
+        "edges": [
+          {
+            "from": "farm",
+            "to": "mill",
+            "label": "wheat"
+          },
+          {
+            "from": "mill",
+            "to": "bakery",
+            "label": "flour"
+          },
+          {
+            "from": "bakery",
+            "to": "shop",
+            "label": "bread"
+          },
+          {
+            "from": "shop",
+            "to": "buyer"
+          },
+          {
+            "from": "buyer",
+            "to": "farm",
+            "label": "demand signal",
+            "tone": "red",
+            "dashed": true
+          }
+        ],
+        "steps": [
+          {
+            "say": [
+              "farm"
+            ],
+            "show": [
+              "farm"
+            ],
+            "note": "Everything starts with the harvest"
+          },
+          {
+            "say": [
+              "mill"
+            ],
+            "show": [
+              "mill",
+              "farm>mill"
+            ],
+            "flow": [
+              "farm>mill"
+            ],
+            "focus": "mill",
+            "note": "Wheat becomes flour"
+          },
+          {
+            "say": [
+              "bakery"
+            ],
+            "show": [
+              "bakery"
+            ],
+            "flow": [
+              "mill>bakery"
+            ],
+            "focus": "bakery"
+          },
+          {
+            "say": [
+              "shop"
+            ],
+            "show": [
+              "shop",
+              "buyer"
+            ],
+            "flow": [
+              "bakery>shop",
+              "shop>buyer"
+            ],
+            "focus": "shop"
+          },
+          {
+            "say": [
+              "demand"
+            ],
+            "show": [
+              "buyer>farm"
+            ],
+            "token": [
+              "farm",
+              "mill",
+              "bakery",
+              "shop",
+              "buyer",
+              "farm"
+            ],
+            "loop": true,
+            "focus": "buyer",
+            "note": "Demand closes the loop"
+          }
+        ]
+      },
+      "narration": "It starts at the farm. The mill turns wheat into flour. The bakery turns flour into bread. The shop sells it to customers. And customer demand flows back to the farm, closing the loop."
+    },
+    {
+      "type": "figure",
+      "kicker": "A hierarchy",
+      "art": "graph",
+      "data": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "ceo",
+            "label": "Director",
+            "shape": "pill",
+            "tone": "orange"
+          },
+          {
+            "id": "a",
+            "label": "Engineering lead"
+          },
+          {
+            "id": "b",
+            "label": "Design lead"
+          },
+          {
+            "id": "c",
+            "label": "Operations lead"
+          },
+          {
+            "id": "a1",
+            "label": "Platform team"
+          },
+          {
+            "id": "a2",
+            "label": "Apps team"
+          },
+          {
+            "id": "b1",
+            "label": "Research"
+          },
+          {
+            "id": "c1",
+            "label": "Support"
+          }
+        ],
+        "edges": [
+          {
+            "from": "ceo",
+            "to": "a"
+          },
+          {
+            "from": "ceo",
+            "to": "b"
+          },
+          {
+            "from": "ceo",
+            "to": "c"
+          },
+          {
+            "from": "a",
+            "to": "a1"
+          },
+          {
+            "from": "a",
+            "to": "a2"
+          },
+          {
+            "from": "b",
+            "to": "b1"
+          },
+          {
+            "from": "c",
+            "to": "c1"
+          }
+        ],
+        "steps": [
+          {
+            "say": [
+              "director"
+            ],
+            "show": [
+              "ceo"
+            ],
+            "focus": "ceo"
+          },
+          {
+            "say": [
+              "leads"
+            ],
+            "show": [
+              "a",
+              "b",
+              "c"
+            ],
+            "note": "Three leads report up"
+          },
+          {
+            "say": [
+              "teams"
+            ],
+            "show": [
+              "a1",
+              "a2",
+              "b1",
+              "c1"
+            ],
+            "note": "Teams sit under each lead"
+          }
+        ]
+      },
+      "narration": "At the top is the director. Below sit three leads. And under them, the teams that do the work."
+    },
+    {
+      "type": "figure",
+      "kicker": "Quantities",
+      "art": "bars",
+      "data": {
+        "unit": "km",
+        "ref": {
+          "value": 100,
+          "label": "daily limit"
+        },
+        "items": [
+          {
+            "label": "Walk",
+            "value": 5,
+            "tone": "green"
+          },
+          {
+            "label": "Cycle",
+            "value": 40,
+            "tone": "teal"
+          },
+          {
+            "label": "Drive",
+            "value": 180,
+            "tone": "orange"
+          },
+          {
+            "label": "Fly",
+            "value": 900,
+            "display": "900+ km",
+            "tone": "blue"
+          }
+        ]
+      },
+      "narration": "How far can you go in a day? Walk about five. Cycle forty. Drive one hundred and eighty. Fly nine hundred or more."
+    },
+    {
+      "type": "figure",
+      "kicker": "A waveform",
+      "art": "trace",
+      "data": {
+        "repeat": 2,
+        "segments": [
+          {
+            "shape": "flat",
+            "w": 1
+          },
+          {
+            "shape": "bump",
+            "w": 0.8,
+            "h": 0.18,
+            "label": "P",
+            "say": [
+              "first"
+            ],
+            "note": "A small first bump"
+          },
+          {
+            "shape": "flat",
+            "w": 0.5
+          },
+          {
+            "shape": "dip",
+            "w": 0.2,
+            "h": -0.12
+          },
+          {
+            "shape": "spike",
+            "w": 0.3,
+            "h": 1,
+            "label": "R",
+            "say": [
+              "tall"
+            ],
+            "note": "The tall spike"
+          },
+          {
+            "shape": "dip",
+            "w": 0.25,
+            "h": -0.25
+          },
+          {
+            "shape": "flat",
+            "w": 0.7
+          },
+          {
+            "shape": "bump",
+            "w": 1.1,
+            "h": 0.3,
+            "label": "T",
+            "say": [
+              "broad"
+            ],
+            "note": "A broad wave"
+          },
+          {
+            "shape": "flat",
+            "w": 1.2
+          }
+        ]
+      },
+      "narration": "Watch the pen. A small first bump. Then the tall spike. Then a broad, rounded wave, before it all repeats."
+    },
+    {
+      "type": "figure",
+      "kicker": "A curve",
+      "art": "trace",
+      "data": {
+        "grid": false,
+        "segments": [
+          {
+            "shape": "flat",
+            "w": 1.2,
+            "label": "Rest",
+            "say": [
+              "rest"
+            ]
+          },
+          {
+            "shape": "plateau",
+            "w": 4,
+            "h": 1,
+            "label": "Plateau",
+            "say": [
+              "plateau"
+            ]
+          },
+          {
+            "shape": "flat",
+            "w": 1.5,
+            "label": "Recover",
+            "say": [
+              "recover"
+            ]
+          }
+        ]
+      },
+      "narration": "At rest the line is flat. Then it jumps up and holds a long plateau. Finally it falls and we recover."
+    },
+    {
+      "type": "recap",
+      "kicker": "Recap",
+      "narration": "Let's recap. Graphs build systems. Bars grow quantities. Traces draw waves.",
+      "bullets": [
+        {
+          "icon": "",
+          "label": "Graphs \u2014 build systems",
+          "color": "variable"
+        },
+        {
+          "icon": "",
+          "label": "Bars \u2014 grow quantities",
+          "color": "constant"
+        },
+        {
+          "icon": "",
+          "label": "Traces \u2014 draw waves",
+          "color": "accent"
+        }
+      ],
+      "takeaway": "Diagrams that move explain more than slides that sit still."
+    }
+  ]
+}
