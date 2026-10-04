@@ -20,6 +20,7 @@
  */
 import type {Beat} from './stage';
 import {VECTOR_MANIFESTS} from './art/vector/manifests.gen.ts';
+import {DRAWN_PLAYBOOKS} from './art/playbooks.gen.ts';
 
 export type Moment = {
   slot: string;
@@ -135,7 +136,9 @@ export const DATA_PLAYS: DataPlay[] = [
 
 /** Playbooks that ship with an imported asset (its manifest's `playbooks`, authored once when it was acquired). */
 const FROM_ASSETS: ArtPlay[] = Object.values(VECTOR_MANIFESTS as Record<string, any>).flatMap((m) => (m.playbooks ?? []).map((p: Omit<ArtPlay, 'art'>) => ({...p, art: m.key})));
-export const ALL_ART_PLAYS: ArtPlay[] = [...ART_PLAYS, ...FROM_ASSETS];
+/** …and those of drawn (code) art, from assets/playbooks/ — the same system, the same reuse. */
+const FROM_DRAWN: ArtPlay[] = Object.entries(DRAWN_PLAYBOOKS).flatMap(([art, ps]) => ps.map((p: Omit<ArtPlay, 'art'>) => ({...p, art})));
+export const ALL_ART_PLAYS: ArtPlay[] = [...ART_PLAYS, ...FROM_ASSETS, ...FROM_DRAWN];
 
 export const PLAYS: Record<string, ArtPlay | DataPlay> = Object.fromEntries([...ALL_ART_PLAYS, ...DATA_PLAYS].map((p) => [p.id, p]));
 export const isArtPlay = (p: ArtPlay | DataPlay): p is ArtPlay => 'moments' in p;

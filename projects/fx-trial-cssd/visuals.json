@@ -20,6 +20,11 @@
    "events": [
     "biofilm",
     "brush"
+   ],
+   "covers": [
+    "endoscopeChannels",
+    "channelBiofilm",
+    "channelBrush"
    ]
   },
   {
@@ -38,6 +43,9 @@
    ],
    "events": [
     "raise"
+   ],
+   "covers": [
+    "duodenoscopeElevator"
    ]
   },
   {
@@ -57,6 +65,9 @@
    ],
    "events": [
     "bubbles"
+   ],
+   "covers": [
+    "leakTestSetup"
    ]
   },
   {
@@ -76,6 +87,9 @@
    ],
    "events": [
     "flush"
+   ],
+   "covers": [
+    "endoscopeReprocessor"
    ]
   },
   {
@@ -94,6 +108,9 @@
    ],
    "events": [
     "airflow"
+   ],
+   "covers": [
+    "dryingStorageCabinet"
    ]
   },
   {
@@ -108,6 +125,9 @@
     "channels",
     "outerSheath",
     "distalTip"
+   ],
+   "covers": [
+    "endoscopeChannels"
    ]
   },
   {
@@ -122,6 +142,9 @@
     "elevator",
     "elevatorRecess",
     "accessoryChannel"
+   ],
+   "covers": [
+    "duodenoscopeElevator"
    ]
   },
   {
@@ -136,6 +159,9 @@
     "biofilm",
     "brush",
     "organicMaterial"
+   ],
+   "covers": [
+    "channelBiofilm"
    ]
   },
   {
@@ -150,6 +176,9 @@
     "channel",
     "ports",
     "elevatorRecess"
+   ],
+   "covers": [
+    "channelBrush"
    ]
   },
   {
@@ -165,6 +194,9 @@
     "breach",
     "insertionTube",
     "controlBody"
+   ],
+   "covers": [
+    "leakTestSetup"
    ]
   },
   {
@@ -180,6 +212,9 @@
     "valves",
     "controlBody",
     "channels"
+   ],
+   "covers": [
+    "dryingStorageCabinet"
    ]
   }
  ]

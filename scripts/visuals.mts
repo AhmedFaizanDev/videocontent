@@ -24,6 +24,9 @@ import {ROOT, projectDir} from './lib/paths.mts';
 import {callModel, cli, writeJob} from './lib/llm.mts';
 import {VECTOR_MANIFESTS} from '../src/art/vector/manifests.gen.ts';
 import {ALL_ART_PLAYS, DATA_PLAYS} from '../src/playbooks.ts';
+import {CATALOG} from '../src/art/catalog.ts';
+import {DRAWN_PLAYBOOKS} from '../src/art/playbooks.gen.ts';
+import {savePlaybooks} from './lib/playbook-store.mts';
 
 const [project, ...flags] = process.argv.slice(2);
 if (!project) {
@@ -321,6 +324,28 @@ function verify(c: Concept): boolean {
   return true;
 }
 
+/* ------------------------------------------------------------------ 5b drawn art: the same playbook authoring (Opus, once) */
+/** For a drawing approved into the library: playbooks over its own (code-defined, reviewed) anchors and events. */
+function authorDrawn(art: string, concepts: Concept[]): boolean {
+  const shot = join(STAGE, art, 'anchors.png');
+  if (!existsSync(shot) && !probe(art, shot, 'anchors')) throw new Error(`${art}: anchor render failed`);
+  const meta = CATALOG[art];
+  const targets = [...new Set([...meta.anchors({}), ...(meta.events ?? [])])];
+  const user = `ART KEY: ${art} (a drawn illustration; its anchors and events are fixed — use only these)\nANCHORS (named points, shown on the image): ${meta.anchors({}).join(', ')}\nEVENTS (beat act targets that animate): ${(meta.events ?? []).join(', ') || 'none'}\nWHAT IT SHOWS: ${meta.doc}\nCONCEPTS IT MUST TEACH (give each at least one playbook):\n${concepts.map((c) => `- ${c.what} — teaches: ${c.teaches}`).join('\n')}\n\nEXAMPLE (the house's heart playbooks; your ids start "${art}."):\n${JSON.stringify(ALL_ART_PLAYS.filter((p) => p.art === 'heartExterior').slice(0, 2).map(({art: _a, ...p}) => p))}`;
+  const schema = {type: 'object', additionalProperties: false, properties: {playbooks: (PLAY_SCHEMA.properties as any).playbooks}, required: ['playbooks']};
+  const out = ask(`visuals.author.${art}`, {tag: {id: art, role: 'playbook-author'}, model: 'opus', system: `${readFileSync(join(ROOT, 'docs', 'PLAYBOOK_BRIEF.md'), 'utf8')}\n\nFOR A DRAWN ILLUSTRATION: its anchors and events already exist (code, reviewed) — return ONLY "playbooks", using exactly those names as beat targets ("act" may name an event or an anchor).`, user, schema, images: [shot]}, join(answers, `author.${art}.json`));
+  if (!out) return false;
+  // the gate for authored choreography: every beat target must exist on the art
+  const known = new Set(targets);
+  const uses = (b: any) => JSON.stringify(b).match(/"(?:on|pulse|act)":"([^"]+)"/g)?.map((m) => m.split('"')[3]) ?? [];
+  const playbooks = out.playbooks
+    .map((p: any) => ({...p, id: p.id.startsWith(`${art}.`) ? p.id : `${art}.${p.id}`, moments: p.moments.filter((m: any) => uses(m.beat).every((u) => known.has(u)))}))
+    .filter((p: any) => p.moments.length >= 2);
+  savePlaybooks(art, playbooks);
+  console.log(`  🎬 ${art}: ${playbooks.length} playbook(s) over its ${known.size} anchors/events`);
+  return true;
+}
+
 /* ------------------------------------------------------------------ probe renders (a fresh bundle sees new assets) */
 if (project === '--probe') {
   const [art, out, mode] = flags;
@@ -368,13 +393,30 @@ for (const c of plan.concepts) {
   }
   savePlan(plan);
 }
-// the drawing queue, in the format the art pipeline already reads (scripts/art.mts gaps)
+// the drawing queue, in the format the art pipeline already reads (scripts/art.mts gaps); a part may
+// cover several concepts (one cutaway for channels, biofilm and brush)
 const toDraw = plan.concepts.filter((c) => c.decision === 'draw');
-if (toDraw.length) {
-  const vf = join(PD, 'visuals.json');
-  const v = existsSync(vf) ? JSON.parse(readFileSync(vf, 'utf8')) : {parts: []};
-  for (const c of toDraw) if (!v.parts.some((p: any) => p.name === c.id)) v.parts.push({name: c.id, pack: kebab(project), usedBy: c.lessons, what: `${c.what}. Teaches: ${c.teaches}`, anchors: c.parts.map(camel)});
-  writeFileSync(vf, JSON.stringify(v, null, 1) + '\n');
+const vf = join(PD, 'visuals.json');
+const queue = existsSync(vf) ? JSON.parse(readFileSync(vf, 'utf8')) : {parts: []};
+const partOf = (c: Concept) => queue.parts.find((p: any) => (p.covers ?? [p.name]).includes(c.id));
+for (const c of toDraw) if (!partOf(c)) queue.parts.push({name: c.id, pack: kebab(project), usedBy: c.lessons, covers: [c.id], what: `${c.what}. Teaches: ${c.teaches}`, anchors: c.parts.map(camel)});
+if (toDraw.length) writeFileSync(vf, JSON.stringify(queue, null, 1) + '\n');
+// drawn and approved (in the catalogue) → the same playbook authoring as an imported asset → ready
+for (const c of toDraw) {
+  const part = partOf(c);
+  c.art = part.name;
+  if (!CATALOG[part.name]) {
+    c.status = 'drawing';
+    continue;
+  }
+  if (!DRAWN_PLAYBOOKS[part.name] && !existsSync(join(ROOT, 'assets', 'playbooks', `${part.name}.json`)) && !authorDrawn(part.name, toDraw.filter((o) => partOf(o) === part))) {
+    waiting = true;
+    continue;
+  }
+  c.status = 'verified';
 }
+savePlan(plan);
+const drawing = toDraw.filter((c) => c.status === 'drawing').length;
+if (drawing) console.log(`  ✏️  ${drawing} concept(s) wait for their drawing to be approved (art-author → art-reviewer → art.mts approve)`);
 console.log(waiting ? `\nvisuals: waiting on job(s) in projects/${project}/jobs/visuals.*.md — run them, then run this again` : `\nvisuals: ${plan.concepts.filter((c) => c.status === 'verified').length}/${plan.concepts.length} illustration(s) ready${toDraw.length ? `, ${toDraw.length} queued for drawing` : ''}`);
 if (cli.ok === false && waiting) process.exit(0);
