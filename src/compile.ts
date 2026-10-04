@@ -28,7 +28,8 @@ const STOP = new Set(['with', 'from', 'that', 'this', 'into', 'than', 'then', 'w
 /** The first candidate keyword the narration speaks at/after word index `from`: [keyword, index]. */
 const firstSpoken = (words: string[], cands: string[], from: number): [string, number] | null => {
   for (let j = from; j < words.length; j++)
-    for (const c of cands) if (words[j] === c || (c.length >= 5 && words[j].startsWith(c.slice(0, Math.max(5, c.length - 2))))) return [words[j], j];
+    // the sync engine's own matching too (a cue "high" is heard in "high-quality"), so positions agree with it
+    for (const c of cands) if (words[j] === c || (c.length >= 5 && words[j].startsWith(c.slice(0, Math.max(5, c.length - 2)))) || wordMatches(words[j], [c])) return [words[j], j];
   return null;
 };
 

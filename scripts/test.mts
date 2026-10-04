@@ -232,6 +232,8 @@ step('3 units', () => {
     assert.ok(syncProblems(compileScene({type: 'scene', kicker: 'k', narration: 'Survival is 10.5% overall.', elements: [{id: 'b', kind: 'bars', items: [{label: 'All', value: 10.5, say: fixSpec({scenes: [{narration: 'Survival is 10.5% overall.', notes: [{say: ['10.5%'], note: 'x'}]}]}).spec.scenes[0].notes[0].say}]}]})).length === 0, 'a percentage cue is heard');
     const nb = compileScene({type: 'table', kicker: 'k', narration: 'Adults first. Children next. Survival differs by setting.', columns: ['G', 'S'], rows: [['Adults', '1'], ['Children', '2']], notes: [{note: 'Setting matters'}]});
     assert.equal(syncProblems(nb).length, 0, 'a note without a cue derives one from its text');
+    const hq = compileScene({type: 'flow', kicker: 'k', narration: 'First, recognition. The chain of survival has links. Second, high-quality compressions. Third, defibrillation follows when the rhythm allows it and the pads are on.', mermaid: 'flowchart LR\n A[Recognition] --> B[High-quality CPR] --> C[Defibrillation]'});
+    assert.equal(syncProblems(hq).length, 0, 'a hyphenated spoken word positions its cue where sync hears it');
     assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
     assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
     assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');

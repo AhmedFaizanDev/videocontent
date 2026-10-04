@@ -3,10 +3,10 @@
   "id": "M01",
   "stages": {
     "preflight": {
-      "seconds": 0.1,
+      "seconds": 4.5,
       "batch": 1,
-      "errors": 1,
-      "at": "2026-10-04T01:13:51.605Z"
+      "errors": 0,
+      "at": "2026-10-04T01:16:25.167Z"
     },
     "check": {
       "seconds": 5,
