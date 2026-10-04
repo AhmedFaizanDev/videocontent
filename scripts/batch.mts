@@ -24,7 +24,7 @@
  * own module's source text — never the whole repo, the guide or other lessons.
  */
 import {execFileSync, spawnSync} from 'node:child_process';
-import {existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync} from 'node:fs';
+import {existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync} from 'node:fs';
 import {homedir} from 'node:os';
 import {join} from 'node:path';
 import {ROOT, loadProject, projectDir, specPath} from './lib/paths.mts';
@@ -38,6 +38,7 @@ import {fixSpec} from './lib/fix.mts';
 import {simplify} from './lib/simplify.mts';
 import {recordStage} from './lib/metrics.mts';
 import {categorize} from './lib/categories.mts';
+import {judgeRepair} from './lib/repair.mts';
 
 type Video = {id: string; title?: string; source: string; pages?: [number, number]; outline?: string};
 const [project, cmd = 'all', ...rest] = process.argv.slice(2);
@@ -129,8 +130,8 @@ function writerPrompt(v: Video) {
 
 /* ------------------------------------------------------------------ the writer (scripts/lib/llm.mts) */
 const llm = (system: string, user: string, tag: {id: string; role: string}): any | null => callModel({project, tag, system, user, schema: SCRIPT_SCHEMA});
-const job = (name: string, system: string, user: string, target: string, editor = false) =>
-  writeJob({project, name, tag: {id: name, role: 'job'}, system, user, schema: SCRIPT_SCHEMA, target, preface: editor ? 'Write the script, then edit your own draft against the editor rubric below (a second, critical pass).' : '', extra: editor ? `\n\n## Editor rubric (second pass)\n${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}` : ''});
+const job = (name: string, system: string, user: string, target: string, editor = false, verifyId?: string) =>
+  writeJob({project, name, tag: {id: name, role: 'job'}, system, user, schema: SCRIPT_SCHEMA, target, preface: editor ? 'Write the script, then edit your own draft against the editor rubric below (a second, critical pass).' : verifyId ? `After writing, VERIFY: run \`node scripts/preflight.mts ${project} ${verifyId} --no-render\` from the repository root; if any ❌ line remains, fix the script and run it again (at most 3 runs). Never leave the script worse than you found it: if your change adds an error, undo it. Then report the final ❌ lines (or none).` : '', extra: editor ? `\n\n## Editor rubric (second pass)\n${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}` : ''});
 const cliOk = () => cli.ok;
 
 function write(ids: string[]) {
@@ -163,6 +164,18 @@ const failingScenes = (errs: string[], spec: any) => {
   return [...new Set(errs.flatMap((e) => [...e.matchAll(/scene\[(\d+)\]/g)].map((m) => +m[1] - shift)).filter((i) => i >= 0 && i < (spec.scenes?.length ?? 0)))];
 };
 
+const snapPath = (id: string) => join(jobs, `${id}.pre.json`);
+const snapshot = (id: string, spec: any, errs: string[]) => {
+  mkdirSync(jobs, {recursive: true});
+  writeFileSync(snapPath(id), JSON.stringify({spec, errs}));
+};
+const takeSnapshot = (id: string): {spec: any; errs: string[]} | null => {
+  if (!existsSync(snapPath(id))) return null;
+  const s = JSON.parse(readFileSync(snapPath(id), 'utf8'));
+  rmSync(snapPath(id));
+  return s;
+};
+
 function check(ids: string[]) {
   const vids = course().videos.filter((v) => existsSync(specPath(project, v.id)) && (!ids.length || ids.includes(v.id)));
   const clean: string[] = [];
@@ -176,13 +189,31 @@ function check(ids: string[]) {
     let repairs = 0;
     let fallback: number[] = [];
     let pending = false;
+    const repairLog: string[] = [];
+    // 0 a repair done in agent mode since the last check: verify it against its before-snapshot
+    const pre = takeSnapshot(v.id);
+    if (pre) {
+      const r = judgeRepair({ok: false, errs: pre.errs}, g);
+      repairLog.push(`agent repair: ${r.verdict}${r.why ? ` (${r.why})` : ''}`);
+      if (r.verdict === 'rejected') {
+        save(v.id, pre.spec);
+        g = gate(v.id);
+        console.log(`  ↩️  ${v.id}: agent repair rejected by the gate (${r.why}) — rolled back`);
+      }
+    }
     // 1 deterministic fixers (no tokens)
     if (!g.ok) {
       const r = fixSpec(readJSON(v.id), cfg.lang, cfg.fullForms ?? {});
       if (r.fixes.length) {
+        const before = readJSON(v.id);
         save(v.id, r.spec);
-        fixes = r.fixes.map((f) => `${f.kind}: ${f.what}`);
-        g = gate(v.id);
+        const g2 = gate(v.id);
+        // even a deterministic fix must be proven by the gate
+        if (judgeRepair(g, g2).verdict === 'rejected') save(v.id, before);
+        else {
+          fixes = r.fixes.map((f) => `${f.kind}: ${f.what}`);
+          g = g2;
+        }
       }
     }
     // 2 fallback (deterministic, zero tokens, same narration): a composition failing on layout
@@ -204,29 +235,44 @@ function check(ids: string[]) {
         }
       }
     }
-    // 3 escalating repairs: the script with its errors → again, rethinking → only the failing scenes
+    // 3 verified repairs: each attempt is re-gated; kept only when the gate proves progress
+    //    (every remaining error was already there, and fewer remain) — otherwise rolled back, and the
+    //    next attempt is told exactly why the last one was rejected. No blind repairs.
     const {system} = writerPrompt(v);
+    let rejected = '';
     while (!g.ok && repairs < 3 && !OFFLINE) {
       repairs++;
       const spec = readJSON(v.id);
       const bad = failingScenes(g.errs, spec);
+      const why = rejected ? `Your previous repair was REJECTED by the build gate: ${rejected}. Do something different. ` : '';
       const user =
         repairs < 3 || !bad.length
-          ? `${repairs > 1 ? 'A previous repair did not clear these errors. Rethink the failing scenes (reword, re-order, or choose a different screen for the idea) rather than patching words. ' : ''}Fix ONLY these build errors in the script below; keep everything else identical. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`
-          : `Rewrite ONLY scenes ${bad.join(', ')} (0-based) of the script so these errors clear — same facts, same narration length; you may change the screen type. Return the complete script. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`;
+          ? `${why}${repairs > 1 ? 'Rethink the failing scenes (reword, re-order, or choose a different screen for the idea) rather than patching words. ' : ''}Fix ONLY these build errors in the script below; keep everything else identical. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`
+          : `${why}Rewrite ONLY scenes ${bad.join(', ')} (0-based) of the script so these errors clear — same facts, same narration length; you may change the screen type. Return the complete script. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`;
       const out = llm(system, user, {id: v.id, role: `repair${repairs}`});
       if (!out) {
         if (cliOk() === false && !OFFLINE) {
-          console.log(`  📝 ${v.id}: repair job → ${job(`${v.id}.repair${repairs}`, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
+          // agent mode: the repairer verifies its own work with the gate; the next check verifies it again
+          snapshot(v.id, spec, g.errs);
+          console.log(`  📝 ${v.id}: repair job → ${job(`${v.id}.repair${repairs}`, system, user, specPath(project, v.id), false, v.id).replace(ROOT + '/', '')}`);
           pending = true;
         }
         break;
       }
       save(v.id, fixSpec(out, cfg.lang, cfg.fullForms ?? {}).spec);
-      g = gate(v.id);
+      const g2 = gate(v.id);
+      const r = judgeRepair(g, g2);
+      repairLog.push(`repair${repairs}: ${r.verdict}${r.why ? ` (${r.why})` : ''}`);
+      if (r.verdict === 'rejected') {
+        save(v.id, spec);
+        rejected = r.why;
+      } else {
+        g = g2;
+        rejected = '';
+      }
     }
     if (!pending)
-      recordStage(project, v.id, 'check', {seconds: Math.round((Date.now() - t0) / 1000), firstPass, ok: g.ok, categories, fixes, repairs, fallback, remaining: g.ok ? [] : [...new Set(g.errs.map(categorize))]});
+      recordStage(project, v.id, 'check', {seconds: Math.round((Date.now() - t0) / 1000), firstPass, ok: g.ok, categories, fixes, repairs, repairLog, fallback, remaining: g.ok ? [] : [...new Set(g.errs.map(categorize))]});
     if (g.ok) clean.push(v.id);
     else if (!pending) console.log(`  ⛔ ${v.id}: set aside after fixers, ${repairs} repair(s) and fallback —\n     ${g.errs.slice(0, 6).join('\n     ')}`);
   }

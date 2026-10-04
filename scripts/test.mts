@@ -23,6 +23,7 @@ import {paceOf, retime, planTransitions, fitBreathe} from '../src/schedule.ts';
 import {CATALOG, calloutsFor} from '../src/art/catalog.ts';
 import {withDefaults, spoken} from '../src/project.ts';
 import {speakTokens} from './lib/speak.mts';
+import {judgeRepair} from './lib/repair.mts';
 import {numbersIn, pronunciationWatch, speechHazards, spellingProblems} from './lib/grounding.mts';
 import {parseMermaid} from '../src/art/mermaid.ts';
 import {compileScene, compileSpec, mergeSameWord, slotsFor} from '../src/compile.ts';
@@ -63,6 +64,14 @@ step('3 units', () => {
   const cov = {name: 't', series: 's', lang: 'hi', brand: {signoff: 'x', episodeLabel: 'EP.'}};
   assert.deepEqual(uncovered({scenes: [{narration: 'रक्तचाप 120 → O₂ ✓ 🙂'}]}, cov), ['🙂'], 'glyph coverage');
   assert.equal(speakTokens('No pulse, no breathing. No. It is shockable. See No. 3.').map((t) => t.s).join(' '), 'No pulse, no breathing. No. It is shockable. See number 3.', '"no" is never read as "number"');
+  {
+    const e1 = '❌ M01 timing: scene[2] (stage): ~9 s with nothing new on screen';
+    const e2 = '❌ M01 validate: scene[4] sync: beats[1] never heard';
+    assert.equal(judgeRepair({ok: false, errs: [e1, e2]}, {ok: true, errs: []}).verdict, 'fixed');
+    assert.equal(judgeRepair({ok: false, errs: [e1, e2]}, {ok: false, errs: [e1.replace('9', '8')]}).verdict, 'progress', 'timing numbers may shift');
+    assert.equal(judgeRepair({ok: false, errs: [e1]}, {ok: false, errs: [e1]}).verdict, 'rejected', 'no progress is rejected');
+    assert.equal(judgeRepair({ok: false, errs: [e1, e2]}, {ok: false, errs: ['❌ M01 layout: text too small']}).verdict, 'rejected', 'a new error is rejected');
+  }
   assert.deepEqual(matchPhrases(['the', 'leak', 'test', 'then', 'brushing'], [['leak'], ['brush']]), [1, 4]);
   assert.deepEqual(matchPhrases(['brush', 'leak'], [['leak'], ['brush']]), [1, -1], 'order is enforced');
   assert.deepEqual(matchPhrases(['remove'], [['removable']]), [-1], '"remove" is not "removable"');
