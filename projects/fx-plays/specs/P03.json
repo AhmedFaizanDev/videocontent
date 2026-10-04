@@ -1,0 +1,26 @@
+{
+ "id": "P03",
+ "title": "Drawn playbooks",
+ "outputFilename": "fx_P03.mp4",
+ "module": "Fixture",
+ "scenes": [
+  {
+   "type": "play",
+   "play": "channelCutaway.biofilm",
+   "kicker": "Biofilm",
+   "narration": "Look inside the channel wall of an endoscope. Over time a biofilm layer adheres to the wall, and soaking or flushing with chemicals alone cannot remove it. Only a brush in direct contact with the wall can scrub it away, until the channel is clean."
+  },
+  {
+   "type": "play",
+   "play": "leakTest.breach",
+   "kicker": "Leak test",
+   "narration": "The scope is pressurised before it is immersed. A steady stream of bubbles then shows a breach in the outer sheath, and the gauge falls as pressure escapes."
+  },
+  {
+   "type": "play",
+   "play": "dryingCabinet.storage",
+   "kicker": "Storage",
+   "narration": "After reprocessing, scopes are stored in a drying cabinet. Each one hangs vertically from the hanger, straight and uncoiled so the channels drain, with the valves removed and placed in the tray, while filtered air flows down to dry them."
+  }
+ ]
+}

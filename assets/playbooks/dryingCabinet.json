@@ -1,0 +1,180 @@
+{
+  "art": "dryingCabinet",
+  "playbooks": [
+    {
+      "id": "dryingCabinet.storage",
+      "teaches": "why scopes are stored hanging vertically and uncoiled with valves removed so channels drain and dry, unlike coiled storage that retains fluid",
+      "moments": [
+        {
+          "slot": "cabinet",
+          "hint": [
+            "cabinet",
+            "drying cabinet",
+            "storage"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "cabinet",
+              "text": "Drying cabinet"
+            }
+          }
+        },
+        {
+          "slot": "hang",
+          "hint": [
+            "hang",
+            "vertical",
+            "hanger",
+            "rail"
+          ],
+          "beat": {
+            "label": {
+              "on": "hanger",
+              "text": "Hanging rail"
+            },
+            "pulse": "hanger"
+          }
+        },
+        {
+          "slot": "uncoiled",
+          "hint": [
+            "uncoiled",
+            "straight",
+            "drain",
+            "gravity"
+          ],
+          "beat": {
+            "camera": {
+              "on": "scope",
+              "zoom": 1.4
+            },
+            "label": {
+              "on": "scope",
+              "text": "Hung vertical, uncoiled"
+            }
+          }
+        },
+        {
+          "slot": "valves",
+          "hint": [
+            "valves",
+            "removed",
+            "ports open"
+          ],
+          "beat": {
+            "camera": {
+              "on": "valves",
+              "zoom": 1.5
+            },
+            "label": {
+              "on": "valves",
+              "text": "Valves removed"
+            }
+          }
+        },
+        {
+          "slot": "airflow",
+          "hint": [
+            "air",
+            "airflow",
+            "filtered",
+            "dry"
+          ],
+          "beat": {
+            "act": "airflow",
+            "camera": "overview",
+            "label": {
+              "on": "airflow",
+              "text": "Filtered airflow"
+            }
+          }
+        },
+        {
+          "slot": "door",
+          "hint": [
+            "door",
+            "closed",
+            "protected"
+          ],
+          "beat": {
+            "label": {
+              "on": "door",
+              "text": "Glass door"
+            }
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "dryingCabinet.drying",
+      "teaches": "how filtered air in a closed cabinet dries the channels of hanging scopes and keeps them protected until use",
+      "moments": [
+        {
+          "slot": "door",
+          "hint": [
+            "door",
+            "close",
+            "enclosed"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "door",
+              "text": "Glass door"
+            }
+          }
+        },
+        {
+          "slot": "air",
+          "hint": [
+            "filtered air",
+            "airflow",
+            "drying"
+          ],
+          "beat": {
+            "act": "airflow",
+            "label": {
+              "on": "airflow",
+              "text": "Filtered air"
+            }
+          }
+        },
+        {
+          "slot": "scopes",
+          "hint": [
+            "scopes",
+            "channels",
+            "dry"
+          ],
+          "beat": {
+            "camera": {
+              "on": "scope",
+              "zoom": 1.3
+            },
+            "label": {
+              "on": "scope",
+              "text": "Channels drying"
+            }
+          }
+        },
+        {
+          "slot": "end",
+          "hint": [
+            "ready",
+            "stored",
+            "until use"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "cabinet",
+              "text": "Ready for use"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

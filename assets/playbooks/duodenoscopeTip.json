@@ -1,0 +1,161 @@
+{
+  "art": "duodenoscopeTip",
+  "playbooks": [
+    {
+      "id": "duodenoscopeTip.anatomy",
+      "teaches": "the side-viewing duodenoscope tip part by part: lens, accessory channel outlet and the elevator in its recess",
+      "moments": [
+        {
+          "slot": "tip",
+          "hint": [
+            "duodenoscope",
+            "distal tip",
+            "side-viewing"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "distalTip",
+              "text": "Distal tip"
+            }
+          }
+        },
+        {
+          "slot": "lens",
+          "hint": [
+            "lens",
+            "objective",
+            "view",
+            "side"
+          ],
+          "beat": {
+            "label": {
+              "on": "lens",
+              "text": "Objective lens"
+            },
+            "pulse": "lens"
+          }
+        },
+        {
+          "slot": "outlet",
+          "hint": [
+            "channel",
+            "outlet",
+            "accessory",
+            "instrument"
+          ],
+          "beat": {
+            "camera": {
+              "on": "channelOutlet",
+              "zoom": 1.5
+            },
+            "label": {
+              "on": "channelOutlet",
+              "text": "Accessory channel outlet"
+            }
+          }
+        },
+        {
+          "slot": "elevator",
+          "hint": [
+            "elevator",
+            "lever",
+            "raises",
+            "directs"
+          ],
+          "beat": {
+            "act": "raise",
+            "label": {
+              "on": "elevator",
+              "text": "Elevator"
+            }
+          }
+        },
+        {
+          "slot": "back",
+          "hint": [
+            "together",
+            "whole tip"
+          ],
+          "beat": {
+            "camera": "overview"
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "duodenoscopeTip.outbreak",
+      "teaches": "why the elevator recess is a documented outbreak site: narrow, mechanically complex and extremely difficult to clean",
+      "moments": [
+        {
+          "slot": "recess",
+          "hint": [
+            "recess",
+            "elevator recess",
+            "narrow",
+            "crevice"
+          ],
+          "beat": {
+            "camera": {
+              "on": "elevatorRecess",
+              "zoom": 1.6
+            },
+            "label": {
+              "on": "elevatorRecess",
+              "text": "Elevator recess"
+            }
+          }
+        },
+        {
+          "slot": "moves",
+          "hint": [
+            "moves",
+            "lifts",
+            "mechanism",
+            "complex"
+          ],
+          "beat": {
+            "act": "raise",
+            "label": {
+              "on": "elevator",
+              "text": "Elevator raised"
+            }
+          }
+        },
+        {
+          "slot": "hidden",
+          "hint": [
+            "behind",
+            "hidden",
+            "crevices",
+            "under"
+          ],
+          "beat": {
+            "pulse": "elevatorRecess",
+            "label": {
+              "on": "elevatorRecess",
+              "text": "Hard to clean"
+            }
+          }
+        },
+        {
+          "slot": "outbreak",
+          "hint": [
+            "outbreak",
+            "infection",
+            "transmission",
+            "documented"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "distalTip",
+              "text": "Outbreak site"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

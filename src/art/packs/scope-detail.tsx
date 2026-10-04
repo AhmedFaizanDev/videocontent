@@ -61,7 +61,7 @@ const Glint: React.FC<{d: string; f: number; at?: number; w?: number}> = ({d, f,
 const channelCutaway: ArtFactory = () => {
   const CX = 220, CY = 310, R = 180;
   const SUC: P = [190, 250];
-  const AIRC: P = [300, 380];
+  const AIRC: P = [320, 300];
   const WAT: P = [215, 410];
   const X0 = 470, X1 = 960; // longitudinal channel
   const LT = 236, LB = 384; // lumen top / bottom
@@ -76,7 +76,7 @@ const channelCutaway: ArtFactory = () => {
     const grow = bA != null && f >= bA ? tw(f, bA, 50, E.inOut) : 0;
     const brA = c.at('brush');
     const travel = brA != null && f >= brA ? tw(f, brA, 120, E.inOut) : 0;
-    const hx = mix(520, 900, travel); // brush head centre
+    const hx = mix(430, 900, travel); // brush head centre
     const scrub = brA != null && f >= brA && travel < 1 ? Math.sin(f * 0.9) * 4 : 0;
     const th = 24 * grow;
     // biofilm: a lumpy mat on both walls, removed where the brush has passed
@@ -110,22 +110,21 @@ const channelCutaway: ArtFactory = () => {
           <clipPath id="sd-lumen"><rect x={X0} y={LT} width={X1 - X0} height={LB - LT} /></clipPath>
         </defs>
         {/* projection guides from the face to the cut */}
-        <path d={`M${SUC[0]} ${SUC[1] - 62} L${X0} ${LT - WALL - 30} M${SUC[0]} ${SUC[1] + 62} L${X0} ${LB + WALL + 30}`} stroke={STEEL.s} strokeWidth={3} strokeDasharray="10 10" opacity={0.5 * tw(f, 40, 20)} />
+        <path d={`M${SUC[0]} ${SUC[1] - 62} L${X0} ${LT - WALL - 30} M${SUC[0]} ${SUC[1] + 62} L${X0} ${LB + WALL + 30}`} stroke={STEEL.s} strokeWidth={4} strokeDasharray="12 9" opacity={0.9 * tw(f, 40, 20)} />
         {/* cross-section face */}
         <S d={circ(CX, CY, R)} fill="url(#sd-black)" stroke={BLACK.s} f={f} i={0} sw={3} />
         <S d={circ(CX, CY, R - 22)} fill="url(#sd-grey)" stroke={GREY.s} f={f} i={1} />
         {[[110, 340], [140, 395]].map(([x, y], i) => <S key={`l${i}`} d={circ(x, y, 24)} fill={LIGHT.f} stroke={LIGHT.s} f={f} i={2} />)}
-        <S d={circ(305, 270, 30)} fill="url(#sd-steel)" stroke={STEEL.s} f={f} i={2} />
         {[0, 90, 180, 270].map((a, i) => {
           const r = R - 40, t = ((a + 45) * Math.PI) / 180;
-          return <S key={`w${i}`} d={circ(CX + r * Math.cos(t), CY + r * Math.sin(t), 9)} fill="url(#sd-steel)" stroke={STEEL.s} f={f} i={3} />;
+          return <S key={`w${i}`} d={circ(CX + r * Math.cos(t), CY + r * Math.sin(t), 13)} fill="url(#sd-steel)" stroke={GREY.s} sw={3} f={f} i={3} />;
         })}
         <S d={circ(SUC[0], SUC[1], 62)} fill="url(#sd-pink)" stroke={SUCTION_S} f={f} i={3} sw={4} />
         <S d={circ(AIRC[0], AIRC[1], 22)} fill={AIR.f} stroke={AIR.s} f={f} i={4} sw={3.5} />
         <S d={circ(WAT[0], WAT[1], 22)} fill={WATER.f} stroke={WATER.s} f={f} i={4} sw={3.5} />
         <Glint d={`M${CX - 120} ${CY - 90} A150 150 0 0 1 ${CX - 40} ${CY - 152}`} f={f} w={8} />
         {/* biofilm also seen as a ring inside the suction channel */}
-        {grow > 0 && <circle cx={SUC[0]} cy={SUC[1]} r={62 - 3 - 8 * grow} fill="none" stroke={BIO.f} strokeWidth={14 * grow} opacity={travel > 0.95 ? 1 - tw(f, (brA ?? 0) + 120, 20) : 1} />}
+        {grow > 0 && <circle cx={SUC[0]} cy={SUC[1]} r={62 - 3 - 10 * grow} fill="none" stroke={BIO.f} strokeWidth={20 * grow} opacity={travel > 0.95 ? 1 - tw(f, (brA ?? 0) + 120, 20) : 1} />}
         {/* longitudinal cut: sheath strips, channel walls, lumen */}
         <S d={rect(X0, LT - WALL - 30, X1 - X0, 30, 4)} fill="url(#sd-blackv)" stroke={BLACK.s} f={f} i={5} />
         <S d={rect(X0, LB + WALL, X1 - X0, 30, 4)} fill="url(#sd-blackv)" stroke={BLACK.s} f={f} i={5} />
@@ -158,7 +157,7 @@ const channelCutaway: ArtFactory = () => {
           return <circle key={i} cx={x} cy={310 + (hash(i + 3) - 0.5) * 110} r={5} fill={BIO.f} stroke={BIO.s} strokeWidth={2} opacity={0.8 * (1 - tw(f, (brA ?? 0) + 40 + i * 8, 60))} />;
         })}
         {/* brush: twisted-wire shaft enters from the left; head of radial bristles fills the lumen */}
-        <g clipPath="url(#sd-lumen)" opacity={tw(f, 50, 20)}>
+        <g clipPath="url(#sd-lumen)" opacity={brA != null && f >= brA ? tw(f, brA, 15) : 0}>
           <path d={twist(X0 - 10, hx - 40, 0)} stroke={STEEL.s} strokeWidth={4} fill="none" />
           <path d={twist(X0 - 10, hx - 40, Math.PI)} stroke={STEEL.lo} strokeWidth={4} fill="none" />
           <g transform={`translate(${hx + scrub} 0)`}>
@@ -193,20 +192,20 @@ const channelCutaway: ArtFactory = () => {
 const duodenoscopeTip: ArtFactory = () => {
   const T0 = 120, B0 = 500; // cylinder silhouette top / bottom
   const RX = 940; // distal end
-  const REC = {x: 640, y: 210, w: 240, h: 200}; // elevator recess opening
+  const REC = {x: 640, y: 250, w: 240, h: 120}; // elevator recess opening
   const OUT: P = [672, 310]; // channel outlet (proximal end of the recess)
   const PIV: P = [850, 310]; // elevator pivot (distal end)
   const anchors: Record<string, P> = {
-    distalTip: [910, 440], lens: [520, 250], channelOutlet: OUT, elevator: [780, 310], elevatorRecess: [760, REC.y + 16], raise: [740, 250],
+    distalTip: [910, 440], lens: [520, 250], channelOutlet: [660, 336], elevator: [750, 310], elevatorRecess: [740, REC.y + 108], raise: [810, 225],
   };
   const C: React.FC<ArtCtx> = (c) => {
     const {f} = c;
     const rA = c.at('raise');
     const up = rA != null && f >= rA ? tw(f, rA, 40, E.inOut) : 0;
     // lever: from pivot toward the outlet; raising swings its free end up (toward the viewer)
-    const L = 160;
+    const L = 140;
     const tip: P = [PIV[0] - L * mix(1, 0.62, up), PIV[1] - mix(0, 110, up)];
-    const hw = 30; // half width across the recess
+    const hw = 20; // half width across the recess
     const lever = `M${PIV[0]} ${PIV[1] - hw} L${tip[0] + 10} ${tip[1] - hw * 0.9} C${tip[0] - 8} ${tip[1] - hw * 0.9} ${tip[0] - 8} ${tip[1] + hw * 0.9} ${tip[0] + 10} ${tip[1] + hw * 0.9} L${PIV[0]} ${PIV[1] + hw} Z`;
     const groove = `M${PIV[0] - 14} ${PIV[1]} L${tip[0] + 18} ${tip[1]}`;
     const thick = up * 16; // the lever's edge shows as it lifts
@@ -226,16 +225,16 @@ const duodenoscopeTip: ArtFactory = () => {
             <stop offset="1" stopColor="#4A4660" />
           </linearGradient>
           <linearGradient id="dt-lever" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#FFF0C4" />
-            <stop offset="0.5" stopColor={BRASS.f} />
-            <stop offset="1" stopColor="#C99A33" />
+            <stop offset="0" stopColor="#E9DDB8" />
+            <stop offset="0.5" stopColor="#C9AE6A" />
+            <stop offset="1" stopColor="#8F7535" />
           </linearGradient>
         </defs>
         {/* distal cap (steel-grey plastic) with the bending section's black sheath behind */}
         <S d={body} fill="url(#dt-steel)" stroke={STEEL.s} f={f} i={0} sw={3} />
         <S d={rect(40, T0, 380, B0 - T0, 6)} fill="url(#dt-black)" stroke={BLACK.s} f={f} i={1} sw={3} />
         {[110, 180, 250, 320, 390].map((x, i) => (
-          <path key={i} d={`M${x} ${T0 + 4} C${x - 10} ${T0 + 120} ${x - 10} ${B0 - 120} ${x} ${B0 - 4}`} stroke={BLACK.s} strokeWidth={3} fill="none" opacity={tw(f, 30 + i * 3, 12)} />
+          <path key={i} d={`M${x} ${T0 + 4} C${x - 10} ${T0 + 120} ${x - 10} ${B0 - 120} ${x} ${B0 - 4}`} stroke={BLACK.s} strokeWidth={1.5} fill="none" opacity={tw(f, 30 + i * 3, 12)} />
         ))}
         <Glint d={`M60 ${T0 + 60} L400 ${T0 + 60}`} f={f} w={10} />
         <Glint d={`M440 ${T0 + 60} L${RX - 160} ${T0 + 60}`} f={f} w={8} />
@@ -248,15 +247,17 @@ const duodenoscopeTip: ArtFactory = () => {
         <path d="M494 286 C502 272 516 266 530 266" stroke="#FFFFFF" strokeWidth={6} strokeLinecap="round" fill="none" opacity={0.7 * tw(f, 60, 15)} />
         {/* elevator recess, with the accessory channel outlet at its proximal end */}
         <S d={rect(REC.x, REC.y, REC.w, REC.h, 28)} fill="url(#dt-recess)" stroke="#2C2840" f={f} i={5} sw={3} />
-        <S d={`M${OUT[0] - 22} ${OUT[1]} a22 40 0 1 0 44 0 a22 40 0 1 0 -44 0Z`} fill="#120F18" stroke={PINK.s} f={f} i={6} sw={4} />
+        <S d={`M${OUT[0] - 22} ${OUT[1]} a18 30 0 1 0 36 0 a18 30 0 1 0 -36 0Z`} fill="#120F18" stroke={PINK.s} f={f} i={6} sw={4} />
         {/* the lever: shadow left on the recess floor, edge thickness, top face with its guide groove */}
         <path d={`M${PIV[0]} ${PIV[1] - hw} L${PIV[0] - L + 10} ${PIV[1] - hw} L${PIV[0] - L + 10} ${PIV[1] + hw} L${PIV[0]} ${PIV[1] + hw} Z`} fill="#000000" opacity={0.35 * up} />
+        <path d={`M${PIV[0]} ${PIV[1] - hw - 6} L${PIV[0] - L + 4} ${PIV[1] - hw - 6} L${PIV[0] - L + 4} ${PIV[1] + hw + 6} L${PIV[0]} ${PIV[1] + hw + 6} Z`} fill="#0B0A10" opacity={fillIn(f, 6)} />
         <g opacity={fillIn(f, 7)}>
-          <path d={lever} transform={`translate(0 ${thick})`} fill="#B0832A" stroke={BRASS.s} strokeWidth={2.5} />
-          <path d={lever} fill="url(#dt-lever)" stroke={BRASS.s} strokeWidth={2.5} strokeLinejoin="round" />
-          <path d={groove} stroke={BRASS.s} strokeWidth={6} strokeLinecap="round" opacity={0.55} />
+          <path d={lever} transform={`translate(0 ${thick})`} fill="#7A6430" stroke="#5A4718" strokeWidth={2.5} />
+          <path d={lever} fill="url(#dt-lever)" stroke="#5A4718" strokeWidth={2.5} strokeLinejoin="round" />
+          <path d={groove} stroke="#5A4718" strokeWidth={5} strokeLinecap="round" opacity={0.55} />
         </g>
         <S d={circ(PIV[0], PIV[1], 13)} fill="url(#dt-steel)" stroke={STEEL.s} f={f} i={8} />
+        <circle cx={PIV[0]} cy={PIV[1]} r={5} fill={STEEL.s} opacity={fillIn(f, 8)} />
         <Ping x={780} y={280} r={70} f={f} at={rA} color={BRASS.s} />
       </g>
     );

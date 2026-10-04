@@ -1,0 +1,168 @@
+{
+  "art": "endoscopeReprocessor",
+  "playbooks": [
+    {
+      "id": "endoscopeReprocessor.connect",
+      "teaches": "why every channel must be attached to its correct model-specific connector, since an unconnected channel is not perfused or disinfected",
+      "moments": [
+        {
+          "slot": "machine",
+          "hint": [
+            "automated endoscope reprocessor",
+            "machine",
+            "reprocessor"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "machine",
+              "text": "Automated reprocessor"
+            }
+          }
+        },
+        {
+          "slot": "load",
+          "hint": [
+            "basin",
+            "coiled",
+            "load",
+            "place"
+          ],
+          "beat": {
+            "label": [
+              {
+                "on": "basin",
+                "text": "Basin"
+              },
+              {
+                "on": "scope",
+                "text": "Endoscope"
+              }
+            ]
+          }
+        },
+        {
+          "slot": "connectors",
+          "hint": [
+            "connector",
+            "tubing",
+            "attach",
+            "each channel",
+            "model-specific"
+          ],
+          "beat": {
+            "camera": {
+              "on": "connectors",
+              "zoom": 1.5
+            },
+            "label": {
+              "on": "connectors",
+              "text": "Channel connectors"
+            }
+          }
+        },
+        {
+          "slot": "unconnected",
+          "hint": [
+            "unconnected",
+            "missed",
+            "not perfused",
+            "not disinfected"
+          ],
+          "beat": {
+            "pulse": "connectors",
+            "label": {
+              "on": "connectors",
+              "text": "Every channel connected"
+            }
+          },
+          "optional": true
+        },
+        {
+          "slot": "flush",
+          "hint": [
+            "flush",
+            "perfuse",
+            "fluid",
+            "through the channels"
+          ],
+          "beat": {
+            "act": "flush",
+            "label": {
+              "on": "flush",
+              "text": "Channels perfused"
+            }
+          }
+        },
+        {
+          "slot": "cycle",
+          "hint": [
+            "cycle",
+            "complete",
+            "panel",
+            "lid"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "controlPanel",
+              "text": "Cycle complete"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "endoscopeReprocessor.cycle",
+      "teaches": "an overview of an automated reprocessing cycle: close the lid, start at the panel, fluid flushes through the connected channels",
+      "moments": [
+        {
+          "slot": "lid",
+          "hint": [
+            "lid",
+            "close",
+            "cover"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "lid",
+              "text": "Lid"
+            }
+          }
+        },
+        {
+          "slot": "panel",
+          "hint": [
+            "control panel",
+            "start",
+            "program"
+          ],
+          "beat": {
+            "camera": {
+              "on": "controlPanel",
+              "zoom": 1.4
+            },
+            "label": {
+              "on": "controlPanel",
+              "text": "Control panel"
+            }
+          }
+        },
+        {
+          "slot": "flush",
+          "hint": [
+            "flush",
+            "wash",
+            "disinfectant",
+            "rinse"
+          ],
+          "beat": {
+            "act": "flush",
+            "camera": "overview"
+          }
+        }
+      ]
+    }
+  ]
+}

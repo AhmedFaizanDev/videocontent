@@ -178,7 +178,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -302,7 +302,8 @@
           }
         ]
       },
-      "reason": "None depicts an insertion tube with multiple channels of differing diameters; all are biological tissue sections."
+      "reason": "None depicts an insertion tube with multiple channels of differing diameters; all are biological tissue sections.",
+      "art": "channelCutaway"
     },
     {
       "id": "duodenoscopeElevator",
@@ -327,7 +328,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -451,7 +452,8 @@
           }
         ]
       },
-      "reason": "All show bile duct anatomy with baked-in text; none shows a duodenoscope tip, elevator or recess."
+      "reason": "All show bile duct anatomy with baked-in text; none shows a duodenoscope tip, elevator or recess.",
+      "art": "duodenoscopeTip"
     },
     {
       "id": "channelBiofilm",
@@ -477,7 +479,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -601,7 +603,8 @@
           }
         ]
       },
-      "reason": "None shows a channel wall, biofilm layer or brush; only generic bacteria and unrelated images."
+      "reason": "None shows a channel wall, biofilm layer or brush; only generic bacteria and unrelated images.",
+      "art": "channelCutaway"
     },
     {
       "id": "channelBrush",
@@ -626,7 +629,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -750,7 +753,8 @@
           }
         ]
       },
-      "reason": "No endoscope channel brush or channel shown; only toothbrushes, cartoons and irrelevant art."
+      "reason": "No endoscope channel brush or channel shown; only toothbrushes, cartoons and irrelevant art.",
+      "art": "channelCutaway"
     },
     {
       "id": "leakTestSetup",
@@ -777,7 +781,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -901,7 +905,8 @@
           }
         ]
       },
-      "reason": "No flexible endoscope, leak tester or immersion with bubbles shown; candidates are unrelated or off-style."
+      "reason": "No flexible endoscope, leak tester or immersion with bubbles shown; candidates are unrelated or off-style.",
+      "art": "leakTest"
     },
     {
       "id": "endoscopeReprocessor",
@@ -928,7 +933,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -1052,7 +1057,8 @@
           }
         ]
       },
-      "reason": "A dishwasher is a domestic appliance with no endoscope, connectors or channels; wrong and misleading for an AER."
+      "reason": "A dishwasher is a domestic appliance with no endoscope, connectors or channels; wrong and misleading for an AER.",
+      "art": "endoscopeReprocessor"
     },
     {
       "id": "dryingStorageCabinet",
@@ -1079,7 +1085,7 @@
         "T01"
       ],
       "decision": "draw",
-      "status": "none",
+      "status": "verified",
       "broadened": true,
       "candidates": [
         {
@@ -1203,7 +1209,8 @@
           }
         ]
       },
-      "reason": "No cabinet with hanging endoscopes; all candidates are unrelated."
+      "reason": "No cabinet with hanging endoscopes; all candidates are unrelated.",
+      "art": "dryingCabinet"
     }
   ]
 }

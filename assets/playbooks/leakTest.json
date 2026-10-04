@@ -1,0 +1,170 @@
+{
+  "art": "leakTest",
+  "playbooks": [
+    {
+      "id": "leakTest.setup",
+      "teaches": "how the leak test is set up: scope connected to a leak tester, pressurised, then immersed in water and observed",
+      "moments": [
+        {
+          "slot": "tester",
+          "hint": [
+            "leak tester",
+            "connect",
+            "bulb",
+            "pressurise"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "leakTester",
+              "text": "Leak tester"
+            }
+          }
+        },
+        {
+          "slot": "gauge",
+          "hint": [
+            "gauge",
+            "pressure",
+            "holds"
+          ],
+          "beat": {
+            "camera": {
+              "on": "gauge",
+              "zoom": 1.5
+            },
+            "label": {
+              "on": "gauge",
+              "text": "Pressure gauge"
+            }
+          }
+        },
+        {
+          "slot": "immerse",
+          "hint": [
+            "immerse",
+            "water",
+            "basin",
+            "submerge"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "basin",
+              "text": "Water basin"
+            }
+          }
+        },
+        {
+          "slot": "observe",
+          "hint": [
+            "control body",
+            "insertion tube",
+            "observe",
+            "flex"
+          ],
+          "beat": {
+            "label": [
+              {
+                "on": "controlBody",
+                "text": "Control body"
+              },
+              {
+                "on": "insertionTube",
+                "text": "Insertion tube"
+              }
+            ]
+          },
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "leakTest.breach",
+      "teaches": "how a leak test reveals a breach before further immersion, since fluid entering the scope interior cannot be cleaned",
+      "moments": [
+        {
+          "slot": "pressure",
+          "hint": [
+            "pressure",
+            "pressurised",
+            "inflated"
+          ],
+          "beat": {
+            "label": {
+              "on": "gauge",
+              "text": "Pressure held"
+            }
+          }
+        },
+        {
+          "slot": "bubbles",
+          "hint": [
+            "bubbles",
+            "stream",
+            "escaping",
+            "rising"
+          ],
+          "beat": {
+            "act": "bubbles",
+            "camera": {
+              "on": "breach",
+              "zoom": 1.6
+            },
+            "label": {
+              "on": "bubbles",
+              "text": "Air bubbles"
+            }
+          }
+        },
+        {
+          "slot": "breach",
+          "hint": [
+            "breach",
+            "hole",
+            "damage",
+            "sheath"
+          ],
+          "beat": {
+            "pulse": "breach",
+            "label": {
+              "on": "breach",
+              "text": "Sheath breach"
+            }
+          }
+        },
+        {
+          "slot": "falls",
+          "hint": [
+            "falls",
+            "drops",
+            "pressure loss"
+          ],
+          "beat": {
+            "camera": "overview",
+            "label": {
+              "on": "gauge",
+              "text": "Pressure falling"
+            }
+          }
+        },
+        {
+          "slot": "withdraw",
+          "hint": [
+            "fail",
+            "remove",
+            "repair",
+            "interior"
+          ],
+          "beat": {
+            "label": {
+              "on": "insertionTube",
+              "text": "Remove from use"
+            }
+          },
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

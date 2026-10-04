@@ -401,6 +401,7 @@ const queue = existsSync(vf) ? JSON.parse(readFileSync(vf, 'utf8')) : {parts: []
 const partOf = (c: Concept) => queue.parts.find((p: any) => (p.covers ?? [p.name]).includes(c.id));
 for (const c of toDraw) if (!partOf(c)) queue.parts.push({name: c.id, pack: kebab(project), usedBy: c.lessons, covers: [c.id], what: `${c.what}. Teaches: ${c.teaches}`, anchors: c.parts.map(camel)});
 if (toDraw.length) writeFileSync(vf, JSON.stringify(queue, null, 1) + '\n');
+const asked = new Set<string>();
 // drawn and approved (in the catalogue) → the same playbook authoring as an imported asset → ready
 for (const c of toDraw) {
   const part = partOf(c);
@@ -409,7 +410,8 @@ for (const c of toDraw) {
     c.status = 'drawing';
     continue;
   }
-  if (!DRAWN_PLAYBOOKS[part.name] && !existsSync(join(ROOT, 'assets', 'playbooks', `${part.name}.json`)) && !authorDrawn(part.name, toDraw.filter((o) => partOf(o) === part))) {
+  // one authoring per drawing, however many concepts it covers
+  if (!DRAWN_PLAYBOOKS[part.name] && !existsSync(join(ROOT, 'assets', 'playbooks', `${part.name}.json`)) && (asked.has(part.name) || !(asked.add(part.name) && authorDrawn(part.name, toDraw.filter((o) => partOf(o) === part))))) {
     waiting = true;
     continue;
   }
@@ -418,5 +420,5 @@ for (const c of toDraw) {
 savePlan(plan);
 const drawing = toDraw.filter((c) => c.status === 'drawing').length;
 if (drawing) console.log(`  ✏️  ${drawing} concept(s) wait for their drawing to be approved (art-author → art-reviewer → art.mts approve)`);
-console.log(waiting ? `\nvisuals: waiting on job(s) in projects/${project}/jobs/visuals.*.md — run them, then run this again` : `\nvisuals: ${plan.concepts.filter((c) => c.status === 'verified').length}/${plan.concepts.length} illustration(s) ready${toDraw.length ? `, ${toDraw.length} queued for drawing` : ''}`);
+console.log(waiting ? `\nvisuals: waiting on job(s) in projects/${project}/jobs/visuals.*.md — run them, then run this again` : `\nvisuals: ${plan.concepts.filter((c) => c.status === 'verified').length}/${plan.concepts.length} illustration(s) ready${drawing ? `, ${drawing} waiting for drawings` : ''}`);
 if (cli.ok === false && waiting) process.exit(0);

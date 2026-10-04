@@ -82,9 +82,9 @@ const Connector: React.FC<{x: number; y: number; rot?: number; s?: number; f: nu
 
 /* ------------------------------------------------------------------ leakTest (1000 × 620) */
 const leakTest: ArtFactory = () => {
-  const breach: P = [760, 440];
+  const breach: P = [669, 395];
   const anchors: Record<string, P> = {
-    basin: [930, 470], leakTester: [190, 430], gauge: [190, 200], controlBody: [490, 380], insertionTube: [640, 395], breach, bubbles: [762, 370],
+    basin: [930, 470], leakTester: [190, 450], gauge: [190, 200], controlBody: [490, 380], insertionTube: [885, 468], breach, bubbles: [669, 345],
   };
   const C: React.FC<ArtCtx> = (c) => {
     const {f} = c;
@@ -108,7 +108,8 @@ const leakTest: ArtFactory = () => {
         <Hose f={f} i={4} w={16} color="#5A5A62" dark={SCOPE_D} d="M642 538 C622 540 604 536 590 526" />
         <ScopeBody f={f} i={4} x={470} y={380} />
         <Connector f={f} i={5} x={340} y={252} rot={180} s={0.8} />
-        <Hose f={f} i={6} w={12} color="#F5C451" dark="#B7862A" d="M286 252 C262 254 250 300 230 330" />
+        <F f={f} i={6} d={rect(258, 243, 24, 18, 4)} fill="url(#rp-cap)" stroke="#6B6B73" sw={3} />
+        <Hose f={f} i={6} w={12} color="#F5C451" dark="#B7862A" d="M260 252 C246 256 242 300 230 330" />
         {/* leak tester: pressure bulb + gauge */}
         <F f={f} i={7} d="M150 330 C120 380 120 520 190 540 C260 520 260 380 230 330 Z" fill="url(#rp-red)" stroke="#A3202E" sw={4} />
         <g transform={`translate(190 435) scale(${squeeze} 1) translate(-190 -435)`} opacity={0.45 * fillIn(f, 7)}>
@@ -125,7 +126,7 @@ const leakTest: ArtFactory = () => {
         <circle cx={190} cy={200} r={9} fill={STEEL_D} opacity={fillIn(f, 10)} />
         <path d="M140 160 A62 62 0 0 1 200 136" fill="none" stroke="#FFFFFF" strokeWidth={6} strokeLinecap="round" opacity={0.7 * fillIn(f, 10)} />
         {/* breach: a torn slit in the sheath */}
-        <g opacity={fillIn(f, 10)} transform={`rotate(33 ${breach[0]} ${breach[1]})`}>
+        <g opacity={fillIn(f, 10)} transform={`rotate(18 ${breach[0]} ${breach[1]})`}>
           <ellipse cx={breach[0]} cy={breach[1]} rx={12} ry={6} fill="#E11D48" stroke="#9F1239" strokeWidth={3} />
           <path d={`M${breach[0] - 8} ${breach[1]} H${breach[0] + 8}`} stroke="#4C0519" strokeWidth={3} strokeLinecap="round" />
         </g>
@@ -138,7 +139,7 @@ const leakTest: ArtFactory = () => {
               if (since < off) return null;
               const t = ((since - off) % per) / per;
               const y = mix(breach[1] - 12, 330, t);
-              const x = breach[0] + Math.sin(t * 10 + k * 1.7) * (6 + 10 * t) + (hash(k) - 0.5) * 18;
+              const x = breach[0] + Math.sin(t * 10 + k * 1.7) * (4 + 8 * t) + (hash(k) - 0.5) * 10 * t;
               const r = mix(7, 20, t) * (0.6 + hash(k + 9) * 0.8);
               return (
                 <g key={k} opacity={leak * (t > 0.9 ? (1 - t) / 0.1 : 1)}>
@@ -157,12 +158,14 @@ const leakTest: ArtFactory = () => {
 /* ------------------------------------------------------------------ endoscopeReprocessor (1000 × 620) */
 const endoscopeReprocessor: ArtFactory = () => {
   const anchors: Record<string, P> = {
-    machine: [240, 470], lid: [500, 110], basin: [260, 330], scope: [430, 300], connectors: [740, 262], controlPanel: [650, 470], flush: [740, 290],
+    machine: [240, 480], lid: [500, 110], basin: [230, 345], scope: [430, 330], connectors: [730, 232], controlPanel: [650, 480], flush: [760, 318],
   };
+  const PORTS: P[] = [[560, 246], [590, 246], [620, 246], [650, 276]];
   const LINES = [
-    {d: 'M640 248 C700 230 760 246 800 272', c: '#2563EB', cd: '#1E3A8A'},
-    {d: 'M650 264 C710 262 760 280 800 296', c: '#22A55B', cd: '#15703C'},
-    {d: 'M646 282 C706 300 760 312 800 320', c: '#F5C451', cd: '#B7862A'},
+    {d: 'M560 238 C580 200 740 200 800 262', c: '#2563EB', cd: '#1E3A8A'},
+    {d: 'M590 238 C610 214 740 224 800 286', c: '#22A55B', cd: '#15703C'},
+    {d: 'M620 238 C640 230 740 250 800 310', c: '#F5C451', cd: '#B7862A'},
+    {d: 'M660 276 C700 290 760 320 800 334', c: '#E5484D', cd: '#A3202E'},
   ];
   const C: React.FC<ArtCtx> = (c) => {
     const {f} = c;
@@ -177,31 +180,47 @@ const endoscopeReprocessor: ArtFactory = () => {
         <path d="M300 70 L270 180 M360 70 L340 130" stroke="#FFFFFF" strokeWidth={10} strokeLinecap="round" opacity={0.8 * fillIn(f, 0)} />
         <F f={f} i={1} d={rect(160, 200, 680, 380, 18)} fill="url(#rp-steel)" stroke={STEEL_D} sw={5} />
         <path d="M180 220 H820" stroke="#FFFFFF" strokeWidth={6} opacity={0.8 * fillIn(f, 1)} />
-        <F f={f} i={2} d={rect(200, 222, 600, 128, 14)} fill="url(#rp-water)" stroke={WATER_D} sw={4} />
+        <F f={f} i={2} d={rect(200, 222, 600, 150, 14)} fill="url(#rp-water)" stroke={WATER_D} sw={4} />
+        {[250, 750].map((x) => (
+          <g key={x}>
+            <F f={f} i={1} d={rect(x - 30, 190, 60, 20, 5)} fill="url(#rp-grey)" stroke={GREY_D} sw={3} />
+            <circle cx={x} cy={200} r={5} fill="#D6D6DA" opacity={fillIn(f, 1)} />
+          </g>
+        ))}
         {/* fluid swirl in the basin */}
         {on > 0
           ? [0, 1, 2].map((k) => (
-              <ellipse key={k} cx={420} cy={290} rx={150 + k * 40} ry={30 + k * 8} fill="none" stroke={TEAL} strokeWidth={6} strokeLinecap="round" strokeDasharray="40 50" strokeDashoffset={-(since * (3 + k))} opacity={on * 0.55} />
+              <ellipse key={k} cx={420} cy={300} rx={150 + k * 40} ry={30 + k * 8} fill="none" stroke={TEAL} strokeWidth={6} strokeLinecap="round" strokeDasharray="40 50" strokeDashoffset={-(since * (3 + k))} opacity={on * 0.55} />
             ))
           : null}
-        <rect x={204} y={226} width={592} height={120} rx={12} fill={TEAL} opacity={on * 0.18} />
-        <Hose f={f} i={3} w={16} color={SCOPE} dark={SCOPE_D} d="M540 262 C440 330 280 330 250 296 C220 264 300 246 450 246 C600 246 640 262 610 290 C570 318 340 318 300 290 C276 272 340 262 450 262" />
-        <ScopeBody f={f} i={4} x={598} y={262} rot={180} s={0.55} />
-        <F f={f} i={5} d={rect(792, 258, 26, 76, 6)} fill="url(#rp-grey)" stroke={GREY_D} sw={3} />
+        <rect x={204} y={226} width={592} height={142} rx={12} fill={TEAL} opacity={on * 0.18} />
+        <Hose f={f} i={3} w={24} color={SCOPE} dark={SCOPE_D} d="M500 276 C420 350 260 352 228 306 C204 262 300 250 440 250 C600 250 660 280 620 320 C570 352 330 350 290 318 C268 300 320 284 420 286" />
+        <Hose f={f} i={3} w={20} color="#5A5A62" dark={SCOPE_D} d="M420 286 C440 286 455 288 466 292" />
+        <ScopeBody f={f} i={4} x={590} y={276} rot={180} s={0.85} />
+        {PORTS.map(([x, y], k) => (
+          <F key={k} f={f} i={5} d={rect(x - 9, y - 12, 18, 16, 4)} fill="url(#rp-cap)" stroke="#6B6B73" sw={3} />
+        ))}
+        <F f={f} i={5} d={rect(792, 250, 26, 96, 6)} fill="url(#rp-grey)" stroke={GREY_D} sw={3} />
         {LINES.map((l, k) => (
           <g key={k}>
             <Hose f={f} i={5 + k} w={14} color={l.c} dark={l.cd} d={l.d} />
-            {on > 0 ? <path d={l.d} fill="none" stroke="#FFFFFF" strokeWidth={8} strokeLinecap="round" strokeDasharray="16 22" strokeDashoffset={since * 3} opacity={on} /> : null}
+            {on > 0 ? <path d={l.d} fill="none" stroke="#FFFFFF" strokeWidth={9} strokeLinecap="round" strokeDasharray="20 18" strokeDashoffset={since * 4} opacity={on} /> : null}
           </g>
         ))}
+        {on > 0
+          ? Array.from({length: 8}, (_, k) => {
+              const t = (since / 30 + k / 8) % 1;
+              return <circle key={'j' + k} cx={466 + t * 70} cy={292 + Math.sin(k * 2.1) * t * 22} r={mix(9, 4, t)} fill={TEAL} stroke={TEAL_D} strokeWidth={3} opacity={on * (1 - t)} />;
+            })
+          : null}
         {on > 0
           ? Array.from({length: 12}, (_, k) => {
               const t = (since / 60 + hash(k)) % 1;
               const x = 230 + hash(k + 3) * 540;
-              return <circle key={k} cx={x + Math.sin(t * 8 + k) * 10} cy={340 - t * 104} r={mix(5, 12, t)} fill="#FFFFFF" stroke={WATER_D} strokeWidth={3} opacity={on * Math.sin(t * Math.PI)} />;
+              return <circle key={k} cx={x + Math.sin(t * 8 + k) * 10} cy={362 - t * 120} r={mix(5, 12, t)} fill="#FFFFFF" stroke={WATER_D} strokeWidth={3} opacity={on * Math.sin(t * Math.PI)} />;
             })
           : null}
-        <path d="M180 372 H820" stroke={STEEL_D} strokeWidth={4} opacity={fillIn(f, 1)} />
+        <path d="M180 390 H820" stroke={STEEL_D} strokeWidth={4} opacity={fillIn(f, 1)} />
         <F f={f} i={8} d={rect(560, 400, 220, 130, 12)} fill="#374151" stroke="#111827" sw={4} />
         <F f={f} i={9} d={rect(580, 418, 120, 60, 6)} fill={on > 0 ? '#22A55B' : TEAL} stroke={TEAL_D} sw={3} />
         <rect x={590} y={430} width={mix(10, 100, on > 0 ? (since / 200) % 1 : 0.3)} height={12} rx={4} fill="#FFFFFF" opacity={0.85 * fillIn(f, 9)} />
@@ -221,7 +240,7 @@ const endoscopeReprocessor: ArtFactory = () => {
 const dryingCabinet: ArtFactory = () => {
   const xs = [230, 355, 480];
   const anchors: Record<string, P> = {
-    cabinet: [130, 400], door: [520, 470], scope: [345, 420], hanger: [350, 132], airflow: [415, 330], valves: [350, 632],
+    cabinet: [124, 400], door: [520, 470], scope: [355, 420], hanger: [350, 132], airflow: [400, 330], valves: [350, 628],
   };
   const C: React.FC<ArtCtx> = (c) => {
     const {f} = c;
@@ -244,26 +263,31 @@ const dryingCabinet: ArtFactory = () => {
               <path d={`M${x} 138 V166`} stroke={STEEL_D} strokeWidth={6} opacity={fillIn(f, 3)} />
               <Hose f={f} i={4 + k} w={20} color={SCOPE} dark={SCOPE_D} d={`M${x - 14} 200 C${x - 44} 260 ${x - 40} 420 ${x - 40} 520`} />
               <Connector f={f} i={5 + k} x={x - 40} y={540} rot={90} s={0.5} />
-              <Hose f={f} i={4 + k} w={14} color={SCOPE} dark={SCOPE_D} d={`M${x} 260 V560`} />
-              <Hose f={f} i={5 + k} w={12} color="#5A5A62" dark={SCOPE_D} d={`M${x} 560 V592`} />
+              <Hose f={f} i={4 + k} w={16} color={SCOPE} dark={SCOPE_D} d={`M${x} 260 V545`} />
+              <Hose f={f} i={5 + k} w={13} color="#5A5A62" dark={SCOPE_D} d={`M${x} 545 V580`} />
               <ScopeBody f={f} i={5 + k} x={x} y={205} rot={90} s={0.55} open />
             </g>
           );
         })}
         {/* removed valves, in a tray */}
-        <F f={f} i={8} d="M240 616 H460 L450 650 H250 Z" fill="url(#rp-cap)" stroke={STEEL_D} sw={3} />
+        <F f={f} i={8} d="M220 606 H480 L468 648 H232 Z" fill="url(#rp-cap)" stroke={STEEL_D} sw={3} />
         {[0, 1, 2, 3, 4, 5].map((k) => (
-          <g key={k} opacity={fillIn(f, 9)}>
-            <circle cx={275 + k * 30} cy={622} r={10} fill="#9A9AA2" stroke={GREY_D} strokeWidth={3} />
-            <circle cx={272 + k * 30} cy={619} r={3} fill="#FFFFFF" opacity={0.7} />
+          <g key={k} opacity={fillIn(f, 9)} transform={`translate(${252 + k * 40} 622)`}>
+            <rect x={-4} y={-2} width={8} height={18} rx={3} fill="#9A9AA2" stroke={GREY_D} strokeWidth={3} />
+            <circle cx={0} cy={-6} r={11} fill={k % 2 ? '#2563EB' : '#E5484D'} stroke={k % 2 ? '#1E3A8A' : '#A3202E'} strokeWidth={3} />
+            <circle cx={-3} cy={-9} r={3} fill="#FFFFFF" opacity={0.7} />
           </g>
         ))}
+        {/* bottom outlet grille */}
+        {[0, 1, 2, 3, 4].map((k) => (
+          <path key={k} d={`M${250 + k * 50} 660 H${280 + k * 50}`} stroke={STEEL_D} strokeWidth={5} strokeLinecap="round" opacity={fillIn(f, 9)} />
+        ))}
         {on > 0
-          ? Array.from({length: 14}, (_, k) => {
-              const t = ((f - (af as number)) / 90 + hash(k)) % 1;
-              const x = 170 + (k % 7) * 58 + 22 + Math.sin(t * 6 + k) * 8;
-              const y = mix(115, 590, t);
-              return <path key={k} d={`M${x} ${y} q8 18 0 36 l-8 -10 m8 10 l8 -10`} fill="none" stroke={TEAL} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" opacity={on * Math.sin(t * Math.PI) * 0.9} />;
+          ? Array.from({length: 9}, (_, k) => {
+              const t = ((f - (af as number)) / 110 + (Math.floor(k / 3) / 3) + (k % 3) * 0.11) % 1;
+              const x = [272, 400, 524][k % 3];
+              const y = mix(110, 600, t);
+              return <path key={k} d={`M${x} ${y} v44 m-14 -14 l14 16 l14 -16`} fill="none" stroke={TEAL} strokeWidth={7} strokeLinecap="round" strokeLinejoin="round" opacity={on * Math.sin(t * Math.PI)} />;
             })
           : null}
         <F f={f} i={10} d={rect(130, 100, 440, 580, 10)} fill="#BFE3F5" stroke={WATER_D} sw={5} fo={0.25} />
