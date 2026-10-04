@@ -312,6 +312,13 @@ else if (cmd === 'produce' || cmd === 'all') {
     if (!existsSync(coursePath)) plan();
     // source first: the illustrations the course needs are acquired before any script is written
     spawnSync('node', ['scripts/visuals.mts', project], {cwd: ROOT, stdio: 'inherit'});
+    // no script is written until every planned illustration is ready (acquired, drawn+approved, or charted)
+    const vp = join(PD, 'visual-plan.json');
+    const notReady = existsSync(vp) ? JSON.parse(readFileSync(vp, 'utf8')).concepts.filter((c: any) => !['verified'].includes(c.status) && c.decision !== 'chart' && c.decision !== 'reuse') : [{id: 'visual plan'}];
+    if (notReady.length) {
+      console.log(`\n⏸  stopped before writing: ${notReady.length} illustration(s) not ready (${notReady.map((c: any) => `${c.id}${c.status ? ` — ${c.status}` : ''}`).join(', ')}). Run the visuals jobs / approve drawings, then run "all" again.`);
+      process.exit(2);
+    }
     write(ids);
   }
   const clean = check(ids);
