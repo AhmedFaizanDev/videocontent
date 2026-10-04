@@ -114,6 +114,8 @@ function writerPrompt(v: Video) {
     `COURSE: ${cfg.name} — ${cfg.series}. Audience: clinical staff.`,
     `LESSON: id "${v.id}"${v.title ? `, title "${v.title}"` : ''}. outputFilename: "${(cfg.brand?.name ?? 'Lesson').replace(/\W+/g, '')}_${project.replace(/\W+/g, '_')}_${v.id}.mp4". module: "${v.title ?? v.id}".`,
     v.outline ? `OUTLINE: ${v.outline}` : '',
+    // 5:00 at the voice's measured pace (src/pace.gen.ts), less the sentence pauses and scene holds
+    `TARGET: ~${Math.round(cfg.voice.wpm * 4.5)} narration words (5:00 at the measured ${cfg.voice.wpm} wpm).`,
     visualPlanNote(v.id),
     `PLAYBOOKS (prefer these):\n${playbooks(cfg)}`,
     `AVAILABLE ARTS (for explain/compositions when no playbook fits):\n${arts(cfg)}`,

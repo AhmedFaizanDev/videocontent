@@ -9,6 +9,8 @@
 export const spoken = (narration: string) => narration.replace(/\[pause\]/gi, ' ').replace(/\s+/g, ' ').trim();
 
 import {HOUSE_LEXICON} from './lexicon.ts';
+// measured pace (scripts/voiceover.mts keeps it current): what the voice really does wins over configuration
+import {PACE} from './pace.gen.ts';
 import type {Lang} from './lang.ts';
 
 /** Brand artwork under public/: the full lockup (icon + wordmark) and the icon alone, each with a white variant `<name>-white.png` for dark/gradient grounds. */
@@ -101,7 +103,7 @@ export const PROJECT_DEFAULTS: Omit<ProjectConfig, 'slug' | 'name' | 'series'> =
     episodeLabel: 'EP.',
   },
   // house voice: Indian English female, unhurried (owner's default, 2026-09-25)
-  // natural lecturer pace: ~147 wpm measured (owner, 2026-10-03: 121 wpm was too slow)
+  // natural lecturer pace (+10%); the measured value in src/pace.gen.ts (~128 wpm) is what estimates use
   voice: {name: 'en-IN-NeerjaNeural', rate: '+10%', pitch: '+0Hz', wpm: 147},
   pacing: {sentencePause: 0.15, beat: 0.45, breathe: 0.8},
   lexicon: {},
@@ -135,7 +137,7 @@ export const withDefaults = (slug: string, raw: Partial<ProjectConfig>): Project
   name: raw.name ?? slug,
   series: raw.series ?? raw.name ?? slug,
   brand: {...PROJECT_DEFAULTS.brand, ...raw.brand, art: {...PROJECT_DEFAULTS.brand.art, ...raw.brand?.art}},
-  voice: {...PROJECT_DEFAULTS.voice, ...HOUSE_VOICES[raw.lang ?? 'en'], ...raw.voice},
+  voice: ((v) => ({...v, wpm: PACE[`${v.name}|${v.rate}`]?.wpm ?? v.wpm}))({...PROJECT_DEFAULTS.voice, ...HOUSE_VOICES[raw.lang ?? 'en'], ...raw.voice}),
   pacing: {...PROJECT_DEFAULTS.pacing, ...raw.pacing},
   lexicon: {...HOUSE_LEXICON[raw.lang ?? 'en'], ...raw.lexicon},
   terms: raw.terms ?? [],

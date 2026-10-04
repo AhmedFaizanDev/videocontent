@@ -19,7 +19,7 @@ change what fails the rubric. All the writer's rules (below the rubric) still ap
 5. **Rhythm.** Something new on screen at least every 15 spoken words; every item's word spoken
    in order; each scene opens on an item.
 6. **Voice.** No abbreviations in narration (full forms), calm complete sentences, British
-   spelling, no filler, ~650 words in total.
+   spelling, no filler, close to the input's TARGET word count.
 7. **Taste.** Would this read as slides with a voiceover? Cut text bars to ≤ 1 per ~55 words;
    move explanation onto the picture (playbook moments, labels on parts, chart nodes, cells).
    Every illustration scene performs (≥ 2 changes). Decisions are `flow.decision`.

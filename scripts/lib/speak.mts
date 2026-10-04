@@ -18,7 +18,6 @@ const ABBR: Record<string, string> = {
   'vs.': 'versus',
   vs: 'versus',
   'approx.': 'approximately',
-  'no.': 'number',
 };
 const SYM: [RegExp, string][] = [
   [/^(\d+(?:\.\d+)?)[–—-](\d+(?:\.\d+)?)$/, '$1 to $2'], // 60–100
@@ -42,10 +41,9 @@ const parts = (tok: string) => {
  */
 export function speakTokens(narration: string, lexicon: Record<string, string> = {}, english = true): SpokenToken[] {
   const lex = Object.entries(lexicon).map(([k, v]) => [k.toLowerCase(), v] as const);
-  return (english ? energize(narration) : narration)
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((d) => {
+  const toks = (english ? energize(narration) : narration).split(/\s+/).filter(Boolean);
+  return toks
+    .map((d, i) => {
       if (/^\[pause\]$/i.test(d)) return {d, s: d};
       const [pre, core, rawPost] = parts(d);
       let post = rawPost;
@@ -54,6 +52,11 @@ export function speakTokens(narration: string, lexicon: Record<string, string> =
       const hit = lex.find(([k]) => k === lc);
       if (hit) s = hit[1];
       else if (!english) s = core;
+      // "No. 3" is "number 3"; the word "no" is "no" (it used to be read as "number" everywhere)
+      else if (lc === 'no' && post.startsWith('.') && /^\d/.test(toks[i + 1] ?? '')) {
+        s = 'number';
+        post = post.slice(1);
+      }
       else if (ABBR[lc] ?? ABBR[lc + '.']) {
         s = ABBR[lc] ?? ABBR[lc + '.'];
         // the abbreviation's own dot isn't a sentence end (except "etc." closing a sentence)

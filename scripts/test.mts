@@ -62,6 +62,7 @@ step('3 units', () => {
   // every on-screen character needs a vendored glyph (render servers have no reliable fallback)
   const cov = {name: 't', series: 's', lang: 'hi', brand: {signoff: 'x', episodeLabel: 'EP.'}};
   assert.deepEqual(uncovered({scenes: [{narration: 'रक्तचाप 120 → O₂ ✓ 🙂'}]}, cov), ['🙂'], 'glyph coverage');
+  assert.equal(speakTokens('No pulse, no breathing. No. It is shockable. See No. 3.').map((t) => t.s).join(' '), 'No pulse, no breathing. No. It is shockable. See number 3.', '"no" is never read as "number"');
   assert.deepEqual(matchPhrases(['the', 'leak', 'test', 'then', 'brushing'], [['leak'], ['brush']]), [1, 4]);
   assert.deepEqual(matchPhrases(['brush', 'leak'], [['leak'], ['brush']]), [1, -1], 'order is enforced');
   assert.deepEqual(matchPhrases(['remove'], [['removable']]), [-1], '"remove" is not "removable"');
@@ -159,7 +160,7 @@ step('3 units', () => {
     assert.ok(CATALOG.table.anchors(t).includes('r2c2'));
     assert.ok(CATALOG.table.check({columns: ['a', 'b'], rows: [['x']]}).some((m) => m.includes('must have 2 cells')));
   }
-  assert.ok(p.pacing.sentencePause > 0 && p.pacing.breathe <= 1 && p.voice.wpm >= 140, 'house pacing is natural (~145 wpm, little dead air)');
+  assert.ok(p.pacing.sentencePause > 0 && p.pacing.breathe <= 1 && p.voice.wpm >= 120 && p.voice.wpm <= 150, 'house pacing is natural (measured ~128 wpm at +10%, little dead air)');
   // shorthand scenes compile to stages whose beats fire on words the narration speaks
   {
     const flow = compileScene({type: 'flow', kicker: 'k', narration: 'Arrest first. Then the rhythm decides. A shockable rhythm gets a shock.', mermaid: 'flowchart LR\n A([Arrest]) --> B{Rhythm?}\n B --> C[Shockable]', tour: true});

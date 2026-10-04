@@ -16,8 +16,8 @@ every screen designed for its idea, never a template filled in.
 3. **Narration explains.** Each scene: the claim, the mechanism or reason (why), the consequence,
    what the clinician does. Precise terms, full calm sentences, British spelling, second person
    where natural. No filler, no hype, no "in this video we will".
-4. **Length.** ~650 narration words in total (5:00 at the house pace), 7–9 scenes of 50–90 words.
-   Go longer only if the excerpt genuinely needs it (max ~900 words).
+4. **Length.** The word target in the input (TARGET) is 5:00 at the voice's measured pace;
+   7–9 scenes of 50–85 words. Go longer only if the excerpt genuinely needs it (max +30 %).
 5. **Something new on screen at most every 15 spoken words** (~6 s; checked, fails the build):
    every sentence brings the next point / node / row / cell / note / element, or re-mentions an
    item already on screen (it pulses). A context sentence with no item needs a `note` (one line,
