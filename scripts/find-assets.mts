@@ -29,7 +29,7 @@ import {pathToFileURL} from 'node:url';
 import {openBrowser} from '@remotion/renderer';
 import {ROOT} from './lib/paths.mts';
 
-export type Hit = {mime?: string; source: 'bioart' | 'commons' | 'servier'; id: string; title: string; licence: string; rank: number; url: string; thumb?: string; credit?: string};
+export type Hit = {mime?: string; source: 'bioart' | 'commons' | 'servier' | 'openverse'; id: string; title: string; licence: string; rank: number; url: string; thumb?: string; credit?: string};
 export const rankOf = (lic: string) => (/public domain|pd|cc0/i.test(lic) ? 0 : /by-sa|gfdl|share/i.test(lic) ? 2 : /cc[ -]by/i.test(lic) ? 1 : 9);
 
 export async function commons(q: string): Promise<Hit[]> {
@@ -50,12 +50,32 @@ export async function commons(q: string): Promise<Hit[]> {
 
 const UA = {'User-Agent': 'Mozilla/5.0 (medskills-video-pipeline asset research)'};
 export async function servier(q: string): Promise<Hit[]> {
-  const html = await (await fetch(`https://smart.servier.com/?s=${encodeURIComponent(q)}`, {headers: UA})).text();
-  // result cards link their image several times; the page's other image links appear once
-  const n = new Map<string, number>();
-  for (const m of html.matchAll(/smart\.servier\.com\/smart_image\/([a-z0-9-]+)\//g)) n.set(m[1], (n.get(m[1]) ?? 0) + 1);
-  return [...n].filter(([, c]) => c >= 2).map(([sl]) => sl)
-    .map((sl) => ({source: 'servier' as const, id: sl, title: sl.replace(/-/g, ' '), licence: 'CC BY 4.0', rank: 1, url: `https://smart.servier.com/smart_image/${sl}/`, credit: 'Servier Medical Art (smart.servier.com), CC BY 4.0'}));
+  // Servier's own search API (ranked; the HTML search page misses most images)
+  const r: any[] = await (await fetch(`https://smart.servier.com/wp-json/wp/v2/search?search=${encodeURIComponent(q)}&per_page=20`, {headers: UA})).json();
+  return r
+    .filter((x) => /\/smart_image\//.test(x.url ?? ''))
+    .map((x) => {
+      const sl = x.url.split('/').filter(Boolean).pop();
+      return {source: 'servier' as const, id: sl, title: String(x.title ?? sl).replace(/<[^>]+>/g, ''), licence: 'CC BY 4.0', rank: 1, url: x.url, credit: 'Servier Medical Art (smart.servier.com), CC BY 4.0'};
+    });
+}
+
+/** Openverse: an index of openly licensed images across collections — illustrations only, commercial-use licences. */
+export async function openverse(q: string): Promise<Hit[]> {
+  const j: any = await (await fetch(`https://api.openverse.org/v1/images/?q=${encodeURIComponent(q)}&license_type=commercial&category=illustration,digitized_artwork&page_size=20`, {headers: UA})).json();
+  return (j.results ?? [])
+    .map((x: any) => {
+      const lic = x.license === 'cc0' ? 'CC0' : x.license === 'pdm' ? 'Public domain' : `CC ${String(x.license).toUpperCase()} ${x.license_version ?? ''}`.trim();
+      return {source: 'openverse' as const, id: x.url, title: x.title ?? '', licence: lic, rank: rankOf(lic), url: x.foreign_landing_url, credit: `${x.title ?? ''} — ${x.creator ?? 'unknown'} (${x.source}), ${lic}`, mime: x.filetype ? `image/${x.filetype}` : undefined};
+    })
+    .filter((h: Hit) => h.rank < 2 && !/jpe?g/.test(h.mime ?? ''));
+}
+/** Fetch an Openverse hit (a direct file URL). */
+export async function getOpenverse(h: Hit, dir: string) {
+  const file = join(ROOT, 'iterations', 'assets', `ov-${dir}${extname(new URL(h.id).pathname) || '.png'}`);
+  mkdirSync(join(ROOT, 'iterations', 'assets'), {recursive: true});
+  writeFileSync(file, Buffer.from(await (await fetch(h.id, {headers: UA})).arrayBuffer()));
+  return wrap(file, dir, {source: h.url, licence: h.licence, credit: h.credit ?? h.title}, false);
 }
 
 export async function getServier(slug: string, dir: string, auto: boolean) {
@@ -229,9 +249,9 @@ export function remember(q: string, hits: Hit[]) {
 }
 
 /** Search every source; best licence first. */
-export const searchAll = async (q: string): Promise<Hit[]> => [...(await bioart(q).catch(() => [])), ...(await servier(q).catch(() => [])), ...(await commons(q).catch(() => []))].sort((a, b) => a.rank - b.rank);
+export const searchAll = async (q: string): Promise<Hit[]> => [...(await bioart(q).catch(() => [])), ...(await servier(q).catch(() => [])), ...(await commons(q).catch(() => [])), ...(await openverse(q).catch(() => []))].sort((a, b) => a.rank - b.rank);
 /** Fetch one hit into assets/vector/<dir>/ (source.svg + licence.json; rasters wrapped), no manifest. */
-export const fetchHit = (h: Hit, dir: string) => (h.source === 'bioart' ? getBioart(h.id, dir, false) : h.source === 'servier' ? getServier(h.id, dir, false) : getCommons(h.id, dir, false));
+export const fetchHit = (h: Hit, dir: string) => (h.source === 'openverse' ? getOpenverse(h, dir) : h.source === 'bioart' ? getBioart(h.id, dir, false) : h.source === 'servier' ? getServier(h.id, dir, false) : getCommons(h.id, dir, false));
 
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
   const args = process.argv.slice(2);

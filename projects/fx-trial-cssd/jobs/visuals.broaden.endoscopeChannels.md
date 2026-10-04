@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Cross-section or cutaway of the insertion tube showing several narrow channels of different diameters running its length.
-FAILED QUERIES: endoscope channels; endoscope cross section; endoscope insertion tube cutaway; endoscope lumen
+FAILED QUERIES: endoscopy; endoscope; tube cross section; catheter; tubing; gastroscope; medical tube; lumen

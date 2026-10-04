@@ -9,7 +9,7 @@ accuracy (anatomically/technically right), quality (professional rendering, clea
 size), animation (clear separate parts a camera and labels can point at; plain background; no
 lettering in the image), style (fits a clean clinical house style). Then choose the best one's number,
 or 0 if none reaches relevance ≥ 4 AND accuracy ≥ 4 AND quality ≥ 3 — a wrong or poor picture is
-worse than none.
+worse than none. Open EVERY candidate image before scoring it — never score from the title.
 
 ## Schema
 ```json
@@ -22,12 +22,12 @@ TEACHES: How a leak test shows a breach before immersion, since a breached scope
 PARTS THE LESSONS NAME: leak tester, outer sheath, breach, insertion tube, control body
 
 CANDIDATES:
-1. Water Baptism.png — commons, CC0 — preview iterations/visuals/fx-trial-cssd/leakTestSetup/1.png
-2. 8 well pcr tube strip — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/leakTestSetup/2.png
-3. bag equipment — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/leakTestSetup/3.png
-4. equipment bath — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/leakTestSetup/4.png
-5. smart bath equipment overview — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/leakTestSetup/5.png
-6. smart bath equipment — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/leakTestSetup/6.png
+1. Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/leakTestSetup/1.png
+2. Green's Eye Hospital, equipment (Western Hospital Review, 1928).png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/leakTestSetup/2.png
+3. Pressure Gauge (PSF).png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/leakTestSetup/3.png
+4. Gastroscopy by Hecker.PNG — commons, Public domain — preview iterations/visuals/fx-trial-cssd/leakTestSetup/4.png
+5. Bubbles - Sir John Everett Millais.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/leakTestSetup/5.png
+6. Bubbles by Sir John E Millais.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/leakTestSetup/6.png
 
 IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/1.png

@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Automated endoscope reprocessor with lid open, a scope coiled in the basin and tubing connectors attached to its channels.
-FAILED QUERIES: automated endoscope reprocessor; endoscope washer disinfector; endoscope reprocessing machine; endoscope reprocessor connectors
+FAILED QUERIES: endoscopy equipment; disinfection machine; medical washer; endoscopy; endoscope; sterilisation equipment; sterilization; medical disinfection

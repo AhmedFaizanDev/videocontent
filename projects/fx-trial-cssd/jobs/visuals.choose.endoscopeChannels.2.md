@@ -9,7 +9,7 @@ accuracy (anatomically/technically right), quality (professional rendering, clea
 size), animation (clear separate parts a camera and labels can point at; plain background; no
 lettering in the image), style (fits a clean clinical house style). Then choose the best one's number,
 or 0 if none reaches relevance ≥ 4 AND accuracy ≥ 4 AND quality ≥ 3 — a wrong or poor picture is
-worse than none.
+worse than none. Open EVERY candidate image before scoring it — never score from the title.
 
 ## Schema
 ```json
@@ -22,12 +22,12 @@ TEACHES: Why endoscopes are mechanically complex: multiple narrow channels of di
 PARTS THE LESSONS NAME: insertion tube, channels, outer sheath, distal tip
 
 CANDIDATES:
-1. Cross section mount baker tunnel 3rd tube.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/1.png
-2. Asthma-bronchial-tube-cross-section.png — commons, CC0 — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/2.png
-3. smart artery overview cross section — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/3.png
-4. artery overview cross section — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/4.png
-5. Screw Cap Tube — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/5.png
-6. Conical Sample Tube — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/6.png
+1. Skin Cross-Section — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/1.png
+2. Mosquito Cross Section — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/2.png
+3. Intestinal Cross Section — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/3.png
+4. Intestinal Cross Section — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/4.png
+5. Cell Cross-section — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/5.png
+6. Blood Vessel Cross Section — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/endoscopeChannels/6.png
 
 IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/1.png

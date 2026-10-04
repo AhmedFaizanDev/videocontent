@@ -9,7 +9,7 @@ accuracy (anatomically/technically right), quality (professional rendering, clea
 size), animation (clear separate parts a camera and labels can point at; plain background; no
 lettering in the image), style (fits a clean clinical house style). Then choose the best one's number,
 or 0 if none reaches relevance ≥ 4 AND accuracy ≥ 4 AND quality ≥ 3 — a wrong or poor picture is
-worse than none.
+worse than none. Open EVERY candidate image before scoring it — never score from the title.
 
 ## Schema
 ```json
@@ -22,12 +22,12 @@ TEACHES: How every channel must be attached to the correct model-specific connec
 PARTS THE LESSONS NAME: reprocessor, connectors, channels, basin, insertion tube
 
 CANDIDATES:
-1. Ardrey Vehicle Washer Co. ("American medical directory", 1906 advert).png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/1.png
-2. Sterilization Bill January 30th 1917.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/2.png
-3. Laws regarding sterilization for contraceptive purposes around the world.svg — commons, CC0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/3.png
-4. 8 well pcr tube strip — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/4.png
-5. bag equipment — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/5.png
-6. equipment bath — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/6.png
+1. Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/1.png
+2. Green's Eye Hospital, equipment (Western Hospital Review, 1928).png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/2.png
+3. Open Dishwasher - Dirty.svg — commons, CC0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/3.png
+4. Open Dishwasher — openverse, CC0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/4.png
+5. Open Dishwasher - Dirty — openverse, CC0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/5.png
+6. Beaker clipart, vintage laboratory equipment — openverse, CC0 — preview iterations/visuals/fx-trial-cssd/endoscopeReprocessor/6.png
 
 IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/1.png

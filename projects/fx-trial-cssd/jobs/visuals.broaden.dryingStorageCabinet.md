@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Controlled drying and storage cabinet with flexible endoscopes hanging vertically and uncoiled, valves removed.
-FAILED QUERIES: endoscope drying cabinet; endoscope storage cabinet; endoscope hanging storage; endoscope drying
+FAILED QUERIES: endoscopy equipment; medical cabinet; endoscope; hospital storage; drying cabinet; endoscopy; medical equipment storage

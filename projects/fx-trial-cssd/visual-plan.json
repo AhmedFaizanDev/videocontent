@@ -165,144 +165,144 @@
         "distal tip"
       ],
       "queries": [
-        "endoscopy",
-        "endoscope",
-        "tube cross section",
-        "catheter",
-        "tubing",
-        "gastroscope",
-        "medical tube",
-        "lumen"
+        "colonoscope",
+        "colonoscopy",
+        "gastroscopy",
+        "bronchoscope",
+        "flexible endoscope",
+        "insertion tube",
+        "cross section",
+        "gastrointestinal tract"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
-          "source": "commons",
-          "id": "File:Cross section mount baker tunnel 3rd tube.png",
-          "title": "Cross section mount baker tunnel 3rd tube.png",
-          "licence": "Public domain",
+          "source": "bioart",
+          "id": "942",
+          "title": "Skin Cross-Section",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-endoscope-channels-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/1.png",
-          "score": 14
+          "score": 12
         },
         {
           "n": 2,
-          "source": "commons",
-          "id": "File:Asthma-bronchial-tube-cross-section.png",
-          "title": "Asthma-bronchial-tube-cross-section.png",
-          "licence": "CC0",
+          "source": "bioart",
+          "id": "899",
+          "title": "Mosquito Cross Section",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-endoscope-channels-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/2.png",
-          "score": 14
+          "score": 12
         },
         {
           "n": 3,
-          "source": "servier",
-          "id": "smart-artery-overview-cross-section",
-          "title": "smart artery overview cross section",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "864",
+          "title": "Intestinal Cross Section",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-endoscope-channels-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/3.png",
-          "score": 9
+          "score": 12
         },
         {
           "n": 4,
-          "source": "servier",
-          "id": "artery-overview-cross-section",
-          "title": "artery overview cross section",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "863",
+          "title": "Intestinal Cross Section",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-endoscope-channels-4",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/4.png",
-          "score": 9
+          "score": 12
         },
         {
           "n": 5,
           "source": "bioart",
-          "id": "971",
-          "title": "Screw Cap Tube",
+          "id": "820",
+          "title": "Cell Cross-section",
           "licence": "Public Domain (check entry)",
           "dir": "_cand-endoscope-channels-5",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/5.png",
-          "score": 9
+          "score": 12
         },
         {
           "n": 6,
           "source": "bioart",
-          "id": "708",
-          "title": "Conical Sample Tube",
+          "id": "797",
+          "title": "Blood Vessel Cross Section",
           "licence": "Public Domain (check entry)",
           "dir": "_cand-endoscope-channels-6",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeChannels/6.png",
-          "score": 9
+          "score": 12
         }
       ],
       "choice": {
         "n": 0,
-        "reason": "None shows an insertion tube with multiple channels.",
+        "reason": "None depicts an insertion tube with multiple channels of differing diameters; all are biological tissue sections.",
         "scores": [
           {
             "n": 1,
             "relevance": 0,
             "accuracy": 0,
             "quality": 2,
-            "animation": 1,
+            "animation": 0,
             "style": 1,
-            "note": "Tunnel diagram with labels"
+            "note": "Abstract drip/skin layer shape"
           },
           {
             "n": 2,
             "relevance": 1,
             "accuracy": 1,
             "quality": 4,
-            "animation": 3,
+            "animation": 2,
             "style": 3,
-            "note": "Airway cutaway, not multi-channel tube"
+            "note": "Gut wall layers with bacteria, not an endoscope"
           },
           {
             "n": 3,
-            "relevance": 1,
-            "accuracy": 1,
-            "quality": 4,
-            "animation": 2,
-            "style": 2,
-            "note": "Artery cutaway, single lumen"
-          },
-          {
-            "n": 4,
-            "relevance": 1,
-            "accuracy": 1,
-            "quality": 4,
-            "animation": 2,
-            "style": 2,
-            "note": "Artery with blood cells"
-          },
-          {
-            "n": 5,
             "relevance": 0,
-            "accuracy": 1,
+            "accuracy": 0,
             "quality": 4,
             "animation": 2,
             "style": 3,
-            "note": "Sample tube, not endoscope"
+            "note": "Intestinal villi histology"
+          },
+          {
+            "n": 4,
+            "relevance": 0,
+            "accuracy": 0,
+            "quality": 4,
+            "animation": 2,
+            "style": 3,
+            "note": "Intestinal epithelium"
+          },
+          {
+            "n": 5,
+            "relevance": 1,
+            "accuracy": 1,
+            "quality": 4,
+            "animation": 2,
+            "style": 4,
+            "note": "Clean cross-section with round lumens, but cell-level and unrelated body part"
           },
           {
             "n": 6,
             "relevance": 0,
-            "accuracy": 1,
+            "accuracy": 0,
             "quality": 4,
             "animation": 2,
             "style": 3,
-            "note": "Conical tube, not endoscope"
+            "note": "Blood vessel wall section"
           }
         ]
       },
-      "broadened": true,
-      "reason": "None shows an insertion tube with multiple channels."
+      "reason": "None depicts an insertion tube with multiple channels of differing diameters; all are biological tissue sections."
     },
     {
       "id": "duodenoscopeElevator",
@@ -315,144 +315,143 @@
         "accessory channel"
       ],
       "queries": [
-        "endoscope",
-        "endoscopy",
-        "ERCP",
-        "duodenum",
-        "endoscopic retrograde",
-        "side-viewing endoscope",
-        "endoscopy equipment",
-        "gastroenterology"
+        "duodenoscope",
+        "endoscope tip",
+        "cholangiopancreatography",
+        "bile duct",
+        "biliary system",
+        "pancreas",
+        "gastrointestinal tract"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
           "source": "commons",
-          "id": "File:United European Gastroenterology logo 2019.svg",
-          "title": "United European Gastroenterology logo 2019.svg",
+          "id": "File:Digestive system showing bile duct it.png",
+          "title": "Digestive system showing bile duct it.png",
           "licence": "Public domain",
           "dir": "_cand-duodenoscope-elevator-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/duodenoscopeElevator/1.png",
-          "score": 8
+          "score": 17
         },
         {
           "n": 2,
           "source": "commons",
-          "id": "File:United European Gastroenterology Week logo 2019.svg",
-          "title": "United European Gastroenterology Week logo 2019.svg",
+          "id": "File:Digestive system showing bile duct-ar.png",
+          "title": "Digestive system showing bile duct-ar.png",
           "licence": "Public domain",
           "dir": "_cand-duodenoscope-elevator-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/duodenoscopeElevator/2.png",
-          "score": 8
+          "score": 17
         },
         {
           "n": 3,
-          "source": "commons",
-          "id": "File:United European Gastroenterology Journal logo 2019.svg",
-          "title": "United European Gastroenterology Journal logo 2019.svg",
-          "licence": "Public domain",
+          "source": "openverse",
+          "id": "https://upload.wikimedia.org/wikipedia/commons/5/50/Digestive_system_showing_bile_duct-pt-BR.svg",
+          "title": "Digestive system showing bile duct-pt-BR",
+          "licence": "CC0",
           "dir": "_cand-duodenoscope-elevator-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/duodenoscopeElevator/3.png",
-          "score": 8
+          "score": 17
         },
         {
           "n": 4,
           "source": "commons",
-          "id": "File:United European Gastroenterology Week Virtual 2021 logo.svg",
-          "title": "United European Gastroenterology Week Virtual 2021 logo.svg",
+          "id": "File:Digestive system showing bile duct finnish.PNG",
+          "title": "Digestive system showing bile duct finnish.PNG",
           "licence": "Public domain",
           "dir": "_cand-duodenoscope-elevator-4",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/duodenoscopeElevator/4.png",
-          "score": 8
+          "score": 17
         },
         {
           "n": 5,
           "source": "commons",
-          "id": "File:United European Gastroenterology Week Virtual 2020 logo.svg",
-          "title": "United European Gastroenterology Week Virtual 2020 logo.svg",
+          "id": "File:Digestive system showing bile duct hindi.png",
+          "title": "Digestive system showing bile duct hindi.png",
           "licence": "Public domain",
           "dir": "_cand-duodenoscope-elevator-5",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/duodenoscopeElevator/5.png",
-          "score": 8
+          "score": 17
         },
         {
           "n": 6,
           "source": "commons",
-          "id": "File:United European Gastroenterology Week logo 2012-2019.svg",
-          "title": "United European Gastroenterology Week logo 2012-2019.svg",
-          "licence": "Public domain",
+          "id": "File:Digestive system showing bile duct-pt-BR.svg",
+          "title": "Digestive system showing bile duct-pt-BR.svg",
+          "licence": "CC0",
           "dir": "_cand-duodenoscope-elevator-6",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/duodenoscopeElevator/6.png",
-          "score": 8
+          "score": 17
         }
       ],
-      "broadened": true,
       "choice": {
         "n": 0,
-        "reason": "All candidates are conference/society logos, no duodenoscope tip.",
+        "reason": "All show bile duct anatomy with baked-in text; none shows a duodenoscope tip, elevator or recess.",
         "scores": [
           {
             "n": 1,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "society logo text"
+            "relevance": 1,
+            "accuracy": 2,
+            "quality": 2,
+            "animation": 1,
+            "style": 2,
+            "note": "Biliary anatomy, Italian labels, no scope tip"
           },
           {
             "n": 2,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "society logo text"
+            "relevance": 1,
+            "accuracy": 2,
+            "quality": 2,
+            "animation": 1,
+            "style": 2,
+            "note": "Biliary anatomy, Arabic labels, no scope tip"
           },
           {
             "n": 3,
-            "relevance": 0,
-            "accuracy": 0,
+            "relevance": 1,
+            "accuracy": 2,
             "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "society logo text"
+            "animation": 1,
+            "style": 2,
+            "note": "Biliary anatomy, Portuguese labels, cropped"
           },
           {
             "n": 4,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "society logo text"
+            "relevance": 1,
+            "accuracy": 2,
+            "quality": 2,
+            "animation": 1,
+            "style": 2,
+            "note": "Biliary anatomy, Finnish labels"
           },
           {
             "n": 5,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "society logo text"
+            "relevance": 1,
+            "accuracy": 2,
+            "quality": 2,
+            "animation": 1,
+            "style": 2,
+            "note": "Biliary anatomy, Hindi labels"
           },
           {
             "n": 6,
-            "relevance": 0,
-            "accuracy": 0,
+            "relevance": 1,
+            "accuracy": 2,
             "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "society logo text"
+            "animation": 1,
+            "style": 2,
+            "note": "Biliary anatomy, Portuguese labels, cropped"
           }
         ]
       },
-      "reason": "All candidates are conference/society logos, no duodenoscope tip."
+      "reason": "All show bile duct anatomy with baked-in text; none shows a duodenoscope tip, elevator or recess."
     },
     {
       "id": "channelBiofilm",
@@ -465,75 +464,78 @@
         "organic material"
       ],
       "queries": [
-        "bacteria colony",
-        "microbiology",
-        "tube cross section",
-        "pipe lining",
-        "infection",
-        "bacterial layer"
+        "biofilm",
+        "bacterial biofilm",
+        "bacteria",
+        "bacterial adhesion",
+        "microbial film",
+        "lumen wall",
+        "tube section",
+        "contamination"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
           "source": "commons",
-          "id": "File:Cross section mount baker tunnel 3rd tube.png",
-          "title": "Cross section mount baker tunnel 3rd tube.png",
-          "licence": "Public domain",
+          "id": "File:Section du tube neural.png",
+          "title": "Section du tube neural.png",
+          "licence": "CC0",
           "dir": "_cand-channel-biofilm-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/1.png",
-          "score": 14
+          "score": 11
         },
         {
           "n": 2,
-          "source": "commons",
-          "id": "File:Asthma-bronchial-tube-cross-section.png",
-          "title": "Asthma-bronchial-tube-cross-section.png",
+          "source": "openverse",
+          "id": "https://upload.wikimedia.org/wikipedia/commons/3/34/303A_tube_diode_section.svg",
+          "title": "303A tube diode section",
           "licence": "CC0",
           "dir": "_cand-channel-biofilm-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/2.png",
-          "score": 14
+          "score": 11
         },
         {
           "n": 3,
-          "source": "commons",
-          "id": "File:Pipe Finishing Process - Lining Through Packaging - United States Pipe and Foundry Company Plant, 2023 St. Louis Avenue at I-20-59, Bessemer, Jefferson County, AL HAER ALA,37-BES,6- (sheet 8 of 16).png",
-          "title": "Pipe Finishing Process - Lining Through Packaging - United States Pipe and Foundry Company Plant, 2023 St. Louis Avenue at I-20-59, Bessemer, Jefferson County, AL HAER ALA,37-BES,6- (sheet 8 of 16).png",
-          "licence": "Public domain",
+          "source": "bioart",
+          "id": "790",
+          "title": "Bacteria",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-channel-biofilm-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/3.png",
-          "score": 14
+          "score": 9
         },
         {
           "n": 4,
-          "source": "servier",
-          "id": "smart-artery-overview-cross-section",
-          "title": "smart artery overview cross section",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "789",
+          "title": "Bacteria Inset",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-channel-biofilm-4",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/4.png",
           "score": 9
         },
         {
           "n": 5,
-          "source": "servier",
-          "id": "artery-overview-cross-section",
-          "title": "artery overview cross section",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "179",
+          "title": "Gram Negative Bacteria",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-channel-biofilm-5",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/5.png",
           "score": 9
         },
         {
           "n": 6,
-          "source": "commons",
-          "id": "File:Diagnostic algorithm of possible bacterial infection.png",
-          "title": "Diagnostic algorithm of possible bacterial infection.png",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "43",
+          "title": "Bacillus Bacteria",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-channel-biofilm-6",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/6.png",
           "score": 9
@@ -541,7 +543,7 @@
       ],
       "choice": {
         "n": 0,
-        "reason": "None shows a channel wall with biofilm and a brush; all are wrong subjects.",
+        "reason": "None shows a channel wall, biofilm layer or brush; only generic bacteria and unrelated images.",
         "scores": [
           {
             "n": 1,
@@ -549,58 +551,57 @@
             "accuracy": 0,
             "quality": 2,
             "animation": 1,
-            "style": 1,
-            "note": "Tunnel cross-section with text"
+            "style": 2,
+            "note": "Neural tube cross-section with French text"
           },
           {
             "n": 2,
-            "relevance": 1,
-            "accuracy": 1,
-            "quality": 4,
-            "animation": 3,
-            "style": 3,
-            "note": "Airway lumen with mucus plug; not a device channel"
-          },
-          {
-            "n": 3,
             "relevance": 0,
             "accuracy": 0,
             "quality": 2,
             "animation": 0,
-            "style": 0,
-            "note": "Factory pipe plan, dense text"
+            "style": 1,
+            "note": "Diode characteristic graph"
+          },
+          {
+            "n": 3,
+            "relevance": 1,
+            "accuracy": 1,
+            "quality": 3,
+            "animation": 2,
+            "style": 2,
+            "note": "Flagellated bacteria only, no channel or brush"
           },
           {
             "n": 4,
             "relevance": 1,
             "accuracy": 1,
-            "quality": 4,
-            "animation": 3,
-            "style": 2,
-            "note": "Colour artery cutaway; wrong subject"
+            "quality": 3,
+            "animation": 2,
+            "style": 3,
+            "note": "Rod bacteria in circle, no channel or brush"
           },
           {
             "n": 5,
-            "relevance": 1,
-            "accuracy": 1,
-            "quality": 4,
-            "animation": 2,
-            "style": 2,
-            "note": "Artery with blood cells; wrong subject"
+            "relevance": 0,
+            "accuracy": 0,
+            "quality": 0,
+            "animation": 0,
+            "style": 0,
+            "note": "Renders as SVG metadata text, not an image"
           },
           {
             "n": 6,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 0,
             "animation": 0,
             "style": 0,
-            "note": "Lab flowchart, text-heavy"
+            "note": "Renders as SVG metadata text, not an image"
           }
         ]
       },
-      "broadened": true,
-      "reason": "None shows a channel wall with biofilm and a brush; all are wrong subjects."
+      "reason": "None shows a channel wall, biofilm layer or brush; only generic bacteria and unrelated images."
     },
     {
       "id": "channelBrush",
@@ -613,35 +614,36 @@
         "elevator recess"
       ],
       "queries": [
-        "brush",
-        "cleaning brush",
-        "endoscopy",
-        "endoscopy equipment",
-        "medical instrument",
-        "bottle brush",
-        "cleaning tool"
+        "test tube brush",
+        "toothbrush",
+        "swab",
+        "cleaning",
+        "wire brush",
+        "surgical instrument",
+        "sterile processing"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
-          "source": "commons",
-          "id": "File:PSM V88 D187 Hair brush cleaning apparatus.png",
-          "title": "PSM V88 D187 Hair brush cleaning apparatus.png",
-          "licence": "Public domain",
+          "source": "openverse",
+          "id": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Tube_and_toothbrush_Pinhead_icon.svg",
+          "title": "Tube and toothbrush Pinhead icon",
+          "licence": "CC0",
           "dir": "_cand-channel-brush-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/1.png",
           "score": 11
         },
         {
           "n": 2,
-          "source": "commons",
-          "id": "File:Best Medical Equipment Supplier.png",
-          "title": "Best Medical Equipment Supplier.png",
+          "source": "openverse",
+          "id": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L2pvYjk2NS1lbGVtZW50LTQ0LXYuanBn.jpg",
+          "title": "Tooth with brush illustration vector",
           "licence": "CC0",
           "dir": "_cand-channel-brush-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/2.png",
@@ -650,26 +652,56 @@
         {
           "n": 3,
           "source": "bioart",
-          "id": "300",
-          "title": "Lipid Bilayer Brush",
+          "id": "423",
+          "title": "Puritan Swab",
           "licence": "Public Domain (check entry)",
           "dir": "_cand-channel-brush-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/3.png",
           "score": 9
+        },
+        {
+          "n": 4,
+          "source": "openverse",
+          "id": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2pvYjcxNS0wMzYtdi5qcGc.jpg",
+          "title": "Woman holding toothbrush drawing, vintage",
+          "licence": "CC0",
+          "dir": "_cand-channel-brush-4",
+          "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/4.png",
+          "score": 8
+        },
+        {
+          "n": 5,
+          "source": "openverse",
+          "id": "https://upload.wikimedia.org/wikipedia/commons/0/03/Toothbrush_Pinhead_icon.svg",
+          "title": "Toothbrush Pinhead icon",
+          "licence": "CC0",
+          "dir": "_cand-channel-brush-5",
+          "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/5.png",
+          "score": 8
+        },
+        {
+          "n": 6,
+          "source": "openverse",
+          "id": "https://images.rawpixel.com/image_png_1300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L2pvYjk0OC0xMjgtcF8xLnBuZw.png",
+          "title": "Tooth brush png sticker, transparent",
+          "licence": "CC0",
+          "dir": "_cand-channel-brush-6",
+          "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/6.png",
+          "score": 8
         }
       ],
       "choice": {
         "n": 0,
-        "reason": "No candidate shows an endoscope channel brush.",
+        "reason": "No endoscope channel brush or channel shown; only toothbrushes, cartoons and irrelevant art.",
         "scores": [
           {
             "n": 1,
-            "relevance": 1,
-            "accuracy": 1,
-            "quality": 2,
+            "relevance": 0,
+            "accuracy": 0,
+            "quality": 3,
             "animation": 1,
             "style": 1,
-            "note": "Hand scrubbing brush, stippled; not endoscope brush"
+            "note": "Toothpaste tube and toothbrush icon"
           },
           {
             "n": 2,
@@ -677,8 +709,8 @@
             "accuracy": 0,
             "quality": 3,
             "animation": 0,
-            "style": 1,
-            "note": "Photo of dental/aesthetic equipment with text"
+            "style": 0,
+            "note": "Cartoon tooth character with toothbrush"
           },
           {
             "n": 3,
@@ -687,12 +719,38 @@
             "quality": 0,
             "animation": 0,
             "style": 0,
-            "note": "Broken render, only metadata text"
+            "note": "Renders as SVG metadata text, not an image"
+          },
+          {
+            "n": 4,
+            "relevance": 0,
+            "accuracy": 0,
+            "quality": 3,
+            "animation": 0,
+            "style": 0,
+            "note": "Vintage woman illustration, irrelevant"
+          },
+          {
+            "n": 5,
+            "relevance": 1,
+            "accuracy": 1,
+            "quality": 2,
+            "animation": 2,
+            "style": 1,
+            "note": "Black toothbrush icon, not an endoscope brush"
+          },
+          {
+            "n": 6,
+            "relevance": 1,
+            "accuracy": 1,
+            "quality": 3,
+            "animation": 2,
+            "style": 1,
+            "note": "Red toothbrush with paste, checkerboard bg, not a channel brush"
           }
         ]
       },
-      "broadened": true,
-      "reason": "No candidate shows an endoscope channel brush."
+      "reason": "No endoscope channel brush or channel shown; only toothbrushes, cartoons and irrelevant art."
     },
     {
       "id": "leakTestSetup",
@@ -706,121 +764,122 @@
         "control body"
       ],
       "queries": [
-        "endoscope",
-        "endoscopy equipment",
-        "leak test",
-        "air bubbles water",
-        "medical device testing",
-        "endoscopy",
-        "water immersion"
+        "colonoscope",
+        "colonoscopy",
+        "gastroscopy",
+        "bubbles",
+        "pressure gauge",
+        "water bath",
+        "flexible endoscope",
+        "hospital equipment"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
           "source": "commons",
-          "id": "File:Water Baptism.png",
-          "title": "Water Baptism.png",
-          "licence": "CC0",
+          "id": "File:Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png",
+          "title": "Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png",
+          "licence": "Public domain",
           "dir": "_cand-leak-test-setup-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/1.png",
-          "score": 8
+          "score": 14
         },
         {
           "n": 2,
-          "source": "servier",
-          "id": "8-well-pcr-tube-strip",
-          "title": "8 well pcr tube strip",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Green's Eye Hospital, equipment (Western Hospital Review, 1928).png",
+          "title": "Green's Eye Hospital, equipment (Western Hospital Review, 1928).png",
+          "licence": "Public domain",
           "dir": "_cand-leak-test-setup-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/2.png",
-          "score": 6
+          "score": 14
         },
         {
           "n": 3,
-          "source": "servier",
-          "id": "bag-equipment",
-          "title": "bag equipment",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Pressure Gauge (PSF).png",
+          "title": "Pressure Gauge (PSF).png",
+          "licence": "Public domain",
           "dir": "_cand-leak-test-setup-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/3.png",
-          "score": 6
+          "score": 11
         },
         {
           "n": 4,
-          "source": "servier",
-          "id": "equipment-bath",
-          "title": "equipment bath",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Gastroscopy by Hecker.PNG",
+          "title": "Gastroscopy by Hecker.PNG",
+          "licence": "Public domain",
           "dir": "_cand-leak-test-setup-4",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/4.png",
-          "score": 6
+          "score": 8
         },
         {
           "n": 5,
-          "source": "servier",
-          "id": "smart-bath-equipment-overview",
-          "title": "smart bath equipment overview",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Bubbles - Sir John Everett Millais.png",
+          "title": "Bubbles - Sir John Everett Millais.png",
+          "licence": "Public domain",
           "dir": "_cand-leak-test-setup-5",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/5.png",
-          "score": 6
+          "score": 8
         },
         {
           "n": 6,
-          "source": "servier",
-          "id": "smart-bath-equipment",
-          "title": "smart bath equipment",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Bubbles by Sir John E Millais.png",
+          "title": "Bubbles by Sir John E Millais.png",
+          "licence": "Public domain",
           "dir": "_cand-leak-test-setup-6",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/leakTestSetup/6.png",
-          "score": 6
+          "score": 8
         }
       ],
-      "broadened": true,
       "choice": {
         "n": 0,
-        "reason": "No endoscope leak test; water baths are generic lab equipment.",
+        "reason": "No flexible endoscope, leak tester or immersion with bubbles shown; candidates are unrelated or off-style.",
         "scores": [
           {
             "n": 1,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 2,
             "animation": 0,
             "style": 0,
-            "note": "baptism photo"
+            "note": "Vintage X-ray room photo"
           },
           {
             "n": 2,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 1,
             "animation": 0,
             "style": 0,
-            "note": "PCR tube strips"
+            "note": "Distorted old hospital room photo"
           },
           {
             "n": 3,
-            "relevance": 0,
-            "accuracy": 0,
+            "relevance": 1,
+            "accuracy": 1,
             "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "blood bag"
+            "animation": 1,
+            "style": 2,
+            "note": "Pressure gauge cutaway with baked-in labels, no scope"
           },
           {
             "n": 4,
-            "relevance": 0,
-            "accuracy": 0,
+            "relevance": 1,
+            "accuracy": 2,
             "quality": 3,
             "animation": 0,
-            "style": 0,
-            "note": "empty water bath"
+            "style": 1,
+            "note": "Old gastroscopy scene with people, rigid tube"
           },
           {
             "n": 5,
@@ -829,7 +888,7 @@
             "quality": 3,
             "animation": 0,
             "style": 0,
-            "note": "water bath with heater"
+            "note": "Painting of boy blowing bubbles"
           },
           {
             "n": 6,
@@ -838,11 +897,11 @@
             "quality": 3,
             "animation": 0,
             "style": 0,
-            "note": "water bath with flask"
+            "note": "Soap advertisement with lettering"
           }
         ]
       },
-      "reason": "No endoscope leak test; water baths are generic lab equipment."
+      "reason": "No flexible endoscope, leak tester or immersion with bubbles shown; candidates are unrelated or off-style."
     },
     {
       "id": "endoscopeReprocessor",
@@ -856,144 +915,144 @@
         "insertion tube"
       ],
       "queries": [
-        "endoscopy equipment",
-        "disinfection machine",
-        "medical washer",
-        "endoscopy",
-        "endoscope",
-        "sterilisation equipment",
-        "sterilization",
-        "medical disinfection"
+        "washer disinfector",
+        "dishwasher",
+        "autoclave",
+        "laboratory equipment",
+        "hospital equipment",
+        "sterile processing",
+        "cleaning machine",
+        "colonoscope"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
           "source": "commons",
-          "id": "File:Ardrey Vehicle Washer Co. (\"American medical directory\", 1906 advert).png",
-          "title": "Ardrey Vehicle Washer Co. (\"American medical directory\", 1906 advert).png",
+          "id": "File:Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png",
+          "title": "Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png",
           "licence": "Public domain",
           "dir": "_cand-endoscope-reprocessor-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/1.png",
-          "score": 11
+          "score": 14
         },
         {
           "n": 2,
           "source": "commons",
-          "id": "File:Sterilization Bill January 30th 1917.png",
-          "title": "Sterilization Bill January 30th 1917.png",
+          "id": "File:Green's Eye Hospital, equipment (Western Hospital Review, 1928).png",
+          "title": "Green's Eye Hospital, equipment (Western Hospital Review, 1928).png",
           "licence": "Public domain",
           "dir": "_cand-endoscope-reprocessor-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/2.png",
-          "score": 8
+          "score": 14
         },
         {
           "n": 3,
           "source": "commons",
-          "id": "File:Laws regarding sterilization for contraceptive purposes around the world.svg",
-          "title": "Laws regarding sterilization for contraceptive purposes around the world.svg",
+          "id": "File:Open Dishwasher - Dirty.svg",
+          "title": "Open Dishwasher - Dirty.svg",
           "licence": "CC0",
           "dir": "_cand-endoscope-reprocessor-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/3.png",
-          "score": 8
+          "score": 11
         },
         {
           "n": 4,
-          "source": "servier",
-          "id": "8-well-pcr-tube-strip",
-          "title": "8 well pcr tube strip",
-          "licence": "CC BY 4.0",
+          "source": "openverse",
+          "id": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Open_Dishwasher.svg",
+          "title": "Open Dishwasher",
+          "licence": "CC0",
           "dir": "_cand-endoscope-reprocessor-4",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/4.png",
-          "score": 6
+          "score": 11
         },
         {
           "n": 5,
-          "source": "servier",
-          "id": "bag-equipment",
-          "title": "bag equipment",
-          "licence": "CC BY 4.0",
+          "source": "openverse",
+          "id": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Open_Dishwasher_-_Dirty.svg",
+          "title": "Open Dishwasher - Dirty",
+          "licence": "CC0",
           "dir": "_cand-endoscope-reprocessor-5",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/5.png",
-          "score": 6
+          "score": 11
         },
         {
           "n": 6,
-          "source": "servier",
-          "id": "equipment-bath",
-          "title": "equipment bath",
-          "licence": "CC BY 4.0",
+          "source": "openverse",
+          "id": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcyLTE4MWEtdi1sMW12YWJmci5qcGc.jpg",
+          "title": "Beaker clipart, vintage laboratory equipment",
+          "licence": "CC0",
           "dir": "_cand-endoscope-reprocessor-6",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/endoscopeReprocessor/6.png",
-          "score": 6
+          "score": 11
         }
       ],
-      "broadened": true,
       "choice": {
         "n": 0,
-        "reason": "No reprocessor or endoscope connectors shown.",
+        "reason": "A dishwasher is a domestic appliance with no endoscope, connectors or channels; wrong and misleading for an AER.",
         "scores": [
           {
             "n": 1,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 2,
             "animation": 0,
             "style": 0,
-            "note": "1906 vehicle washer advert"
+            "note": "Vintage X-ray room photo"
           },
           {
             "n": 2,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 1,
             "animation": 0,
             "style": 0,
-            "note": "historical bill document"
+            "note": "Distorted old hospital room photo"
           },
           {
             "n": 3,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "map of laws"
+            "relevance": 2,
+            "accuracy": 1,
+            "quality": 4,
+            "animation": 3,
+            "style": 3,
+            "note": "Open dishwasher with dirty dishes, domestic appliance"
           },
           {
             "n": 4,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "PCR tube strips"
+            "relevance": 2,
+            "accuracy": 1,
+            "quality": 4,
+            "animation": 3,
+            "style": 3,
+            "note": "Open dishwasher, no scope or connectors"
           },
           {
             "n": 5,
-            "relevance": 0,
-            "accuracy": 0,
-            "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "blood bag"
+            "relevance": 2,
+            "accuracy": 1,
+            "quality": 4,
+            "animation": 3,
+            "style": 3,
+            "note": "Open dishwasher with dirty dishes"
           },
           {
             "n": 6,
             "relevance": 0,
             "accuracy": 0,
             "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "water bath equipment"
+            "animation": 1,
+            "style": 2,
+            "note": "Beaker drawing"
           }
         ]
       },
-      "reason": "No reprocessor or endoscope connectors shown."
+      "reason": "A dishwasher is a domestic appliance with no endoscope, connectors or channels; wrong and misleading for an AER."
     },
     {
       "id": "dryingStorageCabinet",
@@ -1007,143 +1066,144 @@
         "channels"
       ],
       "queries": [
-        "endoscopy equipment",
-        "medical cabinet",
-        "endoscope",
-        "hospital storage",
-        "drying cabinet",
-        "endoscopy",
-        "medical equipment storage"
+        "cabinet",
+        "cupboard",
+        "hospital equipment",
+        "laboratory equipment",
+        "storage rack",
+        "sterile storage",
+        "sterile processing",
+        "hanging rack"
       ],
       "lessons": [
         "T01"
       ],
       "decision": "draw",
       "status": "none",
+      "broadened": true,
       "candidates": [
         {
           "n": 1,
           "source": "commons",
-          "id": "File:Medical Records - The Noun Project.svg",
-          "title": "Medical Records - The Noun Project.svg",
-          "licence": "CC0",
+          "id": "File:Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png",
+          "title": "Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png",
+          "licence": "Public domain",
           "dir": "_cand-drying-storage-cabinet-1",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/1.png",
-          "score": 8
+          "score": 14
         },
         {
           "n": 2,
-          "source": "servier",
-          "id": "8-well-pcr-tube-strip",
-          "title": "8 well pcr tube strip",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Green's Eye Hospital, equipment (Western Hospital Review, 1928).png",
+          "title": "Green's Eye Hospital, equipment (Western Hospital Review, 1928).png",
+          "licence": "Public domain",
           "dir": "_cand-drying-storage-cabinet-2",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/2.png",
-          "score": 6
+          "score": 14
         },
         {
           "n": 3,
-          "source": "servier",
-          "id": "bag-equipment",
-          "title": "bag equipment",
-          "licence": "CC BY 4.0",
+          "source": "openverse",
+          "id": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcyLTE4MWEtdi1sMW12YWJmci5qcGc.jpg",
+          "title": "Beaker clipart, vintage laboratory equipment",
+          "licence": "CC0",
           "dir": "_cand-drying-storage-cabinet-3",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/3.png",
-          "score": 6
+          "score": 11
         },
         {
           "n": 4,
-          "source": "servier",
-          "id": "equipment-bath",
-          "title": "equipment bath",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "964",
+          "title": "Vial with Liquid",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-drying-storage-cabinet-4",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/4.png",
-          "score": 6
+          "score": 9
         },
         {
           "n": 5,
-          "source": "servier",
-          "id": "smart-bath-equipment-overview",
-          "title": "smart bath equipment overview",
-          "licence": "CC BY 4.0",
+          "source": "bioart",
+          "id": "143",
+          "title": "Eppendorf Tube",
+          "licence": "Public Domain (check entry)",
           "dir": "_cand-drying-storage-cabinet-5",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/5.png",
-          "score": 6
+          "score": 9
         },
         {
           "n": 6,
-          "source": "servier",
-          "id": "smart-bath-equipment",
-          "title": "smart bath equipment",
-          "licence": "CC BY 4.0",
+          "source": "commons",
+          "id": "File:Honorary Diploma of the Cabinet of Ministers of Ukraine badge technical drawing 2026.png",
+          "title": "Honorary Diploma of the Cabinet of Ministers of Ukraine badge technical drawing 2026.png",
+          "licence": "Public domain",
           "dir": "_cand-drying-storage-cabinet-6",
           "preview": "/Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/6.png",
-          "score": 6
+          "score": 8
         }
       ],
-      "broadened": true,
       "choice": {
         "n": 0,
-        "reason": "None shows a drying/storage cabinet with hanging endoscopes.",
+        "reason": "No cabinet with hanging endoscopes; all candidates are unrelated.",
         "scores": [
           {
             "n": 1,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 2,
             "animation": 0,
             "style": 0,
-            "note": "filing cabinet icon, not endoscope"
+            "note": "Vintage X-ray room photo"
           },
           {
             "n": 2,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 1,
             "animation": 0,
             "style": 0,
-            "note": "PCR tube strips"
+            "note": "Distorted colour photo of old hospital room"
           },
           {
             "n": 3,
             "relevance": 0,
             "accuracy": 0,
             "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "blood bag"
+            "animation": 1,
+            "style": 2,
+            "note": "Beaker line drawing"
           },
           {
             "n": 4,
             "relevance": 0,
             "accuracy": 0,
             "quality": 3,
-            "animation": 0,
-            "style": 0,
-            "note": "empty shelf fragment"
+            "animation": 1,
+            "style": 3,
+            "note": "Vial with liquid"
           },
           {
             "n": 5,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 0,
             "animation": 0,
             "style": 0,
-            "note": "water bath equipment"
+            "note": "XML error page, no image"
           },
           {
             "n": 6,
             "relevance": 0,
             "accuracy": 0,
-            "quality": 3,
+            "quality": 2,
             "animation": 0,
             "style": 0,
-            "note": "water bath with flask"
+            "note": "Medal technical drawing with Ukrainian text"
           }
         ]
       },
-      "reason": "None shows a drying/storage cabinet with hanging endoscopes."
+      "reason": "No cabinet with hanging endoscopes; all candidates are unrelated."
     }
   ]
 }

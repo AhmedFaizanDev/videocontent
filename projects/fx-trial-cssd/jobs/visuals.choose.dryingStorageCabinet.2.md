@@ -9,7 +9,7 @@ accuracy (anatomically/technically right), quality (professional rendering, clea
 size), animation (clear separate parts a camera and labels can point at; plain background; no
 lettering in the image), style (fits a clean clinical house style). Then choose the best one's number,
 or 0 if none reaches relevance ≥ 4 AND accuracy ≥ 4 AND quality ≥ 3 — a wrong or poor picture is
-worse than none.
+worse than none. Open EVERY candidate image before scoring it — never score from the title.
 
 ## Schema
 ```json
@@ -22,12 +22,12 @@ TEACHES: Why scopes are stored hanging vertically and uncoiled with valves remov
 PARTS THE LESSONS NAME: cabinet, insertion tube, valves, control body, channels
 
 CANDIDATES:
-1. Medical Records - The Noun Project.svg — commons, CC0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/1.png
-2. 8 well pcr tube strip — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/2.png
-3. bag equipment — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/3.png
-4. equipment bath — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/4.png
-5. smart bath equipment overview — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/5.png
-6. smart bath equipment — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/6.png
+1. Queensland State Archives 2874 Brisbane General Hospital and Womens Hospital XRay equipment 1946.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/1.png
+2. Green's Eye Hospital, equipment (Western Hospital Review, 1928).png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/2.png
+3. Beaker clipart, vintage laboratory equipment — openverse, CC0 — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/3.png
+4. Vial with Liquid — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/4.png
+5. Eppendorf Tube — bioart, Public Domain (check entry) — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/5.png
+6. Honorary Diploma of the Cabinet of Ministers of Ukraine badge technical drawing 2026.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/dryingStorageCabinet/6.png
 
 IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/dryingStorageCabinet/1.png

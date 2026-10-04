@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Distal tip of a duodenoscope close-up, side-viewing, showing the elevator mechanism and its narrow recess, ideally open and closed.
-FAILED QUERIES: duodenoscope; duodenoscope elevator; duodenoscope distal tip; ERCP endoscope tip
+FAILED QUERIES: endoscope; endoscopy; ERCP; duodenum; endoscopic retrograde; side-viewing endoscope; endoscopy equipment; gastroenterology

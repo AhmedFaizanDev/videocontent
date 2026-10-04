@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Flexible endoscope connected to a leak tester and immersed in water, with air bubbles escaping from a breach in the outer sheath.
-FAILED QUERIES: endoscope leak test; endoscope leak tester; endoscope immersion; endoscope water tank
+FAILED QUERIES: endoscope; endoscopy equipment; leak test; air bubbles water; medical device testing; endoscopy; water immersion

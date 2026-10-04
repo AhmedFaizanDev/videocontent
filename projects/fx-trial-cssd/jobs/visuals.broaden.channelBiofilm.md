@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Longitudinal section of an endoscope channel with biofilm layer adhering to the channel wall, and a brush contacting the wall.
-FAILED QUERIES: biofilm; biofilm on surface; endoscope channel biofilm; bacterial biofilm diagram
+FAILED QUERIES: bacteria colony; microbiology; tube cross section; pipe lining; infection; bacterial layer

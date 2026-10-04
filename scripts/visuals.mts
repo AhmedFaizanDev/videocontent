@@ -158,6 +158,8 @@ async function search(c: Concept) {
       await fetchHit(h, dir);
       // a preview to judge by: macOS renders the SVG (QuickLook), then a fixed size
       const src = join(ROOT, 'assets', 'vector', dir, 'source.svg');
+      // a failed download (an error page, metadata only) is not a candidate
+      if (!/<svg[\s\S]*<(path|image|g|circle|rect|polygon)\b/i.test(readFileSync(src, 'utf8'))) throw new Error('not an image');
       execFileSync('qlmanage', ['-t', '-s', '900', '-o', join(STAGE, c.id), src], {stdio: 'ignore'});
       const preview = join(STAGE, c.id, `${n}.png`);
       renameSync(join(STAGE, c.id, 'source.svg.png'), preview);

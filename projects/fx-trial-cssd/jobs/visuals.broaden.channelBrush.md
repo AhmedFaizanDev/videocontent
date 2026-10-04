@@ -11,4 +11,4 @@ Illustration libraries (NIH BioArt, Servier Medical Art, Wikimedia Commons) inde
 
 ## Input
 CONCEPT: Endoscope cleaning brush of the correct diameter and length passing through a channel, with the handle and bristle head shown.
-FAILED QUERIES: endoscope cleaning brush; channel cleaning brush; endoscope brush; reprocessing brush
+FAILED QUERIES: brush; cleaning brush; endoscopy; endoscopy equipment; medical instrument; bottle brush; cleaning tool

@@ -1,62 +1,99 @@
 {
  "parts": [
   {
-   "name": "duodenoscopeElevator",
-   "pack": "fx-trial-cssd",
+   "name": "channelCutaway",
+   "pack": "scope-detail",
    "usedBy": [
     "T01"
    ],
-   "what": "Distal tip of a duodenoscope close-up, side-viewing, showing the elevator mechanism and its narrow recess, ideally open and closed.. Teaches: Why the elevator recess is a documented outbreak site: it directs accessories, is narrow and mechanically complex, and is extremely difficult to clean.",
+   "what": "Cut-away segment of a flexible endoscope insertion tube: a cross-section face showing several channels of different diameters (suction/biopsy, air, water) inside the sheath, and a longitudinal cut of the main channel whose wall carries a biofilm layer, with a cleaning brush of matching diameter passing through and scrubbing it. Teaches: channels are long and narrow; biofilm adheres to the wall and only brushing (contact) removes it.",
    "anchors": [
-    "distalTip",
-    "elevator",
-    "elevatorRecess",
-    "accessoryChannel"
+    "sheath",
+    "suctionChannel",
+    "airChannel",
+    "waterChannel",
+    "channelWall",
+    "biofilm",
+    "brush",
+    "brushHead"
+   ],
+   "events": [
+    "biofilm",
+    "brush"
    ]
   },
   {
-   "name": "leakTestSetup",
-   "pack": "fx-trial-cssd",
+   "name": "duodenoscopeTip",
+   "pack": "scope-detail",
    "usedBy": [
     "T01"
    ],
-   "what": "Flexible endoscope connected to a leak tester and immersed in water, with air bubbles escaping from a breach in the outer sheath.. Teaches: How a leak test shows a breach before immersion, since a breached scope admits fluid into an interior that cannot be cleaned.",
+   "what": "Close-up of a side-viewing duodenoscope distal tip: the lens and light on the side, the accessory channel outlet, and the elevator (a small lever) in its narrow recess, shown lowered and able to raise. Teaches: the elevator recess is narrow and mechanically complex, a documented outbreak site, extremely hard to clean.",
    "anchors": [
+    "distalTip",
+    "lens",
+    "channelOutlet",
+    "elevator",
+    "elevatorRecess"
+   ],
+   "events": [
+    "raise"
+   ]
+  },
+  {
+   "name": "leakTest",
+   "pack": "reprocessing",
+   "usedBy": [
+    "T01"
+   ],
+   "what": "A flexible endoscope immersed in a basin of water, connected by a tube to a handheld leak tester (pressure bulb with gauge); a breach in the outer sheath releases a stream of air bubbles. Teaches: the leak test shows a breach before immersion in chemicals.",
+   "anchors": [
+    "basin",
     "leakTester",
-    "outerSheath",
-    "breach",
+    "gauge",
+    "controlBody",
     "insertionTube",
-    "controlBody"
+    "breach"
+   ],
+   "events": [
+    "bubbles"
    ]
   },
   {
    "name": "endoscopeReprocessor",
-   "pack": "fx-trial-cssd",
+   "pack": "reprocessing",
    "usedBy": [
     "T01"
    ],
-   "what": "Automated endoscope reprocessor with lid open, a scope coiled in the basin and tubing connectors attached to its channels.. Teaches: How every channel must be attached to the correct model-specific connector, since an unconnected channel is not perfused or disinfected.",
+   "what": "An automated endoscope reprocessor (washer-disinfector): a cabinet with lid open, a flexible endoscope coiled in the basin, and channel connector tubes attached from the machine to the scope's ports. Teaches: every channel must be connected with the model-specific connector, or it is not perfused.",
    "anchors": [
-    "reprocessor",
-    "connectors",
-    "channels",
+    "machine",
+    "lid",
     "basin",
-    "insertionTube"
+    "scope",
+    "connectors",
+    "controlPanel"
+   ],
+   "events": [
+    "flush"
    ]
   },
   {
-   "name": "dryingStorageCabinet",
-   "pack": "fx-trial-cssd",
+   "name": "dryingCabinet",
+   "pack": "reprocessing",
    "usedBy": [
     "T01"
    ],
-   "what": "Controlled drying and storage cabinet with flexible endoscopes hanging vertically and uncoiled, valves removed.. Teaches: Why scopes are stored hanging vertically and uncoiled with valves removed so channels drain and dry, unlike coiled storage that retains fluid.",
+   "what": "A controlled drying and storage cabinet (glass door) with several flexible endoscopes hanging vertically and uncoiled, valves removed, air flowing through. Teaches: scopes hang vertical and uncoiled with valves removed so channels drain and dry.",
    "anchors": [
     "cabinet",
-    "insertionTube",
-    "valves",
-    "controlBody",
-    "channels"
+    "door",
+    "scope",
+    "hanger",
+    "airflow"
+   ],
+   "events": [
+    "airflow"
    ]
   },
   {
@@ -71,6 +108,20 @@
     "channels",
     "outerSheath",
     "distalTip"
+   ]
+  },
+  {
+   "name": "duodenoscopeElevator",
+   "pack": "fx-trial-cssd",
+   "usedBy": [
+    "T01"
+   ],
+   "what": "Distal tip of a duodenoscope close-up, side-viewing, showing the elevator mechanism and its narrow recess, ideally open and closed.. Teaches: Why the elevator recess is a documented outbreak site: it directs accessories, is narrow and mechanically complex, and is extremely difficult to clean.",
+   "anchors": [
+    "distalTip",
+    "elevator",
+    "elevatorRecess",
+    "accessoryChannel"
    ]
   },
   {
@@ -99,6 +150,36 @@
     "channel",
     "ports",
     "elevatorRecess"
+   ]
+  },
+  {
+   "name": "leakTestSetup",
+   "pack": "fx-trial-cssd",
+   "usedBy": [
+    "T01"
+   ],
+   "what": "Flexible endoscope connected to a leak tester and immersed in water, with air bubbles escaping from a breach in the outer sheath.. Teaches: How a leak test shows a breach before immersion, since a breached scope admits fluid into an interior that cannot be cleaned.",
+   "anchors": [
+    "leakTester",
+    "outerSheath",
+    "breach",
+    "insertionTube",
+    "controlBody"
+   ]
+  },
+  {
+   "name": "dryingStorageCabinet",
+   "pack": "fx-trial-cssd",
+   "usedBy": [
+    "T01"
+   ],
+   "what": "Controlled drying and storage cabinet with flexible endoscopes hanging vertically and uncoiled, valves removed.. Teaches: Why scopes are stored hanging vertically and uncoiled with valves removed so channels drain and dry, unlike coiled storage that retains fluid.",
+   "anchors": [
+    "cabinet",
+    "insertionTube",
+    "valves",
+    "controlBody",
+    "channels"
    ]
   }
  ]

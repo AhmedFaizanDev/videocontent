@@ -9,7 +9,7 @@ accuracy (anatomically/technically right), quality (professional rendering, clea
 size), animation (clear separate parts a camera and labels can point at; plain background; no
 lettering in the image), style (fits a clean clinical house style). Then choose the best one's number,
 or 0 if none reaches relevance ≥ 4 AND accuracy ≥ 4 AND quality ≥ 3 — a wrong or poor picture is
-worse than none.
+worse than none. Open EVERY candidate image before scoring it — never score from the title.
 
 ## Schema
 ```json
@@ -22,11 +22,13 @@ TEACHES: Why brush diameter and length matter and why brushing continues until t
 PARTS THE LESSONS NAME: brush, channel, ports, elevator recess
 
 CANDIDATES:
-1. smart yellow channel view — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBrush/1.png
-2. smart pink channel view — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBrush/2.png
-3. yellow smart channel view — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBrush/3.png
+1. Scrub brush clipart, cleaning equipment — openverse, CC0 — preview iterations/visuals/fx-trial-cssd/channelBrush/1.png
+2. PSM V88 D187 Hair brush cleaning apparatus.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/channelBrush/2.png
+3. Scrub brush png sticker, cleaning — openverse, CC0 — preview iterations/visuals/fx-trial-cssd/channelBrush/3.png
+4. Best Medical Equipment Supplier.png — commons, CC0 — preview iterations/visuals/fx-trial-cssd/channelBrush/4.png
 
 IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/1.png
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/2.png
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/3.png
+- /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBrush/4.png

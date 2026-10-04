@@ -9,7 +9,7 @@ accuracy (anatomically/technically right), quality (professional rendering, clea
 size), animation (clear separate parts a camera and labels can point at; plain background; no
 lettering in the image), style (fits a clean clinical house style). Then choose the best one's number,
 or 0 if none reaches relevance ≥ 4 AND accuracy ≥ 4 AND quality ≥ 3 — a wrong or poor picture is
-worse than none.
+worse than none. Open EVERY candidate image before scoring it — never score from the title.
 
 ## Schema
 ```json
@@ -22,12 +22,11 @@ TEACHES: Why only a brush touching the channel wall disrupts biofilm, and why so
 PARTS THE LESSONS NAME: channel wall, biofilm, brush, organic material
 
 CANDIDATES:
-1. smart yellow channel view — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/1.png
-2. smart pink channel view — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/2.png
-3. yellow smart channel view — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/3.png
-4. adult anatomical diagram — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/4.png
-5. anatomical diagram human menopause — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/5.png
-6. sprain ankle anatomical diagram — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/6.png
+1. Cross section mount baker tunnel 3rd tube.png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/channelBiofilm/1.png
+2. Asthma-bronchial-tube-cross-section.png — commons, CC0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/2.png
+3. Pipe Finishing Process - Lining Through Packaging - United States Pipe and Foundry Company Plant, 2023 St. Louis Avenue at I-20-59, Bessemer, Jefferson County, AL HAER ALA,37-BES,6- (sheet 8 of 16).png — commons, Public domain — preview iterations/visuals/fx-trial-cssd/channelBiofilm/3.png
+4. Microbiology &#8211; Bacterial culture — servier, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/4.png
+5. Diagnostic algorithm of possible bacterial infection.png — commons, CC BY 4.0 — preview iterations/visuals/fx-trial-cssd/channelBiofilm/5.png
 
 IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/1.png
@@ -35,4 +34,3 @@ IMAGES (Read each one):
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/3.png
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/4.png
 - /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/5.png
-- /Users/faizan/RootVault/zskillup video content/iterations/visuals/fx-trial-cssd/channelBiofilm/6.png
