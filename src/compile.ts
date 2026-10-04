@@ -232,7 +232,8 @@ const breathe = (words: string[], beats: any[], items: {target: string; text: st
     // a content word near the middle, not spoken earlier in the gap (cues are matched in order)
     let mid = a + 1;
     while (mid < b - 1 && len(a, mid) < Math.min((a < 0 ? OPENING : gap) * 0.8, len(a, b) / 2)) mid++;
-    const ok = (j: number) => j > a && j < b && words[j]?.length >= 4 && !STOP.has(words[j]) && !said(j) && !words.slice(a + 1, j).includes(words[j]);
+    // alphabetic only: the voice reports numbers as it reads them ("2025" → "twenty twenty-five")
+    const ok = (j: number) => j > a && j < b && /^[a-z]{4,}$/.test(words[j] ?? '') && !STOP.has(words[j]) && !said(j) && !words.slice(a + 1, j).includes(words[j]);
     const j = [0, 1, -1, 2, -2, 3, -3, 4, -4].map((d) => mid + d).find(ok);
     if (j === undefined) break;
     const near = new Set(words.slice(a + 1, b));

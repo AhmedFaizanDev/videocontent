@@ -2,7 +2,8 @@
   "en": {
     "coordination": {
       "projects": [
-        "fx-compose"
+        "fx-compose",
+        "ms-bls-29"
       ],
       "first": "2026-10-03"
     },
@@ -62,13 +63,27 @@
     },
     "defibrillation": {
       "projects": [
-        "ms-bls-29-v5"
+        "ms-bls-29-v5",
+        "ms-bls-29"
       ],
       "first": "2026-10-04"
     },
     "opioid-related": {
       "projects": [
-        "ms-bls-29-v5"
+        "ms-bls-29-v5",
+        "ms-bls-29"
+      ],
+      "first": "2026-10-04"
+    },
+    "defibrillate": {
+      "projects": [
+        "ms-bls-29"
+      ],
+      "first": "2026-10-04"
+    },
+    "Defibrillation": {
+      "projects": [
+        "ms-bls-29"
       ],
       "first": "2026-10-04"
     }

@@ -3,10 +3,10 @@
   "id": "M00",
   "stages": {
     "preflight": {
-      "seconds": 3.9,
+      "seconds": 0.1,
       "batch": 2,
       "errors": 0,
-      "at": "2026-10-03T19:55:00.878Z"
+      "at": "2026-10-04T00:56:35.403Z"
     },
     "voiceover": {
       "seconds": 12.5,
