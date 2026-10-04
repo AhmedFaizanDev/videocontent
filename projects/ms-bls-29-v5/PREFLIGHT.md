@@ -1,6 +1,6 @@
 # Preflight — ms-bls-29-v5
 
-## M01 — OK with warnings (2026-10-04T00:56:52.140Z)
+## M01 — OK with warnings (2026-10-04T00:57:46.404Z)
 
 - ⚠️ **language** pronunciation — audition these once (node scripts/say.mts ms-bls-29-v5 "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: defibrillation, opioid-related
 - ⚠️ **timing** scene[5] beats: "beat 1" and "beat 2" reveal 0.5 s apart — give each its own sentence

@@ -3,10 +3,10 @@
   "id": "M01",
   "stages": {
     "preflight": {
-      "seconds": 4.6,
+      "seconds": 4.5,
       "batch": 1,
       "errors": 0,
-      "at": "2026-10-04T00:56:52.141Z"
+      "at": "2026-10-04T00:57:46.405Z"
     },
     "check": {
       "seconds": 5,
@@ -30,25 +30,25 @@
       "at": "2026-10-04T00:45:46.262Z"
     },
     "render": {
-      "seconds": 323,
-      "totalSeconds": 339,
+      "seconds": 342,
+      "totalSeconds": 359,
       "frames": 10228,
-      "fps": 31.7,
-      "bytes": 66692502,
-      "at": "2026-10-04T00:51:26.857Z"
+      "fps": 29.9,
+      "bytes": 67514958,
+      "at": "2026-10-04T01:03:45.989Z"
     },
     "qa": {
-      "seconds": 30,
+      "seconds": 33,
       "pass": false,
       "failed": [
         "no frozen picture"
       ],
-      "at": "2026-10-04T00:51:57.868Z"
+      "at": "2026-10-04T01:04:19.630Z"
     },
     "voiceover-check": {
       "seconds": 0,
       "cached": true,
-      "at": "2026-10-04T00:56:52.245Z"
+      "at": "2026-10-04T00:57:46.498Z"
     }
   },
   "authoring": [],
