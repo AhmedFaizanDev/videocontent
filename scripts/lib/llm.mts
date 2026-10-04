@@ -14,7 +14,7 @@ import {join} from 'node:path';
 import {ROOT, projectDir} from './paths.mts';
 
 export const OFFLINE = !!process.env.BATCH_OFFLINE;
-const claudeBin = () => {
+export const claudeBin = () => {
   if (process.env.CLAUDE_BIN) return process.env.CLAUDE_BIN;
   const base = join(homedir(), 'Library', 'Application Support', 'Claude', 'claude-code');
   if (!existsSync(base)) return 'claude';
