@@ -6,16 +6,47 @@ stories) is preserved verbatim in `archive/docs/HANDOFF_history.md`.
 
 ## 0. Continue here (next session) — updated 2026-10-04
 
-**v5 creative architecture (2026-10-04) — read docs/BULK.md "Architecture v5" first.** Client
-courses go through `node scripts/batch.mts <p> all`: writer + editor (one Sonnet call each, or one
-agent-mode job), compositions (`type: "scene"`, 1–3 elements + moves, slot layout, director),
-variety + legibility gates, self-healing check (fixers → fallback → ≤3 repairs; no human),
-house pronunciation dictionary (src/dictionary.ts), one-command asset import
-(`find-assets --get … --auto`, BioArt/Servier/Commons, credits in CREDITS.md, never in video),
-`scripts/benchmark.mts` (build-only until the owner asks to benchmark). First trial:
-`ms-bls-29-v5` M01 (BLS Module 01 regenerated, compare with `ms-bls-29` M01). Headless CLI still
-needs the owner's one-time `/login`. Everything below is the earlier history.
+**State at end of 2026-10-04 — infrastructure done, NOT yet bulk-proven. Next step needs the
+owner's explicit go-ahead: BLS + CSSD proof videos (do not start bulk or proofs without it).**
 
+Pipeline (docs/BULK.md: "The visuals stage", "Architecture v6", "Architecture v5"):
+`node scripts/batch.mts <p> all` = plan → **visuals** → write → check → produce.
+- **Quality baseline = the Opus-built reference** (`ms-bls-29` M01, ~6M tokens; owner's reference
+  video = the Intro+Module 01 MP4). Its spec must compile byte-identical to snapshot `e59094a` —
+  re-check after any src/ change (diff `readSpec('ms-bls-29','M01')` against that commit). Never
+  redesign the proven flowchart/table/camera/transition/animation code; reuse it.
+- **Visuals stage** (`scripts/visuals.mts <p>`, state `projects/<p>/visual-plan.json`): needs (Sonnet)
+  → reuse library → search BioArt / Servier (REST API) / Commons (SVG+PNG diagrams, no photos) /
+  Openverse, PD/CC0/CC-BY only → broaden once → vision judge (every image opened) → ingest →
+  Opus places anchors/regions + writes playbooks → vision verifies anchors → only then draw
+  (art-author Opus → art-reviewer → `art.mts approve`) → Opus playbooks for the drawing.
+- **Playbooks** (src/playbooks.ts + asset manifests + assets/playbooks/*.json for drawn art):
+  the reusable teaching choreography; Sonnet writes `play` scenes through their moments.
+  Reference exemplar `docs/EXEMPLAR_M01.json` is in every writer/editor prompt.
+- **Gates**: taste (≤1 text bar/55 words; illustrations perform), variety (no composition quota),
+  visual plan (a lesson must use its planned illustrations), legibility ≥22 px, empty-chart
+  opening, plus all earlier gates.
+- **Repairs are verified** (scripts/lib/repair.mts): every fixer/repair re-gated, kept only on
+  proven progress, else rolled back with the reason fed to the next attempt; agent-mode repairs
+  self-verify and are re-checked against a snapshot.
+- **Pace self-calibrates** (src/pace.gen.ts, ~128 wpm measured); writer TARGET ≈ 576 words/5:00.
+- "No" is no longer read as "number" (scripts/lib/speak.mts).
+- **Headless**: `node scripts/headless-check.mts` — currently NOT logged in. Owner runs the Claude
+  Code binary once and `/login` (or `setup-token` → CLAUDE_CODE_OAUTH_TOKEN in shell profile).
+  Until then model steps are job files (projects/<p>/jobs/*.md) run as subagents.
+
+CSSD (`fx-trial-cssd`): visual plan 8/8 ready — Servier endoscope (imported, 3 playbooks) + 5
+approved Opus drawings (`scope-detail`: channelCutaway, duodenoscopeTip; `reprocessing`: leakTest,
+endoscopeReprocessor, dryingCabinet; 11 playbooks). Free libraries had none of the reprocessing
+equipment (2 search rounds, 80+ candidates rejected). Its old T01 script predates the gates and
+must be rewritten (fails visual-plan + variety). Fixtures: `fx-plays` (P01 reference in playbook
+form, P02 heart playbooks, P03 drawn playbooks), `fx-compose`, `fx-trial-heart`.
+
+Unproven / open: no video since v6+visuals (v5 Sonnet video was below reference); verified
+repairs and headless never run on a real lesson; drawn CSSD art never rendered in a video
+(cosmetic: biofilm labels linger after brushing, brushHead label at shaft end); pace from 3
+lessons; benchmark (`scripts/benchmark.mts`) not run. Trials: `ms-bls-29-v5` (v5 M01, QA passed,
+below reference).
 
 **House standard now:** picture-first `stage` lessons, all imagery drawn in code, every video
 exactly 5:00, generation agents on Sonnet. Client feedback that drove it: *"looks like text with
