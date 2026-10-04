@@ -3,13 +3,13 @@
   "id": "M01",
   "stages": {
     "preflight": {
-      "seconds": 4.5,
+      "seconds": 4.3,
       "batch": 1,
       "errors": 0,
-      "at": "2026-10-04T01:16:25.167Z"
+      "at": "2026-10-04T01:16:45.396Z"
     },
     "check": {
-      "seconds": 5,
+      "seconds": 4,
       "firstPass": true,
       "ok": true,
       "categories": [],
@@ -17,33 +17,31 @@
       "repairs": 0,
       "fallback": [],
       "remaining": [],
-      "at": "2026-10-04T00:44:44.278Z"
+      "at": "2026-10-04T01:16:40.842Z"
     },
     "voiceover": {
-      "seconds": 42,
-      "scenesVoiced": 10,
+      "seconds": 4.1,
+      "scenesVoiced": 1,
       "scenes": 11,
-      "characters": 4343,
-      "audioSeconds": 318.8,
+      "characters": 723,
+      "audioSeconds": 319.4,
       "wpm": 127,
       "voice": "en-IN-NeerjaNeural",
-      "at": "2026-10-04T00:45:46.262Z"
+      "at": "2026-10-04T01:16:49.593Z"
     },
     "render": {
-      "seconds": 374,
-      "totalSeconds": 391,
-      "frames": 10228,
-      "fps": 27.3,
-      "bytes": 67542199,
-      "at": "2026-10-04T01:12:09.034Z"
+      "seconds": 362,
+      "totalSeconds": 378,
+      "frames": 10247,
+      "fps": 28.3,
+      "bytes": 67777122,
+      "at": "2026-10-04T01:23:09.023Z"
     },
     "qa": {
-      "seconds": 35,
-      "pass": false,
-      "failed": [
-        "no frozen picture"
-      ],
-      "at": "2026-10-04T01:12:44.336Z"
+      "seconds": 34,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-04T01:23:43.782Z"
     },
     "voiceover-check": {
       "seconds": 0,
@@ -53,6 +51,6 @@
   },
   "authoring": [],
   "lang": "en",
-  "runtimeMinutes": 5.68,
-  "words": 656
+  "runtimeMinutes": 5.69,
+  "words": 659
 }
