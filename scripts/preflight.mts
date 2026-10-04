@@ -130,7 +130,17 @@ for (const s of specs) {
     const where = still.length ? ` — still while saying "${still.slice(0, 14).join(' ')}${still.length > 14 ? ' …' : ''}"` : '';
     const static_ = cfg.rules.maxIdle ?? (['hook', 'definition', 'check'].includes(sc.type) ? 26 : 22);
     // a still opening reads as a frozen frame (QA's freeze check): stricter than mid-scene holds
-    if (cfg.rules.maxIdle && marks.length > 1 && marks[1] - marks[0] > 4.5 && sc.type === 'stage')
+    // a chart or table opens empty (only its ghost map): camera moves don't count, its first item must come
+    const dataOnly = sc.type === 'stage' && (sc.world?.layers ?? []).length > 0 && sc.world.layers.every((l: any) => ['graph', 'table'].includes(l.art));
+    const firstContent = dataOnly ? (() => {
+      const bs = sc.beats ?? [];
+      const g = groups.beats ?? [];
+      const k = bs.findIndex((b: any) => b.act || b.show || b.label || b.note || b.title);
+      return k >= 0 ? g[k]?.t ?? null : null;
+    })() : null;
+    if (cfg.rules.maxIdle && dataOnly && firstContent != null && firstContent > 4.5)
+      add(s.id, 'error', 'timing', `scene[${i}] (stage): the chart/table sits empty for ~${Math.round(firstContent)} s — name its first item within the first sentence`);
+    else if (cfg.rules.maxIdle && marks.length > 1 && marks[1] - marks[0] > 4.5 && sc.type === 'stage')
       add(s.id, 'error', 'timing', `scene[${i}] (stage): opens on ~${Math.round(marks[1] - marks[0])} s of a still picture — the first item's word must come sooner (or a camera move must)`);
     if (idle > static_) add(s.id, cfg.rules.maxIdle ? 'error' : 'warn', 'timing', `scene[${i}] (${sc.type}): ~${Math.round(idle)} s with nothing new on screen${where} — bring an item/note there, re-mention an on-screen item, or shorten`);
   });

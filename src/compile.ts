@@ -500,7 +500,11 @@ const breathed = (st: any): any => {
   const items = st.beats
     .map((b: any) => ({target: b.label ? (Array.isArray(b.label) ? b.label[0].on : b.label.on) : typeof b.act === 'string' && /\.(r\d+|[A-Z]\w*)$/.test(b.act) ? b.act : '', text: b.label ? [b.label].flat()[0].text : b.note ?? '', at: b._pos ?? -1}))
     .filter((x: any) => x.target && x.text);
-  return {...st, beats: byPosition(words, [...st.beats, ...breathe(words, st.beats, items, layer)])};
+  // an empty chart/table is not brought to life by moving the camera over it: no opening breath there
+  const dataOnly = ['graph', 'table'].includes(st.world.layers[0].art);
+  const first = Math.min(...st.beats.filter((b: any) => b.act || b.label || b.note).map((b: any) => b._pos ?? Infinity));
+  const extra = breathe(words, st.beats, items, layer).filter((b) => !dataOnly || b._pos > first);
+  return {...st, beats: byPosition(words, [...st.beats, ...extra])};
 };
 export const compileScene = (s: any): any => strip(s?.type === 'scene' ? composition(s) : RECIPES.has(s?.type) ? breathed(compileRecipe(shorthand(s))) : compileRecipe(shorthand(s)));
 
