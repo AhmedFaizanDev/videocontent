@@ -38,7 +38,7 @@ type Built = {
 };
 
 /** `fit` layers take the world's centre at the largest size that leaves a margin (charts, tables). */
-const SIZED = new Set(['graph', 'table', 'stat']);
+const SIZED = new Set(['graph', 'table', 'stat', 'bars', 'stack']);
 export const fitWorld = (m: Model): Model => {
   if (!m.world.layers.some((l) => l.fit)) return m;
   const W = m.world;
@@ -119,6 +119,15 @@ export const StageView: React.FC<{m: Model; beats: number[]; view: View; f: numb
       }
   }, [audit, m, B]);
   const acts = React.useMemo(() => actFrames(m, beats), [m, beats]);
+  // layers the camera tours item by item (3+ close-ups): their text is read at the tour's zoom
+  const tours = React.useMemo(() => {
+    const t = new Map<string, number>();
+    for (const l of m.world.layers) {
+      const z = m.beats.map((b) => b.camera).filter((c): c is {on: string; zoom?: number} => !!c && c !== 'overview' && c.on.startsWith(`${l.id}.`)).map((c) => c.zoom ?? 1.5);
+      if (z.length >= 3) t.set(l.id, Math.min(...z));
+    }
+    return t;
+  }, [m]);
   const cam0 = camAt(f, B.start, B.keys);
   // the slow push between moves (stage.ts driftAt): the picture is never frozen while the voice runs
   const cam = {...cam0, s: cam0.s * driftAt(f, B.keys, m.drift ?? 1)};
@@ -162,7 +171,7 @@ export const StageView: React.FC<{m: Model; beats: number[]; view: View; f: numb
       const fr = acts.get(`${l.id}.${a}`);
       return fr == null ? null : fr - t0;
     };
-    return <ArtView key={l.id} art={art} k={k} ctx={{f: local, at}} style={{left: x, top: y + rise, opacity: o * dimmed}} />;
+    return <ArtView key={l.id} art={art} k={k} ctx={{f: local, at}} style={{left: x, top: y + rise, opacity: o * dimmed}} tourZoom={tours.get(l.id)} />;
   });
 
   // what a beat puts on the picture (labels, a cross, a loupe) lasts until the camera next moves

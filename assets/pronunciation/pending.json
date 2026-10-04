@@ -5,6 +5,72 @@
         "fx-compose"
       ],
       "first": "2026-10-03"
+    },
+    "charact": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "timeline": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "overlapping": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "Foxtrot": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "controlhead": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "biopsyport": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "insertiontube": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "distaltip": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "reprocessor": {
+      "projects": [
+        "fixtures"
+      ],
+      "first": "2026-10-04"
+    },
+    "defibrillation": {
+      "projects": [
+        "ms-bls-29-v5"
+      ],
+      "first": "2026-10-04"
+    },
+    "opioid-related": {
+      "projects": [
+        "ms-bls-29-v5"
+      ],
+      "first": "2026-10-04"
     }
   }
 }

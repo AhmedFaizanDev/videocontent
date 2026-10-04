@@ -3,10 +3,10 @@
   "id": "C02",
   "stages": {
     "preflight": {
-      "seconds": 3.3,
-      "batch": 1,
+      "seconds": 0.1,
+      "batch": 2,
       "errors": 0,
-      "at": "2026-10-03T23:11:58.433Z"
+      "at": "2026-10-03T23:14:24.164Z"
     },
     "check": {
       "seconds": 7,

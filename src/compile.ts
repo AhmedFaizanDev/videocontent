@@ -51,6 +51,21 @@ const derive = (words: string[], text: string, from: number): {say: string[]; at
   return hit ? {say: [hit[0]], at: hit[1]} : null;
 };
 
+/** Note beats in order; a note without a cue listens for a word of its own text, spoken after the previous note. */
+const noteBeats = (words: string[], notes: {say?: string[]; note: string}[]) => {
+  let cursor = 0;
+  return notes.map((n) => {
+    if (n.say?.length) {
+      const j = words.findIndex((w, k) => k >= cursor && wordMatches(w, n.say!.map(normWord)));
+      if (j >= 0) cursor = j + 1;
+      return {say: n.say, note: n.note};
+    }
+    const d = derive(words, n.note, cursor);
+    if (d) cursor = d.at + 1;
+    return {say: d?.say ?? keywordsOf(n.note, 3), note: n.note, ...(d ? {_pos: d.at} : {})};
+  });
+};
+
 function shorthand(s: any): any {
   if (s?.type === 'flow') {
     const g = parseMermaid(s.mermaid ?? '');
@@ -99,7 +114,7 @@ function shorthand(s: any): any {
       narration: s.narration,
       ...(s.transition ? {transition: s.transition} : {}),
       world: {w: 2400, h: 1300, layers: [{id: 'chart', art: 'graph', fit: true, at: [1200, 650], h: 1, data: {mermaid: s.mermaid, steps: steps.map(({say: _s, ...r}) => r), ...(s.size ? {size: s.size} : {})}}]},
-      beats: byPosition(words, [...(s.title ? [{say: [words[0]], title: s.title}] : []), ...beats, ...notes.map((n) => ({say: n.say, note: n.note})), ...echo(words, beats, steps.flatMap((st, i) => (st.show ?? (st.focus ? [st.focus] : [])).map((id) => ({target: `chart.${id}`, text: label.get(id) ?? id, at: beats[i]?._pos ?? 0}))))]),
+      beats: byPosition(words, [...(s.title ? [{say: [words[0]], title: s.title}] : []), ...beats, ...noteBeats(words, notes), ...echo(words, beats, steps.flatMap((st, i) => (st.show ?? (st.focus ? [st.focus] : [])).map((id) => ({target: `chart.${id}`, text: label.get(id) ?? id, at: beats[i]?._pos ?? 0}))))]),
     };
   }
   if (s?.type === 'table') {
@@ -149,7 +164,7 @@ function shorthand(s: any): any {
       world: {w: 2400, h: 1300, layers: [{id: 'tbl', art: 'table', fit: true, at: [1200, 650], h: 1, data: {columns: s.columns, rows, ...(s.cells !== false ? {cells: true} : {}), ...(s.align ? {align: s.align} : {}), ...(s.widths ? {widths: s.widths} : {}), ...(s.size ? {size: s.size} : {}), ...(s.bars ? {bars: s.bars} : {})}}]},
       beats: (() => {
         const echoes = echo(words, [...beats, ...cellBeats], rows.map((r, i) => ({target: `tbl.r${i + 1}`, text: r.join(' '), at: beats[i]._pos})));
-        const all = byPosition(words, [...(s.title ? [{say: [words[0]], title: s.title}] : []), ...beats.map((b) => ({...b, _pos: b._pos})), ...cellBeats, ...hl, ...notes.map((n) => ({say: n.say, note: n.note})), ...echoes]);
+        const all = byPosition(words, [...(s.title ? [{say: [words[0]], title: s.title}] : []), ...beats.map((b) => ({...b, _pos: b._pos})), ...cellBeats, ...hl, ...noteBeats(words, notes), ...echoes]);
         if (!tour) return all;
         // the tour ends on the whole table: on the last spoken word, or folded into the last reveal
         const lastPos = Math.max(...[...beats, ...cellBeats].map((b) => b._pos ?? -1));
@@ -195,11 +210,12 @@ const echo = (words: string[], beats: any[], items: {target: string; text: strin
 };
 
 /**
- * Camera breaths: a long stretch with nothing new (> `gap` words, even after echoes) gets one slow
- * camera move — in on the shown item the words are about (else the lead element), and back out on
- * the next — so the picture follows the explanation instead of holding still.
+ * Camera breaths: a long stretch with nothing new (> `gap` spoken characters, even after echoes) gets
+ * one slow camera move — in on the shown item the words are about (else the lead element), and back
+ * out on the next — so the picture follows the explanation. With several elements on screen it
+ * pulses that item in place instead (a zoom would crop the others).
  */
-const breathe = (words: string[], beats: any[], items: {target: string; text: string; at: number}[], lead?: string, gap = 64): any[] => {
+const breathe = (words: string[], beats: any[], items: {target: string; text: string; at: number}[], lead?: string, gap = 64, inPlace = false): any[] => {
   // the gap is measured in spoken characters (≈ 4.5 s at the house pace): long clinical words take longer to say
   const cum = words.reduce((a, w) => [...a, a[a.length - 1] + w.length + 1], [0]);
   const len = (a: number, b: number) => cum[Math.max(0, b)] - cum[Math.max(0, a + 1)];
@@ -222,6 +238,11 @@ const breathe = (words: string[], beats: any[], items: {target: string; text: st
     const about = shown.find((it) => keywordsOf(it.text, 5).some((w) => near.has(w)));
     const zoomed = [...beats, ...extra].filter((x) => x._pos < j && x.camera).sort((x, y) => x._pos - y._pos).pop()?.camera;
     const target = about?.target ?? lead;
+    // several elements share the frame: a zoom would push the others off it — emphasise in place
+    if (inPlace) {
+      extra.push({say: [words[j]], _pos: j, pulse: target ?? lead});
+      continue;
+    }
     extra.push({say: [words[j]], _pos: j, camera: zoomed && zoomed !== 'overview' ? 'overview' : target ? {on: target, zoom: 1.2} : 'overview'});
   }
   return extra;
@@ -300,7 +321,7 @@ function compileRecipe(s: any): any {
     return artStage(s, byPosition(words, [...beats, ...echoes]));
   }
   if (s.type === 'summary') {
-    const beats: any[] = (s.notes ?? []).map((n: any) => ({say: n.say, note: n.note}));
+    const beats: any[] = noteBeats(words, s.notes ?? []);
     if (s.act && s.art) beats.unshift({say: [words[0]], _pos: 0, act: asList(s.act).map((a: string) => `art.${a}`)});
     return artStage(s, byPosition(words, beats));
   }
@@ -344,9 +365,10 @@ export const slotsFor = (kinds: string[], layout?: string, mirror?: boolean, den
   const [a, b] = mirror ? ['R', 'L'] : ['L', 'R'];
   const twoArts = kinds.filter((k) => k === 'art').length === 2;
   if (n === 2) {
-    if (layout === 'halves' || twoArts || (layout !== 'main' && kinds[0] !== 'art' && kinds[1] !== 'art')) return [a, b];
-    // a dense chart or table needs the room more than the illustration: it takes the main slot, on the lead's side
-    return dense[1] && !dense[0] ? [`S${b}`, `M${a}`] : [`M${a}`, `S${b}`];
+    if (layout === 'halves' || twoArts) return [a, b];
+    // the element that needs the room (a dense chart, table or item diagram) takes the main slot
+    if (!!dense[0] !== !!dense[1]) return dense[1] ? [`S${b}`, `M${a}`] : [`M${a}`, `S${b}`];
+    return layout === 'main' || kinds.includes('art') ? (kinds[0] === 'art' || layout === 'main' ? [`M${a}`, `S${b}`] : [`S${b}`, `M${a}`]) : [a, b];
   }
   return [`M${a}`, `S${b}T`, `S${b}B`];
 };
@@ -356,8 +378,9 @@ function composition(s: any): any {
   const els: any[] = s.elements ?? [];
   // the lead (the illustration if there is one) goes first so it takes the main slot
   const ordered = [...els].sort((x, y) => (x.kind === 'art' ? 0 : 1) - (y.kind === 'art' ? 0 : 1));
-  // dense: a table of 3+ columns or 4+ rows, a chart of 5+ nodes — it needs the main slot to stay readable
-  const dense = ordered.map((e) => (e.kind === 'table' && ((e.columns ?? []).length >= 3 || (e.rows ?? []).length >= 4)) || (e.kind === 'flow' && parseMermaid(e.mermaid ?? '').nodes.length >= 5));
+  // dense: a table of 3+ columns or 4+ rows, a chart of 5+ nodes, any item diagram (laid out for a full
+  // frame) — it needs the main slot to stay readable
+  const dense = ordered.map((e) => (e.kind === 'table' && ((e.columns ?? []).length >= 3 || (e.rows ?? []).length >= 4)) || (e.kind === 'flow' && parseMermaid(e.mermaid ?? '').nodes.length >= 5) || ITEM_KINDS.includes(e.kind));
   const slots = slotsFor(ordered.map((e) => e.kind), s.layout, s.mirror, dense);
   const revealed = new Set((s.moves ?? []).flatMap((m: any) => asList(m.reveal)));
   // flow and table elements compile exactly as their full-screen scenes do (no tour: the composition owns the camera)
@@ -430,7 +453,7 @@ function composition(s: any): any {
   });
   const all = byPosition(words, [...auto, ...moves]);
   const echoes = echo(words, all, items.filter((x) => x.text));
-  const breaths = breathe(words, [...all, ...echoes], items.filter((x) => x.text), ordered[0]?.id);
+  const breaths = breathe(words, [...all, ...echoes], items.filter((x) => x.text), ordered[0]?.id, 64, ordered.length > 1);
   return {
     type: 'stage',
     kicker: s.kicker,
@@ -465,7 +488,18 @@ export const mergeSameWord = (beats: any[]): any[] => {
 };
 const strip = (s: any) => (s?.beats ? {...s, beats: mergeSameWord(s.beats).map(({_pos, ...b}: any) => b)} : s);
 /** One scene, any shorthand (flow/table/recipes/composition) → a stage. */
-export const compileScene = (s: any): any => strip(s?.type === 'scene' ? composition(s) : compileRecipe(shorthand(s)));
+const RECIPES = new Set(['flow', 'table', 'opener', 'explain', 'summary']);
+/** Recipe scenes breathe too: long still stretches get a camera move toward what is being said. */
+const breathed = (st: any): any => {
+  const layer = st.world?.layers?.[0]?.id;
+  if (!layer) return st;
+  const words = spoken(st.narration ?? '').split(/\s+/).map(normWord).filter(Boolean);
+  const items = st.beats
+    .map((b: any) => ({target: b.label ? (Array.isArray(b.label) ? b.label[0].on : b.label.on) : typeof b.act === 'string' && /\.(r\d+|[A-Z]\w*)$/.test(b.act) ? b.act : '', text: b.label ? [b.label].flat()[0].text : b.note ?? '', at: b._pos ?? -1}))
+    .filter((x: any) => x.target && x.text);
+  return {...st, beats: byPosition(words, [...st.beats, ...breathe(words, st.beats, items, layer)])};
+};
+export const compileScene = (s: any): any => strip(s?.type === 'scene' ? composition(s) : RECIPES.has(s?.type) ? breathed(compileRecipe(shorthand(s))) : compileRecipe(shorthand(s)));
 
 /** A spec with every shorthand scene compiled (idempotent: compiled scenes pass through), framed by the project's intro/outro and directed (src/director.ts). */
 export const compileSpec = <T extends {scenes: any[]}>(spec: T, frame?: Frame): T => ({...spec, scenes: (frame?.direct ? direct : (x: any[]) => x)(framed(spec.scenes, frame)).map(compileScene)});

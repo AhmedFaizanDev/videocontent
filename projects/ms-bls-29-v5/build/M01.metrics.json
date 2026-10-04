@@ -1,0 +1,24 @@
+{
+  "project": "ms-bls-29-v5",
+  "id": "M01",
+  "stages": {
+    "preflight": {
+      "seconds": 4.4,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-04T00:44:44.266Z"
+    },
+    "check": {
+      "seconds": 5,
+      "firstPass": true,
+      "ok": true,
+      "categories": [],
+      "fixes": [],
+      "repairs": 0,
+      "fallback": [],
+      "remaining": [],
+      "at": "2026-10-04T00:44:44.278Z"
+    }
+  },
+  "authoring": []
+}

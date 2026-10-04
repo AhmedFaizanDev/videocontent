@@ -71,7 +71,7 @@ node scripts/new-project.mts <p> "<Course name>"   # bulk defaults: frame, maxId
 cp <client module PDFs> projects/<p>/source/
 node scripts/batch.mts <p> plan        # course.json: one video per module PDF (no model call; edit to split)
 node scripts/batch.mts <p> write       # one writer call per video → specs/<id>.json
-node scripts/batch.mts <p> check       # gates; ≤1 repair call each; failures set aside with reasons
+node scripts/batch.mts <p> check       # gates → fixers → ≤3 repairs → fallback (recorded)
 caffeinate -ims node scripts/batch.mts <p> produce   # voice → render → QA, overnight
 node scripts/batch.mts <p> translate hi             # native copies into <p>-hi, then: batch <p>-hi check/produce
 ```

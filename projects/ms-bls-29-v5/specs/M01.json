@@ -1,0 +1,500 @@
+{
+  "id": "M01",
+  "title": "Cardiac Arrest and the Chain of Survival",
+  "outputFilename": "MedSkills_ms_bls_29_v5_M01.mp4",
+  "module": "Cardiac Arrest and the Chain of Survival",
+  "scenes": [
+    {
+      "type": "opener",
+      "kicker": "Overview",
+      "narration": "Cardiac arrest is an electrical failure of the heart, and the first minutes belong to the person nearest the patient. This lesson sets out the problem and the chain of survival that answers it.",
+      "title": "Cardiac Arrest and the Chain of Survival",
+      "art": "heartExterior",
+      "act": [
+        "vf"
+      ]
+    },
+    {
+      "type": "scene",
+      "kicker": "Definition",
+      "narration": "Cardiac arrest occurs when the heart malfunctions and stops beating unexpectedly. It is an electrical problem. Each normal beat starts as an impulse that spreads through the heart muscle. The atria contract first, then the ventricles. In ventricular fibrillation, muscle fibres depolarise out of step and the ventricles quiver instead of contracting. No blood is ejected, and the pulse is lost within seconds. Each year in the United States, about 350,000 people have an out-of-hospital cardiac arrest, and about 90% of them die.",
+      "layout": "halves",
+      "elements": [
+        {
+          "id": "heart",
+          "kind": "art",
+          "art": "heartExterior"
+        },
+        {
+          "id": "toll",
+          "kind": "stat",
+          "value": 90,
+          "of": 100,
+          "display": "9 in 10",
+          "label": "Out-of-hospital arrests end in death",
+          "tone": "red",
+          "say": [
+            "90%"
+          ]
+        }
+      ],
+      "moves": [
+        {
+          "say": [
+            "malfunctions"
+          ],
+          "note": "Cardiac arrest: the heart stops beating unexpectedly"
+        },
+        {
+          "say": [
+            "electrical"
+          ],
+          "note": "An electrical problem"
+        },
+        {
+          "say": [
+            "impulse"
+          ],
+          "act": "heart.conduction"
+        },
+        {
+          "say": [
+            "atria"
+          ],
+          "act": "heart.atria"
+        },
+        {
+          "say": [
+            "ventricles"
+          ],
+          "act": "heart.ventricles"
+        },
+        {
+          "say": [
+            "quiver"
+          ],
+          "act": "heart.vf"
+        },
+        {
+          "say": [
+            "ejected"
+          ],
+          "note": "No blood is ejected"
+        },
+        {
+          "say": [
+            "350,000"
+          ],
+          "reveal": "toll"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "Not a heart attack",
+      "narration": "A heart attack is a circulation problem; cardiac arrest is an electrical one. In a heart attack, a coronary artery is blocked and part of the heart muscle is starved of blood. In cardiac arrest, the heart stops beating unexpectedly. The heart attack patient is usually conscious, often with chest pain. The arrest patient is unresponsive, with no pulse and no normal breathing, because without cerebral blood flow consciousness is lost within seconds. Occasional gasping, called agonal breathing, is not normal breathing. A heart attack can trigger cardiac arrest.",
+      "columns": [
+        "Compared",
+        "Cardiac arrest",
+        "Heart attack"
+      ],
+      "rows": [
+        [
+          "Problem",
+          "Electrical",
+          "Circulation"
+        ],
+        [
+          "Cause",
+          "Heart stops beating",
+          "Artery blocked"
+        ],
+        [
+          "Patient",
+          "Unresponsive",
+          "Conscious"
+        ]
+      ],
+      "say": [
+        [
+          "circulation"
+        ],
+        [
+          "blocked"
+        ],
+        [
+          "conscious"
+        ]
+      ],
+      "highlight": [
+        {
+          "say": [
+            "stops"
+          ],
+          "col": 1
+        },
+        {
+          "say": [
+            "unresponsive"
+          ],
+          "col": 1
+        }
+      ],
+      "notes": [
+        {
+          "say": [
+            "cerebral"
+          ],
+          "note": "No cerebral flow: unconscious in seconds"
+        },
+        {
+          "say": [
+            "agonal"
+          ],
+          "note": "Agonal gasping is not normal breathing"
+        },
+        {
+          "say": [
+            "trigger"
+          ],
+          "note": "A heart attack can trigger arrest"
+        }
+      ]
+    },
+    {
+      "type": "explain",
+      "kicker": "Compressions",
+      "narration": "In arrest there is no effective cardiac output, so chest compressions generate blood flow. They squeeze the heart between the sternum and the spine and raise pressure in the chest. That produces blood flow to the brain and to the heart muscle. Every minute without compressions or defibrillation lowers the chance of survival. The compressions continue until the heart is restarted.",
+      "art": "heartExterior",
+      "points": [
+        {
+          "note": "No effective cardiac output",
+          "say": [
+            "output"
+          ]
+        },
+        {
+          "on": "lv",
+          "label": "Left ventricle",
+          "act": "compress",
+          "say": [
+            "squeeze"
+          ]
+        },
+        {
+          "note": "Flow to brain and heart muscle",
+          "say": [
+            "brain"
+          ]
+        },
+        {
+          "note": "Every minute lowers survival",
+          "say": [
+            "Every",
+            "minute"
+          ]
+        },
+        {
+          "act": "rosc",
+          "note": "Heart restarted: sinus beat and output",
+          "say": [
+            "restarted"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "Rhythms",
+      "narration": "Four rhythms cause cardiac arrest. Ventricular fibrillation is shockable: a shock depolarises the myocardium at once, so the heart's own pacemaker can restore an organised rhythm. Pulseless ventricular tachycardia is also shockable; the ventricles beat so fast they cannot fill, so there is no pulse. Pulseless electrical activity is not shockable, because the rhythm is already organised. Asystole is not shockable either, because there is no electrical activity for a shock to help. Both are treated with cardiopulmonary resuscitation and the search for reversible causes.",
+      "columns": [
+        "Rhythm",
+        "Shockable?"
+      ],
+      "rows": [
+        [
+          "Ventricular fibrillation (VF)",
+          "Yes"
+        ],
+        [
+          "Pulseless VT",
+          "Yes"
+        ],
+        [
+          "Pulseless electrical activity (PEA)",
+          "No"
+        ],
+        [
+          "Asystole",
+          "No"
+        ]
+      ],
+      "say": [
+        [
+          "fibrillation"
+        ],
+        [
+          "tachycardia"
+        ],
+        [
+          "Pulseless",
+          "electrical"
+        ],
+        [
+          "Asystole"
+        ]
+      ],
+      "notes": [
+        {
+          "say": [
+            "depolarises"
+          ],
+          "note": "A shock depolarises the myocardium at once"
+        },
+        {
+          "say": [
+            "Both"
+          ],
+          "note": "CPR and the search for reversible causes"
+        }
+      ]
+    },
+    {
+      "type": "scene",
+      "kicker": "Survival",
+      "narration": "Survival to hospital discharge after out-of-hospital arrest is approximately 10.5%. It is 21.1% in a public place and 8.9% at home. In hospital, survival is approximately 23.6% in adults and 45.2% in children. Arrests in public are more often witnessed and receive bystander cardiopulmonary resuscitation, and in-hospital arrests are usually witnessed with help close by. Yet only about 41% of adults with out-of-hospital arrest receive bystander cardiopulmonary resuscitation before emergency medical services arrive. Cardiopulmonary resuscitation given immediately can double or even triple the chance of survival.",
+      "layout": "halves",
+      "elements": [
+        {
+          "id": "surv",
+          "kind": "bars",
+          "unit": "%",
+          "items": [
+            {
+              "label": "Out-of-hospital",
+              "value": 10.5,
+              "display": "10.5%",
+              "say": [
+                "10.5%"
+              ]
+            },
+            {
+              "label": "Public place",
+              "value": 21.1,
+              "display": "21.1%",
+              "say": [
+                "21.1%"
+              ]
+            },
+            {
+              "label": "Home",
+              "value": 8.9,
+              "display": "8.9%",
+              "say": [
+                "8.9%"
+              ]
+            },
+            {
+              "label": "In-hospital adults",
+              "value": 23.6,
+              "display": "23.6%",
+              "say": [
+                "23.6%"
+              ]
+            },
+            {
+              "label": "In-hospital children",
+              "value": 45.2,
+              "display": "45.2%",
+              "say": [
+                "45.2%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "byst",
+          "kind": "stat",
+          "value": 41,
+          "of": 100,
+          "display": "41%",
+          "label": "Adults given bystander CPR before EMS arrives",
+          "tone": "blue",
+          "say": [
+            "41%"
+          ]
+        }
+      ],
+      "moves": [
+        {
+          "say": [
+            "witnessed"
+          ],
+          "note": "Public arrests: more often witnessed, bystander CPR"
+        },
+        {
+          "say": [
+            "close",
+            "by"
+          ],
+          "note": "In hospital: witnessed, help close by"
+        },
+        {
+          "say": [
+            "Yet"
+          ],
+          "reveal": "byst"
+        },
+        {
+          "say": [
+            "double"
+          ],
+          "note": "Immediate CPR: double or triple survival"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "kicker": "The chain",
+      "narration": "The 2025 guidelines present one Chain of Survival with six links. First, early recognition and emergency activation. Second, high-quality cardiopulmonary resuscitation. Third, defibrillation, which remains a cornerstone of cardiac arrest care. Fourth, advanced resuscitation. Fifth, post–cardiac arrest care. Sixth, recovery and survivorship. Previously there were four separate chains, adult and paediatric, in hospital and out of hospital. Now a unified chain serves adults and children. Its symbol now includes the lungs alongside chest compressions, because breathing matters, especially in children and in opioid-related arrest. The details of each link vary between settings, but the chain is the same.",
+      "mermaid": "flowchart LR\nA[Recognition and emergency activation]:::red --> B[High-quality CPR]:::red\nB --> C[Defibrillation]:::blue\nC --> D[Advanced resuscitation]:::blue\nD --> E[Post–cardiac arrest care]:::teal\nE --> F[Recovery and survivorship]:::green",
+      "notes": [
+        {
+          "say": [
+            "four",
+            "separate"
+          ],
+          "note": "2020: four separate chains"
+        },
+        {
+          "say": [
+            "unified"
+          ],
+          "note": "2025: one chain, adults and children"
+        },
+        {
+          "say": [
+            "lungs"
+          ],
+          "note": "CPR symbol now includes the lungs"
+        },
+        {
+          "say": [
+            "same"
+          ],
+          "note": "Details vary by setting; the chain is the same"
+        }
+      ]
+    },
+    {
+      "type": "scene",
+      "kicker": "Unchanged",
+      "narration": "Much does not change in 2025. The compression rate is still 100 to 120 per minute, and the ratio for single-rescuer adult cardiopulmonary resuscitation is still 30 to 2. The reversible causes and the overall shape of the algorithms still hold. Terminology does change. The term rescue breaths is no longer used. Breaths means assisted breathing, and ventilation is reserved for mechanical respiratory support.",
+      "layout": "halves",
+      "elements": [
+        {
+          "id": "same",
+          "kind": "stack",
+          "items": [
+            {
+              "label": "Rate: 100 to 120 a minute",
+              "say": [
+                "rate"
+              ]
+            },
+            {
+              "label": "Adult single rescuer: 30:2",
+              "say": [
+                "ratio"
+              ]
+            },
+            {
+              "label": "Reversible causes unchanged",
+              "say": [
+                "reversible"
+              ]
+            },
+            {
+              "label": "Algorithms keep their shape",
+              "say": [
+                "algorithms"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "terms",
+          "kind": "table",
+          "columns": [
+            "Term",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "Rescue breaths",
+              "No longer used"
+            ],
+            [
+              "Breaths",
+              "Assisted breathing"
+            ],
+            [
+              "Ventilation",
+              "Mechanical support"
+            ]
+          ],
+          "say": [
+            [
+              "rescue"
+            ],
+            [
+              "means"
+            ],
+            [
+              "ventilation"
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        {
+          "say": [
+            "Terminology"
+          ],
+          "reveal": "terms"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "kicker": "Take-aways",
+      "narration": "Cardiac arrest is an electrical failure, and the actions of the nearest person in the first three minutes matter more than everything done by everyone else afterwards. This is a knowledge course; it does not replace a hands-on basic life support or advanced cardiovascular life support provider course with manikin-based skills assessment.",
+      "art": "heartExterior",
+      "act": [
+        "rosc"
+      ],
+      "notes": [
+        {
+          "say": [
+            "electrical"
+          ],
+          "note": "Arrest is electrical; a heart attack is circulation"
+        },
+        {
+          "say": [
+            "three",
+            "minutes"
+          ],
+          "note": "The nearest person's first three minutes matter most"
+        },
+        {
+          "say": [
+            "knowledge",
+            "course"
+          ],
+          "note": "Knowledge course: no replacement for hands-on skills"
+        }
+      ]
+    }
+  ]
+}

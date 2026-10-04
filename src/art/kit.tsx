@@ -74,14 +74,15 @@ export const T: React.FC<{
 );
 
 /** An art at scale k: the SVG picture with its HTML text layer registered over it. */
-export const ArtView: React.FC<{art: ArtDef; ctx: ArtCtx; k: number; style?: React.CSSProperties}> = ({art, ctx, k, style}) => (
+/** `tourZoom`: the camera tours this art item by item at that zoom (its text is read close up, not at the overview). */
+export const ArtView: React.FC<{art: ArtDef; ctx: ArtCtx; k: number; style?: React.CSSProperties; tourZoom?: number}> = ({art, ctx, k, style, tourZoom}) => (
   <div style={{position: 'absolute', width: art.w * k, height: art.h * k, ...style}}>
     {/* an illustration never leaves its plate */}
     <svg width={art.w * k} height={art.h * k} viewBox={`0 0 ${art.w} ${art.h}`} style={{position: 'absolute', left: 0, top: 0, overflow: 'hidden'}}>
       <art.C {...ctx} />
     </svg>
     {art.Html ? (
-      <div data-art-text style={{position: 'absolute', left: 0, top: 0, width: art.w, height: art.h, overflow: 'hidden', transform: `scale(${k})`, transformOrigin: '0 0'}}>
+      <div data-art-text data-tour-zoom={tourZoom ?? 1} style={{position: 'absolute', left: 0, top: 0, width: art.w, height: art.h, overflow: 'hidden', transform: `scale(${k})`, transformOrigin: '0 0'}}>
         <art.Html {...ctx} />
       </div>
     ) : null}

@@ -39,7 +39,8 @@ function measure(root: Element): Hit[] {
     // too small to read: an art's text (chart nodes, table cells, figures) rendered under MIN_PX on the frame
     const layer = el.closest('[data-art-text]') as HTMLElement | null;
     if (layer && layer.offsetWidth) {
-      const px = parseFloat(getComputedStyle(el).fontSize) * (layer.getBoundingClientRect().width / layer.offsetWidth);
+      // a toured art is read close up: judge it at its tour zoom
+      const px = parseFloat(getComputedStyle(el).fontSize) * (layer.getBoundingClientRect().width / layer.offsetWidth) * Number(layer.dataset.tourZoom || 1);
       if (px < MIN_PX) {
         const r = el.getBoundingClientRect();
         hits.push({kind: 'tiny', px: Math.round(px), text: label(t), r: {x: r.x, y: r.y, w: r.width, h: r.height}});

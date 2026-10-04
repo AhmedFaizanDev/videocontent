@@ -228,11 +228,17 @@ step('3 units', () => {
     const {spec: fixed, fixes} = fixSpec(broken);
     assert.ok(fixes.some((f) => f.what === 'CPR → cardiopulmonary resuscitation') && fixes.some((f) => f.kind === 'say'), 'abbreviation expanded, unspoken cue dropped');
     assert.ok(!/\bCPR\b/.test(fixed.scenes[2].narration));
+    assert.deepEqual(fixSpec({scenes: [{narration: 'There were four separate chains.', notes: [{say: ['four separate'], note: 'x'}]}]}).spec.scenes[0].notes[0].say, ['four', 'separate'], 'phrase cues split');
+    assert.ok(syncProblems(compileScene({type: 'scene', kicker: 'k', narration: 'Survival is 10.5% overall.', elements: [{id: 'b', kind: 'bars', items: [{label: 'All', value: 10.5, say: fixSpec({scenes: [{narration: 'Survival is 10.5% overall.', notes: [{say: ['10.5%'], note: 'x'}]}]}).spec.scenes[0].notes[0].say}]}]})).length === 0, 'a percentage cue is heard');
+    const nb = compileScene({type: 'table', kicker: 'k', narration: 'Adults first. Children next. Survival differs by setting.', columns: ['G', 'S'], rows: [['Adults', '1'], ['Children', '2']], notes: [{note: 'Setting matters'}]});
+    assert.equal(syncProblems(nb).length, 0, 'a note without a cue derives one from its text');
     assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
     assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
     assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');
     const fb = simplify(broken.scenes[4]);
-    assert.equal(fb.type, 'table', 'a crowded composition falls back to its densest element');
+    assert.deepEqual(fb.elements.map((e: any) => e.kind), ['table'], 'a crowded composition falls back to its densest element');
+    assert.ok(fb.moves.some((m: any) => m.note?.startsWith('45.2%')), "the dropped statistic survives as a note");
+    assert.equal(simplify({type: 'scene', narration: 'x', elements: [{id: 'b', kind: 'bars', items: []}, {id: 's', kind: 'stat', value: 1}]}).elements[0].kind, 'bars', 'any element kind can stand alone');
     assert.equal(fb.narration, broken.scenes[4].narration, 'the fallback keeps the narration');
     assert.equal(categorize('❌ C01 layout: scene[4] (stage): text too small to read (19px < 22px'), 'tiny-text');
     assert.equal(categorize('❌ C01 timing: scene[2] (stage): ~9 s with nothing new on screen'), 'idle');

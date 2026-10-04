@@ -90,7 +90,7 @@ const cycle: ArtFactory = (data) => {
     return (
       <>
         {data.start ? (
-          <T x={tagC[0]} y={tagC[1]} size={22} family={fonts.mono} spacing="0.12em" color={ink.paperLight} o={tw(c.f, 20, 14)}>
+          <T x={tagC[0]} y={tagC[1]} size={30} family={fonts.mono} spacing="0.12em" color={ink.paperLight} o={tw(c.f, 20, 14)}>
             {String(data.start).toUpperCase()}
           </T>
         ) : null}
@@ -315,13 +315,17 @@ const hub: ArtFactory = (data) => {
 const stack: ArtFactory = (data) => {
   const items: Item[] = data.items;
   const n = items.length;
-  const W = 1680;
-  const H = 540;
+  const W = Math.max(800, data.width ?? 1680); // a composition lays it out at its slot's width
   const G = 14;
-  const bh = Math.min(96, (H - 30 - (n - 1) * G) / n);
+  const [X0, X1] = [220, W - 220];
+  // the label size that fits the longest label in its box (never under 34): long labels wrap and the boxes grow
+  const longest = Math.max(...items.map((it) => it.label.length), 1);
+  const size = Math.max(34, Math.min(50, (X1 - X0 - 68) / (longest * 0.56)));
+  const lines = Math.ceil((longest * 0.56 * size) / (X1 - X0 - 68));
+  const bh = Math.max(96, lines * size * 1.12 + 22);
+  const H = Math.max(540, n * bh + (n - 1) * G + 30);
   const y0 = (H - (n * bh + (n - 1) * G)) / 2;
   const y = (i: number) => y0 + i * (bh + G);
-  const [X0, X1] = [220, 1460];
   const C: React.FC<ArtCtx> = (c) => {
     const L = lights(c, n);
     return (
@@ -339,12 +343,11 @@ const stack: ArtFactory = (data) => {
   };
   const Html: React.FC<ArtCtx> = (c) => {
     const L = lights(c, n);
-    const size = Math.min(50, bh * 0.56);
     return (
       <>
         {items.map((it, i) => (
           <React.Fragment key={i}>
-            <T x={X0 - 60} y={y(i) + bh / 2} size={Math.min(26, bh * 0.32)} family={fonts.mono} weight={600} color={i === L.active ? ink.paperLight : INK} o={tw(c.f, 6 + i * 4, 12)}>
+            <T x={X0 - 60} y={y(i) + bh / 2} size={34} family={fonts.mono} weight={600} color={i === L.active ? ink.paperLight : INK} o={tw(c.f, 6 + i * 4, 12)}>
               {num(i)}
             </T>
             <div style={{position: 'absolute', left: X0 + 34, top: y(i), height: bh, width: X1 - X0 - 68, display: 'flex', alignItems: 'center', fontFamily: fonts.body, fontWeight: i === L.active ? 700 : 600, fontSize: size, lineHeight: 1.05, color: INK, opacity: tw(c.f, 6 + i * 4, 12)}}>
@@ -379,12 +382,12 @@ const image: ArtFactory = (data) => {
 const bars: ArtFactory = (data) => {
   const items: (Item & {value: number; display?: string; tone?: string})[] = data.items;
   const n = items.length;
-  const W = 1680;
+  const W = Math.max(800, data.width ?? 1680); // a composition lays it out at its slot's width
   const H = 560;
   const [TOP, BASE] = [96, 400];
   const max = data.max ?? Math.max(...items.map((i) => i.value)) * 1.08;
-  const bw = Math.min(200, (1440 - (n - 1) * 46) / n);
-  const xs = spread(n, 120 + bw / 2, 1560 - bw / 2);
+  const bw = Math.min(200, (W - 240 - (n - 1) * 46) / n);
+  const xs = spread(n, 120 + bw / 2, W - 120 - bw / 2);
   const hOf = (v: number) => (v / max) * (BASE - TOP);
   const unit = data.unit ? ` ${data.unit}` : '';
   const fillOf = (it: {tone?: string}) => (it.tone ? (TONES[it.tone] ?? TONES.ink).fill : ink.teal);
@@ -392,8 +395,8 @@ const bars: ArtFactory = (data) => {
     const L = lights(c, n);
     return (
       <g>
-        <path d={`M80 ${BASE} L1600 ${BASE}`} stroke={INK} strokeWidth={4} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw(c.f, 0, 30)} />
-        {data.ref ? <path d={`M80 ${BASE - hOf(data.ref.value)} L1600 ${BASE - hOf(data.ref.value)}`} stroke={ink.red} strokeWidth={3} strokeDasharray="12 10" opacity={tw(c.f, 24, 14)} /> : null}
+        <path d={`M80 ${BASE} L${W - 80} ${BASE}`} stroke={INK} strokeWidth={4} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw(c.f, 0, 30)} />
+        {data.ref ? <path d={`M80 ${BASE - hOf(data.ref.value)} L${W - 80} ${BASE - hOf(data.ref.value)}`} stroke={ink.red} strokeWidth={3} strokeDasharray="12 10" opacity={tw(c.f, 24, 14)} /> : null}
         {items.map((it, i) => {
           const g = L.beats[i] != null ? tw(c.f, L.beats[i]!, 30, E.out) : 0;
           const h = hOf(it.value) * g;
@@ -416,7 +419,7 @@ const bars: ArtFactory = (data) => {
       <>
         {data.ref ? (
           // a legend in the top corner away from the taller end bar, so it never sits on a bar or its value
-          <div style={{position: 'absolute', top: 8, ...(items[0].value >= items[n - 1].value ? {right: 1680 - 1600} : {left: 84}), display: 'flex', alignItems: 'center', gap: 10, fontFamily: fonts.label, fontWeight: 600, fontSize: 22, color: ink.red, opacity: tw(c.f, 30, 12)}}>
+          <div style={{position: 'absolute', top: 8, ...(items[0].value >= items[n - 1].value ? {right: 80} : {left: 84}), display: 'flex', alignItems: 'center', gap: 10, fontFamily: fonts.label, fontWeight: 600, fontSize: 22, color: ink.red, opacity: tw(c.f, 30, 12)}}>
             <span style={{width: 34, borderTop: `3px dashed ${ink.red}`}} />
             {data.ref.label}
           </div>
@@ -428,10 +431,10 @@ const bars: ArtFactory = (data) => {
           const shown = it.display ? it.display : `${Number.isInteger(it.value) ? Math.round(it.value * g) : (it.value * g).toFixed(1)}${unit}`;
           return (
             <React.Fragment key={i}>
-              <T x={xs[i]} y={BASE - hOf(it.value) * g - 16} align="bottom" size={Math.min(46, bw / 3.6)} family={fonts.mono} weight={600} color={on ? ink.orangeText : INK} o={clamp01(g * 3)}>
+              <T x={xs[i]} y={BASE - hOf(it.value) * g - 16} align="bottom" size={Math.min(46, Math.max(36, bw / 3.6))} family={fonts.mono} weight={600} color={on ? ink.orangeText : INK} o={clamp01(g * 3)}>
                 {shown}
               </T>
-              <T x={xs[i]} y={BASE + 18} align="top" maxWidth={bw + 40} size={Math.min(32, bw / 5.2)} weight={600} color={on ? ink.orangeText : INK} o={tw(c.f, 10 + i * 3, 12)}>
+              <T x={xs[i]} y={BASE + 18} align="top" maxWidth={bw + 40} size={Math.min(38, Math.max(34, bw / 5.2))} weight={600} color={on ? ink.orangeText : INK} o={tw(c.f, 10 + i * 3, 12)}>
                 {it.label}
               </T>
             </React.Fragment>
@@ -560,7 +563,7 @@ const trace: ArtFactory = (data) => {
           if (b == null || c.f < b) return null;
           const [x0, x1] = segX(i);
           return (
-            <T key={i} x={(x0 + x1) / 2} y={Math.min(peakY(i), BASEY) - 22} align="bottom" size={30} family={fonts.mono} weight={600} color={k === active ? ink.orangeText : INK} o={tw(c.f, b, 10)}>
+            <T key={i} x={(x0 + x1) / 2} y={Math.min(peakY(i), BASEY) - 22} align="bottom" size={34} family={fonts.mono} weight={600} color={k === active ? ink.orangeText : INK} o={tw(c.f, b, 10)}>
               {segs[i].label}
             </T>
           );

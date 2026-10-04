@@ -7,8 +7,8 @@
  *                 named it follow (the screen keeps the abbreviation)
  *   spelling      a variant → the approved spelling (narration and on-screen text)
  *   ratio         "30:2" in the narration → "30 to 2"
- *   say           a `say` cue none of whose words the scene speaks is dropped, so the compiler
- *                 derives the cue from the item's own label instead
+ *   say           a phrase cue is split into words; a cue none of whose words the scene speaks
+ *                 is dropped, so the compiler derives the cue from the item's own text instead
  */
 import {fullForms, spellings} from '../../src/dictionary.ts';
 import {normWord, wordMatches} from '../../src/sync.ts';
@@ -63,7 +63,11 @@ export function fixSpec(spec: any, lang: Lang = 'en', extraFull: Record<string, 
     if (typeof s?.narration !== 'string') return;
     const words = spoken(s.narration).split(/\s+/).map(normWord).filter(Boolean);
     const heard = (say: string[]) => say.some((w) => words.some((x) => wordMatches(x, [normWord(w)])));
-    walkSay(s, (say) => {
+    walkSay(s, (say0) => {
+      // a phrase in one cue ("four separate") can never match a single spoken word: split it
+      // …and a cue is matched as spoken ("10.5%" is heard as "10.5 percent")
+      const say = say0.flatMap((w) => spoken(w.trim()).split(/\s+/).filter((x) => normWord(x)));
+      if (say.join(' ') !== say0.join(' ')) fixes.push({kind: 'say', scene: i, what: `normalised cue "${say0.join(' | ')}"`});
       if (heard(say)) return say;
       fixes.push({kind: 'say', scene: i, what: `dropped unspoken cue "${say.join(' ')}"`});
       return null;

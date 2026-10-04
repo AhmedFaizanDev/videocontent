@@ -7,8 +7,8 @@
  *                                                          module PDF; no model call). Edit to split/merge.
  *   node scripts/batch.mts <project> write [ids…]          write missing scripts — one call each
  *   node scripts/batch.mts <project> check [ids…]          validate + preflight (no audio, no render);
- *                                                          failures: deterministic fixers → up to 3
- *                                                          escalating repairs → fallback treatment
+ *                                                          failures: deterministic fixers → fallback
+ *                                                          treatment → up to 3 escalating repairs
  *   node scripts/batch.mts <project> produce [ids…]        voice → render → QA for every clean script
  *   node scripts/batch.mts <project> translate <lang> [ids…]   native-language copies into <project>-<lang>
  *   node scripts/batch.mts <project> all                   plan → write → check → produce
@@ -208,7 +208,26 @@ function check(ids: string[]) {
         g = gate(v.id);
       }
     }
-    // 2 escalating repairs: the script with its errors → again, rethinking → only the failing scenes
+    // 2 fallback (deterministic, zero tokens, same narration): a composition failing on layout
+    // or legibility is re-expressed as its densest element full screen
+    if (!g.ok) {
+      const spec = readJSON(v.id);
+      // only what a simpler screen can cure: layout, legibility, element errors
+      const curable = g.errs.filter((e) => ['tiny-text', 'overflow', 'collision', 'layout', 'schema'].includes(categorize(e)));
+      fallback = failingScenes(curable, spec).filter((i) => spec.scenes[i]?.type === 'scene');
+      if (fallback.length) {
+        save(v.id, {...spec, scenes: spec.scenes.map((s: any, i: number) => (fallback.includes(i) ? simplify(s) : s))});
+        const g2 = gate(v.id);
+        // kept only if it helps: no new kind of error, fewer errors
+        const was = new Set(g.errs.map(categorize));
+        if (g2.errs.length < g.errs.length && g2.errs.every((e) => was.has(categorize(e)))) g = g2;
+        else {
+          save(v.id, spec);
+          fallback = [];
+        }
+      }
+    }
+    // 3 escalating repairs: the script with its errors → again, rethinking → only the failing scenes
     const {system} = writerPrompt(v);
     while (!g.ok && repairs < 3 && !OFFLINE) {
       repairs++;
@@ -228,17 +247,6 @@ function check(ids: string[]) {
       }
       save(v.id, fixSpec(out, cfg.lang, cfg.fullForms ?? {}).spec);
       g = gate(v.id);
-    }
-    // 3 fallback: the failing compositions in their safest treatment (deterministic, same narration)
-    if (!g.ok && !pending) {
-      const spec = readJSON(v.id);
-      // only what a simpler screen can cure: layout, legibility, idle stretches, element errors
-      const curable = g.errs.filter((e) => ['tiny-text', 'overflow', 'collision', 'layout', 'idle', 'schema', 'variety'].includes(categorize(e)));
-      fallback = failingScenes(curable, spec).filter((i) => spec.scenes[i]?.type === 'scene');
-      if (fallback.length) {
-        save(v.id, {...spec, scenes: spec.scenes.map((s: any, i: number) => (fallback.includes(i) ? simplify(s) : s))});
-        g = gate(v.id);
-      }
     }
     if (!pending)
       recordStage(project, v.id, 'check', {seconds: Math.round((Date.now() - t0) / 1000), firstPass, ok: g.ok, categories, fixes, repairs, fallback, remaining: g.ok ? [] : [...new Set(g.errs.map(categorize))]});
