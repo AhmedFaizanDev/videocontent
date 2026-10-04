@@ -211,9 +211,7 @@ step('3 units', () => {
       {type: 'summary'},
     ]);
     assert.deepEqual(d.map((x: any) => x.mirror), [true, true, false, undefined], 'same illustration keeps its side; a new subject swaps');
-    assert.deepEqual(d.map((x: any) => x.transition), [undefined, 'pan', undefined, 'zoomout']);
-    assert.deepEqual(d.map((x: any) => x.drift), [1, -1, 1, -1]);
-    assert.equal(direct([{type: 'flow', transition: 'cut'}, {type: 'flow', transition: 'cut'}])[1].transition, 'cut', 'the author wins');
+    assert.deepEqual(d.map((x: any) => x.transition), [undefined, undefined, undefined, undefined], 'transitions stay the reference engine\'s');
     // the variety gate
     const same = Array.from({length: 6}, () => ({type: 'table'}));
     const v = varietyProblems(same);

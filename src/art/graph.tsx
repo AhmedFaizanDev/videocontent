@@ -317,11 +317,9 @@ const graph: ArtFactory = (raw: GData) => {
           const o = tw(c.f, t0, 8, E.out);
           const b = box[i];
           if (o <= 0) {
-            // the map ahead: a node still to be explained shows as a faint dashed ghost — laid out one
-            // by one (the structure is introduced while the narration sets the scene), its dashes
-            // slowly marching (waiting to be explained), so an opening on the map is never a still frame
-            const g = 0.3 * tw(c.f, 4 + 9 * i, 22);
-            return Number.isFinite(t0) || steps.length ? <path key={n.id} d={rect(b.x - b.w / 2, b.y - b.h / 2, b.w, b.h, 8)} fill="none" stroke={INK} strokeWidth={2} strokeDasharray="7 6" strokeDashoffset={-c.f * 0.45} opacity={g} /> : null;
+            // the map ahead: a node still to be explained shows as a faint dashed ghost, drawing on
+            const g = 0.22 * tw(c.f, 4 + 3 * i, 20);
+            return Number.isFinite(t0) || steps.length ? <path key={n.id} d={rect(b.x - b.w / 2, b.y - b.h / 2, b.w, b.h, 8)} fill="none" stroke={INK} strokeWidth={2} strokeDasharray="7 6" opacity={g} /> : null;
           }
           const focus = F?.focus === n.id;
           const ripple = focus ? tw(c.f, focusAt, 26, E.out) : 1;

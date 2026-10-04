@@ -38,12 +38,8 @@ export function direct(scenes: any[]): any[] {
       if (!(art && art === prevArt)) side = !side;
       out.mirror = side;
     }
-    if (!out.transition && prev && s.type !== 'opener' && s.type !== 'stage' && prev.type !== 'stage') {
-      if (s.type === 'summary') out.transition = 'zoomout';
-      else if (art && art === prevArt) out.transition = kindsOf(s).length < kindsOf(prev).length ? 'portal' : 'pan';
-      else if (kindsOf(prev).join() === kindsOf(s).join()) out.transition = 'slide';
-    }
-    if (out.drift === undefined) out.drift = k % 2 ? -1 : 1;
+    // transitions and camera drift stay the reference engine's own (src/schedule.ts planTransitions,
+    // stage drift): overriding them was never validated against the reference lessons (audit 2026-10-04)
     k++;
     prev = s;
     return out;

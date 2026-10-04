@@ -248,7 +248,10 @@ const breathe = (words: string[], beats: any[], items: {target: string; text: st
       extra.push({say: [words[j]], _pos: j, pulse: target ?? lead});
       continue;
     }
-    extra.push({say: [words[j]], _pos: j, camera: zoomed && zoomed !== 'overview' ? 'overview' : target ? {on: target, zoom: 1.2} : 'overview'});
+    const cam = zoomed && zoomed !== 'overview' ? 'overview' : target ? {on: target, zoom: 1.2} : null;
+    // a pull-back while already at the overview changes nothing — never fake movement
+    if (!cam) break;
+    extra.push({say: [words[j]], _pos: j, camera: cam});
   }
   return extra;
 };
@@ -548,7 +551,9 @@ const RECIPES = new Set(['flow', 'table', 'opener', 'explain', 'summary']);
 /** Recipe scenes breathe too: long still stretches get a camera move toward what is being said. */
 const breathed = (st: any): any => {
   const layer = st.world?.layers?.[0]?.id;
-  if (!layer) return st;
+  // a scene with its own camera choreography (a tour, authored moves) is never re-choreographed —
+  // the reference lessons' tours and pull-backs stay exactly as designed
+  if (!layer || st.beats.some((b: any) => b.camera)) return st;
   const words = spoken(st.narration ?? '').split(/\s+/).map(normWord).filter(Boolean);
   const items = st.beats
     .map((b: any) => ({target: b.label ? (Array.isArray(b.label) ? b.label[0].on : b.label.on) : typeof b.act === 'string' && /\.(r\d+|[A-Z]\w*)$/.test(b.act) ? b.act : '', text: b.label ? [b.label].flat()[0].text : b.note ?? '', at: b._pos ?? -1}))
@@ -556,7 +561,10 @@ const breathed = (st: any): any => {
   // an empty chart/table is not brought to life by moving the camera over it: no opening breath there
   const dataOnly = ['graph', 'table'].includes(st.world.layers[0].art);
   const first = Math.min(...st.beats.filter((b: any) => b.act || b.label || b.note).map((b: any) => b._pos ?? Infinity));
-  const extra = breathe(words, st.beats, items, layer).filter((b) => !dataOnly || b._pos > first);
+  // only stillness the 7 s gate would reject (≈ 96 spoken characters): a scene that already passes is left as designed
+  const kept = breathe(words, st.beats, items, layer, 96).filter((b) => !dataOnly || b._pos > first);
+  // a pull-back whose push-in was dropped would be a no-op: drop it too
+  const extra = kept.filter((b) => b.camera !== 'overview' || [...st.beats, ...kept].filter((x) => x._pos < b._pos && x.camera).sort((x, y) => x._pos - y._pos).pop()?.camera?.on);
   return {...st, beats: byPosition(words, [...st.beats, ...extra])};
 };
 export const compileScene = (s: any): any => {
