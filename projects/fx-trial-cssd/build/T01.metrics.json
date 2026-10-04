@@ -1,0 +1,13 @@
+{
+  "project": "fx-trial-cssd",
+  "id": "T01",
+  "stages": {
+    "preflight": {
+      "seconds": 0.1,
+      "batch": 1,
+      "errors": 1,
+      "at": "2026-10-04T06:59:16.286Z"
+    }
+  },
+  "authoring": []
+}

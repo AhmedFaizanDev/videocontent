@@ -15,6 +15,25 @@ rendering on this Mac overnight.
 | re-renders | after late fixes | correctness found after render | gates moved upstream; a script reaches render only when proven |
 | render time | 5–8 min per 5-min video | fanless MacBook Air: bursts ~45–50 fps, sustained ~22–25 fps (thermal) | unchanged by design — 100 videos ≈ 11 h/week overnight; the lever is never re-rendering |
 
+## Architecture v6 (2026-10-04): playbooks — creative capital built once
+Diagnosis (measured, docs in git history): the reference lesson (ms-bls-29 M01, hand-authored) and
+the v5 bulk lesson used the same components; the gap was authoring judgement — 7 labels on the
+anatomy vs 1, 11 text bars vs 22, a decision drawn as a flowchart vs a table, one illustration
+evolving through the story vs short cuts. So the reusable asset is the *choreography*, not more
+animation code:
+- **Playbooks** (src/playbooks.ts): Opus-authored teaching sequences per asset (heart.beat,
+  heart.failure, heart.compressions, heart.recovery, heart.anatomy — extracted from the reference)
+  and generic data intents (flow.decision, flow.chain, flow.cause, table.compare, table.scale,
+  table.update). A `play` scene names one; Sonnet writes narration through its moments (hint
+  words or `cues`); anatomy labels and states are correct by construction.
+- **Reference as worked example**: docs/EXEMPLAR_M01.json (the reference in playbook form, a
+  fixture in projects/fx-plays that must pass every gate) is in every writer and editor prompt.
+- **Taste gate** (`rules.taste`, calibrated so the reference passes): ≤ 1 text bar per ~55 words;
+  every illustration scene performs ≥ 2 changes. The variety gate no longer demands compositions
+  (that quota pushed the v5 writer away from the reference's structure).
+- **Per video: Sonnet only** (owner 2026-10-04). Opus adds playbooks when a subject's asset is
+  imported — once per subject, on demand, not a speculative library.
+
 ## Architecture v5 (2026-10-04): compositions, a director, self-healing
 - **Compositions, not templates** (`type: "scene"`, src/compile.ts): 1–3 elements on one screen —
   illustration, flowchart, table, `stat` (count-up figure + icon array), bars, timeline, cycle,

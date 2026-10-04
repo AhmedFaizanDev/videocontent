@@ -1,0 +1,24 @@
+{
+  "project": "fx-trial-heart",
+  "id": "T01",
+  "stages": {
+    "preflight": {
+      "seconds": 5.2,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-04T06:59:15.927Z"
+    },
+    "check": {
+      "seconds": 5,
+      "firstPass": true,
+      "ok": true,
+      "categories": [],
+      "fixes": [],
+      "repairs": 0,
+      "fallback": [],
+      "remaining": [],
+      "at": "2026-10-04T06:59:15.946Z"
+    }
+  },
+  "authoring": []
+}

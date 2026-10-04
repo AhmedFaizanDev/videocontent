@@ -73,6 +73,41 @@ export const ART_PLAYS: ArtPlay[] = [
     moments: [{slot: 'rosc', hint: ['return', 'restarts', 'restored', 'summarise', 'recovery', 'own'], beat: {act: 'rosc'}}],
   },
   {
+    id: 'heart.conduction',
+    art: 'heartExterior',
+    teaches: "the heart's electrical conduction: the sinoatrial node fires, the atria contract, the atrioventricular node delays, the impulse runs down the septum to the Purkinje fibres and the ventricles contract",
+    moments: [
+      {slot: 'sa', hint: ['sinoatrial', 'pacemaker', 'fires'], beat: {act: 'conduction', camera: {on: 'sa', zoom: 1.6}, label: L('sa', 'Sinoatrial node')}},
+      {slot: 'atria', hint: ['atria', 'atrium'], beat: {act: 'atria'}, optional: true},
+      {slot: 'av', hint: ['atrioventricular', 'delay', 'pause'], beat: {camera: {on: 'av', zoom: 1.6}, label: L('av', 'Atrioventricular node')}},
+      {slot: 'bundle', hint: ['bundle', 'septum', 'branches'], beat: {camera: {on: 'septum', zoom: 1.4}, label: L('septum', 'Bundle branches')}, optional: true},
+      {slot: 'purkinje', hint: ['purkinje', 'fibres', 'apex'], beat: {label: L('purkinje', 'Purkinje fibres')}, optional: true},
+      {slot: 'ventricles', hint: ['ventricles', 'contract', 'together'], beat: {act: ['conduction', 'ventricles'], camera: 'overview'}},
+    ],
+  },
+  {
+    id: 'heart.cycle',
+    art: 'heartExterior',
+    teaches: 'one cardiac cycle: the atria contract and fill the ventricles, the ventricles contract and eject into the aorta and pulmonary trunk, then the heart relaxes and refills',
+    moments: [
+      {slot: 'atria', hint: ['atria', 'atrial', 'atrium'], beat: {act: 'atria', label: [L('ra', 'Right atrium'), L('la', 'Left atrium')]}},
+      {slot: 'ventricles', hint: ['ventricles', 'ventricular', 'systole'], beat: {act: 'ventricles', label: [L('rv', 'Right ventricle'), L('lv', 'Left ventricle')]}},
+      {slot: 'eject', hint: ['eject', 'ejected', 'aorta', 'pumped'], beat: {label: [L('aorta', 'Aorta'), L('pulmonary', 'Pulmonary trunk')], camera: {on: 'aorta', zoom: 1.3}}},
+      {slot: 'relax', hint: ['relax', 'relaxes', 'diastole', 'refill', 'fill'], beat: {camera: 'overview'}, optional: true},
+    ],
+  },
+  {
+    id: 'heart.coronary',
+    art: 'heartExterior',
+    teaches: "the heart's own blood supply: the coronary arteries on its surface feed the muscle; a blocked artery starves the muscle it supplies (ischaemia, then infarction)",
+    moments: [
+      {slot: 'arteries', hint: ['coronary', 'arteries', 'supply'], beat: {label: [L('rca', 'Right coronary artery'), L('lad', 'Left anterior descending')], camera: {on: 'lad', zoom: 1.3}}},
+      {slot: 'block', hint: ['blocked', 'blockage', 'block', 'occluded'], beat: {label: L('lad', 'Blocked'), pulse: 'lad'}},
+      {slot: 'muscle', hint: ['muscle', 'starved', 'ischaemia', 'ischaemic', 'infarction'], beat: {act: 'lvRegion', camera: {on: 'lv', zoom: 1.3}}},
+      {slot: 'whole', hint: ['arrest', 'rhythm', 'whole', 'pump'], beat: {camera: 'overview'}, optional: true},
+    ],
+  },
+  {
     id: 'heart.anatomy',
     art: 'heartExterior',
     teaches: 'the heart part by part: chambers and great vessels named on the picture as they are explained',

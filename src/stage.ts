@@ -223,7 +223,8 @@ export const stageProblems = (s: StageSpec, art: (name: string, data: any) => st
   const w = s?.world;
   if (!w || typeof w.w !== 'number' || typeof w.h !== 'number' || w.w < 400 || w.h < 300 || w.w > 12000 || w.h > 8000) return ['world needs w (400–12000) and h (300–8000)'];
   const layers: Layer[] = Array.isArray(w.layers) ? w.layers : [];
-  if (layers.length < 1 || layers.length > 18) out.push(`world needs 1–18 layers (has ${layers.length})`);
+  // a title card (an opener with no illustration) may be words alone
+  if ((layers.length < 1 && !(s.beats ?? []).some((b: Beat) => b.title)) || layers.length > 18) out.push(`world needs 1–18 layers (has ${layers.length})`);
   const anchorsOf = new Map<string, Set<string>>();
   layers.forEach((l, i) => {
     if (typeof l?.id !== 'string' || !/^[a-z][\w-]*$/i.test(l.id)) return void out.push(`layers[${i}].id must be a word`);

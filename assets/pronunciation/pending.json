@@ -3,7 +3,8 @@
     "coordination": {
       "projects": [
         "fx-compose",
-        "ms-bls-29"
+        "ms-bls-29",
+        "fx-plays"
       ],
       "first": "2026-10-03"
     },
@@ -71,7 +72,8 @@
     "opioid-related": {
       "projects": [
         "ms-bls-29-v5",
-        "ms-bls-29"
+        "ms-bls-29",
+        "fx-plays"
       ],
       "first": "2026-10-04"
     },
@@ -83,7 +85,20 @@
     },
     "Defibrillation": {
       "projects": [
-        "ms-bls-29"
+        "ms-bls-29",
+        "fx-plays"
+      ],
+      "first": "2026-10-04"
+    },
+    "isovolumetric": {
+      "projects": [
+        "fx-trial-heart"
+      ],
+      "first": "2026-10-04"
+    },
+    "multiplied": {
+      "projects": [
+        "fx-trial-heart"
       ],
       "first": "2026-10-04"
     }

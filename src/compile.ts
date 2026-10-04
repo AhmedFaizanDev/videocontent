@@ -175,7 +175,7 @@ function shorthand(s: any): any {
           if (last) last.camera = 'overview';
           return all;
         }
-        return [...all, {say: [words[words.length - 1]], camera: 'overview'}];
+        return [...all, {say: [words[words.length - 1]], _pos: words.length - 1, camera: 'overview'}];
       })(),
     };
   }
@@ -326,6 +326,11 @@ function compileRecipe(s: any): any {
     return artStage(s, byPosition(words, [...beats, ...echoes]));
   }
   if (s.type === 'summary') {
+    // no illustration: the take-aways are the picture — a list that lights each one as it is said
+    if (!s.art && (s.notes ?? []).length >= 2) {
+      const notes: any[] = s.notes;
+      return composition({type: 'scene', kicker: s.kicker, narration: s.narration, transition: s.transition, elements: [{id: 'points', kind: 'stack', items: notes.map((n) => ({label: n.note.slice(0, 30), say: n.say}))}]});
+    }
     const beats: any[] = noteBeats(words, s.notes ?? []);
     if (s.act && s.art) beats.unshift({say: [words[0]], _pos: 0, act: asList(s.act).map((a: string) => `art.${a}`)});
     return artStage(s, byPosition(words, beats));

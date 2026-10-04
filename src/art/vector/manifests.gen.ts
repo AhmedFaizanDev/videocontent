@@ -5,7 +5,7 @@ export const VECTOR_MANIFESTS: Record<string, any> = {
   "source": "https://bioart.niaid.nih.gov/bioart/228",
   "licence": "Public Domain",
   "credit": "Heart illustration: NIAID NIH BioArt Source (bioart.niaid.nih.gov/bioart/228), Ryan Kissinger",
-  "doc": "Professional illustration of the heart in anterior view (NIH BioArt, public domain): ventricles with coronary arteries and veins, right atrium, left auricle, aorta and arch branches, superior and inferior venae cavae, pulmonary trunk and vessels. Beats in sinus rhythm by default (atria, then ventricles) with blood leaving through the aorta and pulmonary trunk. anchors: aorta svc ivc pulmonary ra la rv lv apex lad rca · events (latest wins): vf (ventricles quiver, no output) stop (motionless, dusky) compress (squeezed ~110/min, blood pushed out) rosc (sinus beat and output return) atria ventricles (that layer picked out), conduction (an impulse runs from the sinoatrial node through the atrioventricular node down the septum), rvRegion lvRegion (that ventricle's surface picked out in gold). data {state?: vf|stop|compress|rosc}",
+  "doc": "Professional illustration of the heart in anterior view (NIH BioArt, public domain): ventricles with coronary arteries and veins, right atrium, left auricle, aorta and arch branches, superior and inferior venae cavae, pulmonary trunk and vessels. Beats in sinus rhythm by default (atria, then ventricles) with blood leaving through the aorta and pulmonary trunk. anchors: aorta svc ivc pulmonary ra la rv lv apex lad rca sa av septum purkinje · events (latest wins): vf (ventricles quiver, no output) stop (motionless, dusky) compress (squeezed ~110/min, blood pushed out) rosc (sinus beat and output return) atria ventricles (that layer picked out), conduction (an impulse runs from the sinoatrial node through the atrioventricular node down the septum), rvRegion lvRegion (that ventricle's surface picked out in gold). data {state?: vf|stop|compress|rosc}",
   "layers": [
    {
     "id": "ivc",
@@ -135,6 +135,22 @@ export const VECTOR_MANIFESTS: Record<string, any> = {
    "rca": [
     80,
     250
+   ],
+   "sa": [
+    60,
+    150
+   ],
+   "av": [
+    115,
+    232
+   ],
+   "septum": [
+    168,
+    305
+   ],
+   "purkinje": [
+    222,
+    378
    ]
   },
   "flows": [

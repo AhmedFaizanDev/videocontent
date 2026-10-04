@@ -1,0 +1,907 @@
+MS-CSSD-15
+CSSD and Sterilization Practices
+
+MODULE 10
+
+Flexible Endoscope
+Reprocessing
+Semi-critical, heat-labile, mechanically complex, and the source of the most
+serious documented outbreaks.
+
+Learning hours
+
+90 minutes
+
+Who this module is for
+
+Endoscopy nursing and technicians, CSSD staff, infection control
+
+Assessment
+
+Knowledge check plus an endoscope reprocessing observation
+
+Standards basis
+
+NABH 6th Edition IPC chapter; recognised endoscope reprocessing standards
+and manufacturer instructions
+
+This module is one part of a certified course. Content is current as at August 2026; verify against the latest WHO, JCI and
+NABH publications and your own hospital policy before relying on it for a compliance decision.
+
+Module 10 — Flexible Endoscope Reprocessing
+Flexible endoscopes combine every difficulty in reprocessing: they are heat-labile so cannot
+be steam sterilised, they are mechanically complex with multiple narrow channels, they are
+heavily soiled in use, and they are expensive enough that hospitals own few and turn them
+round fast. They have caused several of the most serious documented reprocessing
+outbreaks.
+
+What this module will enable you to do
+•
+
+Describe the full reprocessing sequence and the purpose of each step.
+
+•
+
+Explain why bedside pre-cleaning and leak testing cannot be omitted.
+
+•
+
+Describe manual cleaning including channel brushing, and why it is irreplaceable.
+
+•
+
+Explain the specific risk of the duodenoscope elevator mechanism.
+
+•
+
+Describe drying and storage and why they matter.
+
+•
+
+State the traceability and surveillance requirements for endoscopes.
+
+10.1 Why endoscopes are different
+•
+
+Heat-labile: cannot be steam sterilised, so high-level disinfection is the usual process, which has a
+smaller margin than sterilisation.
+
+•
+
+Multiple narrow channels of different diameters, some of which are difficult to access and some
+of which are easy to forget.
+
+•
+
+Heavily contaminated in use with organic material and a high bacterial load.
+
+•
+
+Biofilm forms readily in channels, and once established it resists chemical disinfection entirely.
+
+•
+
+Expensive, so hospitals own few and there is constant pressure on turnaround time.
+
+•
+
+Fragile, so damage is common and a damaged scope admits fluid into the interior where it cannot
+be cleaned.
+
+•
+
+Complex and model-specific: two scopes that look similar may have different channels,
+connectors and instructions.
+
+10.2 The sequence
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+Figure 10.1 — The reprocessing sequence.
+
+Bedside pre-clean
+Immediately after the procedure, before the scope leaves the room. Wipe the insertion tube and
+suction or flush the channels with the agreed solution. Organic material begins to dry and to form
+biofilm within minutes, and once it has, no subsequent step reliably removes it. This is the step
+performed by the busiest person at the busiest moment and it is the one most often abbreviated.
+
+Leak test
+Before immersion, every time, without exception
+A scope with a breach in its outer sheath or an internal channel that is immersed will admit fluid
+into its interior, where it cannot be cleaned or disinfected and where organisms will multiply. The
+scope is then contaminated internally and irreparably for reprocessing purposes, and it will be used
+on patients until the damage is found by other means. The leak test takes a minute and is skipped
+when the list is running late.
+
+Manual cleaning
+1
+
+Fully immerse in the correct detergent at the correct dilution and temperature.
+
+2
+
+Wipe the exterior and the insertion tube.
+
+3
+
+Brush every channel to the manufacturer's instructions for that specific model, with a brush of
+the correct diameter and length, until the brush emerges visibly clean. Repeat until it does.
+
+4
+
+Brush the ports, valves, elevator recess and any other accessible cavity.
+
+5
+
+Flush all channels with detergent, then with water, using the connectors specified for that model.
+
+6
+
+Remove, clean and disinfect or replace all removable parts — valves, buttons, caps — which are
+frequently forgotten.
+
+7
+
+Inspect for damage and for residual soil before proceeding.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+2
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+Brushing is the only step that removes biofilm
+Chemical disinfection does not penetrate an established biofilm. Soaking does not remove it.
+Flushing does not remove it. Only mechanical action with a brush that physically contacts the
+channel wall disrupts it. This is why brushing is specified per channel, why brush diameter matters,
+and why omitting it has repeatedly caused outbreaks.
+
+High-level disinfection
+•
+
+Usually in an automated endoscope reprocessor with validated cycles, which provides a recorded,
+repeatable process.
+
+•
+
+All channels connected to the correct connectors for that model; a channel not connected is not
+perfused and is not disinfected.
+
+•
+
+The agent at the correct concentration, temperature and contact time; minimum effective
+concentration tested per protocol and the solution discarded at expiry regardless of test result.
+
+•
+
+Manual high-level disinfection, where used, requires the same rigour and full immersion with all
+channels filled.
+
+•
+
+Do not overload the reprocessor or process a scope alongside one it is not validated to be processed
+with.
+
+Rinse, dry and store
+•
+
+Rinse with water of defined quality; residual disinfectant causes chemical colitis and mucosal injury.
+
+•
+
+Dry with an alcohol flush where protocol specifies, followed by forced air through every channel.
+Residual moisture allows waterborne organisms, particularly Pseudomonas, to multiply between
+uses.
+
+•
+
+Store hanging vertically, uncoiled, with valves removed, in a controlled drying and storage cabinet.
+
+•
+
+A defined maximum storage interval before reprocessing is required, per protocol.
+
+•
+
+Transport between reprocessing and use in a manner that does not recontaminate.
+
+10.3 Where it fails
+
+Figure 10.2 — The documented failure points.
+
+Each of these has been identified in a published outbreak investigation. None is exotic.
+1
+
+Delayed bedside pre-clean, allowing material to dry and biofilm to establish.
+
+2
+
+Leak test omitted, and a damaged scope immersed.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+3
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+3
+
+Channels not brushed, or brushed with the wrong brush.
+
+4
+
+Wrong connectors used in the reprocessor, so a channel is not perfused.
+
+5
+
+Elevator mechanism not cleaned — the duodenoscope elevator is a documented outbreak site
+with a recess that is extremely difficult to clean and requires specific attention.
+
+6
+
+Inadequate drying, allowing organisms to multiply in residual moisture.
+
+7
+
+Coiled storage, retaining fluid in channels.
+
+8
+
+Contaminated rinse water, recontaminating the scope at the final step.
+
+9
+
+Manufacturer instructions not followed, a generic process applied to a model-specific device.
+
+10 No traceability, so transmission cannot be investigated or contained.
+
+The duodenoscope elevator
+Duodenoscopes have an elevator mechanism at the distal tip which directs accessories. Its recess is
+narrow, mechanically complex and extremely difficult to clean, and it has been implicated in multiple
+international outbreaks of multidrug-resistant organisms in patients who had no other common
+exposure. Where your hospital uses duodenoscopes, the manufacturer's specific instructions for the
+elevator must be followed exactly, and any additional measures the manufacturer or your infection
+control team specify must be in place.
+
+10.4 Surveillance and traceability
+•
+
+Traceability linking scope to patient to reprocessing cycle to operator, for every procedure. Where
+a transmission is suspected, this is the only means of investigation.
+
+•
+
+Microbiological surveillance of scopes at defined intervals per protocol, with defined actions on a
+positive result including quarantine and reprocessing.
+
+•
+
+Reprocessor validation and periodic testing, including water quality at the final rinse.
+
+•
+
+Records of every reprocessing cycle, with the scope identity, cycle result and operator.
+
+•
+
+Damage and repair log, since a scope returning from repair must be reprocessed before use and
+repair history is relevant to investigation.
+
+•
+
+A defined response to a suspected transmission: quarantine the scope, review records, involve
+infection control and microbiology, and consider patient notification.
+
+10.5 Staffing and pressure
+Endoscope reprocessing is performed under sustained time pressure because scopes are expensive,
+lists are long and turnaround determines throughput. That pressure is the underlying cause of most of
+the failures above, and it is not resolved by reminding technicians to be thorough.
+•
+
+Adequate scope inventory for the list volume, so that reprocessing is not on the critical path for
+every case.
+
+•
+
+Adequate reprocessing capacity and staffing, so that the cycle is not shortened to meet the list.
+
+•
+
+Trained and competency-assessed staff, with training specific to each scope model in use.
+
+•
+
+A defined right to hold a scope back from use where reprocessing was not completed properly,
+supported by named management.
+
+•
+
+Records of reprocessing time and of any deviation, so that the pressure is visible rather than
+absorbed.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+4
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+Where the pressure lands
+When a list is running late and one scope is available, the person who decides whether the brushing
+step was adequate is a technician under direct pressure from a room full of waiting staff. That
+decision should not rest on individual courage. It requires written policy, adequate inventory and
+visible management backing, and where those are absent the shortcuts will happen whatever the
+training says.
+
+10.6 Setting up an endoscopy reprocessing service
+1
+
+Dedicated space with separation of dirty and clean, and ventilation appropriate to the chemicals
+used.
+
+2
+
+Adequate reprocessor capacity for the list volume, with a contingency when one machine is
+down.
+
+3
+
+Scope inventory sufficient that reprocessing is not on the critical path for every case.
+
+4
+
+Drying and storage cabinets of adequate capacity, since storage is part of the process.
+
+5
+
+Model-specific connectors, brushes and adapters for every scope in the inventory, with
+spares.
+
+6
+
+Manufacturer instructions for every scope model, accessible at the point of work.
+
+7
+
+Trained and competency-assessed staff, with training specific to each model, and enough of
+them to cover leave and sickness.
+
+8
+
+Water treatment for the final rinse, monitored and tested.
+
+9
+
+Traceability system linking scope, patient, cycle and operator.
+
+10 Microbiological surveillance programme with defined frequency and defined actions on a
+
+positive result.
+
+10.7 Responding to a suspected transmission
+1
+
+Quarantine the implicated scope immediately; do not reprocess it, since reprocessing destroys
+evidence.
+
+2
+
+Notify infection control and microbiology without delay.
+
+3
+
+Retrieve the traceability records: which patients were exposed to that scope, in what order, and
+what the reprocessing record shows for each episode.
+
+4
+
+Review reprocessing practice and records for the period, including reprocessor cycle records and
+any deviation.
+
+5
+
+Sample the scope and the reprocessor per microbiology advice, guided by a hypothesis rather than
+broadly.
+
+6
+
+Review the scope's damage and repair history.
+
+7
+
+Consider patient notification and screening, under the hospital's incident and disclosure policy and
+with senior clinical input.
+
+8
+
+Report externally where required.
+
+9
+
+Write it up, including what the records could and could not establish, since the latter is usually the
+most useful finding.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+5
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+Do not reprocess the scope
+The instinct on suspecting a problem is to clean the scope thoroughly. That destroys the evidence
+that would establish whether it was contaminated and with what. Quarantine it untouched, secure
+it, and let microbiology and infection control direct what happens next.
+
+10.6 Setting up an endoscopy reprocessing service
+1
+
+Dedicated space with separation of dirty and clean, and ventilation appropriate to the chemicals
+used.
+
+2
+
+Adequate reprocessor capacity for the list volume, with a contingency when one machine is
+down.
+
+3
+
+Scope inventory sufficient that reprocessing is not on the critical path for every case.
+
+4
+
+Drying and storage cabinets of adequate capacity, since storage is part of the process.
+
+5
+
+Model-specific connectors, brushes and adapters for every scope in the inventory, with
+spares.
+
+6
+
+Manufacturer instructions for every scope model, accessible at the point of work.
+
+7
+
+Trained and competency-assessed staff, with training specific to each model, and enough of
+them to cover leave and sickness.
+
+8
+
+Water treatment for the final rinse, monitored and tested.
+
+9
+
+Traceability system linking scope, patient, cycle and operator.
+
+10 Microbiological surveillance programme with defined frequency and defined actions on a
+
+positive result.
+
+10.7 Responding to a suspected transmission
+1
+
+Quarantine the implicated scope immediately; do not reprocess it, since reprocessing destroys
+evidence.
+
+2
+
+Notify infection control and microbiology without delay.
+
+3
+
+Retrieve the traceability records: which patients were exposed to that scope, in what order, and
+what the reprocessing record shows for each episode.
+
+4
+
+Review reprocessing practice and records for the period, including reprocessor cycle records and
+any deviation.
+
+5
+
+Sample the scope and the reprocessor per microbiology advice, guided by a hypothesis rather than
+broadly.
+
+6
+
+Review the scope's damage and repair history.
+
+7
+
+Consider patient notification and screening, under the hospital's incident and disclosure policy and
+with senior clinical input.
+
+8
+
+Report externally where required.
+
+9
+
+Write it up, including what the records could and could not establish, since the latter is usually the
+most useful finding.
+Do not reprocess the scope
+The instinct on suspecting a problem is to clean the scope thoroughly. That destroys the evidence
+that would establish whether it was contaminated and with what. Quarantine it untouched, secure
+it, and let microbiology and infection control direct what happens next.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+6
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+10.6 Setting up an endoscopy reprocessing service
+1
+
+Dedicated space with separation of dirty and clean, and ventilation appropriate to the chemicals
+used.
+
+2
+
+Adequate reprocessor capacity for the list volume, with a contingency when one machine is
+down.
+
+3
+
+Scope inventory sufficient that reprocessing is not on the critical path for every case.
+
+4
+
+Drying and storage cabinets of adequate capacity, since storage is part of the process.
+
+5
+
+Model-specific connectors, brushes and adapters for every scope in the inventory, with
+spares.
+
+6
+
+Manufacturer instructions for every scope model, accessible at the point of work.
+
+7
+
+Trained and competency-assessed staff, with training specific to each model, and enough of
+them to cover leave and sickness.
+
+8
+
+Water treatment for the final rinse, monitored and tested.
+
+9
+
+Traceability system linking scope, patient, cycle and operator.
+
+10 Microbiological surveillance programme with defined frequency and defined actions on a
+
+positive result.
+
+10.7 Responding to a suspected transmission
+1
+
+Quarantine the implicated scope immediately; do not reprocess it, since reprocessing destroys
+evidence.
+
+2
+
+Notify infection control and microbiology without delay.
+
+3
+
+Retrieve the traceability records: which patients were exposed to that scope, in what order, and
+what the reprocessing record shows for each episode.
+
+4
+
+Review reprocessing practice and records for the period, including reprocessor cycle records and
+any deviation.
+
+5
+
+Sample the scope and the reprocessor per microbiology advice, guided by a hypothesis rather than
+broadly.
+
+6
+
+Review the scope's damage and repair history.
+
+7
+
+Consider patient notification and screening, under the hospital's incident and disclosure policy and
+with senior clinical input.
+
+8
+
+Report externally where required.
+
+9
+
+Write it up, including what the records could and could not establish, since the latter is usually the
+most useful finding.
+Do not reprocess the scope
+The instinct on suspecting a problem is to clean the scope thoroughly. That destroys the evidence
+that would establish whether it was contaminated and with what. Quarantine it untouched, secure
+it, and let microbiology and infection control direct what happens next.
+
+10.6 Setting up an endoscopy reprocessing service
+1
+
+Dedicated space with separation of dirty and clean, and ventilation appropriate to the chemicals
+used.
+
+2
+
+Adequate reprocessor capacity for the list volume, with a contingency when one machine is
+down.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+7
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+3
+
+Scope inventory sufficient that reprocessing is not on the critical path for every case.
+
+4
+
+Drying and storage cabinets of adequate capacity, since storage is part of the process.
+
+5
+
+Model-specific connectors, brushes and adapters for every scope in the inventory, with
+spares.
+
+6
+
+Manufacturer instructions for every scope model, accessible at the point of work.
+
+7
+
+Trained and competency-assessed staff, with training specific to each model, and enough of
+them to cover leave and sickness.
+
+8
+
+Water treatment for the final rinse, monitored and tested.
+
+9
+
+Traceability system linking scope, patient, cycle and operator.
+
+10 Microbiological surveillance programme with defined frequency and defined actions on a
+
+positive result.
+
+10.7 Responding to a suspected transmission
+1
+
+Quarantine the implicated scope immediately; do not reprocess it, since reprocessing destroys
+evidence.
+
+2
+
+Notify infection control and microbiology without delay.
+
+3
+
+Retrieve the traceability records: which patients were exposed to that scope, in what order, and
+what the reprocessing record shows for each episode.
+
+4
+
+Review reprocessing practice and records for the period, including reprocessor cycle records and
+any deviation.
+
+5
+
+Sample the scope and the reprocessor per microbiology advice, guided by a hypothesis rather than
+broadly.
+
+6
+
+Review the scope's damage and repair history.
+
+7
+
+Consider patient notification and screening, under the hospital's incident and disclosure policy and
+with senior clinical input.
+
+8
+
+Report externally where required.
+
+9
+
+Write it up, including what the records could and could not establish, since the latter is usually the
+most useful finding.
+Do not reprocess the scope
+The instinct on suspecting a problem is to clean the scope thoroughly. That destroys the evidence
+that would establish whether it was contaminated and with what. Quarantine it untouched, secure
+it, and let microbiology and infection control direct what happens next.
+
+10.6 Setting up an endoscopy reprocessing service
+1
+
+Dedicated space with separation of dirty and clean, and ventilation appropriate to the chemicals
+used.
+
+2
+
+Adequate reprocessor capacity for the list volume, with a contingency when one machine is
+down.
+
+3
+
+Scope inventory sufficient that reprocessing is not on the critical path for every case.
+
+4
+
+Drying and storage cabinets of adequate capacity, since storage is part of the process.
+
+5
+
+Model-specific connectors, brushes and adapters for every scope in the inventory, with
+spares.
+
+6
+
+Manufacturer instructions for every scope model, accessible at the point of work.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+8
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+7
+
+Trained and competency-assessed staff, with training specific to each model, and enough of
+them to cover leave and sickness.
+
+8
+
+Water treatment for the final rinse, monitored and tested.
+
+9
+
+Traceability system linking scope, patient, cycle and operator.
+
+10 Microbiological surveillance programme with defined frequency and defined actions on a
+
+positive result.
+
+10.7 Responding to a suspected transmission
+1
+
+Quarantine the implicated scope immediately; do not reprocess it, since reprocessing destroys
+evidence.
+
+2
+
+Notify infection control and microbiology without delay.
+
+3
+
+Retrieve the traceability records: which patients were exposed to that scope, in what order, and
+what the reprocessing record shows for each episode.
+
+4
+
+Review reprocessing practice and records for the period, including reprocessor cycle records and
+any deviation.
+
+5
+
+Sample the scope and the reprocessor per microbiology advice, guided by a hypothesis rather than
+broadly.
+
+6
+
+Review the scope's damage and repair history.
+
+7
+
+Consider patient notification and screening, under the hospital's incident and disclosure policy and
+with senior clinical input.
+
+8
+
+Report externally where required.
+
+9
+
+Write it up, including what the records could and could not establish, since the latter is usually the
+most useful finding.
+Do not reprocess the scope
+The instinct on suspecting a problem is to clean the scope thoroughly. That destroys the evidence
+that would establish whether it was contaminated and with what. Quarantine it untouched, secure
+it, and let microbiology and infection control direct what happens next.
+
+Check your understanding
+Answer before reading the responses. These mirror the style of the course assessment.
+Q1. Why is the leak test performed before immersion, every time, without exception?
+Answer: Because a scope with a breach in its outer sheath or an internal channel will admit fluid into its
+interior when immersed. That interior cannot be cleaned or disinfected, organisms multiply inside it, and
+the scope is then irreparably contaminated for reprocessing purposes while continuing to be used on
+patients until the damage is found by other means. The test takes about a minute and is skipped when
+the list is running late.
+Q2. Why can chemical disinfection not substitute for channel brushing?
+Answer: Because biofilm — organisms embedded in a protective matrix adhering to the channel wall —
+resists chemical disinfection entirely. Soaking does not remove it and flushing does not remove it. Only
+mechanical action with a brush that physically contacts the channel wall disrupts it. This is why brushing
+is specified per channel with a brush of defined diameter, and why omitting it has repeatedly caused
+outbreaks.
+Q3. What is the duodenoscope elevator and why does it matter?
+Answer: A mechanism at the distal tip of a duodenoscope that directs accessories. Its recess is narrow,
+mechanically complex and extremely difficult to clean, and it has been implicated in multiple international
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+9
+
+MS-CSSD-15
+
+Module 10 — Flexible Endoscope Reprocessing
+
+CSSD & Sterilization
+
+outbreaks of multidrug-resistant organisms in patients with no other common exposure. Where
+duodenoscopes are used, the manufacturer's specific elevator instructions must be followed exactly,
+along with any additional measures the manufacturer or infection control specify.
+
+Q4. Why must a reprocessed endoscope be dried thoroughly and stored hanging vertically
+and uncoiled?
+Answer: Because residual moisture in channels allows waterborne organisms, particularly Pseudomonas
+and other Gram-negatives, to multiply between uses, so a correctly disinfected scope becomes
+contaminated in storage. A coiled scope retains fluid in its channels. Hanging vertically and uncoiled with
+valves removed, in a controlled drying cabinet, allows channels to drain and dry.
+Q5. A list is running late, one scope is available, and a technician is unsure whether the
+brushing step was adequate. What should determine the outcome?
+Answer: Written policy and a defined right to hold the scope back, supported by named management —
+not the individual courage of a technician under direct pressure from a room of waiting staff. The
+underlying causes are inadequate scope inventory and reprocessing capacity, which put reprocessing on
+the critical path for every case. Those should be escalated with the patient risk stated, and reprocessing
+time and deviations recorded so the pressure is visible rather than absorbed.
+Q6. What must be traceable for every endoscopic procedure and why?
+Answer: The scope identity, the patient, the reprocessing cycle and the operator. Where a transmission
+is suspected, this is the only means of investigating it: identifying which patients were exposed to a
+particular scope, whether reprocessing was completed, and by whom. Without it, a suspected
+transmission cannot be investigated or contained, and patient notification becomes impossible to scope.
+
+MedSkills — A unit of MedXL Ventures Private Limited
+
+10
+
+

@@ -1,0 +1,32 @@
+{
+ "id": "P02",
+ "title": "Heart playbooks",
+ "outputFilename": "fx_P02.mp4",
+ "module": "Fixture",
+ "scenes": [
+  {
+   "type": "play",
+   "play": "heart.conduction",
+   "kicker": "Conduction",
+   "narration": "Each beat starts at the sinoatrial node, high in the right atrium, which fires an electrical impulse. The atria contract first. The impulse then reaches the atrioventricular node, which holds it for a moment. It runs down the bundle branches in the septum to the Purkinje fibres, and the ventricles contract together."
+  },
+  {
+   "type": "play",
+   "play": "heart.cycle",
+   "kicker": "One cycle",
+   "narration": "In each cycle the atria contract first and top up the ventricles. Then the ventricles contract, and blood is ejected into the aorta and the pulmonary trunk. Finally the heart relaxes and the chambers refill before the next beat."
+  },
+  {
+   "type": "play",
+   "play": "heart.coronary",
+   "kicker": "Blood supply",
+   "narration": "The heart muscle is fed by its own coronary arteries, which run across its surface. When one of them is blocked, the muscle it supplies is starved of blood, first ischaemia and then infarction."
+  },
+  {
+   "type": "play",
+   "play": "heart.recovery",
+   "kicker": "Recap",
+   "narration": "To summarise, the electrical system sets the rhythm, the chambers pump in sequence, and the coronary arteries keep the muscle alive."
+  }
+ ]
+}

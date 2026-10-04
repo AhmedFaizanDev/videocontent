@@ -234,6 +234,8 @@ step('3 units', () => {
     assert.equal(syncProblems(nb).length, 0, 'a note without a cue derives one from its text');
     const hq = compileScene({type: 'flow', kicker: 'k', narration: 'First, recognition. The chain of survival has links. Second, high-quality compressions. Third, defibrillation follows when the rhythm allows it and the pads are on.', mermaid: 'flowchart LR\n A[Recognition] --> B[High-quality CPR] --> C[Defibrillation]'});
     assert.equal(syncProblems(hq).length, 0, 'a hyphenated spoken word positions its cue where sync hears it');
+    const tour = compileScene({type: 'table', kicker: 'k', narration: 'The left side pumps hard. The right side pumps gently to the lungs. The left wall is thicker than the right.', columns: ['Side', 'Serves'], rows: [['Left', 'Body'], ['Right', 'Lungs'], ['Septum', 'Both'], ['Apex', 'Tip']], say: [['left'], ['right']], tour: true});
+    assert.equal(tour.beats[tour.beats.length - 1].camera, 'overview', 'a tour ends on the overview, at the end');
     assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
     assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
     assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');
