@@ -85,9 +85,9 @@ export const CATALOG: Record<string, Entry> = {
   },
   stack: {
     layout: 'full',
-    doc: 'Layers, top to bottom (levels, strata, a protocol stack). data: {items: 2–6 {label ≤30, note?}}',
+    doc: 'Layers or a short list, top to bottom (levels, strata, take-aways). data: {items: 2–6 {label ≤60 (long labels wrap), note?}}',
     anchors: itemAnchors,
-    check: itemsCheck(2, 6, 30),
+    check: itemsCheck(2, 6, 60),
     callouts: itemCallouts,
   },
   image: {

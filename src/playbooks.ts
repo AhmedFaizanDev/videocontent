@@ -128,7 +128,7 @@ export const DATA_PLAYS: DataPlay[] = [
   {id: 'flow.chain', kind: 'flow', teaches: 'an ordered sequence of steps or links (a chain, a procedure): left to right, toured link by link, ending on the whole chain. Mermaid LR, 4–7 nodes', preset: {tour: true}},
   {id: 'flow.cause', kind: 'flow', teaches: 'a short cause → effect mechanism (3–5 nodes) seen whole: no tour, each node and its connector appear as spoken. Mermaid LR', preset: {tour: false}},
   {id: 'table.compare', kind: 'table', teaches: 'two or three things compared point by point (arrest vs heart attack): rows by aspect, cells appear as each side is spoken', preset: {}},
-  {id: 'table.scale', kind: 'table', teaches: 'numbers across settings or groups (survival by setting): numeric column grows as bars and counts up, the camera tours the rows', preset: {tour: true}},
+  {id: 'table.scale', kind: 'table', teaches: 'numbers across settings or groups (survival by setting): numeric column grows as bars and counts up; with 4+ rows the camera tours them', preset: {}},
   {id: 'table.update', kind: 'table', teaches: 'what changed between two versions (2020 → 2025): the newest column is highlighted when the change is named', preset: {}},
 ];
 

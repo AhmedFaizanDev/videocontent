@@ -329,7 +329,7 @@ function compileRecipe(s: any): any {
     // no illustration: the take-aways are the picture — a list that lights each one as it is said
     if (!s.art && (s.notes ?? []).length >= 2) {
       const notes: any[] = s.notes;
-      return composition({type: 'scene', kicker: s.kicker, narration: s.narration, transition: s.transition, elements: [{id: 'points', kind: 'stack', items: notes.map((n) => ({label: n.note.slice(0, 30), say: n.say}))}]});
+      return composition({type: 'scene', kicker: s.kicker, narration: s.narration, transition: s.transition, elements: [{id: 'points', kind: 'stack', items: notes.map((n) => ({label: n.note, say: n.say}))}]});
     }
     const beats: any[] = noteBeats(words, s.notes ?? []);
     if (s.act && s.art) beats.unshift({say: [words[0]], _pos: 0, act: asList(s.act).map((a: string) => `art.${a}`)});
@@ -463,7 +463,7 @@ function composition(s: any): any {
   });
   const all = byPosition(words, [...auto, ...moves]);
   const echoes = echo(words, all, items.filter((x) => x.text));
-  const breaths = breathe(words, [...all, ...echoes], items.filter((x) => x.text), ordered[0]?.id, 64, ordered.length > 1);
+  const breaths = breathe(words, [...all, ...echoes], items.filter((x) => x.text), ordered[0]?.id, 64, ordered.length > 1 || ordered[0]?.kind !== 'art');
   return {
     type: 'stage',
     kicker: s.kicker,
