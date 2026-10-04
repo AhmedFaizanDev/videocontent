@@ -19,6 +19,7 @@
  * Add a playbook when a subject's asset is imported (scripts/find-assets.mts) — once per subject.
  */
 import type {Beat} from './stage';
+import {VECTOR_MANIFESTS} from './art/vector/manifests.gen.ts';
 
 export type Moment = {
   slot: string;
@@ -132,5 +133,9 @@ export const DATA_PLAYS: DataPlay[] = [
   {id: 'table.update', kind: 'table', teaches: 'what changed between two versions (2020 → 2025): the newest column is highlighted when the change is named', preset: {}},
 ];
 
-export const PLAYS: Record<string, ArtPlay | DataPlay> = Object.fromEntries([...ART_PLAYS, ...DATA_PLAYS].map((p) => [p.id, p]));
+/** Playbooks that ship with an imported asset (its manifest's `playbooks`, authored once when it was acquired). */
+const FROM_ASSETS: ArtPlay[] = Object.values(VECTOR_MANIFESTS as Record<string, any>).flatMap((m) => (m.playbooks ?? []).map((p: Omit<ArtPlay, 'art'>) => ({...p, art: m.key})));
+export const ALL_ART_PLAYS: ArtPlay[] = [...ART_PLAYS, ...FROM_ASSETS];
+
+export const PLAYS: Record<string, ArtPlay | DataPlay> = Object.fromEntries([...ALL_ART_PLAYS, ...DATA_PLAYS].map((p) => [p.id, p]));
 export const isArtPlay = (p: ArtPlay | DataPlay): p is ArtPlay => 'moments' in p;

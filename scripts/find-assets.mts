@@ -29,12 +29,12 @@ import {pathToFileURL} from 'node:url';
 import {openBrowser} from '@remotion/renderer';
 import {ROOT} from './lib/paths.mts';
 
-type Hit = {source: 'bioart' | 'commons' | 'servier'; id: string; title: string; licence: string; rank: number; url: string; thumb?: string; credit?: string};
-const rankOf = (lic: string) => (/public domain|pd|cc0/i.test(lic) ? 0 : /by-sa|gfdl|share/i.test(lic) ? 2 : /cc[ -]by/i.test(lic) ? 1 : 9);
+export type Hit = {mime?: string; source: 'bioart' | 'commons' | 'servier'; id: string; title: string; licence: string; rank: number; url: string; thumb?: string; credit?: string};
+export const rankOf = (lic: string) => (/public domain|pd|cc0/i.test(lic) ? 0 : /by-sa|gfdl|share/i.test(lic) ? 2 : /cc[ -]by/i.test(lic) ? 1 : 9);
 
-async function commons(q: string): Promise<Hit[]> {
+export async function commons(q: string): Promise<Hit[]> {
   const u = new URL('https://commons.wikimedia.org/w/api.php');
-  Object.entries({action: 'query', format: 'json', generator: 'search', gsrnamespace: '6', gsrsearch: `${q} filetype:drawing`, gsrlimit: '20', prop: 'imageinfo', iiprop: 'url|extmetadata|mime', iiurlwidth: '400'}).forEach(([k, v]) => u.searchParams.set(k, v));
+  Object.entries({action: 'query', format: 'json', generator: 'search', gsrnamespace: '6', gsrsearch: q, gsrlimit: '40', prop: 'imageinfo', iiprop: 'url|extmetadata|mime', iiurlwidth: '400'}).forEach(([k, v]) => u.searchParams.set(k, v));
   const r = await fetch(u, {headers: {'User-Agent': 'medskills-video-pipeline/1.0 (asset research)'}});
   const j: any = await r.json();
   return Object.values(j.query?.pages ?? {})
@@ -42,13 +42,14 @@ async function commons(q: string): Promise<Hit[]> {
       const ii = p.imageinfo?.[0];
       const m = ii?.extmetadata ?? {};
       const lic = m.LicenseShortName?.value ?? 'unknown';
-      return {source: 'commons' as const, id: p.title, title: p.title.replace(/^File:/, ''), licence: lic, rank: rankOf(lic), url: ii?.descriptionurl, thumb: ii?.thumburl, credit: (m.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim()};
+      return {source: 'commons' as const, id: p.title, title: p.title.replace(/^File:/, ''), licence: lic, rank: rankOf(lic), url: ii?.descriptionurl, thumb: ii?.thumburl, credit: (m.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim(), mime: ii?.mime as string};
     })
-    .filter((h) => h.rank < 9);
+    // illustrations only: vector drawings and raster diagrams (Servier's art is mirrored here as PNG) — not photos
+    .filter((h) => h.rank < 9 && /svg|png/.test(h.mime ?? ''));
 }
 
 const UA = {'User-Agent': 'Mozilla/5.0 (medskills-video-pipeline asset research)'};
-async function servier(q: string): Promise<Hit[]> {
+export async function servier(q: string): Promise<Hit[]> {
   const html = await (await fetch(`https://smart.servier.com/?s=${encodeURIComponent(q)}`, {headers: UA})).text();
   // result cards link their image several times; the page's other image links appear once
   const n = new Map<string, number>();
@@ -57,7 +58,7 @@ async function servier(q: string): Promise<Hit[]> {
     .map((sl) => ({source: 'servier' as const, id: sl, title: sl.replace(/-/g, ' '), licence: 'CC BY 4.0', rank: 1, url: `https://smart.servier.com/smart_image/${sl}/`, credit: 'Servier Medical Art (smart.servier.com), CC BY 4.0'}));
 }
 
-async function getServier(slug: string, dir: string, auto: boolean) {
+export async function getServier(slug: string, dir: string, auto: boolean) {
   const url = `https://smart.servier.com/smart_image/${slug}/`;
   const html = await (await fetch(url, {headers: UA})).text();
   // the full-size image: the upload without a -WxH size suffix
@@ -70,7 +71,7 @@ async function getServier(slug: string, dir: string, auto: boolean) {
 }
 
 /** A local image or SVG → assets/vector/<dir>/source.svg; rasters are downscaled and embedded. */
-async function wrap(file: string, dir: string, meta: {source: string; licence: string; credit: string}, auto: boolean) {
+export async function wrap(file: string, dir: string, meta: {source: string; licence: string; credit: string}, auto: boolean) {
   if (/\.svg$/i.test(file)) return save(dir, readFileSync(file, 'utf8'), meta, auto);
   const tmp = join(ROOT, 'iterations', 'assets', `wrap-${dir}.png`);
   mkdirSync(join(ROOT, 'iterations', 'assets'), {recursive: true});
@@ -95,7 +96,7 @@ async function withPage<T>(fn: (page: any) => Promise<T>): Promise<T> {
   }
 }
 
-async function bioart(q: string): Promise<Hit[]> {
+export async function bioart(q: string): Promise<Hit[]> {
   return withPage(async (page) => {
     await page.goto({url: `https://bioart.niaid.nih.gov/discover?q=${encodeURIComponent(q)}`, timeout: 60000});
     await new Promise((r) => setTimeout(r, 6000));
@@ -116,7 +117,7 @@ async function bioart(q: string): Promise<Hit[]> {
   });
 }
 
-async function getBioart(id: string, dir: string) {
+export async function getBioart(id: string, dir: string, auto = process.argv.includes('--auto')) {
   // the entry page shows preview images (file ids); each representation's SVG sits just after its preview
   const {ids, licence, title, creator} = await withPage(async (page) => {
     await page.goto({url: `https://bioart.niaid.nih.gov/bioart/${id}`, timeout: 60000});
@@ -128,7 +129,6 @@ async function getBioart(id: string, dir: string) {
     });
   });
   if (process.env.DEBUG) console.log({ids, licence, title});
-  const auto = process.argv.includes('--auto');
   for (const pid of (ids as string[]).map(Number))
     for (let k = 1; k <= 3; k++) {
       const r = await fetch(`https://bioart.niaid.nih.gov/api/bioarts/${id}/files/${pid + k}`);
@@ -139,15 +139,21 @@ async function getBioart(id: string, dir: string) {
   throw new Error(`no colour SVG found for BioArt ${id}`);
 }
 
-async function getCommons(file: string, dir: string) {
+export async function getCommons(file: string, dir: string, auto = process.argv.includes('--auto')) {
   const u = new URL('https://commons.wikimedia.org/w/api.php');
   Object.entries({action: 'query', format: 'json', titles: file, prop: 'imageinfo', iiprop: 'url|extmetadata|mime'}).forEach(([k, v]) => u.searchParams.set(k, v));
   const j: any = await (await fetch(u, {headers: {'User-Agent': 'medskills-video-pipeline/1.0'}})).json();
   const ii: any = (Object.values(j.query.pages)[0] as any).imageinfo[0];
   const lic = ii.extmetadata?.LicenseShortName?.value ?? 'unknown';
   if (rankOf(lic) >= 2) throw new Error(`${file}: licence "${lic}" is share-alike or unknown — not imported (house rule)`);
+  if (/png/.test(ii.mime)) {
+    const png = join(ROOT, 'iterations', 'assets', `commons-${dir}.png`);
+    mkdirSync(join(ROOT, 'iterations', 'assets'), {recursive: true});
+    writeFileSync(png, Buffer.from(await (await fetch(ii.url, {headers: {'User-Agent': 'medskills-video-pipeline/1.0'}})).arrayBuffer()));
+    return wrap(png, dir, {source: ii.descriptionurl, licence: lic, credit: `${file.replace(/^File:/, '')} — ${(ii.extmetadata?.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim()}, Wikimedia Commons, ${lic}`}, auto);
+  }
   const svg = await (await fetch(ii.url, {headers: {'User-Agent': 'medskills-video-pipeline/1.0'}})).text();
-  return save(dir, svg, {source: ii.descriptionurl, licence: lic, credit: `${file.replace(/^File:/, '')} — ${(ii.extmetadata?.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim()}, Wikimedia Commons, ${lic}`}, process.argv.includes('--auto'));
+  return save(dir, svg, {source: ii.descriptionurl, licence: lic, credit: `${file.replace(/^File:/, '')} — ${(ii.extmetadata?.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim()}, Wikimedia Commons, ${lic}`}, auto);
 }
 
 async function save(dir: string, svg: string, meta: {source: string; licence: string; credit: string}, auto = false) {
@@ -213,7 +219,7 @@ export async function autoManifest(dir: string, meta: {credit: string; licence: 
 /* ------------------------------------------------------------------ the local index: every hit ever seen */
 const INDEX = join(ROOT, 'assets', 'index.json');
 const readIndex = (): Record<string, Hit & {queries: string[]}> => (existsSync(INDEX) ? JSON.parse(readFileSync(INDEX, 'utf8')) : {});
-function remember(q: string, hits: Hit[]) {
+export function remember(q: string, hits: Hit[]) {
   const idx = readIndex();
   for (const h of hits) {
     const k = `${h.source}:${h.id}`;
@@ -222,35 +228,42 @@ function remember(q: string, hits: Hit[]) {
   writeFileSync(INDEX, JSON.stringify(idx, null, 1) + '\n');
 }
 
-const args = process.argv.slice(2);
-const flag = (n: string) => (args.includes(n) ? args[args.indexOf(n) + 1] : undefined);
-const auto = args.includes('--auto');
-if (args[0] === '--get') {
-  const [src, id] = args[1].split(/:(.+)/);
-  if (src === 'url') {
-    if (!flag('--licence') || !flag('--credit')) throw new Error('--get url: needs --licence and --credit');
-    const r = await fetch(id, {headers: UA});
-    const file = join(ROOT, 'iterations', 'assets', `url-${args[2]}${extname(new URL(id).pathname) || '.png'}`);
+/** Search every source; best licence first. */
+export const searchAll = async (q: string): Promise<Hit[]> => [...(await bioart(q).catch(() => [])), ...(await servier(q).catch(() => [])), ...(await commons(q).catch(() => []))].sort((a, b) => a.rank - b.rank);
+/** Fetch one hit into assets/vector/<dir>/ (source.svg + licence.json; rasters wrapped), no manifest. */
+export const fetchHit = (h: Hit, dir: string) => (h.source === 'bioart' ? getBioart(h.id, dir, false) : h.source === 'servier' ? getServier(h.id, dir, false) : getCommons(h.id, dir, false));
+
+if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+  const args = process.argv.slice(2);
+  const flag = (n: string) => (args.includes(n) ? args[args.indexOf(n) + 1] : undefined);
+  const auto = args.includes('--auto');
+  if (args[0] === '--get') {
+    const [src, id] = args[1].split(/:(.+)/);
+    if (src === 'url') {
+      if (!flag('--licence') || !flag('--credit')) throw new Error('--get url: needs --licence and --credit');
+      const r = await fetch(id, {headers: UA});
+      const file = join(ROOT, 'iterations', 'assets', `url-${args[2]}${extname(new URL(id).pathname) || '.png'}`);
+      mkdirSync(join(ROOT, 'iterations', 'assets'), {recursive: true});
+      writeFileSync(file, Buffer.from(await r.arrayBuffer()));
+      await wrap(file, args[2], {source: id, licence: flag('--licence')!, credit: flag('--credit')!}, auto);
+    } else await (src === 'bioart' ? getBioart(id, args[2]) : src === 'servier' ? getServier(id, args[2], auto) : getCommons(id, args[2]));
+  } else if (args[0] === '--wrap') {
+    if (!flag('--licence') || !flag('--credit')) throw new Error('--wrap needs --licence and --credit');
+    await wrap(args[1], args[2], {source: flag('--source') ?? args[1], licence: flag('--licence')!, credit: flag('--credit')!}, auto);
+  } else if (args[0] === '--index') {
+    const words = args.slice(1).join(' ').toLowerCase().split(/\W+/).filter(Boolean);
+    const hits = Object.entries(readIndex()).filter(([, h]) => words.every((w) => `${h.title} ${h.queries.join(' ')}`.toLowerCase().includes(w)));
+    for (const [k, h] of hits.sort((a, b) => a[1].rank - b[1].rank)) console.log(`  ${k}  ${h.title}  [${h.licence}]  ${h.url}`);
+    if (!hits.length) console.log('  nothing in the local index — run a network search: node scripts/find-assets.mts "<query>"');
+  } else {
+    const q = args.join(' ');
+    const hits = [...(await bioart(q).catch(() => [])), ...(await servier(q).catch(() => [])), ...(await commons(q).catch(() => []))].sort((a, b) => a.rank - b.rank);
+    remember(q, hits);
+    const tag = ['✅ free', '✅ credit (docs)', '⚠️ share-alike'];
+    console.log(`assets for "${q}" — ${hits.length} usable (public domain first)`);
+    for (const h of hits.slice(0, 20)) console.log(`  ${tag[h.rank] ?? '?'}  ${h.source}:${h.id}  ${h.title}  [${h.licence}]  ${h.url}`);
     mkdirSync(join(ROOT, 'iterations', 'assets'), {recursive: true});
-    writeFileSync(file, Buffer.from(await r.arrayBuffer()));
-    await wrap(file, args[2], {source: id, licence: flag('--licence')!, credit: flag('--credit')!}, auto);
-  } else await (src === 'bioart' ? getBioart(id, args[2]) : src === 'servier' ? getServier(id, args[2], auto) : getCommons(id, args[2]));
-} else if (args[0] === '--wrap') {
-  if (!flag('--licence') || !flag('--credit')) throw new Error('--wrap needs --licence and --credit');
-  await wrap(args[1], args[2], {source: flag('--source') ?? args[1], licence: flag('--licence')!, credit: flag('--credit')!}, auto);
-} else if (args[0] === '--index') {
-  const words = args.slice(1).join(' ').toLowerCase().split(/\W+/).filter(Boolean);
-  const hits = Object.entries(readIndex()).filter(([, h]) => words.every((w) => `${h.title} ${h.queries.join(' ')}`.toLowerCase().includes(w)));
-  for (const [k, h] of hits.sort((a, b) => a[1].rank - b[1].rank)) console.log(`  ${k}  ${h.title}  [${h.licence}]  ${h.url}`);
-  if (!hits.length) console.log('  nothing in the local index — run a network search: node scripts/find-assets.mts "<query>"');
-} else {
-  const q = args.join(' ');
-  const hits = [...(await bioart(q).catch(() => [])), ...(await servier(q).catch(() => [])), ...(await commons(q).catch(() => []))].sort((a, b) => a.rank - b.rank);
-  remember(q, hits);
-  const tag = ['✅ free', '✅ credit (docs)', '⚠️ share-alike'];
-  console.log(`assets for "${q}" — ${hits.length} usable (public domain first)`);
-  for (const h of hits.slice(0, 20)) console.log(`  ${tag[h.rank] ?? '?'}  ${h.source}:${h.id}  ${h.title}  [${h.licence}]  ${h.url}`);
-  mkdirSync(join(ROOT, 'iterations', 'assets'), {recursive: true});
-  const md = `# Asset search: ${q}\n\n| | source | title | licence | link |\n|---|---|---|---|---|\n${hits.map((h) => `| ${h.thumb ? `![](${h.thumb})` : ''} | ${h.source}:${h.id} | ${h.title} | ${h.licence} | ${h.url} |`).join('\n')}\n`;
-  writeFileSync(join(ROOT, 'iterations', 'assets', `${q.replace(/\W+/g, '-')}.md`), md);
+    const md = `# Asset search: ${q}\n\n| | source | title | licence | link |\n|---|---|---|---|---|\n${hits.map((h) => `| ${h.thumb ? `![](${h.thumb})` : ''} | ${h.source}:${h.id} | ${h.title} | ${h.licence} | ${h.url} |`).join('\n')}\n`;
+    writeFileSync(join(ROOT, 'iterations', 'assets', `${q.replace(/\W+/g, '-')}.md`), md);
+  }
 }

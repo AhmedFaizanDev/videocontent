@@ -5,13 +5,15 @@
  *
  *   node scripts/batch.mts <project> plan                  course.json from source/*.pdf (one video per
  *                                                          module PDF; no model call). Edit to split/merge.
+ *   node scripts/batch.mts <project> visuals                the illustrations the course needs: reuse →
+ *                                                          search → judge → ingest → playbooks (scripts/visuals.mts)
  *   node scripts/batch.mts <project> write [ids…]          write missing scripts — one call each
  *   node scripts/batch.mts <project> check [ids…]          validate + preflight (no audio, no render);
  *                                                          failures: deterministic fixers → fallback
  *                                                          treatment → up to 3 escalating repairs
  *   node scripts/batch.mts <project> produce [ids…]        voice → render → QA for every clean script
  *   node scripts/batch.mts <project> translate <lang> [ids…]   native-language copies into <project>-<lang>
- *   node scripts/batch.mts <project> all                   plan → write → check → produce
+ *   node scripts/batch.mts <project> all                   plan → visuals → write → check → produce
  *
  * Writer: headless Claude Code (`claude -p`, Sonnet, no tools, JSON-schema output) when it is
  * logged in (CLAUDE_BIN overrides the binary); otherwise "agent mode": job files are written to
@@ -27,10 +29,11 @@ import {homedir} from 'node:os';
 import {join} from 'node:path';
 import {ROOT, loadProject, projectDir, specPath} from './lib/paths.mts';
 import {SCRIPT_SCHEMA} from './lib/script-schema.mts';
+import {OFFLINE, callModel, cli, writeJob} from './lib/llm.mts';
 import {CATALOG} from '../src/art/catalog.ts';
 import {VECTOR_MANIFESTS} from '../src/art/vector/manifests.gen.ts';
 import {fullForms} from '../src/dictionary.ts';
-import {ART_PLAYS, DATA_PLAYS, isArtPlay} from '../src/playbooks.ts';
+import {ALL_ART_PLAYS, DATA_PLAYS, isArtPlay} from '../src/playbooks.ts';
 import {fixSpec} from './lib/fix.mts';
 import {simplify} from './lib/simplify.mts';
 import {recordStage} from './lib/metrics.mts';
@@ -85,9 +88,16 @@ const brief = () => readFileSync(join(ROOT, 'docs', 'SCRIPT_BRIEF.md'), 'utf8');
 /** The playbook catalogue as the writer sees it: what each teaches, its moments and their hint words. */
 const playbooks = (cfg: any) => {
   const have = new Set([...Object.keys(VECTOR_MANIFESTS), ...((cfg.arts as string[]) ?? [])]);
-  return [...ART_PLAYS.filter((p) => have.has(p.art)), ...DATA_PLAYS]
+  return [...ALL_ART_PLAYS.filter((p) => have.has(p.art)), ...DATA_PLAYS]
     .map((p) => `- ${p.id}: ${p.teaches}${isArtPlay(p) ? `\n    moments in order: ${p.moments.map((m) => `${m.slot}${m.optional ? '?' : ''} [${m.hint.join('/')}]`).join(' → ')}` : ''}`)
     .join('\n');
+};
+/** The course's visual plan (scripts/visuals.mts) for this lesson: which illustration teaches what. */
+const visualPlanNote = (id: string) => {
+  const f = join(PD, 'visual-plan.json');
+  if (!existsSync(f)) return '';
+  const mine = JSON.parse(readFileSync(f, 'utf8')).concepts.filter((c: any) => c.lessons.includes(id) && c.status === 'verified' && c.art);
+  return mine.length ? `VISUAL PLAN — this lesson must teach these on their illustrations (use their playbooks):\n${mine.map((c: any) => `- ${c.what} → art ${c.art}: ${c.teaches}`).join('\n')}` : '';
 };
 /** The reference lesson in playbook form: the quality bar, shown rather than described. */
 const exemplar = () => readFileSync(join(ROOT, 'docs', 'EXEMPLAR_M01.json'), 'utf8');
@@ -104,6 +114,7 @@ function writerPrompt(v: Video) {
     `COURSE: ${cfg.name} — ${cfg.series}. Audience: clinical staff.`,
     `LESSON: id "${v.id}"${v.title ? `, title "${v.title}"` : ''}. outputFilename: "${(cfg.brand?.name ?? 'Lesson').replace(/\W+/g, '')}_${project.replace(/\W+/g, '_')}_${v.id}.mp4". module: "${v.title ?? v.id}".`,
     v.outline ? `OUTLINE: ${v.outline}` : '',
+    visualPlanNote(v.id),
     `PLAYBOOKS (prefer these):\n${playbooks(cfg)}`,
     `AVAILABLE ARTS (for explain/compositions when no playbook fits):\n${arts(cfg)}`,
     `REFERENCE LESSON — the quality bar (another module; match its depth, picture-first teaching and pacing, never its facts):\n${exemplar()}`,
@@ -114,59 +125,11 @@ function writerPrompt(v: Video) {
   return {system: brief(), user};
 }
 
-/* ------------------------------------------------------------------ the writer */
-const claudeBin = () => {
-  if (process.env.CLAUDE_BIN) return process.env.CLAUDE_BIN;
-  const base = join(homedir(), 'Library', 'Application Support', 'Claude', 'claude-code');
-  if (!existsSync(base)) return 'claude';
-  const vers = readdirSync(base).filter((d) => /^\d/.test(d)).sort((a, b) => a.localeCompare(b, undefined, {numeric: true}));
-  for (const ver of vers.reverse())
-    for (const h of readdirSync(join(base, ver))) {
-      const b = join(base, ver, h, 'claude.app', 'Contents', 'MacOS', 'claude');
-      if (existsSync(b)) return b;
-    }
-  return 'claude';
-};
-let cliOk: boolean | null = null;
-/** One structured model call; null when headless Claude isn't available (→ agent mode). */
-/** BATCH_OFFLINE=1: no model calls at all — fixers and the fallback only (tests, the deterministic benchmark). */
-const OFFLINE = !!process.env.BATCH_OFFLINE;
-function llm(system: string, user: string, tag: {id: string; role: string}): any | null {
-  if (cliOk === false || OFFLINE) return null;
-  const tmp = join(ROOT, 'iterations', 'batch-cwd'); // outside any CLAUDE.md scope we'd load needlessly
-  mkdirSync(tmp, {recursive: true});
-  const r = spawnSync(claudeBin(), ['-p', '--model', 'sonnet', '--tools', '', '--no-session-persistence', '--system-prompt', system, '--output-format', 'json', '--json-schema', JSON.stringify(SCRIPT_SCHEMA)], {input: user, encoding: 'utf8', cwd: tmp, maxBuffer: 64 << 20, timeout: 15 * 60 * 1000});
-  let out: any;
-  try {
-    out = JSON.parse(r.stdout);
-  } catch {
-    cliOk = false;
-    return null;
-  }
-  if (out.is_error) {
-    if (/log ?in/i.test(String(out.result))) console.log('  ⚠️  headless Claude is not logged in — switching to agent mode (job files). Log in once with: "<claude binary>" then /login');
-    cliOk = false;
-    return null;
-  }
-  cliOk = true;
-  logUsage(out, tag);
-  return out.structured_output ?? JSON.parse(String(out.result).replace(/^```json\s*|```\s*$/g, ''));
-}
-const logUsage = (out: any, tag: {id: string; role: string}) => {
-  const u = out.usage ?? {};
-  const line = {at: new Date().toISOString(), ...tag, cost: out.total_cost_usd, in: u.input_tokens, cacheRead: u.cache_read_input_tokens, cacheWrite: u.cache_creation_input_tokens, out: u.output_tokens, ms: out.duration_ms};
-  mkdirSync(jobs, {recursive: true});
-  writeFileSync(join(jobs, 'usage.jsonl'), JSON.stringify(line) + '\n', {flag: 'a'});
-};
-const job = (name: string, system: string, user: string, target: string, editor = false) => {
-  mkdirSync(jobs, {recursive: true});
-  const f = join(jobs, `${name}.md`);
-  writeFileSync(
-    f,
-    `# Job ${name}\nRun as ONE Sonnet subagent: read nothing else. ${editor ? 'Write the script, then edit your own draft against the editor rubric below (a second, critical pass), then' : 'Then'} write the final JSON to \`${target.replace(ROOT + '/', '')}\` (one Write), and stop.\n\n## System\n${system}${editor ? `\n\n## Editor rubric (second pass)\n${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}` : ''}\n\n## Schema\n\`\`\`json\n${JSON.stringify(SCRIPT_SCHEMA)}\n\`\`\`\n\n## Input\n${user}\n`,
-  );
-  return f;
-};
+/* ------------------------------------------------------------------ the writer (scripts/lib/llm.mts) */
+const llm = (system: string, user: string, tag: {id: string; role: string}): any | null => callModel({project, tag, system, user, schema: SCRIPT_SCHEMA});
+const job = (name: string, system: string, user: string, target: string, editor = false) =>
+  writeJob({project, name, tag: {id: name, role: 'job'}, system, user, schema: SCRIPT_SCHEMA, target, preface: editor ? 'Write the script, then edit your own draft against the editor rubric below (a second, critical pass).' : '', extra: editor ? `\n\n## Editor rubric (second pass)\n${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}` : ''});
+const cliOk = () => cli.ok;
 
 function write(ids: string[]) {
   const vids = course().videos.filter((v) => (ids.length ? ids.includes(v.id) : !existsSync(specPath(project, v.id))));
@@ -251,7 +214,7 @@ function check(ids: string[]) {
           : `Rewrite ONLY scenes ${bad.join(', ')} (0-based) of the script so these errors clear — same facts, same narration length; you may change the screen type. Return the complete script. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(spec)}`;
       const out = llm(system, user, {id: v.id, role: `repair${repairs}`});
       if (!out) {
-        if (cliOk === false && !OFFLINE) {
+        if (cliOk() === false && !OFFLINE) {
           console.log(`  📝 ${v.id}: repair job → ${job(`${v.id}.repair${repairs}`, system, user, specPath(project, v.id)).replace(ROOT + '/', '')}`);
           pending = true;
         }
@@ -292,12 +255,15 @@ function translate(lang: string, ids: string[]) {
 
 const ids = rest.filter((x) => !x.startsWith('-'));
 if (cmd === 'plan') plan();
+else if (cmd === 'visuals') spawnSync('node', ['scripts/visuals.mts', project, ...rest], {cwd: ROOT, stdio: 'inherit'});
 else if (cmd === 'write') write(ids);
 else if (cmd === 'check') check(ids);
 else if (cmd === 'translate') translate(rest[0], rest.slice(1));
 else if (cmd === 'produce' || cmd === 'all') {
   if (cmd === 'all') {
     if (!existsSync(coursePath)) plan();
+    // source first: the illustrations the course needs are acquired before any script is written
+    spawnSync('node', ['scripts/visuals.mts', project], {cwd: ROOT, stdio: 'inherit'});
     write(ids);
   }
   const clean = check(ids);

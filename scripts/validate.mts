@@ -191,6 +191,13 @@ function checkSpec(project: string, id: string, seenFiles: Map<string, string>):
     return err(id, `shorthand scene: ${(e as Error).message}`);
   }
   if (cfg.rules.taste) for (const p of tasteProblems(spec.scenes ?? [])) err(id, `taste: ${p}`);
+  // the course's visual plan (scripts/visuals.mts): a lesson teaches its planned illustrations on them
+  const vp = join(ROOT, 'projects', cfg.slug, 'visual-plan.json');
+  if (existsSync(vp)) {
+    const used = new Set((spec.scenes ?? []).flatMap((s: any) => (s.world?.layers ?? []).map((l: any) => l.art)));
+    for (const c of JSON.parse(readFileSync(vp, 'utf8')).concepts)
+      if (c.status === 'verified' && c.art && c.lessons.includes(id) && !used.has(c.art)) err(id, `visual plan: "${c.what.slice(0, 60)}" should be taught on its illustration (art ${c.art}, a playbook ${c.art}.*) — none of the scenes uses it`);
+  }
   if (spec.id !== id) err(id, `id field "${spec.id}" != filename ${id}`);
   for (const k of ['title', 'outputFilename']) if (!isStr(spec[k]) || !spec[k]) err(id, `missing ${k}`);
   if (isStr(spec.outputFilename)) {

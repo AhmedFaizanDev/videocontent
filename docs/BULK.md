@@ -15,6 +15,36 @@ rendering on this Mac overnight.
 | re-renders | after late fixes | correctness found after render | gates moved upstream; a script reaches render only when proven |
 | render time | 5–8 min per 5-min video | fanless MacBook Air: bursts ~45–50 fps, sustained ~22–25 fps (thermal) | unchanged by design — 100 videos ≈ 11 h/week overnight; the lever is never re-rendering |
 
+## The visuals stage (2026-10-04): source first, automatically, for every subject
+Why it was not happening: "source first" lived only as prose in the hand-run agents
+(series-planner, art-author). The bulk path (plan → write → check → produce) had no visual step,
+so the writer saw only the library it happened to have and silently fell back to tables and
+charts; asset search listed candidates but a human chose; nothing authored playbooks for a new
+asset. Now `batch.mts <p> all` runs **plan → visuals → write → check → produce**, and
+`scripts/visuals.mts <p>` does, resumably (state: projects/<p>/visual-plan.json):
+1. **needs** (Sonnet, once per course): the illustrations the lessons need — physical things to
+   SEE (anatomy, devices, instruments, equipment); processes/numbers stay charts — each with the
+   parts the lessons name, search queries, the lessons that need it, or `reuse` of a library asset.
+2. **search** (deterministic): NIH BioArt, Servier Medical Art, Wikimedia Commons (vector
+   drawings and raster diagrams; photos excluded); licence filter (PD/CC0/CC BY only); top 6
+   staged with previews.
+3. **broaden** (Sonnet, once): nothing found or all rejected → wider queries (procedure name,
+   equipment category, body region) and one more search.
+4. **choose** (Sonnet with vision): relevance, accuracy, quality, animation suitability, style,
+   0–5 each; a picture must reach relevance ≥ 4, accuracy ≥ 4, quality ≥ 3 — none is better
+   than a wrong one. The same picture chosen for two concepts is acquired once and shared.
+5. **ingest + register**: assets/vector/<concept>/ (rasters wrapped as SVG), manifest, registry.
+6. **author** (Opus, once per asset — the creative capital): from a gridded render, anchors on
+   the named structures, regions to pick parts out, 2–5 teaching playbooks (docs/PLAYBOOK_BRIEF.md);
+   stored in the asset's manifest, loaded by src/playbooks.ts for every future lesson.
+7. **verify** (Sonnet with vision): a render with every anchor marked; misplaced points and the
+   moments that need them are removed.
+8. **fallback**: no acceptable picture after the wider search → `draw` (queued in
+   projects/<p>/visuals.json for the art-author pipeline) when the concept needs a picture, else
+   `chart`.
+The writer then receives the lesson's VISUAL PLAN, and validate fails a lesson that does not
+teach a planned illustration on it. Credits: CREDITS.md (never in the video).
+
 ## Architecture v6 (2026-10-04): playbooks — creative capital built once
 Diagnosis (measured, docs in git history): the reference lesson (ms-bls-29 M01, hand-authored) and
 the v5 bulk lesson used the same components; the gap was authoring judgement — 7 labels on the
