@@ -1,0 +1,13 @@
+{
+  "project": "fx-plays",
+  "id": "P01",
+  "stages": {
+    "preflight": {
+      "seconds": 4.5,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-04T06:49:11.826Z"
+    }
+  },
+  "authoring": []
+}

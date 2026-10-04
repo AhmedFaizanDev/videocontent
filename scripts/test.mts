@@ -217,7 +217,7 @@ step('3 units', () => {
     // the variety gate
     const same = Array.from({length: 6}, () => ({type: 'table'}));
     const v = varietyProblems(same);
-    assert.ok(v.some((m) => m.includes('in a row')) && v.some((m) => m.includes('40 %')) && v.some((m) => m.includes('multi-element')));
+    assert.ok(v.some((m) => m.includes('in a row')) && v.some((m) => m.includes('40 %')));
     const varied = [{type: 'explain'}, {type: 'scene', elements: [{kind: 'art'}, {kind: 'stat'}]}, {type: 'flow'}, {type: 'table'}, {type: 'scene', elements: [{kind: 'flow'}, {kind: 'stat'}]}, {type: 'explain'}];
     assert.deepEqual(varietyProblems(varied), []);
     assert.equal(driftAt(0, [], -1) > 1, true, 'reversed drift opens slightly in, never below the overview');

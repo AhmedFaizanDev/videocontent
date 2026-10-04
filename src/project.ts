@@ -77,6 +77,8 @@ export type ProjectConfig = {
     maxScreenWords: number;
     /** the variety gate (src/director.ts varietyProblems): lessons must not repeat one screen template */
     variety?: boolean;
+    /** the taste gate (src/director.ts tasteProblems): the picture carries the words, illustrations perform */
+    taste?: boolean;
     /** every spec needs its lesson plan, projects/<p>/plans/<id>.md (docs/PLAN_TEMPLATE.md) */
     requirePlan?: boolean;
     /** longest stretch (seconds of narration) with nothing new on screen; preflight error above it (default 22 legacy; bulk 7) */

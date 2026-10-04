@@ -30,6 +30,7 @@ import {SCRIPT_SCHEMA} from './lib/script-schema.mts';
 import {CATALOG} from '../src/art/catalog.ts';
 import {VECTOR_MANIFESTS} from '../src/art/vector/manifests.gen.ts';
 import {fullForms} from '../src/dictionary.ts';
+import {ART_PLAYS, DATA_PLAYS, isArtPlay} from '../src/playbooks.ts';
 import {fixSpec} from './lib/fix.mts';
 import {simplify} from './lib/simplify.mts';
 import {recordStage} from './lib/metrics.mts';
@@ -81,6 +82,15 @@ const arts = (cfg: any) => {
   return names.map((n) => `- ${n}: ${CATALOG[n].doc}`).join('\n');
 };
 const brief = () => readFileSync(join(ROOT, 'docs', 'SCRIPT_BRIEF.md'), 'utf8');
+/** The playbook catalogue as the writer sees it: what each teaches, its moments and their hint words. */
+const playbooks = (cfg: any) => {
+  const have = new Set([...Object.keys(VECTOR_MANIFESTS), ...((cfg.arts as string[]) ?? [])]);
+  return [...ART_PLAYS.filter((p) => have.has(p.art)), ...DATA_PLAYS]
+    .map((p) => `- ${p.id}: ${p.teaches}${isArtPlay(p) ? `\n    moments in order: ${p.moments.map((m) => `${m.slot}${m.optional ? '?' : ''} [${m.hint.join('/')}]`).join(' → ')}` : ''}`)
+    .join('\n');
+};
+/** The reference lesson in playbook form: the quality bar, shown rather than described. */
+const exemplar = () => readFileSync(join(ROOT, 'docs', 'EXEMPLAR_M01.json'), 'utf8');
 const editorBrief = () => `${readFileSync(join(ROOT, 'docs', 'EDITOR_BRIEF.md'), 'utf8')}\n\n${brief()}`;
 const fullFormsNote = (cfg: any) => {
   const f = {...fullForms(cfg.lang ?? 'en'), ...(cfg.fullForms ?? {})};
@@ -94,7 +104,9 @@ function writerPrompt(v: Video) {
     `COURSE: ${cfg.name} — ${cfg.series}. Audience: clinical staff.`,
     `LESSON: id "${v.id}"${v.title ? `, title "${v.title}"` : ''}. outputFilename: "${(cfg.brand?.name ?? 'Lesson').replace(/\W+/g, '')}_${project.replace(/\W+/g, '_')}_${v.id}.mp4". module: "${v.title ?? v.id}".`,
     v.outline ? `OUTLINE: ${v.outline}` : '',
-    `AVAILABLE ARTS:\n${arts(cfg)}\n- graph/table: use the flow and table recipes`,
+    `PLAYBOOKS (prefer these):\n${playbooks(cfg)}`,
+    `AVAILABLE ARTS (for explain/compositions when no playbook fits):\n${arts(cfg)}`,
+    `REFERENCE LESSON — the quality bar (another module; match its depth, picture-first teaching and pacing, never its facts):\n${exemplar()}`,
     lexiconNote(cfg),
     fullFormsNote(cfg),
     `SOURCE EXCERPT (the only allowed facts):\n<<<\n${tidy(sourceText(v)).slice(0, 60000)}\n>>>`,
@@ -164,7 +176,7 @@ function write(ids: string[]) {
     const draft = llm(system, user, {id: v.id, role: 'writer'});
     if (draft) {
       // the editor pass: depth, precision, picture fit, variety — the whole script back, improved
-      const edited = llm(editorBrief(), `${user.slice(user.indexOf('SOURCE EXCERPT'))}\n\nDRAFT:\n${JSON.stringify(draft)}`, {id: v.id, role: 'editor'});
+      const edited = llm(editorBrief(), `${user.slice(user.indexOf('PLAYBOOKS'))}\n\nDRAFT:\n${JSON.stringify(draft)}`, {id: v.id, role: 'editor'});
       writeFileSync(specPath(project, v.id), JSON.stringify({...(edited ?? draft), id: v.id}, null, 2) + '\n');
       recordStage(project, v.id, 'write', {seconds: Math.round((Date.now() - t0) / 1000), edited: !!edited});
       console.log(`  ✍️  ${v.id}: written + edited in ${Math.round((Date.now() - t0) / 1000)} s`);

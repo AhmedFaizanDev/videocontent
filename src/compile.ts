@@ -21,6 +21,7 @@ import {parseMermaid, type GStep} from './art/mermaid.ts';
 import {keywordsOf, normWord, wordMatches} from './sync.ts';
 import {spoken} from './project.ts';
 import {direct} from './director.ts';
+import {PLAYS, isArtPlay, type ArtPlay} from './playbooks.ts';
 
 type Note = {say: string[]; note: string};
 const STOP = new Set(['with', 'from', 'that', 'this', 'into', 'than', 'then', 'when', 'what', 'your', 'their', 'there', 'about', 'after', 'before']);
@@ -492,6 +493,52 @@ export const mergeSameWord = (beats: any[]): any[] => {
 };
 const strip = (s: any) => (s?.beats ? {...s, beats: mergeSameWord(s.beats).map(({_pos, ...b}: any) => b)} : s);
 /** One scene, any shorthand (flow/table/recipes/composition) → a stage. */
+/* ------------------------------------------------------------------ playbooks (src/playbooks.ts) */
+const inArt = (t: any): any => (typeof t === 'string' ? `art.${t}` : Array.isArray(t) ? t.map(inArt) : t && typeof t === 'object' && 'on' in t ? {...t, on: `art.${t.on}`} : t);
+/** A playbook moment's beat, with its targets placed on the scene's illustration layer. */
+const momentBeat = (b: any) => ({
+  ...b,
+  ...(b.act ? {act: inArt(b.act)} : {}),
+  ...(b.pulse ? {pulse: inArt(b.pulse)} : {}),
+  ...(b.camera && b.camera !== 'overview' ? {camera: inArt(b.camera)} : {}),
+  ...(b.label ? {label: inArt(b.label)} : {}),
+});
+function artPlay(s: any, p: ArtPlay): any {
+  const words = spoken(s.narration ?? '').split(/\s+/).map(normWord).filter(Boolean);
+  let cursor = 0;
+  const beats: any[] = [];
+  const items: {target: string; text: string; at: number}[] = [];
+  for (const m of p.moments) {
+    if ((s.skip ?? []).includes(m.slot)) continue;
+    const cue: string[] | undefined = typeof s.cues?.[m.slot] === 'string' ? [s.cues[m.slot]] : s.cues?.[m.slot];
+    let pos = -1;
+    if (cue) pos = words.findIndex((w, k) => k >= cursor && wordMatches(w, cue.map(normWord)));
+    // a hint phrase is found by its most specific (last) word
+    else pos = firstSpoken(words, m.hint.map((h) => normWord(h.split(/\s+/).pop()!)), cursor)?.[1] ?? -1;
+    if (pos < 0) {
+      if (m.optional) continue;
+      throw new Error(`play "${p.id}": the moment "${m.slot}" is never spoken — say one of [${m.hint.join(', ')}] after the previous moment, or give cues.${m.slot}`);
+    }
+    const b = momentBeat(m.beat);
+    beats.push({say: cue ?? [words[pos]], _pos: pos, ...b});
+    for (const l of [b.label ?? []].flat()) items.push({target: l.on, text: l.text, at: pos});
+    cursor = pos + 1;
+  }
+  const notes = noteBeats(words, s.notes ?? []);
+  // a lesson's first scene can carry its title over the picture
+  const title = s.title ? [{say: [words[0]], _pos: 0, title: s.title}] : [];
+  const all = byPosition(words, [...title, ...beats, ...notes]);
+  return artStage({...s, drawn: s.drawn ?? !!s.title, art: p.art, data: s.data ?? p.data}, byPosition(words, [...all, ...echo(words, all, items)]));
+}
+/** A play → its stage (illustration playbooks) or its preset data scene (generic plays). */
+const playScene = (s: any): any => {
+  const p = PLAYS[s.play];
+  if (!p) throw new Error(`unknown play "${s.play}" — known: ${Object.keys(PLAYS).join(', ')}`);
+  if (isArtPlay(p)) return artPlay(s, p);
+  const {play: _p, cues: _c, skip: _s, ...rest} = s;
+  return {...p.preset, ...rest, type: p.kind};
+};
+
 const RECIPES = new Set(['flow', 'table', 'opener', 'explain', 'summary']);
 /** Recipe scenes breathe too: long still stretches get a camera move toward what is being said. */
 const breathed = (st: any): any => {
@@ -507,7 +554,13 @@ const breathed = (st: any): any => {
   const extra = breathe(words, st.beats, items, layer).filter((b) => !dataOnly || b._pos > first);
   return {...st, beats: byPosition(words, [...st.beats, ...extra])};
 };
-export const compileScene = (s: any): any => strip(s?.type === 'scene' ? composition(s) : RECIPES.has(s?.type) ? breathed(compileRecipe(shorthand(s))) : compileRecipe(shorthand(s)));
+export const compileScene = (s: any): any => {
+  if (s?.type === 'play') {
+    const x = playScene(s);
+    return x.type === 'stage' ? strip(breathed(x)) : compileScene(x);
+  }
+  return strip(s?.type === 'scene' ? composition(s) : RECIPES.has(s?.type) ? breathed(compileRecipe(shorthand(s))) : compileRecipe(shorthand(s)));
+};
 
 /** A spec with every shorthand scene compiled (idempotent: compiled scenes pass through), framed by the project's intro/outro and directed (src/director.ts). */
 export const compileSpec = <T extends {scenes: any[]}>(spec: T, frame?: Frame): T => ({...spec, scenes: (frame?.direct ? direct : (x: any[]) => x)(framed(spec.scenes, frame)).map(compileScene)});

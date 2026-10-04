@@ -30,7 +30,27 @@ every screen designed for its idea, never a template filled in.
 7. **Screen words.** Labels ≤ 28 chars, notes ≤ 90 chars, flowchart nodes ≤ 40 chars, table
    cells ≤ 60 chars; never more than ~20 words visible at once.
 
+## Taste (checked; the reference lesson passes, a slide deck fails)
+8. **The picture carries the words.** At most one text bar (`note`) per ~55 narration words in the
+   whole lesson. Explain with the picture: labels on the illustration, the chart's nodes, the
+   table's cells. A note is for one key number or definition, not a summary of the sentence.
+9. **An illustration performs.** A scene with an illustration changes it at least twice (a state,
+   a region, a label on its parts) — playbooks do this for you. Never a static backdrop.
+10. **Decisions are flowcharts.** Anything with "if… then…", branches or a rhythm that decides a
+   treatment is `flow.decision`, not a table.
+
 ## The screens you can build
+**Playbooks first** (`play`) — the house's best teaching, written once and reused. Pick the
+playbook whose `teaches` matches the idea; write narration that walks through its moments in
+order, using one of each moment's hint words (or name your word in `cues`). Moments marked `?`
+are optional — play them when the narration needs them.
+`{type: "play", play, kicker, narration, title?, cues?: {moment: ["word"]}, skip?: [moment], notes?}`
+Data plays (`flow.*`, `table.*`) take the content too: `mermaid` (+`steps`) or `columns`/`rows`
+(+`say`, `bars`, `highlight`). The PLAYBOOKS list and the REFERENCE LESSON (in the input) show
+them in use: build lessons with that depth and rhythm — one illustration evolving through a
+story across several scenes, interleaved with the charts and tables that carry the facts.
+
+Recipes and compositions — when no playbook fits:
 Recipes (one picture per screen):
 - `opener` — first scene, **20–35 words**: `{type, kicker, narration, title, art?, act?}`.
   Title = the lesson title. With an art, `act` is an event name of that art (e.g. "conduction").
@@ -69,11 +89,11 @@ decision chart beside the rhythm it decides on; the table beside the structure i
 statistic beside the process that changes it.
 
 ## Choosing the picture (house priority, and variety)
-Process/algorithm/decision → flowchart · comparison/values → table · structure/mechanism →
-illustration · the one number that matters → stat · and when two of these explain each other,
-put them on one screen as a composition. Use only arts listed under AVAILABLE ARTS.
-Variety is checked: never three screens of the same kind in a row, no single kind over 40 % of
-the teaching scenes, and at least two compositions in a lesson of six or more teaching scenes.
+Mechanism/structure → an illustration playbook · decision → `flow.decision` · sequence →
+`flow.chain` · comparison → `table.compare` · numbers → `table.scale` · change → `table.update` ·
+a composition only when two elements genuinely explain each other. Variety is checked: never
+three identical screens in a row, no single screen over 40 % (the same illustration doing
+different things counts as different screens).
 
 ## Output
 JSON only, matching the schema: `{id, title, outputFilename, module, scenes: [...]}`. Kickers are

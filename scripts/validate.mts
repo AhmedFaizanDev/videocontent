@@ -19,7 +19,7 @@ import {ROOT, loadProject, parseArgs, specPath} from './lib/paths.mts';
 import {CATALOG, calloutsFor} from '../src/art/catalog.ts';
 import {syncProblems} from '../src/sync.ts';
 import {compileSpec} from '../src/compile.ts';
-import {fingerprint, varietyProblems} from '../src/director.ts';
+import {fingerprint, tasteProblems, varietyProblems} from '../src/director.ts';
 const sequences: {id: string; seq: string}[] = [];
 import {BREATHE_RANGE, holds, holdsRange} from '../src/schedule.ts';
 import {spoken} from '../src/project.ts';
@@ -190,6 +190,7 @@ function checkSpec(project: string, id: string, seenFiles: Map<string, string>):
   } catch (e) {
     return err(id, `shorthand scene: ${(e as Error).message}`);
   }
+  if (cfg.rules.taste) for (const p of tasteProblems(spec.scenes ?? [])) err(id, `taste: ${p}`);
   if (spec.id !== id) err(id, `id field "${spec.id}" != filename ${id}`);
   for (const k of ['title', 'outputFilename']) if (!isStr(spec[k]) || !spec[k]) err(id, `missing ${k}`);
   if (isStr(spec.outputFilename)) {
