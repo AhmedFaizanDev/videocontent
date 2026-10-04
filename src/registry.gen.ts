@@ -12,6 +12,7 @@ import p_med_diabetes_hi from './../projects/med-diabetes-hi/project.json';
 import p_med_hand_hygiene_mr from './../projects/med-hand-hygiene-mr/project.json';
 import p_med_respiration_kn from './../projects/med-respiration-kn/project.json';
 import p_ms_bls_29 from './../projects/ms-bls-29/project.json';
+import p_ms_bls_29_v5 from './../projects/ms-bls-29-v5/project.json';
 import p_ms_cssd_15 from './../projects/ms-cssd-15/project.json';
 import p_smoke from './../projects/smoke/project.json';
 import s_demo_asthma_en_AS01 from './../projects/demo-asthma-en/specs/AS01.json';
@@ -56,6 +57,8 @@ import s_ms_bls_29_M00 from './../projects/ms-bls-29/specs/M00.json';
 import t_ms_bls_29_M00 from './../projects/ms-bls-29/build/M00.timings.json';
 import s_ms_bls_29_M01 from './../projects/ms-bls-29/specs/M01.json';
 import t_ms_bls_29_M01 from './../projects/ms-bls-29/build/M01.timings.json';
+import s_ms_bls_29_v5_M01 from './../projects/ms-bls-29-v5/specs/M01.json';
+import t_ms_bls_29_v5_M01 from './../projects/ms-bls-29-v5/build/M01.timings.json';
 import s_ms_cssd_15_V801 from './../projects/ms-cssd-15/specs/V801.json';
 import t_ms_cssd_15_V801 from './../projects/ms-cssd-15/build/V801.timings.json';
 import s_ms_cssd_15_V802 from './../projects/ms-cssd-15/specs/V802.json';
@@ -70,31 +73,32 @@ import s_smoke_S01 from './../projects/smoke/specs/S01.json';
 import t_smoke_S01 from './../projects/smoke/build/S01.timings.json';
 
 export const READY: VideoProps[] = [
-  {project: withDefaults('demo-asthma-en', p_demo_asthma_en as never), spec: s_demo_asthma_en_AS01 as VideoProps['spec'], timings: t_demo_asthma_en_AS01 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F01 as VideoProps['spec'], timings: t_fixtures_F01 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F02 as VideoProps['spec'], timings: t_fixtures_F02 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F03 as VideoProps['spec'], timings: t_fixtures_F03 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F04 as VideoProps['spec'], timings: t_fixtures_F04 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F05 as VideoProps['spec'], timings: t_fixtures_F05 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F06 as VideoProps['spec'], timings: t_fixtures_F06 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F07 as VideoProps['spec'], timings: t_fixtures_F07 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F08 as VideoProps['spec'], timings: t_fixtures_F08 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F10 as VideoProps['spec'], timings: t_fixtures_F10 as VideoProps['timings']},
-  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F11 as VideoProps['spec'], timings: t_fixtures_F11 as VideoProps['timings']},
-  {project: withDefaults('human-heart', p_human_heart as never), spec: s_human_heart_H01 as VideoProps['spec'], timings: t_human_heart_H01 as VideoProps['timings']},
-  {project: withDefaults('lab-bp-hi', p_lab_bp_hi as never), spec: s_lab_bp_hi_BP02 as VideoProps['spec'], timings: t_lab_bp_hi_BP02 as VideoProps['timings']},
-  {project: withDefaults('lab-bp-mr', p_lab_bp_mr as never), spec: s_lab_bp_mr_BP03 as VideoProps['spec'], timings: t_lab_bp_mr_BP03 as VideoProps['timings']},
-  {project: withDefaults('lab-diabetes-hi', p_lab_diabetes_hi as never), spec: s_lab_diabetes_hi_DM02 as VideoProps['spec'], timings: t_lab_diabetes_hi_DM02 as VideoProps['timings']},
-  {project: withDefaults('med-blood-pressure-en', p_med_blood_pressure_en as never), spec: s_med_blood_pressure_en_BP01 as VideoProps['spec'], timings: t_med_blood_pressure_en_BP01 as VideoProps['timings']},
-  {project: withDefaults('med-diabetes-hi', p_med_diabetes_hi as never), spec: s_med_diabetes_hi_DM01 as VideoProps['spec'], timings: t_med_diabetes_hi_DM01 as VideoProps['timings']},
-  {project: withDefaults('med-hand-hygiene-mr', p_med_hand_hygiene_mr as never), spec: s_med_hand_hygiene_mr_HH01 as VideoProps['spec'], timings: t_med_hand_hygiene_mr_HH01 as VideoProps['timings']},
-  {project: withDefaults('med-respiration-kn', p_med_respiration_kn as never), spec: s_med_respiration_kn_RS01 as VideoProps['spec'], timings: t_med_respiration_kn_RS01 as VideoProps['timings']},
-  {project: withDefaults('ms-bls-29', p_ms_bls_29 as never), spec: s_ms_bls_29_M00 as VideoProps['spec'], timings: t_ms_bls_29_M00 as VideoProps['timings']},
-  {project: withDefaults('ms-bls-29', p_ms_bls_29 as never), spec: s_ms_bls_29_M01 as VideoProps['spec'], timings: t_ms_bls_29_M01 as VideoProps['timings']},
-  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V801 as VideoProps['spec'], timings: t_ms_cssd_15_V801 as VideoProps['timings']},
-  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V802 as VideoProps['spec'], timings: t_ms_cssd_15_V802 as VideoProps['timings']},
-  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V803 as VideoProps['spec'], timings: t_ms_cssd_15_V803 as VideoProps['timings']},
-  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V804 as VideoProps['spec'], timings: t_ms_cssd_15_V804 as VideoProps['timings']},
-  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V805 as VideoProps['spec'], timings: t_ms_cssd_15_V805 as VideoProps['timings']},
-  {project: withDefaults('smoke', p_smoke as never), spec: s_smoke_S01 as VideoProps['spec'], timings: t_smoke_S01 as VideoProps['timings']}
+  {project: withDefaults('demo-asthma-en', p_demo_asthma_en as never), spec: s_demo_asthma_en_AS01 as unknown as VideoProps['spec'], timings: t_demo_asthma_en_AS01 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F01 as unknown as VideoProps['spec'], timings: t_fixtures_F01 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F02 as unknown as VideoProps['spec'], timings: t_fixtures_F02 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F03 as unknown as VideoProps['spec'], timings: t_fixtures_F03 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F04 as unknown as VideoProps['spec'], timings: t_fixtures_F04 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F05 as unknown as VideoProps['spec'], timings: t_fixtures_F05 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F06 as unknown as VideoProps['spec'], timings: t_fixtures_F06 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F07 as unknown as VideoProps['spec'], timings: t_fixtures_F07 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F08 as unknown as VideoProps['spec'], timings: t_fixtures_F08 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F10 as unknown as VideoProps['spec'], timings: t_fixtures_F10 as VideoProps['timings']},
+  {project: withDefaults('fixtures', p_fixtures as never), spec: s_fixtures_F11 as unknown as VideoProps['spec'], timings: t_fixtures_F11 as VideoProps['timings']},
+  {project: withDefaults('human-heart', p_human_heart as never), spec: s_human_heart_H01 as unknown as VideoProps['spec'], timings: t_human_heart_H01 as VideoProps['timings']},
+  {project: withDefaults('lab-bp-hi', p_lab_bp_hi as never), spec: s_lab_bp_hi_BP02 as unknown as VideoProps['spec'], timings: t_lab_bp_hi_BP02 as VideoProps['timings']},
+  {project: withDefaults('lab-bp-mr', p_lab_bp_mr as never), spec: s_lab_bp_mr_BP03 as unknown as VideoProps['spec'], timings: t_lab_bp_mr_BP03 as VideoProps['timings']},
+  {project: withDefaults('lab-diabetes-hi', p_lab_diabetes_hi as never), spec: s_lab_diabetes_hi_DM02 as unknown as VideoProps['spec'], timings: t_lab_diabetes_hi_DM02 as VideoProps['timings']},
+  {project: withDefaults('med-blood-pressure-en', p_med_blood_pressure_en as never), spec: s_med_blood_pressure_en_BP01 as unknown as VideoProps['spec'], timings: t_med_blood_pressure_en_BP01 as VideoProps['timings']},
+  {project: withDefaults('med-diabetes-hi', p_med_diabetes_hi as never), spec: s_med_diabetes_hi_DM01 as unknown as VideoProps['spec'], timings: t_med_diabetes_hi_DM01 as VideoProps['timings']},
+  {project: withDefaults('med-hand-hygiene-mr', p_med_hand_hygiene_mr as never), spec: s_med_hand_hygiene_mr_HH01 as unknown as VideoProps['spec'], timings: t_med_hand_hygiene_mr_HH01 as VideoProps['timings']},
+  {project: withDefaults('med-respiration-kn', p_med_respiration_kn as never), spec: s_med_respiration_kn_RS01 as unknown as VideoProps['spec'], timings: t_med_respiration_kn_RS01 as VideoProps['timings']},
+  {project: withDefaults('ms-bls-29', p_ms_bls_29 as never), spec: s_ms_bls_29_M00 as unknown as VideoProps['spec'], timings: t_ms_bls_29_M00 as VideoProps['timings']},
+  {project: withDefaults('ms-bls-29', p_ms_bls_29 as never), spec: s_ms_bls_29_M01 as unknown as VideoProps['spec'], timings: t_ms_bls_29_M01 as VideoProps['timings']},
+  {project: withDefaults('ms-bls-29-v5', p_ms_bls_29_v5 as never), spec: s_ms_bls_29_v5_M01 as unknown as VideoProps['spec'], timings: t_ms_bls_29_v5_M01 as VideoProps['timings']},
+  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V801 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V801 as VideoProps['timings']},
+  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V802 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V802 as VideoProps['timings']},
+  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V803 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V803 as VideoProps['timings']},
+  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V804 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V804 as VideoProps['timings']},
+  {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V805 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V805 as VideoProps['timings']},
+  {project: withDefaults('smoke', p_smoke as never), spec: s_smoke_S01 as unknown as VideoProps['spec'], timings: t_smoke_S01 as VideoProps['timings']}
 ];

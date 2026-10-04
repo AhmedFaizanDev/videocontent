@@ -129,6 +129,9 @@ for (const s of specs) {
     const still = (st.words ?? []).filter((w: any) => w.start >= idleAt && w.start < idleAt + idle).map((w: any) => w.w);
     const where = still.length ? ` — still while saying "${still.slice(0, 14).join(' ')}${still.length > 14 ? ' …' : ''}"` : '';
     const static_ = cfg.rules.maxIdle ?? (['hook', 'definition', 'check'].includes(sc.type) ? 26 : 22);
+    // a still opening reads as a frozen frame (QA's freeze check): stricter than mid-scene holds
+    if (cfg.rules.maxIdle && marks.length > 1 && marks[1] - marks[0] > 4.5 && sc.type === 'stage')
+      add(s.id, 'error', 'timing', `scene[${i}] (stage): opens on ~${Math.round(marks[1] - marks[0])} s of a still picture — the first item's word must come sooner (or a camera move must)`);
     if (idle > static_) add(s.id, cfg.rules.maxIdle ? 'error' : 'warn', 'timing', `scene[${i}] (${sc.type}): ~${Math.round(idle)} s with nothing new on screen${where} — bring an item/note there, re-mention an on-screen item, or shorten`);
   });
 }

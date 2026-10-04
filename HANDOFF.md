@@ -4,7 +4,18 @@ Read with `README.md` (architecture + commands) and `docs/AUTHORING_GUIDE.md` (s
 contract). The pre-productization history (Section 1 build, redesigns, operational war
 stories) is preserved verbatim in `archive/docs/HANDOFF_history.md`.
 
-## 0. Continue here (next session) — updated 2026-09-30
+## 0. Continue here (next session) — updated 2026-10-04
+
+**v5 creative architecture (2026-10-04) — read docs/BULK.md "Architecture v5" first.** Client
+courses go through `node scripts/batch.mts <p> all`: writer + editor (one Sonnet call each, or one
+agent-mode job), compositions (`type: "scene"`, 1–3 elements + moves, slot layout, director),
+variety + legibility gates, self-healing check (fixers → fallback → ≤3 repairs; no human),
+house pronunciation dictionary (src/dictionary.ts), one-command asset import
+(`find-assets --get … --auto`, BioArt/Servier/Commons, credits in CREDITS.md, never in video),
+`scripts/benchmark.mts` (build-only until the owner asks to benchmark). First trial:
+`ms-bls-29-v5` M01 (BLS Module 01 regenerated, compare with `ms-bls-29` M01). Headless CLI still
+needs the owner's one-time `/login`. Everything below is the earlier history.
+
 
 **House standard now:** picture-first `stage` lessons, all imagery drawn in code, every video
 exactly 5:00, generation agents on Sonnet. Client feedback that drove it: *"looks like text with

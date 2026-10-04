@@ -21,7 +21,7 @@ ${projects.map((p) => `import ${pv(p)} from '${rel(join(ROOT, 'projects', p, 'pr
 ${ready.map(({p, id}) => `import s_${v(p, id)} from '${rel(specPath(p, id))}';\nimport t_${v(p, id)} from '${rel(timingsPath(p, id))}';`).join('\n')}
 
 export const READY: VideoProps[] = [
-${ready.map(({p, id}) => `  {project: withDefaults('${p}', ${pv(p)} as never), spec: s_${v(p, id)} as VideoProps['spec'], timings: t_${v(p, id)} as VideoProps['timings']}`).join(',\n')}
+${ready.map(({p, id}) => `  {project: withDefaults('${p}', ${pv(p)} as never), spec: s_${v(p, id)} as unknown as VideoProps['spec'], timings: t_${v(p, id)} as VideoProps['timings']}`).join(',\n')}
 ];
 `;
   writeFileSync(join(ROOT, 'src', 'registry.gen.ts'), out);

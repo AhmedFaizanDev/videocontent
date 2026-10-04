@@ -215,6 +215,7 @@ const echo = (words: string[], beats: any[], items: {target: string; text: strin
  * out on the next — so the picture follows the explanation. With several elements on screen it
  * pulses that item in place instead (a zoom would crop the others).
  */
+const OPENING = 24; // spoken characters (≈ 1.7 s) before an opening still picture moves
 const breathe = (words: string[], beats: any[], items: {target: string; text: string; at: number}[], lead?: string, gap = 64, inPlace = false): any[] => {
   // the gap is measured in spoken characters (≈ 4.5 s at the house pace): long clinical words take longer to say
   const cum = words.reduce((a, w) => [...a, a[a.length - 1] + w.length + 1], [0]);
@@ -224,12 +225,13 @@ const breathe = (words: string[], beats: any[], items: {target: string; text: st
   const said = (j: number) => [...beats, ...extra].some((b) => (b.say ?? []).some((w: string) => wordMatches(words[j], [normWord(w)])));
   for (let guard = 0; guard < 20; guard++) {
     const m = [-1, ...marks(), words.length];
-    const k = m.findIndex((p, i) => i > 0 && len(m[i - 1], p) > gap);
+    // the opening is stricter: the viewer has already watched the transition into a still picture
+    const k = m.findIndex((p, i) => i > 0 && len(m[i - 1], p) > (i === 1 ? OPENING : gap));
     if (k < 0) break;
     const [a, b] = [m[k - 1], m[k]];
     // a content word near the middle, not spoken earlier in the gap (cues are matched in order)
     let mid = a + 1;
-    while (mid < b - 1 && len(a, mid) < Math.min(gap * 0.8, len(a, b) / 2)) mid++;
+    while (mid < b - 1 && len(a, mid) < Math.min((a < 0 ? OPENING : gap) * 0.8, len(a, b) / 2)) mid++;
     const ok = (j: number) => j > a && j < b && words[j]?.length >= 4 && !STOP.has(words[j]) && !said(j) && !words.slice(a + 1, j).includes(words[j]);
     const j = [0, 1, -1, 2, -2, 3, -3, 4, -4].map((d) => mid + d).find(ok);
     if (j === undefined) break;
