@@ -101,6 +101,18 @@
         "fx-trial-heart"
       ],
       "first": "2026-10-04"
+    },
+    "Healthcare": {
+      "projects": [
+        "ms-intros"
+      ],
+      "first": "2026-10-06"
+    },
+    "coordinators": {
+      "projects": [
+        "ms-intros"
+      ],
+      "first": "2026-10-06"
     }
   }
 }

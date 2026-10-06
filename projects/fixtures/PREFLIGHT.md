@@ -1,6 +1,6 @@
 # Preflight — fixtures
 
-## F01 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F01 — OK with warnings (2026-10-06T08:12:44.388Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **language** pronunciation — audition these once (node scripts/say.mts fixtures "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: charact, timeline, overlapping
@@ -22,11 +22,11 @@
 - ⚠️ **timing** scene[6] callouts: "Layer 5: thirty characters lon" and "Layer 6: thirty characters lon" reveal 0.7 s apart — give each its own sentence
 - ⚠️ **timing** scene[8] points: "First point, long enough to wrap onto a second line" and "Second point, similarly long to wrap" reveal 0.5 s apart — give each its own sentence
 
-## F02 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F02 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **language** pronunciation — audition these once (node scripts/say.mts fixtures "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: timeline, Foxtrot
-- ⚠️ **timing** scene[7] callouts: "Left point" and "Centre point" reveal 0.4 s apart — give each its own sentence
+- ⚠️ **timing** scene[7] callouts: "Left point" and "Centre point" reveal 0.5 s apart — give each its own sentence
 - ⚠️ **timing** scene[8] steps: "Alpha" and "Bravo" reveal 0.6 s apart — give each its own sentence
 - ⚠️ **timing** scene[8] steps: "Bravo" and "Charlie" reveal 0.6 s apart — give each its own sentence
 - ⚠️ **timing** scene[8] steps: "Charlie" and "Delta" reveal 0.8 s apart — give each its own sentence
@@ -37,7 +37,7 @@
 - ⚠️ **timing** scene[12] right: "Slower" and "Thorough" reveal 0.6 s apart — give each its own sentence
 - ⚠️ **timing** scene[12] right: "Thorough" and "Robust" reveal 0.7 s apart — give each its own sentence
 
-## F03 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F03 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **language** pronunciation — audition these once (node scripts/say.mts fixtures "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: controlhead, biopsyport, insertiontube, distaltip, reprocessor
@@ -65,31 +65,31 @@
 - ⚠️ **timing** scene[7] callouts: "record label" and "connectors label" reveal 0.5 s apart — give each its own sentence
 - ⚠️ **timing** scene[7] callouts: "connectors label" and "missing label" reveal 0.8 s apart — give each its own sentence
 
-## F04 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F04 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F05 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F05 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **timing** scene[5] bullets: "Anatomy — four chambers" and "Valves — open and close" reveal 0.6 s apart — give each its own sentence
 
-## F06 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F06 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F07 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F07 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F08 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F08 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F10 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F10 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F11 — OK with warnings (2026-10-04T16:41:23.627Z)
+## F11 — OK with warnings (2026-10-06T08:12:44.391Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
