@@ -80,7 +80,8 @@ const stat: ArtFactory = (d: StatData) => {
     }
     return (
       <div style={{position: 'absolute', left: 0, top: 0, width: W, height: figH, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: o}}>
-        <div style={{fontFamily: fonts.heading, fontWeight: 800, fontSize: 190, lineHeight: 1, color: col, fontVariantNumeric: 'tabular-nums', letterSpacing: '-0.02em'}}>{shown}</div>
+        {/* one line, sized to the width: a long display ("16 hours") never wraps out of its box */}
+        <div style={{fontFamily: fonts.heading, fontWeight: 800, fontSize: Math.min(190, (W * 0.92) / (display.length * 0.6)), lineHeight: 1, whiteSpace: 'nowrap', color: col, fontVariantNumeric: 'tabular-nums', letterSpacing: '-0.02em'}}>{shown}</div>
         {d.label ? <div style={{fontFamily: fonts.body, fontWeight: 600, fontSize: 44, color: ink.soft, marginTop: 14, textAlign: 'center', maxWidth: W - 100}}>{d.label}</div> : null}
       </div>
     );

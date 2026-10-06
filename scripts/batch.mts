@@ -40,7 +40,7 @@ import {recordStage} from './lib/metrics.mts';
 import {categorize} from './lib/categories.mts';
 import {judgeRepair} from './lib/repair.mts';
 
-type Video = {id: string; title?: string; source: string; pages?: [number, number]; outline?: string};
+type Video = {id: string; title?: string; source: string; pages?: [number, number]; outline?: string; /** intros: the course name as spoken (full forms) */ spoken?: string};
 const [project, cmd = 'all', ...rest] = process.argv.slice(2);
 if (!project) {
   console.error('usage: node scripts/batch.mts <project> plan|write|check|produce|translate|all [ids…]');
@@ -109,8 +109,32 @@ const fullFormsNote = (cfg: any) => {
 };
 const lexiconNote = (cfg: any) => (cfg.lang === 'en' ? '' : `\nLANGUAGE: write the narration and all on-screen text in native ${cfg.lang} script (numbers as digits).`);
 
+/** Course introductions: the client's template, the course row as the only facts, an exact opening. */
+export const openingOf = (v: Video) => `Welcome to the short-term course on ${v.spoken ?? v.title}.`;
+function introPrompt(v: Video) {
+  const cfg = loadProject(project);
+  const user = [
+    `LESSON: id "${v.id}", outputFilename "MedSkills_Intro_${v.id.replace(/\W+/g, '_')}.mp4", module "Course introduction".`,
+    `OPENING (the narration's first sentence, exactly): ${openingOf(v)}`,
+    `SPOKEN COURSE NAME (use it in the closing invitation): ${v.spoken ?? v.title}`,
+    fullFormsNote(cfg),
+    `COURSE ROW (the only allowed facts):\n<<<\n${sourceText(v)}\n>>>`,
+  ].filter(Boolean).join('\n\n');
+  return {system: readFileSync(join(ROOT, 'docs', 'INTRO_BRIEF.md'), 'utf8'), user};
+}
+/** The intro's opening sentence is fixed text: put it back exactly if a writer or repair drifted (zero tokens). */
+const fixOpening = (v: Video, spec: any) => {
+  const sc = spec.scenes?.[0];
+  if (!sc || typeof sc.narration !== 'string') return spec;
+  const want = openingOf(v);
+  if (sc.narration.startsWith(want)) return spec;
+  const rest = sc.narration.replace(/^\s*Welcome[^.!?]*[.!?]\s*/i, '');
+  return {...spec, scenes: [{...sc, narration: `${want} ${rest}`.trim()}, ...spec.scenes.slice(1)]};
+};
+
 function writerPrompt(v: Video) {
   const cfg = loadProject(project);
+  if (cfg.kind === 'intro') return introPrompt(v);
   const user = [
     `COURSE: ${cfg.name} — ${cfg.series}. Audience: clinical staff.`,
     `LESSON: id "${v.id}"${v.title ? `, title "${v.title}"` : ''}. outputFilename: "${(cfg.brand?.name ?? 'Lesson').replace(/\W+/g, '')}_${project.replace(/\W+/g, '_')}_${v.id}.mp4". module: "${v.title ?? v.id}".`,
@@ -142,11 +166,11 @@ function write(ids: string[]) {
     const draft = llm(system, user, {id: v.id, role: 'writer'});
     if (draft) {
       // the editor pass: depth, precision, picture fit, variety — the whole script back, improved
-      const edited = llm(editorBrief(), `${user.slice(user.indexOf('PLAYBOOKS'))}\n\nDRAFT:\n${JSON.stringify(draft)}`, {id: v.id, role: 'editor'});
+      const edited = loadProject(project).kind === 'intro' ? null : llm(editorBrief(), `${user.slice(user.indexOf('PLAYBOOKS'))}\n\nDRAFT:\n${JSON.stringify(draft)}`, {id: v.id, role: 'editor'});
       writeFileSync(specPath(project, v.id), JSON.stringify({...(edited ?? draft), id: v.id}, null, 2) + '\n');
       recordStage(project, v.id, 'write', {seconds: Math.round((Date.now() - t0) / 1000), edited: !!edited});
       console.log(`  ✍️  ${v.id}: written + edited in ${Math.round((Date.now() - t0) / 1000)} s`);
-    } else console.log(`  📝 ${v.id}: job → ${job(v.id, system, user, specPath(project, v.id), true).replace(ROOT + '/', '')}`);
+    } else console.log(`  📝 ${v.id}: job → ${job(v.id, system, user, specPath(project, v.id), loadProject(project).kind !== 'intro').replace(ROOT + '/', '')}`);
   }
 }
 
@@ -203,8 +227,8 @@ function check(ids: string[]) {
     }
     // 1 deterministic fixers (no tokens)
     if (!g.ok) {
-      const r = fixSpec(readJSON(v.id), cfg.lang, cfg.fullForms ?? {});
-      if (r.fixes.length) {
+      const r = fixSpec(cfg.kind === 'intro' ? fixOpening(v, readJSON(v.id)) : readJSON(v.id), cfg.lang, cfg.fullForms ?? {});
+      if (r.fixes.length || JSON.stringify(r.spec) !== JSON.stringify(readJSON(v.id))) {
         const before = readJSON(v.id);
         save(v.id, r.spec);
         const g2 = gate(v.id);
@@ -259,7 +283,7 @@ function check(ids: string[]) {
         }
         break;
       }
-      save(v.id, fixSpec(out, cfg.lang, cfg.fullForms ?? {}).spec);
+      save(v.id, fixSpec(cfg.kind === 'intro' ? fixOpening(v, out) : out, cfg.lang, cfg.fullForms ?? {}).spec);
       const g2 = gate(v.id);
       const r = judgeRepair(g, g2);
       repairLog.push(`repair${repairs}: ${r.verdict}${r.why ? ` (${r.why})` : ''}`);
@@ -311,10 +335,10 @@ else if (cmd === 'produce' || cmd === 'all') {
   if (cmd === 'all') {
     if (!existsSync(coursePath)) plan();
     // source first: the illustrations the course needs are acquired before any script is written
-    spawnSync('node', ['scripts/visuals.mts', project], {cwd: ROOT, stdio: 'inherit'});
+    if (loadProject(project).kind !== 'intro') spawnSync('node', ['scripts/visuals.mts', project], {cwd: ROOT, stdio: 'inherit'});
     // no script is written until every planned illustration is ready (acquired, drawn+approved, or charted)
     const vp = join(PD, 'visual-plan.json');
-    const notReady = existsSync(vp) ? JSON.parse(readFileSync(vp, 'utf8')).concepts.filter((c: any) => !['verified'].includes(c.status) && c.decision !== 'chart' && c.decision !== 'reuse') : [{id: 'visual plan'}];
+    const notReady = loadProject(project).kind === 'intro' ? [] : existsSync(vp) ? JSON.parse(readFileSync(vp, 'utf8')).concepts.filter((c: any) => !['verified'].includes(c.status) && c.decision !== 'chart' && c.decision !== 'reuse') : [{id: 'visual plan'}];
     if (notReady.length) {
       console.log(`\n⏸  stopped before writing: ${notReady.length} illustration(s) not ready (${notReady.map((c: any) => `${c.id}${c.status ? ` — ${c.status}` : ''}`).join(', ')}). Run the visuals jobs / approve drawings, then run "all" again.`);
       process.exit(2);

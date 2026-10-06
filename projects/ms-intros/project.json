@@ -1,0 +1,66 @@
+{
+  "name": "MedSkills Course Introductions",
+  "series": "MedSkills \u00b7 Course Introductions",
+  "lang": "en",
+  "brand": {
+    "art": {
+      "lockup": "brand/medskills-lockup.png",
+      "icon": "brand/medskills-icon.png",
+      "lockupAspect": 3.677,
+      "iconAspect": 0.972
+    },
+    "name": "MedSkills",
+    "signoff": "Keep learning with MedSkills.",
+    "episodeLabel": "EP.",
+    "watermark": "bottom-right"
+  },
+  "voice": {
+    "name": "en-IN-NeerjaNeural",
+    "rate": "+10%",
+    "pitch": "+0Hz",
+    "wpm": 147
+  },
+  "pacing": {
+    "sentencePause": 0.15,
+    "beat": 0.45,
+    "breathe": 0.8
+  },
+  "lexicon": {},
+  "terms": [],
+  "music": "audio/music/bed.mp3",
+  "length": {
+    "minutes": [
+      1.0,
+      1.5
+    ]
+  },
+  "rules": {
+    "first": "ident",
+    "last": "outro",
+    "requireOneOf": [],
+    "sync": "error",
+    "minFigures": 2,
+    "grounding": "error",
+    "minIllustrated": 0.6,
+    "maxScreenWords": 20,
+    "requirePlan": false,
+    "maxIdle": 7,
+    "variety": true,
+    "taste": true
+  },
+  "style": {
+    "spelling": "en-GB"
+  },
+  "frame": {
+    "ident": true,
+    "outro": "Keep learning with MedSkills.",
+    "outroLine": "medskills.in"
+  },
+  "fullForms": {
+    "HR": "human resources"
+  },
+  "kind": "intro",
+  "output": {
+    "dir": "MedSkills/Course_Intros"
+  }
+}

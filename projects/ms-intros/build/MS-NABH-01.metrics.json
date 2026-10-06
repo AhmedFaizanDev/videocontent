@@ -1,0 +1,59 @@
+{
+  "project": "ms-intros",
+  "id": "MS-NABH-01",
+  "stages": {
+    "preflight": {
+      "seconds": 3.5,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-06T08:11:19.299Z"
+    },
+    "check": {
+      "seconds": 3,
+      "firstPass": true,
+      "ok": true,
+      "categories": [],
+      "fixes": [],
+      "repairs": 0,
+      "repairLog": [
+        "agent repair: fixed"
+      ],
+      "fallback": [],
+      "remaining": [],
+      "at": "2026-10-06T07:35:00.017Z"
+    },
+    "voiceover": {
+      "seconds": 10.4,
+      "scenesVoiced": 5,
+      "scenes": 6,
+      "characters": 1155,
+      "audioSeconds": 75.8,
+      "wpm": 127,
+      "voice": "en-IN-NeerjaNeural",
+      "at": "2026-10-06T07:37:49.934Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-10-06T08:11:19.411Z"
+    },
+    "render": {
+      "seconds": 56,
+      "totalSeconds": 61,
+      "frames": 2658,
+      "fps": 47.2,
+      "bytes": 17261384,
+      "at": "2026-10-06T08:12:21.296Z"
+    },
+    "qa": {
+      "seconds": 10,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-06T08:12:31.581Z"
+    }
+  },
+  "authoring": [],
+  "lang": "en",
+  "runtimeMinutes": 1.48,
+  "words": 158
+}

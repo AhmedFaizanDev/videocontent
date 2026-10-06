@@ -1,0 +1,418 @@
+{
+ "videos": [
+  {
+   "id": "MS-NABH-01",
+   "title": "NABH 6th Edition — Implementation & Compliance",
+   "source": "MS-NABH-01.md",
+   "spoken": "National Accreditation Board for Hospitals and Healthcare Providers, sixth edition: implementation and compliance"
+  },
+  {
+   "id": "MS-NABH-02",
+   "title": "NABH Assessment Readiness & Documentation",
+   "source": "MS-NABH-02.md",
+   "spoken": "National Accreditation Board for Hospitals and Healthcare Providers assessment readiness and documentation"
+  },
+  {
+   "id": "MS-QAU-03",
+   "title": "Internal Quality Auditor for Hospitals",
+   "source": "MS-QAU-03.md",
+   "spoken": "Internal Quality Auditor for Hospitals"
+  },
+  {
+   "id": "MS-QI-04",
+   "title": "Quality Indicators, KPIs & Clinical Audit",
+   "source": "MS-QI-04.md",
+   "spoken": "Quality Indicators, Key Performance Indicators and Clinical Audit"
+  },
+  {
+   "id": "MS-NNE-05",
+   "title": "NABH Nursing Excellence — Certification Prep",
+   "source": "MS-NNE-05.md",
+   "spoken": "National Accreditation Board for Hospitals and Healthcare Providers Nursing Excellence: certification preparation"
+  },
+  {
+   "id": "MS-NABL-06",
+   "title": "NABL / Lab Quality for Hospital Labs",
+   "source": "MS-NABL-06.md",
+   "spoken": "National Accreditation Board for Testing and Calibration Laboratories and laboratory quality for hospital laboratories"
+  },
+  {
+   "id": "MS-ISO-59",
+   "title": "ISO 15189:2022 Awareness & Quality Management System",
+   "source": "MS-ISO-59.md",
+   "spoken": "International Organization for Standardization fifteen one eight nine, 2022: awareness and quality management system"
+  },
+  {
+   "id": "MS-LIA-60",
+   "title": "Internal Auditor for Medical Laboratories",
+   "source": "MS-LIA-60.md",
+   "spoken": "Internal Auditor for Medical Laboratories"
+  },
+  {
+   "id": "MS-BIO-61",
+   "title": "Laboratory Biosafety & Biosecurity",
+   "source": "MS-BIO-61.md",
+   "spoken": "Laboratory Biosafety and Biosecurity"
+  },
+  {
+   "id": "MS-IQC-62",
+   "title": "Internal Quality Control, Westgard Rules & EQAS / PT",
+   "source": "MS-IQC-62.md",
+   "spoken": "Internal Quality Control, Westgard Rules, external quality assessment and proficiency testing"
+  },
+  {
+   "id": "MS-PRE-63",
+   "title": "Pre-examination: Sample Collection, Transport & Rejection",
+   "source": "MS-PRE-63.md",
+   "spoken": "Pre-examination: sample collection, transport and rejection"
+  },
+  {
+   "id": "MS-MU-64",
+   "title": "Method Verification, Validation & Measurement Uncertainty",
+   "source": "MS-MU-64.md",
+   "spoken": "Method Verification, Validation and Measurement Uncertainty"
+  },
+  {
+   "id": "MS-EQP-65",
+   "title": "Equipment Calibration, Maintenance & Traceability",
+   "source": "MS-EQP-65.md",
+   "spoken": "Equipment Calibration, Maintenance and Traceability"
+  },
+  {
+   "id": "MS-RPT-66",
+   "title": "Document Control, Records & Result Reporting",
+   "source": "MS-RPT-66.md",
+   "spoken": "Document Control, Records and Result Reporting"
+  },
+  {
+   "id": "MS-CAPA-67",
+   "title": "Risk Management, Nonconformities & CAPA",
+   "source": "MS-CAPA-67.md",
+   "spoken": "Risk Management, Nonconformities and Corrective and Preventive Action"
+  },
+  {
+   "id": "MS-IMP-68",
+   "title": "Impartiality, Confidentiality & Ethics in the Laboratory",
+   "source": "MS-IMP-68.md",
+   "spoken": "Impartiality, Confidentiality and Ethics in the Laboratory"
+  },
+  {
+   "id": "MS-POCT-69",
+   "title": "Point-of-Care Testing (POCT) Quality",
+   "source": "MS-POCT-69.md",
+   "spoken": "Point-of-Care Testing Quality"
+  },
+  {
+   "id": "MS-PSG-07",
+   "title": "Patient Safety & International Patient Safety Goals",
+   "source": "MS-PSG-07.md",
+   "spoken": "Patient Safety and the International Patient Safety Goals"
+  },
+  {
+   "id": "MS-MED-08",
+   "title": "Medication Safety & High-Alert Drugs",
+   "source": "MS-MED-08.md",
+   "spoken": "Medication Safety and High-Alert Drugs"
+  },
+  {
+   "id": "MS-FALL-09",
+   "title": "Fall Prevention & Risk Assessment",
+   "source": "MS-FALL-09.md",
+   "spoken": "Fall Prevention and Risk Assessment"
+  },
+  {
+   "id": "MS-RCA-10",
+   "title": "Root Cause Analysis & Incident Reporting",
+   "source": "MS-RCA-10.md",
+   "spoken": "Root Cause Analysis and Incident Reporting"
+  },
+  {
+   "id": "MS-OTS-11",
+   "title": "WHO Surgical Safety Checklist & OT Safety",
+   "source": "MS-OTS-11.md",
+   "spoken": "the World Health Organization Surgical Safety Checklist and operation theatre safety"
+  },
+  {
+   "id": "MS-IPC-12",
+   "title": "Hospital Infection Prevention & Control (IPC)",
+   "source": "MS-IPC-12.md",
+   "spoken": "Hospital Infection Prevention and Control"
+  },
+  {
+   "id": "MS-HH-13",
+   "title": "Hand Hygiene & WHO 5 Moments",
+   "source": "MS-HH-13.md",
+   "spoken": "Hand Hygiene and the World Health Organization’s Five Moments"
+  },
+  {
+   "id": "MS-AMS-14",
+   "title": "Antimicrobial Stewardship",
+   "source": "MS-AMS-14.md",
+   "spoken": "Antimicrobial Stewardship"
+  },
+  {
+   "id": "MS-CSSD-15",
+   "title": "CSSD & Sterilization Practices",
+   "source": "MS-CSSD-15.md",
+   "spoken": "Central Sterile Services Department and Sterilization Practices"
+  },
+  {
+   "id": "MS-HAI-16",
+   "title": "HAI Surveillance & Outbreak Management",
+   "source": "MS-HAI-16.md",
+   "spoken": "Healthcare-Associated Infection Surveillance and Outbreak Management"
+  },
+  {
+   "id": "MS-OTIPC-57",
+   "title": "OT Infection Prevention & Control",
+   "source": "MS-OTIPC-57.md",
+   "spoken": "Operation Theatre Infection Prevention and Control"
+  },
+  {
+   "id": "MS-SSI-58",
+   "title": "Surgical Site Infection (SSI) Prevention",
+   "source": "MS-SSI-58.md",
+   "spoken": "Surgical Site Infection Prevention"
+  },
+  {
+   "id": "MS-BMW-17",
+   "title": "Biomedical Waste Management (BMW Rules 2016)",
+   "source": "MS-BMW-17.md",
+   "spoken": "Biomedical Waste Management under the Bio-Medical Waste Management Rules 2016"
+  },
+  {
+   "id": "MS-SPILL-18",
+   "title": "Spill Management & Chemical Safety",
+   "source": "MS-SPILL-18.md",
+   "spoken": "Spill Management and Chemical Safety"
+  },
+  {
+   "id": "MS-FIRE-19",
+   "title": "Fire Safety, Evacuation & Mock Drills",
+   "source": "MS-FIRE-19.md",
+   "spoken": "Fire Safety, Evacuation and Mock Drills"
+  },
+  {
+   "id": "MS-FMS-20",
+   "title": "Facility & Environmental Safety (FMS)",
+   "source": "MS-FMS-20.md",
+   "spoken": "Facility and Environmental Safety"
+  },
+  {
+   "id": "MS-RAD-21",
+   "title": "Radiation Safety (AERB) for Imaging Staff",
+   "source": "MS-RAD-21.md",
+   "spoken": "Radiation Safety for Imaging Staff, under the Atomic Energy Regulatory Board"
+  },
+  {
+   "id": "MS-MLC-22",
+   "title": "Medico-Legal Case (MLC) & Police Case Management",
+   "source": "MS-MLC-22.md",
+   "spoken": "Medico-Legal Case and Police Case Management"
+  },
+  {
+   "id": "MS-CONS-23",
+   "title": "Informed Consent: Law & Documentation",
+   "source": "MS-CONS-23.md",
+   "spoken": "Informed Consent: law and documentation"
+  },
+  {
+   "id": "MS-NEG-24",
+   "title": "Medical Negligence & Liability Prevention",
+   "source": "MS-NEG-24.md",
+   "spoken": "Medical Negligence and Liability Prevention"
+  },
+  {
+   "id": "MS-DTH-25",
+   "title": "Death Certification & Handling of Deaths",
+   "source": "MS-DTH-25.md",
+   "spoken": "Death Certification and Handling of Deaths"
+  },
+  {
+   "id": "MS-PNDT-26",
+   "title": "PC-PNDT Act Compliance",
+   "source": "MS-PNDT-26.md",
+   "spoken": "Pre-Conception and Pre-Natal Diagnostic Techniques Act Compliance"
+  },
+  {
+   "id": "MS-CEA-27",
+   "title": "Clinical Establishments Act & Statutory Licensing",
+   "source": "MS-CEA-27.md",
+   "spoken": "the Clinical Establishments Act and Statutory Licensing"
+  },
+  {
+   "id": "MS-DPDP-28",
+   "title": "Data Privacy & DPDP Act 2023 for Hospitals",
+   "source": "MS-DPDP-28.md",
+   "spoken": "Data Privacy and the Digital Personal Data Protection Act 2023 for Hospitals"
+  },
+  {
+   "id": "MS-BLS-29",
+   "title": "Basic & Advanced Cardiac Life Support (BLS/ACLS)",
+   "source": "MS-BLS-29.md",
+   "spoken": "Basic and Advanced Cardiac Life Support"
+  },
+  {
+   "id": "MS-ICU-30",
+   "title": "Critical Care / ICU Nursing",
+   "source": "MS-ICU-30.md",
+   "spoken": "Critical Care and Intensive Care Unit Nursing"
+  },
+  {
+   "id": "MS-IV-31",
+   "title": "IV Cannulation & Infusion Therapy",
+   "source": "MS-IV-31.md",
+   "spoken": "Intravenous Cannulation and Infusion Therapy"
+  },
+  {
+   "id": "MS-WND-32",
+   "title": "Wound Care & Pressure-Injury Prevention",
+   "source": "MS-WND-32.md",
+   "spoken": "Wound Care and Pressure-Injury Prevention"
+  },
+  {
+   "id": "MS-DOSE-33",
+   "title": "Medication Administration & Dosage Calculation",
+   "source": "MS-DOSE-33.md",
+   "spoken": "Medication Administration and Dosage Calculation"
+  },
+  {
+   "id": "MS-VENT-34",
+   "title": "Ventilator Care & Airway Management",
+   "source": "MS-VENT-34.md",
+   "spoken": "Ventilator Care and Airway Management"
+  },
+  {
+   "id": "MS-SBAR-35",
+   "title": "Nursing Documentation & Handover (SBAR)",
+   "source": "MS-SBAR-35.md",
+   "spoken": "Nursing Documentation and Handover using Situation, Background, Assessment, Recommendation"
+  },
+  {
+   "id": "MS-ECG-36",
+   "title": "Basic ECG Interpretation for Nurses",
+   "source": "MS-ECG-36.md",
+   "spoken": "Basic Electrocardiogram Interpretation for Nurses"
+  },
+  {
+   "id": "MS-TRI-37",
+   "title": "Emergency & Triage Nursing",
+   "source": "MS-TRI-37.md",
+   "spoken": "Emergency and Triage Nursing"
+  },
+  {
+   "id": "MS-CODE-38",
+   "title": "Code Blue & Rapid Response Team",
+   "source": "MS-CODE-38.md",
+   "spoken": "Code Blue and the Rapid Response Team"
+  },
+  {
+   "id": "MS-TRA-39",
+   "title": "Basic Trauma Management",
+   "source": "MS-TRA-39.md",
+   "spoken": "Basic Trauma Management"
+  },
+  {
+   "id": "MS-DIS-40",
+   "title": "Hospital Disaster Management & Mass Casualty",
+   "source": "MS-DIS-40.md",
+   "spoken": "Hospital Disaster Management and Mass Casualty"
+  },
+  {
+   "id": "MS-NRP-41",
+   "title": "Neonatal Resuscitation & NICU Care",
+   "source": "MS-NRP-41.md",
+   "spoken": "Neonatal Resuscitation and Neonatal Intensive Care Unit Care"
+  },
+  {
+   "id": "MS-BLD-42",
+   "title": "Blood Transfusion Safety & Haemovigilance",
+   "source": "MS-BLD-42.md",
+   "spoken": "Blood Transfusion Safety and Haemovigilance"
+  },
+  {
+   "id": "MS-DIA-43",
+   "title": "Dialysis Nursing",
+   "source": "MS-DIA-43.md",
+   "spoken": "Dialysis Nursing"
+  },
+  {
+   "id": "MS-ONC-44",
+   "title": "Oncology / Chemotherapy Administration",
+   "source": "MS-ONC-44.md",
+   "spoken": "Oncology and Chemotherapy Administration"
+  },
+  {
+   "id": "MS-DBT-45",
+   "title": "Diabetes Care & Management",
+   "source": "MS-DBT-45.md",
+   "spoken": "Diabetes Care and Management"
+  },
+  {
+   "id": "MS-PAL-46",
+   "title": "Palliative & End-of-Life Care",
+   "source": "MS-PAL-46.md",
+   "spoken": "Palliative and End-of-Life Care"
+  },
+  {
+   "id": "MS-ONB-47",
+   "title": "Staff Induction & Onboarding Program",
+   "source": "MS-ONB-47.md",
+   "spoken": "Staff Induction and Onboarding"
+  },
+  {
+   "id": "MS-POSH-48",
+   "title": "POSH — Prevention of Sexual Harassment",
+   "source": "MS-POSH-48.md",
+   "spoken": "the Prevention of Sexual Harassment"
+  },
+  {
+   "id": "MS-PR-49",
+   "title": "Patient Rights & Responsibilities",
+   "source": "MS-PR-49.md",
+   "spoken": "Patient Rights and Responsibilities"
+  },
+  {
+   "id": "MS-ETH-50",
+   "title": "Code of Conduct, Ethics & Professionalism",
+   "source": "MS-ETH-50.md",
+   "spoken": "Code of Conduct, Ethics and Professionalism"
+  },
+  {
+   "id": "MS-PX-51",
+   "title": "Patient Experience & Service Excellence",
+   "source": "MS-PX-51.md",
+   "spoken": "Patient Experience and Service Excellence"
+  },
+  {
+   "id": "MS-COMM-52",
+   "title": "Communication Skills & Breaking Bad News",
+   "source": "MS-COMM-52.md",
+   "spoken": "Communication Skills and Breaking Bad News"
+  },
+  {
+   "id": "MS-DEE-53",
+   "title": "Handling Difficult Patients & De-escalation",
+   "source": "MS-DEE-53.md",
+   "spoken": "Handling Difficult Patients and De-escalation"
+  },
+  {
+   "id": "MS-GRV-54",
+   "title": "Grievance & Complaint Handling",
+   "source": "MS-GRV-54.md",
+   "spoken": "Grievance and Complaint Handling"
+  },
+  {
+   "id": "MS-MR-55",
+   "title": "Medical Records & Clinical Documentation",
+   "source": "MS-MR-55.md",
+   "spoken": "Medical Records and Clinical Documentation"
+  },
+  {
+   "id": "MS-COD-56",
+   "title": "ICD Coding & EMR/HIS Proficiency",
+   "source": "MS-COD-56.md",
+   "spoken": "International Classification of Diseases Coding and Electronic Medical Record and Hospital Information System Proficiency"
+  }
+ ]
+}

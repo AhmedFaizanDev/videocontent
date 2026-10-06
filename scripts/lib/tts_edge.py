@@ -127,6 +127,27 @@ def timeline(disp, spoken, words, sents, offset):
                     out[k][1] = w["end"]
                 else:
                     out[k] = [w["start"], w["end"]]
+    # a word the voice did not report (a number it read as "sixteen", a token it merged) is never
+    # dropped: it takes the time between its reported neighbours, so captions and reveals keep it
+    keys = [k for k in range(len(disp)) if norm(disp[k])]
+    known = sorted(out)
+    if known:
+        for k in keys:
+            if k in out:
+                continue
+            before = [q for q in known if q < k]
+            after = [q for q in known if q > k]
+            if before and after:
+                a, b = before[-1], after[0]
+                t0, t1 = out[a][1], out[b][0]
+                gap = [q for q in keys if a < q < b]
+                i = gap.index(k)
+                step = max(0.0, t1 - t0) / len(gap)
+                out[k] = [t0 + i * step, t0 + (i + 1) * step]
+            elif after:
+                out[k] = [out[after[0]][0], out[after[0]][0]]
+            else:
+                out[k] = [out[before[-1]][1], out[before[-1]][1]]
     res = []
     for k in sorted(out):
         raw = disp[k]

@@ -250,10 +250,16 @@ const hub: ArtFactory = (data) => {
   const items: Item[] = data.items;
   const n = items.length;
   const W = 1680;
-  const SR = n <= 4 ? 114 : 104;
+  // labels longer than a short word ("Nursing superintendents") sit in pills sized to their text,
+  // read at full size; short labels keep the classic discs
+  const pills = items.some((it) => it.label.length > 11);
+  const FS = 40;
+  const PW = Math.min(420, Math.max(...items.map((it) => Math.max(...it.label.split(/\s+/).map((w) => w.length)) * FS * 0.6 + 70), 260));
+  const PH = 2 * FS * 1.15 + 34;
+  const SR = pills ? PH / 2 : n <= 4 ? 114 : 104;
   const CR = 104;
   const RY = CR + SR + 28; // top/bottom satellites clear the centre disc
-  const [CX, CY, RX] = [840, RY + SR + 6, 580];
+  const [CX, CY, RX] = [840, RY + SR + 6, pills ? 840 - PW / 2 - 10 : 580];
   const H = 2 * CY;
   const pos = items.map((_, i) => {
     const a = -Math.PI / 2 + (i / n) * Math.PI * 2;
@@ -284,9 +290,19 @@ const hub: ArtFactory = (data) => {
           const r = SR * (1 + 0.12 * L.pop(i) * (i === L.active ? 1 : 0.3));
           return (
             <g key={i} opacity={tw(c.f, 14 + i * 3, 12)}>
-              <circle cx={x} cy={y} r={r} fill={ink.paperLight} />
-              <circle cx={x} cy={y} r={r} fill={L.fill(i)} opacity={L.fillO(i)} style={{mixBlendMode: 'multiply'}} />
-              <path d={circ(x, y, r)} fill="none" stroke={INK} strokeWidth={4} />
+              {pills ? (
+                <>
+                  <path d={rect(x - (PW / 2) * (r / SR), y - r, PW * (r / SR), 2 * r, r)} fill={ink.paperLight} />
+                  <path d={rect(x - (PW / 2) * (r / SR), y - r, PW * (r / SR), 2 * r, r)} fill={L.fill(i)} opacity={L.fillO(i)} style={{mixBlendMode: 'multiply'}} />
+                  <path d={rect(x - (PW / 2) * (r / SR), y - r, PW * (r / SR), 2 * r, r)} fill="none" stroke={INK} strokeWidth={4} />
+                </>
+              ) : (
+                <>
+                  <circle cx={x} cy={y} r={r} fill={ink.paperLight} />
+                  <circle cx={x} cy={y} r={r} fill={L.fill(i)} opacity={L.fillO(i)} style={{mixBlendMode: 'multiply'}} />
+                  <path d={circ(x, y, r)} fill="none" stroke={INK} strokeWidth={4} />
+                </>
+              )}
             </g>
           );
         })}
@@ -301,8 +317,9 @@ const hub: ArtFactory = (data) => {
           {data.center}
         </T>
         {pos.map(([x, y], i) => (
-          <T key={i} x={x} y={y} size={n <= 4 ? 36 : 32} weight={600} maxWidth={SR * 1.78} color={i === L.active ? ink.paperLight : INK} o={tw(c.f, 14 + i * 3, 12)}>
-            {items[i].label}
+          // a long single word ("Administrators") must fit the disc: size to the longest word
+          <T key={i} x={x} y={y} size={pills ? FS : Math.min(n <= 4 ? 36 : 32, (SR * 1.7) / (Math.max(...items[i].label.split(/\s+/).map((w) => w.length)) * 0.58))} weight={600} maxWidth={pills ? PW - 40 : SR * 1.78} color={i === L.active ? ink.paperLight : INK} o={tw(c.f, 14 + i * 3, 12)}>
+            {items[i].label.replace(/-/g, '\u2011') /* a hyphenated role never breaks at its hyphen */}
           </T>
         ))}
       </>

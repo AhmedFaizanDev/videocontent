@@ -65,6 +65,12 @@ step('3 units', () => {
   assert.deepEqual(uncovered({scenes: [{narration: 'रक्तचाप 120 → O₂ ✓ 🙂'}]}, cov), ['🙂'], 'glyph coverage');
   assert.equal(speakTokens('No pulse, no breathing. No. It is shockable. See No. 3.').map((t) => t.s).join(' '), 'No pulse, no breathing. No. It is shockable. See number 3.', '"no" is never read as "number"');
   {
+    // a word the voice reports differently ("16" as "sixteen hours") keeps its place in the timeline
+    const py = existsSync(join(ROOT, '.venv', 'bin', 'python')) ? join(ROOT, '.venv', 'bin', 'python') : 'python3';
+    const r = spawnSync(py, ['-c', "import importlib.util as u;s=u.spec_from_file_location('t','scripts/lib/tts_edge.py');m=u.module_from_spec(s);s.loader.exec_module(m);print(' '.join(x['raw'] for x in m.timeline(['Over','16','hours','of','learning'],['Over','16','hours','of','learning'],[('Over',0.1,0.4),('sixteen hours',0.45,1.2),('of',1.21,1.35),('learning',1.36,1.85)],[],0)))"], {cwd: ROOT, encoding: 'utf8'});
+    assert.equal(r.stdout.trim(), 'Over 16 hours of learning', 'no word is dropped from the voice timeline');
+  }
+  {
     const e1 = '❌ M01 timing: scene[2] (stage): ~9 s with nothing new on screen';
     const e2 = '❌ M01 validate: scene[4] sync: beats[1] never heard';
     assert.equal(judgeRepair({ok: false, errs: [e1, e2]}, {ok: true, errs: []}).verdict, 'fixed');

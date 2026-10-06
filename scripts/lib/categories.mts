@@ -1,7 +1,7 @@
 /** A gate error line (validate/preflight/QA) → its failure category, for repairs and the benchmark. */
 const RULES: [RegExp, string][] = [
   [/too small to read/, 'tiny-text'],
-  [/overflows its box|overflow/, 'overflow'],
+  [/overflows its box|overflow|cut off/, 'overflow'],
   [/collides|overlap/, 'collision'],
   [/variety:/, 'variety'],
   [/nothing new on screen|static/, 'idle'],

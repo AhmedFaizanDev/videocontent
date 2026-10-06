@@ -285,6 +285,18 @@ function compileRecipe(s: any): any {
   const words = spoken(s.narration ?? '').split(/\s+/).map(normWord).filter(Boolean);
   if (s.type === 'opener') {
     const beats: any[] = [{say: [words[0]], _pos: 0, title: s.title}];
+    // a two-part title ("NABH 6th Edition — Implementation & Compliance") builds in two beats: the
+    // first part as the sentence starts, the whole title when the voice reaches the second part
+    const [head, tail] = String(s.title ?? '').split(/\s+[—–]\s+/);
+    if (tail) {
+      const d = derive(words, tail, 3);
+      if (d) {
+        beats[0] = {...beats[0], title: head};
+        beats.push({say: d.say, _pos: d.at, title: s.title});
+      }
+    }
+    // notes on the opener (an intro's one-line course summary)
+    beats.push(...noteBeats(words, s.notes ?? []).map((b: any) => b));
     if (s.act && s.art) {
       const at = Math.min(words.length - 1, Math.max(3, Math.floor(words.length * 0.35)));
       // the act beat also moves the camera: that clears the hero title and hands the screen to the moving art
@@ -342,12 +354,12 @@ function compileRecipe(s: any): any {
 }
 
 /** The project's frame around every lesson: its logo intro first, its signoff outro last. */
-export type Frame = {ident?: boolean; outro?: string | false; identSeconds?: number; /** apply the director (src/director.ts): on for every new project; off keeps delivered lessons byte-identical */ direct?: boolean};
+export type Frame = {ident?: boolean; outro?: string | false; identSeconds?: number; /** the end card's text line (e.g. the website) — shown, not spoken */ outroLine?: string; /** apply the director (src/director.ts): on for every new project; off keeps delivered lessons byte-identical */ direct?: boolean};
 const framed = (scenes: any[], frame?: Frame) => {
   if (!frame) return scenes;
   const out = [...scenes];
   if (frame.ident && out[0]?.type !== 'ident') out.unshift({type: 'ident', kicker: 'Intro', seconds: frame.identSeconds ?? 3.2});
-  if (frame.outro && out[out.length - 1]?.type !== 'outro') out.push({type: 'outro', kicker: 'Outro', transition: 'slide', narration: frame.outro});
+  if (frame.outro && out[out.length - 1]?.type !== 'outro') out.push({type: 'outro', kicker: 'Outro', transition: 'slide', narration: frame.outro, ...(frame.outroLine ? {line: frame.outroLine} : {})});
   return out;
 };
 

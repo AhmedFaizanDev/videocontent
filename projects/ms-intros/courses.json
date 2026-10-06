@@ -1,0 +1,554 @@
+[
+ {
+  "code": "MS-NABH-01",
+  "name": "NABH 6th Edition — Implementation & Compliance",
+  "category": "Accreditation & Quality",
+  "hours": 16,
+  "type": "Mandatory",
+  "spoken": "National Accreditation Board for Hospitals and Healthcare Providers, sixth edition: implementation and compliance"
+ },
+ {
+  "code": "MS-NABH-02",
+  "name": "NABH Assessment Readiness & Documentation",
+  "category": "Accreditation & Quality",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "National Accreditation Board for Hospitals and Healthcare Providers assessment readiness and documentation"
+ },
+ {
+  "code": "MS-QAU-03",
+  "name": "Internal Quality Auditor for Hospitals",
+  "category": "Accreditation & Quality",
+  "hours": 16,
+  "type": "Mandatory",
+  "spoken": "Internal Quality Auditor for Hospitals"
+ },
+ {
+  "code": "MS-QI-04",
+  "name": "Quality Indicators, KPIs & Clinical Audit",
+  "category": "Accreditation & Quality",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Quality Indicators, Key Performance Indicators and Clinical Audit"
+ },
+ {
+  "code": "MS-NNE-05",
+  "name": "NABH Nursing Excellence — Certification Prep",
+  "category": "Accreditation & Quality",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "National Accreditation Board for Hospitals and Healthcare Providers Nursing Excellence: certification preparation"
+ },
+ {
+  "code": "MS-NABL-06",
+  "name": "NABL / Lab Quality for Hospital Labs",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "National Accreditation Board for Testing and Calibration Laboratories and laboratory quality for hospital laboratories"
+ },
+ {
+  "code": "MS-ISO-59",
+  "name": "ISO 15189:2022 Awareness & Quality Management System",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "International Organization for Standardization fifteen one eight nine, 2022: awareness and quality management system"
+ },
+ {
+  "code": "MS-LIA-60",
+  "name": "Internal Auditor for Medical Laboratories",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 16,
+  "type": "Mandatory",
+  "spoken": "Internal Auditor for Medical Laboratories"
+ },
+ {
+  "code": "MS-BIO-61",
+  "name": "Laboratory Biosafety & Biosecurity",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Laboratory Biosafety and Biosecurity"
+ },
+ {
+  "code": "MS-IQC-62",
+  "name": "Internal Quality Control, Westgard Rules & EQAS / PT",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "Internal Quality Control, Westgard Rules, external quality assessment and proficiency testing"
+ },
+ {
+  "code": "MS-PRE-63",
+  "name": "Pre-examination: Sample Collection, Transport & Rejection",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Pre-examination: sample collection, transport and rejection"
+ },
+ {
+  "code": "MS-MU-64",
+  "name": "Method Verification, Validation & Measurement Uncertainty",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "Method Verification, Validation and Measurement Uncertainty"
+ },
+ {
+  "code": "MS-EQP-65",
+  "name": "Equipment Calibration, Maintenance & Traceability",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Equipment Calibration, Maintenance and Traceability"
+ },
+ {
+  "code": "MS-RPT-66",
+  "name": "Document Control, Records & Result Reporting",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Document Control, Records and Result Reporting"
+ },
+ {
+  "code": "MS-CAPA-67",
+  "name": "Risk Management, Nonconformities & CAPA",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Risk Management, Nonconformities and Corrective and Preventive Action"
+ },
+ {
+  "code": "MS-IMP-68",
+  "name": "Impartiality, Confidentiality & Ethics in the Laboratory",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Impartiality, Confidentiality and Ethics in the Laboratory"
+ },
+ {
+  "code": "MS-POCT-69",
+  "name": "Point-of-Care Testing (POCT) Quality",
+  "category": "Laboratory Quality & NABL (ISO 15189)",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Point-of-Care Testing Quality"
+ },
+ {
+  "code": "MS-PSG-07",
+  "name": "Patient Safety & International Patient Safety Goals",
+  "category": "Patient Safety & Clinical Risk",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Patient Safety and the International Patient Safety Goals"
+ },
+ {
+  "code": "MS-MED-08",
+  "name": "Medication Safety & High-Alert Drugs",
+  "category": "Patient Safety & Clinical Risk",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Medication Safety and High-Alert Drugs"
+ },
+ {
+  "code": "MS-FALL-09",
+  "name": "Fall Prevention & Risk Assessment",
+  "category": "Patient Safety & Clinical Risk",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Fall Prevention and Risk Assessment"
+ },
+ {
+  "code": "MS-RCA-10",
+  "name": "Root Cause Analysis & Incident Reporting",
+  "category": "Patient Safety & Clinical Risk",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Root Cause Analysis and Incident Reporting"
+ },
+ {
+  "code": "MS-OTS-11",
+  "name": "WHO Surgical Safety Checklist & OT Safety",
+  "category": "Patient Safety & Clinical Risk",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "the World Health Organization Surgical Safety Checklist and operation theatre safety"
+ },
+ {
+  "code": "MS-IPC-12",
+  "name": "Hospital Infection Prevention & Control (IPC)",
+  "category": "Infection Prevention & Control",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "Hospital Infection Prevention and Control"
+ },
+ {
+  "code": "MS-HH-13",
+  "name": "Hand Hygiene & WHO 5 Moments",
+  "category": "Infection Prevention & Control",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Hand Hygiene and the World Health Organization’s Five Moments"
+ },
+ {
+  "code": "MS-AMS-14",
+  "name": "Antimicrobial Stewardship",
+  "category": "Infection Prevention & Control",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Antimicrobial Stewardship"
+ },
+ {
+  "code": "MS-CSSD-15",
+  "name": "CSSD & Sterilization Practices",
+  "category": "Infection Prevention & Control",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Central Sterile Services Department and Sterilization Practices"
+ },
+ {
+  "code": "MS-HAI-16",
+  "name": "HAI Surveillance & Outbreak Management",
+  "category": "Infection Prevention & Control",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Healthcare-Associated Infection Surveillance and Outbreak Management"
+ },
+ {
+  "code": "MS-OTIPC-57",
+  "name": "OT Infection Prevention & Control",
+  "category": "Infection Prevention & Control",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Operation Theatre Infection Prevention and Control"
+ },
+ {
+  "code": "MS-SSI-58",
+  "name": "Surgical Site Infection (SSI) Prevention",
+  "category": "Infection Prevention & Control",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Surgical Site Infection Prevention"
+ },
+ {
+  "code": "MS-BMW-17",
+  "name": "Biomedical Waste Management (BMW Rules 2016)",
+  "category": "Waste, Fire & Facility Safety",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Biomedical Waste Management under the Bio-Medical Waste Management Rules 2016"
+ },
+ {
+  "code": "MS-SPILL-18",
+  "name": "Spill Management & Chemical Safety",
+  "category": "Waste, Fire & Facility Safety",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Spill Management and Chemical Safety"
+ },
+ {
+  "code": "MS-FIRE-19",
+  "name": "Fire Safety, Evacuation & Mock Drills",
+  "category": "Waste, Fire & Facility Safety",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Fire Safety, Evacuation and Mock Drills"
+ },
+ {
+  "code": "MS-FMS-20",
+  "name": "Facility & Environmental Safety (FMS)",
+  "category": "Waste, Fire & Facility Safety",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Facility and Environmental Safety"
+ },
+ {
+  "code": "MS-RAD-21",
+  "name": "Radiation Safety (AERB) for Imaging Staff",
+  "category": "Waste, Fire & Facility Safety",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Radiation Safety for Imaging Staff, under the Atomic Energy Regulatory Board"
+ },
+ {
+  "code": "MS-MLC-22",
+  "name": "Medico-Legal Case (MLC) & Police Case Management",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Medico-Legal Case and Police Case Management"
+ },
+ {
+  "code": "MS-CONS-23",
+  "name": "Informed Consent: Law & Documentation",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Informed Consent: law and documentation"
+ },
+ {
+  "code": "MS-NEG-24",
+  "name": "Medical Negligence & Liability Prevention",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "Medical Negligence and Liability Prevention"
+ },
+ {
+  "code": "MS-DTH-25",
+  "name": "Death Certification & Handling of Deaths",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Death Certification and Handling of Deaths"
+ },
+ {
+  "code": "MS-PNDT-26",
+  "name": "PC-PNDT Act Compliance",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Pre-Conception and Pre-Natal Diagnostic Techniques Act Compliance"
+ },
+ {
+  "code": "MS-CEA-27",
+  "name": "Clinical Establishments Act & Statutory Licensing",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "the Clinical Establishments Act and Statutory Licensing"
+ },
+ {
+  "code": "MS-DPDP-28",
+  "name": "Data Privacy & DPDP Act 2023 for Hospitals",
+  "category": "Medico-Legal & Regulatory Compliance",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Data Privacy and the Digital Personal Data Protection Act 2023 for Hospitals"
+ },
+ {
+  "code": "MS-BLS-29",
+  "name": "Basic & Advanced Cardiac Life Support (BLS/ACLS)",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "Basic and Advanced Cardiac Life Support"
+ },
+ {
+  "code": "MS-ICU-30",
+  "name": "Critical Care / ICU Nursing",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 16,
+  "type": "Upskilling",
+  "spoken": "Critical Care and Intensive Care Unit Nursing"
+ },
+ {
+  "code": "MS-IV-31",
+  "name": "IV Cannulation & Infusion Therapy",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Intravenous Cannulation and Infusion Therapy"
+ },
+ {
+  "code": "MS-WND-32",
+  "name": "Wound Care & Pressure-Injury Prevention",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Wound Care and Pressure-Injury Prevention"
+ },
+ {
+  "code": "MS-DOSE-33",
+  "name": "Medication Administration & Dosage Calculation",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Medication Administration and Dosage Calculation"
+ },
+ {
+  "code": "MS-VENT-34",
+  "name": "Ventilator Care & Airway Management",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 12,
+  "type": "Upskilling",
+  "spoken": "Ventilator Care and Airway Management"
+ },
+ {
+  "code": "MS-SBAR-35",
+  "name": "Nursing Documentation & Handover (SBAR)",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Nursing Documentation and Handover using Situation, Background, Assessment, Recommendation"
+ },
+ {
+  "code": "MS-ECG-36",
+  "name": "Basic ECG Interpretation for Nurses",
+  "category": "Nursing Skills & Upskilling",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Basic Electrocardiogram Interpretation for Nurses"
+ },
+ {
+  "code": "MS-TRI-37",
+  "name": "Emergency & Triage Nursing",
+  "category": "Emergency & Critical Care",
+  "hours": 12,
+  "type": "Upskilling",
+  "spoken": "Emergency and Triage Nursing"
+ },
+ {
+  "code": "MS-CODE-38",
+  "name": "Code Blue & Rapid Response Team",
+  "category": "Emergency & Critical Care",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Code Blue and the Rapid Response Team"
+ },
+ {
+  "code": "MS-TRA-39",
+  "name": "Basic Trauma Management",
+  "category": "Emergency & Critical Care",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Basic Trauma Management"
+ },
+ {
+  "code": "MS-DIS-40",
+  "name": "Hospital Disaster Management & Mass Casualty",
+  "category": "Emergency & Critical Care",
+  "hours": 12,
+  "type": "Mandatory",
+  "spoken": "Hospital Disaster Management and Mass Casualty"
+ },
+ {
+  "code": "MS-NRP-41",
+  "name": "Neonatal Resuscitation & NICU Care",
+  "category": "Specialty & Emerging Clinical",
+  "hours": 12,
+  "type": "Upskilling",
+  "spoken": "Neonatal Resuscitation and Neonatal Intensive Care Unit Care"
+ },
+ {
+  "code": "MS-BLD-42",
+  "name": "Blood Transfusion Safety & Haemovigilance",
+  "category": "Specialty & Emerging Clinical",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Blood Transfusion Safety and Haemovigilance"
+ },
+ {
+  "code": "MS-DIA-43",
+  "name": "Dialysis Nursing",
+  "category": "Specialty & Emerging Clinical",
+  "hours": 12,
+  "type": "Upskilling",
+  "spoken": "Dialysis Nursing"
+ },
+ {
+  "code": "MS-ONC-44",
+  "name": "Oncology / Chemotherapy Administration",
+  "category": "Specialty & Emerging Clinical",
+  "hours": 12,
+  "type": "Upskilling",
+  "spoken": "Oncology and Chemotherapy Administration"
+ },
+ {
+  "code": "MS-DBT-45",
+  "name": "Diabetes Care & Management",
+  "category": "Specialty & Emerging Clinical",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Diabetes Care and Management"
+ },
+ {
+  "code": "MS-PAL-46",
+  "name": "Palliative & End-of-Life Care",
+  "category": "Specialty & Emerging Clinical",
+  "hours": 6,
+  "type": "Upskilling",
+  "spoken": "Palliative and End-of-Life Care"
+ },
+ {
+  "code": "MS-ONB-47",
+  "name": "Staff Induction & Onboarding Program",
+  "category": "Onboarding, Ethics & HR Compliance",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Staff Induction and Onboarding"
+ },
+ {
+  "code": "MS-POSH-48",
+  "name": "POSH — Prevention of Sexual Harassment",
+  "category": "Onboarding, Ethics & HR Compliance",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "the Prevention of Sexual Harassment"
+ },
+ {
+  "code": "MS-PR-49",
+  "name": "Patient Rights & Responsibilities",
+  "category": "Onboarding, Ethics & HR Compliance",
+  "hours": 3,
+  "type": "Mandatory",
+  "spoken": "Patient Rights and Responsibilities"
+ },
+ {
+  "code": "MS-ETH-50",
+  "name": "Code of Conduct, Ethics & Professionalism",
+  "category": "Onboarding, Ethics & HR Compliance",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Code of Conduct, Ethics and Professionalism"
+ },
+ {
+  "code": "MS-PX-51",
+  "name": "Patient Experience & Service Excellence",
+  "category": "Patient Experience & Soft Skills",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Patient Experience and Service Excellence"
+ },
+ {
+  "code": "MS-COMM-52",
+  "name": "Communication Skills & Breaking Bad News",
+  "category": "Patient Experience & Soft Skills",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Communication Skills and Breaking Bad News"
+ },
+ {
+  "code": "MS-DEE-53",
+  "name": "Handling Difficult Patients & De-escalation",
+  "category": "Patient Experience & Soft Skills",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Handling Difficult Patients and De-escalation"
+ },
+ {
+  "code": "MS-GRV-54",
+  "name": "Grievance & Complaint Handling",
+  "category": "Patient Experience & Soft Skills",
+  "hours": 3,
+  "type": "Upskilling",
+  "spoken": "Grievance and Complaint Handling"
+ },
+ {
+  "code": "MS-MR-55",
+  "name": "Medical Records & Clinical Documentation",
+  "category": "Documentation, Coding & Digital Health",
+  "hours": 6,
+  "type": "Mandatory",
+  "spoken": "Medical Records and Clinical Documentation"
+ },
+ {
+  "code": "MS-COD-56",
+  "name": "ICD Coding & EMR/HIS Proficiency",
+  "category": "Documentation, Coding & Digital Health",
+  "hours": 12,
+  "type": "Upskilling",
+  "spoken": "International Classification of Diseases Coding and Electronic Medical Record and Hospital Information System Proficiency"
+ }
+]

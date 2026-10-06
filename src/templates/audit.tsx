@@ -11,7 +11,7 @@
 import React from 'react';
 import {AbsoluteFill, continueRender, delayRender} from 'remotion';
 
-type Hit = {kind: 'overflow' | 'collision' | 'tiny'; px?: number; text: string; other?: string; r: {x: number; y: number; w: number; h: number}};
+type Hit = {kind: 'overflow' | 'collision' | 'tiny' | 'clipped'; px?: number; text: string; other?: string; r: {x: number; y: number; w: number; h: number}};
 
 const visibleOpacity = (el: Element) => {
   let o = 1;
@@ -38,6 +38,13 @@ function measure(root: Element): Hit[] {
     const t = nodes.map((n) => n.textContent).join(' ');
     // too small to read: an art's text (chart nodes, table cells, figures) rendered under MIN_PX on the frame
     const layer = el.closest('[data-art-text]') as HTMLElement | null;
+    // clipped: text cut off by its illustration's box (which hides overflow) — invisible to the width check
+    if (layer) {
+      const lb = layer.getBoundingClientRect();
+      const r = el.getBoundingClientRect();
+      if (r.height > 4 && (r.top < lb.top - 2 || r.bottom > lb.bottom + 2 || r.left < lb.left - 2 || r.right > lb.right + 2))
+        hits.push({kind: 'clipped', text: label(t), r: {x: r.x, y: r.y, w: r.width, h: r.height}});
+    }
     if (layer && layer.offsetWidth) {
       // a toured art is read close up: judge it at its tour zoom
       const px = parseFloat(getComputedStyle(el).fontSize) * (layer.getBoundingClientRect().width / layer.offsetWidth) * Number(layer.dataset.tourZoom || 1);

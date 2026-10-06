@@ -87,7 +87,9 @@ export type ProjectConfig = {
     maxIdle?: number;
   };
   /** the frame every lesson gets automatically: the logo intro first, the signoff outro last (scripts then never write them) */
-  frame?: {ident?: boolean; outro?: string | false; identSeconds?: number};
+  frame?: {ident?: boolean; outro?: string | false; identSeconds?: number; outroLine?: string; direct?: boolean};
+  /** 'intro' = 1–1.5 min course introductions (docs/INTRO_BRIEF.md) instead of lessons */
+  kind?: 'lesson' | 'intro';
   /** Writing conventions: one spelling system per project. */
   style: {spelling?: 'en-GB' | 'en-US'};
   /** Output folder under output/ (default: the slug). */

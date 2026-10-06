@@ -14,6 +14,7 @@ import p_med_respiration_kn from './../projects/med-respiration-kn/project.json'
 import p_ms_bls_29 from './../projects/ms-bls-29/project.json';
 import p_ms_bls_29_v5 from './../projects/ms-bls-29-v5/project.json';
 import p_ms_cssd_15 from './../projects/ms-cssd-15/project.json';
+import p_ms_intros from './../projects/ms-intros/project.json';
 import p_smoke from './../projects/smoke/project.json';
 import s_demo_asthma_en_AS01 from './../projects/demo-asthma-en/specs/AS01.json';
 import t_demo_asthma_en_AS01 from './../projects/demo-asthma-en/build/AS01.timings.json';
@@ -69,6 +70,8 @@ import s_ms_cssd_15_V804 from './../projects/ms-cssd-15/specs/V804.json';
 import t_ms_cssd_15_V804 from './../projects/ms-cssd-15/build/V804.timings.json';
 import s_ms_cssd_15_V805 from './../projects/ms-cssd-15/specs/V805.json';
 import t_ms_cssd_15_V805 from './../projects/ms-cssd-15/build/V805.timings.json';
+import s_ms_intros_MS_NABH_01 from './../projects/ms-intros/specs/MS-NABH-01.json';
+import t_ms_intros_MS_NABH_01 from './../projects/ms-intros/build/MS-NABH-01.timings.json';
 import s_smoke_S01 from './../projects/smoke/specs/S01.json';
 import t_smoke_S01 from './../projects/smoke/build/S01.timings.json';
 
@@ -100,5 +103,6 @@ export const READY: VideoProps[] = [
   {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V803 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V803 as VideoProps['timings']},
   {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V804 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V804 as VideoProps['timings']},
   {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V805 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V805 as VideoProps['timings']},
+  {project: withDefaults('ms-intros', p_ms_intros as never), spec: s_ms_intros_MS_NABH_01 as unknown as VideoProps['spec'], timings: t_ms_intros_MS_NABH_01 as VideoProps['timings']},
   {project: withDefaults('smoke', p_smoke as never), spec: s_smoke_S01 as unknown as VideoProps['spec'], timings: t_smoke_S01 as VideoProps['timings']}
 ];
