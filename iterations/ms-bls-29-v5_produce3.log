@@ -1,0 +1,54 @@
+
+━━ preflight ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⏱  M01: est 4:58 · 656 narration words · standard 5:00 ≈ 662 words · allowed 4.5–7 min
+  ⚠️  M01 language: pronunciation — audition these once (node scripts/say.mts ms-bls-29-v5 "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: defibrillation, opioid-related
+  ⚠️  M01 timing: scene[5] beats: "beat 1" and "beat 2" reveal 0.5 s apart — give each its own sentence
+  ⚠️  M01 timing: scene[6] beats: "beat 2" and "beat 3" reveal 0.8 s apart — give each its own sentence
+  ⚠️  M01 timing: scene[6] beats: "In hospital: witnessed, help close by" and "beat 10" reveal 0.6 s apart — give each its own sentence
+  ⚠️  M01 timing: scene[7] beats: "beat 3" and "beat 4" reveal 0.8 s apart — give each its own sentence
+  ⚠️  M01 timing: scene[8] beats: "beat 3" and "beat 4" reveal 0.7 s apart — give each its own sentence
+  ⚠️  M01 timing: scene[8] beats: "beat 9" and "beat 10" reveal 0.4 s apart — give each its own sentence
+
+ms-bls-29-v5: 1 lesson(s) — 0 error(s), 7 warning(s) in 5 s. Report: projects/ms-bls-29-v5/PREFLIGHT.md
+
+━━ voiceover · M01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ms-bls-29-v5: en-IN-NeerjaNeural (rate +10%, pitch +0Hz, +0.15s/sentence, breathe ×0.8) · target 4.5–7 min
+
+  M01  ✅ 5:41  127 wpm  (cached)
+
+  ℹ️  measured pace 127 wpm vs project.json voice.wpm 147 — update it so validate's length estimates stay accurate.
+
+Registered 28 lesson(s) for Studio.
+
+━━ render · M01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  M01  ✅  342s (29.9 fps)  → output/MedSkills/EN_BLS_ACLS_v5/MedSkills_ms_bls_29_v5_M01.mp4
+
+Done. 1 rendered, 0 failed.
+
+━━ qa · M01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ M01  output/MedSkills/EN_BLS_ACLS_v5/MedSkills_ms_bls_29_v5_M01.mp4
+   · format               1920×1080 30fps h264 yuv420p
+   · color tags           bt709/bt709/bt709
+   · audio stream         aac 48000Hz 2ch
+   · duration             10228 video frames vs schedule 10228 (340.93s)
+   · cuts on boundaries   0 hard changes; 0 off-boundary
+   · decode integrity     clean full decode
+   · no black frames      none
+   ✗ no frozen picture    freeze @ 221.5
+   · loudness             -14 LUFS (target −14)
+   · true peak            -1.4 dBTP
+   · no clipping          sample peak -1.4 dBFS
+   · poster frame         frame0 Y=210.5 vs frame4 Y=229.5
+   · srt                  119 cues, last ends 335.77s
+   · render = stills      11 sampled frames match
+   · layout               no overflow
+
+0/1 passed. Report: output/MedSkills/EN_BLS_ACLS_v5/QA.md
+
+━━ credits ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+credits: 1 illustration(s) → projects/ms-bls-29-v5/CREDITS.md
+
+❌ ms-bls-29-v5: 0/1 lesson(s) produced and QA'd in 6.6 min → output/MedSkills/EN_BLS_ACLS_v5/
+   ❌ M01 stopped at qa → output/MedSkills/EN_BLS_ACLS_v5/QA.md
+   Fix those and re-run the same command: finished lessons are skipped.

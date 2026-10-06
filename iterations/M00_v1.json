@@ -1,0 +1,647 @@
+{
+  "id": "M00",
+  "title": "Basic and Advanced Cardiac Life Support — Course Introduction",
+  "outputFilename": "MedSkills_BLS_ACLS_Course_Introduction.mp4",
+  "episode": "0",
+  "module": "Course Introduction",
+  "topicGroup": "Resuscitation",
+  "scenes": [
+    {
+      "type": "stage",
+      "kicker": "Cold open",
+      "bare": true,
+      "mood": "dark",
+      "narration": "A heart stops. [pause] In the first three minutes of cardiac arrest, the nearest person matters most.",
+      "world": {
+        "w": 2500,
+        "h": 1100,
+        "layers": [
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              880,
+              560
+            ],
+            "h": 760
+          },
+          {
+            "id": "clock",
+            "art": "timer",
+            "at": [
+              2070,
+              560
+            ],
+            "h": 560,
+            "hidden": true
+          }
+        ]
+      },
+      "open": "mon",
+      "beats": [
+        {
+          "say": [
+            "heart"
+          ],
+          "sfx": [
+            {
+              "name": "drone",
+              "volume": 0.55
+            },
+            {
+              "name": "beep",
+              "every": 24,
+              "count": 2,
+              "volume": 0.3
+            }
+          ]
+        },
+        {
+          "say": [
+            "stops"
+          ],
+          "act": "mon.vf",
+          "sfx": "boom",
+          "pulse": "mon.rate"
+        },
+        {
+          "say": [
+            "minutes"
+          ],
+          "show": "clock",
+          "camera": "overview",
+          "act": [
+            "mon.flatline",
+            "clock.start"
+          ],
+          "sfx": {
+            "name": "flatline",
+            "volume": 0.35
+          }
+        },
+        {
+          "say": [
+            "nearest"
+          ],
+          "pulse": "clock",
+          "sfx": {
+            "name": "heartbeat",
+            "volume": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "The first minutes",
+      "bare": true,
+      "mood": "dark",
+      "transition": "pan",
+      "narration": "What they do now, compressions and early defibrillation, matters more than everything after.",
+      "world": {
+        "w": 3100,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "cpr",
+            "art": "cpr",
+            "at": [
+              640,
+              580
+            ],
+            "h": 700
+          },
+          {
+            "id": "aed",
+            "art": "aed",
+            "at": [
+              1700,
+              580
+            ],
+            "h": 560
+          },
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              2560,
+              580
+            ],
+            "h": 520
+          }
+        ]
+      },
+      "open": "cpr",
+      "beats": [
+        {
+          "say": [
+            "compressions"
+          ],
+          "act": "cpr.compress",
+          "sfx": {
+            "name": "heartbeat",
+            "every": 16,
+            "count": 5,
+            "volume": 0.35
+          }
+        },
+        {
+          "say": [
+            "defibrillation"
+          ],
+          "camera": {
+            "on": "aed"
+          },
+          "act": [
+            "aed.pads",
+            "aed.charge"
+          ],
+          "sfx": {
+            "name": "charge",
+            "volume": 0.5
+          }
+        },
+        {
+          "say": [
+            "matters"
+          ],
+          "act": [
+            "aed.shock",
+            "mon.shock"
+          ],
+          "flash": true,
+          "sfx": {
+            "name": "shock",
+            "volume": 0.8
+          }
+        },
+        {
+          "say": [
+            "after"
+          ],
+          "camera": {
+            "on": "mon"
+          },
+          "act": "mon.rosc",
+          "sfx": {
+            "name": "beep",
+            "every": 22,
+            "count": 4,
+            "volume": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "The course",
+      "bare": true,
+      "transition": "cut",
+      "narration": "Basic and Advanced Cardiac Life Support: built on the 2025 American Heart Association guidelines.",
+      "world": {
+        "w": 2200,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "heart",
+            "art": "heart",
+            "at": [
+              1100,
+              600
+            ],
+            "h": 980
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "basic"
+          ],
+          "title": "Basic and Advanced Cardiac Life Support",
+          "sfx": [
+            {
+              "name": "riser",
+              "volume": 0.4
+            },
+            {
+              "name": "boom",
+              "volume": 0.35
+            }
+          ]
+        },
+        {
+          "say": [
+            "guidelines"
+          ],
+          "note": "Written against the AHA 2025 Guidelines for CPR and ECC",
+          "sfx": "whoosh"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "What you'll cover",
+      "transition": "slide",
+      "narration": "Eleven modules, from the chain of survival to the arrest algorithm and teamwork.",
+      "world": {
+        "w": 2600,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "map",
+            "art": "graph",
+            "at": [
+              1300,
+              600
+            ],
+            "h": 700,
+            "data": {
+              "direction": "LR",
+              "nodes": [
+                {
+                  "id": "a",
+                  "label": "Chain of survival",
+                  "tone": "red"
+                },
+                {
+                  "id": "b",
+                  "label": "Compressions",
+                  "tone": "red"
+                },
+                {
+                  "id": "c",
+                  "label": "Defibrillation",
+                  "tone": "red"
+                },
+                {
+                  "id": "d",
+                  "label": "Arrest algorithm",
+                  "tone": "blue"
+                },
+                {
+                  "id": "e",
+                  "label": "Post-arrest care",
+                  "tone": "blue"
+                },
+                {
+                  "id": "f",
+                  "label": "Teamwork",
+                  "tone": "blue"
+                }
+              ],
+              "edges": [
+                {
+                  "from": "a",
+                  "to": "b",
+                  "tone": "red"
+                },
+                {
+                  "from": "b",
+                  "to": "c",
+                  "tone": "red"
+                },
+                {
+                  "from": "d",
+                  "to": "e",
+                  "tone": "blue"
+                },
+                {
+                  "from": "e",
+                  "to": "f",
+                  "tone": "blue"
+                }
+              ],
+              "steps": [
+                {
+                  "show": [
+                    "a",
+                    "b",
+                    "c"
+                  ],
+                  "flow": [
+                    "a>b",
+                    "b>c"
+                  ],
+                  "label": "BLS core"
+                },
+                {
+                  "show": [
+                    "d",
+                    "e",
+                    "f"
+                  ],
+                  "flow": [
+                    "d>e",
+                    "e>f"
+                  ],
+                  "label": "Advanced"
+                },
+                {
+                  "token": [
+                    "d",
+                    "e",
+                    "f"
+                  ],
+                  "label": "Teamwork"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "chain"
+          ],
+          "act": "map.s1",
+          "note": "Eleven modules: the BLS core and advanced life support",
+          "sfx": "whoosh"
+        },
+        {
+          "say": [
+            "algorithm"
+          ],
+          "act": "map.s2"
+        },
+        {
+          "say": [
+            "teamwork"
+          ],
+          "act": "map.s3",
+          "sfx": "tick"
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "You'll be able to",
+      "transition": "pan",
+      "narration": "Recognise arrest in seconds, deliver high-quality compressions, defibrillate safely.",
+      "world": {
+        "w": 3000,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              520,
+              560
+            ],
+            "h": 520
+          },
+          {
+            "id": "cpr",
+            "art": "cpr",
+            "at": [
+              1500,
+              580
+            ],
+            "h": 600
+          },
+          {
+            "id": "aed",
+            "art": "aed",
+            "at": [
+              2480,
+              580
+            ],
+            "h": 520
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "recognise"
+          ],
+          "act": "mon.vf",
+          "label": {
+            "on": "mon",
+            "text": "Recognise in seconds"
+          },
+          "sfx": {
+            "name": "beep",
+            "volume": 0.3
+          }
+        },
+        {
+          "say": [
+            "compressions"
+          ],
+          "act": "cpr.compress",
+          "label": {
+            "on": "cpr.hands",
+            "text": "High-quality CPR"
+          }
+        },
+        {
+          "say": [
+            "defibrillate"
+          ],
+          "act": [
+            "aed.pads",
+            "aed.charge"
+          ],
+          "label": {
+            "on": "aed.button",
+            "text": "Safe defibrillation"
+          },
+          "sfx": {
+            "name": "charge",
+            "volume": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Who it's for",
+      "transition": "pan",
+      "narration": "The core is for all clinical staff; the advanced modules, for code teams.",
+      "world": {
+        "w": 3000,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "p1",
+            "art": "person",
+            "data": {
+              "shirt": "#2FA69A",
+              "shirtDark": "#1D7068",
+              "skin": "#F4C7A5",
+              "skinDark": "#C98B63",
+              "hair": "#3B2A2A"
+            },
+            "at": [
+              420,
+              560
+            ],
+            "h": 820
+          },
+          {
+            "id": "p2",
+            "art": "person",
+            "data": {
+              "shirt": "#3B5BDB",
+              "shirtDark": "#23398F",
+              "skin": "#C68B5E",
+              "skinDark": "#8A5A36",
+              "hair": "#1C1530"
+            },
+            "at": [
+              980,
+              560
+            ],
+            "h": 820
+          },
+          {
+            "id": "p3",
+            "art": "person",
+            "data": {
+              "shirt": "#D8148C",
+              "shirtDark": "#8E0F5E",
+              "skin": "#E8B48F",
+              "skinDark": "#B07A55",
+              "hair": "#6B3E26"
+            },
+            "at": [
+              1500,
+              560
+            ],
+            "h": 820
+          },
+          {
+            "id": "p4",
+            "art": "person",
+            "data": {
+              "shirt": "#F59E0B",
+              "shirtDark": "#B06F05",
+              "skin": "#8D5A3B",
+              "skinDark": "#5E3A24",
+              "hair": "#1C1530"
+            },
+            "at": [
+              2020,
+              560
+            ],
+            "h": 820
+          },
+          {
+            "id": "p5",
+            "art": "person",
+            "data": {
+              "shirt": "#7A24A1",
+              "shirtDark": "#4A1570",
+              "skin": "#F1D0B5",
+              "skinDark": "#C99B7A",
+              "hair": "#B5651D"
+            },
+            "at": [
+              2580,
+              560
+            ],
+            "h": 820
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "clinical"
+          ],
+          "act": [
+            "p1.smile",
+            "p3.smile",
+            "p5.smile"
+          ],
+          "label": {
+            "on": "p3.head",
+            "text": "All clinical staff"
+          },
+          "pulse": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5"
+          ]
+        },
+        {
+          "say": [
+            "advanced"
+          ],
+          "dim": [
+            "p2",
+            "p4"
+          ],
+          "act": [
+            "p2.wave",
+            "p4.wave"
+          ],
+          "label": {
+            "on": "p4.head",
+            "text": "Code teams"
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "How it helps",
+      "transition": "pan",
+      "narration": "You'll reach hands-on training with the reasoning in place, ready to act without hesitation.",
+      "world": {
+        "w": 2400,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "you",
+            "art": "person",
+            "at": [
+              640,
+              600
+            ],
+            "h": 960
+          },
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              1650,
+              560
+            ],
+            "h": 560
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "reasoning"
+          ],
+          "act": "you.smile",
+          "note": "Prepares you for hands-on BLS and ACLS training"
+        },
+        {
+          "say": [
+            "hesitation"
+          ],
+          "pulse": "mon.heart",
+          "sfx": {
+            "name": "heartbeat",
+            "volume": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "type": "outro",
+      "kicker": "MedSkills",
+      "transition": "slide",
+      "narration": "Brought to you by MedSkills."
+    }
+  ]
+}

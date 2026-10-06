@@ -1,0 +1,273 @@
+{
+ "fps": 30,
+ "frames": 3597,
+ "scenes": [
+  {
+   "id": "hook",
+   "from": 0,
+   "frames": 612,
+   "voiceFrom": 9,
+   "audio": "location-check-demo/vo/hook.mp3",
+   "captions": [
+    {
+     "text": "An operations team keeps asking:",
+     "from": 12,
+     "to": 78
+    },
+    {
+     "text": "is this location worth pursuing?",
+     "from": 78,
+     "to": 140
+    },
+    {
+     "text": "Today, an analyst spends twenty minutes on",
+     "from": 168,
+     "to": 243
+    },
+    {
+     "text": "each one. The rules live in their head.",
+     "from": 243,
+     "to": 346
+    },
+    {
+     "text": "And when a website is down, a blank or a zero",
+     "from": 375,
+     "to": 463
+    },
+    {
+     "text": "slips in, and nobody can tell real data from",
+     "from": 463,
+     "to": 546
+    },
+    {
+     "text": "missing data.",
+     "from": 546,
+     "to": 576
+    }
+   ]
+  },
+  {
+   "id": "submit",
+   "from": 612,
+   "frames": 495,
+   "voiceFrom": 621,
+   "audio": "location-check-demo/vo/submit.mp3",
+   "captions": [
+    {
+     "text": "Location Check answers it in seconds.",
+     "from": 624,
+     "to": 701
+    },
+    {
+     "text": "Enter a label and a US address, or",
+     "from": 729,
+     "to": 846
+    },
+    {
+     "text": "coordinates. The backend finds the point and",
+     "from": 846,
+     "to": 954
+    },
+    {
+     "text": "asks two public sources at once, each with a",
+     "from": 954,
+     "to": 1035
+    },
+    {
+     "text": "strict timeout.",
+     "from": 1035,
+     "to": 1071
+    }
+   ]
+  },
+  {
+   "id": "result",
+   "from": 1107,
+   "frames": 456,
+   "voiceFrom": 1116,
+   "audio": "location-check-demo/vo/result.mp3",
+   "captions": [
+    {
+     "text": "Here is Denver: the point on a map, a score",
+     "from": 1119,
+     "to": 1206
+    },
+    {
+     "text": "out of a hundred, and a verdict.",
+     "from": 1206,
+     "to": 1266
+    },
+    {
+     "text": "Every factor shows its raw value, its points,",
+     "from": 1295,
+     "to": 1385
+    },
+    {
+     "text": "and its source. The rules are plain English,",
+     "from": 1385,
+     "to": 1493
+    },
+    {
+     "text": "in one file.",
+     "from": 1493,
+     "to": 1527
+    }
+   ]
+  },
+  {
+   "id": "honest",
+   "from": 1563,
+   "frames": 696,
+   "voiceFrom": 1572,
+   "audio": "location-check-demo/vo/honest.mp3",
+   "captions": [
+    {
+     "text": "Now the important part.",
+     "from": 1575,
+     "to": 1623
+    },
+    {
+     "text": "Here, the elevation source was broken on",
+     "from": 1652,
+     "to": 1726
+    },
+    {
+     "text": "purpose. The assessment is still saved, and",
+     "from": 1726,
+     "to": 1838
+    },
+    {
+     "text": "elevation is marked not measured, with the",
+     "from": 1838,
+     "to": 1908
+    },
+    {
+     "text": "reason. Never zero.",
+     "from": 1908,
+     "to": 1988
+    },
+    {
+     "text": "And no guessing either:",
+     "from": 2028,
+     "to": 2070
+    },
+    {
+     "text": "with a factor missing, there is no score and",
+     "from": 2070,
+     "to": 2140
+    },
+    {
+     "text": "no verdict, only the points that were",
+     "from": 2140,
+     "to": 2202
+    },
+    {
+     "text": "measured.",
+     "from": 2202,
+     "to": 2223
+    }
+   ]
+  },
+  {
+   "id": "retry",
+   "from": 2259,
+   "frames": 291,
+   "voiceFrom": 2268,
+   "audio": "location-check-demo/vo/retry.mp3",
+   "captions": [
+    {
+     "text": "If an address cannot be found, nothing is",
+     "from": 2271,
+     "to": 2341
+    },
+    {
+     "text": "guessed. And Fetch again re-checks a location,",
+     "from": 2341,
+     "to": 2455
+    },
+    {
+     "text": "keeping every earlier result.",
+     "from": 2455,
+     "to": 2514
+    }
+   ]
+  },
+  {
+   "id": "tested",
+   "from": 2550,
+   "frames": 486,
+   "voiceFrom": 2559,
+   "audio": "location-check-demo/vo/tested.mp3",
+   "captions": [
+    {
+     "text": "We tested 34 real places, from Death Valley to",
+     "from": 2562,
+     "to": 2660
+    },
+    {
+     "text": "Denali. An independent checker recomputed",
+     "from": 2660,
+     "to": 2766
+    },
+    {
+     "text": "every score and never disagreed.",
+     "from": 2766,
+     "to": 2830
+    },
+    {
+     "text": "It also found that one source sometimes hangs,",
+     "from": 2859,
+     "to": 2946
+    },
+    {
+     "text": "so it now retries once.",
+     "from": 2946,
+     "to": 3000
+    }
+   ]
+  },
+  {
+   "id": "run",
+   "from": 3036,
+   "frames": 307,
+   "voiceFrom": 3045,
+   "audio": "location-check-demo/vo/run.mp3",
+   "captions": [
+    {
+     "text": "To run it: docker compose up, then open",
+     "from": 3048,
+     "to": 3131
+    },
+    {
+     "text": "localhost:8080. All 30 tests run inside the",
+     "from": 3131,
+     "to": 3284
+    },
+    {
+     "text": "container.",
+     "from": 3284,
+     "to": 3308
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "from": 3344,
+   "frames": 254,
+   "voiceFrom": 3353,
+   "audio": "location-check-demo/vo/close.mp3",
+   "captions": [
+    {
+     "text": "Location Check. Same rules, every time.",
+     "from": 3356,
+     "to": 3486
+    },
+    {
+     "text": "Missing is never zero.",
+     "from": 3515,
+     "to": 3561
+    }
+   ]
+  }
+ ]
+}

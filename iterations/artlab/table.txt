@@ -1,0 +1,6 @@
+table: TABLES: a journal-style data table (booktabs rules), rows building in and highlighted as narrated — prefer it for any comparison, classification, list of values or parameters. data: {columns: 2–6 (≤40 chars), rows: 1–10 rows of cells (≤60 chars), align?: per column left|center|right (numeric columns default right), widths?: relative column widths, size?: font px (default 34)} · anchors/events: r1…rN (row builds in + becomes current) c1…cM (column highlight) rIcJ (ring a cell) all (remaining rows build in)
+events: —
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 anchors (where labels and the camera land)

@@ -1,0 +1,784 @@
+1
+00:00:01,833 --> 00:00:04,271
+In this video, we're going to talk about
+
+2
+00:00:04,271 --> 00:00:06,883
+the human heart: how it is built, how
+
+3
+00:00:06,883 --> 00:00:09,270
+blood moves through it, and what makes it
+
+4
+00:00:09,270 --> 00:00:13,363
+beat. We'll be precise, and connect each
+
+5
+00:00:13,363 --> 00:00:15,451
+idea to what you see on the ward.
+
+6
+00:00:16,673 --> 00:00:19,223
+By the end, you'll know the anatomy of its
+
+7
+00:00:19,223 --> 00:00:21,636
+chambers and valves, you'll be able to
+
+8
+00:00:21,636 --> 00:00:23,798
+trace the route blood travels through both
+
+9
+00:00:23,798 --> 00:00:26,073
+circulations, and you'll understand the
+
+10
+00:00:26,073 --> 00:00:28,611
+electrical rhythm behind every beat.
+
+11
+00:00:32,567 --> 00:00:35,429
+Your heart beats about 100,000 times a
+
+12
+00:00:35,429 --> 00:00:39,567
+day. At rest it moves roughly 5 litres of
+
+13
+00:00:39,567 --> 00:00:41,005
+blood every minute:
+
+14
+00:00:41,005 --> 00:00:43,280
+more than 7,000 litres a day.
+
+15
+00:00:44,979 --> 00:00:46,829
+And it never takes a day off.
+
+16
+00:00:48,067 --> 00:00:50,355
+To care for patients with heart disease,
+
+17
+00:00:50,392 --> 00:00:52,680
+you first need to understand this pump.
+
+18
+00:00:56,300 --> 00:00:58,237
+So what exactly is the heart?
+
+19
+00:00:59,388 --> 00:01:01,551
+It is a four-chambered muscular pump in
+
+20
+00:01:01,551 --> 00:01:03,913
+the mediastinum, the space between the
+
+21
+00:01:03,913 --> 00:01:06,200
+lungs, just behind the sternum.
+
+22
+00:01:07,444 --> 00:01:09,732
+It is about the size of a closed fist and
+
+23
+00:01:09,732 --> 00:01:13,581
+weighs roughly 250 to 350 grams.
+
+24
+00:01:14,756 --> 00:01:17,431
+Its base faces up and to the right, and
+
+25
+00:01:17,431 --> 00:01:20,206
+its apex points down and to the left.
+
+26
+00:01:24,133 --> 00:01:25,808
+Let's build the heart wall from the
+
+27
+00:01:25,808 --> 00:01:29,525
+outside in! First, the fibrous
+
+28
+00:01:29,525 --> 00:01:32,562
+pericardium, a tough sac that anchors and
+
+29
+00:01:32,562 --> 00:01:33,862
+protects the heart.
+
+30
+00:01:35,109 --> 00:01:37,434
+Inside it, the parietal layer of the
+
+31
+00:01:37,434 --> 00:01:38,872
+serous pericardium.
+
+32
+00:01:40,093 --> 00:01:42,606
+Then the pericardial cavity, holding a
+
+33
+00:01:42,606 --> 00:01:44,781
+film of fluid so the heart can beat
+
+34
+00:01:44,781 --> 00:01:46,030
+without friction.
+
+35
+00:01:47,213 --> 00:01:50,288
+Next, the epicardium, the visceral layer
+
+36
+00:01:50,288 --> 00:01:51,763
+on the heart's surface.
+
+37
+00:01:52,965 --> 00:01:55,690
+Then the thick myocardium, the muscle that
+
+38
+00:01:55,690 --> 00:01:56,865
+does the pumping.
+
+39
+00:01:58,069 --> 00:02:00,694
+And finally the endocardium, the smooth
+
+40
+00:02:00,694 --> 00:02:02,831
+lining of the chambers and valves.
+
+41
+00:02:06,767 --> 00:02:09,205
+Here is the heart in section, facing the
+
+42
+00:02:09,205 --> 00:02:11,917
+patient, so the patient's right side is on
+
+43
+00:02:11,917 --> 00:02:15,683
+your left. Blood returning from the body
+
+44
+00:02:15,683 --> 00:02:17,433
+enters the right atrium.
+
+45
+00:02:18,655 --> 00:02:21,155
+It drops into the right ventricle below.
+
+46
+00:02:22,367 --> 00:02:24,667
+On the other side, the left atrium
+
+47
+00:02:24,667 --> 00:02:26,867
+receives blood from the lungs and passes
+
+48
+00:02:26,867 --> 00:02:29,392
+it to the left ventricle, whose wall is by
+
+49
+00:02:29,392 --> 00:02:30,642
+far the thickest.
+
+50
+00:02:31,863 --> 00:02:33,888
+The ventricles are divided by the
+
+51
+00:02:33,888 --> 00:02:35,563
+interventricular septum.
+
+52
+00:02:36,775 --> 00:02:39,225
+And rising from the left ventricle is the
+
+53
+00:02:39,225 --> 00:02:41,975
+aorta, the body's largest artery.
+
+54
+00:02:45,900 --> 00:02:48,487
+Four valves keep blood moving one way.
+
+55
+00:02:49,732 --> 00:02:51,832
+Between the right atrium and right
+
+56
+00:02:51,832 --> 00:02:54,232
+ventricle sits the tricuspid valve.
+
+57
+00:02:55,532 --> 00:02:57,982
+The pulmonary valve guards the exit to the
+
+58
+00:02:57,982 --> 00:03:01,832
+lungs. On the left, the mitral valve
+
+59
+00:03:01,832 --> 00:03:04,332
+separates the atrium from the ventricle.
+
+60
+00:03:05,548 --> 00:03:08,198
+And the aortic valve opens into the aorta.
+
+61
+00:03:09,952 --> 00:03:12,377
+Fine cords called chordae tendineae tie
+
+62
+00:03:12,377 --> 00:03:14,715
+the cusps of the atrioventricular valves
+
+63
+00:03:14,715 --> 00:03:17,202
+to papillary muscles, so they cannot flip
+
+64
+00:03:17,202 --> 00:03:19,402
+back when the ventricles contract.
+
+65
+00:03:23,333 --> 00:03:24,808
+Now follow the blood.
+
+66
+00:03:26,037 --> 00:03:28,524
+Deoxygenated blood returns from the body
+
+67
+00:03:28,524 --> 00:03:30,487
+through the venae cavae into the right
+
+68
+00:03:30,487 --> 00:03:34,061
+atrium. The right ventricle pumps it
+
+69
+00:03:34,061 --> 00:03:36,311
+through the pulmonary valve to the lungs,
+
+70
+00:03:36,398 --> 00:03:38,098
+where it picks up oxygen.
+
+71
+00:03:39,317 --> 00:03:41,305
+Oxygenated blood returns through the
+
+72
+00:03:41,305 --> 00:03:44,067
+pulmonary veins into the left atrium.
+
+73
+00:03:45,761 --> 00:03:47,861
+The left ventricle then pumps it through
+
+74
+00:03:47,861 --> 00:03:50,998
+the aortic valve into the aorta, and on to
+
+75
+00:03:50,998 --> 00:03:52,123
+every tissue.
+
+76
+00:03:56,033 --> 00:03:58,270
+Together, that makes two circuits in
+
+77
+00:03:58,270 --> 00:04:02,235
+series. The pulmonary circulation carries
+
+78
+00:04:02,235 --> 00:04:04,122
+blood from the right heart to the lungs
+
+79
+00:04:04,122 --> 00:04:05,747
+and back to the left heart.
+
+80
+00:04:06,913 --> 00:04:09,175
+The systemic circulation carries it from
+
+81
+00:04:09,175 --> 00:04:11,288
+the left heart to the body tissues and
+
+82
+00:04:11,288 --> 00:04:12,763
+back to the right heart.
+
+83
+00:04:14,437 --> 00:04:17,099
+Every drop passes through both, one after
+
+84
+00:04:17,099 --> 00:04:17,837
+the other.
+
+85
+00:04:21,800 --> 00:04:23,950
+A common mistake is to think arteries
+
+86
+00:04:23,950 --> 00:04:26,663
+always carry oxygenated blood and veins
+
+87
+00:04:26,663 --> 00:04:29,000
+always carry deoxygenated blood.
+
+88
+00:04:30,216 --> 00:04:33,988
+It isn't true. Arteries carry blood away
+
+89
+00:04:33,988 --> 00:04:36,338
+from the heart; veins carry it toward the
+
+90
+00:04:36,338 --> 00:04:40,242
+heart. So the pulmonary arteries carry
+
+91
+00:04:40,242 --> 00:04:42,767
+deoxygenated blood to the lungs, and the
+
+92
+00:04:42,767 --> 00:04:45,317
+pulmonary veins bring oxygenated blood
+
+93
+00:04:45,317 --> 00:04:49,810
+back. Name vessels by direction, not by
+
+94
+00:04:49,810 --> 00:04:50,635
+oxygen.
+
+95
+00:04:54,600 --> 00:04:56,275
+What makes the heart beat?
+
+96
+00:04:57,424 --> 00:04:59,987
+Each beat starts in the sinoatrial node,
+
+97
+00:05:00,049 --> 00:05:02,224
+the natural pacemaker in the wall of the
+
+98
+00:05:02,224 --> 00:05:06,162
+right atrium. The impulse spreads across
+
+99
+00:05:06,162 --> 00:05:08,612
+both atria, and they contract.
+
+100
+00:05:09,864 --> 00:05:12,552
+It then reaches the atrioventricular node,
+
+101
+00:05:12,664 --> 00:05:16,052
+which holds it back for about 0.1 seconds,
+
+102
+00:05:16,102 --> 00:05:18,414
+so the atria can finish emptying.
+
+103
+00:05:20,100 --> 00:05:22,550
+Then it races down the bundle of His,
+
+104
+00:05:22,600 --> 00:05:24,800
+splits into the right and left bundle
+
+105
+00:05:24,800 --> 00:05:27,425
+branches, and spreads through the Purkinje
+
+106
+00:05:27,425 --> 00:05:30,125
+fibres, so the ventricles contract from
+
+107
+00:05:30,125 --> 00:05:31,537
+the apex upward.
+
+108
+00:05:35,433 --> 00:05:37,533
+Every part of this system can generate
+
+109
+00:05:37,533 --> 00:05:40,258
+beats on its own, at different rates.
+
+110
+00:05:41,521 --> 00:05:44,383
+The SA node fires 60 to 100 times a
+
+111
+00:05:44,383 --> 00:05:48,914
+minute. The AV node, 40 to 60.
+
+112
+00:05:50,145 --> 00:05:53,295
+The Purkinje fibres, only 20 to 40.
+
+113
+00:05:55,029 --> 00:05:57,829
+The fastest pacemaker sets the pace, which
+
+114
+00:05:57,829 --> 00:06:00,229
+is why the SA node leads, and why a
+
+115
+00:06:00,229 --> 00:06:02,716
+failing SA node leaves a slower backup
+
+116
+00:06:02,716 --> 00:06:03,379
+rhythm.
+
+117
+00:06:07,367 --> 00:06:09,979
+On an ECG, this sequence becomes a
+
+118
+00:06:09,979 --> 00:06:14,213
+familiar shape. The small P wave is atrial
+
+119
+00:06:14,213 --> 00:06:18,672
+depolarisation. The tall QRS complex is
+
+120
+00:06:18,672 --> 00:06:21,672
+ventricular depolarisation, normally under
+
+121
+00:06:21,672 --> 00:06:26,537
+0.12 seconds. The T wave that follows is
+
+122
+00:06:26,537 --> 00:06:28,574
+ventricular repolarisation.
+
+123
+00:06:30,227 --> 00:06:32,852
+The PR interval, from the start of the P
+
+124
+00:06:32,852 --> 00:06:35,752
+wave to the start of the QRS, is normally
+
+125
+00:06:35,752 --> 00:06:39,327
+0.12 to 0.20 seconds.
+
+126
+00:06:43,233 --> 00:06:46,121
+One heartbeat is a cycle of five phases.
+
+127
+00:06:47,353 --> 00:06:50,328
+In atrial systole, the atria top up the
+
+128
+00:06:50,328 --> 00:06:54,703
+ventricles. In isovolumetric contraction,
+
+129
+00:06:54,778 --> 00:06:56,965
+the ventricles squeeze with every valve
+
+130
+00:06:56,965 --> 00:06:59,915
+shut; the AV valves have just closed,
+
+131
+00:06:59,965 --> 00:07:02,290
+giving the first heart sound, lub.
+
+132
+00:07:03,513 --> 00:07:06,476
+During ventricular ejection, the semilunar
+
+133
+00:07:06,476 --> 00:07:08,563
+valves open and blood leaves.
+
+134
+00:07:09,817 --> 00:07:12,692
+In isovolumetric relaxation, they snap
+
+135
+00:07:12,692 --> 00:07:15,505
+shut: the second heart sound, dub.
+
+136
+00:07:16,745 --> 00:07:19,470
+And in ventricular filling, the AV valves
+
+137
+00:07:19,470 --> 00:07:21,595
+open and it all begins again.
+
+138
+00:07:25,533 --> 00:07:28,446
+Both ventricles pump the same volume, but
+
+139
+00:07:28,446 --> 00:07:30,346
+not against the same pressure.
+
+140
+00:07:31,525 --> 00:07:34,725
+The left ventricle generates about 120
+
+141
+00:07:34,725 --> 00:07:37,125
+millimetres of mercury, matched in the
+
+142
+00:07:37,125 --> 00:07:40,977
+aorta. The right ventricle needs only
+
+143
+00:07:40,977 --> 00:07:44,477
+about 25, matched in the pulmonary artery.
+
+144
+00:07:46,193 --> 00:07:48,618
+That is why the left ventricular wall is
+
+145
+00:07:48,618 --> 00:07:50,418
+about three times thicker.
+
+146
+00:07:54,300 --> 00:07:56,112
+Now a worked example:
+
+147
+00:07:56,162 --> 00:07:59,138
+cardiac output, the volume each ventricle
+
+148
+00:07:59,138 --> 00:08:00,400
+pumps per minute.
+
+149
+00:08:01,636 --> 00:08:04,436
+It equals heart rate times stroke volume.
+
+150
+00:08:05,660 --> 00:08:08,223
+Take a resting heart rate of 70 beats per
+
+151
+00:08:08,223 --> 00:08:10,735
+minute, and a stroke volume of 70
+
+152
+00:08:10,735 --> 00:08:12,260
+millilitres per beat.
+
+153
+00:08:13,476 --> 00:08:17,664
+Multiply: 70 times 70 gives 4,900
+
+154
+00:08:17,664 --> 00:08:19,226
+millilitres per minute.
+
+155
+00:08:20,928 --> 00:08:24,241
+That is about 4.9 litres, close to an
+
+156
+00:08:24,241 --> 00:08:27,441
+adult's entire blood volume, every minute.
+
+157
+00:08:31,367 --> 00:08:33,829
+The heart muscle has its own supply:
+
+158
+00:08:33,829 --> 00:08:36,254
+the coronary arteries, which leave the
+
+159
+00:08:36,254 --> 00:08:39,092
+aortic root just above the aortic valve.
+
+160
+00:08:40,359 --> 00:08:42,709
+The left main coronary artery divides
+
+161
+00:08:42,709 --> 00:08:46,397
+quickly. The left anterior descending
+
+162
+00:08:46,397 --> 00:08:48,447
+artery feeds the front of the left
+
+163
+00:08:48,447 --> 00:08:50,147
+ventricle and the septum.
+
+164
+00:08:51,359 --> 00:08:53,734
+The circumflex wraps around to the side
+
+165
+00:08:53,734 --> 00:08:57,342
+and back. The right coronary artery
+
+166
+00:08:57,342 --> 00:08:59,917
+supplies the right heart, and usually the
+
+167
+00:08:59,917 --> 00:09:04,445
+SA and AV nodes. The left ventricle is
+
+168
+00:09:04,445 --> 00:09:06,920
+perfused mainly during diastole.
+
+169
+00:09:08,083 --> 00:09:10,370
+And a blocked coronary artery starves the
+
+170
+00:09:10,370 --> 00:09:11,683
+muscle beyond it:
+
+171
+00:09:11,695 --> 00:09:13,470
+a myocardial infarction.
+
+172
+00:09:17,367 --> 00:09:18,867
+Time for a knowledge check.
+
+173
+00:09:20,095 --> 00:09:22,407
+Why is the wall of the left ventricle so
+
+174
+00:09:22,407 --> 00:09:24,170
+much thicker than the wall of the right
+
+175
+00:09:24,170 --> 00:09:27,421
+ventricle? Pause here and think it
+
+176
+00:09:27,421 --> 00:09:27,971
+through.
+
+177
+00:09:37,300 --> 00:09:39,700
+Because the left ventricle must push blood
+
+178
+00:09:39,700 --> 00:09:42,225
+through the entire systemic circulation,
+
+179
+00:09:42,288 --> 00:09:45,012
+against a pressure of about 120
+
+180
+00:09:45,012 --> 00:09:46,562
+millimetres of mercury.
+
+181
+00:09:47,780 --> 00:09:50,118
+The right ventricle only has to reach the
+
+182
+00:09:50,118 --> 00:09:52,743
+lungs, against about 25.
+
+183
+00:09:54,488 --> 00:09:56,926
+The systemic circuit is long, with high
+
+184
+00:09:56,926 --> 00:10:00,424
+resistance. The pulmonary circuit is
+
+185
+00:10:00,424 --> 00:10:02,262
+short, with low pressure.
+
+186
+00:10:03,496 --> 00:10:05,858
+And more pressure demands more muscle.
+
+187
+00:10:09,767 --> 00:10:13,797
+Let's recap! Four chambers work as two
+
+188
+00:10:13,797 --> 00:10:17,825
+pumps in series. Four valves keep blood
+
+189
+00:10:17,825 --> 00:10:20,450
+moving one way, from the venae cavae to
+
+190
+00:10:20,450 --> 00:10:22,500
+the lungs, and from the lungs to the
+
+191
+00:10:22,500 --> 00:10:26,316
+aorta. And every beat is timed by the
+
+192
+00:10:26,316 --> 00:10:28,953
+conduction system, from the SA node to the
+
+193
+00:10:28,953 --> 00:10:31,603
+Purkinje fibres, which you can read on the
+
+194
+00:10:31,603 --> 00:10:36,186
+ECG. Know this pump well, and every
+
+195
+00:10:36,186 --> 00:10:38,111
+cardiac assessment you make will make
+
+196
+00:10:38,111 --> 00:10:38,811
+sense.
+

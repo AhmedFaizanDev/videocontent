@@ -1,0 +1,6 @@
+servierCardiomyocyte: cardiomyocyte adult (auto-imported; no labelled parts — use notes, or add anchors)
+events: —
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 anchors (where labels and the camera land)

@@ -1,0 +1,8 @@
+duodenoscopeTip: Side-viewing duodenoscope distal tip in profile: objective lens and light window on the side face, accessory channel ending at its outlet in the narrow elevator recess, elevator lever lowered. anchors: distalTip lens channelOutlet elevator elevatorRecess raise · events: raise (the elevator lifts)
+events: raise
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "raise"
+4 "raise" later (ongoing motion)
+5 anchors (where labels and the camera land)

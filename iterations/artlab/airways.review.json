@@ -1,0 +1,7 @@
+{
+  "pack": "airways",
+  "verdicts": {
+    "bronchiole": "PASS",
+    "inhaler": "PASS"
+  }
+}

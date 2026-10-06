@@ -1,0 +1,14 @@
+heartAnterior: The heart in anterior view, drawn as in an anatomy atlas (shaded tissue, not a symbol): right atrium + auricle, right ventricle (most of the front), left ventricle (left border, apex), left auricle, ascending aorta and arch with its three branches, pulmonary trunk + left pulmonary artery, superior and inferior venae cavae, epicardial fat with the right coronary and anterior interventricular (LAD) arteries. Beats in sinus rhythm by default with blood leaving through the aorta and pulmonary trunk. anchors: aorta pulmonary svc ivc ra rv lv la apex lad rca · events (latest wins): vf (ventricular fibrillation: quivers without contracting, surface ripples, output stops) stop (motionless and dusky: no output) compress (chest compressions squeeze it ~110/min, blood pushed out with each) rosc (sinus beat and output return)
+events: vf, stop, compress, rosc
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "vf"
+4 "vf" later (ongoing motion)
+5 after event "stop"
+6 "stop" later (ongoing motion)
+7 after event "compress"
+8 "compress" later (ongoing motion)
+9 after event "rosc"
+10 "rosc" later (ongoing motion)
+11 anchors (where labels and the camera land)

@@ -1,0 +1,8 @@
+icon: An everyday object. data {name: salt | vegetables | fruit | walk | cigarette | alcohol | calendar | scale | pill | water | sleep | stethoscope} · anchors: item · event: act (salt pours, vegetables bounce, the walker strides, smoke curls, both calendar days tick…)
+events: act
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "act"
+4 "act" later (ongoing motion)
+5 anchors (where labels and the camera land)

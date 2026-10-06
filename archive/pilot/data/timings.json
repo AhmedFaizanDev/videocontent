@@ -1,0 +1,400 @@
+{
+  "fps": 30,
+  "totalDurationInFrames": 4788,
+  "generatedAt": "2026-07-02T15:58:38.321Z",
+  "voice": {
+    "id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian - Deep, Resonant and Comforting"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "Hook",
+      "narration": "Here's a question: when an app remembers your name… where does it actually put it?",
+      "audioFile": "audio/vo/scene-1.mp3",
+      "voDurationInSeconds": 5.746938775510204,
+      "voDurationInFrames": 173,
+      "leadFrames": 12,
+      "tailFrames": 12,
+      "durationInFrames": 197,
+      "startFrame": 0,
+      "captions": [
+        {
+          "text": "Here's a question: when an app remembers",
+          "start": 0,
+          "end": 2.322
+        },
+        {
+          "text": "your name… where does it actually put it?",
+          "start": 2.322,
+          "end": 5.962
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "What is a variable?",
+      "narration": "Every program needs to remember things — your score in a game, the items in your cart, the name you just typed in. A variable is how a program remembers. It's a named piece of the computer's memory that holds a value. And as the name suggests, that value can vary — it can change while the program runs. You give it a name, you put something inside, and you can swap that something at any time.",
+      "audioFile": "audio/vo/scene-2.mp3",
+      "voDurationInSeconds": 25.678367346938774,
+      "voDurationInFrames": 771,
+      "leadFrames": 12,
+      "tailFrames": 22,
+      "durationInFrames": 805,
+      "startFrame": 197,
+      "captions": [
+        {
+          "text": "Every program needs to remember things —",
+          "start": 0,
+          "end": 2.468
+        },
+        {
+          "text": "your score in a game, the items in your",
+          "start": 2.543,
+          "end": 4.841
+        },
+        {
+          "text": "cart, the name you just typed in.",
+          "start": 4.841,
+          "end": 7.17
+        },
+        {
+          "text": "A variable is how a program remembers.",
+          "start": 7.43,
+          "end": 10.072
+        },
+        {
+          "text": "It's a named piece of the computer's",
+          "start": 10.147,
+          "end": 12.214
+        },
+        {
+          "text": "memory that holds a value.",
+          "start": 12.214,
+          "end": 14.066
+        },
+        {
+          "text": "And as the name suggests, that value can",
+          "start": 14.199,
+          "end": 16.358
+        },
+        {
+          "text": "vary — it can change while the program",
+          "start": 16.358,
+          "end": 18.843
+        },
+        {
+          "text": "runs. You give it a name, you put",
+          "start": 18.843,
+          "end": 21.49
+        },
+        {
+          "text": "something inside, and you can swap that",
+          "start": 21.49,
+          "end": 23.8
+        },
+        {
+          "text": "something at any time.",
+          "start": 23.8,
+          "end": 25.885
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "The labeled box analogy",
+      "narration": "Think of a variable as a labeled box. The label is the name, and whatever sits inside is the value. A box labeled \"score\" might hold ten right now. Play one round, and the program takes the ten out and drops in a fifty. Same box, same label — new contents. A constant is a different kind of box. Once you put a value in and shut the lid, it locks. Nobody can swap what's inside. The program can only look at it.",
+      "audioFile": "audio/vo/scene-3.mp3",
+      "voDurationInSeconds": 29.57061224489796,
+      "voDurationInFrames": 888,
+      "leadFrames": 12,
+      "tailFrames": 22,
+      "durationInFrames": 922,
+      "startFrame": 1002,
+      "captions": [
+        {
+          "text": "Think of a variable as a labeled box.",
+          "start": 0,
+          "end": 2.537
+        },
+        {
+          "text": "The label is the name, and whatever sits",
+          "start": 2.612,
+          "end": 5.05
+        },
+        {
+          "text": "inside is the value.",
+          "start": 5.05,
+          "end": 6.531
+        },
+        {
+          "text": "A box labeled \"score\" might hold ten right",
+          "start": 6.722,
+          "end": 9.636
+        },
+        {
+          "text": "now. Play one round, and the program takes",
+          "start": 9.636,
+          "end": 12.62
+        },
+        {
+          "text": "the ten out and drops in a fifty.",
+          "start": 12.62,
+          "end": 14.797
+        },
+        {
+          "text": "Same box, same label —",
+          "start": 14.988,
+          "end": 17.235
+        },
+        {
+          "text": "new contents. A constant is a different",
+          "start": 17.426,
+          "end": 20.247
+        },
+        {
+          "text": "kind of box. Once you put a value in and",
+          "start": 20.247,
+          "end": 22.86
+        },
+        {
+          "text": "shut the lid, it locks.",
+          "start": 22.86,
+          "end": 24.886
+        },
+        {
+          "text": "Nobody can swap what's inside.",
+          "start": 25.24,
+          "end": 27.115
+        },
+        {
+          "text": "The program can only look at it.",
+          "start": 27.306,
+          "end": 29.785
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Real code",
+      "narration": "Here's what that looks like in real code — this is JavaScript. \"Let score equal ten\" creates a variable. The word \"let\" tells the computer: make me a box. \"Score\" is the label, and ten goes inside. Later we write \"score equals fifty\" — no \"let\" this time, because the box already exists. We're simply replacing its contents. Now the constant: \"const PI equals 3.14159\". \"Const\" is short for constant, and it works the same way — one name, one value — with one big exception. If you try to change it, the program stops and throws an error. That's not the computer being difficult. That's protection you asked for.",
+      "audioFile": "audio/vo/scene-4.mp3",
+      "voDurationInSeconds": 44.564897959183675,
+      "voDurationInFrames": 1337,
+      "leadFrames": 12,
+      "tailFrames": 22,
+      "durationInFrames": 1371,
+      "startFrame": 1924,
+      "captions": [
+        {
+          "text": "Here's what that looks like in real code —",
+          "start": 0,
+          "end": 2.166
+        },
+        {
+          "text": "this is JavaScript.",
+          "start": 2.357,
+          "end": 3.704
+        },
+        {
+          "text": "\"Let score equal ten\" creates a variable.",
+          "start": 3.704,
+          "end": 6.427
+        },
+        {
+          "text": "The word \"let\" tells the computer: make me",
+          "start": 6.618,
+          "end": 9.125
+        },
+        {
+          "text": "a box. \"Score\" is the label, and ten goes",
+          "start": 9.125,
+          "end": 12.515
+        },
+        {
+          "text": "inside. Later we write \"score equals",
+          "start": 12.515,
+          "end": 15.139
+        },
+        {
+          "text": "fifty\" — no \"let\" this time, because the",
+          "start": 15.139,
+          "end": 18.03
+        },
+        {
+          "text": "box already exists.",
+          "start": 18.03,
+          "end": 19.592
+        },
+        {
+          "text": "We're simply replacing its contents.",
+          "start": 19.667,
+          "end": 21.856
+        },
+        {
+          "text": "Now the constant: \"const PI equals",
+          "start": 21.931,
+          "end": 24.984
+        },
+        {
+          "text": "3.14159\". \"Const\" is short for constant,",
+          "start": 24.984,
+          "end": 29.542
+        },
+        {
+          "text": "and it works the same way —",
+          "start": 29.617,
+          "end": 31.585
+        },
+        {
+          "text": "one name, one value —",
+          "start": 31.776,
+          "end": 33.977
+        },
+        {
+          "text": "with one big exception.",
+          "start": 34.005,
+          "end": 35.765
+        },
+        {
+          "text": "If you try to change it, the program stops",
+          "start": 35.956,
+          "end": 38.615
+        },
+        {
+          "text": "and throws an error.",
+          "start": 38.615,
+          "end": 39.898
+        },
+        {
+          "text": "That's not the computer being difficult.",
+          "start": 39.973,
+          "end": 42.162
+        },
+        {
+          "text": "That's protection you asked for.",
+          "start": 42.237,
+          "end": 44.786
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Which one do you use?",
+      "narration": "So choosing between them comes down to one question: will this value ever need to change? A score, a countdown, a username someone might edit — those change, so use a variable. The days in a week, a tax rate, your app's name — those should never change, so use a constant. And here's a habit professionals swear by: reach for a constant first, and only switch to a variable when something truly needs to change.",
+      "audioFile": "audio/vo/scene-5.mp3",
+      "voDurationInSeconds": 28.44734693877551,
+      "voDurationInFrames": 854,
+      "leadFrames": 12,
+      "tailFrames": 22,
+      "durationInFrames": 888,
+      "startFrame": 3295,
+      "captions": [
+        {
+          "text": "So choosing between them comes down to one",
+          "start": 0,
+          "end": 2.171
+        },
+        {
+          "text": "question: will this value ever need to",
+          "start": 2.171,
+          "end": 4.667
+        },
+        {
+          "text": "change? A score, a countdown, a username",
+          "start": 4.667,
+          "end": 8.626
+        },
+        {
+          "text": "someone might edit —",
+          "start": 8.626,
+          "end": 9.921
+        },
+        {
+          "text": "those change, so use a variable.",
+          "start": 10.182,
+          "end": 12.522
+        },
+        {
+          "text": "The days in a week, a tax rate, your app's",
+          "start": 12.875,
+          "end": 16.045
+        },
+        {
+          "text": "name — those should never change, so use a",
+          "start": 16.045,
+          "end": 18.727
+        },
+        {
+          "text": "constant. And here's a habit professionals",
+          "start": 18.727,
+          "end": 21.211
+        },
+        {
+          "text": "swear by: reach for a constant first, and",
+          "start": 21.211,
+          "end": 24.694
+        },
+        {
+          "text": "only switch to a variable when something",
+          "start": 24.694,
+          "end": 26.668
+        },
+        {
+          "text": "truly needs to change.",
+          "start": 26.668,
+          "end": 28.671
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Recap & takeaway",
+      "narration": "One line to remember: variables are labeled boxes you can refill; constants are boxes that lock. Name your data, protect what shouldn't change — and you've just learned the first real building block of every program ever written. See you in the next one.",
+      "audioFile": "audio/vo/scene-6.mp3",
+      "voDurationInSeconds": 16.535510204081632,
+      "voDurationInFrames": 497,
+      "leadFrames": 12,
+      "tailFrames": 96,
+      "durationInFrames": 605,
+      "startFrame": 4183,
+      "captions": [
+        {
+          "text": "One line to remember: variables are",
+          "start": 0,
+          "end": 2.635
+        },
+        {
+          "text": "labeled boxes you can refill; constants",
+          "start": 2.635,
+          "end": 5.596
+        },
+        {
+          "text": "are boxes that lock.",
+          "start": 5.596,
+          "end": 7.019
+        },
+        {
+          "text": "Name your data, protect what shouldn't",
+          "start": 7.465,
+          "end": 9.66
+        },
+        {
+          "text": "change — and you've just learned the first",
+          "start": 9.66,
+          "end": 11.981
+        },
+        {
+          "text": "real building block of every program ever",
+          "start": 11.981,
+          "end": 14.257
+        },
+        {
+          "text": "written. See you in the next one.",
+          "start": 14.257,
+          "end": 16.736
+        }
+      ]
+    }
+  ]
+}

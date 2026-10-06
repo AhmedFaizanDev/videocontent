@@ -1,0 +1,6 @@
+bpmonitor: Upper arm in a cuff + digital monitor counting up to the reading. anchors: cuff artery monitor sys dia unit. data {sys?: 120, dia?: 80, sysLabel?, diaLabel?, unit?}
+events: —
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 anchors (where labels and the camera land)

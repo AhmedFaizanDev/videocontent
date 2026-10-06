@@ -1,0 +1,226 @@
+[
+ {
+  "label": "White House",
+  "lat": 38.898702605245,
+  "lon": -77.035189204737,
+  "verdict": "Pursue",
+  "score": 100
+ },
+ {
+  "label": "Empire State Building",
+  "lat": 40.747850846857,
+  "lon": -73.985075577551,
+  "verdict": "Pursue",
+  "score": 85
+ },
+ {
+  "label": "Space Needle, Seattle",
+  "lat": 47.619822816651,
+  "lon": -122.348868336565,
+  "verdict": "Pursue",
+  "score": 100
+ },
+ {
+  "label": "The Alamo, San Antonio",
+  "lat": 29.425848882718,
+  "lon": -98.486843336646,
+  "verdict": "Pursue",
+  "score": 90
+ },
+ {
+  "label": "Las Vegas Strip",
+  "lat": 36.113744100149,
+  "lon": -115.17293785912,
+  "verdict": "Review",
+  "score": 65
+ },
+ {
+  "label": "Miami Beach",
+  "lat": 25.77920702197,
+  "lon": -80.130844197533,
+  "verdict": "Pass",
+  "score": 30
+ },
+ {
+  "label": "Leadville, CO (highest US city)",
+  "lat": 39.25047654101,
+  "lon": -106.292441351913,
+  "verdict": "Review",
+  "score": 45
+ },
+ {
+  "label": "Downtown Anchorage, AK",
+  "lat": 61.216526962748,
+  "lon": -149.894190583773,
+  "verdict": "Pursue",
+  "score": 75
+ },
+ {
+  "label": "Waikiki, Honolulu",
+  "lat": 21.284684706687,
+  "lon": -157.835752624493,
+  "verdict": "Review",
+  "score": 45
+ },
+ {
+  "label": "Sloppy lowercase Denver",
+  "lat": 39.739040016914,
+  "lon": -104.990311950936,
+  "verdict": "Pursue",
+  "score": 70
+ },
+ {
+  "label": "Badwater Basin, Death Valley (below sea level)",
+  "lat": 36.2299,
+  "lon": -116.7677,
+  "verdict": "Pass",
+  "score": 30
+ },
+ {
+  "label": "Mount Whitney summit",
+  "lat": 36.5785,
+  "lon": -118.2923,
+  "verdict": "Review",
+  "score": 45
+ },
+ {
+  "label": "Denali, Alaska",
+  "lat": 63.0695,
+  "lon": -151.0074,
+  "verdict": "Pass",
+  "score": 20
+ },
+ {
+  "label": "Fairbanks, Alaska (cold)",
+  "lat": 64.8378,
+  "lon": -147.7164,
+  "verdict": "Pursue",
+  "score": 75
+ },
+ {
+  "label": "Hilo, Hawaii (very wet)",
+  "lat": 19.7297,
+  "lon": -155.09,
+  "verdict": "Review",
+  "score": 65
+ },
+ {
+  "label": "Yuma, Arizona (very dry)",
+  "lat": 32.6927,
+  "lon": -114.6277,
+  "verdict": "Review",
+  "score": 50
+ },
+ {
+  "label": "San Juan, Puerto Rico",
+  "lat": 18.4655,
+  "lon": -66.1057,
+  "verdict": "Review",
+  "score": 45
+ },
+ {
+  "label": "Middle of Lake Michigan",
+  "lat": 43.5,
+  "lon": -87.0,
+  "verdict": "Pursue",
+  "score": 90
+ },
+ {
+  "label": "Gulf of Mexico",
+  "lat": 26.0,
+  "lon": -90.0,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "Mid-Pacific",
+  "lat": 30.0,
+  "lon": -140.0,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "London, UK",
+  "lat": 51.5074,
+  "lon": -0.1278,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "Null Island (0, 0)",
+  "lat": 0.0,
+  "lon": 0.0,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "North Pole (edge of valid range)",
+  "lat": 90.0,
+  "lon": 0.0,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "Antimeridian (edge of valid range)",
+  "lat": 0.0,
+  "lon": 180.0,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "Random point 1 (US-sized box, may be sea or Mexico)",
+  "lat": 28.8636,
+  "lon": -115.9334,
+  "verdict": "Insufficient data",
+  "score": null
+ },
+ {
+  "label": "Random point 2 (US-sized box, may be sea or Mexico)",
+  "lat": 46.9605,
+  "lon": -102.8837,
+  "verdict": "Pursue",
+  "score": 90
+ },
+ {
+  "label": "Random point 3 (US-sized box, may be sea or Mexico)",
+  "lat": 41.8088,
+  "lon": -72.0956,
+  "verdict": "Pursue",
+  "score": 75
+ },
+ {
+  "label": "Random point 4 (US-sized box, may be sea or Mexico)",
+  "lat": 40.618,
+  "lon": -95.587,
+  "verdict": "Pursue",
+  "score": 100
+ },
+ {
+  "label": "Random point 5 (US-sized box, may be sea or Mexico)",
+  "lat": 31.5296,
+  "lon": -89.2958,
+  "verdict": "Pursue",
+  "score": 85
+ },
+ {
+  "label": "Random point 6 (US-sized box, may be sea or Mexico)",
+  "lat": 45.7352,
+  "lon": -72.8568,
+  "verdict": "Pursue",
+  "score": 90
+ },
+ {
+  "label": "Random point 7 (US-sized box, may be sea or Mexico)",
+  "lat": 43.3125,
+  "lon": -123.2268,
+  "verdict": "Pursue",
+  "score": 100
+ },
+ {
+  "label": "Random point 8 (US-sized box, may be sea or Mexico)",
+  "lat": 46.0667,
+  "lon": -98.3546,
+  "verdict": "Pursue",
+  "score": 90
+ }
+]

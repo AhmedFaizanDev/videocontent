@@ -1,0 +1,19 @@
+{"playbooks":[
+{"id":"channelCutaway.channels","teaches":"why a flexible endoscope is mechanically complex: one insertion tube carries several narrow channels of different diameters, some easy to forget during cleaning","moments":[
+{"slot":"tube","hint":["insertion tube","sheath","cross-section","inside"],"beat":{"camera":"overview","label":{"on":"sheath","text":"Outer sheath"}}},
+{"slot":"suction","hint":["suction","biopsy","widest","largest"],"beat":{"camera":{"on":"suctionChannel","zoom":1.5},"label":{"on":"suctionChannel","text":"Suction/biopsy channel"}}},
+{"slot":"air","hint":["air","air channel"],"beat":{"label":{"on":"airChannel","text":"Air channel"},"pulse":"airChannel"}},
+{"slot":"water","hint":["water","water channel","narrow","forget"],"beat":{"label":{"on":"waterChannel","text":"Water channel"},"pulse":"waterChannel"}},
+{"slot":"length","hint":["length","runs","whole","long"],"beat":{"camera":"overview","label":{"on":"channelWall","text":"Channel wall"}},"optional":true}]},
+{"id":"channelCutaway.biofilm","teaches":"why only a brush in contact with the channel wall disrupts biofilm, while soaking, flushing or chemical disinfection leave it in place","moments":[
+{"slot":"wall","hint":["channel wall","lumen","inside the channel"],"beat":{"camera":{"on":"channelWall","zoom":1.4},"label":{"on":"channelWall","text":"Channel wall"}}},
+{"slot":"biofilm","hint":["biofilm","layer","adheres","grows"],"beat":{"act":"biofilm","label":{"on":"biofilm","text":"Biofilm"}}},
+{"slot":"soak","hint":["soaking","flushing","chemical","disinfectant","does not remove"],"beat":{"label":{"on":"biofilm","text":"Not removed by flushing"},"pulse":"biofilm"},"optional":true},
+{"slot":"brush","hint":["brush","contact","scrub","friction","disrupts"],"beat":{"act":"brush","label":{"on":"brushHead","text":"Brush head on wall"}}},
+{"slot":"clean","hint":["removed","clean","cleared"],"beat":{"camera":"overview","label":{"on":"channelWall","text":"Wall cleared"}}}]},
+{"id":"channelCutaway.brushing","teaches":"why the brush must match the channel diameter and length and brushing continues until the brush emerges visibly clean","moments":[
+{"slot":"match","hint":["diameter","size","correct brush","matched"],"beat":{"camera":{"on":"brushHead","zoom":1.5},"label":{"on":"brushHead","text":"Bristles touch the wall"}}},
+{"slot":"pass","hint":["passes","length","through","full length"],"beat":{"act":"brush","label":{"on":"brush","text":"Channel cleaning brush"}}},
+{"slot":"debris","hint":["debris","soil","biofilm"],"beat":{"pulse":"biofilm","label":{"on":"biofilm","text":"Biofilm"}},"optional":true},
+{"slot":"repeat","hint":["repeat","until clean","visibly clean","emerges"],"beat":{"camera":"overview","label":{"on":"brushHead","text":"Repeat until clean"}}}]}
+]}

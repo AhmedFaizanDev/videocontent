@@ -1,0 +1,24 @@
+chain: Horizontal chain of n face-on rings (data.n 3-8, default 6), each joined to the next by a short edge-on link threaded through both ring walls, so it reads as a real chain; pale lavender with a darker outline by default; each ring hollow stays empty for an icon or label. anchors: l1..l8 (ring centres; beyond n sit on the last ring) all (above the chain centre) · events: l1..l8 (that ring fills with the MedSkills gradient #E0168A to #6E25A3 and glows; a joining link lights when both its rings are lit) all (quick left-to-right lighting wave, then one pulse of the whole chain)
+events: l1, l2, l3, l4, l5, l6, l7, l8, all
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "l1"
+4 "l1" later (ongoing motion)
+5 after event "l2"
+6 "l2" later (ongoing motion)
+7 after event "l3"
+8 "l3" later (ongoing motion)
+9 after event "l4"
+10 "l4" later (ongoing motion)
+11 after event "l5"
+12 "l5" later (ongoing motion)
+13 after event "l6"
+14 "l6" later (ongoing motion)
+15 after event "l7"
+16 "l7" later (ongoing motion)
+17 after event "l8"
+18 "l8" later (ongoing motion)
+19 after event "all"
+20 "all" later (ongoing motion)
+21 anchors (where labels and the camera land)

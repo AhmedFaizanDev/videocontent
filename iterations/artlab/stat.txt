@@ -1,0 +1,8 @@
+stat: A NUMBER MADE VISIBLE: a large figure that counts up as spoken, with an icon array filling in proportion (people for ≤20, a 10×10 dot grid for 100). data: {value, of? (10|100…), display? ("9 in 10", "41%"), label? ≤48, tone? red|blue|teal|green|ink, unit? people|dots} · anchors: figure array · event: count
+events: count
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "count"
+4 "count" later (ongoing motion)
+5 anchors (where labels and the camera land)

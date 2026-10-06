@@ -1,0 +1,340 @@
+1
+00:00:01,500 --> 00:00:03,900
+In this video, we're going to talk about
+
+2
+00:00:03,900 --> 00:00:06,200
+blood pressure and its two numbers.
+
+3
+00:00:07,944 --> 00:00:09,969
+By the end, you'll know what blood
+
+4
+00:00:09,969 --> 00:00:12,094
+pressure measures, what systolic and
+
+5
+00:00:12,094 --> 00:00:14,569
+diastolic mean, when a reading counts as
+
+6
+00:00:14,569 --> 00:00:16,832
+high, and how to keep it healthy.
+
+7
+00:00:20,167 --> 00:00:22,442
+Most people with high blood pressure feel
+
+8
+00:00:22,442 --> 00:00:25,330
+perfectly well, with no warning signs at
+
+9
+00:00:25,330 --> 00:00:29,746
+all. Yet inside, the pressure can stay
+
+10
+00:00:29,746 --> 00:00:32,789
+high for years. The World Health
+
+11
+00:00:32,789 --> 00:00:35,713
+Organization estimates that 46 percent of
+
+12
+00:00:35,713 --> 00:00:37,026
+them don't know it.
+
+13
+00:00:38,259 --> 00:00:39,546
+So how would you know?
+
+14
+00:00:42,833 --> 00:00:44,546
+So what is blood pressure?
+
+15
+00:00:45,729 --> 00:00:47,829
+It is the force of blood pushing against
+
+16
+00:00:47,829 --> 00:00:49,454
+the walls of your arteries.
+
+17
+00:00:50,665 --> 00:00:52,290
+Let's look inside one!
+
+18
+00:00:53,489 --> 00:00:56,289
+With every heartbeat, blood surges in and
+
+19
+00:00:56,289 --> 00:00:58,177
+presses outward on the wall.
+
+20
+00:00:59,433 --> 00:01:02,020
+The elastic wall stretches, then springs
+
+21
+00:01:02,020 --> 00:01:05,401
+back. We measure this pressure in
+
+22
+00:01:05,401 --> 00:01:06,964
+millimetres of mercury.
+
+23
+00:01:10,267 --> 00:01:12,092
+Now watch one heartbeat.
+
+24
+00:01:13,331 --> 00:01:15,856
+The heart contracts, and a pressure wave
+
+25
+00:01:15,856 --> 00:01:17,631
+travels along the artery.
+
+26
+00:01:18,867 --> 00:01:20,167
+The pressure peaks:
+
+27
+00:01:20,167 --> 00:01:22,079
+this is the systolic pressure.
+
+28
+00:01:23,299 --> 00:01:25,461
+Then the heart rests, and the pressure
+
+29
+00:01:25,461 --> 00:01:26,937
+falls to its lowest:
+
+30
+00:01:26,937 --> 00:01:28,499
+the diastolic pressure.
+
+31
+00:01:30,223 --> 00:01:32,611
+Together, these two values make your
+
+32
+00:01:32,611 --> 00:01:33,298
+reading.
+
+33
+00:01:36,633 --> 00:01:39,233
+To measure it, an inflatable cuff goes
+
+34
+00:01:39,233 --> 00:01:40,683
+around the upper arm.
+
+35
+00:01:41,881 --> 00:01:44,481
+It squeezes the arm, and a monitor shows
+
+36
+00:01:44,481 --> 00:01:47,897
+two numbers. The top number is the
+
+37
+00:01:47,897 --> 00:01:51,160
+systolic pressure, here 120.
+
+38
+00:01:52,377 --> 00:01:55,015
+The bottom number is the diastolic, here
+
+39
+00:01:55,015 --> 00:02:00,181
+80. We say this reading is 120 over 80.
+
+40
+00:02:03,500 --> 00:02:06,838
+For most adults, 90 over 60 or lower is
+
+41
+00:02:06,838 --> 00:02:11,293
+low. The ideal range is between 90 over 60
+
+42
+00:02:11,293 --> 00:02:17,314
+and 120 over 80. Between 120 over 80 and
+
+43
+00:02:17,314 --> 00:02:20,452
+140 over 90, you're at risk.
+
+44
+00:02:21,668 --> 00:02:24,718
+And 140 over 90 or higher is high blood
+
+45
+00:02:24,718 --> 00:02:26,880
+pressure, called hypertension.
+
+46
+00:02:28,568 --> 00:02:30,630
+It is diagnosed when readings are that
+
+47
+00:02:30,630 --> 00:02:32,355
+high on two different days.
+
+48
+00:02:35,667 --> 00:02:38,292
+Year after year, high pressure strains the
+
+49
+00:02:38,292 --> 00:02:40,404
+arteries and damages their walls.
+
+50
+00:02:41,635 --> 00:02:43,648
+In the heart, that can mean a heart
+
+51
+00:02:43,648 --> 00:02:47,338
+attack. In the brain, a stroke.
+
+52
+00:02:48,579 --> 00:02:50,754
+In the kidneys, kidney damage.
+
+53
+00:02:52,455 --> 00:02:54,430
+And a heart forced to pump harder can
+
+54
+00:02:54,430 --> 00:02:57,230
+eventually fail: that is heart failure.
+
+55
+00:03:00,567 --> 00:03:03,117
+The good news: you can keep it healthy.
+
+56
+00:03:04,327 --> 00:03:07,315
+Eat less than 5 grams of salt a day, just
+
+57
+00:03:07,315 --> 00:03:08,552
+under a teaspoon.
+
+58
+00:03:09,791 --> 00:03:11,866
+Eat more vegetables and fruit.
+
+59
+00:03:13,119 --> 00:03:14,794
+Be physically active.
+
+60
+00:03:16,063 --> 00:03:18,876
+Avoid tobacco, and limit alcohol.
+
+61
+00:03:20,611 --> 00:03:22,311
+And have your blood pressure checked
+
+62
+00:03:22,311 --> 00:03:23,136
+regularly.
+
+63
+00:03:26,500 --> 00:03:28,688
+The most common mistake is thinking:
+
+64
+00:03:28,750 --> 00:03:31,437
+I feel fine, so my blood pressure must be
+
+65
+00:03:31,437 --> 00:03:34,869
+normal. But most people with it feel
+
+66
+00:03:34,869 --> 00:03:38,378
+nothing at all. Only a measurement can
+
+67
+00:03:38,378 --> 00:03:42,978
+tell. So measure it, and remember:
+
+68
+00:03:42,991 --> 00:03:45,291
+a diagnosis needs high readings on two
+
+69
+00:03:45,291 --> 00:03:46,366
+different days.
+
+70
+00:03:49,700 --> 00:03:51,100
+Time for a quick check.
+
+71
+00:03:52,332 --> 00:03:56,394
+A patient's blood pressure is 150 over 95,
+
+72
+00:03:56,394 --> 00:03:57,757
+on two different days.
+
+73
+00:03:58,996 --> 00:04:00,684
+What does that suggest?
+
+74
+00:04:01,892 --> 00:04:04,130
+Pause the video, and think it through.
+
+75
+00:04:11,867 --> 00:04:14,079
+It suggests high blood pressure, or
+
+76
+00:04:14,079 --> 00:04:19,520
+hypertension. The systolic value, 150, is
+
+77
+00:04:19,520 --> 00:04:25,395
+above 140. The diastolic value, 95, is
+
+78
+00:04:25,395 --> 00:04:29,217
+above 90. And it was confirmed on two
+
+79
+00:04:29,217 --> 00:04:30,292
+different days.
+
+80
+00:04:33,633 --> 00:04:37,200
+Let's recap! Blood pressure is two
+
+81
+00:04:37,200 --> 00:04:39,900
+numbers, systolic over diastolic.
+
+82
+00:04:41,105 --> 00:04:44,617
+A reading of 140 over 90 or higher is high
+
+83
+00:04:44,617 --> 00:04:48,121
+blood pressure. And because it is usually
+
+84
+00:04:48,121 --> 00:04:49,908
+silent, measure it.
+
+85
+00:04:51,669 --> 00:04:52,957
+Know your numbers.
+

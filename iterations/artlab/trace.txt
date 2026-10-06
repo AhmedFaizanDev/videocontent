@@ -1,0 +1,6 @@
+trace: A waveform drawn by a moving pen (ECG, action potential, pressure/sound wave). data: {grid?, repeat? 1–4, segments: 2–24 {shape: flat|bump|spike|dip|plateau|rise|fall, w?, h? (−1…1.2), label? ≤10, note?, say?}}; labelled segments light up as spoken
+events: —
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 anchors (where labels and the camera land)

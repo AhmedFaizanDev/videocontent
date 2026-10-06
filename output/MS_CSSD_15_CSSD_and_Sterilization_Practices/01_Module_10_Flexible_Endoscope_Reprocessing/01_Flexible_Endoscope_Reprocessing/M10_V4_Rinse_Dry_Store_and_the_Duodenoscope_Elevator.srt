@@ -1,0 +1,276 @@
+1
+00:00:01,431 --> 00:00:03,655
+In this video, we're going to talk about
+
+2
+00:00:03,655 --> 00:00:06,131
+the final steps of the cycle, and one
+
+3
+00:00:06,131 --> 00:00:08,554
+mechanism that needs special attention.
+
+4
+00:00:09,206 --> 00:00:11,441
+By the end, you'll know why rinse water
+
+5
+00:00:11,441 --> 00:00:14,025
+quality matters, you'll see how drying and
+
+6
+00:00:14,025 --> 00:00:15,984
+storage stop regrowth, and you'll
+
+7
+00:00:15,984 --> 00:00:17,643
+understand the risk hidden in the
+
+8
+00:00:17,643 --> 00:00:19,466
+duodenoscope elevator.
+
+9
+00:00:22,598 --> 00:00:24,990
+A perfectly disinfected scope can still
+
+10
+00:00:24,990 --> 00:00:27,586
+become contaminated, in the rinse, in the
+
+11
+00:00:27,586 --> 00:00:29,397
+drying, or in storage.
+
+12
+00:00:32,231 --> 00:00:34,755
+After disinfection, rinse with water of
+
+13
+00:00:34,755 --> 00:00:38,046
+defined quality. Residual disinfectant
+
+14
+00:00:38,046 --> 00:00:40,438
+left on the scope causes chemical colitis
+
+15
+00:00:40,438 --> 00:00:41,912
+and mucosal injury.
+
+16
+00:00:42,602 --> 00:00:44,333
+And contaminated rinse water
+
+17
+00:00:44,333 --> 00:00:46,784
+recontaminates the scope at the very last
+
+18
+00:00:46,784 --> 00:00:47,321
+step.
+
+19
+00:00:50,498 --> 00:00:53,106
+Then dry the scope, with an alcohol flush
+
+20
+00:00:53,106 --> 00:00:55,606
+where the protocol specifies, followed by
+
+21
+00:00:55,606 --> 00:00:57,573
+forced air through every channel.
+
+22
+00:00:58,249 --> 00:01:00,232
+Residual moisture lets waterborne
+
+23
+00:01:00,232 --> 00:01:02,944
+organisms, especially Pseudomonas,
+
+24
+00:01:02,984 --> 00:01:04,759
+multiply between uses.
+
+25
+00:01:05,460 --> 00:01:07,559
+A coiled scope retains fluid.
+
+26
+00:01:08,273 --> 00:01:11,121
+So store it hanging vertically, uncoiled,
+
+27
+00:01:11,121 --> 00:01:13,537
+valves removed, in a controlled drying
+
+28
+00:01:13,537 --> 00:01:14,302
+cabinet.
+
+29
+00:01:17,465 --> 00:01:19,564
+Now, the duodenoscope.
+
+30
+00:01:20,228 --> 00:01:23,124
+At its distal tip is an elevator, a small
+
+31
+00:01:23,124 --> 00:01:25,848
+lever that raises to direct accessories.
+
+32
+00:01:26,538 --> 00:01:29,242
+Its recess is narrow, mechanically complex
+
+33
+00:01:29,242 --> 00:01:31,365
+and extremely difficult to clean.
+
+34
+00:01:32,055 --> 00:01:34,182
+It has been implicated in international
+
+35
+00:01:34,182 --> 00:01:35,985
+outbreaks of multidrug-resistant
+
+36
+00:01:35,985 --> 00:01:39,122
+organisms. Follow the manufacturer's
+
+37
+00:01:39,122 --> 00:01:41,269
+elevator instructions exactly.
+
+38
+00:01:44,398 --> 00:01:47,569
+Knowledge check. What is the duodenoscope
+
+39
+00:01:47,569 --> 00:01:50,209
+elevator, and why does it matter?
+
+40
+00:01:50,887 --> 00:01:52,613
+Pause here and think it through.
+
+41
+00:01:59,898 --> 00:02:02,122
+It's a mechanism at the duodenoscope's
+
+42
+00:02:02,122 --> 00:02:04,605
+distal tip that directs accessories.
+
+43
+00:02:05,281 --> 00:02:07,384
+Its recess is narrow, complex and
+
+44
+00:02:07,384 --> 00:02:09,884
+extremely hard to clean, and it has been
+
+45
+00:02:09,884 --> 00:02:11,555
+implicated in outbreaks of
+
+46
+00:02:11,555 --> 00:02:13,582
+multidrug-resistant organisms.
+
+47
+00:02:14,271 --> 00:02:16,699
+So its specific instructions are followed
+
+48
+00:02:16,699 --> 00:02:17,560
+exactly.
+
+49
+00:02:20,698 --> 00:02:23,761
+One more. Why must a scope be dried
+
+50
+00:02:23,761 --> 00:02:25,901
+thoroughly and stored hanging vertically
+
+51
+00:02:25,901 --> 00:02:28,701
+and uncoiled? Pause here and think it
+
+52
+00:02:28,701 --> 00:02:29,237
+through.
+
+53
+00:02:36,498 --> 00:02:38,914
+Because residual moisture lets Pseudomonas
+
+54
+00:02:38,914 --> 00:02:41,306
+and other Gram-negative organisms multiply
+
+55
+00:02:41,306 --> 00:02:43,962
+between uses, so a correctly disinfected
+
+56
+00:02:43,962 --> 00:02:46,482
+scope becomes contaminated in storage.
+
+57
+00:02:47,157 --> 00:02:49,040
+A coiled scope holds fluid.
+
+58
+00:02:49,729 --> 00:02:52,001
+Hanging vertically and uncoiled, with
+
+59
+00:02:52,001 --> 00:02:54,801
+valves removed, lets every channel drain
+
+60
+00:02:54,801 --> 00:02:55,602
+and dry.
+
+61
+00:02:58,731 --> 00:03:02,119
+Let's recap! Rinse with water of defined
+
+62
+00:03:02,119 --> 00:03:05,652
+quality. Dry every channel, and store
+
+63
+00:03:05,652 --> 00:03:07,768
+scopes hanging vertically in a drying
+
+64
+00:03:07,768 --> 00:03:10,748
+cabinet. And give the duodenoscope
+
+65
+00:03:10,748 --> 00:03:12,876
+elevator the specific attention its
+
+66
+00:03:12,876 --> 00:03:14,530
+manufacturer requires.
+
+67
+00:03:15,244 --> 00:03:17,227
+In the final video, we'll cover
+
+68
+00:03:17,227 --> 00:03:19,414
+traceability, surveillance, and the
+
+69
+00:03:19,414 --> 00:03:21,501
+pressure behind most failures.
+

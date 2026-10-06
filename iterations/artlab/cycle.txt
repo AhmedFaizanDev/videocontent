@@ -1,0 +1,6 @@
+cycle: Stages on a closed loop (a process that repeats). data: {items: 3–8 {label ≤26, note?}, start?: "PATIENT"}
+events: —
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 anchors (where labels and the camera land)

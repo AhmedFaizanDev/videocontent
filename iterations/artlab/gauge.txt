@@ -1,0 +1,8 @@
+gauge: Pressure dial, green → amber → red, no numbers. anchors: dial needle low ok high · events: rise (needle climbs into the red) ok (settles in the green). data {start?: 0–1}
+events: rise
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "rise"
+4 "rise" later (ongoing motion)
+5 anchors (where labels and the camera land)

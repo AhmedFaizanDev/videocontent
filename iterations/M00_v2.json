@@ -1,0 +1,584 @@
+{
+  "id": "M00",
+  "title": "Basic and Advanced Cardiac Life Support — Course Introduction",
+  "outputFilename": "MedSkills_BLS_ACLS_Course_Introduction.mp4",
+  "episode": "0",
+  "module": "Course Introduction",
+  "topicGroup": "Resuscitation",
+  "clock": {
+    "from": 2,
+    "stop": 5,
+    "to": 5
+  },
+  "scenes": [
+    {
+      "type": "ident",
+      "kicker": "MedSkills",
+      "seconds": 3.2
+    },
+    {
+      "type": "stage",
+      "kicker": "The ward",
+      "bare": true,
+      "mood": "dark",
+      "narration": "The monitor alarms. A heart has stopped. [pause] The nearest person is you. The first three minutes matter most.",
+      "world": {
+        "w": 3000,
+        "h": 1320,
+        "layers": [
+          {
+            "id": "ward",
+            "art": "ward",
+            "at": [
+              1100,
+              640
+            ],
+            "h": 760
+          },
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              2400,
+              420
+            ],
+            "h": 400
+          },
+          {
+            "id": "you",
+            "art": "person",
+            "data": {
+              "shirt": "#2F6FDB",
+              "shirtDark": "#1D4AA0",
+              "skin": "#C68B5E",
+              "skinDark": "#8A5A36",
+              "hair": "#1C1530",
+              "stethoscope": true
+            },
+            "at": [
+              2400,
+              975
+            ],
+            "h": 660,
+            "hidden": true
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "monitor"
+          ],
+          "camera": {
+            "on": "mon",
+            "zoom": 1.9
+          },
+          "act": [
+            "mon.vf",
+            "ward.alarm"
+          ],
+          "sfx": [
+            {
+              "name": "alarm",
+              "volume": 0.5
+            },
+            {
+              "name": "alarm",
+              "volume": 0.35,
+              "every": 54,
+              "count": 2
+            },
+            {
+              "name": "drone",
+              "volume": 0.5
+            }
+          ]
+        },
+        {
+          "say": [
+            "stopped"
+          ],
+          "pulse": "mon.rate",
+          "sfx": "boom"
+        },
+        {
+          "say": [
+            "nearest"
+          ],
+          "show": "you",
+          "camera": "overview",
+          "act": "you.worry",
+          "sfx": "whoosh"
+        },
+        {
+          "say": [
+            "three"
+          ],
+          "camera": {
+            "on": "ward.patient",
+            "zoom": 2.1
+          },
+          "sfx": {
+            "name": "heartbeat",
+            "volume": 0.6,
+            "every": 26,
+            "count": 3
+          }
+        }
+      ],
+      "open": "mon",
+      "drawn": true
+    },
+    {
+      "type": "stage",
+      "kicker": "Compressions",
+      "bare": true,
+      "mood": "dark",
+      "transition": "cut",
+      "narration": "Recognise it in seconds. Start compressions without waiting for the team: a hundred to a hundred and twenty a minute.",
+      "world": {
+        "w": 2400,
+        "h": 1200,
+        "layers": [
+          {
+            "id": "cpr",
+            "art": "cpr",
+            "at": [
+              1000,
+              620
+            ],
+            "h": 820
+          },
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              2000,
+              420
+            ],
+            "h": 360,
+            "data": {
+              "rhythm": "vf"
+            }
+          }
+        ]
+      },
+      "open": "cpr",
+      "beats": [
+        {
+          "say": [
+            "recognise"
+          ],
+          "pulse": "mon.rate"
+        },
+        {
+          "say": [
+            "compressions"
+          ],
+          "act": "cpr.compress",
+          "sfx": {
+            "name": "thud",
+            "volume": 0.6,
+            "every": 16,
+            "count": 14
+          }
+        },
+        {
+          "say": [
+            "hundred"
+          ],
+          "note": "100–120 compressions a minute · full recoil",
+          "camera": {
+            "on": "cpr.hands",
+            "zoom": 1.6
+          }
+        }
+      ],
+      "drawn": true
+    },
+    {
+      "type": "stage",
+      "kicker": "Defibrillation",
+      "bare": true,
+      "mood": "dark",
+      "transition": "pan",
+      "narration": "Pads on. Shock. Straight back on the chest. [pause] Then your team takes over.",
+      "world": {
+        "w": 4250,
+        "h": 1250,
+        "layers": [
+          {
+            "id": "cpr",
+            "art": "cpr",
+            "at": [
+              800,
+              660
+            ],
+            "h": 700
+          },
+          {
+            "id": "aed",
+            "art": "aed",
+            "at": [
+              1800,
+              660
+            ],
+            "h": 520
+          },
+          {
+            "id": "mon",
+            "art": "ecgmonitor",
+            "at": [
+              2480,
+              430
+            ],
+            "h": 420,
+            "data": {
+              "rhythm": "vf"
+            }
+          },
+          {
+            "id": "t1",
+            "art": "person",
+            "data": {
+              "shirt": "#7A24A1",
+              "shirtDark": "#4A1570",
+              "skin": "#F1D0B5",
+              "skinDark": "#C99B7A",
+              "hair": "#6B3E26"
+            },
+            "at": [
+              3100,
+              640
+            ],
+            "h": 720,
+            "hidden": true
+          },
+          {
+            "id": "t2",
+            "art": "person",
+            "data": {
+              "shirt": "#0E9F95",
+              "shirtDark": "#0A6E67",
+              "skin": "#8D5A3B",
+              "skinDark": "#5E3A24",
+              "hair": "#1C1530"
+            },
+            "at": [
+              3530,
+              640
+            ],
+            "h": 720,
+            "hidden": true
+          },
+          {
+            "id": "t3",
+            "art": "person",
+            "data": {
+              "shirt": "#D8148C",
+              "shirtDark": "#8E0F5E",
+              "skin": "#E8B48F",
+              "skinDark": "#B07A55",
+              "hair": "#3B2A2A"
+            },
+            "at": [
+              3960,
+              640
+            ],
+            "h": 720,
+            "hidden": true
+          }
+        ]
+      },
+      "open": "aed",
+      "beats": [
+        {
+          "say": [
+            "pads"
+          ],
+          "act": [
+            "aed.pads",
+            "aed.charge"
+          ],
+          "sfx": {
+            "name": "charge",
+            "volume": 0.5
+          }
+        },
+        {
+          "say": [
+            "shock"
+          ],
+          "act": [
+            "aed.shock",
+            "mon.shock"
+          ],
+          "flash": true,
+          "sfx": {
+            "name": "shock",
+            "volume": 0.85
+          }
+        },
+        {
+          "say": [
+            "straight"
+          ],
+          "camera": {
+            "on": "cpr"
+          },
+          "act": "cpr.compress",
+          "sfx": {
+            "name": "thud",
+            "volume": 0.5,
+            "every": 16,
+            "count": 5
+          },
+          "show": [
+            "t1",
+            "t2",
+            "t3"
+          ]
+        },
+        {
+          "say": [
+            "team"
+          ],
+          "camera": "overview",
+          "act": [
+            "mon.rosc",
+            "cpr.stop"
+          ],
+          "sfx": [
+            {
+              "name": "beep",
+              "volume": 0.35,
+              "every": 22,
+              "count": 5
+            },
+            {
+              "name": "whoosh",
+              "volume": 0.4
+            }
+          ]
+        }
+      ],
+      "drawn": true
+    },
+    {
+      "type": "stage",
+      "kicker": "The course",
+      "bare": true,
+      "transition": "cut",
+      "narration": "Every step you just saw is a module of Basic and Advanced Cardiac Life Support.",
+      "world": {
+        "w": 2000,
+        "h": 1000,
+        "layers": [
+          {
+            "id": "chain",
+            "art": "chain",
+            "data": {
+              "n": 6
+            },
+            "at": [
+              1000,
+              560
+            ],
+            "h": 330
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "step"
+          ],
+          "act": "chain.all",
+          "label": [
+            {
+              "on": "chain.l1",
+              "text": "Recognise"
+            },
+            {
+              "on": "chain.l2",
+              "text": "Compress"
+            },
+            {
+              "on": "chain.l3",
+              "text": "Defibrillate"
+            },
+            {
+              "on": "chain.l4",
+              "text": "Algorithm"
+            },
+            {
+              "on": "chain.l5",
+              "text": "Post-arrest"
+            },
+            {
+              "on": "chain.l6",
+              "text": "Team"
+            }
+          ],
+          "sfx": {
+            "name": "riser",
+            "volume": 0.45
+          }
+        },
+        {
+          "say": [
+            "basic"
+          ],
+          "title": "Basic and Advanced Cardiac Life Support",
+          "sfx": {
+            "name": "boom",
+            "volume": 0.4
+          },
+          "camera": {
+            "on": "chain",
+            "zoom": 1
+          }
+        }
+      ]
+    },
+    {
+      "type": "stage",
+      "kicker": "Who it's for",
+      "transition": "slide",
+      "narration": "The core is for all clinical staff; advanced modules, for code teams. This course certifies knowledge; hands-on courses certify skill.",
+      "world": {
+        "w": 3000,
+        "h": 1150,
+        "layers": [
+          {
+            "id": "t1",
+            "art": "person",
+            "data": {
+              "shirt": "#2FA69A",
+              "shirtDark": "#1D7068",
+              "skin": "#F4C7A5",
+              "skinDark": "#C98B63",
+              "hair": "#3B2A2A"
+            },
+            "at": [
+              420,
+              600
+            ],
+            "h": 820,
+            "hidden": false
+          },
+          {
+            "id": "t2",
+            "art": "person",
+            "data": {
+              "shirt": "#3B5BDB",
+              "shirtDark": "#23398F",
+              "skin": "#C68B5E",
+              "skinDark": "#8A5A36",
+              "hair": "#1C1530"
+            },
+            "at": [
+              980,
+              600
+            ],
+            "h": 820,
+            "hidden": false
+          },
+          {
+            "id": "t3",
+            "art": "person",
+            "data": {
+              "shirt": "#D8148C",
+              "shirtDark": "#8E0F5E",
+              "skin": "#E8B48F",
+              "skinDark": "#B07A55",
+              "hair": "#6B3E26"
+            },
+            "at": [
+              1500,
+              600
+            ],
+            "h": 820,
+            "hidden": false
+          },
+          {
+            "id": "t4",
+            "art": "person",
+            "data": {
+              "shirt": "#F59E0B",
+              "shirtDark": "#B06F05",
+              "skin": "#8D5A3B",
+              "skinDark": "#5E3A24",
+              "hair": "#1C1530"
+            },
+            "at": [
+              2020,
+              600
+            ],
+            "h": 820,
+            "hidden": false
+          },
+          {
+            "id": "t5",
+            "art": "person",
+            "data": {
+              "shirt": "#7A24A1",
+              "shirtDark": "#4A1570",
+              "skin": "#F1D0B5",
+              "skinDark": "#C99B7A",
+              "hair": "#B5651D"
+            },
+            "at": [
+              2580,
+              600
+            ],
+            "h": 820,
+            "hidden": false
+          }
+        ]
+      },
+      "beats": [
+        {
+          "say": [
+            "clinical"
+          ],
+          "pulse": [
+            "t1",
+            "t2",
+            "t3",
+            "t4",
+            "t5"
+          ],
+          "note": "All clinical staff"
+        },
+        {
+          "say": [
+            "advanced"
+          ],
+          "dim": [
+            "t2",
+            "t4"
+          ],
+          "act": [
+            "t2.wave",
+            "t4.wave"
+          ],
+          "note": "Advanced modules · code teams"
+        },
+        {
+          "say": [
+            "knowledge"
+          ],
+          "dim": false,
+          "note": "Certifies knowledge · your hands-on provider course certifies skill"
+        }
+      ]
+    },
+    {
+      "type": "outro",
+      "kicker": "MedSkills",
+      "transition": "slide",
+      "narration": "Brought to you by MedSkills."
+    }
+  ]
+}

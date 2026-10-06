@@ -1,0 +1,12 @@
+vessel: Artery in cross-section: wall layers, lumen, red cells. anchors: wall lumen blood lining outer · events: push (force arrows press outward each beat) stretch (wall stretches and recoils) stiff (wall thickens, lumen narrows) tear (lining damaged, fatty patches)
+events: push, stiff, tear
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "push"
+4 "push" later (ongoing motion)
+5 after event "stiff"
+6 "stiff" later (ongoing motion)
+7 after event "tear"
+8 "tear" later (ongoing motion)
+9 anchors (where labels and the camera land)

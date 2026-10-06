@@ -1,0 +1,6 @@
+graph: FLOWCHARTS and any system/process/algorithm/decision tree as nodes + edges, built up step by step as narrated (flows, travelling token, focus). Prefer writing the chart as Mermaid: data: {mermaid: "flowchart TD\n A([Start]) --> B{Question?}\n B -->|Yes| C[Action]:::red", steps}. Or explicitly: {direction?: LR|TB, nodes: 2–16 {id, label ≤40, shape?: box|circle|pill|decision, tone?, group?}, edges?: ≤24 {from, to, label?, tone?, dashed?}, groups?: [{id, label}]}. steps: 1–14 {say?, show?, flow?, focus?, token?, loop?, cut?, note?} (fired by stage act "<layer>.s1"…; anchors = node ids, s1…)
+events: —
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 anchors (where labels and the camera land)

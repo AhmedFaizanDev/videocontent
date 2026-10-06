@@ -1,0 +1,87 @@
+
+> edu-video-pipeline@1.0.0 produce
+> node scripts/produce.mts ms-bls-29
+
+
+━━ preflight ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⏱  M00: exactly 1:00 · 87 narration words → holds ×0.98 · fits at 66–111 words (house pace ≈ 96)
+  ⏱  M01: est 4:58 · 658 narration words · standard 5:00 ≈ 663 words · allowed 4.5–7 min
+  ⚠️  M00 language: pronunciation — audition these once (node scripts/say.mts ms-bls-29 "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: defibrillation, defibrillate
+  ⚠️  M01 language: pronunciation — audition these once (node scripts/say.mts ms-bls-29 "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: coordination, opioid-related, Defibrillation
+  ⚠️  M00 timing: scene[1] beats: "beat 1" and "beat 2" reveal 0.7 s apart — give each its own sentence
+  ⚠️  M00 timing: scene[3] beats: "beat 3" and "beat 4" reveal 0.4 s apart — give each its own sentence
+  ⚠️  M01 timing: scene[8] beats: "beat 4" and "beat 5" reveal 0.5 s apart — give each its own sentence
+
+ms-bls-29: 2 lesson(s) — 0 error(s), 5 warning(s) in 8 s. Report: projects/ms-bls-29/PREFLIGHT.md
+
+━━ voiceover · M00 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ms-bls-29: en-IN-NeerjaNeural (rate +10%, pitch +0Hz, +0.15s/sentence, breathe ×0.8) · target 4.5–7 min
+
+  M00  ✅ 1:00  128 wpm  (cached)
+
+  ℹ️  measured pace 128 wpm vs project.json voice.wpm 147 — update it so validate's length estimates stay accurate.
+
+Registered 27 lesson(s) for Studio.
+
+━━ render · M00 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  M00  ✅  47s (38.0 fps)  → output/MedSkills/EN_BLS_ACLS/MedSkills_BLS_ACLS_Course_Introduction.mp4
+
+Done. 1 rendered, 0 failed.
+
+━━ qa · M00 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ M00  output/MedSkills/EN_BLS_ACLS/MedSkills_BLS_ACLS_Course_Introduction.mp4
+   · format               1920×1080 30fps h264 yuv420p
+   · color tags           bt709/bt709/bt709
+   · audio stream         aac 48000Hz 2ch
+   · duration             1800 video frames vs schedule 1800 (60.00s)
+   · cuts on boundaries   0 hard changes; 0 off-boundary
+   · decode integrity     clean full decode
+   · no black frames      none
+   · no frozen picture    none ≥3s
+   · loudness             -14.1 LUFS (target −14)
+   · true peak            -1.4 dBTP
+   · no clipping          sample peak -1.4 dBFS
+   · poster frame         frame0 Y=210.4 vs frame4 Y=229.5
+   · srt                  17 cues, last ends 54.53s
+   · render = stills      8 sampled frames match
+   · layout               no overflow
+
+1/1 passed. Report: output/MedSkills/EN_BLS_ACLS/QA.md
+
+━━ voiceover · M01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ms-bls-29: en-IN-NeerjaNeural (rate +10%, pitch +0Hz, +0.15s/sentence, breathe ×0.8) · target 4.5–7 min
+
+  M01  ✅ 5:20  136 wpm  (cached)
+
+  ℹ️  measured pace 136 wpm vs project.json voice.wpm 147 — update it so validate's length estimates stay accurate.
+
+Registered 27 lesson(s) for Studio.
+
+━━ render · M01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  M01  ✅  471s (20.4 fps)  → output/MedSkills/EN_BLS_ACLS/MedSkills_BLS_ACLS_M01_Cardiac_Arrest_and_the_Chain_of_Survival.mp4
+
+Done. 1 rendered, 0 failed.
+
+━━ qa · M01 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ M01  output/MedSkills/EN_BLS_ACLS/MedSkills_BLS_ACLS_M01_Cardiac_Arrest_and_the_Chain_of_Survival.mp4
+   · format               1920×1080 30fps h264 yuv420p
+   · color tags           bt709/bt709/bt709
+   · audio stream         aac 48000Hz 2ch
+   · duration             9591 video frames vs schedule 9591 (319.70s)
+   · cuts on boundaries   0 hard changes; 0 off-boundary
+   · decode integrity     clean full decode
+   · no black frames      none
+   · no frozen picture    none ≥3s
+   · loudness             -14 LUFS (target −14)
+   · true peak            -1.4 dBTP
+   · no clipping          sample peak -1.4 dBFS
+   · poster frame         frame0 Y=211.4 vs frame4 Y=229.5
+   · srt                  113 cues, last ends 314.54s
+   · render = stills      11 sampled frames match
+   · layout               no overflow
+
+1/1 passed. Report: output/MedSkills/EN_BLS_ACLS/QA.md
+
+✅ ms-bls-29: 2/2 lesson(s) produced and QA'd in 10.0 min → output/MedSkills/EN_BLS_ACLS/

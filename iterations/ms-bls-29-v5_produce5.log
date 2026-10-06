@@ -1,0 +1,21 @@
+
+━━ preflight ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⏱  M01: est 4:59 · 659 narration words · standard 5:00 ≈ 662 words · allowed 4.5–7 min
+  ❌ M01 validate: scene[7] (stage) sync: beats[3] "beat 4" — none of [cardiopulmonary] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[4] "beat 5" — none of [defibrillation] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[5] "beat 6" — none of [advanced] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[7] "beat 8" — none of [recovery] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[8] "2020: four separate chains" — none of [four, separate] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[9] "beat 10" — none of [hospital] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[10] "2025: one chain, adults and children" — none of [unified] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[11] "CPR symbol now includes the lungs" — none of [lungs] is spoken (in order) — reword the narration or add "say"
+  ❌ M01 validate: scene[7] (stage) sync: beats[12] "beat 13" — none of [especially] is spoken (in order) — reword the narration or add "say"
+
+ms-bls-29-v5: 1 lesson(s) — 9 error(s), 0 warning(s) in 0 s. Report: projects/ms-bls-29-v5/PREFLIGHT.md
+
+━━ credits ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+credits: 1 illustration(s) → projects/ms-bls-29-v5/CREDITS.md
+
+❌ ms-bls-29-v5: 0/1 lesson(s) produced and QA'd in 0.0 min → output/MedSkills/EN_BLS_ACLS_v5/
+   ❌ M01 stopped at preflight → projects/ms-bls-29-v5/PREFLIGHT.md
+   Fix those and re-run the same command: finished lessons are skipped.

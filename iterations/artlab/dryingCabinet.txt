@@ -1,0 +1,8 @@
+dryingCabinet: Drying/storage cabinet with glass door and filtered fan unit; three endoscopes hang vertical and uncoiled from a rail, valves removed (empty ports). removed valves in a tray below. anchors: cabinet door scope hanger airflow valves · events: airflow (filtered air drifts down past the hanging scopes)
+events: airflow
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "airflow"
+4 "airflow" later (ongoing motion)
+5 anchors (where labels and the camera land)

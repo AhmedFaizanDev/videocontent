@@ -1,0 +1,40 @@
+{
+  "voice": "en-IN-NeerjaNeural",
+  "rate": "+8%",
+  "pause": 0.25,
+  "note": "{display|spoken} = captions show `display`, the voice says `spoken`.",
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "An operations team keeps asking: is this location worth pursuing? Today, an analyst spends twenty minutes on each one. The rules live in their head. And when a website is down, a blank or a zero slips in, and nobody can tell real data from missing data."
+    },
+    {
+      "id": "submit",
+      "text": "Location Check answers it in seconds. Enter a label and a {US|U.S.} address, or coordinates. The backend finds the point and asks two public sources at once, each with a strict timeout."
+    },
+    {
+      "id": "result",
+      "text": "Here is Denver: the point on a map, a score out of a hundred, and a verdict. Every factor shows its raw value, its points, and its source. The rules are plain English, in one file."
+    },
+    {
+      "id": "honest",
+      "text": "Now the important part. Here, the elevation source was broken on purpose. The assessment is still saved, and elevation is marked not measured, with the reason. Never zero. And no guessing either: with a factor missing, there is no score and no verdict, only the points that were measured."
+    },
+    {
+      "id": "retry",
+      "text": "If an address cannot be found, nothing is guessed. And Fetch again re-checks a location, keeping every earlier result."
+    },
+    {
+      "id": "tested",
+      "text": "We tested {34|thirty four} real places, from Death Valley to Denali. An independent checker recomputed every score and never disagreed. It also found that one source sometimes hangs, so it now retries once."
+    },
+    {
+      "id": "run",
+      "text": "To run it: {docker compose up,|docker compose up,} then open {localhost:8080.|localhost, port eighty eighty.} All {30|thirty} tests run inside the container."
+    },
+    {
+      "id": "close",
+      "text": "Location Check. Same rules, every time. Missing is never zero."
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+1
+00:00:01,431 --> 00:00:03,787
+In this video, we're going to talk about
+
+2
+00:00:03,787 --> 00:00:06,191
+flexible endoscopes, and why they're the
+
+3
+00:00:06,191 --> 00:00:08,570
+hardest devices your department will ever
+
+4
+00:00:08,570 --> 00:00:11,549
+reprocess. By the end, you'll know the
+
+5
+00:00:11,549 --> 00:00:14,278
+seven traits that set these devices apart,
+
+6
+00:00:14,278 --> 00:00:16,225
+you'll see the eight-step sequence that
+
+7
+00:00:16,225 --> 00:00:18,196
+makes them safe again, and you'll
+
+8
+00:00:18,196 --> 00:00:20,932
+understand why every single step matters.
+
+9
+00:00:24,065 --> 00:00:26,781
+Most instruments that reach CSSD have one
+
+10
+00:00:26,781 --> 00:00:27,955
+difficult feature.
+
+11
+00:00:28,582 --> 00:00:31,179
+A flexible endoscope has all of them, at
+
+12
+00:00:31,179 --> 00:00:34,159
+once. That's why scopes have caused
+
+13
+00:00:34,159 --> 00:00:36,359
+several of the most serious reprocessing
+
+14
+00:00:36,359 --> 00:00:38,217
+outbreaks ever documented!
+
+15
+00:00:41,065 --> 00:00:43,849
+At the top, the valves control suction,
+
+16
+00:00:43,890 --> 00:00:47,121
+air and water. Below them is the control
+
+17
+00:00:47,121 --> 00:00:49,873
+head, where the endoscopist steers, and
+
+18
+00:00:49,873 --> 00:00:52,157
+the biopsy port lets accessories pass
+
+19
+00:00:52,157 --> 00:00:55,498
+inside. The long insertion tube enters the
+
+20
+00:00:55,498 --> 00:00:58,155
+patient, ending at the distal tip with its
+
+21
+00:00:58,155 --> 00:01:01,808
+lens and light. And hidden inside, running
+
+22
+00:01:01,808 --> 00:01:03,695
+the whole length, is a network of
+
+23
+00:01:03,695 --> 00:01:04,508
+channels.
+
+24
+00:01:07,665 --> 00:01:09,944
+Now slice through the insertion tube.
+
+25
+00:01:10,644 --> 00:01:12,687
+The widest opening is the suction and
+
+26
+00:01:12,687 --> 00:01:15,860
+biopsy channel, which carries blood, mucus
+
+27
+00:01:15,860 --> 00:01:18,685
+and tissue. Beside it run the much
+
+28
+00:01:18,685 --> 00:01:20,868
+narrower air and water channels.
+
+29
+00:01:21,569 --> 00:01:23,781
+Around them sit the light guide bundles
+
+30
+00:01:23,781 --> 00:01:25,519
+and the angulation wires.
+
+31
+00:01:26,197 --> 00:01:28,769
+Channels of different diameters, some hard
+
+32
+00:01:28,769 --> 00:01:31,265
+to reach, and some easy to forget.
+
+33
+00:01:34,431 --> 00:01:36,410
+What makes scopes so difficult?
+
+34
+00:01:37,049 --> 00:01:38,259
+They're heat-labile:
+
+35
+00:01:38,287 --> 00:01:40,787
+heat damages them, so they can't be steam
+
+36
+00:01:40,787 --> 00:01:42,578
+sterilised, and the high-level
+
+37
+00:01:42,578 --> 00:01:44,850
+disinfection used instead has a smaller
+
+38
+00:01:44,850 --> 00:01:47,843
+margin. Their narrow channels are hard to
+
+39
+00:01:47,843 --> 00:01:50,775
+reach. They're heavily contaminated in
+
+40
+00:01:50,775 --> 00:01:53,888
+use. And biofilm forms readily in the
+
+41
+00:01:53,888 --> 00:01:56,857
+channels, and once established, it resists
+
+42
+00:01:56,857 --> 00:01:59,028
+chemical disinfection entirely.
+
+43
+00:02:02,165 --> 00:02:03,831
+Then there's how they're used.
+
+44
+00:02:04,483 --> 00:02:07,151
+They're expensive, so hospitals own only a
+
+45
+00:02:07,151 --> 00:02:09,310
+few and turn them around fast.
+
+46
+00:02:09,988 --> 00:02:12,452
+They're fragile, and a damaged scope lets
+
+47
+00:02:12,452 --> 00:02:15,024
+fluid into its interior, where it can't be
+
+48
+00:02:15,024 --> 00:02:17,904
+cleaned. And they're model-specific.
+
+49
+00:02:18,593 --> 00:02:20,456
+Two scopes that look alike can have
+
+50
+00:02:20,456 --> 00:02:22,355
+different channels, connectors and
+
+51
+00:02:22,355 --> 00:02:23,385
+instructions.
+
+52
+00:02:26,498 --> 00:02:29,090
+Every scope follows the same eight steps.
+
+53
+00:02:29,801 --> 00:02:31,348
+Pre-clean at the bedside.
+
+54
+00:02:32,013 --> 00:02:33,800
+Leak test before immersion.
+
+55
+00:02:34,429 --> 00:02:37,045
+Clean manually, brushing every channel.
+
+56
+00:02:37,758 --> 00:02:39,701
+Then high-level disinfection.
+
+57
+00:02:40,306 --> 00:02:42,658
+Rinse with water of defined quality.
+
+58
+00:02:43,347 --> 00:02:45,626
+Dry with alcohol and forced air.
+
+59
+00:02:46,292 --> 00:02:47,982
+Store hanging vertically.
+
+60
+00:02:48,672 --> 00:02:51,328
+And trace it all, from scope to patient to
+
+61
+00:02:51,328 --> 00:02:52,838
+cycle to operator.
+
+62
+00:02:55,998 --> 00:02:57,700
+Time for a quick knowledge check.
+
+63
+00:02:58,400 --> 00:03:00,996
+Why is high-level disinfection, and not
+
+64
+00:03:00,996 --> 00:03:03,797
+steam sterilisation, the usual process for
+
+65
+00:03:03,797 --> 00:03:05,415
+flexible endoscopes?
+
+66
+00:03:06,080 --> 00:03:07,807
+Pause here and think it through.
+
+67
+00:03:15,065 --> 00:03:16,940
+Because flexible endoscopes are
+
+68
+00:03:16,940 --> 00:03:20,291
+heat-labile. Steam would damage them, so
+
+69
+00:03:20,291 --> 00:03:22,787
+high-level disinfection is used instead.
+
+70
+00:03:23,465 --> 00:03:25,412
+And since disinfection has a smaller
+
+71
+00:03:25,412 --> 00:03:27,960
+margin than sterilisation, every step
+
+72
+00:03:27,960 --> 00:03:29,963
+before it has to be done properly.
+
+73
+00:03:33,098 --> 00:03:36,329
+Let's recap! Flexible endoscopes are
+
+74
+00:03:36,329 --> 00:03:39,017
+heat-labile, complex and heavily soiled,
+
+75
+00:03:39,046 --> 00:03:41,625
+so they rely on high-level disinfection.
+
+76
+00:03:42,267 --> 00:03:44,695
+Every scope follows eight steps, from
+
+77
+00:03:44,695 --> 00:03:47,207
+pre-clean to trace, and every step has
+
+78
+00:03:47,207 --> 00:03:49,286
+been the point of failure in a published
+
+79
+00:03:49,286 --> 00:03:51,750
+investigation. Next:
+
+80
+00:03:51,750 --> 00:03:54,186
+the bedside pre-clean and the leak test.
+

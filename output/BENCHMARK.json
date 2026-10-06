@@ -1,0 +1,106 @@
+{
+  "summary": {
+    "lessons": 4,
+    "checked": 1,
+    "firstPassRate": "0%",
+    "fixerRate": "100%",
+    "repairRate": "0%",
+    "fallbackRate": "100%",
+    "certifiedRate": "100%",
+    "tokensMean": 0,
+    "tokensMedian": 0,
+    "voiceSecondsMean": 16.8,
+    "renderSecondsMean": 259,
+    "qaPassRate": "100%",
+    "humanRate": "0%",
+    "newAssetShare": "100%",
+    "reusableCoverage": "0%",
+    "failureCategories": {
+      "sync": 1
+    }
+  },
+  "rows": [
+    {
+      "project": "ms-bls-29",
+      "id": "M00",
+      "fixed": false,
+      "repairs": 0,
+      "fallback": false,
+      "tokens": 0,
+      "calls": 0,
+      "voiceS": 12.5,
+      "renderS": 47,
+      "qa": true,
+      "categories": [],
+      "qaFailed": [],
+      "human": false,
+      "arts": [
+        "heartExterior"
+      ],
+      "newArts": [
+        "heartExterior"
+      ]
+    },
+    {
+      "project": "ms-bls-29",
+      "id": "M01",
+      "fixed": false,
+      "repairs": 0,
+      "fallback": false,
+      "tokens": 0,
+      "calls": 0,
+      "voiceS": 21.1,
+      "renderS": 471,
+      "qa": true,
+      "categories": [],
+      "qaFailed": [],
+      "human": false,
+      "arts": [
+        "heartExterior"
+      ],
+      "newArts": [
+        "heartExterior"
+      ]
+    },
+    {
+      "project": "fx-compose",
+      "id": "C01",
+      "fixed": false,
+      "repairs": 0,
+      "fallback": false,
+      "tokens": 0,
+      "calls": 0,
+      "categories": [],
+      "qaFailed": [],
+      "human": false,
+      "arts": [
+        "heartExterior"
+      ],
+      "newArts": [
+        "heartExterior"
+      ]
+    },
+    {
+      "project": "fx-compose",
+      "id": "C02",
+      "firstPass": false,
+      "fixed": true,
+      "repairs": 0,
+      "fallback": true,
+      "ok": true,
+      "tokens": 0,
+      "calls": 0,
+      "categories": [
+        "sync"
+      ],
+      "qaFailed": [],
+      "human": false,
+      "arts": [
+        "heartExterior"
+      ],
+      "newArts": [
+        "heartExterior"
+      ]
+    }
+  ]
+}

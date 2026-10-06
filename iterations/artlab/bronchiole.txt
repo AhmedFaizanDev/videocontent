@@ -1,0 +1,14 @@
+bronchiole: Small airway in cross-section (looking down the tube): smooth-muscle ring, mucosal lining, open lumen with air drifting through. anchors: muscle mucosa lumen mucus airflow · events: constrict (muscle ring tightens, whole airway squeezes inward, lumen narrows) inflame (lining swells, thickens, reddens) mucus (thick plugs appear on the lining, narrowing the lumen further) relieve (muscle relaxes, lumen reopens; inflame/mucus persist)
+events: constrict, inflame, mucus, relieve
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "constrict"
+4 "constrict" later (ongoing motion)
+5 after event "inflame"
+6 "inflame" later (ongoing motion)
+7 after event "mucus"
+8 "mucus" later (ongoing motion)
+9 after event "relieve"
+10 "relieve" later (ongoing motion)
+11 anchors (where labels and the camera land)

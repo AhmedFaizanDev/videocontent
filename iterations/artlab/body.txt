@@ -1,0 +1,14 @@
+body: Body map with brain, heart, kidneys and the arterial tree in place; blood streams. anchors: brain heart kidneys kidneyL kidneyR arteries arm leg head chest · events: brain heart kidneys (organ hurt: turns red, pulses) strain (arteries swell, heart pounds) flow
+events: brain, heart, kidneys, strain
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "brain"
+4 "brain" later (ongoing motion)
+5 after event "heart"
+6 "heart" later (ongoing motion)
+7 after event "kidneys"
+8 "kidneys" later (ongoing motion)
+9 after event "strain"
+10 "strain" later (ongoing motion)
+11 anchors (where labels and the camera land)

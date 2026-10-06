@@ -1,0 +1,10 @@
+{
+ "pack": "reprocessing",
+ "arts": [
+  "leakTest",
+  "endoscopeReprocessor",
+  "dryingCabinet"
+ ],
+ "pass": true,
+ "at": "2026-10-04T14:25:22.113Z"
+}

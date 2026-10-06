@@ -1,0 +1,14 @@
+ecgmonitor: Bedside patient monitor: navy screen, glowing green ECG trace drawn by a moving pen that erases ahead, rate digits, pulsing heart icon. Default sinus rhythm ~75/min. anchors: screen trace rate heart vf flatline shock rosc · events (later wins): vf (ventricular fibrillation: chaotic squiggle, rate dashes, red screen edge) flatline (asystole: flat line, rate 0, dimmed) shock (white-blue flash and one tall spike) rosc (sinus rhythm returns, rate shown, heart beats)
+events: vf, flatline, shock, rosc
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "vf"
+4 "vf" later (ongoing motion)
+5 after event "flatline"
+6 "flatline" later (ongoing motion)
+7 after event "shock"
+8 "shock" later (ongoing motion)
+9 after event "rosc"
+10 "rosc" later (ongoing motion)
+11 anchors (where labels and the camera land)

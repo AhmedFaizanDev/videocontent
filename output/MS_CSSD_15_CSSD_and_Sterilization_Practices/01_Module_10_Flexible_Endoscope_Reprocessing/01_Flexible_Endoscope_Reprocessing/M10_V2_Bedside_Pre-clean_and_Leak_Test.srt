@@ -1,0 +1,256 @@
+1
+00:00:01,431 --> 00:00:03,691
+In this video, we're going to talk about
+
+2
+00:00:03,691 --> 00:00:05,782
+the first two steps of reprocessing:
+
+3
+00:00:05,782 --> 00:00:08,194
+the bedside pre-clean and the leak test.
+
+4
+00:00:08,869 --> 00:00:11,297
+Both are quick, and both are the steps
+
+5
+00:00:11,297 --> 00:00:12,819
+most often cut short.
+
+6
+00:00:13,533 --> 00:00:15,528
+By the end, you'll know what a proper
+
+7
+00:00:15,528 --> 00:00:17,895
+bedside clean involves, you'll see how a
+
+8
+00:00:17,895 --> 00:00:20,191
+leak test protects the scope, and you'll
+
+9
+00:00:20,191 --> 00:00:22,066
+understand why neither can ever be
+
+10
+00:00:22,066 --> 00:00:22,735
+skipped.
+
+11
+00:00:25,865 --> 00:00:28,229
+Reprocessing starts in the procedure room,
+
+12
+00:00:28,269 --> 00:00:30,913
+done by the busiest person, at the busiest
+
+13
+00:00:30,913 --> 00:00:34,168
+moment. That's exactly why it's the step
+
+14
+00:00:34,168 --> 00:00:35,799
+most often abbreviated!
+
+15
+00:00:38,665 --> 00:00:40,889
+The pre-clean happens immediately after
+
+16
+00:00:40,889 --> 00:00:43,040
+the procedure, before the scope leaves the
+
+17
+00:00:43,040 --> 00:00:45,979
+room. Wipe the insertion tube.
+
+18
+00:00:46,680 --> 00:00:48,819
+Then suction or flush the channels with
+
+19
+00:00:48,819 --> 00:00:50,281
+the agreed solution.
+
+20
+00:00:53,365 --> 00:00:56,820
+Why the rush? Because organic material,
+
+21
+00:00:56,825 --> 00:00:59,685
+like blood and mucus, starts to dry inside
+
+22
+00:00:59,685 --> 00:01:03,411
+the channels. Bacteria settle into it, and
+
+23
+00:01:03,411 --> 00:01:05,695
+within minutes they begin forming biofilm,
+
+24
+00:01:05,695 --> 00:01:07,858
+a protective matrix stuck to the channel
+
+25
+00:01:07,858 --> 00:01:11,416
+wall. Once it has formed, no later step
+
+26
+00:01:11,416 --> 00:01:12,890
+reliably removes it.
+
+27
+00:01:16,031 --> 00:01:18,815
+Next, the leak test, before immersion,
+
+28
+00:01:18,880 --> 00:01:21,195
+every time, without exception.
+
+29
+00:01:21,834 --> 00:01:24,142
+Following the manufacturer's method, the
+
+30
+00:01:24,142 --> 00:01:26,294
+scope is pressurised with air through its
+
+31
+00:01:26,294 --> 00:01:28,873
+connector, so fluid can't get in.
+
+32
+00:01:29,539 --> 00:01:31,854
+If the sheath or a channel is breached,
+
+33
+00:01:31,895 --> 00:01:34,238
+the pressure reading falls, or, with the
+
+34
+00:01:34,238 --> 00:01:36,967
+pressurised scope in clean water, a stream
+
+35
+00:01:36,967 --> 00:01:39,030
+of bubbles shows exactly where.
+
+36
+00:01:42,131 --> 00:01:44,182
+Here's what happens when it's skipped!
+
+37
+00:01:44,845 --> 00:01:47,321
+A damaged scope is immersed, and fluid
+
+38
+00:01:47,321 --> 00:01:49,845
+gets into its interior, where it can't be
+
+39
+00:01:49,845 --> 00:01:51,464
+cleaned or disinfected.
+
+40
+00:01:52,153 --> 00:01:54,870
+Organisms multiply inside, and the scope
+
+41
+00:01:54,870 --> 00:01:57,105
+keeps going to patients until the damage
+
+42
+00:01:57,105 --> 00:01:58,603
+is found some other way.
+
+43
+00:01:59,269 --> 00:02:01,600
+Tested properly, the damaged scope is
+
+44
+00:02:01,600 --> 00:02:03,844
+caught and taken out of use first.
+
+45
+00:02:06,965 --> 00:02:08,415
+Time for a knowledge check.
+
+46
+00:02:09,103 --> 00:02:11,026
+Why is the leak test performed before
+
+47
+00:02:11,026 --> 00:02:14,194
+immersion, every time, without exception?
+
+48
+00:02:14,860 --> 00:02:16,586
+Pause here and think it through.
+
+49
+00:02:23,865 --> 00:02:26,197
+Because a scope with a breach admits fluid
+
+50
+00:02:26,197 --> 00:02:28,152
+into its interior when immersed.
+
+51
+00:02:28,815 --> 00:02:30,690
+That interior can't be cleaned or
+
+52
+00:02:30,690 --> 00:02:33,815
+disinfected, so organisms multiply there,
+
+53
+00:02:33,815 --> 00:02:36,383
+and the scope is irreparably contaminated,
+
+54
+00:02:36,471 --> 00:02:38,642
+while still being used on patients.
+
+55
+00:02:39,344 --> 00:02:41,483
+The test takes about a minute, and it's
+
+56
+00:02:41,483 --> 00:02:43,294
+skipped when the list runs late.
+
+57
+00:02:46,398 --> 00:02:49,701
+Let's recap! Pre-clean at the bedside,
+
+58
+00:02:49,701 --> 00:02:52,550
+immediately, before organic material dries
+
+59
+00:02:52,550 --> 00:02:53,976
+and biofilm forms.
+
+60
+00:02:54,653 --> 00:02:57,225
+Leak test before every immersion, without
+
+61
+00:02:57,225 --> 00:03:00,591
+exception. And remember, one skipped
+
+62
+00:03:00,591 --> 00:03:02,887
+minute can contaminate a scope for every
+
+63
+00:03:02,887 --> 00:03:06,480
+patient after. Next, we'll look at manual
+
+64
+00:03:06,480 --> 00:03:08,772
+cleaning and high-level disinfection.
+

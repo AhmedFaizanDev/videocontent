@@ -1,0 +1,452 @@
+1
+00:00:04,000 --> 00:00:06,477
+Module one: cardiac arrest and the Chain
+
+2
+00:00:06,477 --> 00:00:09,791
+of Survival. This is the heart, beating
+
+3
+00:00:09,791 --> 00:00:11,559
+about seventy times a minute.
+
+4
+00:00:12,412 --> 00:00:14,787
+Each beat begins as an electrical impulse
+
+5
+00:00:14,787 --> 00:00:16,673
+that spreads through the muscle, so the
+
+6
+00:00:16,673 --> 00:00:19,048
+atria and then the ventricles contract in
+
+7
+00:00:19,048 --> 00:00:21,526
+sequence, pushing blood into the aorta and
+
+8
+00:00:21,526 --> 00:00:22,828
+the pulmonary trunk.
+
+9
+00:00:23,674 --> 00:00:25,924
+Cardiac arrest is what happens when that
+
+10
+00:00:25,924 --> 00:00:27,988
+electrical coordination fails.
+
+11
+00:00:30,600 --> 00:00:32,907
+In ventricular fibrillation, thousands of
+
+12
+00:00:32,907 --> 00:00:35,118
+muscle fibres fire out of step.
+
+13
+00:00:35,958 --> 00:00:38,640
+The ventricles stop contracting as one;
+
+14
+00:00:38,640 --> 00:00:41,967
+they quiver. A quivering ventricle ejects
+
+15
+00:00:41,967 --> 00:00:45,035
+no blood, so cardiac output falls to zero,
+
+16
+00:00:45,035 --> 00:00:47,178
+and within seconds the pulse is gone.
+
+17
+00:00:48,018 --> 00:00:50,132
+The brain receives no oxygen:
+
+18
+00:00:50,132 --> 00:00:52,700
+the patient becomes unresponsive and stops
+
+19
+00:00:52,700 --> 00:00:54,654
+breathing normally, sometimes with
+
+20
+00:00:54,654 --> 00:00:56,104
+occasional gasps.
+
+21
+00:00:56,952 --> 00:00:58,645
+This is a heart that has failed
+
+22
+00:00:58,645 --> 00:01:00,702
+electrically, not a heart starved of
+
+23
+00:01:00,702 --> 00:01:02,952
+blood, and that difference decides what
+
+24
+00:01:02,952 --> 00:01:03,902
+you do next.
+
+25
+00:01:06,500 --> 00:01:08,450
+These two are often confused.
+
+26
+00:01:09,290 --> 00:01:11,824
+In a heart attack, a coronary artery is
+
+27
+00:01:11,824 --> 00:01:13,779
+blocked and part of the heart muscle is
+
+28
+00:01:13,779 --> 00:01:15,926
+starved of blood, but the heart usually
+
+29
+00:01:15,926 --> 00:01:18,313
+keeps beating: the patient is typically
+
+30
+00:01:18,313 --> 00:01:20,479
+awake, often with chest pain.
+
+31
+00:01:21,296 --> 00:01:23,126
+In cardiac arrest the problem is
+
+32
+00:01:23,126 --> 00:01:25,580
+electrical, the heart stops pumping, and
+
+33
+00:01:25,580 --> 00:01:28,348
+the patient is unresponsive with no pulse.
+
+34
+00:01:29,198 --> 00:01:31,607
+A heart attack can trigger cardiac arrest,
+
+35
+00:01:31,607 --> 00:01:34,057
+but only arrest needs compressions now.
+
+36
+00:01:36,667 --> 00:01:39,031
+Cardiac arrest has four possible rhythms,
+
+37
+00:01:39,031 --> 00:01:40,951
+and the rhythm on the monitor decides the
+
+38
+00:01:40,951 --> 00:01:43,812
+treatment. Two are shockable:
+
+39
+00:01:43,812 --> 00:01:46,107
+ventricular fibrillation, and pulseless
+
+40
+00:01:46,107 --> 00:01:47,994
+ventricular tachycardia, where the
+
+41
+00:01:47,994 --> 00:01:50,648
+ventricles beat so fast they cannot fill.
+
+42
+00:01:51,487 --> 00:01:53,657
+A shock depolarises the whole muscle at
+
+43
+00:01:53,657 --> 00:01:56,044
+once, giving the heart's own pacemaker a
+
+44
+00:01:56,044 --> 00:01:58,226
+chance to take over, and compressions
+
+45
+00:01:58,226 --> 00:01:59,630
+continue around it.
+
+46
+00:02:00,469 --> 00:02:02,317
+The other two are not shockable:
+
+47
+00:02:02,344 --> 00:02:04,617
+pulseless electrical activity, with
+
+48
+00:02:04,617 --> 00:02:07,287
+electrical activity but no pulse, and
+
+49
+00:02:07,287 --> 00:02:10,469
+asystole, with no electrical activity at
+
+50
+00:02:10,469 --> 00:02:13,818
+all. Here a shock cannot help, so
+
+51
+00:02:13,818 --> 00:02:15,773
+compressions continue while the team
+
+52
+00:02:15,773 --> 00:02:17,927
+searches for a reversible cause.
+
+53
+00:02:20,533 --> 00:02:22,426
+How often do patients survive?
+
+54
+00:02:23,275 --> 00:02:26,695
+Outside hospital, about 350,000 people a
+
+55
+00:02:26,695 --> 00:02:28,900
+year in the United States have a cardiac
+
+56
+00:02:28,900 --> 00:02:31,293
+arrest, and nine in ten of them die.
+
+57
+00:02:32,137 --> 00:02:34,467
+Overall survival to discharge is about
+
+58
+00:02:34,467 --> 00:02:40,002
+10.5%. It is 21.1% in a public place,
+
+59
+00:02:40,002 --> 00:02:41,809
+where someone is more likely to see the
+
+60
+00:02:41,809 --> 00:02:45,509
+collapse and act, but only 8.9% at home.
+
+61
+00:02:46,357 --> 00:02:50,471
+In hospital, survival is higher, 23.6% for
+
+62
+00:02:50,471 --> 00:02:53,925
+adults and 45.2% for children, because the
+
+63
+00:02:53,925 --> 00:02:56,039
+arrest is usually witnessed and help is
+
+64
+00:02:56,039 --> 00:03:00,048
+close. Yet only about 41% of people
+
+65
+00:03:00,048 --> 00:03:02,094
+receive compressions from a bystander
+
+66
+00:03:02,094 --> 00:03:03,476
+before help arrives.
+
+67
+00:03:06,133 --> 00:03:08,178
+That is why the nearest person matters
+
+68
+00:03:08,178 --> 00:03:11,715
+most. Without circulation the brain begins
+
+69
+00:03:11,715 --> 00:03:13,976
+to suffer within minutes, and every minute
+
+70
+00:03:13,976 --> 00:03:16,192
+without compressions or a shock lowers the
+
+71
+00:03:16,192 --> 00:03:17,506
+chance of survival.
+
+72
+00:03:18,337 --> 00:03:20,167
+Chest compressions squeeze the heart
+
+73
+00:03:20,167 --> 00:03:22,326
+between the sternum and the spine, pushing
+
+74
+00:03:22,326 --> 00:03:24,246
+blood to the brain and to the heart muscle
+
+75
+00:03:24,246 --> 00:03:27,888
+itself. Started immediately, compressions
+
+76
+00:03:27,888 --> 00:03:30,145
+can double or even triple survival.
+
+77
+00:03:30,973 --> 00:03:33,200
+In the first three minutes, the actions of
+
+78
+00:03:33,200 --> 00:03:35,018
+the nearest person matter more than
+
+79
+00:03:35,018 --> 00:03:36,616
+everything that follows.
+
+80
+00:03:39,233 --> 00:03:42,631
+The 2025 guidelines describe survival as
+
+81
+00:03:42,631 --> 00:03:44,824
+one Chain of Survival, for adults and
+
+82
+00:03:44,824 --> 00:03:47,331
+children, in hospital and outside it.
+
+83
+00:03:48,191 --> 00:03:50,039
+Its six links run in order.
+
+84
+00:03:50,885 --> 00:03:52,942
+Early recognition and activation:
+
+85
+00:03:52,942 --> 00:03:55,158
+someone recognises the arrest and calls
+
+86
+00:03:55,158 --> 00:03:58,362
+for help. High-quality cardiopulmonary
+
+87
+00:03:58,362 --> 00:04:00,998
+resuscitation: compressions, and breaths,
+
+88
+00:04:00,998 --> 00:04:02,578
+especially for children and in
+
+89
+00:04:02,578 --> 00:04:04,107
+opioid-related arrest.
+
+90
+00:04:04,937 --> 00:04:07,682
+Defibrillation, as early as possible.
+
+91
+00:04:08,519 --> 00:04:11,026
+Advanced resuscitation by the code team.
+
+92
+00:04:11,861 --> 00:04:13,686
+Post-cardiac arrest care.
+
+93
+00:04:14,531 --> 00:04:16,617
+And recovery and survivorship.
+
+94
+00:04:17,465 --> 00:04:19,938
+Each link depends on the one before it.
+
+95
+00:04:22,567 --> 00:04:25,601
+If you trained on the 2020 guidelines, you
+
+96
+00:04:25,601 --> 00:04:27,585
+are updating, not relearning.
+
+97
+00:04:28,429 --> 00:04:30,561
+Four separate chains became one.
+
+98
+00:04:31,411 --> 00:04:32,627
+The terms changed:
+
+99
+00:04:32,627 --> 00:04:35,127
+rescue breaths are now simply breaths, and
+
+100
+00:04:35,127 --> 00:04:37,600
+ventilation now means mechanical support.
+
+101
+00:04:38,449 --> 00:04:41,665
+The compression rate stays at 100 to 120 a
+
+102
+00:04:41,665 --> 00:04:43,585
+minute, and single-rescuer adult
+
+103
+00:04:43,585 --> 00:04:45,949
+resuscitation stays at 30 compressions to
+
+104
+00:04:45,949 --> 00:04:46,797
+2 breaths.
+
+105
+00:04:49,400 --> 00:04:52,638
+To summarise. Cardiac arrest is an
+
+106
+00:04:52,638 --> 00:04:54,854
+electrical failure that stops the heart's
+
+107
+00:04:54,854 --> 00:04:57,953
+output. Two of its four rhythms can be
+
+108
+00:04:57,953 --> 00:05:01,291
+shocked. And survival depends on six
+
+109
+00:05:01,291 --> 00:05:03,286
+links, the first of which is you.
+
+110
+00:05:04,136 --> 00:05:06,204
+In the next module, you will learn to
+
+111
+00:05:06,204 --> 00:05:08,670
+recognise deterioration and arrest, and
+
+112
+00:05:08,670 --> 00:05:10,154
+how to call for help.
+
+113
+00:05:12,767 --> 00:05:14,535
+Keep learning with MedSkills.
+

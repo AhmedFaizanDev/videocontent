@@ -1,0 +1,12 @@
+aed: Automated external defibrillator: bright green case with handle, small screen with charge bar, big lightning-bolt shock button, two electrode pads on cables. No text or brand. anchors: device button screen pads charge shock · events: pads (pads slide out on their cables) charge (button glow pulses faster, charge bar fills) shock (button flashes, energy bursts along both cables to the pads)
+events: pads, charge, shock
+tiles (left→right, top→bottom):
+1 first frames (drawing on)
+2 settled, no events
+3 after event "pads"
+4 "pads" later (ongoing motion)
+5 after event "charge"
+6 "charge" later (ongoing motion)
+7 after event "shock"
+8 "shock" later (ongoing motion)
+9 anchors (where labels and the camera land)

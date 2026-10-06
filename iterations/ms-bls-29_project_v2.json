@@ -1,0 +1,67 @@
+{
+  "name": "Basic and Advanced Cardiac Life Support",
+  "series": "MedSkills \u00b7 Resuscitation",
+  "lang": "en",
+  "brand": {
+    "art": {
+      "lockup": "brand/medskills-lockup.png",
+      "icon": "brand/medskills-icon.png",
+      "lockupAspect": 3.677,
+      "iconAspect": 0.972
+    },
+    "name": "MedSkills",
+    "signoff": "Keep learning with MedSkills.",
+    "episodeLabel": "EP.",
+    "watermark": "bottom-right"
+  },
+  "voice": {
+    "name": "en-IN-NeerjaExpressiveNeural",
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "wpm": 123
+  },
+  "pacing": {
+    "sentencePause": 0.3,
+    "beat": 0.6,
+    "breathe": 0.6
+  },
+  "lexicon": {},
+  "terms": [
+    "cardiac arrest",
+    "chain of survival",
+    "defibrillation",
+    "resuscitation"
+  ],
+  "music": "audio/music/bed.mp3",
+  "length": {
+    "minutes": [
+      1,
+      1
+    ],
+    "exact": 60,
+    "holds": [
+      0.3,
+      1.4
+    ]
+  },
+  "rules": {
+    "first": "ident",
+    "last": "outro",
+    "requireOneOf": [
+      [
+        "stage"
+      ]
+    ],
+    "sync": "error",
+    "minFigures": 3,
+    "grounding": "error",
+    "minIllustrated": 0.75,
+    "maxScreenWords": 20
+  },
+  "style": {
+    "spelling": "en-GB"
+  },
+  "output": {
+    "dir": "MedSkills/EN_BLS_ACLS"
+  }
+}
