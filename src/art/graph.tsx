@@ -419,7 +419,7 @@ const graph: ArtFactory = (raw: GData) => {
         })}
         {edges.map((e, k) =>
           e.label ? (
-            <div key={k} style={{position: 'absolute', left: bez(Q[k], 0.5)[0], top: bez(Q[k], 0.5)[1], transform: 'translate(-50%, -50%)', fontFamily: fonts.body, fontWeight: 700, fontSize: Math.round(fs * 0.72), color: e.tone ? tone(e.tone).text : ink.soft, background: 'rgba(255,255,255,0.95)', padding: '2px 10px', whiteSpace: 'nowrap', opacity: tw(c.f, S.edgeAt[k] + 10, 12) * (F && F.focus && !(F.set.has(e.from) || F.set.has(e.to)) ? 0.45 : 1)}}>
+            <div key={k} style={{position: 'absolute', left: bez(Q[k], 0.5)[0], top: bez(Q[k], 0.5)[1], transform: 'translate(-50%, -50%)', fontFamily: fonts.body, fontWeight: 700, fontSize: Math.round(fs * 0.9), color: e.tone ? tone(e.tone).text : ink.soft, background: 'rgba(255,255,255,0.95)', padding: '2px 10px', whiteSpace: 'nowrap', opacity: tw(c.f, S.edgeAt[k] + 10, 12) * (F && F.focus && !(F.set.has(e.from) || F.set.has(e.to)) ? 0.45 : 1)}}>
               {e.label}
             </div>
           ) : null,

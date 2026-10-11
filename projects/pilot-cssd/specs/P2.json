@@ -1,0 +1,160 @@
+{
+  "id": "P2",
+  "title": "Where Reprocessing Fails: Elevators, Traceability, Pressure",
+  "outputFilename": "MedSkills_pilot_cssd_P2.mp4",
+  "module": "Where Reprocessing Fails: Elevators, Traceability, Pressure",
+  "scenes": [
+    {
+      "type": "opener",
+      "kicker": "Where it fails",
+      "title": "Where Reprocessing Fails",
+      "art": "flexibleEndoscope",
+      "narration": "Reprocessing fails in ten documented places. Each has been identified in a published outbreak investigation, and none is exotic. This lesson follows them across the endoscope, then looks at traceability and pressure."
+    },
+    {
+      "type": "play",
+      "play": "leakTest.breach",
+      "kicker": "Failure points 1–2",
+      "narration": "Failure points one and two come early. First, a delayed bedside pre-clean lets material dry, so biofilm establishes. Second, the leak test is omitted. When the scope is pressurised, bubbles rising from a breach in the sheath reveal the damage, and the gauge falls. Skip this test and a damaged scope is immersed, letting fluid reach an interior that cannot be cleaned."
+    },
+    {
+      "type": "play",
+      "play": "channelCutaway.biofilm",
+      "kicker": "Failure point 3",
+      "narration": "Failure point three: channels not brushed, or brushed with the wrong brush. Along the channel wall, an established biofilm adheres. Chemical disinfection does not penetrate it, soaking does not remove it, and flushing does not remove it. Only a brush that physically contacts the wall disrupts it, and only then is the channel clean. That is why brushing is specified per channel, why brush diameter matters, and why omitting it has repeatedly caused outbreaks."
+    },
+    {
+      "type": "play",
+      "play": "endoscopeReprocessor.connect",
+      "kicker": "Failure point 4",
+      "skip": [
+        "cycle"
+      ],
+      "narration": "Failure point four sits in the automated endoscope reprocessor. The scope is placed in the basin, and every channel must be attached to the correct connector for that model. A channel that is not connected is missed: it is not perfused and is not disinfected. Only when all are attached does fluid flush through the channels. Do not overload the reprocessor, or process a scope alongside one it is not validated for."
+    },
+    {
+      "type": "play",
+      "play": "duodenoscopeTip.outbreak",
+      "kicker": "Failure point 5",
+      "cues": {
+        "moves": [
+          "complex"
+        ],
+        "hidden": [
+          "difficult"
+        ]
+      },
+      "narration": "Failure point five is the duodenoscope elevator, a mechanism at the distal tip that directs accessories. Its recess is narrow, mechanically complex and extremely difficult to clean. It has been implicated in multiple international outbreaks of multidrug-resistant organisms in patients who had no other common exposure. Where your hospital uses duodenoscopes, follow the manufacturer's specific instructions for the elevator exactly, and keep in place any additional measures specified."
+    },
+    {
+      "type": "play",
+      "play": "dryingCabinet.storage",
+      "kicker": "Failure points 6–8",
+      "skip": [
+        "door"
+      ],
+      "narration": "In the controlled drying and storage cabinet, scopes hang vertically, uncoiled, with valves removed, because coiled storage retains fluid. Filtered air then dries each channel. Residual moisture lets organisms, particularly Pseudomonas, multiply between uses, so forced air passes through every channel. Failure points six to eight are inadequate drying, coiled storage, and contaminated rinse water, which recontaminates the scope at the final step."
+    },
+    {
+      "type": "play",
+      "play": "flow.chain",
+      "kicker": "Failure point 10",
+      "narration": "Traceability links each scope to a patient, a reprocessing cycle and an operator, for every procedure. Failure point ten is its absence: transmission then cannot be investigated or contained. When transmission is suspected, quarantine the scope, review the records, involve infection control and microbiology, and consider patient notification.",
+      "mermaid": "flowchart LR\n A[Scope]:::blue --> B[Patient] --> C[Reprocessing cycle] --> D[Operator] --> E[Quarantine scope]:::red --> F[Review records] --> G[Infection control, microbiology] --> H[Consider patient notification]:::teal",
+      "say": [
+        [
+          "scope"
+        ],
+        [
+          "patient"
+        ],
+        [
+          "cycle"
+        ],
+        [
+          "operator"
+        ],
+        [
+          "quarantine"
+        ],
+        [
+          "review"
+        ],
+        [
+          "infection"
+        ],
+        [
+          "notification"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "Staffing and pressure",
+      "narration": "Underneath most failures is time pressure. Long lists with too few scopes call for adequate scope inventory. When the cycle is shortened to meet the list, adequate capacity and staffing is the safeguard. Where model specific steps are missed, staff must be trained and competency-assessed. When reprocessing cannot be completed, staff need the right to hold a scope back. Records of time and deviation make hidden pressure visible.",
+      "columns": [
+        "Pressure",
+        "Safeguard"
+      ],
+      "rows": [
+        [
+          "Long lists, too few scopes",
+          "Adequate scope inventory"
+        ],
+        [
+          "Cycle shortened to meet the list",
+          "Adequate capacity and staffing"
+        ],
+        [
+          "Model-specific steps missed",
+          "Trained, competency-assessed staff"
+        ],
+        [
+          "Reprocessing not completed",
+          "Right to hold a scope back"
+        ],
+        [
+          "Pressure absorbed unseen",
+          "Records of time and deviation"
+        ]
+      ],
+      "say": [
+        [
+          "lists"
+        ],
+        [
+          "shortened"
+        ],
+        [
+          "model"
+        ],
+        [
+          "completed"
+        ],
+        [
+          "records"
+        ]
+      ]
+    },
+    {
+      "type": "summary",
+      "kicker": "Recap",
+      "art": "flexibleEndoscope",
+      "narration": "To summarise. Ten failure points are documented, and none is exotic. Brushing is the only step that removes biofilm, and the elevator needs the manufacturer's exact instructions. Every procedure must be traceable from scope to patient to cycle to operator. And because pressure underlies most failures, capacity, training and the right to hold a scope back are part of the process.",
+      "notes": [
+        {
+          "say": [
+            "brushing"
+          ],
+          "note": "Only a brush that contacts the wall removes biofilm"
+        },
+        {
+          "say": [
+            "pressure"
+          ],
+          "note": "Pressure underlies most failures: fix capacity, not reminders"
+        }
+      ]
+    }
+  ]
+}

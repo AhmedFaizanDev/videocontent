@@ -1,14 +1,14 @@
 /**
- * Model calls for the bulk pipeline, one place: headless Claude Code (`claude -p`, no session, a
- * JSON schema for the answer, optionally images it may Read) when it is logged in; otherwise
- * "agent mode": a job file the orchestrating Claude session runs as one subagent, single pass.
- * Usage is logged per call to projects/<p>/jobs/usage.jsonl (read by scripts/benchmark.mts).
+ * Model calls for the batch, one place: headless Claude Code (`claude -p`) with a JSON schema for
+ * the answer and nothing else in context — no plugins, skills, MCP servers or settings (those
+ * added ~90k tokens to every call; this way the overhead is ~1.3k). Usage is logged per call to
+ * projects/<p>/jobs/usage.jsonl (`total_cost_usd` = API-equivalent, also on a subscription).
  *
- *   model: 'sonnet' (per-video work) · 'opus' (creative capital: playbooks, once per asset)
- *   BATCH_OFFLINE=1  no model calls at all (tests, the deterministic benchmark)
+ * Not logged in → throws. There is no fallback: a subagent session costs 100× a headless call.
+ *   BATCH_OFFLINE=1  no model calls at all (tests)
  */
 import {spawnSync} from 'node:child_process';
-import {existsSync, mkdirSync, readdirSync, writeFileSync} from 'node:fs';
+import {appendFileSync, existsSync, mkdirSync, readdirSync} from 'node:fs';
 import {homedir} from 'node:os';
 import {join} from 'node:path';
 import {ROOT, projectDir} from './paths.mts';
@@ -26,48 +26,26 @@ export const claudeBin = () => {
     }
   return 'claude';
 };
-/** null until the first call; false once headless Claude proved unavailable (→ job files). */
-export const cli = {ok: null as boolean | null};
 
-export type Call = {project: string; tag: {id: string; role: string}; system: string; user: string; schema: object; model?: 'sonnet' | 'opus'; images?: string[]};
+export type Call = {project: string; tag: {id: string; role: string}; system: string; user: string; schema: object; model?: 'sonnet' | 'opus' | 'haiku'};
 
-/** One structured model call; null when headless Claude isn't available (→ agent mode). */
-export function callModel(c: Call): any | null {
-  if (cli.ok === false || OFFLINE) return null;
-  const tmp = join(ROOT, 'iterations', 'batch-cwd'); // outside any CLAUDE.md scope we'd load needlessly
-  mkdirSync(tmp, {recursive: true});
-  const tools = c.images?.length ? ['--tools', 'Read', '--allowedTools', 'Read', '--add-dir', join(ROOT, 'iterations'), '--add-dir', join(ROOT, 'assets')] : ['--tools', ''];
-  const user = c.images?.length ? `${c.user}\n\nIMAGES (Read each one before answering):\n${c.images.map((i) => `- ${i}`).join('\n')}` : c.user;
-  const r = spawnSync(claudeBin(), ['-p', '--model', c.model ?? 'sonnet', ...tools, '--no-session-persistence', '--system-prompt', c.system, '--output-format', 'json', '--json-schema', JSON.stringify(c.schema)], {input: user, encoding: 'utf8', cwd: tmp, maxBuffer: 64 << 20, timeout: 20 * 60 * 1000});
+/** One structured model call → the parsed object. Throws when headless Claude is unavailable. */
+export function callModel(c: Call): any {
+  if (OFFLINE) throw new Error('BATCH_OFFLINE: no model calls');
+  const cwd = join(ROOT, 'iterations', 'batch-cwd'); // outside any CLAUDE.md scope
+  mkdirSync(cwd, {recursive: true});
+  const args = ['-p', '--model', c.model ?? 'sonnet', '--tools', '', '--strict-mcp-config', '--disable-slash-commands', '--setting-sources', '', '--no-session-persistence', '--system-prompt', c.system, '--output-format', 'json', '--json-schema', JSON.stringify(c.schema)];
+  const r = spawnSync(claudeBin(), args, {input: c.user, encoding: 'utf8', cwd, maxBuffer: 64 << 20, timeout: 20 * 60 * 1000});
   let out: any;
   try {
     out = JSON.parse(r.stdout);
   } catch {
-    cli.ok = false;
-    return null;
+    throw new Error(`headless Claude gave no JSON: ${(r.stderr || r.stdout || String(r.error)).slice(0, 300)}`);
   }
-  if (out.is_error) {
-    if (/log ?in/i.test(String(out.result))) console.log('  ⚠️  headless Claude is not logged in — switching to agent mode (job files). Log in once with: "<claude binary>" then /login');
-    cli.ok = false;
-    return null;
-  }
-  cli.ok = true;
+  if (out.is_error) throw new Error(`headless Claude: ${String(out.result).slice(0, 300)}${/log ?in/i.test(String(out.result)) ? ' — run the claude binary once and /login' : ''}`);
   const u = out.usage ?? {};
   const jobs = join(projectDir(c.project), 'jobs');
   mkdirSync(jobs, {recursive: true});
-  writeFileSync(join(jobs, 'usage.jsonl'), JSON.stringify({at: new Date().toISOString(), ...c.tag, model: c.model ?? 'sonnet', cost: out.total_cost_usd, in: u.input_tokens, cacheRead: u.cache_read_input_tokens, cacheWrite: u.cache_creation_input_tokens, out: u.output_tokens, ms: out.duration_ms}) + '\n', {flag: 'a'});
+  appendFileSync(join(jobs, 'usage.jsonl'), JSON.stringify({at: new Date().toISOString(), ...c.tag, model: c.model ?? 'sonnet', cost: out.total_cost_usd, in: u.input_tokens, cacheRead: u.cache_read_input_tokens, cacheWrite: u.cache_creation_input_tokens, out: u.output_tokens, ms: out.duration_ms}) + '\n');
   return out.structured_output ?? JSON.parse(String(out.result).replace(/^```json\s*|```\s*$/g, ''));
-}
-
-/** Agent mode: the same call as a job file for one subagent; returns its path. */
-export function writeJob(c: Call & {name: string; target: string; preface?: string; extra?: string}): string {
-  const jobs = join(projectDir(c.project), 'jobs');
-  mkdirSync(jobs, {recursive: true});
-  const f = join(jobs, `${c.name}.md`);
-  const model = c.model === 'opus' ? 'Opus' : 'Sonnet';
-  writeFileSync(
-    f,
-    `# Job ${c.name}\nRun as ONE ${model} subagent: read nothing else${c.images?.length ? ' but the images listed under Input' : ''}. ${c.preface ?? ''} Write the final JSON to \`${c.target.replace(ROOT + '/', '')}\` (one Write), and stop.\n\n## System\n${c.system}${c.extra ?? ''}\n\n## Schema\n\`\`\`json\n${JSON.stringify(c.schema)}\n\`\`\`\n\n## Input\n${c.user}${c.images?.length ? `\n\nIMAGES (Read each one):\n${c.images.map((i) => `- ${i}`).join('\n')}` : ''}\n`,
-  );
-  return f;
 }

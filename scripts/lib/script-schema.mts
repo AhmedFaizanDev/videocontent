@@ -1,38 +1,26 @@
 /**
- * JSON Schema for a bulk lesson script (docs/SCRIPT_BRIEF.md): only recipe scenes and compositions, so the writer
- * cannot produce coordinates, raw stages or anything the compiler would have to guess.
+ * JSON Schema for a lesson script (docs/SCRIPT_BRIEF.md): playbooks, illustrations explained part
+ * by part, flowcharts, tables, opener and summary — nothing the compiler would have to guess.
  */
 import {PLAYS} from '../../src/playbooks.ts';
 
 const str = (max?: number) => ({type: 'string', minLength: 1, ...(max ? {maxLength: max} : {})});
 const words = {type: 'array', items: str(40), minItems: 1, maxItems: 3};
-const base = {kicker: str(28), narration: str(1200)};
 const scene = (type: string, props: Record<string, any>, required: string[]) => ({
   type: 'object',
   additionalProperties: false,
-  properties: {type: {const: type}, ...base, ...props},
+  properties: {type: {const: type}, kicker: str(28), narration: str(1200), ...props},
   required: ['type', 'kicker', 'narration', ...required],
 });
-const note = {type: 'object', additionalProperties: false, properties: {say: words, note: str(90)}, required: ['say', 'note']};
-
-// a composition (docs/SCRIPT_BRIEF.md "Compositions"): 1–3 elements on one screen + teaching moves
-const item = {type: 'object', additionalProperties: false, properties: {label: str(30), note: str(90), when: str(12), value: {type: 'number'}, display: str(12), say: words}, required: ['label']};
-const element = {
-  type: 'object',
-  additionalProperties: false,
-  properties: {
-    id: {type: 'string', pattern: '^[a-z][a-zA-Z0-9]{0,15}$'},
-    kind: {enum: ['art', 'flow', 'table', 'stat', 'bars', 'timeline', 'cycle', 'hub', 'stack']},
-    art: str(40), data: {type: 'object'},
-    mermaid: str(900),
-    columns: {type: 'array', minItems: 2, maxItems: 4, items: {type: 'string', maxLength: 40}}, rows: {type: 'array', minItems: 2, maxItems: 6, items: {type: 'array', items: {type: 'string', maxLength: 60}}}, bars: {type: 'array', items: {type: 'integer'}},
-    value: {type: 'number'}, of: {type: 'integer'}, display: str(12), label: str(48), tone: {enum: ['red', 'blue', 'teal', 'green', 'ink']}, unit: str(16), center: str(22),
-    items: {type: 'array', minItems: 2, maxItems: 8, items: item},
-    say: {anyOf: [words, {type: 'array', items: words}]},
-  },
-  required: ['id', 'kind'],
+const notes = {type: 'array', maxItems: 3, items: {type: 'object', additionalProperties: false, properties: {say: words, note: str(90)}, required: ['say', 'note']}};
+const flow = {mermaid: str(900), steps: {type: 'array', items: {type: 'object', additionalProperties: false, properties: {show: {type: 'array', items: str(12)}, focus: str(12), say: words}}}};
+const table = {
+  columns: {type: 'array', minItems: 2, maxItems: 4, items: {type: 'string', maxLength: 40}},
+  rows: {type: 'array', minItems: 2, maxItems: 6, items: {type: 'array', items: {type: 'string', maxLength: 60}}},
+  say: {type: 'array', items: words},
+  bars: {type: 'array', items: {type: 'integer'}},
+  highlight: {type: 'array', items: {type: 'object', additionalProperties: false, properties: {say: words, col: {type: 'integer'}}, required: ['say', 'col']}},
 };
-const move = {type: 'object', additionalProperties: false, properties: {say: words, reveal: {anyOf: [str(16), {type: 'array', items: str(16)}]}, focus: str(40), zoom: {type: 'number'}, back: {type: 'boolean'}, label: {type: 'object', additionalProperties: false, properties: {on: str(40), text: str(28)}, required: ['on', 'text']}, act: {anyOf: [str(40), {type: 'array', items: str(40)}]}, note: str(90), pulse: str(40)}};
 
 export const SCRIPT_SCHEMA = {
   type: 'object',
@@ -44,17 +32,16 @@ export const SCRIPT_SCHEMA = {
     module: str(60),
     scenes: {
       type: 'array',
-      minItems: 4,
-      maxItems: 12,
+      minItems: 5,
+      maxItems: 11,
       items: {
         anyOf: [
-          scene('opener', {title: str(60), art: str(40), act: {type: 'array', items: str(30)}, notes: {type: 'array', maxItems: 2, items: note}}, ['title']),
-          scene('explain', {art: str(40), data: {type: 'object'}, points: {type: 'array', minItems: 1, maxItems: 8, items: {type: 'object', additionalProperties: false, properties: {on: str(30), label: str(28), act: str(30), note: str(90), say: words, zoom: {anyOf: [{type: 'number'}, {const: false}]}}}}}, ['art', 'points']),
-          scene('flow', {mermaid: str(900), tour: {type: 'boolean'}, steps: {type: 'array', items: {type: 'object', additionalProperties: false, properties: {show: {type: 'array', items: str(12)}, focus: str(12), say: words}}}, notes: {type: 'array', items: note}}, ['mermaid']),
-          scene('table', {columns: {type: 'array', minItems: 2, maxItems: 4, items: {type: 'string', maxLength: 40}}, rows: {type: 'array', minItems: 2, maxItems: 6, items: {type: 'array', items: {type: 'string', maxLength: 60}}}, say: {type: 'array', items: words}, bars: {type: 'array', items: {type: 'integer'}}, highlight: {type: 'array', items: {type: 'object', additionalProperties: false, properties: {say: words, col: {type: 'integer'}}, required: ['say', 'col']}}, notes: {type: 'array', items: note}}, ['columns', 'rows']),
-          scene('play', {play: {enum: Object.keys(PLAYS)}, title: str(60), cues: {type: 'object', additionalProperties: words}, skip: {type: 'array', items: str(20)}, notes: {type: 'array', items: note}, mermaid: str(900), steps: {type: 'array', items: {type: 'object', additionalProperties: false, properties: {show: {type: 'array', items: str(12)}, focus: str(12), say: words}}}, columns: {type: 'array', minItems: 2, maxItems: 4, items: {type: 'string', maxLength: 40}}, rows: {type: 'array', minItems: 2, maxItems: 6, items: {type: 'array', items: {type: 'string', maxLength: 60}}}, say: {type: 'array', items: words}, bars: {type: 'array', items: {type: 'integer'}}, highlight: {type: 'array', items: {type: 'object', additionalProperties: false, properties: {say: words, col: {type: 'integer'}}, required: ['say', 'col']}}, widths: {type: 'array', items: {type: 'number'}}}, ['play']),
-          scene('scene', {layout: {enum: ['auto', 'halves', 'main']}, elements: {type: 'array', minItems: 1, maxItems: 3, items: element}, moves: {type: 'array', maxItems: 8, items: move}}, ['elements']),
-          scene('summary', {art: str(40), act: {type: 'array', items: str(30)}, notes: {type: 'array', minItems: 1, maxItems: 4, items: note}}, ['notes']),
+          scene('opener', {title: str(60), art: str(40), act: {type: 'array', items: str(30)}, notes}, ['title']),
+          scene('play', {play: {enum: Object.keys(PLAYS)}, cues: {type: 'object', additionalProperties: words}, skip: {type: 'array', items: str(20)}, notes, ...flow, ...table}, ['play']),
+          scene('explain', {art: str(40), points: {type: 'array', minItems: 2, maxItems: 8, items: {type: 'object', additionalProperties: false, properties: {on: str(30), label: str(28), act: str(30), note: str(90), say: words}}}}, ['art', 'points']),
+          scene('flow', {...flow, notes}, ['mermaid']),
+          scene('table', {...table, notes}, ['columns', 'rows']),
+          scene('summary', {art: str(40), act: {type: 'array', items: str(30)}, notes: {...notes, minItems: 2}}, ['notes']),
         ],
       },
     },

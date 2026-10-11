@@ -29,7 +29,6 @@ import {parseMermaid} from '../src/art/mermaid.ts';
 import {compileScene, compileSpec, mergeSameWord, slotsFor} from '../src/compile.ts';
 import {direct, varietyProblems} from '../src/director.ts';
 import {fixSpec} from './lib/fix.mts';
-import {simplify} from './lib/simplify.mts';
 import {categorize} from './lib/categories.mts';
 import {fullForms, respellings} from '../src/dictionary.ts';
 import {revealTimes} from '../src/sync.ts';
@@ -181,7 +180,7 @@ step('3 units', () => {
     const flow = compileScene({type: 'flow', kicker: 'k', narration: 'Arrest first. Then the rhythm decides. A shockable rhythm gets a shock.', mermaid: 'flowchart LR\n A([Arrest]) --> B{Rhythm?}\n B --> C[Shockable]', tour: true});
     assert.equal(flow.type, 'stage');
     assert.deepEqual(flow.beats.filter((b: any) => b.act).map((b: any) => [b.say[0], b.act]), [['arrest', 'chart.s1'], ['rhythm', 'chart.s2'], ['shockable', 'chart.s3']]);
-    assert.ok(flow.beats.some((b: any) => b.camera === 'overview'), 'a tour ends on the overview');
+    assert.ok(!flow.beats.some((b: any) => b.camera), 'a flowchart stays whole: no camera tour');
     assert.equal(syncProblems(flow).length, 0, 'derived words are spoken in order');
     const tbl = compileScene({type: 'table', kicker: 'k', narration: 'Adults survive less often than children.', columns: ['Group', 'Survival'], rows: [['Adults', '23.6%'], ['Children', '45.2%']]});
     assert.deepEqual(tbl.beats.map((b: any) => b.act), ['tbl.r1', 'tbl.r2']);
@@ -253,11 +252,6 @@ step('3 units', () => {
     assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
     assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
     assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');
-    const fb = simplify(broken.scenes[4]);
-    assert.deepEqual(fb.elements.map((e: any) => e.kind), ['table'], 'a crowded composition falls back to its densest element');
-    assert.ok(fb.moves.some((m: any) => m.note?.startsWith('45.2%')), "the dropped statistic survives as a note");
-    assert.equal(simplify({type: 'scene', narration: 'x', elements: [{id: 'b', kind: 'bars', items: []}, {id: 's', kind: 'stat', value: 1}]}).elements[0].kind, 'bars', 'any element kind can stand alone');
-    assert.equal(fb.narration, broken.scenes[4].narration, 'the fallback keeps the narration');
     assert.equal(categorize('❌ C01 layout: scene[4] (stage): text too small to read (19px < 22px'), 'tiny-text');
     assert.equal(categorize('❌ C01 timing: scene[2] (stage): ~9 s with nothing new on screen'), 'idle');
     assert.equal(respellings('en').MedSkills, 'Medd Skills', 'the lexicon derives from the dictionary');

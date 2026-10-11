@@ -93,6 +93,13 @@ export function tasteProblems(scenes: any[]): string[] {
   const notes = scenes.reduce((n, s) => n + (s?.beats ?? []).filter((b: any) => b.note).length, 0);
   const allowed = Math.max(3, Math.floor(words / 55));
   if (notes > allowed) out.push(`${notes} text bars for ${words} words (max ${allowed}) — let the picture carry it: labels on the illustration, the chart's own nodes and cells, not notes`);
+  // illustration-led: a lesson of only charts and tables is the "text with voiceover" the client rejected
+  const teaching = scenes.filter((s) => s?.type === 'stage' && s.world?.layers?.length);
+  const illustrated = teaching.filter((s) => s.world.layers.some((l: any) => !DATA_ARTS.has(l.art)));
+  if (teaching.length >= 4 && illustrated.length / teaching.length < 0.4)
+    out.push(`only ${illustrated.length} of ${teaching.length} teaching scenes are on an illustration (min 40 %) — teach the mechanism, structure or device on its picture (an illustration playbook), not in another chart or table`);
+  // the bookends rest on the picture: the opener carries the title, the closing recap its take-aways
+  const firstTeach = scenes.map((s) => s?.type).indexOf('stage');
   const lastTeach = scenes.map((s) => s?.type).lastIndexOf('stage');
   scenes.forEach((s, i) => {
     const ill = (s?.world?.layers ?? []).filter((l: any) => !DATA_ARTS.has(l.art)).map((l: any) => l.id);
@@ -100,7 +107,7 @@ export function tasteProblems(scenes: any[]): string[] {
     const onIll = (x: any) => ill.includes(String(typeof x === 'string' ? x : x?.on ?? '').split('.')[0]);
     // each state change, region and label on the drawing counts; the closing recap may rest on one
     const actions = (s.beats ?? []).reduce((n: number, b: any) => n + [b.act ?? []].flat().filter(onIll).length + [b.label ?? []].flat().filter(onIll).length, 0);
-    if (actions < (i === lastTeach ? 1 : 2)) out.push(`scene[${i}]: the illustration only sits there (${actions} picture action) — label its parts, change its state, or use a playbook (play)`);
+    if (actions < (i === firstTeach || i === lastTeach ? 0 : 2)) out.push(`scene[${i}]: the illustration only sits there (${actions} picture action) — label its parts, change its state, or use a playbook (play)`);
   });
   return out;
 }

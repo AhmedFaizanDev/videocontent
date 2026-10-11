@@ -1,0 +1,22 @@
+{
+  "videos": [
+    {
+      "id": "P1",
+      "title": "Why Endoscopes Are Different: The Reprocessing Sequence",
+      "source": "MS-CSSD-15_M10_Endoscope-Reprocessing.pdf",
+      "pages": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Where Reprocessing Fails: Elevators, Traceability, Pressure",
+      "source": "MS-CSSD-15_M10_Endoscope-Reprocessing.pdf",
+      "pages": [
+        4,
+        5
+      ]
+    }
+  ]
+}

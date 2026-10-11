@@ -1,0 +1,193 @@
+{
+  "id": "P1",
+  "title": "Why Endoscopes Are Different: The Reprocessing Sequence",
+  "outputFilename": "MedSkills_pilot_cssd_P1.mp4",
+  "module": "Why Endoscopes Are Different: The Reprocessing Sequence",
+  "scenes": [
+    {
+      "type": "opener",
+      "kicker": "Module 10",
+      "title": "Why Endoscopes Are Different",
+      "art": "flexibleEndoscope",
+      "act": [
+        "controlBodyRegion",
+        "insertionTubeRegion",
+        "distalTipRegion"
+      ],
+      "narration": "Module ten: flexible endoscope reprocessing. Here is the whole device, from control body to insertion tube to distal tip. It is semi-critical, heat-labile, mechanically complex, and the source of the most serious documented outbreaks."
+    },
+    {
+      "type": "play",
+      "play": "channelCutaway.channels",
+      "kicker": "Many channels",
+      "narration": "Cut across the insertion tube and you see why these devices are mechanically complex. Inside the sheath run several narrow channels of different diameters: the suction or biopsy channel, the air channel, and the water channel. Some are difficult to access, and some are easy to forget. These channels run the whole length of the scope, so every one of them must be reached during cleaning.",
+      "cues": {
+        "water": [
+          "water"
+        ],
+        "length": [
+          "length"
+        ]
+      }
+    },
+    {
+      "type": "play",
+      "play": "flow.cause",
+      "kicker": "Heat and cost",
+      "narration": "Heat is the first difference. Flexible endoscopes are heat-labile, so they cannot be steam sterilised. High-level disinfection is the usual process, and it has a smaller margin than sterilisation. They are also heavily contaminated in use, with organic material and a high bacterial load. And they are expensive, so hospitals own few and there is constant pressure on turnaround time.",
+      "mermaid": "flowchart LR\n A[Heat-labile]:::red --> B[No steam sterilisation] --> C[High-level disinfection] --> D[Smaller margin]:::red",
+      "notes": [
+        {
+          "say": [
+            "turnaround"
+          ],
+          "note": "Few scopes owned: constant pressure on turnaround time"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "flexibleEndoscope.reprocessingPoints",
+      "kicker": "Bedside pre-clean",
+      "narration": "The sequence starts at the bedside, immediately after the procedure and before the scope leaves the room. Wipe the insertion tube and suction or flush the channels with the agreed solution. Organic material begins to dry and to form biofilm within minutes, and once it has, no subsequent step reliably removes it. This is the step performed by the busiest person at the busiest moment, and it is the one most often abbreviated.",
+      "skip": [
+        "tip",
+        "controls",
+        "connector",
+        "overview"
+      ]
+    },
+    {
+      "type": "play",
+      "play": "leakTest.breach",
+      "kicker": "Leak test",
+      "narration": "Before immersion, every time, without exception, the scope is pressurised. Bubbles escaping show a breach in the outer sheath, and the pressure falls. Scopes are fragile, so damage is common. An immersed, damaged scope admits fluid into its interior, where it cannot be cleaned or disinfected and organisms multiply. It is then contaminated internally and irreparably, and will be used on patients until the damage is found by other means. The test takes a minute, and is skipped when the list is running late.",
+      "notes": [
+        {
+          "say": [
+            "skipped"
+          ],
+          "note": "Takes a minute, yet skipped when the list runs late"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "channelCutaway.biofilm",
+      "kicker": "Biofilm",
+      "narration": "Look at the channel wall. Biofilm forms readily there, and once established it resists chemical disinfection entirely. Disinfectant alone cannot clear it, which is why manual cleaning is irreplaceable. The brush must be of the correct diameter and length for that specific model, following the manufacturer's instructions. It is passed through every channel until it emerges visibly clean, and brushing is repeated until it does. Two scopes that look similar may have different channels, connectors and instructions.",
+      "cues": {
+        "clean": [
+          "visibly"
+        ]
+      }
+    },
+    {
+      "type": "play",
+      "play": "flow.chain",
+      "kicker": "The sequence",
+      "narration": "Here is the sequence through manual cleaning. Bedside pre-clean comes first, then the leak test. Then immerse fully in the correct detergent at the correct dilution and temperature, and wipe the exterior and insertion tube. Brush every channel, plus ports, valves and the elevator recess. Flush all channels with detergent, then water, using the connectors specified for that model. Remove, clean and disinfect or replace valves, buttons and caps, which are frequently forgotten. Finally, inspect for damage and residual soil.",
+      "mermaid": "flowchart LR\n A[Bedside pre-clean]:::red --> B[Leak test]:::red --> C[Immerse in detergent] --> D[Wipe exterior and tube] --> E[Brush channels, ports, recess] --> F[Flush with detergent, water] --> G[Clean removable parts] --> H[Inspect]:::teal",
+      "steps": [
+        {
+          "show": [
+            "A"
+          ],
+          "focus": "A",
+          "say": [
+            "bedside"
+          ]
+        },
+        {
+          "show": [
+            "B"
+          ],
+          "focus": "B",
+          "say": [
+            "leak"
+          ]
+        },
+        {
+          "show": [
+            "C"
+          ],
+          "focus": "C",
+          "say": [
+            "immerse"
+          ]
+        },
+        {
+          "show": [
+            "D"
+          ],
+          "focus": "D",
+          "say": [
+            "wipe"
+          ]
+        },
+        {
+          "show": [
+            "E"
+          ],
+          "focus": "E",
+          "say": [
+            "brush"
+          ]
+        },
+        {
+          "show": [
+            "F"
+          ],
+          "focus": "F",
+          "say": [
+            "flush"
+          ]
+        },
+        {
+          "show": [
+            "G"
+          ],
+          "focus": "G",
+          "say": [
+            "remove"
+          ]
+        },
+        {
+          "show": [
+            "H"
+          ],
+          "focus": "H",
+          "say": [
+            "inspect"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "kicker": "Recap",
+      "art": "flexibleEndoscope",
+      "narration": "To summarise. Flexible endoscopes are heat-labile, mechanically complex, heavily soiled, expensive and fragile, which is why they have caused several of the most serious documented outbreaks. Pre-clean at the bedside within minutes, because biofilm resists later steps. Leak test before every immersion, without exception. Then clean manually, brushing every channel until the brush emerges visibly clean. Next, we look at the duodenoscope elevator, and at drying and storage.",
+      "notes": [
+        {
+          "say": [
+            "bedside"
+          ],
+          "note": "Pre-clean at the bedside: biofilm forms within minutes"
+        },
+        {
+          "say": [
+            "leak"
+          ],
+          "note": "Leak test before every immersion, without exception"
+        },
+        {
+          "say": [
+            "brushing"
+          ],
+          "note": "Brush every channel until visibly clean"
+        }
+      ]
+    }
+  ]
+}

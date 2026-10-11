@@ -1,0 +1,26 @@
+{
+  "project": "pilot-cssd",
+  "id": "P1",
+  "stages": {
+    "write": {
+      "seconds": 75,
+      "at": "2026-10-11T06:50:12.465Z"
+    },
+    "preflight": {
+      "seconds": 4.3,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-11T06:58:48.797Z"
+    },
+    "check": {
+      "seconds": 5,
+      "firstPass": true,
+      "ok": true,
+      "categories": [],
+      "log": [],
+      "remaining": [],
+      "at": "2026-10-11T06:58:48.810Z"
+    }
+  },
+  "authoring": []
+}

@@ -1,0 +1,330 @@
+{
+  "id": "B1",
+  "title": "Cardiac Arrest and the Chain of Survival",
+  "outputFilename": "MedSkills_pilot_bls_B1.mp4",
+  "module": "Cardiac Arrest and the Chain of Survival",
+  "scenes": [
+    {
+      "type": "opener",
+      "kicker": "Module 1",
+      "title": "Cardiac Arrest and the Chain of Survival",
+      "art": "heartExterior",
+      "act": [
+        "atria",
+        "ventricles"
+      ],
+      "narration": "Module one: cardiac arrest and the Chain of Survival. Each heartbeat begins as an electrical impulse that spreads through the muscle, so the atria and then the ventricles contract in sequence, pushing blood out to the body."
+    },
+    {
+      "type": "play",
+      "play": "heart.failure",
+      "kicker": "What happens",
+      "narration": "Cardiac arrest is an electrical problem. In ventricular fibrillation, the chambers lose their coordination: muscle fibres fire out of step, and the ventricles quiver instead of contracting. A quivering ventricle ejects no blood, so cardiac output falls to zero and the pulse is lost within seconds. Without blood to the brain, the patient loses consciousness. Occasional gasping is not normal breathing. This patient is unresponsive, with no pulse.",
+      "notes": [
+        {
+          "say": [
+            "electrical"
+          ],
+          "note": "Cardiac arrest: an electrical problem"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "heart.coronary",
+      "kicker": "Not a heart attack",
+      "narration": "A heart attack is a different problem. The coronary arteries on the surface of the heart supply its muscle with blood. In a heart attack, one is blocked, and the part of the muscle it supplies is starved of blood. That is a circulation problem, and the patient is usually conscious, often with chest pain. A heart attack can trigger cardiac arrest, but arrest itself is the electrical failure of the whole pump.",
+      "notes": [
+        {
+          "say": [
+            "circulation"
+          ],
+          "note": "Heart attack: a circulation problem"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "flow.decision",
+      "kicker": "The rhythms",
+      "narration": "Cardiac arrest has four rhythms, and the rhythm decides the treatment. Two are shockable: ventricular fibrillation, and pulseless ventricular tachycardia, where the ventricles beat so fast they cannot fill. A shock depolarises the muscle at once, letting the heart's own pacemaker restore an organised rhythm. The other two are not shockable: pulseless electrical activity, organised electrical activity without a pulse, and asystole, no electrical activity. These are treated with cardiopulmonary resuscitation and the search for reversible causes.",
+      "mermaid": "flowchart TD\n A([Cardiac arrest]) --> B{Rhythm on the monitor?}\n B -->|Yes| C[Shockable: VF · pulseless VT]:::red\n C --> E[Shock: depolarises the muscle]:::red\n B -->|No| D[Not shockable: PEA · asystole]:::blue\n D --> F[CPR + search for reversible causes]:::blue",
+      "steps": [
+        {
+          "show": [
+            "A"
+          ],
+          "focus": "A",
+          "say": [
+            "cardiac"
+          ]
+        },
+        {
+          "show": [
+            "B"
+          ],
+          "focus": "B",
+          "say": [
+            "rhythm"
+          ]
+        },
+        {
+          "show": [
+            "C"
+          ],
+          "focus": "C",
+          "say": [
+            "shockable"
+          ]
+        },
+        {
+          "show": [
+            "E"
+          ],
+          "focus": "E",
+          "say": [
+            "depolarises"
+          ]
+        },
+        {
+          "show": [
+            "D"
+          ],
+          "focus": "D",
+          "say": [
+            "other"
+          ]
+        },
+        {
+          "show": [
+            "F"
+          ],
+          "focus": "F",
+          "say": [
+            "cardiopulmonary"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "table.scale",
+      "kicker": "The scale",
+      "narration": "How often do patients survive? About 350,000 people a year in the United States have an out-of-hospital cardiac arrest, and it results in death about 90% of the time. Survival to discharge is approximately 10.5% overall, 21.1% in a public place, and 8.9% at home, where fewer arrests are witnessed. In hospital it is 23.6% in adults and 45.2% in children, because help is close by. Yet only about 41% receive bystander compressions before help arrives.",
+      "columns": [
+        "Setting",
+        "Survival to discharge"
+      ],
+      "rows": [
+        [
+          "Out of hospital, overall",
+          "10.5%"
+        ],
+        [
+          "Out of hospital, public place",
+          "21.1%"
+        ],
+        [
+          "Out of hospital, at home",
+          "8.9%"
+        ],
+        [
+          "In hospital, adults",
+          "23.6%"
+        ],
+        [
+          "In hospital, children",
+          "45.2%"
+        ]
+      ],
+      "say": [
+        [
+          "overall"
+        ],
+        [
+          "public"
+        ],
+        [
+          "home"
+        ],
+        [
+          "adults"
+        ],
+        [
+          "children"
+        ]
+      ],
+      "bars": [
+        1
+      ],
+      "notes": [
+        {
+          "say": [
+            "year"
+          ],
+          "note": "About 350,000 out-of-hospital arrests a year in the United States"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "heart.compressions",
+      "kicker": "First minutes",
+      "narration": "That is why the nearest person matters. Chest compressions squeeze the heart between the sternum and the spine, pushing blood to the brain and the heart muscle, and they keep circulation going until the heart is restarted. Given immediately, they can double or even triple the chance of survival, because every minute without compressions or a shock lowers it. The actions of the nearest person in the first three minutes matter more than everything done afterwards.",
+      "notes": [
+        {
+          "say": [
+            "triple"
+          ],
+          "note": "Immediate compressions can double or triple survival"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "flow.chain",
+      "kicker": "The chain",
+      "narration": "The 2025 guidelines replace four separate chains with one Chain of Survival, for adults and children, in hospital and out. Six links, in order. Early recognition and emergency activation. High-quality cardiopulmonary resuscitation, now including breaths, especially in children and in opioid-related arrest. Defibrillation, a cornerstone of care. Advanced resuscitation. Post-cardiac arrest care. And recovery and survivorship. The details vary between settings, but the chain is the same.",
+      "mermaid": "flowchart LR\n A[Recognition and activation]:::red --> B[High-quality CPR] --> C[Defibrillation] --> D[Advanced resuscitation] --> E[Post-arrest care] --> F[Recovery and survivorship]:::teal",
+      "steps": [
+        {
+          "show": [
+            "A"
+          ],
+          "focus": "A",
+          "say": [
+            "recognition"
+          ]
+        },
+        {
+          "show": [
+            "B"
+          ],
+          "focus": "B",
+          "say": [
+            "cardiopulmonary"
+          ]
+        },
+        {
+          "show": [
+            "C"
+          ],
+          "focus": "C",
+          "say": [
+            "defibrillation"
+          ]
+        },
+        {
+          "show": [
+            "D"
+          ],
+          "focus": "D",
+          "say": [
+            "advanced"
+          ]
+        },
+        {
+          "show": [
+            "E"
+          ],
+          "focus": "E",
+          "say": [
+            "post"
+          ]
+        },
+        {
+          "show": [
+            "F"
+          ],
+          "focus": "F",
+          "say": [
+            "survivorship"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "say": [
+            "guidelines"
+          ],
+          "note": "2025: one chain for every patient"
+        }
+      ]
+    },
+    {
+      "type": "play",
+      "play": "table.update",
+      "kicker": "What changed",
+      "narration": "If you trained on the 2020 guidelines, you are updating, not relearning. Four separate chains became one. The term rescue breaths is no longer used: breaths means assisted breathing, and ventilation is reserved for mechanical support. The compression rate stays at 100 to 120 a minute, and single-rescuer adult resuscitation stays at 30 compressions to 2 breaths.",
+      "columns": [
+        "Topic",
+        "2020",
+        "2025"
+      ],
+      "rows": [
+        [
+          "Chain of Survival",
+          "Four separate chains",
+          "One unified chain"
+        ],
+        [
+          "Terms",
+          "Rescue breaths",
+          "Breaths · ventilation is mechanical"
+        ],
+        [
+          "Compression rate",
+          "100–120 a minute",
+          "100–120 a minute"
+        ],
+        [
+          "Single-rescuer adult ratio",
+          "30:2",
+          "30:2"
+        ]
+      ],
+      "say": [
+        [
+          "chains"
+        ],
+        [
+          "term"
+        ],
+        [
+          "rate"
+        ],
+        [
+          "single"
+        ]
+      ],
+      "highlight": [
+        {
+          "say": [
+            "updating"
+          ],
+          "col": 3
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "kicker": "Recap",
+      "art": "heartExterior",
+      "narration": "To summarise. Cardiac arrest is an electrical failure that stops the heart's output, unlike a heart attack, which is a circulation problem. Two of its four rhythms can be shocked. Survival depends on six links, and the nearest person is the first of them. This is a knowledge course: it does not replace hands-on basic life support training with manikin skills assessment.",
+      "notes": [
+        {
+          "say": [
+            "electrical"
+          ],
+          "note": "Cardiac arrest: an electrical failure that stops output"
+        },
+        {
+          "say": [
+            "links"
+          ],
+          "note": "Six links — the nearest person is the first"
+        }
+      ]
+    }
+  ]
+}
