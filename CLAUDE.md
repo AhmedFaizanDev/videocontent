@@ -1,5 +1,9 @@
 # CLAUDE.md — start here
 
+> **Current mission (2026-10-06): the 69 MedSkills course intros (`ms-intros`). `HANDOFF.md` is
+> intros-only and is the source of truth for setup, order of work and the inspection gate; the
+> old full handoff is `archive/docs/HANDOFF_pipeline_2026-10-04.md`.**
+
 A production pipeline that turns educational material into narrated, animated explainer
 videos (Remotion + free Edge neural TTS). **`README.md`** = how it works and the commands.
 **`docs/AUTHORING_GUIDE.md`** = the lesson spec contract. **`HANDOFF.md`** = state, decisions,

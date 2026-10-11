@@ -1,0 +1,7 @@
+- [Brand is MedSkills](project_brand_medskills.md) — client logo on every video; TA/ZSkillup retired 2026-09-26
+- [CSSD Module 10 client videos](project_cssd_module10.md) — V801–V805 medical module, decisions; see HANDOFF.md §1–2
+- [Verify final MP4 frames](feedback_verify_final_mp4.md) — stills can hide render-only bugs; `npm run qa` must pass on the final MP4
+- [Owner video preferences](user_video_preferences.md) — slower pacing, Indian female voice per language + MedSkills, clean clinical look, no spoken acronyms
+- [Picture-first](feedback_picture_first.md) — client rejected text+voiceover; code-drawn stage scenes (length now 5–7 min, see v2)
+- [Scientific house standard v2/v3](feedback_scientific_v2.md) — textbook ink style everywhere, deep narration (+logged textbook science), ~145 wpm, 5:00 standard, reusable infra first (2026-10-03)
+- [Bulk operating model](project_bulk_model.md) — PDFs→videos via batch.mts, one writer call/video, strict source, hi/mr/kn, overnight render (2026-10-04)

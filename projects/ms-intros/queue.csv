@@ -1,0 +1,70 @@
+seq,video_id,course_name,spoken_name,category,hours,type,output_file,status
+1,MS-NABH-01,"NABH 6th Edition — Implementation & Compliance","National Accreditation Board for Hospitals and Healthcare Providers, sixth edition: implementation and compliance","Accreditation & Quality",16,Mandatory,MedSkills_Intro_MS_NABH_01.mp4,done
+2,MS-NABH-02,"NABH Assessment Readiness & Documentation","National Accreditation Board for Hospitals and Healthcare Providers assessment readiness and documentation","Accreditation & Quality",12,Mandatory,MedSkills_Intro_MS_NABH_02.mp4,todo
+3,MS-QAU-03,"Internal Quality Auditor for Hospitals","Internal Quality Auditor for Hospitals","Accreditation & Quality",16,Mandatory,MedSkills_Intro_MS_QAU_03.mp4,todo
+4,MS-QI-04,"Quality Indicators, KPIs & Clinical Audit","Quality Indicators, Key Performance Indicators and Clinical Audit","Accreditation & Quality",6,Upskilling,MedSkills_Intro_MS_QI_04.mp4,todo
+5,MS-NNE-05,"NABH Nursing Excellence — Certification Prep","National Accreditation Board for Hospitals and Healthcare Providers Nursing Excellence: certification preparation","Accreditation & Quality",12,Mandatory,MedSkills_Intro_MS_NNE_05.mp4,todo
+6,MS-NABL-06,"NABL / Lab Quality for Hospital Labs","National Accreditation Board for Testing and Calibration Laboratories and laboratory quality for hospital laboratories","Laboratory Quality & NABL (ISO 15189)",12,Mandatory,MedSkills_Intro_MS_NABL_06.mp4,todo
+7,MS-ISO-59,"ISO 15189:2022 Awareness & Quality Management System","International Organization for Standardization fifteen one eight nine, 2022: awareness and quality management system","Laboratory Quality & NABL (ISO 15189)",12,Mandatory,MedSkills_Intro_MS_ISO_59.mp4,todo
+8,MS-LIA-60,"Internal Auditor for Medical Laboratories","Internal Auditor for Medical Laboratories","Laboratory Quality & NABL (ISO 15189)",16,Mandatory,MedSkills_Intro_MS_LIA_60.mp4,todo
+9,MS-BIO-61,"Laboratory Biosafety & Biosecurity","Laboratory Biosafety and Biosecurity","Laboratory Quality & NABL (ISO 15189)",6,Mandatory,MedSkills_Intro_MS_BIO_61.mp4,todo
+10,MS-IQC-62,"Internal Quality Control, Westgard Rules & EQAS / PT","Internal Quality Control, Westgard Rules, external quality assessment and proficiency testing","Laboratory Quality & NABL (ISO 15189)",12,Mandatory,MedSkills_Intro_MS_IQC_62.mp4,todo
+11,MS-PRE-63,"Pre-examination: Sample Collection, Transport & Rejection","Pre-examination: sample collection, transport and rejection","Laboratory Quality & NABL (ISO 15189)",6,Mandatory,MedSkills_Intro_MS_PRE_63.mp4,todo
+12,MS-MU-64,"Method Verification, Validation & Measurement Uncertainty","Method Verification, Validation and Measurement Uncertainty","Laboratory Quality & NABL (ISO 15189)",12,Mandatory,MedSkills_Intro_MS_MU_64.mp4,todo
+13,MS-EQP-65,"Equipment Calibration, Maintenance & Traceability","Equipment Calibration, Maintenance and Traceability","Laboratory Quality & NABL (ISO 15189)",6,Mandatory,MedSkills_Intro_MS_EQP_65.mp4,todo
+14,MS-RPT-66,"Document Control, Records & Result Reporting","Document Control, Records and Result Reporting","Laboratory Quality & NABL (ISO 15189)",6,Mandatory,MedSkills_Intro_MS_RPT_66.mp4,todo
+15,MS-CAPA-67,"Risk Management, Nonconformities & CAPA","Risk Management, Nonconformities and Corrective and Preventive Action","Laboratory Quality & NABL (ISO 15189)",6,Mandatory,MedSkills_Intro_MS_CAPA_67.mp4,todo
+16,MS-IMP-68,"Impartiality, Confidentiality & Ethics in the Laboratory","Impartiality, Confidentiality and Ethics in the Laboratory","Laboratory Quality & NABL (ISO 15189)",3,Mandatory,MedSkills_Intro_MS_IMP_68.mp4,todo
+17,MS-POCT-69,"Point-of-Care Testing (POCT) Quality","Point-of-Care Testing Quality","Laboratory Quality & NABL (ISO 15189)",3,Upskilling,MedSkills_Intro_MS_POCT_69.mp4,todo
+18,MS-PSG-07,"Patient Safety & International Patient Safety Goals","Patient Safety and the International Patient Safety Goals","Patient Safety & Clinical Risk",6,Mandatory,MedSkills_Intro_MS_PSG_07.mp4,todo
+19,MS-MED-08,"Medication Safety & High-Alert Drugs","Medication Safety and High-Alert Drugs","Patient Safety & Clinical Risk",6,Mandatory,MedSkills_Intro_MS_MED_08.mp4,todo
+20,MS-FALL-09,"Fall Prevention & Risk Assessment","Fall Prevention and Risk Assessment","Patient Safety & Clinical Risk",3,Upskilling,MedSkills_Intro_MS_FALL_09.mp4,todo
+21,MS-RCA-10,"Root Cause Analysis & Incident Reporting","Root Cause Analysis and Incident Reporting","Patient Safety & Clinical Risk",6,Upskilling,MedSkills_Intro_MS_RCA_10.mp4,todo
+22,MS-OTS-11,"WHO Surgical Safety Checklist & OT Safety","the World Health Organization Surgical Safety Checklist and operation theatre safety","Patient Safety & Clinical Risk",6,Upskilling,MedSkills_Intro_MS_OTS_11.mp4,todo
+23,MS-IPC-12,"Hospital Infection Prevention & Control (IPC)","Hospital Infection Prevention and Control","Infection Prevention & Control",12,Mandatory,MedSkills_Intro_MS_IPC_12.mp4,todo
+24,MS-HH-13,"Hand Hygiene & WHO 5 Moments","Hand Hygiene and the World Health Organization’s Five Moments","Infection Prevention & Control",3,Mandatory,MedSkills_Intro_MS_HH_13.mp4,todo
+25,MS-AMS-14,"Antimicrobial Stewardship","Antimicrobial Stewardship","Infection Prevention & Control",6,Upskilling,MedSkills_Intro_MS_AMS_14.mp4,todo
+26,MS-CSSD-15,"CSSD & Sterilization Practices","Central Sterile Services Department and Sterilization Practices","Infection Prevention & Control",6,Upskilling,MedSkills_Intro_MS_CSSD_15.mp4,todo
+27,MS-HAI-16,"HAI Surveillance & Outbreak Management","Healthcare-Associated Infection Surveillance and Outbreak Management","Infection Prevention & Control",6,Upskilling,MedSkills_Intro_MS_HAI_16.mp4,todo
+28,MS-OTIPC-57,"OT Infection Prevention & Control","Operation Theatre Infection Prevention and Control","Infection Prevention & Control",6,Mandatory,MedSkills_Intro_MS_OTIPC_57.mp4,todo
+29,MS-SSI-58,"Surgical Site Infection (SSI) Prevention","Surgical Site Infection Prevention","Infection Prevention & Control",6,Upskilling,MedSkills_Intro_MS_SSI_58.mp4,todo
+30,MS-BMW-17,"Biomedical Waste Management (BMW Rules 2016)","Biomedical Waste Management under the Bio-Medical Waste Management Rules 2016","Waste, Fire & Facility Safety",6,Mandatory,MedSkills_Intro_MS_BMW_17.mp4,todo
+31,MS-SPILL-18,"Spill Management & Chemical Safety","Spill Management and Chemical Safety","Waste, Fire & Facility Safety",3,Mandatory,MedSkills_Intro_MS_SPILL_18.mp4,todo
+32,MS-FIRE-19,"Fire Safety, Evacuation & Mock Drills","Fire Safety, Evacuation and Mock Drills","Waste, Fire & Facility Safety",6,Mandatory,MedSkills_Intro_MS_FIRE_19.mp4,todo
+33,MS-FMS-20,"Facility & Environmental Safety (FMS)","Facility and Environmental Safety","Waste, Fire & Facility Safety",6,Mandatory,MedSkills_Intro_MS_FMS_20.mp4,todo
+34,MS-RAD-21,"Radiation Safety (AERB) for Imaging Staff","Radiation Safety for Imaging Staff, under the Atomic Energy Regulatory Board","Waste, Fire & Facility Safety",6,Mandatory,MedSkills_Intro_MS_RAD_21.mp4,todo
+35,MS-MLC-22,"Medico-Legal Case (MLC) & Police Case Management","Medico-Legal Case and Police Case Management","Medico-Legal & Regulatory Compliance",6,Mandatory,MedSkills_Intro_MS_MLC_22.mp4,todo
+36,MS-CONS-23,"Informed Consent: Law & Documentation","Informed Consent: law and documentation","Medico-Legal & Regulatory Compliance",6,Mandatory,MedSkills_Intro_MS_CONS_23.mp4,todo
+37,MS-NEG-24,"Medical Negligence & Liability Prevention","Medical Negligence and Liability Prevention","Medico-Legal & Regulatory Compliance",12,Mandatory,MedSkills_Intro_MS_NEG_24.mp4,todo
+38,MS-DTH-25,"Death Certification & Handling of Deaths","Death Certification and Handling of Deaths","Medico-Legal & Regulatory Compliance",3,Mandatory,MedSkills_Intro_MS_DTH_25.mp4,todo
+39,MS-PNDT-26,"PC-PNDT Act Compliance","Pre-Conception and Pre-Natal Diagnostic Techniques Act Compliance","Medico-Legal & Regulatory Compliance",3,Mandatory,MedSkills_Intro_MS_PNDT_26.mp4,todo
+40,MS-CEA-27,"Clinical Establishments Act & Statutory Licensing","the Clinical Establishments Act and Statutory Licensing","Medico-Legal & Regulatory Compliance",6,Mandatory,MedSkills_Intro_MS_CEA_27.mp4,todo
+41,MS-DPDP-28,"Data Privacy & DPDP Act 2023 for Hospitals","Data Privacy and the Digital Personal Data Protection Act 2023 for Hospitals","Medico-Legal & Regulatory Compliance",6,Mandatory,MedSkills_Intro_MS_DPDP_28.mp4,todo
+42,MS-BLS-29,"Basic & Advanced Cardiac Life Support (BLS/ACLS)","Basic and Advanced Cardiac Life Support","Nursing Skills & Upskilling",12,Mandatory,MedSkills_Intro_MS_BLS_29.mp4,todo
+43,MS-ICU-30,"Critical Care / ICU Nursing","Critical Care and Intensive Care Unit Nursing","Nursing Skills & Upskilling",16,Upskilling,MedSkills_Intro_MS_ICU_30.mp4,todo
+44,MS-IV-31,"IV Cannulation & Infusion Therapy","Intravenous Cannulation and Infusion Therapy","Nursing Skills & Upskilling",6,Upskilling,MedSkills_Intro_MS_IV_31.mp4,todo
+45,MS-WND-32,"Wound Care & Pressure-Injury Prevention","Wound Care and Pressure-Injury Prevention","Nursing Skills & Upskilling",6,Upskilling,MedSkills_Intro_MS_WND_32.mp4,todo
+46,MS-DOSE-33,"Medication Administration & Dosage Calculation","Medication Administration and Dosage Calculation","Nursing Skills & Upskilling",6,Upskilling,MedSkills_Intro_MS_DOSE_33.mp4,todo
+47,MS-VENT-34,"Ventilator Care & Airway Management","Ventilator Care and Airway Management","Nursing Skills & Upskilling",12,Upskilling,MedSkills_Intro_MS_VENT_34.mp4,todo
+48,MS-SBAR-35,"Nursing Documentation & Handover (SBAR)","Nursing Documentation and Handover using Situation, Background, Assessment, Recommendation","Nursing Skills & Upskilling",6,Upskilling,MedSkills_Intro_MS_SBAR_35.mp4,todo
+49,MS-ECG-36,"Basic ECG Interpretation for Nurses","Basic Electrocardiogram Interpretation for Nurses","Nursing Skills & Upskilling",6,Upskilling,MedSkills_Intro_MS_ECG_36.mp4,todo
+50,MS-TRI-37,"Emergency & Triage Nursing","Emergency and Triage Nursing","Emergency & Critical Care",12,Upskilling,MedSkills_Intro_MS_TRI_37.mp4,todo
+51,MS-CODE-38,"Code Blue & Rapid Response Team","Code Blue and the Rapid Response Team","Emergency & Critical Care",6,Mandatory,MedSkills_Intro_MS_CODE_38.mp4,todo
+52,MS-TRA-39,"Basic Trauma Management","Basic Trauma Management","Emergency & Critical Care",6,Upskilling,MedSkills_Intro_MS_TRA_39.mp4,todo
+53,MS-DIS-40,"Hospital Disaster Management & Mass Casualty","Hospital Disaster Management and Mass Casualty","Emergency & Critical Care",12,Mandatory,MedSkills_Intro_MS_DIS_40.mp4,todo
+54,MS-NRP-41,"Neonatal Resuscitation & NICU Care","Neonatal Resuscitation and Neonatal Intensive Care Unit Care","Specialty & Emerging Clinical",12,Upskilling,MedSkills_Intro_MS_NRP_41.mp4,todo
+55,MS-BLD-42,"Blood Transfusion Safety & Haemovigilance","Blood Transfusion Safety and Haemovigilance","Specialty & Emerging Clinical",6,Mandatory,MedSkills_Intro_MS_BLD_42.mp4,todo
+56,MS-DIA-43,"Dialysis Nursing","Dialysis Nursing","Specialty & Emerging Clinical",12,Upskilling,MedSkills_Intro_MS_DIA_43.mp4,todo
+57,MS-ONC-44,"Oncology / Chemotherapy Administration","Oncology and Chemotherapy Administration","Specialty & Emerging Clinical",12,Upskilling,MedSkills_Intro_MS_ONC_44.mp4,todo
+58,MS-DBT-45,"Diabetes Care & Management","Diabetes Care and Management","Specialty & Emerging Clinical",3,Upskilling,MedSkills_Intro_MS_DBT_45.mp4,todo
+59,MS-PAL-46,"Palliative & End-of-Life Care","Palliative and End-of-Life Care","Specialty & Emerging Clinical",6,Upskilling,MedSkills_Intro_MS_PAL_46.mp4,todo
+60,MS-ONB-47,"Staff Induction & Onboarding Program","Staff Induction and Onboarding","Onboarding, Ethics & HR Compliance",3,Mandatory,MedSkills_Intro_MS_ONB_47.mp4,todo
+61,MS-POSH-48,"POSH — Prevention of Sexual Harassment","the Prevention of Sexual Harassment","Onboarding, Ethics & HR Compliance",3,Mandatory,MedSkills_Intro_MS_POSH_48.mp4,todo
+62,MS-PR-49,"Patient Rights & Responsibilities","Patient Rights and Responsibilities","Onboarding, Ethics & HR Compliance",3,Mandatory,MedSkills_Intro_MS_PR_49.mp4,todo
+63,MS-ETH-50,"Code of Conduct, Ethics & Professionalism","Code of Conduct, Ethics and Professionalism","Onboarding, Ethics & HR Compliance",3,Upskilling,MedSkills_Intro_MS_ETH_50.mp4,todo
+64,MS-PX-51,"Patient Experience & Service Excellence","Patient Experience and Service Excellence","Patient Experience & Soft Skills",3,Upskilling,MedSkills_Intro_MS_PX_51.mp4,todo
+65,MS-COMM-52,"Communication Skills & Breaking Bad News","Communication Skills and Breaking Bad News","Patient Experience & Soft Skills",3,Upskilling,MedSkills_Intro_MS_COMM_52.mp4,todo
+66,MS-DEE-53,"Handling Difficult Patients & De-escalation","Handling Difficult Patients and De-escalation","Patient Experience & Soft Skills",3,Upskilling,MedSkills_Intro_MS_DEE_53.mp4,todo
+67,MS-GRV-54,"Grievance & Complaint Handling","Grievance and Complaint Handling","Patient Experience & Soft Skills",3,Upskilling,MedSkills_Intro_MS_GRV_54.mp4,todo
+68,MS-MR-55,"Medical Records & Clinical Documentation","Medical Records and Clinical Documentation","Documentation, Coding & Digital Health",6,Mandatory,MedSkills_Intro_MS_MR_55.mp4,todo
+69,MS-COD-56,"ICD Coding & EMR/HIS Proficiency","International Classification of Diseases Coding and Electronic Medical Record and Hospital Information System Proficiency","Documentation, Coding & Digital Health",12,Upskilling,MedSkills_Intro_MS_COD_56.mp4,todo

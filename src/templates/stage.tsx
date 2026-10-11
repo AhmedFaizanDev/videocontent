@@ -38,8 +38,8 @@ export const MusicBed: React.FC<{timings: VideoTimings}> = ({timings}) => {
   const total = timings.totalDurationInFrames;
   const wins = timings.scenes.map((s) => [s.startFrame + s.leadFrames, s.startFrame + s.leadFrames + s.voDurationInFrames]);
   const lastVoEnd = wins[wins.length - 1][1];
-  const GAP = 0.42;
-  const UNDER = 0.15;
+  const GAP = 0.2;
+  const UNDER = 0.05;
   const vol = (f: number) => {
     let duck = 0;
     for (const [s, e] of wins) {
@@ -50,7 +50,7 @@ export const MusicBed: React.FC<{timings: VideoTimings}> = ({timings}) => {
       duck = Math.max(duck, d);
     }
     let v = mix(GAP, UNDER, duck);
-    if (f > lastVoEnd) v = mix(v, 0.55, tw(f, lastVoEnd, 20, E.soft));
+    if (f > lastVoEnd) v = mix(v, 0.35, tw(f, lastVoEnd, 20, E.soft));
     v *= tw(f, 0, 20, E.soft);
     v *= 1 - tw(f, total - 60, 60, E.inOut);
     return v;
