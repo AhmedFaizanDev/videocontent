@@ -126,8 +126,8 @@ export const ART_PLAYS: ArtPlay[] = [
 
 /** Generic teaching intents for data screens (from the reference: its decision chart, chain tour, comparison and scale tables). */
 export const DATA_PLAYS: DataPlay[] = [
-  {id: 'flow.decision', kind: 'flow', teaches: 'a decision with branches (a rhythm decides the treatment; if/then): the chart grows branch by branch, the camera follows each path. Mermaid TD or LR with a {decision?} node; narrate one branch to its end before the next', preset: {tour: true, zoom: 1.6}},
-  {id: 'flow.chain', kind: 'flow', teaches: 'an ordered sequence of steps or links (a chain, a procedure): left to right, toured link by link, ending on the whole chain. Mermaid LR, 4–7 nodes', preset: {tour: true}},
+  {id: 'flow.decision', kind: 'flow', teaches: 'a decision with branches (a rhythm decides the treatment; if/then): the chart grows branch by branch, the active path highlighted. Mermaid TD or LR with a {decision?} node; narrate one branch to its end before the next', preset: {}},
+  {id: 'flow.chain', kind: 'flow', teaches: 'an ordered sequence of steps or links (a chain, a procedure): left to right, link by link (5+ links wrap into rows). Mermaid LR, 4–8 nodes', preset: {}},
   {id: 'flow.cause', kind: 'flow', teaches: 'a short cause → effect mechanism (3–5 nodes) seen whole: no tour, each node and its connector appear as spoken. Mermaid LR', preset: {tour: false}},
   {id: 'table.compare', kind: 'table', teaches: 'two or three things compared point by point (arrest vs heart attack): rows by aspect, cells appear as each side is spoken', preset: {}},
   {id: 'table.scale', kind: 'table', teaches: 'numbers across settings or groups (survival by setting): numeric column grows as bars and counts up; with 4+ rows the camera tours them', preset: {}},

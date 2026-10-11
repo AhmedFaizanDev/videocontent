@@ -113,7 +113,12 @@ const graph: ArtFactory = (raw: GData) => {
   const edges = data.edges ?? [];
   const steps = data.steps ?? [];
   const TB = data.direction === 'TB';
-  const {layer: layerOf, layers, L, back} = layout(data);
+  const {layer: layerOf, layers, L: depth, back} = layout(data);
+  // a long left-to-right chain (one node per layer, 5+ nodes) wraps into rows that read left to
+  // right, so the whole chain is legible at once — never a camera tour over a strip of tiny boxes
+  const rows = !TB && depth >= 5 && layers.every((l) => l.length === 1) && !back.size ? Math.ceil(depth / 4) : 1;
+  const L = Math.ceil(depth / rows); // columns per row
+  const cellOf = (l: number) => ({row: Math.floor(l / L), col: l % L});
   // a composition lays the chart out at its slot's width, so nodes keep their reading size
   const W = Math.max(700, (raw as any).width ?? 1680);
   const maxRow = Math.max(...layers.map((l) => l.length));
@@ -135,7 +140,15 @@ const graph: ArtFactory = (raw: GData) => {
   const backRoom = back.size ? 120 : 0;
   const box: Box[] = nodes.map(() => ({x: 0, y: 0, w: nodeW, h: 0}));
   let H: number;
-  if (!TB) {
+  if (rows > 1) {
+    const colX = Array.from({length: L}, (_, l) => mix(60 + nodeW / 2, W - 60 - nodeW / 2, l / (L - 1)));
+    const ROW_GAP = 110;
+    H = rows * rowBox + (rows - 1) * ROW_GAP + 80;
+    layers.forEach(([n], l) => {
+      const {row, col} = cellOf(l);
+      box[n] = {x: colX[col], y: 40 + row * (rowBox + ROW_GAP) + rowBox / 2, w: nodeW, h: hOf(nodes[n])};
+    });
+  } else if (!TB) {
     const colX = L === 1 ? [W / 2] : Array.from({length: L}, (_, l) => mix(60 + nodeW / 2, W - 60 - nodeW / 2, l / (L - 1)));
     const stackH = Math.max(...layers.map((ls) => ls.reduce((a, n) => a + hOf(nodes[n]), 0) + (ls.length - 1) * gapCross));
     H = Math.max(300, stackH + 80 + backRoom);
@@ -179,6 +192,13 @@ const graph: ArtFactory = (raw: GData) => {
       }
       const X = Math.min(W - 20, maxX + 90);
       return [[a.x + a.w / 2, a.y], [X, a.y], [X, b.y], [b.x + b.w / 2 + 6, b.y]];
+    }
+    if (rows > 1 && b.y > a.y + 1) {
+      // the turn to the next row: down from the row's last box, across, into the next row's first
+      const p0: P = [a.x, a.y + a.h / 2];
+      const p3: P = [b.x, b.y - b.h / 2 - 6];
+      const midY = (p0[1] + p3[1]) / 2;
+      return [p0, [a.x, midY + 40], [b.x, midY - 40], p3];
     }
     if (!TB) {
       const p0: P = [a.x + a.w / 2, a.y];
@@ -316,11 +336,8 @@ const graph: ArtFactory = (raw: GData) => {
           const t0 = S.nodeAt[i];
           const o = tw(c.f, t0, 8, E.out);
           const b = box[i];
-          if (o <= 0) {
-            // the map ahead: a node still to be explained shows as a faint dashed ghost, drawing on
-            const g = 0.22 * tw(c.f, 4 + 3 * i, 20);
-            return Number.isFinite(t0) || steps.length ? <path key={n.id} d={rect(b.x - b.w / 2, b.y - b.h / 2, b.w, b.h, 8)} fill="none" stroke={INK} strokeWidth={2} strokeDasharray="7 6" opacity={g} /> : null;
-          }
+          // not yet explained: not drawn (empty dashed placeholders read as a broken render)
+          if (o <= 0) return null;
           const focus = F?.focus === n.id;
           const ripple = focus ? tw(c.f, focusAt, 26, E.out) : 1;
           const pop = 1; // precise: focus is marked by colour and stroke, never by a bounce

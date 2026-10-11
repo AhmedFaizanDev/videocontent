@@ -71,8 +71,9 @@ const noteBeats = (words: string[], notes: {say?: string[]; note: string}[]) => 
 function shorthand(s: any): any {
   if (s?.type === 'flow') {
     const g = parseMermaid(s.mermaid ?? '');
-    // a long left-to-right chain is too small to read at once: the camera tours it by default
-    if (s.tour === undefined && g.direction === 'LR' && g.nodes.length >= 5) s = {...s, tour: true};
+    // the whole chart stays in view (long chains wrap into rows, src/art/graph.tsx): no camera tour,
+    // which cropped nodes at the frame edge
+    s = {...s, tour: false};
     const words = spoken(s.narration ?? '').split(/\s+/).map(normWord).filter(Boolean);
     const label = new Map(g.nodes.map((n) => [n.id, n.label]));
     const shownSoFar = new Set<string>();
