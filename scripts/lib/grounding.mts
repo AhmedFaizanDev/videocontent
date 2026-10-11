@@ -208,13 +208,21 @@ const known = (w0: string): boolean => {
  * English voice may guess wrong. Audition each once (scripts/say.mts); if it's right, add it to
  * the lexicon as itself ("amiodarone": "amiodarone") — that marks it reviewed — else respell it.
  */
+/** A known word in an inflected form (omitted → omit, identified → identify, multiplied → multiply, coordinators → coordinator). */
+const knownForm = (w: string): boolean =>
+  known(w) ||
+  [/ies$/, /ied$/, /ers?$/, /ors?$/, /ings?$/, /ed$/, /es$/, /s$/, /ly$/, /ion$/].some((suf) => {
+    if (!suf.test(w)) return false;
+    const stem = w.replace(suf, '');
+    return [stem, stem + 'e', stem + 'y', stem.replace(/(.)\1$/, '$1'), stem + 'ion', stem + 'ate'].some((s) => s.length >= 3 && known(s));
+  });
 export function pronunciationWatch(narration: string, lexicon: Record<string, string>): string[] {
   const lex = new Set(Object.keys(lexicon).map((k) => k.toLowerCase()));
   const out = new Set<string>();
   for (const tok of narration.split(/\s+/)) {
     const w = tok.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, '').replace(/['’]s$/, '');
     if (w.length < 7 || !/^[A-Za-z-]+$/.test(w) || /^[A-Z]/.test(w) && !/[a-z]/.test(w)) continue;
-    if (w.split('-').every((p) => !p || known(p.toLowerCase())) || lex.has(w.toLowerCase())) continue;
+    if (w.split('-').every((p) => !p || knownForm(p.toLowerCase())) || lex.has(w.toLowerCase())) continue;
     out.add(w);
   }
   return [...out];

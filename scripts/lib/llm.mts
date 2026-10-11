@@ -29,20 +29,41 @@ export const claudeBin = () => {
 
 export type Call = {project: string; tag: {id: string; role: string}; system: string; user: string; schema: object; model?: 'sonnet' | 'opus' | 'haiku'};
 
-/** One structured model call → the parsed object. Throws when headless Claude is unavailable. */
+const sleep = (ms: number) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+/** A usage/rate limit: wait it out (until the reset time when the message gives one) — the batch never gives up on quota. */
+const limitWait = (msg: string): number | null => {
+  if (!/limit|rate|overloaded|429|529/i.test(msg)) return null;
+  const epoch = /\|(\d{10})\b/.exec(msg);
+  return epoch ? Math.max(60_000, +epoch[1] * 1000 - Date.now() + 60_000) : 15 * 60_000;
+};
+
+/** One structured model call → the parsed object. Waits out usage limits; throws on anything else (not logged in, bad output). */
 export function callModel(c: Call): any {
   if (OFFLINE) throw new Error('BATCH_OFFLINE: no model calls');
   const cwd = join(ROOT, 'iterations', 'batch-cwd'); // outside any CLAUDE.md scope
   mkdirSync(cwd, {recursive: true});
   const args = ['-p', '--model', c.model ?? 'sonnet', '--tools', '', '--strict-mcp-config', '--disable-slash-commands', '--setting-sources', '', '--no-session-persistence', '--system-prompt', c.system, '--output-format', 'json', '--json-schema', JSON.stringify(c.schema)];
-  const r = spawnSync(claudeBin(), args, {input: c.user, encoding: 'utf8', cwd, maxBuffer: 64 << 20, timeout: 20 * 60 * 1000});
   let out: any;
-  try {
-    out = JSON.parse(r.stdout);
-  } catch {
-    throw new Error(`headless Claude gave no JSON: ${(r.stderr || r.stdout || String(r.error)).slice(0, 300)}`);
+  for (let attempt = 1; ; attempt++) {
+    const r = spawnSync(claudeBin(), args, {input: c.user, encoding: 'utf8', cwd, maxBuffer: 64 << 20, timeout: 20 * 60 * 1000});
+    try {
+      out = JSON.parse(r.stdout);
+    } catch {
+      const msg = (r.stderr || r.stdout || String(r.error)).slice(0, 300);
+      const wait = limitWait(msg) ?? (attempt <= 3 ? attempt * 60_000 : null); // network hiccups: 3 retries
+      if (wait == null) throw new Error(`headless Claude gave no JSON: ${msg}`);
+      console.log(`  ⏳ ${c.tag.id}: ${msg.split('\n')[0]} — retrying in ${Math.round(wait / 60_000)} min`);
+      sleep(wait);
+      continue;
+    }
+    if (!out.is_error) break;
+    const msg = String(out.result);
+    if (/log ?in/i.test(msg)) throw new Error(`headless Claude: ${msg.slice(0, 200)} — run the claude binary once and /login`);
+    const wait = limitWait(msg);
+    if (wait == null) throw new Error(`headless Claude: ${msg.slice(0, 300)}`);
+    console.log(`  ⏳ ${c.tag.id}: usage limit (${msg.slice(0, 80)}) — waiting ${Math.round(wait / 60_000)} min, then resuming`);
+    sleep(wait);
   }
-  if (out.is_error) throw new Error(`headless Claude: ${String(out.result).slice(0, 300)}${/log ?in/i.test(String(out.result)) ? ' — run the claude binary once and /login' : ''}`);
   const u = out.usage ?? {};
   const jobs = join(projectDir(c.project), 'jobs');
   mkdirSync(jobs, {recursive: true});

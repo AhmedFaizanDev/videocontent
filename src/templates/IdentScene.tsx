@@ -42,15 +42,11 @@ export const IdentScene: React.FC<{scene: SceneTiming; spec: IdentSpec; enter: T
 
   // 1) heartbeat line from the left edge to the centre, a spike at the centre
   const line: [number, number][] = [[-40, CY + 60], [CX - 180, CY + 60], [CX - 150, CY + 44], [CX - 120, CY + 60], [CX - 40, CY + 60], [CX - 20, CY + 90], [CX, CY - 150]];
-  // 2) from the spike's top the pen traces the shield outline, clockwise
+  // 2) from the spike's top the pen traces a circle around the mark, clockwise (the spike ends on it)
   const shield: [number, number][] = [];
-  for (let i = 0; i <= 40; i++) {
-    const u = i / 40;
-    // a rounded shield: top edge with a soft notch at the centre, sides curving to a point
-    const a = u * Math.PI * 2;
-    const x = CX + Math.sin(a) * 118 * (1 - 0.18 * Math.max(0, Math.cos(a)));
-    const y = CY - 30 - Math.cos(a) * 120 + (Math.cos(a) < 0 ? -Math.cos(a) * 40 : 0);
-    shield.push([x, y]);
+  for (let i = 0; i <= 72; i++) {
+    const a = (i / 72) * Math.PI * 2;
+    shield.push([CX + Math.sin(a) * 120, CY - 30 - Math.cos(a) * 120]);
   }
   const L = measure(line);
   const S = measure(shield);

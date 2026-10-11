@@ -102,7 +102,15 @@ function write(only: string[]) {
   for (const v of course().videos.filter((x) => (only.length ? only.includes(x.id) : !existsSync(specPath(project, x.id))))) {
     const {system, user} = writerPrompt(v);
     const t0 = Date.now();
-    const spec = llm(system, user, {id: v.id, role: 'writer'});
+    let spec: any;
+    try {
+      spec = llm(system, user, {id: v.id, role: 'writer'});
+    } catch (e) {
+      // one bad lesson never stops the course; not being logged in does (every call would fail)
+      if (/login/i.test(String(e))) throw e;
+      console.log(`  ⛔ ${v.id}: writer failed — ${(e as Error).message.slice(0, 200)}`);
+      continue;
+    }
     mkdirSync(join(PD, 'specs'), {recursive: true});
     writeFileSync(specPath(project, v.id), JSON.stringify({...spec, id: v.id}, null, 2) + '\n');
     recordStage(project, v.id, 'write', {seconds: Math.round((Date.now() - t0) / 1000)});
@@ -153,7 +161,14 @@ function check(only: string[]) {
       const before = readSpecJSON(v.id);
       const bad = failingScenes(g.errs, before, cfg);
       const which = bad.length ? `scenes ${bad.join(', ')} (0-based)` : 'the script';
-      const out = llm(writerPrompt(v).system, `Fix these build errors by rewriting ONLY ${which}; return the whole script. You may reword narration, re-order items or change a scene's screen type. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(before)}`, {id: v.id, role: `repair${n + 1}`});
+      let out: any;
+      try {
+        out = llm(writerPrompt(v).system, `Fix these build errors by rewriting ONLY ${which}; return the whole script. You may reword narration, re-order items or change a scene's screen type. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(before)}`, {id: v.id, role: `repair${n + 1}`});
+      } catch (e) {
+        if (/login/i.test(String(e))) throw e;
+        log.push(`repair failed: ${(e as Error).message.slice(0, 120)}`);
+        break;
+      }
       // only the failing scenes are taken from the repair: a rewrite elsewhere would break what passed
       const merged = bad.length && out.scenes?.length === before.scenes.length ? {...before, scenes: before.scenes.map((s: any, i: number) => (bad.includes(i) ? out.scenes[i] : s))} : out;
       save(v.id, fixSpec(merged, cfg.lang, cfg.fullForms ?? {}).spec);

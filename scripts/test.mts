@@ -252,6 +252,7 @@ step('3 units', () => {
     assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
     assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
     assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');
+    assert.deepEqual(pronunciationWatch('Steps omitted, skipped or specified were identified; the duodenoscope multiplied risk.', {}), ['duodenoscope'], 'inflected common words are not pronunciation risks');
     assert.equal(categorize('❌ C01 layout: scene[4] (stage): text too small to read (19px < 22px'), 'tiny-text');
     assert.equal(categorize('❌ C01 timing: scene[2] (stage): ~9 s with nothing new on screen'), 'idle');
     assert.equal(respellings('en').MedSkills, 'Medd Skills', 'the lexicon derives from the dictionary');
