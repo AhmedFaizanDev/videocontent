@@ -1,6 +1,0 @@
-lungs: Airway, lungs and diaphragm, breathing. anchors: trachea bronchi lungs diaphragm alveoli · events: inhale (diaphragm flattens, lungs expand, air in) exhale (diaphragm domes, air out; then keeps breathing)
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

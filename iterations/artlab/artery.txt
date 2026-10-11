@@ -1,6 +1,0 @@
-artery: Cut-open artery: blood flows, each beat sends a pressure wave stretching the wall; a gauge follows it. anchors: heart wall blood gauge · events: systole diastole (gauge marks peak / floor). data {bpm?}
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

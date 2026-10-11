@@ -1,6 +1,0 @@
-insulin: Pancreas, blood vessel with glucose, body cell. anchors: pancreas glucose insulin receptor uptake cell · events: glucose (sugar rises) insulin (keys leave pancreas) receptor (keys dock) uptake (gates open, glucose enters as energy) type1 (no insulin, sugar piles up) type2 (keys dock, locks don't respond)
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

@@ -1,6 +1,0 @@
-timeline: Events in time order. data: {items: 3–7 {when ≤12 (e.g. "1928", "Day 3"), label ≤30, note?}}
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

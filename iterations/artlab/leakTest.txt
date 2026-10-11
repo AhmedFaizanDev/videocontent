@@ -1,8 +1,0 @@
-leakTest: Leak test: flexible endoscope immersed in a water basin, umbilical connected by hose to a hand leak tester (bulb + pressure gauge); pressure builds then holds. anchors: basin leakTester gauge controlBody insertionTube breach · events: bubbles (a stream of bubbles rises from the breach in the sheath; gauge pressure falls)
-events: bubbles
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 after event "bubbles"
-4 "bubbles" later (ongoing motion)
-5 anchors (where labels and the camera land)

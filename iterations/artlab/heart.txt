@@ -1,6 +1,0 @@
-heart: Human heart, frontal section, beating. Anatomy: ra rv la lv septum apex svc ivc aorta trunk pv · valves: tricuspid pulmonary mitral aortic chordae · events: flowRight flowLeft (blood routes) · conduction: sa av his branches purkinje (wave grows as named). data: {bpm?, beat?}
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

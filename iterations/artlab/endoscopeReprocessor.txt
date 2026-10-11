@@ -1,8 +1,0 @@
-endoscopeReprocessor: Automated endoscope reprocessor: cabinet with glass lid open, scope coiled in the basin, three colour-coded channel connector tubes from the basin manifold to the scope ports, control panel. anchors: machine lid basin scope connectors controlPanel · events: flush (fluid pulses along the connector tubes, basin churns, panel goes green)
-events: flush
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 after event "flush"
-4 "flush" later (ongoing motion)
-5 anchors (where labels and the camera land)

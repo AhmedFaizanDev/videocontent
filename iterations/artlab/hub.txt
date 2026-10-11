@@ -1,6 +1,0 @@
-hub: One central idea with 3–6 related parts. data: {center ≤22, items: 3–6 {label ≤22, note?}}
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

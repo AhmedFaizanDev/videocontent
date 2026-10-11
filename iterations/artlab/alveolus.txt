@@ -1,6 +1,0 @@
-alveolus: One air sac wrapped by a capillary; red cells arrive blue, leave red. anchors: alveolus capillary wall rbc · events: oxygen (O₂ into blood) co2 (CO₂ out to the sac)
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

@@ -1,6 +1,0 @@
-bars: Quantities compared, growing as spoken with count-up values. data: {unit?, max?, ref?: {value, label}, items: 2–8 {label ≤24, value: number, display?, tone?, note?, say?}}
-events: —
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 anchors (where labels and the camera land)

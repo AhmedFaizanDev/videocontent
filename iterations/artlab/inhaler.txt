@@ -1,8 +1,0 @@
-inhaler: Handheld metered-dose inhaler: metal canister inserted from the top of an L-shaped plastic actuator, mouthpiece to the side. anchors: canister mouthpiece mist puff · event: puff (canister pressed, mist sprays from the mouthpiece, then fades). data {tone?: "blue" | "brown"}
-events: puff
-tiles (left→right, top→bottom):
-1 first frames (drawing on)
-2 settled, no events
-3 after event "puff"
-4 "puff" later (ongoing motion)
-5 anchors (where labels and the camera land)
