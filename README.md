@@ -7,8 +7,8 @@ off-white page, Sora/Inter + Anek/Noto type, colourful animated medical illustra
 MedSkills brand, camera moves, foley, ducked music) with every reveal fired by the spoken
 word, renders it with Remotion, proves it with QA gates, and records production metrics.
 
-For end-to-end production from a PDF/brief, use the Claude Code playbook
-**`.claude/skills/lesson-series`**. Spec contract: **`docs/AUTHORING_GUIDE.md`**.
+Course PDF → video: `node scripts/batch.mts <project> all` (one writer call per lesson; see
+CLAUDE.md). Writer contract: **`docs/SCRIPT_BRIEF.md`**. Illustrations: **`docs/ART.md`**.
 
 ## Quick start
 
@@ -35,12 +35,9 @@ Every tool takes `<project> [ids… | --all | --range A B]` (no ids = all).
 | `npm run review -- <p> [ids] [--transitions]` | stills + contact sheet per lesson, layout gate |
 | `npm run render -- <p> [--force]` | render + master + SRT + thumbnail + YouTube chapters/credits + manifest; skips lessons already current |
 | `npm run qa -- <p>` | technical checks + MP4-vs-stills consistency + layout → `output/…/QA.md` |
+| `node scripts/batch.mts <p> plan\|write\|check\|produce\|all` | course PDFs → scripts (1 call each) → gates + ≤2 scoped repairs → produce |
 | `npm run produce -- <p> [--review]` | preflight the whole batch, then each lesson voiceover → render → qa; a failing lesson is set aside and the batch carries on; re-runs skip finished work |
-| `node scripts/brief.mts <p>` | the whole authoring contract for a project in one call (rules, scene shapes, art catalogue, word budget, fact ledger, gold excerpt) — what author agents read |
 | `node scripts/strings.mts extract\|apply …` | translate a finished lesson into another language (extract the text, translate, apply into a new project) |
-| `node scripts/certify.mts <p> [ids] [--strict]` | **local, before any bulk render:** preflight + real voice + layout/text audit at the real timings + assets → a certificate per lesson (`projects/<p>/CERTIFIED.md`) |
-| `node scripts/export.mts [projects…]` | package certified lessons + the pipeline for the render server (`dist/render-kit-<date>.tar.gz`, with RENDER.md) |
-| `node scripts/render-batch.mts [--list]` | **on the render server:** render + QA every certified, unchanged lesson; resumes; refuses anything edited after certification |
 | `node scripts/vendor-fonts.mts` | re-download the house fonts into `public/fonts` (only when the font set changes) |
 | `npm run metrics -- report` | measured time per stage + Claude token usage per video → `output/METRICS.md`, with an ETA/cost model for bulk runs (`metrics.mts authoring …` records a video's authoring tokens from Claude Code transcripts) |
 | `npm run studio` | Remotion Studio: every voiced lesson, by `<project>-<id>` |

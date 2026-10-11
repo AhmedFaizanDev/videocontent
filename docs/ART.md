@@ -77,18 +77,17 @@ A stage lesson needs the parts to read at any zoom (1–4×): no hairline detail
 Every anchor is exercised by `projects/fixtures/specs/F03` (endoscopy) and `F06`–`F08`
 (medical packs).
 
-## Automated: new parts for a new subject (house workflow, 2026-09-26)
-
-A series never waits on a human to say what to draw. The `lesson-series` skill runs:
-`series-planner` → `projects/<p>/visuals.json` (parts reused + specs of new ones) →
-`node scripts/art.mts gaps <p>` → one `art-author` per new pack (draft files
-`src/art/packs/<pack>.tsx` + `<pack>.catalog.draft.ts`) → `node scripts/art.mts check --pack
-<pack>` (gates: registered, anchors consistent and on the drawing, no text, draws on, spans its
-box, not cut off, colourful, deterministic, every event visible; gallery
-`iterations/artlab/<art>.png`) → `art-reviewer` (recognisable, correct against the ledger, house
-idiom, events and anchors; writes `iterations/artlab/<pack>.review.json`) → fixes, ≤3 rounds →
-`node scripts/art.mts approve <pack>` (the draft joins the library; registries regenerated). All
-three agents run on Sonnet. Drafts are bundled in isolation, so packs are drawn in parallel.
+## Onboarding a new subject (once, interactive, before its lessons are written)
+Aim for 4–8 illustrations per subject — one per device, structure or mechanism the module teaches.
+1. List what the module PDF teaches on a picture (devices, anatomy, a process inside a structure).
+2. For each: `find-assets` (above); ingest the best public-domain/CC BY match. If nothing fits,
+   draw a pack by hand in a Claude session (steps below) — no agent pipeline.
+3. Give each illustration 2–4 playbooks (src/playbooks.ts for code; the asset manifest's
+   `playbooks` or assets/playbooks/<art>.json): ordered moments, each a state/label/camera beat
+   with hint words (docs/PLAYBOOK_BRIEF.md).
+4. `node scripts/art.mts check <art…>` and LOOK at `iterations/artlab/<art>.png`: recognisable,
+   anatomically/technically correct, events visible. Reject anything you wouldn't show a clinician.
+5. List the arts in `projects/<p>/project.json` `arts` — the writer sees only these.
 
 ## Steps (by hand)
 
