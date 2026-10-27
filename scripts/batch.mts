@@ -114,7 +114,7 @@ function writerPrompt(v: Video) {
     v.outline ? `OUTLINE: ${v.outline}` : '',
     continuity(v),
     // the middle of the project's length at the voice's measured pace, less sentence pauses and scene holds
-    `TARGET: ~${Math.round((cfg.voice.wpm * (cfg.length.minutes[0] + cfg.length.minutes[1])) / 2 * 0.9)} narration words (${cfg.length.minutes[0]}–${cfg.length.minutes[1]} min).`,
+    `TARGET: ~${Math.round(cfg.voice.wpm * (cfg.length.target ?? (cfg.length.minutes[0] + cfg.length.minutes[1]) / 2) * 0.9)} narration words (aim ${cfg.length.target ?? (cfg.length.minutes[0] + cfg.length.minutes[1]) / 2} min; allowed ${cfg.length.minutes[0]}–${cfg.length.minutes[1]}).`,
     `PLAYBOOKS:\n${playbooks(cfg)}`,
     `ILLUSTRATIONS (for explain/opener/summary when no playbook fits):\n${arts(cfg)}`,
     `REFERENCE LESSON (another subject — match its picture-first teaching, part-by-part labelling and warm teacher voice, never its facts; yours is longer):\n${readFileSync(join(ROOT, 'docs', 'EXEMPLAR_LESSON.json'), 'utf8')}`,

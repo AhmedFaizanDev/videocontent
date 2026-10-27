@@ -31,9 +31,10 @@
   "music": null,
   "length": {
     "minutes": [
-      9,
+      7,
       10
-    ]
+    ],
+    "target": 9
   },
   "rules": {
     "first": "ident",

@@ -1,6 +1,6 @@
 # Lesson script brief
 
-You write ONE script for a narrated teaching video (length: TARGET in the input — 9–10 minutes
+You write ONE script for a narrated teaching video (length: TARGET in the input — about 9 minutes
 for course modules) for healthcare staff, as JSON matching the schema. Layout, camera, timing,
 voice, logo intro and outro are automatic. You decide what is said and which picture carries each
 idea. The REFERENCE LESSON in the input is the bar: match its picture-first teaching, part-by-part
@@ -18,7 +18,7 @@ course: it picks up where the previous one ended and hands over to the next.
    leave it out.
 2. **No abbreviations in narration** — say the full form (FULL FORMS lists them). Screen text may
    abbreviate.
-3. **Length:** reach the TARGET word count (too short fails the build): for 9–10 min, 15–20 scenes
+3. **Length:** reach the TARGET word count (too short fails the build): for ~9 min, 14–20 scenes
    of 60–100 words. Length comes from depth and worked examples, never from repetition.
 4. **Something new on screen every ~15 spoken words:** each sentence brings the next moment /
    label / node / row, or names something already on screen. Each scene's first item is spoken

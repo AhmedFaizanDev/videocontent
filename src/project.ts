@@ -61,7 +61,7 @@ export type ProjectConfig = {
    * measured narration (src/schedule.ts fitPace), and voiceover fails when the narration
    * can't fit at a comfortable pace.
    */
-  length: {minutes: [number, number]; exact?: number; /** comfortable range of the solved holds (default 0.9–2.1; short films run tighter) */ holds?: [number, number]};
+  length: {minutes: [number, number]; exact?: number; /** the length the writer aims for, inside `minutes` (default: their middle) */ target?: number; /** comfortable range of the solved holds (default 0.9–2.1; short films run tighter) */ holds?: [number, number]};
   rules: {
     first?: string;
     last?: string;

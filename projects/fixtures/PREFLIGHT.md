@@ -1,6 +1,6 @@
 # Preflight — fixtures
 
-## F01 — OK with warnings (2026-10-27T11:46:59.304Z)
+## F01 — OK with warnings (2026-10-27T11:54:33.321Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **timing** scene[2] callouts: "Stage 1 Twenty six charact" and "Stage 2 Twenty six charact" reveal 0.6 s apart — give each its own sentence
@@ -23,7 +23,7 @@
 - ⚠️ **timing** scene[6] callouts: "Layer 5: thirty characters lon" and "Layer 6: thirty characters lon" reveal 0.6 s apart — give each its own sentence
 - ⚠️ **timing** scene[8] points: "First point, long enough to wrap onto a second line" and "Second point, similarly long to wrap" reveal 0.5 s apart — give each its own sentence
 
-## F02 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F02 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **timing** scene[7] callouts: "Left point" and "Centre point" reveal 0.4 s apart — give each its own sentence
@@ -37,7 +37,7 @@
 - ⚠️ **timing** scene[12] right: "Slower" and "Thorough" reveal 0.5 s apart — give each its own sentence
 - ⚠️ **timing** scene[12] right: "Thorough" and "Robust" reveal 0.6 s apart — give each its own sentence
 
-## F03 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F03 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **timing** scene[1] callouts: "valves label" and "controlHead label" reveal 0.4 s apart — give each its own sentence
@@ -67,32 +67,32 @@
 - ⚠️ **timing** scene[7] callouts: "record label" and "connectors label" reveal 0.5 s apart — give each its own sentence
 - ⚠️ **timing** scene[7] callouts: "connectors label" and "missing label" reveal 0.7 s apart — give each its own sentence
 
-## F04 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F04 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **timing** scene[1] callouts: "Farm" and "Mill" reveal 0.8 s apart — give each its own sentence
 
-## F05 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F05 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 - ⚠️ **timing** scene[5] bullets: "Anatomy — four chambers" and "Valves — open and close" reveal 0.5 s apart — give each its own sentence
 
-## F06 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F06 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F07 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F07 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F08 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F08 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F10 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F10 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)
 
-## F11 — OK with warnings (2026-10-27T11:46:59.308Z)
+## F11 — OK with warnings (2026-10-27T11:54:33.323Z)
 
 - ⚠️ **grounding** no source material in projects/fixtures/source/ — numbers and terms are unchecked (add the client material, or reference-notes.md with citations)

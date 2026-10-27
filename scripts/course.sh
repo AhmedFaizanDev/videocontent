@@ -17,5 +17,7 @@ for p in "$@"; do
   node scripts/batch.mts "$p" all
   # a render that crashed (browser out of memory) gets one more try at lower concurrency
   RENDER_CONCURRENCY=4 node scripts/batch.mts "$p" produce
+  # the client deliverable: QA-passed videos in output/Delivery/<course>/<module>/
+  node scripts/deliver.mts "$p"
 done
 echo "━━ $(date '+%F %T') done: $*"
