@@ -39,6 +39,23 @@ Every lesson of **Medical Records and Clinical Documentation** (`projects/ms-mr-
   voice and music. Not needed for this course.
 - Headless Claude logged in (`claude -p`, the batch's writer).
 
+## Machine: Linux PC (i7-12700, 20 threads, 16 GB RAM), Claude Code in the terminal
+One-time setup (~30–60 min), then `npm test -- --fast` must be green before Phase 0:
+```
+sudo apt install -y ffmpeg poppler-utils python3-venv libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2 libpango-1.0-0 libcairo2
+npm install && npx remotion browser ensure
+python3 -m venv .venv && .venv/bin/pip install boto3 edge-tts faster-whisper
+# AWS credentials for Polly in ~/.aws/credentials ; `claude` on PATH and logged in (`claude -p hi` answers)
+```
+- The writer uses `claude` from PATH (`CLAUDE_BIN` overrides). `course.sh` keeps the PC awake with
+  `systemd-inhibit` when allowed; otherwise disable suspend in the power settings.
+- Run Phases 1–2 inside `tmux` so an SSH/terminal drop doesn't kill the session; Phase 3
+  (`course.sh`) is detached already.
+- 2 GB swap is small: if a render is killed (OOM, `dmesg | grep -i kill`), re-run with
+  `RENDER_CONCURRENCY=6`. Close browsers/IDEs during renders.
+- Estimate on this PC: ~15–20 h wall-clock for the whole course (Phase 1 art 3–5 h, Phase 2 1.5–3 h,
+  Phase 3 6–9 h); Claude usage-limit waits come on top.
+
 ## Phase 0 — decide the split from the PDFs (in the session, ~15 min, no model calls needed)
 For each module PDF (`pdftotext -layout`): list its numbered sections and word counts. One video
 should carry **~2,000–2,800 source words** (≈ 9 min of narration with explanation) and **never cut
@@ -108,7 +125,7 @@ sh scripts/course.sh ms-mr-55          # → iterations/course.log ; tail -f to 
   crash (out of memory) more than once, set `RENDER_CONCURRENCY=6` and re-run. One render at a
   time; nothing else heavy in parallel.
 - Estimate: ~10–12 min machine time per 9-min video → **~4–5 h** for ~23; writing ~2 min each.
-  Polly ≈ $6 for the course. Keep the Mac plugged in (`caffeinate` keeps it awake).
+  Polly ≈ $6 for the course. `course.sh` keeps the machine awake (caffeinate / systemd-inhibit).
 
 ## Output (organised for the client)
 - Render folder (working files): `output/MedSkills/MS_MR_55/` — MP4, SRT, poster, manifest, `QA.md`.

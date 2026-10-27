@@ -7,10 +7,18 @@
 #   sh scripts/course.sh <project> [project…]      → log: iterations/course.log
 #   tail -f iterations/course.log                   watch      ·   pkill -f scripts/course.sh   stop
 #
-# Render concurrency (Chrome tabs): RENDER_CONCURRENCY, default 8 — measured on this M5 (10 cores,
-# 16 GB) on the pilot lessons; a render that crashes (out of memory) is retried at 4.
+# Render concurrency (Chrome tabs): RENDER_CONCURRENCY, default 8 — sized for 16 GB RAM (M5 Mac,
+# i7-12700 Linux); a render that crashes (out of memory) is retried at 4.
+# Keeps the machine awake: caffeinate (macOS) or systemd-inhibit (Linux) when present.
 cd "$(dirname "$0")/.." || exit 1
-[ "$COURSE_DETACHED" = 1 ] || { COURSE_DETACHED=1 nohup caffeinate -ims sh "$0" "$@" >> iterations/course.log 2>&1 & echo "started (pid $!) — tail -f iterations/course.log"; exit 0; }
+mkdir -p iterations
+if [ "$COURSE_DETACHED" != 1 ]; then
+  if command -v caffeinate >/dev/null; then awake="caffeinate -ims"
+  elif systemd-inhibit --what=sleep:idle true 2>/dev/null; then awake="systemd-inhibit --what=sleep:idle --why=course-render"
+  else awake=""; fi
+  COURSE_DETACHED=1 nohup $awake sh "$0" "$@" >> iterations/course.log 2>&1 &
+  echo "started (pid $!) — tail -f iterations/course.log"; exit 0
+fi
 export RENDER_CONCURRENCY="${RENDER_CONCURRENCY:-8}"
 for p in "$@"; do
   echo "━━ $(date '+%F %T') $p (render concurrency $RENDER_CONCURRENCY)"

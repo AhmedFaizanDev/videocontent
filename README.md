@@ -15,7 +15,7 @@ CLAUDE.md). Writer contract: **`docs/SCRIPT_BRIEF.md`**. Illustrations: **`docs/
 ```bash
 npm install
 python3 -m venv .venv && .venv/bin/pip install boto3 edge-tts faster-whisper   # Polly (needs ~/.aws/credentials), Edge for mr/kn, Whisper check
-brew install ffmpeg                                         # probing, mastering, QA
+brew install ffmpeg poppler        # macOS; Linux: see HANDOFF.md "Machine"
 
 npm test -- --fast                                          # pipeline healthy?
 node scripts/new-project.mts biology-101 "Biology 101" "Life Sciences"
