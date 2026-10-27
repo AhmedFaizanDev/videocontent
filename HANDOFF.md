@@ -1,5 +1,8 @@
 # HANDOFF — course videos from PDFs, unattended (first course: MS-MR-55 Medical Records)
 
+**Fully unattended:** `sh scripts/autopilot.sh ms-mr-55` runs all phases below with headless Claude
+(brief: `docs/AUTOPILOT.md`), renders the bulk itself, and resumes after usage limits.
+
 Read this, `CLAUDE.md`, `docs/SCRIPT_BRIEF.md` and `docs/ART.md` first. The owner is **away for
 the whole run**: no questions, no waiting for approval. Decide from this file and the evidence; if
 one video is truly blocked, set it aside, finish the rest, and report it.
