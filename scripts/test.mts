@@ -175,7 +175,7 @@ step('3 units', () => {
     assert.ok(CATALOG.table.anchors(t).includes('r2c2'));
     assert.ok(CATALOG.table.check({columns: ['a', 'b'], rows: [['x']]}).some((m) => m.includes('must have 2 cells')));
   }
-  assert.ok(p.pacing.sentencePause > 0 && p.pacing.breathe <= 1 && p.voice.wpm >= 120 && p.voice.wpm <= 150, 'house pacing is natural (measured ~128 wpm at +10%, little dead air)');
+  assert.ok(p.pacing.sentencePause > 0 && p.pacing.breathe <= 1 && p.voice.wpm >= 120 && p.voice.wpm <= 160, 'house pacing is natural (Polly Kiara measured ~148–153 wpm, little dead air)');
   // shorthand scenes compile to stages whose beats fire on words the narration speaks
   {
     const flow = compileScene({type: 'flow', kicker: 'k', narration: 'Arrest first. Then the rhythm decides. A shockable rhythm gets a shock.', mermaid: 'flowchart LR\n A([Arrest]) --> B{Rhythm?}\n B --> C[Shockable]', tour: true});

@@ -32,5 +32,11 @@
     "tendineae": "ten-din-ee-ee",
     "venae": "vee-nee",
     "cavae": "kay-vee"
+  },
+  "voice": {
+    "name": "en-IN-NeerjaNeural",
+    "rate": "+10%",
+    "pitch": "+0Hz",
+    "wpm": 128
   }
 }

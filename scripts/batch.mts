@@ -79,20 +79,48 @@ const fullFormsNote = (cfg: any) => {
 };
 const brief = () => readFileSync(join(ROOT, 'docs', 'SCRIPT_BRIEF.md'), 'utf8');
 
+/** The course is one continuous story: each video recaps the previous one and previews the next. */
+function continuity(v: Video) {
+  const vids = course().videos;
+  const i = vids.findIndex((x) => x.id === v.id);
+  const prev = vids[i - 1];
+  const next = vids[i + 1];
+  // the previous video's own take-aways, when its script exists (scripts are written in course order)
+  const prevNotes = prev && existsSync(specPath(project, prev.id)) ? (JSON.parse(readFileSync(specPath(project, prev.id), 'utf8')).scenes ?? []).filter((s: any) => s.type === 'summary').flatMap((s: any) => (s.notes ?? []).map((n: any) => n.note)) : [];
+  return [
+    prev ? `PREVIOUS VIDEO: "${prev.title ?? prev.id}" — ${prev.outline ?? ''}${prevNotes.length ? ` Its take-aways: ${prevNotes.join(' · ')}` : ''}` : 'PREVIOUS VIDEO: none — this is the first video of the course (no recap scene).',
+    next ? `NEXT VIDEO: "${next.title ?? next.id}" — ${next.outline ?? ''}` : 'NEXT VIDEO: none — this is the last video of the course (the preview scene closes the course instead).',
+  ].join('\n');
+}
+/** Facts the writer added beyond the client's PDF, each with its source, join the project's fact ledger (source/added/), so grounding accepts them and a reviewer can audit them. */
+const ledger = (id: string, spec: any) => {
+  const {added, ...rest} = spec ?? {};
+  if (Array.isArray(added) && added.length) {
+    const f = join(PD, 'source', 'added', `${id}.md`);
+    mkdirSync(join(PD, 'source', 'added'), {recursive: true});
+    // a repair may add facts too: keep every entry, once
+    const have = existsSync(f) ? readFileSync(f, 'utf8').split('\n').filter((l) => l.startsWith('- ')) : [];
+    const lines = [...new Set([...have, ...added.map((a: any) => `- ${a.fact} [${a.source}]`)])];
+    writeFileSync(f, `# ${id} — facts added beyond the client's material (audit these)\n\n${lines.join('\n')}\n`);
+  }
+  return rest;
+};
+
 function writerPrompt(v: Video) {
   const cfg = loadProject(project);
   const user = [
     `COURSE: ${cfg.name} — ${cfg.series}. Audience: clinical staff.`,
     `LESSON: id "${v.id}"${v.title ? `, title "${v.title}"` : ''}. outputFilename: "${(cfg.brand?.name ?? 'Lesson').replace(/\W+/g, '')}_${project.replace(/\W+/g, '_')}_${v.id}.mp4". module: "${v.title ?? v.id}".`,
     v.outline ? `OUTLINE: ${v.outline}` : '',
-    // 5:00 at the voice's measured pace, less the sentence pauses and scene holds
-    `TARGET: ~${Math.round(cfg.voice.wpm * 4.5)} narration words.`,
+    continuity(v),
+    // the middle of the project's length at the voice's measured pace, less sentence pauses and scene holds
+    `TARGET: ~${Math.round((cfg.voice.wpm * (cfg.length.minutes[0] + cfg.length.minutes[1])) / 2 * 0.9)} narration words (${cfg.length.minutes[0]}–${cfg.length.minutes[1]} min).`,
     `PLAYBOOKS:\n${playbooks(cfg)}`,
     `ILLUSTRATIONS (for explain/opener/summary when no playbook fits):\n${arts(cfg)}`,
-    `REFERENCE LESSON (another module — match its depth and picture-first rhythm, never its facts):\n${readFileSync(join(ROOT, 'docs', 'EXEMPLAR_M01.json'), 'utf8')}`,
+    `REFERENCE LESSON (another subject — match its picture-first teaching, part-by-part labelling and warm teacher voice, never its facts; yours is longer):\n${readFileSync(join(ROOT, 'docs', 'EXEMPLAR_LESSON.json'), 'utf8')}`,
     cfg.lang && cfg.lang !== 'en' ? `LANGUAGE: narration and all on-screen text in native ${cfg.lang} script (numbers as digits).` : '',
     fullFormsNote(cfg),
-    `SOURCE EXCERPT (the only allowed facts):\n<<<\n${tidy(sourceText(v)).slice(0, 60000)}\n>>>`,
+    `SOURCE EXCERPT (the client's material — every number and requirement comes from here; added depth only via \`added\`):\n<<<\n${tidy(sourceText(v)).slice(0, 60000)}\n>>>`,
   ].filter(Boolean).join('\n\n');
   return {system: brief(), user};
 }
@@ -112,7 +140,7 @@ function write(only: string[]) {
       continue;
     }
     mkdirSync(join(PD, 'specs'), {recursive: true});
-    writeFileSync(specPath(project, v.id), JSON.stringify({...spec, id: v.id}, null, 2) + '\n');
+    writeFileSync(specPath(project, v.id), JSON.stringify({...ledger(v.id, spec), id: v.id}, null, 2) + '\n');
     recordStage(project, v.id, 'write', {seconds: Math.round((Date.now() - t0) / 1000)});
     console.log(`  ✍️  ${v.id}: written in ${Math.round((Date.now() - t0) / 1000)} s`);
   }
@@ -164,6 +192,7 @@ function check(only: string[]) {
       let out: any;
       try {
         out = llm(writerPrompt(v).system, `Fix these build errors by rewriting ONLY ${which}; return the whole script. You may reword narration, re-order items or change a scene's screen type. Errors:\n${g.errs.join('\n')}\n\nSCRIPT:\n${JSON.stringify(before)}`, {id: v.id, role: `repair${n + 1}`});
+        out = ledger(v.id, out);
       } catch (e) {
         if (/login/i.test(String(e))) throw e;
         log.push(`repair failed: ${(e as Error).message.slice(0, 120)}`);

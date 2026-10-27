@@ -1,0 +1,353 @@
+{
+  "id": "L1",
+  "title": "Breathing and Gas Exchange in the Lungs",
+  "outputFilename": "MedSkills_pilot_lungs_L1.mp4",
+  "module": "Breathing and Gas Exchange in the Lungs",
+  "scenes": [
+    {
+      "type": "opener",
+      "kicker": "Clinical foundations",
+      "title": "Breathing and Gas Exchange",
+      "art": "lungs",
+      "act": [
+        "inhale",
+        "exhale"
+      ],
+      "narration": "Breathing and gas exchange. Right now, without a single thought, you breathe in, and you breathe out. So what actually happens inside the chest with every breath? Let's find out!"
+    },
+    {
+      "type": "explain",
+      "kicker": "The airway",
+      "art": "lungs",
+      "narration": "Let's follow one breath down the trachea, the windpipe! Air enters through the nose or mouth, passes the pharynx and larynx, and drops into this tube. C-shaped rings of cartilage hold it open. At its base, the trachea divides into the right and left primary bronchi. These branch again and again into smaller bronchioles, and every tiny branch ends in air sacs called alveoli. That's where the real work happens.",
+      "points": [
+        {
+          "on": "trachea",
+          "label": "Trachea",
+          "say": [
+            "trachea"
+          ],
+          "note": "C-shaped cartilage rings hold it open"
+        },
+        {
+          "on": "bronchi",
+          "label": "Primary bronchi",
+          "say": [
+            "bronchi"
+          ]
+        },
+        {
+          "on": "lungs",
+          "label": "Bronchioles",
+          "say": [
+            "bronchioles"
+          ]
+        },
+        {
+          "on": "alveoli",
+          "label": "Alveoli",
+          "say": [
+            "alveoli"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "By the numbers",
+      "narration": "How big is this exchange surface? Remarkably big! The lungs hold about 300 million alveoli. Spread flat, they would cover about 70 square metres, a huge surface for gas exchange packed inside your chest. The air arriving there is about 21% oxygen. And a healthy adult at rest refreshes it about 12 to 20 times a minute, every minute of the day. A vast surface, a steady supply of fresh air: that combination is what keeps every cell in your body supplied.",
+      "columns": [
+        "Measure",
+        "Typical value"
+      ],
+      "rows": [
+        [
+          "Alveoli in the lungs",
+          "about 300 million"
+        ],
+        [
+          "Surface for gas exchange",
+          "about 70 m²"
+        ],
+        [
+          "Oxygen in the air",
+          "about 21%"
+        ],
+        [
+          "Breathing rate at rest",
+          "12–20 a minute"
+        ]
+      ],
+      "say": [
+        [
+          "alveoli"
+        ],
+        [
+          "square"
+        ],
+        [
+          "oxygen"
+        ],
+        [
+          "rest"
+        ]
+      ]
+    },
+    {
+      "type": "explain",
+      "kicker": "Breathing in",
+      "art": "lungs",
+      "narration": "So how does air get in? Meet the diaphragm, a dome-shaped sheet of muscle under the lungs. When you inhale, the diaphragm contracts and flattens, moving down, while the external intercostal muscles lift the ribs. The chest cavity gets bigger, so the pressure inside the lungs falls below the air pressure outside, and air rushes in. During quiet breathing, the diaphragm alone accounts for about 75% of the air that enters. It is the star muscle of inhalation!",
+      "points": [
+        {
+          "on": "diaphragm",
+          "label": "Diaphragm",
+          "say": [
+            "diaphragm"
+          ]
+        },
+        {
+          "act": "inhale",
+          "say": [
+            "inhale"
+          ],
+          "note": "Diaphragm contracts and flattens: chest cavity gets bigger"
+        },
+        {
+          "on": "lungs",
+          "label": "Pressure falls, air flows in",
+          "say": [
+            "rushes"
+          ]
+        },
+        {
+          "on": "diaphragm",
+          "label": "About 75% of quiet breathing",
+          "say": [
+            "accounts"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "explain",
+      "kicker": "Breathing out",
+      "art": "lungs",
+      "narration": "Now here's the elegant part. At rest, breathing out takes no effort at all: it is passive. When you exhale, the diaphragm and intercostal muscles simply relax. The diaphragm domes upward again, and the elastic lungs recoil, like a stretched spring letting go. The chest cavity gets smaller, the pressure in the lungs rises above the outside pressure, and air flows out. No pushing needed. Relaxation does the job!",
+      "points": [
+        {
+          "act": "exhale",
+          "say": [
+            "exhale"
+          ],
+          "note": "At rest, exhalation is passive"
+        },
+        {
+          "on": "diaphragm",
+          "label": "Diaphragm domes upward",
+          "say": [
+            "domes"
+          ]
+        },
+        {
+          "on": "lungs",
+          "label": "Elastic lungs recoil",
+          "say": [
+            "recoil"
+          ]
+        },
+        {
+          "on": "trachea",
+          "label": "Pressure rises, air out",
+          "say": [
+            "flows"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "kicker": "In versus out",
+      "narration": "Let's put the two side by side. On the way in, the diaphragm contracts; on the way out, it relaxes. The chest cavity grows, then shrinks. The pressure in the lungs drops below the outside air, then rises above it. And so the air flows in, then out. One muscle, two states, and the pressure difference does the moving.",
+      "columns": [
+        "",
+        "Breathing in",
+        "Breathing out"
+      ],
+      "rows": [
+        [
+          "Diaphragm",
+          "Contracts, flattens",
+          "Relaxes, domes up"
+        ],
+        [
+          "Chest cavity",
+          "Gets bigger",
+          "Gets smaller"
+        ],
+        [
+          "Lung pressure",
+          "Below outside air",
+          "Above outside air"
+        ],
+        [
+          "Air",
+          "Flows in",
+          "Flows out"
+        ]
+      ],
+      "say": [
+        [
+          "contracts"
+        ],
+        [
+          "cavity"
+        ],
+        [
+          "pressure"
+        ],
+        [
+          "flows"
+        ]
+      ]
+    },
+    {
+      "type": "explain",
+      "kicker": "Gas exchange",
+      "art": "alveolus",
+      "narration": "Now zoom in to a single alveolus, wrapped in a pulmonary capillary. Here, each gas moves by diffusion, from where its partial pressure is higher to where it is lower. The alveolar wall and the capillary wall are each just one thin layer of cells. Together they form the respiratory membrane, only about 0.5 micrometres thick, so diffusion is fast. Red blood cells arrive deoxygenated. Oxygen diffuses into the blood, and carbon dioxide diffuses out, into the air sac.",
+      "points": [
+        {
+          "on": "capillary",
+          "label": "Pulmonary capillary",
+          "say": [
+            "capillary"
+          ]
+        },
+        {
+          "on": "wall",
+          "label": "Membrane: about 0.5 µm",
+          "say": [
+            "membrane"
+          ]
+        },
+        {
+          "on": "rbc",
+          "label": "Red cells arrive low in O₂",
+          "say": [
+            "red"
+          ]
+        },
+        {
+          "act": "oxygen",
+          "say": [
+            "oxygen"
+          ],
+          "note": "Oxygen: from the air sac into the blood"
+        },
+        {
+          "act": "co2",
+          "say": [
+            "carbon"
+          ],
+          "note": "Carbon dioxide: from the blood into the air sac"
+        }
+      ]
+    },
+    {
+      "type": "flow",
+      "kicker": "Two journeys",
+      "narration": "Oxygen leaves the alveolar air, and two journeys begin! It passes through the respiratory membrane into the blood, where it is carried mostly by haemoglobin inside red blood cells. The blood leaves the lungs oxygenated. Bright, oxygen-rich blood, ready for the whole body. Meanwhile, carbon dioxide, a waste product of the body's cells, makes the opposite trip: from the blood into the alveolus, and out with your next breath. In, and out. Beautifully simple!",
+      "mermaid": "flowchart LR\n A[Alveolar air] --> B[Respiratory membrane] --> C[Haemoglobin in red cells]:::red --> D[Blood leaves oxygenated]:::red\n E[Carbon dioxide from cells]:::blue --> F[Into the alveolus]:::blue --> G[Breathed out]:::blue",
+      "steps": [
+        {
+          "show": [
+            "A"
+          ],
+          "focus": "A",
+          "say": [
+            "alveolar"
+          ]
+        },
+        {
+          "show": [
+            "B"
+          ],
+          "focus": "B",
+          "say": [
+            "through"
+          ]
+        },
+        {
+          "show": [
+            "C"
+          ],
+          "focus": "C",
+          "say": [
+            "haemoglobin"
+          ]
+        },
+        {
+          "show": [
+            "D"
+          ],
+          "focus": "D",
+          "say": [
+            "oxygenated"
+          ]
+        },
+        {
+          "show": [
+            "E"
+          ],
+          "focus": "E",
+          "say": [
+            "waste"
+          ]
+        },
+        {
+          "show": [
+            "F"
+          ],
+          "focus": "F",
+          "say": [
+            "opposite"
+          ]
+        },
+        {
+          "show": [
+            "G"
+          ],
+          "focus": "G",
+          "say": [
+            "next"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "kicker": "Recap",
+      "art": "lungs",
+      "act": [
+        "inhale",
+        "exhale"
+      ],
+      "narration": "Let's recap! Air travels down the trachea and bronchi to about 300 million alveoli. Breathing in is active: the diaphragm contracts and the lungs fill. Breathing out at rest is passive: the muscles relax and the lungs recoil. And in each alveolus, oxygen diffuses into the blood while carbon dioxide diffuses out. Twelve to twenty times a minute, all day, all night. That's every breath you take, explained!",
+      "notes": [
+        {
+          "say": [
+            "active"
+          ],
+          "note": "In: the diaphragm contracts. Out: relax and recoil"
+        },
+        {
+          "say": [
+            "diffuses"
+          ],
+          "note": "Oxygen in, carbon dioxide out, by diffusion"
+        }
+      ]
+    }
+  ]
+}

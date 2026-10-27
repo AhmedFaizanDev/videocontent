@@ -1,10 +1,10 @@
 {
   "id": "P2",
   "fps": 30,
-  "totalDurationInFrames": 8221,
+  "totalDurationInFrames": 7683,
   "voice": {
-    "id": "en-IN-NeerjaNeural",
-    "name": "en-IN-NeerjaNeural"
+    "id": "Kiara",
+    "name": "Kiara"
   },
   "scenes": [
     {
@@ -25,3442 +25,3442 @@
     {
       "index": 2,
       "type": "stage",
-      "hash": "23a959626f7f",
+      "hash": "9fa2e7576483",
       "narration": "Reprocessing fails in ten documented places. Each has been identified in a published outbreak investigation, and none is exotic. This lesson follows them across the endoscope, then looks at traceability and pressure.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-2.mp3",
-      "voDurationInSeconds": 15.648,
-      "voDurationInFrames": 470,
+      "voDurationInSeconds": 13.92,
+      "voDurationInFrames": 418,
       "captions": [
         {
           "text": "Reprocessing fails in ten documented",
-          "start": 0.1,
-          "end": 2.282
+          "start": 0,
+          "end": 2.583
         },
         {
           "text": "places. Each has been identified in a",
-          "start": 2.282,
-          "end": 5.536
+          "start": 2.583,
+          "end": 5.136
         },
         {
           "text": "published outbreak investigation, and none",
-          "start": 5.536,
-          "end": 7.922
+          "start": 5.136,
+          "end": 7.816
         },
         {
           "text": "is exotic. This lesson follows them across",
-          "start": 7.922,
-          "end": 11.62
+          "start": 7.816,
+          "end": 10.56
         },
         {
           "text": "the endoscope, then looks at traceability",
-          "start": 11.62,
-          "end": 14.029
+          "start": 10.56,
+          "end": 13.065
         },
         {
           "text": "and pressure.",
-          "start": 14.029,
-          "end": 14.979
+          "start": 13.065,
+          "end": 14.059999999999999
         }
       ],
       "words": [
         {
           "w": "reprocessing",
-          "start": 0.1,
-          "end": 0.941
+          "start": 0,
+          "end": 0.908
         },
         {
           "w": "fails",
-          "start": 0.952,
-          "end": 1.27
+          "start": 0.908,
+          "end": 1.327
         },
         {
           "w": "in",
-          "start": 1.282,
-          "end": 1.418
+          "start": 1.327,
+          "end": 1.536
         },
         {
           "w": "ten",
-          "start": 1.43,
-          "end": 1.691
+          "start": 1.536,
+          "end": 1.815
         },
         {
           "w": "documented",
-          "start": 1.702,
-          "end": 2.27
+          "start": 1.815,
+          "end": 2.583
         },
         {
           "w": "places",
-          "start": 2.282,
-          "end": 2.873
+          "start": 2.583,
+          "end": 3.072
         },
         {
           "w": "each",
-          "start": 3.922,
-          "end": 4.206
+          "start": 3.222,
+          "end": 3.541
         },
         {
           "w": "has",
-          "start": 4.217,
-          "end": 4.365
+          "start": 3.541,
+          "end": 3.796
         },
         {
           "w": "been",
-          "start": 4.377,
-          "end": 4.536
+          "start": 3.796,
+          "end": 4.115
         },
         {
           "w": "identified",
-          "start": 4.547,
-          "end": 5.342
+          "start": 4.115,
+          "end": 4.817
         },
         {
           "w": "in",
-          "start": 5.354,
-          "end": 5.467
+          "start": 4.817,
+          "end": 5.009
         },
         {
           "w": "a",
-          "start": 5.479,
-          "end": 5.524
+          "start": 5.009,
+          "end": 5.136
         },
         {
           "w": "published",
-          "start": 5.536,
-          "end": 6.036
+          "start": 5.136,
+          "end": 5.774
         },
         {
           "w": "outbreak",
-          "start": 6.047,
-          "end": 6.467
+          "start": 5.774,
+          "end": 6.348
         },
         {
           "w": "investigation",
-          "start": 6.479,
-          "end": 7.331
+          "start": 6.348,
+          "end": 7.242
         },
         {
           "w": "and",
-          "start": 7.433,
-          "end": 7.695
+          "start": 7.242,
+          "end": 7.497
         },
         {
           "w": "none",
-          "start": 7.706,
-          "end": 7.911
+          "start": 7.497,
+          "end": 7.816
         },
         {
           "w": "is",
-          "start": 7.922,
-          "end": 8.036
+          "start": 7.816,
+          "end": 8.007
         },
         {
           "w": "exotic",
-          "start": 8.047,
-          "end": 8.661
+          "start": 8.007,
+          "end": 8.454
         },
         {
           "w": "this",
-          "start": 9.688,
-          "end": 10.063
+          "start": 8.604,
+          "end": 8.91
         },
         {
           "w": "lesson",
-          "start": 10.074,
-          "end": 10.438
+          "start": 8.91,
+          "end": 9.337
         },
         {
           "w": "follows",
-          "start": 10.449,
-          "end": 10.915
+          "start": 9.337,
+          "end": 9.826
         },
         {
           "w": "them",
-          "start": 10.927,
-          "end": 11.154
+          "start": 9.826,
+          "end": 10.132
         },
         {
           "w": "across",
-          "start": 11.165,
-          "end": 11.608
+          "start": 10.132,
+          "end": 10.56
         },
         {
           "w": "the",
-          "start": 11.62,
-          "end": 11.768
+          "start": 10.56,
+          "end": 10.804
         },
         {
           "w": "endoscope",
-          "start": 11.779,
-          "end": 12.427
+          "start": 10.804,
+          "end": 11.415
         },
         {
           "w": "then",
-          "start": 12.563,
-          "end": 12.779
+          "start": 11.415,
+          "end": 11.721
         },
         {
           "w": "looks",
-          "start": 12.79,
-          "end": 13.074
+          "start": 11.721,
+          "end": 12.088
         },
         {
           "w": "at",
-          "start": 13.086,
-          "end": 13.245
+          "start": 12.088,
+          "end": 12.271
         },
         {
           "w": "traceability",
-          "start": 13.256,
-          "end": 14.018
+          "start": 12.271,
+          "end": 13.065
         },
         {
           "w": "and",
-          "start": 14.029,
-          "end": 14.313
+          "start": 13.065,
+          "end": 13.31
         },
         {
           "w": "pressure",
-          "start": 14.324,
-          "end": 14.779
+          "start": 13.31,
+          "end": 13.86
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 526,
+      "durationInFrames": 474,
       "startFrame": 96
     },
     {
       "index": 3,
       "type": "stage",
-      "hash": "0052dafac84c",
+      "hash": "458286f7b3db",
       "narration": "Failure points one and two come early. First, a delayed bedside pre-clean lets material dry, so biofilm establishes. Second, the leak test is omitted. When the scope is pressurised, bubbles rising from a breach in the sheath reveal the damage, and the gauge falls. Skip this test and a damaged scope is immersed, letting fluid reach an interior that cannot be cleaned.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-3.mp3",
-      "voDurationInSeconds": 26.28,
-      "voDurationInFrames": 789,
+      "voDurationInSeconds": 24.528,
+      "voDurationInFrames": 736,
       "captions": [
         {
           "text": "Failure points one and two come early.",
-          "start": 0.1,
-          "end": 2.4250000000000003
+          "start": 0,
+          "end": 2.478
         },
         {
           "text": "First, a delayed bedside pre-clean lets",
-          "start": 3.274,
-          "end": 5.842
+          "start": 2.478,
+          "end": 5.571
         },
         {
           "text": "material dry, so biofilm establishes.",
-          "start": 5.842,
-          "end": 8.655999999999999
+          "start": 5.571,
+          "end": 8.652
         },
         {
           "text": "Second, the leak test is omitted.",
-          "start": 9.496,
-          "end": 11.831999999999999
+          "start": 8.652,
+          "end": 11.322
         },
         {
           "text": "When the scope is pressurised, bubbles",
-          "start": 12.67,
-          "end": 14.795
+          "start": 11.322,
+          "end": 13.516
         },
         {
           "text": "rising from a breach in the sheath reveal",
-          "start": 14.795,
-          "end": 16.806
+          "start": 13.516,
+          "end": 15.94
         },
         {
           "text": "the damage, and the gauge falls.",
-          "start": 16.806,
-          "end": 18.961
+          "start": 15.94,
+          "end": 17.88
         },
         {
           "text": "Skip this test and a damaged scope is",
-          "start": 19.804,
-          "end": 21.986
+          "start": 17.88,
+          "end": 20.339
         },
         {
           "text": "immersed, letting fluid reach an interior",
-          "start": 21.986,
-          "end": 24.202
+          "start": 20.339,
+          "end": 22.992
         },
         {
           "text": "that cannot be cleaned.",
-          "start": 24.202,
-          "end": 25.628999999999998
+          "start": 22.992,
+          "end": 24.68
         }
       ],
       "words": [
         {
           "w": "failure",
-          "start": 0.1,
-          "end": 0.532
+          "start": 0,
+          "end": 0.49
         },
         {
           "w": "points",
-          "start": 0.543,
-          "end": 0.861
+          "start": 0.49,
+          "end": 0.919
         },
         {
           "w": "one",
-          "start": 0.873,
-          "end": 1.18
+          "start": 0.919,
+          "end": 1.164
         },
         {
           "w": "and",
-          "start": 1.191,
-          "end": 1.361
+          "start": 1.164,
+          "end": 1.409
         },
         {
           "w": "two",
-          "start": 1.373,
-          "end": 1.475
+          "start": 1.409,
+          "end": 1.654
         },
         {
           "w": "come",
-          "start": 1.486,
-          "end": 1.793
+          "start": 1.654,
+          "end": 1.96
         },
         {
           "w": "early",
-          "start": 1.805,
-          "end": 2.225
+          "start": 1.96,
+          "end": 2.328
         },
         {
           "w": "first",
-          "start": 3.274,
-          "end": 3.819
+          "start": 2.478,
+          "end": 2.966
         },
         {
           "w": "a",
-          "start": 4.001,
-          "end": 4.115
+          "start": 2.966,
+          "end": 3.129
         },
         {
           "w": "delayed",
-          "start": 4.126,
-          "end": 4.456
+          "start": 3.129,
+          "end": 3.78
         },
         {
           "w": "bedside",
-          "start": 4.467,
-          "end": 4.99
+          "start": 3.78,
+          "end": 4.432
         },
         {
           "w": "preclean",
-          "start": 5.001,
-          "end": 5.49
+          "start": 4.432,
+          "end": 5.164
         },
         {
           "w": "lets",
-          "start": 5.501,
-          "end": 5.831
+          "start": 5.164,
+          "end": 5.571
         },
         {
           "w": "material",
-          "start": 5.842,
-          "end": 6.308
+          "start": 5.571,
+          "end": 6.304
         },
         {
           "w": "dry",
-          "start": 6.319,
-          "end": 6.672
+          "start": 6.304,
+          "end": 6.63
         },
         {
           "w": "so",
-          "start": 6.819,
-          "end": 6.99
+          "start": 6.63,
+          "end": 6.874
         },
         {
           "w": "biofilm",
-          "start": 7.001,
-          "end": 7.581
+          "start": 6.874,
+          "end": 7.525
         },
         {
           "w": "establishes",
-          "start": 7.592,
-          "end": 8.456
+          "start": 7.525,
+          "end": 8.502
         },
         {
           "w": "second",
-          "start": 9.496,
-          "end": 10.098
+          "start": 8.652,
+          "end": 9.203
         },
         {
           "w": "the",
-          "start": 10.235,
-          "end": 10.36
+          "start": 9.203,
+          "end": 9.518
         },
         {
           "w": "leak",
-          "start": 10.371,
-          "end": 10.621
+          "start": 9.518,
+          "end": 9.912
         },
         {
           "w": "test",
-          "start": 10.632,
-          "end": 10.973
+          "start": 9.912,
+          "end": 10.306
         },
         {
           "w": "is",
-          "start": 10.985,
-          "end": 11.155
+          "start": 10.306,
+          "end": 10.542
         },
         {
           "w": "omitted",
-          "start": 11.166,
-          "end": 11.632
+          "start": 10.542,
+          "end": 11.172
         },
         {
           "w": "when",
-          "start": 12.67,
-          "end": 12.897
+          "start": 11.322,
+          "end": 11.611
         },
         {
           "w": "the",
-          "start": 12.909,
-          "end": 12.988
+          "start": 11.611,
+          "end": 11.842
         },
         {
           "w": "scope",
-          "start": 13,
-          "end": 13.34
+          "start": 11.842,
+          "end": 12.188
         },
         {
           "w": "is",
-          "start": 13.352,
-          "end": 13.477
+          "start": 12.188,
+          "end": 12.361
         },
         {
           "w": "pressurised",
-          "start": 13.488,
-          "end": 14.204
+          "start": 12.361,
+          "end": 13.054
         },
         {
           "w": "bubbles",
-          "start": 14.318,
-          "end": 14.784
+          "start": 13.054,
+          "end": 13.516
         },
         {
           "w": "rising",
-          "start": 14.795,
-          "end": 15.227
+          "start": 13.516,
+          "end": 13.92
         },
         {
           "w": "from",
-          "start": 15.238,
-          "end": 15.443
+          "start": 13.92,
+          "end": 14.208
         },
         {
           "w": "a",
-          "start": 15.454,
-          "end": 15.511
+          "start": 14.208,
+          "end": 14.324
         },
         {
           "w": "breach",
-          "start": 15.522,
-          "end": 15.886
+          "start": 14.324,
+          "end": 14.728
         },
         {
           "w": "in",
-          "start": 15.897,
-          "end": 16.011
+          "start": 14.728,
+          "end": 14.901
         },
         {
           "w": "the",
-          "start": 16.022,
-          "end": 16.102
+          "start": 14.901,
+          "end": 15.132
         },
         {
           "w": "sheath",
-          "start": 16.113,
-          "end": 16.431
+          "start": 15.132,
+          "end": 15.536
         },
         {
           "w": "reveal",
-          "start": 16.443,
-          "end": 16.795
+          "start": 15.536,
+          "end": 15.94
+        },
+        {
+          "w": "the",
+          "start": 15.94,
+          "end": 16.171
+        },
+        {
+          "w": "damage",
+          "start": 16.171,
+          "end": 16.575
+        },
+        {
+          "w": "and",
+          "start": 16.575,
+          "end": 16.806
         },
         {
           "w": "the",
           "start": 16.806,
-          "end": 16.886
-        },
-        {
-          "w": "damage",
-          "start": 16.897,
-          "end": 17.431
-        },
-        {
-          "w": "and",
-          "start": 17.625,
-          "end": 17.852
-        },
-        {
-          "w": "the",
-          "start": 17.863,
-          "end": 17.931
+          "end": 17.037
         },
         {
           "w": "gauge",
-          "start": 17.943,
-          "end": 18.238
+          "start": 17.037,
+          "end": 17.384
         },
         {
           "w": "falls",
-          "start": 18.25,
-          "end": 18.761
+          "start": 17.384,
+          "end": 17.73
         },
         {
           "w": "skip",
-          "start": 19.804,
-          "end": 20.19
+          "start": 17.88,
+          "end": 18.204
         },
         {
           "w": "this",
-          "start": 20.202,
-          "end": 20.44
+          "start": 18.204,
+          "end": 18.527
         },
         {
           "w": "test",
-          "start": 20.452,
-          "end": 20.793
+          "start": 18.527,
+          "end": 18.851
         },
         {
           "w": "and",
-          "start": 20.804,
-          "end": 20.94
+          "start": 18.851,
+          "end": 19.109
         },
         {
           "w": "a",
-          "start": 20.952,
-          "end": 20.997
+          "start": 19.109,
+          "end": 19.239
         },
         {
           "w": "damaged",
-          "start": 21.009,
-          "end": 21.486
+          "start": 19.239,
+          "end": 19.756
         },
         {
           "w": "scope",
-          "start": 21.497,
-          "end": 21.827
+          "start": 19.756,
+          "end": 20.145
         },
         {
           "w": "is",
-          "start": 21.838,
-          "end": 21.974
+          "start": 20.145,
+          "end": 20.339
         },
         {
           "w": "immersed",
-          "start": 21.986,
-          "end": 22.463
+          "start": 20.339,
+          "end": 20.921
         },
         {
           "w": "letting",
-          "start": 22.588,
-          "end": 22.94
+          "start": 20.921,
+          "end": 21.439
         },
         {
           "w": "fluid",
-          "start": 22.952,
-          "end": 23.293
+          "start": 21.439,
+          "end": 21.827
         },
         {
           "w": "reach",
-          "start": 23.304,
-          "end": 23.543
+          "start": 21.827,
+          "end": 22.215
         },
         {
           "w": "an",
-          "start": 23.554,
-          "end": 23.668
+          "start": 22.215,
+          "end": 22.409
         },
         {
           "w": "interior",
-          "start": 23.679,
-          "end": 24.19
+          "start": 22.409,
+          "end": 22.992
         },
         {
           "w": "that",
-          "start": 24.202,
-          "end": 24.429
+          "start": 22.992,
+          "end": 23.315
         },
         {
           "w": "cannot",
-          "start": 24.44,
-          "end": 24.793
+          "start": 23.315,
+          "end": 23.768
         },
         {
           "w": "be",
-          "start": 24.804,
-          "end": 24.94
+          "start": 23.768,
+          "end": 23.962
         },
         {
           "w": "cleaned",
-          "start": 24.952,
-          "end": 25.429
+          "start": 23.962,
+          "end": 24.48
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 845,
-      "startFrame": 622
+      "durationInFrames": 792,
+      "startFrame": 570
     },
     {
       "index": 4,
       "type": "stage",
-      "hash": "b98623a0b97d",
+      "hash": "d29d45bdbdbb",
       "narration": "Failure point three: channels not brushed, or brushed with the wrong brush. Along the channel wall, an established biofilm adheres. Chemical disinfection does not penetrate it, soaking does not remove it, and flushing does not remove it. Only a brush that physically contacts the wall disrupts it, and only then is the channel clean. That is why brushing is specified per channel, why brush diameter matters, and why omitting it has repeatedly caused outbreaks.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-4.mp3",
-      "voDurationInSeconds": 31.896,
-      "voDurationInFrames": 957,
+      "voDurationInSeconds": 29.808,
+      "voDurationInFrames": 895,
       "captions": [
         {
           "text": "Failure point three:",
-          "start": 0.1,
-          "end": 1.373
+          "start": 0,
+          "end": 1.328
         },
         {
           "text": "channels not brushed, or brushed with the",
-          "start": 1.373,
-          "end": 3.623
+          "start": 1.328,
+          "end": 4.051
         },
         {
           "text": "wrong brush. Along the channel wall, an",
-          "start": 3.623,
-          "end": 7.084
+          "start": 4.051,
+          "end": 6.766
         },
         {
           "text": "established biofilm adheres.",
-          "start": 7.084,
-          "end": 9.113999999999999
+          "start": 6.766,
+          "end": 8.82
         },
         {
           "text": "Chemical disinfection does not penetrate",
-          "start": 9.952,
-          "end": 12.179
+          "start": 8.82,
+          "end": 11.361
         },
         {
           "text": "it, soaking does not remove it, and",
-          "start": 12.179,
-          "end": 14.452
+          "start": 11.361,
+          "end": 13.469
         },
         {
           "text": "flushing does not remove it.",
-          "start": 14.452,
-          "end": 16.253999999999998
+          "start": 13.469,
+          "end": 15.354
         },
         {
           "text": "Only a brush that physically contacts the",
-          "start": 17.11,
-          "end": 19.462
+          "start": 15.354,
+          "end": 18.024
         },
         {
           "text": "wall disrupts it, and only then is the",
-          "start": 19.462,
-          "end": 21.826
+          "start": 18.024,
+          "end": 20.44
         },
         {
           "text": "channel clean. That is why brushing is",
-          "start": 21.826,
-          "end": 24.908
+          "start": 20.44,
+          "end": 23.07
         },
         {
           "text": "specified per channel, why brush diameter",
-          "start": 24.908,
-          "end": 27.476
+          "start": 23.07,
+          "end": 25.786
         },
         {
           "text": "matters, and why omitting it has",
-          "start": 27.476,
-          "end": 29.431
+          "start": 25.786,
+          "end": 27.905
         },
         {
           "text": "repeatedly caused outbreaks.",
-          "start": 29.431,
-          "end": 31.267
+          "start": 27.905,
+          "end": 29.96
         }
       ],
       "words": [
         {
           "w": "failure",
-          "start": 0.1,
-          "end": 0.566
+          "start": 0,
+          "end": 0.531
         },
         {
           "w": "point",
-          "start": 0.577,
-          "end": 0.873
+          "start": 0.531,
+          "end": 0.93
         },
         {
           "w": "three",
-          "start": 0.884,
-          "end": 1.259
+          "start": 0.93,
+          "end": 1.328
         },
         {
           "w": "channels",
-          "start": 1.373,
-          "end": 1.839
+          "start": 1.328,
+          "end": 1.926
         },
         {
           "w": "not",
-          "start": 1.85,
-          "end": 2.111
+          "start": 1.926,
+          "end": 2.192
         },
         {
           "w": "brushed",
-          "start": 2.123,
-          "end": 2.611
+          "start": 2.192,
+          "end": 2.723
         },
         {
           "w": "or",
-          "start": 2.793,
-          "end": 2.952
+          "start": 2.723,
+          "end": 2.922
         },
         {
           "w": "brushed",
-          "start": 2.964,
-          "end": 3.384
+          "start": 2.922,
+          "end": 3.453
         },
         {
           "w": "with",
-          "start": 3.395,
-          "end": 3.532
+          "start": 3.453,
+          "end": 3.785
         },
         {
           "w": "the",
-          "start": 3.543,
-          "end": 3.611
+          "start": 3.785,
+          "end": 4.051
         },
         {
           "w": "wrong",
-          "start": 3.623,
-          "end": 3.952
+          "start": 4.051,
+          "end": 4.45
         },
         {
           "w": "brush",
-          "start": 3.964,
-          "end": 4.441
+          "start": 4.45,
+          "end": 4.848
         },
         {
           "w": "along",
-          "start": 5.482,
-          "end": 5.914
+          "start": 4.998,
+          "end": 5.406
         },
         {
           "w": "the",
-          "start": 5.925,
-          "end": 6.016
+          "start": 5.406,
+          "end": 5.678
         },
         {
           "w": "channel",
-          "start": 6.027,
-          "end": 6.414
+          "start": 5.678,
+          "end": 6.222
         },
         {
           "w": "wall",
-          "start": 6.425,
-          "end": 6.789
+          "start": 6.222,
+          "end": 6.562
         },
         {
           "w": "an",
-          "start": 6.902,
-          "end": 7.073
+          "start": 6.562,
+          "end": 6.766
         },
         {
           "w": "established",
-          "start": 7.084,
-          "end": 7.732
+          "start": 6.766,
+          "end": 7.582
         },
         {
           "w": "biofilm",
-          "start": 7.743,
-          "end": 8.3
+          "start": 7.582,
+          "end": 8.126
         },
         {
           "w": "adheres",
-          "start": 8.312,
-          "end": 8.914
+          "start": 8.126,
+          "end": 8.67
         },
         {
           "w": "chemical",
-          "start": 9.952,
-          "end": 10.407
+          "start": 8.82,
+          "end": 9.378
         },
         {
           "w": "disinfection",
-          "start": 10.418,
-          "end": 11.179
+          "start": 9.378,
+          "end": 10.184
         },
         {
           "w": "does",
-          "start": 11.191,
-          "end": 11.418
+          "start": 10.184,
+          "end": 10.493
         },
         {
           "w": "not",
-          "start": 11.429,
-          "end": 11.679
+          "start": 10.493,
+          "end": 10.741
         },
         {
           "w": "penetrate",
-          "start": 11.691,
-          "end": 12.168
+          "start": 10.741,
+          "end": 11.361
         },
         {
           "w": "it",
-          "start": 12.179,
-          "end": 12.407
+          "start": 11.361,
+          "end": 11.547
         },
         {
           "w": "soaking",
-          "start": 12.52,
-          "end": 12.986
+          "start": 11.547,
+          "end": 12.043
         },
         {
           "w": "does",
-          "start": 12.997,
-          "end": 13.191
+          "start": 12.043,
+          "end": 12.353
         },
         {
           "w": "not",
-          "start": 13.202,
-          "end": 13.486
+          "start": 12.353,
+          "end": 12.601
         },
         {
           "w": "remove",
-          "start": 13.497,
-          "end": 13.827
+          "start": 12.601,
+          "end": 13.035
         },
         {
           "w": "it",
-          "start": 13.838,
-          "end": 14.077
+          "start": 13.035,
+          "end": 13.221
         },
         {
           "w": "and",
-          "start": 14.213,
-          "end": 14.441
+          "start": 13.221,
+          "end": 13.469
         },
         {
           "w": "flushing",
-          "start": 14.452,
-          "end": 14.907
+          "start": 13.469,
+          "end": 14.026
         },
         {
           "w": "does",
-          "start": 14.918,
-          "end": 15.122
+          "start": 14.026,
+          "end": 14.336
         },
         {
           "w": "not",
-          "start": 15.134,
-          "end": 15.407
+          "start": 14.336,
+          "end": 14.584
         },
         {
           "w": "remove",
-          "start": 15.418,
-          "end": 15.759
+          "start": 14.584,
+          "end": 15.018
         },
         {
           "w": "it",
-          "start": 15.77,
-          "end": 16.054
+          "start": 15.018,
+          "end": 15.204
         },
         {
           "w": "only",
-          "start": 17.11,
-          "end": 17.519
+          "start": 15.354,
+          "end": 15.672
         },
         {
           "w": "a",
-          "start": 17.53,
-          "end": 17.621
+          "start": 15.672,
+          "end": 15.799
         },
         {
           "w": "brush",
-          "start": 17.633,
-          "end": 18.053
+          "start": 15.799,
+          "end": 16.18
         },
         {
           "w": "that",
-          "start": 18.065,
-          "end": 18.246
+          "start": 16.18,
+          "end": 16.498
         },
         {
           "w": "physically",
-          "start": 18.258,
-          "end": 18.735
+          "start": 16.498,
+          "end": 17.198
         },
         {
           "w": "contacts",
-          "start": 18.746,
-          "end": 19.337
+          "start": 17.198,
+          "end": 17.77
         },
         {
           "w": "the",
-          "start": 19.349,
-          "end": 19.451
+          "start": 17.77,
+          "end": 18.024
         },
         {
           "w": "wall",
-          "start": 19.462,
-          "end": 19.724
+          "start": 18.024,
+          "end": 18.342
         },
         {
           "w": "disrupts",
-          "start": 19.735,
-          "end": 20.28
+          "start": 18.342,
+          "end": 18.914
         },
         {
           "w": "it",
-          "start": 20.292,
-          "end": 20.553
+          "start": 18.914,
+          "end": 19.105
         },
         {
           "w": "and",
-          "start": 20.678,
-          "end": 20.928
+          "start": 19.105,
+          "end": 19.359
         },
         {
           "w": "only",
-          "start": 20.94,
-          "end": 21.212
+          "start": 19.359,
+          "end": 19.677
         },
         {
           "w": "then",
-          "start": 21.224,
-          "end": 21.53
+          "start": 19.677,
+          "end": 19.995
         },
         {
           "w": "is",
-          "start": 21.542,
-          "end": 21.712
+          "start": 19.995,
+          "end": 20.186
         },
         {
           "w": "the",
-          "start": 21.724,
-          "end": 21.815
+          "start": 20.186,
+          "end": 20.44
         },
         {
           "w": "channel",
-          "start": 21.826,
-          "end": 22.212
+          "start": 20.44,
+          "end": 20.949
         },
         {
           "w": "clean",
-          "start": 22.224,
-          "end": 22.655
+          "start": 20.949,
+          "end": 21.33
         },
         {
           "w": "that",
-          "start": 23.692,
-          "end": 23.999
+          "start": 21.48,
+          "end": 21.811
         },
         {
           "w": "is",
-          "start": 24.01,
-          "end": 24.147
+          "start": 21.811,
+          "end": 22.01
         },
         {
           "w": "why",
-          "start": 24.158,
-          "end": 24.362
+          "start": 22.01,
+          "end": 22.275
         },
         {
           "w": "brushing",
-          "start": 24.374,
-          "end": 24.783
+          "start": 22.275,
+          "end": 22.871
         },
         {
           "w": "is",
-          "start": 24.794,
-          "end": 24.897
+          "start": 22.871,
+          "end": 23.07
         },
         {
           "w": "specified",
-          "start": 24.908,
-          "end": 25.556
+          "start": 23.07,
+          "end": 23.732
         },
         {
           "w": "per",
-          "start": 25.567,
-          "end": 25.715
+          "start": 23.732,
+          "end": 23.997
         },
         {
           "w": "channel",
-          "start": 25.726,
-          "end": 26.203
+          "start": 23.997,
+          "end": 24.527
         },
         {
           "w": "why",
-          "start": 26.328,
-          "end": 26.59
+          "start": 24.527,
+          "end": 24.792
         },
         {
           "w": "brush",
-          "start": 26.601,
-          "end": 26.942
+          "start": 24.792,
+          "end": 25.189
         },
         {
           "w": "diameter",
-          "start": 26.953,
-          "end": 27.465
+          "start": 25.189,
+          "end": 25.786
         },
         {
           "w": "matters",
-          "start": 27.476,
-          "end": 27.987
+          "start": 25.786,
+          "end": 26.316
         },
         {
           "w": "and",
-          "start": 28.112,
-          "end": 28.362
+          "start": 26.316,
+          "end": 26.58
         },
         {
           "w": "why",
-          "start": 28.374,
-          "end": 28.601
+          "start": 26.58,
+          "end": 26.845
         },
         {
           "w": "omitting",
-          "start": 28.612,
-          "end": 29.067
+          "start": 26.845,
+          "end": 27.442
         },
         {
           "w": "it",
-          "start": 29.078,
-          "end": 29.192
+          "start": 27.442,
+          "end": 27.64
         },
         {
           "w": "has",
-          "start": 29.203,
-          "end": 29.419
+          "start": 27.64,
+          "end": 27.905
         },
         {
           "w": "repeatedly",
-          "start": 29.431,
-          "end": 30.044
+          "start": 27.905,
+          "end": 28.634
         },
         {
           "w": "caused",
-          "start": 30.056,
-          "end": 30.419
+          "start": 28.634,
+          "end": 29.098
         },
         {
           "w": "outbreaks",
-          "start": 30.431,
-          "end": 31.067
+          "start": 29.098,
+          "end": 29.76
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 1013,
-      "startFrame": 1467
+      "durationInFrames": 951,
+      "startFrame": 1362
     },
     {
       "index": 5,
       "type": "stage",
-      "hash": "70e138ab9edf",
+      "hash": "4d77437d4638",
       "narration": "Failure point four sits in the automated endoscope reprocessor. The scope is placed in the basin, and every channel must be attached to the correct connector for that model. A channel that is not connected is missed: it is not perfused and is not disinfected. Only when all are attached does fluid flush through the channels. Do not overload the reprocessor, or process a scope alongside one it is not validated for.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-5.mp3",
-      "voDurationInSeconds": 28.536,
-      "voDurationInFrames": 857,
+      "voDurationInSeconds": 25.632,
+      "voDurationInFrames": 769,
       "captions": [
         {
           "text": "Failure point four sits in the automated",
-          "start": 0.1,
-          "end": 2.35
+          "start": 0,
+          "end": 2.593
         },
         {
           "text": "endoscope reprocessor.",
-          "start": 2.35,
-          "end": 3.891
+          "start": 2.593,
+          "end": 4.134
         },
         {
           "text": "The scope is placed in the basin, and",
-          "start": 4.738,
-          "end": 6.954
+          "start": 4.134,
+          "end": 6.214
         },
         {
           "text": "every channel must be attached to the",
-          "start": 6.954,
-          "end": 8.783
+          "start": 6.214,
+          "end": 8.351
         },
         {
           "text": "correct connector for that model.",
-          "start": 8.783,
-          "end": 10.745
+          "start": 8.351,
+          "end": 10.356
         },
         {
           "text": "A channel that is not connected is missed:",
-          "start": 11.584,
-          "end": 13.936
+          "start": 10.356,
+          "end": 12.984
         },
         {
           "text": "it is not perfused and is not disinfected.",
-          "start": 13.936,
-          "end": 16.692999999999998
+          "start": 12.984,
+          "end": 15.762
         },
         {
           "text": "Only when all are attached does fluid",
-          "start": 17.494,
-          "end": 19.687
+          "start": 15.762,
+          "end": 17.923
         },
         {
           "text": "flush through the channels.",
-          "start": 19.687,
-          "end": 21.102999999999998
+          "start": 17.923,
+          "end": 19.608
         },
         {
           "text": "Do not overload the reprocessor, or",
-          "start": 21.94,
-          "end": 24.349
+          "start": 19.608,
+          "end": 21.958
         },
         {
           "text": "process a scope alongside one it is not",
-          "start": 24.349,
-          "end": 26.804
+          "start": 21.958,
+          "end": 24.644
         },
         {
           "text": "validated for.",
-          "start": 26.804,
-          "end": 27.901
+          "start": 24.644,
+          "end": 25.784
         }
       ],
       "words": [
         {
           "w": "failure",
-          "start": 0.1,
-          "end": 0.577
+          "start": 0,
+          "end": 0.506
         },
         {
           "w": "point",
-          "start": 0.589,
-          "end": 0.873
+          "start": 0.506,
+          "end": 0.885
         },
         {
           "w": "four",
-          "start": 0.884,
-          "end": 1.145
+          "start": 0.885,
+          "end": 1.202
         },
         {
           "w": "sits",
-          "start": 1.157,
-          "end": 1.475
+          "start": 1.202,
+          "end": 1.518
         },
         {
           "w": "in",
-          "start": 1.486,
-          "end": 1.6
+          "start": 1.518,
+          "end": 1.707
         },
         {
           "w": "the",
-          "start": 1.611,
-          "end": 1.714
+          "start": 1.707,
+          "end": 1.96
         },
         {
           "w": "automated",
-          "start": 1.725,
-          "end": 2.339
+          "start": 1.96,
+          "end": 2.593
         },
         {
           "w": "endoscope",
-          "start": 2.35,
-          "end": 2.952
+          "start": 2.593,
+          "end": 3.225
         },
         {
           "w": "reprocessor",
-          "start": 2.964,
-          "end": 3.691
+          "start": 3.225,
+          "end": 3.984
         },
         {
           "w": "the",
-          "start": 4.738,
-          "end": 4.92
+          "start": 4.134,
+          "end": 4.359
         },
         {
           "w": "scope",
-          "start": 4.931,
-          "end": 5.261
+          "start": 4.359,
+          "end": 4.696
         },
         {
           "w": "is",
-          "start": 5.272,
-          "end": 5.397
+          "start": 4.696,
+          "end": 4.865
         },
         {
           "w": "placed",
-          "start": 5.408,
-          "end": 5.795
+          "start": 4.865,
+          "end": 5.258
         },
         {
           "w": "in",
-          "start": 5.806,
-          "end": 5.908
+          "start": 5.258,
+          "end": 5.427
         },
         {
           "w": "the",
-          "start": 5.92,
-          "end": 5.988
+          "start": 5.427,
+          "end": 5.652
         },
         {
           "w": "basin",
-          "start": 5.999,
-          "end": 6.522
+          "start": 5.652,
+          "end": 5.989
         },
         {
           "w": "and",
-          "start": 6.636,
-          "end": 6.943
+          "start": 5.989,
+          "end": 6.214
         },
         {
           "w": "every",
-          "start": 6.954,
-          "end": 7.283
+          "start": 6.214,
+          "end": 6.552
         },
         {
           "w": "channel",
-          "start": 7.295,
-          "end": 7.681
+          "start": 6.552,
+          "end": 7.001
         },
         {
           "w": "must",
-          "start": 7.693,
-          "end": 7.943
+          "start": 7.001,
+          "end": 7.282
         },
         {
           "w": "be",
-          "start": 7.954,
-          "end": 8.124
+          "start": 7.282,
+          "end": 7.451
         },
         {
           "w": "attached",
-          "start": 8.136,
-          "end": 8.59
+          "start": 7.451,
+          "end": 7.957
         },
         {
           "w": "to",
-          "start": 8.602,
-          "end": 8.681
+          "start": 7.957,
+          "end": 8.126
         },
         {
           "w": "the",
-          "start": 8.693,
-          "end": 8.772
+          "start": 8.126,
+          "end": 8.351
         },
         {
           "w": "correct",
-          "start": 8.783,
-          "end": 9.147
+          "start": 8.351,
+          "end": 8.8
         },
         {
           "w": "connector",
-          "start": 9.158,
-          "end": 9.67
+          "start": 8.8,
+          "end": 9.363
         },
         {
           "w": "for",
-          "start": 9.681,
-          "end": 9.829
+          "start": 9.363,
+          "end": 9.588
         },
         {
           "w": "that",
-          "start": 9.84,
-          "end": 10.09
+          "start": 9.588,
+          "end": 9.869
         },
         {
           "w": "model",
-          "start": 10.102,
-          "end": 10.545
+          "start": 9.869,
+          "end": 10.206
         },
         {
           "w": "a",
-          "start": 11.584,
-          "end": 11.732
+          "start": 10.356,
+          "end": 10.481
         },
         {
           "w": "channel",
-          "start": 11.743,
-          "end": 12.175
+          "start": 10.481,
+          "end": 10.982
         },
         {
           "w": "that",
-          "start": 12.186,
-          "end": 12.357
+          "start": 10.982,
+          "end": 11.295
         },
         {
           "w": "is",
-          "start": 12.368,
-          "end": 12.493
+          "start": 11.295,
+          "end": 11.482
         },
         {
           "w": "not",
-          "start": 12.504,
-          "end": 12.754
+          "start": 11.482,
+          "end": 11.733
         },
         {
           "w": "connected",
-          "start": 12.766,
-          "end": 13.243
+          "start": 11.733,
+          "end": 12.358
         },
         {
           "w": "is",
-          "start": 13.254,
-          "end": 13.391
+          "start": 12.358,
+          "end": 12.546
         },
         {
           "w": "missed",
-          "start": 13.402,
-          "end": 13.789
+          "start": 12.546,
+          "end": 12.984
         },
         {
           "w": "it",
-          "start": 13.936,
-          "end": 14.073
+          "start": 12.984,
+          "end": 13.172
         },
         {
           "w": "is",
-          "start": 14.084,
-          "end": 14.22
+          "start": 13.172,
+          "end": 13.359
         },
         {
           "w": "not",
-          "start": 14.232,
-          "end": 14.493
+          "start": 13.359,
+          "end": 13.61
         },
         {
           "w": "perfused",
-          "start": 14.504,
-          "end": 15.107
+          "start": 13.61,
+          "end": 14.173
         },
         {
           "w": "and",
-          "start": 15.118,
-          "end": 15.3
+          "start": 14.173,
+          "end": 14.423
         },
         {
           "w": "is",
-          "start": 15.311,
-          "end": 15.448
+          "start": 14.423,
+          "end": 14.611
         },
         {
           "w": "not",
-          "start": 15.459,
-          "end": 15.698
+          "start": 14.611,
+          "end": 14.861
         },
         {
           "w": "disinfected",
-          "start": 15.709,
-          "end": 16.493
+          "start": 14.861,
+          "end": 15.612
         },
         {
           "w": "only",
-          "start": 17.494,
-          "end": 17.88
+          "start": 15.762,
+          "end": 16.046
         },
         {
           "w": "when",
-          "start": 17.892,
-          "end": 18.074
+          "start": 16.046,
+          "end": 16.331
         },
         {
           "w": "all",
-          "start": 18.085,
-          "end": 18.289
+          "start": 16.331,
+          "end": 16.558
         },
         {
           "w": "are",
-          "start": 18.301,
-          "end": 18.517
+          "start": 16.558,
+          "end": 16.786
         },
         {
           "w": "attached",
-          "start": 18.528,
-          "end": 19.017
+          "start": 16.786,
+          "end": 17.297
         },
         {
           "w": "does",
-          "start": 19.028,
-          "end": 19.324
+          "start": 17.297,
+          "end": 17.582
         },
         {
           "w": "fluid",
-          "start": 19.335,
-          "end": 19.676
+          "start": 17.582,
+          "end": 17.923
         },
         {
           "w": "flush",
-          "start": 19.687,
-          "end": 20.028
+          "start": 17.923,
+          "end": 18.264
         },
         {
           "w": "through",
-          "start": 20.039,
-          "end": 20.21
+          "start": 18.264,
+          "end": 18.719
         },
         {
           "w": "the",
-          "start": 20.221,
-          "end": 20.324
+          "start": 18.719,
+          "end": 18.946
         },
         {
           "w": "channels",
-          "start": 20.335,
-          "end": 20.903
+          "start": 18.946,
+          "end": 19.458
         },
         {
           "w": "do",
-          "start": 21.94,
-          "end": 22.19
+          "start": 19.608,
+          "end": 19.809
         },
         {
           "w": "not",
-          "start": 22.201,
-          "end": 22.508
+          "start": 19.809,
+          "end": 20.078
         },
         {
           "w": "overload",
-          "start": 22.52,
-          "end": 23.031
+          "start": 20.078,
+          "end": 20.682
         },
         {
           "w": "the",
-          "start": 23.042,
-          "end": 23.122
+          "start": 20.682,
+          "end": 20.951
         },
         {
           "w": "reprocessor",
-          "start": 23.133,
-          "end": 23.917
+          "start": 20.951,
+          "end": 21.757
         },
         {
           "w": "or",
-          "start": 24.167,
-          "end": 24.338
+          "start": 21.757,
+          "end": 21.958
         },
         {
           "w": "process",
-          "start": 24.349,
-          "end": 24.826
+          "start": 21.958,
+          "end": 22.495
         },
         {
           "w": "a",
-          "start": 24.838,
-          "end": 24.906
+          "start": 22.495,
+          "end": 22.63
         },
         {
           "w": "scope",
-          "start": 24.917,
-          "end": 25.258
+          "start": 22.63,
+          "end": 23.032
         },
         {
           "w": "alongside",
-          "start": 25.27,
-          "end": 25.963
+          "start": 23.032,
+          "end": 23.704
         },
         {
           "w": "one",
-          "start": 25.974,
-          "end": 26.213
+          "start": 23.704,
+          "end": 23.972
         },
         {
           "w": "it",
-          "start": 26.224,
-          "end": 26.36
+          "start": 23.972,
+          "end": 24.174
         },
         {
           "w": "is",
-          "start": 26.372,
-          "end": 26.508
+          "start": 24.174,
+          "end": 24.375
         },
         {
           "w": "not",
-          "start": 26.52,
-          "end": 26.792
+          "start": 24.375,
+          "end": 24.644
         },
         {
           "w": "validated",
-          "start": 26.804,
-          "end": 27.349
+          "start": 24.644,
+          "end": 25.315
         },
         {
           "w": "for",
-          "start": 27.36,
-          "end": 27.701
+          "start": 25.315,
+          "end": 25.584
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 913,
-      "startFrame": 2480
+      "durationInFrames": 825,
+      "startFrame": 2313
     },
     {
       "index": 6,
       "type": "stage",
-      "hash": "29b5cfdc7de6",
+      "hash": "714f52d2ab54",
       "narration": "Failure point five is the duodenoscope elevator, a mechanism at the distal tip that directs accessories. Its recess is narrow, mechanically complex and extremely difficult to clean. It has been implicated in multiple international outbreaks of multidrug-resistant organisms in patients who had no other common exposure. Where your hospital uses duodenoscopes, follow the manufacturer's specific instructions for the elevator exactly, and keep in place any additional measures specified.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-6.mp3",
-      "voDurationInSeconds": 32.04,
-      "voDurationInFrames": 962,
+      "voDurationInSeconds": 30.576,
+      "voDurationInFrames": 918,
       "captions": [
         {
           "text": "Failure point five is the duodenoscope",
-          "start": 0.1,
-          "end": 2.248
+          "start": 0,
+          "end": 2.481
         },
         {
           "text": "elevator, a mechanism at the distal tip",
-          "start": 2.248,
-          "end": 4.714
+          "start": 2.481,
+          "end": 4.962
         },
         {
           "text": "that directs accessories.",
-          "start": 4.714,
-          "end": 6.436
+          "start": 4.962,
+          "end": 6.702
         },
         {
           "text": "Its recess is narrow, mechanically complex",
-          "start": 7.282,
-          "end": 9.827
+          "start": 6.702,
+          "end": 9.43
         },
         {
           "text": "and extremely difficult to clean.",
-          "start": 9.827,
-          "end": 11.902
+          "start": 9.43,
+          "end": 11.724
         },
         {
           "text": "It has been implicated in multiple",
-          "start": 12.736,
-          "end": 14.668
+          "start": 11.724,
+          "end": 13.941
         },
         {
           "text": "international outbreaks of",
-          "start": 14.668,
-          "end": 16.088
+          "start": 13.941,
+          "end": 15.652
         },
         {
           "text": "multidrug-resistant organisms in patients",
-          "start": 16.088,
-          "end": 18.361
+          "start": 15.652,
+          "end": 18.249
         },
         {
           "text": "who had no other common exposure.",
-          "start": 18.361,
-          "end": 20.355999999999998
+          "start": 18.249,
+          "end": 20.49
         },
         {
           "text": "Where your hospital uses duodenoscopes,",
-          "start": 21.214,
-          "end": 23.68
+          "start": 20.49,
+          "end": 22.847
         },
         {
           "text": "follow the manufacturer's specific",
-          "start": 23.68,
-          "end": 25.612
+          "start": 22.847,
+          "end": 25.083
         },
         {
           "text": "instructions for the elevator exactly, and",
-          "start": 25.612,
-          "end": 28.339
+          "start": 25.083,
+          "end": 27.621
         },
         {
           "text": "keep in place any additional measures",
-          "start": 28.339,
-          "end": 30.487
+          "start": 27.621,
+          "end": 29.918
         },
         {
           "text": "specified.",
-          "start": 30.487,
-          "end": 31.403
+          "start": 29.918,
+          "end": 30.721999999999998
         }
       ],
       "words": [
         {
           "w": "failure",
-          "start": 0.1,
-          "end": 0.566
+          "start": 0,
+          "end": 0.509
         },
         {
           "w": "point",
-          "start": 0.577,
-          "end": 0.85
+          "start": 0.509,
+          "end": 0.891
         },
         {
           "w": "five",
-          "start": 0.861,
-          "end": 1.18
+          "start": 0.891,
+          "end": 1.209
         },
         {
           "w": "is",
-          "start": 1.191,
-          "end": 1.293
+          "start": 1.209,
+          "end": 1.399
         },
         {
           "w": "the",
-          "start": 1.305,
-          "end": 1.395
+          "start": 1.399,
+          "end": 1.654
         },
         {
           "w": "duodenoscope",
-          "start": 1.407,
-          "end": 2.236
+          "start": 1.654,
+          "end": 2.481
         },
         {
           "w": "elevator",
-          "start": 2.248,
-          "end": 2.85
+          "start": 2.481,
+          "end": 3.053
         },
         {
           "w": "a",
-          "start": 3.089,
-          "end": 3.191
+          "start": 3.053,
+          "end": 3.181
         },
         {
           "w": "mechanism",
-          "start": 3.202,
-          "end": 3.816
+          "start": 3.181,
+          "end": 3.817
         },
         {
           "w": "at",
-          "start": 3.827,
-          "end": 3.975
+          "start": 3.817,
+          "end": 4.008
         },
         {
           "w": "the",
-          "start": 3.986,
-          "end": 4.066
+          "start": 4.008,
+          "end": 4.262
         },
         {
           "w": "distal",
-          "start": 4.077,
-          "end": 4.475
+          "start": 4.262,
+          "end": 4.707
         },
         {
           "w": "tip",
-          "start": 4.486,
-          "end": 4.702
+          "start": 4.707,
+          "end": 4.962
         },
         {
           "w": "that",
-          "start": 4.714,
-          "end": 4.907
+          "start": 4.962,
+          "end": 5.28
         },
         {
           "w": "directs",
-          "start": 4.918,
-          "end": 5.418
+          "start": 5.28,
+          "end": 5.789
         },
         {
           "w": "accessories",
-          "start": 5.43,
-          "end": 6.236
+          "start": 5.789,
+          "end": 6.552
         },
         {
           "w": "its",
-          "start": 7.282,
-          "end": 7.532
+          "start": 6.702,
+          "end": 6.962
         },
         {
           "w": "recess",
-          "start": 7.543,
-          "end": 7.896
+          "start": 6.962,
+          "end": 7.417
         },
         {
           "w": "is",
-          "start": 7.907,
-          "end": 8.043
+          "start": 7.417,
+          "end": 7.611
         },
         {
           "w": "narrow",
-          "start": 8.055,
-          "end": 8.487
+          "start": 7.611,
+          "end": 8.066
         },
         {
           "w": "mechanically",
-          "start": 8.634,
-          "end": 9.225
+          "start": 8.066,
+          "end": 8.911
         },
         {
           "w": "complex",
-          "start": 9.237,
-          "end": 9.816
+          "start": 8.911,
+          "end": 9.43
         },
         {
           "w": "and",
-          "start": 9.827,
-          "end": 10.009
+          "start": 9.43,
+          "end": 9.69
         },
         {
           "w": "extremely",
-          "start": 10.021,
-          "end": 10.6
+          "start": 9.69,
+          "end": 10.34
         },
         {
           "w": "difficult",
-          "start": 10.612,
-          "end": 11.134
+          "start": 10.34,
+          "end": 10.989
         },
         {
           "w": "to",
-          "start": 11.146,
-          "end": 11.259
+          "start": 10.989,
+          "end": 11.184
         },
         {
           "w": "clean",
-          "start": 11.271,
-          "end": 11.702
+          "start": 11.184,
+          "end": 11.574
         },
         {
           "w": "it",
-          "start": 12.736,
-          "end": 12.929
+          "start": 11.724,
+          "end": 11.914
         },
         {
           "w": "has",
-          "start": 12.941,
-          "end": 13.122
+          "start": 11.914,
+          "end": 12.167
         },
         {
           "w": "been",
-          "start": 13.134,
-          "end": 13.338
+          "start": 12.167,
+          "end": 12.484
         },
         {
           "w": "implicated",
-          "start": 13.35,
-          "end": 13.986
+          "start": 12.484,
+          "end": 13.181
         },
         {
           "w": "in",
-          "start": 13.997,
-          "end": 14.134
+          "start": 13.181,
+          "end": 13.371
         },
         {
           "w": "multiple",
-          "start": 14.145,
-          "end": 14.656
+          "start": 13.371,
+          "end": 13.941
         },
         {
           "w": "international",
-          "start": 14.668,
-          "end": 15.372
+          "start": 13.941,
+          "end": 14.828
         },
         {
           "w": "outbreaks",
-          "start": 15.384,
-          "end": 15.918
+          "start": 14.828,
+          "end": 15.462
         },
         {
           "w": "of",
-          "start": 15.929,
-          "end": 16.077
+          "start": 15.462,
+          "end": 15.652
         },
         {
           "w": "multidrugresistant",
-          "start": 16.088,
-          "end": 17.077
+          "start": 15.652,
+          "end": 16.856
         },
         {
           "w": "organisms",
-          "start": 17.088,
-          "end": 17.656
+          "start": 16.856,
+          "end": 17.489
         },
         {
           "w": "in",
-          "start": 17.668,
-          "end": 17.781
+          "start": 17.489,
+          "end": 17.679
         },
         {
           "w": "patients",
-          "start": 17.793,
-          "end": 18.35
+          "start": 17.679,
+          "end": 18.249
         },
         {
           "w": "who",
-          "start": 18.361,
-          "end": 18.52
+          "start": 18.249,
+          "end": 18.503
         },
         {
           "w": "had",
-          "start": 18.531,
-          "end": 18.702
+          "start": 18.503,
+          "end": 18.756
         },
         {
           "w": "no",
-          "start": 18.713,
-          "end": 18.941
+          "start": 18.756,
+          "end": 18.946
         },
         {
           "w": "other",
-          "start": 18.952,
-          "end": 19.202
+          "start": 18.946,
+          "end": 19.326
         },
         {
           "w": "common",
-          "start": 19.213,
-          "end": 19.52
+          "start": 19.326,
+          "end": 19.77
         },
         {
           "w": "exposure",
-          "start": 19.531,
-          "end": 20.156
+          "start": 19.77,
+          "end": 20.34
         },
         {
           "w": "where",
-          "start": 21.214,
-          "end": 21.498
+          "start": 20.49,
+          "end": 20.853
         },
         {
           "w": "your",
-          "start": 21.509,
-          "end": 21.646
+          "start": 20.853,
+          "end": 21.155
         },
         {
           "w": "hospital",
-          "start": 21.657,
-          "end": 22.146
+          "start": 21.155,
+          "end": 21.699
         },
         {
           "w": "uses",
-          "start": 22.157,
-          "end": 22.578
+          "start": 21.699,
+          "end": 22.001
         },
         {
           "w": "duodenoscopes",
-          "start": 22.589,
-          "end": 23.544
+          "start": 22.001,
+          "end": 22.847
         },
         {
           "w": "follow",
-          "start": 23.68,
-          "end": 24.032
+          "start": 22.847,
+          "end": 23.27
         },
         {
           "w": "the",
-          "start": 24.044,
-          "end": 24.146
+          "start": 23.27,
+          "end": 23.512
         },
         {
           "w": "manufacturers",
-          "start": 24.157,
-          "end": 25.044
+          "start": 23.512,
+          "end": 24.539
         },
         {
           "w": "specific",
-          "start": 25.055,
-          "end": 25.6
+          "start": 24.539,
+          "end": 25.083
         },
         {
           "w": "instructions",
-          "start": 25.612,
-          "end": 26.316
+          "start": 25.083,
+          "end": 25.869
         },
         {
           "w": "for",
-          "start": 26.328,
-          "end": 26.453
+          "start": 25.869,
+          "end": 26.11
         },
         {
           "w": "the",
-          "start": 26.464,
-          "end": 26.589
+          "start": 26.11,
+          "end": 26.352
         },
         {
           "w": "elevator",
-          "start": 26.6,
-          "end": 27.146
+          "start": 26.352,
+          "end": 26.896
         },
         {
           "w": "exactly",
-          "start": 27.157,
-          "end": 27.85
+          "start": 26.896,
+          "end": 27.379
         },
         {
           "w": "and",
-          "start": 28.066,
-          "end": 28.328
+          "start": 27.379,
+          "end": 27.621
         },
         {
           "w": "keep",
-          "start": 28.339,
-          "end": 28.578
+          "start": 27.621,
+          "end": 27.923
         },
         {
           "w": "in",
-          "start": 28.589,
-          "end": 28.714
+          "start": 27.923,
+          "end": 28.105
         },
         {
           "w": "place",
-          "start": 28.725,
-          "end": 29.123
+          "start": 28.105,
+          "end": 28.467
         },
         {
           "w": "any",
-          "start": 29.134,
-          "end": 29.441
+          "start": 28.467,
+          "end": 28.709
         },
         {
           "w": "additional",
-          "start": 29.453,
-          "end": 29.975
+          "start": 28.709,
+          "end": 29.374
         },
         {
           "w": "measures",
-          "start": 29.987,
-          "end": 30.475
+          "start": 29.374,
+          "end": 29.918
         },
         {
           "w": "specified",
-          "start": 30.487,
-          "end": 31.203
+          "start": 29.918,
+          "end": 30.522
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 1018,
-      "startFrame": 3393
+      "durationInFrames": 974,
+      "startFrame": 3138
     },
     {
       "index": 7,
       "type": "stage",
-      "hash": "38eb9cd497f7",
+      "hash": "be442c4ff78b",
       "narration": "In the controlled drying and storage cabinet, scopes hang vertically, uncoiled, with valves removed, because coiled storage retains fluid. Filtered air then dries each channel. Residual moisture lets organisms, particularly Pseudomonas, multiply between uses, so forced air passes through every channel. Failure points six to eight are inadequate drying, coiled storage, and contaminated rinse water, which recontaminates the scope at the final step.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-7.mp3",
-      "voDurationInSeconds": 31.128,
-      "voDurationInFrames": 934,
+      "voDurationInSeconds": 29.904,
+      "voDurationInFrames": 898,
       "captions": [
         {
           "text": "In the controlled drying and storage",
-          "start": 0.1,
-          "end": 2.066
+          "start": 0,
+          "end": 2.379
         },
         {
           "text": "cabinet, scopes hang vertically, uncoiled,",
-          "start": 2.066,
-          "end": 5.055
+          "start": 2.379,
+          "end": 4.951
         },
         {
           "text": "with valves removed, because coiled",
-          "start": 5.055,
-          "end": 7.043
+          "start": 4.951,
+          "end": 7.201
         },
         {
           "text": "storage retains fluid.",
-          "start": 7.043,
-          "end": 8.629999999999999
+          "start": 7.201,
+          "end": 8.766
         },
         {
           "text": "Filtered air then dries each channel.",
-          "start": 9.466,
-          "end": 11.870999999999999
+          "start": 8.766,
+          "end": 11.532
         },
         {
           "text": "Residual moisture lets organisms,",
-          "start": 12.712,
-          "end": 14.871
+          "start": 11.532,
+          "end": 13.85
         },
         {
           "text": "particularly Pseudomonas, multiply between",
-          "start": 14.871,
-          "end": 17.462
+          "start": 13.85,
+          "end": 16.8
         },
         {
           "text": "uses, so forced air passes through every",
-          "start": 17.462,
-          "end": 20.007
+          "start": 16.8,
+          "end": 19.61
         },
         {
           "text": "channel. Failure points six to eight are",
-          "start": 20.007,
-          "end": 23.308
+          "start": 19.61,
+          "end": 22.454
         },
         {
           "text": "inadequate drying, coiled storage, and",
-          "start": 23.308,
-          "end": 25.819
+          "start": 22.454,
+          "end": 24.919
         },
         {
           "text": "contaminated rinse water, which",
-          "start": 25.819,
-          "end": 27.785
+          "start": 24.919,
+          "end": 26.985
         },
         {
           "text": "recontaminates the scope at the final",
-          "start": 27.785,
-          "end": 29.887
+          "start": 26.985,
+          "end": 29.517
         },
         {
           "text": "step.",
-          "start": 29.887,
-          "end": 30.473
+          "start": 29.517,
+          "end": 30.05
         }
       ],
       "words": [
         {
           "w": "in",
-          "start": 0.1,
-          "end": 0.282
+          "start": 0,
+          "end": 0.193
         },
         {
           "w": "the",
-          "start": 0.293,
-          "end": 0.373
+          "start": 0.193,
+          "end": 0.45
         },
         {
           "w": "controlled",
-          "start": 0.384,
-          "end": 0.93
+          "start": 0.45,
+          "end": 1.157
         },
         {
           "w": "drying",
-          "start": 0.941,
-          "end": 1.395
+          "start": 1.157,
+          "end": 1.607
         },
         {
           "w": "and",
-          "start": 1.407,
-          "end": 1.611
+          "start": 1.607,
+          "end": 1.865
         },
         {
           "w": "storage",
-          "start": 1.623,
-          "end": 2.055
+          "start": 1.865,
+          "end": 2.379
         },
         {
           "w": "cabinet",
-          "start": 2.066,
-          "end": 2.577
+          "start": 2.379,
+          "end": 2.893
         },
         {
           "w": "scopes",
-          "start": 2.725,
-          "end": 3.191
+          "start": 2.893,
+          "end": 3.344
         },
         {
           "w": "hang",
-          "start": 3.202,
-          "end": 3.475
+          "start": 3.344,
+          "end": 3.665
         },
         {
           "w": "vertically",
-          "start": 3.486,
-          "end": 4.1
+          "start": 3.665,
+          "end": 4.372
         },
         {
           "w": "uncoiled",
-          "start": 4.27,
-          "end": 4.884
+          "start": 4.372,
+          "end": 4.951
         },
         {
           "w": "with",
-          "start": 5.055,
-          "end": 5.214
+          "start": 4.951,
+          "end": 5.272
         },
         {
           "w": "valves",
-          "start": 5.225,
-          "end": 5.589
+          "start": 5.272,
+          "end": 5.723
         },
         {
           "w": "removed",
-          "start": 5.6,
-          "end": 6.066
+          "start": 5.723,
+          "end": 6.237
         },
         {
           "w": "because",
-          "start": 6.293,
-          "end": 6.714
+          "start": 6.237,
+          "end": 6.751
         },
         {
           "w": "coiled",
-          "start": 6.725,
-          "end": 7.032
+          "start": 6.751,
+          "end": 7.201
         },
         {
           "w": "storage",
-          "start": 7.043,
-          "end": 7.498
+          "start": 7.201,
+          "end": 7.716
         },
         {
           "w": "retains",
-          "start": 7.509,
-          "end": 7.941
+          "start": 7.716,
+          "end": 8.23
         },
         {
           "w": "fluid",
-          "start": 7.952,
-          "end": 8.43
+          "start": 8.23,
+          "end": 8.616
         },
         {
           "w": "filtered",
-          "start": 9.466,
-          "end": 10.057
+          "start": 8.766,
+          "end": 9.402
         },
         {
           "w": "air",
-          "start": 10.068,
-          "end": 10.261
+          "start": 9.402,
+          "end": 9.685
         },
         {
           "w": "then",
-          "start": 10.273,
-          "end": 10.511
+          "start": 9.685,
+          "end": 10.039
         },
         {
           "w": "dries",
-          "start": 10.523,
-          "end": 10.966
+          "start": 10.039,
+          "end": 10.463
         },
         {
           "w": "each",
-          "start": 10.977,
-          "end": 11.193
+          "start": 10.463,
+          "end": 10.816
         },
         {
           "w": "channel",
-          "start": 11.205,
-          "end": 11.671
+          "start": 10.816,
+          "end": 11.382
         },
         {
           "w": "residual",
-          "start": 12.712,
-          "end": 13.292
+          "start": 11.532,
+          "end": 12.164
         },
         {
           "w": "moisture",
-          "start": 13.303,
-          "end": 13.701
+          "start": 12.164,
+          "end": 12.796
         },
         {
           "w": "lets",
-          "start": 13.712,
-          "end": 14.03
+          "start": 12.796,
+          "end": 13.148
         },
         {
           "w": "organisms",
-          "start": 14.042,
-          "end": 14.746
+          "start": 13.148,
+          "end": 13.85
         },
         {
           "w": "particularly",
-          "start": 14.871,
-          "end": 15.507
+          "start": 13.85,
+          "end": 14.763
         },
         {
           "w": "pseudomonas",
-          "start": 15.519,
-          "end": 16.314
+          "start": 14.763,
+          "end": 15.606
         },
         {
           "w": "multiply",
-          "start": 16.451,
-          "end": 17.064
+          "start": 15.606,
+          "end": 16.238
         },
         {
           "w": "between",
-          "start": 17.076,
-          "end": 17.451
+          "start": 16.238,
+          "end": 16.8
         },
         {
           "w": "uses",
-          "start": 17.462,
-          "end": 17.985
+          "start": 16.8,
+          "end": 17.152
         },
         {
           "w": "so",
-          "start": 18.098,
-          "end": 18.303
+          "start": 17.152,
+          "end": 17.362
         },
         {
           "w": "forced",
-          "start": 18.314,
-          "end": 18.757
+          "start": 17.362,
+          "end": 17.854
         },
         {
           "w": "air",
-          "start": 18.769,
-          "end": 18.939
+          "start": 17.854,
+          "end": 18.135
         },
         {
           "w": "passes",
-          "start": 18.951,
-          "end": 19.382
+          "start": 18.135,
+          "end": 18.627
         },
         {
           "w": "through",
-          "start": 19.394,
-          "end": 19.632
+          "start": 18.627,
+          "end": 19.189
         },
         {
           "w": "every",
-          "start": 19.644,
-          "end": 19.996
+          "start": 19.189,
+          "end": 19.61
         },
         {
           "w": "channel",
-          "start": 20.007,
-          "end": 20.451
+          "start": 19.61,
+          "end": 20.172
         },
         {
           "w": "failure",
-          "start": 21.478,
-          "end": 21.944
+          "start": 20.322,
+          "end": 20.855
         },
         {
           "w": "points",
-          "start": 21.955,
-          "end": 22.353
+          "start": 20.855,
+          "end": 21.321
         },
         {
           "w": "six",
-          "start": 22.364,
-          "end": 22.66
+          "start": 21.321,
+          "end": 21.588
         },
         {
           "w": "to",
-          "start": 22.671,
-          "end": 22.853
+          "start": 21.588,
+          "end": 21.788
         },
         {
           "w": "eight",
-          "start": 22.864,
-          "end": 23.103
+          "start": 21.788,
+          "end": 22.188
         },
         {
           "w": "are",
-          "start": 23.114,
-          "end": 23.296
+          "start": 22.188,
+          "end": 22.454
         },
         {
           "w": "inadequate",
-          "start": 23.308,
-          "end": 23.921
+          "start": 22.454,
+          "end": 23.187
         },
         {
           "w": "drying",
-          "start": 23.933,
-          "end": 24.387
+          "start": 23.187,
+          "end": 23.653
         },
         {
           "w": "coiled",
-          "start": 24.523,
-          "end": 24.819
+          "start": 23.653,
+          "end": 24.12
         },
         {
           "w": "storage",
-          "start": 24.83,
-          "end": 25.376
+          "start": 24.12,
+          "end": 24.653
         },
         {
           "w": "and",
-          "start": 25.569,
-          "end": 25.808
+          "start": 24.653,
+          "end": 24.919
         },
         {
           "w": "contaminated",
-          "start": 25.819,
-          "end": 26.592
+          "start": 24.919,
+          "end": 25.786
         },
         {
           "w": "rinse",
-          "start": 26.603,
-          "end": 26.853
+          "start": 25.786,
+          "end": 26.185
         },
         {
           "w": "water",
-          "start": 26.864,
-          "end": 27.319
+          "start": 26.185,
+          "end": 26.585
         },
         {
           "w": "which",
-          "start": 27.569,
-          "end": 27.773
+          "start": 26.585,
+          "end": 26.985
         },
         {
           "w": "recontaminates",
-          "start": 27.785,
-          "end": 28.648
+          "start": 26.985,
+          "end": 27.984
         },
         {
           "w": "the",
-          "start": 28.66,
-          "end": 28.773
+          "start": 27.984,
+          "end": 28.251
         },
         {
           "w": "scope",
-          "start": 28.785,
-          "end": 29.16
+          "start": 28.251,
+          "end": 28.651
         },
         {
           "w": "at",
-          "start": 29.171,
-          "end": 29.319
+          "start": 28.651,
+          "end": 28.851
         },
         {
           "w": "the",
-          "start": 29.33,
-          "end": 29.421
+          "start": 28.851,
+          "end": 29.117
         },
         {
           "w": "final",
-          "start": 29.433,
-          "end": 29.876
+          "start": 29.117,
+          "end": 29.517
         },
         {
           "w": "step",
-          "start": 29.887,
-          "end": 30.273
+          "start": 29.517,
+          "end": 29.85
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 990,
-      "startFrame": 4411
+      "durationInFrames": 954,
+      "startFrame": 4112
     },
     {
       "index": 8,
       "type": "stage",
-      "hash": "74b1194604bd",
+      "hash": "8d87111e9e5a",
       "narration": "Traceability links each scope to a patient, a reprocessing cycle and an operator, for every procedure. Failure point ten is its absence: transmission then cannot be investigated or contained. When transmission is suspected, quarantine the scope, review the records, involve infection control and microbiology, and consider patient notification.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-8.mp3",
-      "voDurationInSeconds": 23.52,
-      "voDurationInFrames": 706,
+      "voDurationInSeconds": 22.824,
+      "voDurationInFrames": 685,
       "captions": [
         {
           "text": "Traceability links each scope to a",
-          "start": 0.1,
-          "end": 1.93
+          "start": 0,
+          "end": 2.302
         },
         {
           "text": "patient, a reprocessing cycle and an",
-          "start": 1.93,
-          "end": 4.384
+          "start": 2.302,
+          "end": 4.669
         },
         {
           "text": "operator, for every procedure.",
-          "start": 4.384,
-          "end": 6.527
+          "start": 4.669,
+          "end": 6.726
         },
         {
           "text": "Failure point ten is its absence:",
-          "start": 7.378,
-          "end": 9.423
+          "start": 6.726,
+          "end": 8.965
         },
         {
           "text": "transmission then cannot be investigated",
-          "start": 9.423,
-          "end": 11.685
+          "start": 8.965,
+          "end": 11.748
         },
         {
           "text": "or contained. When transmission is",
-          "start": 11.685,
-          "end": 14.491
+          "start": 11.748,
+          "end": 14.197
         },
         {
           "text": "suspected, quarantine the scope, review",
-          "start": 14.491,
-          "end": 16.889
+          "start": 14.197,
+          "end": 16.76
         },
         {
           "text": "the records, involve infection control and",
-          "start": 16.889,
-          "end": 19.48
+          "start": 16.76,
+          "end": 19.593
         },
         {
           "text": "microbiology, and consider patient",
-          "start": 19.48,
-          "end": 21.821
+          "start": 19.593,
+          "end": 21.887
         },
         {
           "text": "notification.",
-          "start": 21.821,
-          "end": 22.862
+          "start": 21.887,
+          "end": 22.964
         }
       ],
       "words": [
         {
           "w": "traceability",
-          "start": 0.1,
-          "end": 0.839
+          "start": 0,
+          "end": 0.855
         },
         {
           "w": "links",
-          "start": 0.85,
-          "end": 1.202
+          "start": 0.855,
+          "end": 1.249
         },
         {
           "w": "each",
-          "start": 1.214,
-          "end": 1.418
+          "start": 1.249,
+          "end": 1.578
         },
         {
           "w": "scope",
-          "start": 1.43,
-          "end": 1.736
+          "start": 1.578,
+          "end": 1.973
         },
         {
           "w": "to",
-          "start": 1.748,
-          "end": 1.861
+          "start": 1.973,
+          "end": 2.17
         },
         {
           "w": "a",
-          "start": 1.873,
-          "end": 1.918
+          "start": 2.17,
+          "end": 2.302
         },
         {
           "w": "patient",
-          "start": 1.93,
-          "end": 2.498
+          "start": 2.302,
+          "end": 2.828
         },
         {
           "w": "a",
-          "start": 2.68,
-          "end": 2.793
+          "start": 2.828,
+          "end": 2.959
         },
         {
           "w": "reprocessing",
-          "start": 2.805,
-          "end": 3.555
+          "start": 2.959,
+          "end": 3.814
         },
         {
           "w": "cycle",
-          "start": 3.566,
-          "end": 4.055
+          "start": 3.814,
+          "end": 4.209
         },
         {
           "w": "and",
-          "start": 4.066,
-          "end": 4.259
+          "start": 4.209,
+          "end": 4.472
         },
         {
           "w": "an",
-          "start": 4.27,
-          "end": 4.373
+          "start": 4.472,
+          "end": 4.669
         },
         {
           "w": "operator",
-          "start": 4.384,
-          "end": 4.975
+          "start": 4.669,
+          "end": 5.261
         },
         {
           "w": "for",
-          "start": 5.1,
-          "end": 5.361
+          "start": 5.261,
+          "end": 5.524
         },
         {
           "w": "every",
-          "start": 5.373,
-          "end": 5.668
+          "start": 5.524,
+          "end": 5.918
         },
         {
           "w": "procedure",
-          "start": 5.68,
-          "end": 6.327
+          "start": 5.918,
+          "end": 6.576
         },
         {
           "w": "failure",
-          "start": 7.378,
-          "end": 7.844
+          "start": 6.726,
+          "end": 7.269
         },
         {
           "w": "point",
-          "start": 7.855,
-          "end": 8.162
+          "start": 7.269,
+          "end": 7.676
         },
         {
           "w": "ten",
-          "start": 8.173,
-          "end": 8.389
+          "start": 7.676,
+          "end": 7.948
         },
         {
           "w": "is",
-          "start": 8.401,
-          "end": 8.526
+          "start": 7.948,
+          "end": 8.151
         },
         {
           "w": "its",
-          "start": 8.537,
-          "end": 8.685
+          "start": 8.151,
+          "end": 8.423
         },
         {
           "w": "absence",
-          "start": 8.696,
-          "end": 9.298
+          "start": 8.423,
+          "end": 8.965
         },
         {
           "w": "transmission",
-          "start": 9.423,
-          "end": 10.083
+          "start": 8.965,
+          "end": 9.848
         },
         {
           "w": "then",
-          "start": 10.094,
-          "end": 10.31
+          "start": 9.848,
+          "end": 10.187
         },
         {
           "w": "cannot",
-          "start": 10.321,
-          "end": 10.673
+          "start": 10.187,
+          "end": 10.662
         },
         {
           "w": "be",
-          "start": 10.685,
-          "end": 10.844
+          "start": 10.662,
+          "end": 10.866
         },
         {
           "w": "investigated",
-          "start": 10.855,
-          "end": 11.673
+          "start": 10.866,
+          "end": 11.748
         },
         {
           "w": "or",
-          "start": 11.685,
-          "end": 11.878
+          "start": 11.748,
+          "end": 11.951
         },
         {
           "w": "contained",
-          "start": 11.889,
-          "end": 12.435
+          "start": 11.951,
+          "end": 12.63
         },
         {
           "w": "when",
-          "start": 13.48,
-          "end": 13.73
+          "start": 12.78,
+          "end": 13.117
         },
         {
           "w": "transmission",
-          "start": 13.741,
-          "end": 14.355
+          "start": 13.117,
+          "end": 13.994
         },
         {
           "w": "is",
-          "start": 14.366,
-          "end": 14.48
+          "start": 13.994,
+          "end": 14.197
         },
         {
           "w": "suspected",
-          "start": 14.491,
-          "end": 15.15
+          "start": 14.197,
+          "end": 14.871
         },
         {
           "w": "quarantine",
-          "start": 15.264,
-          "end": 15.889
+          "start": 14.871,
+          "end": 15.613
         },
         {
           "w": "the",
-          "start": 15.9,
-          "end": 15.98
+          "start": 15.613,
+          "end": 15.883
         },
         {
           "w": "scope",
-          "start": 15.991,
-          "end": 16.389
+          "start": 15.883,
+          "end": 16.288
         },
         {
           "w": "review",
-          "start": 16.514,
-          "end": 16.878
+          "start": 16.288,
+          "end": 16.76
         },
         {
           "w": "the",
-          "start": 16.889,
-          "end": 16.98
+          "start": 16.76,
+          "end": 17.03
         },
         {
           "w": "records",
-          "start": 16.991,
-          "end": 17.514
+          "start": 17.03,
+          "end": 17.57
         },
         {
           "w": "involve",
-          "start": 17.639,
-          "end": 18.15
+          "start": 17.57,
+          "end": 18.109
         },
         {
           "w": "infection",
-          "start": 18.162,
-          "end": 18.696
+          "start": 18.109,
+          "end": 18.784
         },
         {
           "w": "control",
-          "start": 18.707,
-          "end": 19.264
+          "start": 18.784,
+          "end": 19.324
         },
         {
           "w": "and",
-          "start": 19.275,
-          "end": 19.469
+          "start": 19.324,
+          "end": 19.593
         },
         {
           "w": "microbiology",
-          "start": 19.48,
-          "end": 20.446
+          "start": 19.593,
+          "end": 20.47
         },
         {
           "w": "and",
-          "start": 20.628,
-          "end": 20.866
+          "start": 20.47,
+          "end": 20.74
         },
         {
           "w": "consider",
-          "start": 20.878,
-          "end": 21.321
+          "start": 20.74,
+          "end": 21.347
         },
         {
           "w": "patient",
-          "start": 21.332,
-          "end": 21.81
+          "start": 21.347,
+          "end": 21.887
         },
         {
           "w": "notification",
-          "start": 21.821,
-          "end": 22.662
+          "start": 21.887,
+          "end": 22.764
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 762,
-      "startFrame": 5401
+      "durationInFrames": 741,
+      "startFrame": 5066
     },
     {
       "index": 9,
       "type": "stage",
-      "hash": "c141cc19d3be",
+      "hash": "18cefed9d7f8",
       "narration": "Underneath most failures is time pressure. Long lists with too few scopes call for adequate scope inventory. When the cycle is shortened to meet the list, adequate capacity and staffing is the safeguard. Where model specific steps are missed, staff must be trained and competency-assessed. When reprocessing cannot be completed, staff need the right to hold a scope back. Records of time and deviation make hidden pressure visible.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-9.mp3",
-      "voDurationInSeconds": 30.264,
-      "voDurationInFrames": 908,
+      "voDurationInSeconds": 26.808,
+      "voDurationInFrames": 805,
       "captions": [
         {
           "text": "Underneath most failures is time pressure.",
-          "start": 0.1,
-          "end": 2.6750000000000003
+          "start": 0,
+          "end": 2.766
         },
         {
           "text": "Long lists with too few scopes call for",
-          "start": 3.514,
-          "end": 5.969
+          "start": 2.766,
+          "end": 5.351
         },
         {
           "text": "adequate scope inventory.",
-          "start": 5.969,
-          "end": 7.634
+          "start": 5.351,
+          "end": 7.116
         },
         {
           "text": "When the cycle is shortened to meet the",
-          "start": 8.512,
-          "end": 10.296
+          "start": 7.116,
+          "end": 9.387
         },
         {
           "text": "list, adequate capacity and staffing is",
-          "start": 10.296,
-          "end": 12.796
+          "start": 9.387,
+          "end": 11.601
         },
         {
           "text": "the safeguard. Where model specific steps",
-          "start": 12.796,
-          "end": 16.159
+          "start": 11.601,
+          "end": 14.271
         },
         {
           "text": "are missed, staff must be trained and",
-          "start": 16.159,
-          "end": 18.432
+          "start": 14.271,
+          "end": 16.636
         },
         {
           "text": "competency-assessed.",
-          "start": 18.432,
-          "end": 19.779999999999998
+          "start": 16.636,
+          "end": 18
         },
         {
           "text": "When reprocessing cannot be completed,",
-          "start": 20.62,
-          "end": 22.938
+          "start": 18,
+          "end": 20.326
         },
         {
           "text": "staff need the right to hold a scope back.",
-          "start": 22.938,
-          "end": 25.422
+          "start": 20.326,
+          "end": 23.046
         },
         {
           "text": "Records of time and deviation make hidden",
-          "start": 26.266,
-          "end": 28.471
+          "start": 23.046,
+          "end": 25.677
         },
         {
           "text": "pressure visible.",
-          "start": 28.471,
-          "end": 29.602
+          "start": 25.677,
+          "end": 26.942
         }
       ],
       "words": [
         {
           "w": "underneath",
-          "start": 0.1,
-          "end": 0.645
+          "start": 0,
+          "end": 0.685
         },
         {
           "w": "most",
-          "start": 0.657,
-          "end": 0.964
+          "start": 0.685,
+          "end": 0.997
         },
         {
           "w": "failures",
-          "start": 0.975,
-          "end": 1.532
+          "start": 0.997,
+          "end": 1.557
         },
         {
           "w": "is",
-          "start": 1.543,
-          "end": 1.702
+          "start": 1.557,
+          "end": 1.744
         },
         {
           "w": "time",
-          "start": 1.714,
-          "end": 1.986
+          "start": 1.744,
+          "end": 2.055
         },
         {
           "w": "pressure",
-          "start": 1.998,
-          "end": 2.475
+          "start": 2.055,
+          "end": 2.616
         },
         {
           "w": "long",
-          "start": 3.514,
-          "end": 3.934
+          "start": 2.766,
+          "end": 3.089
         },
         {
           "w": "lists",
-          "start": 3.946,
-          "end": 4.321
+          "start": 3.089,
+          "end": 3.477
         },
         {
           "w": "with",
-          "start": 4.332,
-          "end": 4.503
+          "start": 3.477,
+          "end": 3.8
         },
         {
           "w": "too",
-          "start": 4.514,
-          "end": 4.707
+          "start": 3.8,
+          "end": 4.058
         },
         {
           "w": "few",
-          "start": 4.719,
-          "end": 4.98
+          "start": 4.058,
+          "end": 4.317
         },
         {
           "w": "scopes",
-          "start": 4.991,
-          "end": 5.389
+          "start": 4.317,
+          "end": 4.769
         },
         {
           "w": "call",
-          "start": 5.4,
-          "end": 5.707
+          "start": 4.769,
+          "end": 5.092
         },
         {
           "w": "for",
-          "start": 5.719,
-          "end": 5.957
+          "start": 5.092,
+          "end": 5.351
         },
         {
           "w": "adequate",
-          "start": 5.969,
-          "end": 6.412
+          "start": 5.351,
+          "end": 5.932
         },
         {
           "w": "scope",
-          "start": 6.423,
-          "end": 6.764
+          "start": 5.932,
+          "end": 6.32
         },
         {
           "w": "inventory",
-          "start": 6.775,
-          "end": 7.434
+          "start": 6.32,
+          "end": 6.966
         },
         {
           "w": "when",
-          "start": 8.512,
-          "end": 8.739
+          "start": 7.116,
+          "end": 7.4
         },
         {
           "w": "the",
-          "start": 8.751,
-          "end": 8.83
+          "start": 7.4,
+          "end": 7.627
         },
         {
           "w": "cycle",
-          "start": 8.842,
-          "end": 9.285
+          "start": 7.627,
+          "end": 7.968
         },
         {
           "w": "is",
-          "start": 9.296,
-          "end": 9.387
+          "start": 7.968,
+          "end": 8.138
         },
         {
           "w": "shortened",
-          "start": 9.398,
-          "end": 9.83
+          "start": 8.138,
+          "end": 8.706
         },
         {
           "w": "to",
-          "start": 9.842,
-          "end": 9.932
+          "start": 8.706,
+          "end": 8.876
         },
         {
           "w": "meet",
-          "start": 9.944,
-          "end": 10.194
+          "start": 8.876,
+          "end": 9.16
         },
         {
           "w": "the",
-          "start": 10.205,
-          "end": 10.285
+          "start": 9.16,
+          "end": 9.387
         },
         {
           "w": "list",
-          "start": 10.296,
-          "end": 10.671
+          "start": 9.387,
+          "end": 9.671
         },
         {
           "w": "adequate",
-          "start": 10.807,
-          "end": 11.296
+          "start": 9.671,
+          "end": 10.182
         },
         {
           "w": "capacity",
-          "start": 11.307,
-          "end": 11.932
+          "start": 10.182,
+          "end": 10.693
         },
         {
           "w": "and",
-          "start": 11.944,
-          "end": 12.194
+          "start": 10.693,
+          "end": 10.92
         },
         {
           "w": "staffing",
-          "start": 12.205,
-          "end": 12.671
+          "start": 10.92,
+          "end": 11.431
         },
         {
           "w": "is",
-          "start": 12.682,
-          "end": 12.785
+          "start": 11.431,
+          "end": 11.601
         },
         {
           "w": "the",
-          "start": 12.796,
-          "end": 12.887
+          "start": 11.601,
+          "end": 11.828
         },
         {
           "w": "safeguard",
-          "start": 12.898,
-          "end": 13.569
+          "start": 11.828,
+          "end": 12.396
         },
         {
           "w": "where",
-          "start": 14.614,
-          "end": 14.875
+          "start": 12.546,
+          "end": 12.929
         },
         {
           "w": "model",
-          "start": 14.887,
-          "end": 15.216
+          "start": 12.929,
+          "end": 13.313
         },
         {
           "w": "specific",
-          "start": 15.228,
-          "end": 15.75
+          "start": 13.313,
+          "end": 13.888
         },
         {
           "w": "steps",
-          "start": 15.762,
-          "end": 16.148
+          "start": 13.888,
+          "end": 14.271
         },
         {
           "w": "are",
-          "start": 16.159,
-          "end": 16.273
+          "start": 14.271,
+          "end": 14.527
         },
         {
           "w": "missed",
-          "start": 16.284,
-          "end": 16.648
+          "start": 14.527,
+          "end": 14.974
         },
         {
           "w": "staff",
-          "start": 16.887,
-          "end": 17.307
+          "start": 14.974,
+          "end": 15.358
         },
         {
           "w": "must",
-          "start": 17.319,
-          "end": 17.557
+          "start": 15.358,
+          "end": 15.677
         },
         {
           "w": "be",
-          "start": 17.569,
-          "end": 17.682
+          "start": 15.677,
+          "end": 15.869
         },
         {
           "w": "trained",
-          "start": 17.694,
-          "end": 18.205
+          "start": 15.869,
+          "end": 16.38
         },
         {
           "w": "and",
-          "start": 18.216,
-          "end": 18.421
+          "start": 16.38,
+          "end": 16.636
         },
         {
           "w": "competencyassessed",
-          "start": 18.432,
-          "end": 19.58
+          "start": 16.636,
+          "end": 17.85
         },
         {
           "w": "when",
-          "start": 20.62,
-          "end": 20.87
+          "start": 18,
+          "end": 18.306
         },
         {
           "w": "reprocessing",
-          "start": 20.881,
-          "end": 21.643
+          "start": 18.306,
+          "end": 19.102
         },
         {
           "w": "cannot",
-          "start": 21.654,
-          "end": 21.995
+          "start": 19.102,
+          "end": 19.53
         },
         {
           "w": "be",
-          "start": 22.006,
-          "end": 22.143
+          "start": 19.53,
+          "end": 19.714
         },
         {
           "w": "completed",
-          "start": 22.154,
-          "end": 22.79
+          "start": 19.714,
+          "end": 20.326
         },
         {
           "w": "staff",
-          "start": 22.938,
-          "end": 23.359
+          "start": 20.326,
+          "end": 20.693
         },
         {
           "w": "need",
-          "start": 23.37,
-          "end": 23.586
+          "start": 20.693,
+          "end": 20.999
         },
         {
           "w": "the",
-          "start": 23.597,
-          "end": 23.677
+          "start": 20.999,
+          "end": 21.244
         },
         {
           "w": "right",
-          "start": 23.688,
-          "end": 23.995
+          "start": 21.244,
+          "end": 21.611
         },
         {
           "w": "to",
-          "start": 24.006,
-          "end": 24.131
+          "start": 21.611,
+          "end": 21.794
         },
         {
           "w": "hold",
-          "start": 24.143,
-          "end": 24.393
+          "start": 21.794,
+          "end": 22.1
         },
         {
           "w": "a",
-          "start": 24.404,
-          "end": 24.484
+          "start": 22.1,
+          "end": 22.223
         },
         {
           "w": "scope",
-          "start": 24.495,
-          "end": 24.813
+          "start": 22.223,
+          "end": 22.59
         },
         {
           "w": "back",
-          "start": 24.825,
-          "end": 25.222
+          "start": 22.59,
+          "end": 22.896
         },
         {
           "w": "records",
-          "start": 26.266,
-          "end": 26.777
+          "start": 23.046,
+          "end": 23.547
         },
         {
           "w": "of",
-          "start": 26.789,
-          "end": 26.902
+          "start": 23.547,
+          "end": 23.735
         },
         {
           "w": "time",
-          "start": 26.914,
-          "end": 27.243
+          "start": 23.735,
+          "end": 24.048
         },
         {
           "w": "and",
-          "start": 27.255,
-          "end": 27.402
+          "start": 24.048,
+          "end": 24.299
         },
         {
           "w": "deviation",
-          "start": 27.414,
-          "end": 27.925
+          "start": 24.299,
+          "end": 24.925
         },
         {
           "w": "make",
-          "start": 27.936,
-          "end": 28.152
+          "start": 24.925,
+          "end": 25.239
         },
         {
           "w": "hidden",
-          "start": 28.164,
-          "end": 28.459
+          "start": 25.239,
+          "end": 25.677
         },
         {
           "w": "pressure",
-          "start": 28.471,
-          "end": 28.902
+          "start": 25.677,
+          "end": 26.241
         },
         {
           "w": "visible",
-          "start": 28.914,
-          "end": 29.402
+          "start": 26.241,
+          "end": 26.742
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 964,
-      "startFrame": 6163
+      "durationInFrames": 861,
+      "startFrame": 5807
     },
     {
       "index": 10,
       "type": "stage",
-      "hash": "df7e407ff720",
+      "hash": "a8da250d0d92",
       "narration": "To summarise. Ten failure points are documented, and none is exotic. Brushing is the only step that removes biofilm, and the elevator needs the manufacturer's exact instructions. Every procedure must be traceable from scope to patient to cycle to operator. And because pressure underlies most failures, capacity, training and the right to hold a scope back are part of the process.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-10.mp3",
-      "voDurationInSeconds": 26.856,
-      "voDurationInFrames": 806,
+      "voDurationInSeconds": 24.816,
+      "voDurationInFrames": 745,
       "captions": [
         {
           "text": "To summarise. Ten failure points are",
-          "start": 0.1,
-          "end": 3.281
+          "start": 0,
+          "end": 2.711
         },
         {
           "text": "documented, and none is exotic.",
-          "start": 3.281,
-          "end": 5.47
+          "start": 2.711,
+          "end": 4.98
         },
         {
           "text": "Brushing is the only step that removes",
-          "start": 6.304,
-          "end": 8.315
+          "start": 4.98,
+          "end": 7.397
         },
         {
           "text": "biofilm, and the elevator needs the",
-          "start": 8.315,
-          "end": 10.293
+          "start": 7.397,
+          "end": 9.565
         },
         {
           "text": "manufacturer's exact instructions.",
-          "start": 10.293,
-          "end": 12.709
+          "start": 9.565,
+          "end": 11.946
         },
         {
           "text": "Every procedure must be traceable from",
-          "start": 13.558,
-          "end": 15.774
+          "start": 11.946,
+          "end": 14.438
         },
         {
           "text": "scope to patient to cycle to operator.",
-          "start": 15.774,
-          "end": 18.247
+          "start": 14.438,
+          "end": 17.016
         },
         {
           "text": "And because pressure underlies most",
-          "start": 19.108,
-          "end": 21.142
+          "start": 17.016,
+          "end": 19.303
         },
         {
           "text": "failures, capacity, training and the right",
-          "start": 21.142,
-          "end": 23.619
+          "start": 19.303,
+          "end": 21.909
         },
         {
           "text": "to hold a scope back are part of the",
-          "start": 23.619,
-          "end": 25.403
+          "start": 21.909,
+          "end": 24.26
         },
         {
           "text": "process.",
-          "start": 25.403,
-          "end": 26.217
+          "start": 24.26,
+          "end": 24.968
         }
       ],
       "words": [
         {
           "w": "to",
-          "start": 0.1,
-          "end": 0.259
+          "start": 0,
+          "end": 0.216
         },
         {
           "w": "summarise",
-          "start": 0.27,
-          "end": 1.055
+          "start": 0.216,
+          "end": 0.936
         },
         {
           "w": "ten",
-          "start": 2.122,
-          "end": 2.429
+          "start": 1.086,
+          "end": 1.369
         },
         {
           "w": "failure",
-          "start": 2.44,
-          "end": 2.804
+          "start": 1.369,
+          "end": 1.934
         },
         {
           "w": "points",
-          "start": 2.815,
-          "end": 3.156
+          "start": 1.934,
+          "end": 2.428
         },
         {
           "w": "are",
-          "start": 3.167,
-          "end": 3.27
+          "start": 2.428,
+          "end": 2.711
         },
         {
           "w": "documented",
-          "start": 3.281,
-          "end": 3.997
+          "start": 2.711,
+          "end": 3.488
         },
         {
           "w": "and",
-          "start": 4.111,
-          "end": 4.338
+          "start": 3.488,
+          "end": 3.77
         },
         {
           "w": "none",
-          "start": 4.349,
-          "end": 4.542
+          "start": 3.77,
+          "end": 4.124
         },
         {
           "w": "is",
-          "start": 4.554,
-          "end": 4.679
+          "start": 4.124,
+          "end": 4.336
         },
         {
           "w": "exotic",
-          "start": 4.69,
-          "end": 5.27
+          "start": 4.336,
+          "end": 4.83
         },
         {
           "w": "brushing",
-          "start": 6.304,
-          "end": 6.827
+          "start": 4.98,
+          "end": 5.538
         },
         {
           "w": "is",
-          "start": 6.838,
-          "end": 6.94
+          "start": 5.538,
+          "end": 5.724
         },
         {
           "w": "the",
-          "start": 6.952,
-          "end": 7.043
+          "start": 5.724,
+          "end": 5.971
         },
         {
           "w": "only",
-          "start": 7.054,
-          "end": 7.372
+          "start": 5.971,
+          "end": 6.281
         },
         {
           "w": "step",
-          "start": 7.384,
-          "end": 7.668
+          "start": 6.281,
+          "end": 6.591
         },
         {
           "w": "that",
-          "start": 7.679,
-          "end": 7.906
+          "start": 6.591,
+          "end": 6.901
         },
         {
           "w": "removes",
-          "start": 7.918,
-          "end": 8.304
+          "start": 6.901,
+          "end": 7.397
         },
         {
           "w": "biofilm",
-          "start": 8.315,
-          "end": 8.94
+          "start": 7.397,
+          "end": 7.892
         },
         {
           "w": "and",
-          "start": 9.077,
-          "end": 9.259
+          "start": 7.892,
+          "end": 8.14
         },
         {
           "w": "the",
-          "start": 9.27,
-          "end": 9.372
+          "start": 8.14,
+          "end": 8.388
         },
         {
           "w": "elevator",
-          "start": 9.384,
-          "end": 9.872
+          "start": 8.388,
+          "end": 8.946
         },
         {
           "w": "needs",
-          "start": 9.884,
-          "end": 10.179
+          "start": 8.946,
+          "end": 9.317
         },
         {
           "w": "the",
-          "start": 10.19,
-          "end": 10.281
+          "start": 9.317,
+          "end": 9.565
         },
         {
           "w": "manufacturers",
-          "start": 10.293,
-          "end": 11.19
+          "start": 9.565,
+          "end": 10.619
         },
         {
           "w": "exact",
-          "start": 11.202,
-          "end": 11.656
+          "start": 10.619,
+          "end": 10.99
         },
         {
           "w": "instructions",
-          "start": 11.668,
-          "end": 12.509
+          "start": 10.99,
+          "end": 11.796
         },
         {
           "w": "every",
-          "start": 13.558,
-          "end": 13.944
+          "start": 11.946,
+          "end": 12.329
         },
         {
           "w": "procedure",
-          "start": 13.956,
-          "end": 14.547
+          "start": 12.329,
+          "end": 12.968
         },
         {
           "w": "must",
-          "start": 14.558,
-          "end": 14.842
+          "start": 12.968,
+          "end": 13.288
         },
         {
           "w": "be",
-          "start": 14.853,
-          "end": 14.967
+          "start": 13.288,
+          "end": 13.48
         },
         {
           "w": "traceable",
-          "start": 14.978,
-          "end": 15.513
+          "start": 13.48,
+          "end": 14.118
         },
         {
           "w": "from",
-          "start": 15.524,
-          "end": 15.763
+          "start": 14.118,
+          "end": 14.438
         },
         {
           "w": "scope",
-          "start": 15.774,
-          "end": 16.092
+          "start": 14.438,
+          "end": 14.821
         },
         {
           "w": "to",
-          "start": 16.103,
-          "end": 16.206
+          "start": 14.821,
+          "end": 15.013
         },
         {
           "w": "patient",
-          "start": 16.217,
-          "end": 16.66
+          "start": 15.013,
+          "end": 15.524
         },
         {
           "w": "to",
-          "start": 16.672,
-          "end": 16.751
+          "start": 15.524,
+          "end": 15.716
         },
         {
           "w": "cycle",
-          "start": 16.763,
-          "end": 17.217
+          "start": 15.716,
+          "end": 16.099
         },
         {
           "w": "to",
-          "start": 17.228,
-          "end": 17.41
+          "start": 16.099,
+          "end": 16.291
         },
         {
           "w": "operator",
-          "start": 17.422,
-          "end": 18.047
+          "start": 16.291,
+          "end": 16.866
         },
         {
           "w": "and",
-          "start": 19.108,
-          "end": 19.392
+          "start": 17.016,
+          "end": 17.27
         },
         {
           "w": "because",
-          "start": 19.403,
-          "end": 19.767
+          "start": 17.27,
+          "end": 17.778
         },
         {
           "w": "pressure",
-          "start": 19.778,
-          "end": 20.244
+          "start": 17.778,
+          "end": 18.35
         },
         {
           "w": "underlies",
-          "start": 20.256,
-          "end": 20.801
+          "start": 18.35,
+          "end": 18.986
         },
         {
           "w": "most",
-          "start": 20.813,
-          "end": 21.131
+          "start": 18.986,
+          "end": 19.303
         },
         {
           "w": "failures",
-          "start": 21.142,
-          "end": 21.722
+          "start": 19.303,
+          "end": 19.875
         },
         {
           "w": "capacity",
-          "start": 21.881,
-          "end": 22.574
+          "start": 19.875,
+          "end": 20.447
         },
         {
           "w": "training",
-          "start": 22.676,
-          "end": 23.063
+          "start": 20.447,
+          "end": 21.019
         },
         {
           "w": "and",
-          "start": 23.074,
-          "end": 23.21
+          "start": 21.019,
+          "end": 21.273
         },
         {
           "w": "the",
-          "start": 23.222,
-          "end": 23.278
+          "start": 21.273,
+          "end": 21.527
         },
         {
           "w": "right",
-          "start": 23.29,
-          "end": 23.608
+          "start": 21.527,
+          "end": 21.909
         },
         {
           "w": "to",
-          "start": 23.619,
-          "end": 23.722
+          "start": 21.909,
+          "end": 22.099
         },
         {
           "w": "hold",
-          "start": 23.733,
-          "end": 23.994
+          "start": 22.099,
+          "end": 22.417
         },
         {
           "w": "a",
-          "start": 24.006,
-          "end": 24.074
+          "start": 22.417,
+          "end": 22.544
         },
         {
           "w": "scope",
-          "start": 24.085,
-          "end": 24.415
+          "start": 22.544,
+          "end": 22.925
         },
         {
           "w": "back",
-          "start": 24.426,
-          "end": 24.767
+          "start": 22.925,
+          "end": 23.243
         },
         {
           "w": "are",
-          "start": 24.778,
-          "end": 24.903
+          "start": 23.243,
+          "end": 23.497
         },
         {
           "w": "part",
-          "start": 24.915,
-          "end": 25.188
+          "start": 23.497,
+          "end": 23.815
         },
         {
           "w": "of",
-          "start": 25.199,
-          "end": 25.29
+          "start": 23.815,
+          "end": 24.006
         },
         {
           "w": "the",
-          "start": 25.301,
-          "end": 25.392
+          "start": 24.006,
+          "end": 24.26
         },
         {
           "w": "process",
-          "start": 25.403,
-          "end": 26.017
+          "start": 24.26,
+          "end": 24.768
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 862,
-      "startFrame": 7127
+      "durationInFrames": 801,
+      "startFrame": 6668
     },
     {
       "index": 11,
       "type": "outro",
-      "hash": "08f07abbf7d3",
+      "hash": "17bd01cb15b5",
       "narration": "Keep learning with MedSkills.",
       "audioFile": "audio/vo/pilot-cssd/P2/scene-11.mp3",
-      "voDurationInSeconds": 2.496,
-      "voDurationInFrames": 75,
+      "voDurationInSeconds": 1.896,
+      "voDurationInFrames": 57,
       "captions": [
         {
           "text": "Keep learning with MedSkills.",
-          "start": 0.1,
-          "end": 1.8679999999999999
+          "start": 0,
+          "end": 2.048
         }
       ],
       "words": [
         {
           "w": "keep",
-          "start": 0.1,
-          "end": 0.407
+          "start": 0,
+          "end": 0.319
         },
         {
           "w": "learning",
-          "start": 0.418,
-          "end": 0.816
+          "start": 0.319,
+          "end": 0.892
         },
         {
           "w": "with",
-          "start": 0.827,
-          "end": 0.986
+          "start": 0.892,
+          "end": 1.211
         },
         {
           "w": "medskills",
-          "start": 0.998,
-          "end": 1.668
+          "start": 1.211,
+          "end": 1.848
         }
       ],
       "leadFrames": 21,
       "tailFrames": 136,
-      "durationInFrames": 232,
-      "startFrame": 7989
+      "durationInFrames": 214,
+      "startFrame": 7469
     }
   ]
 }

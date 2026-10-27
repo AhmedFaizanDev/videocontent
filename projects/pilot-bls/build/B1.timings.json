@@ -1,10 +1,10 @@
 {
   "id": "B1",
   "fps": 30,
-  "totalDurationInFrames": 8820,
+  "totalDurationInFrames": 8238,
   "voice": {
-    "id": "Kajal",
-    "name": "Kajal"
+    "id": "Kiara",
+    "name": "Kiara"
   },
   "scenes": [
     {
@@ -25,3697 +25,3697 @@
     {
       "index": 2,
       "type": "stage",
-      "hash": "cc7356139fcc",
+      "hash": "4e949ba26d7f",
       "narration": "Module one: cardiac arrest and the Chain of Survival. Each heartbeat begins as an electrical impulse that spreads through the muscle, so the atria and then the ventricles contract in sequence, pushing blood out to the body.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-2.mp3",
-      "voDurationInSeconds": 14.28,
-      "voDurationInFrames": 429,
+      "voDurationInSeconds": 13.992,
+      "voDurationInFrames": 420,
       "captions": [
         {
           "text": "Module one: cardiac arrest and the Chain",
-          "start": 0.137,
-          "end": 3.006
+          "start": 0,
+          "end": 2.732
         },
         {
           "text": "of Survival. Each heartbeat begins as an",
-          "start": 3.006,
-          "end": 5.939
+          "start": 2.732,
+          "end": 5.416
         },
         {
           "text": "electrical impulse that spreads through",
-          "start": 5.939,
-          "end": 7.998
+          "start": 5.416,
+          "end": 7.865
         },
         {
           "text": "the muscle, so the atria and then the",
-          "start": 7.998,
-          "end": 10.201
+          "start": 7.865,
+          "end": 10.13
         },
         {
           "text": "ventricles contract in sequence, pushing",
-          "start": 10.201,
-          "end": 12.853
+          "start": 10.13,
+          "end": 12.579
         },
         {
           "text": "blood out to the body.",
-          "start": 12.853,
-          "end": 14.216
+          "start": 12.579,
+          "end": 14.126
         }
       ],
       "words": [
         {
           "w": "module",
-          "start": 0.137,
-          "end": 0.656
+          "start": 0,
+          "end": 0.478
         },
         {
           "w": "one",
-          "start": 0.656,
-          "end": 1.176
+          "start": 0.478,
+          "end": 0.751
         },
         {
           "w": "cardiac",
-          "start": 1.176,
-          "end": 1.862
+          "start": 0.751,
+          "end": 1.298
         },
         {
           "w": "arrest",
-          "start": 1.862,
-          "end": 2.426
+          "start": 1.298,
+          "end": 1.776
         },
         {
           "w": "and",
-          "start": 2.426,
-          "end": 2.548
+          "start": 1.776,
+          "end": 2.049
         },
         {
           "w": "the",
-          "start": 2.548,
-          "end": 2.716
+          "start": 2.049,
+          "end": 2.322
         },
         {
           "w": "chain",
-          "start": 2.716,
-          "end": 3.006
+          "start": 2.322,
+          "end": 2.732
         },
         {
           "w": "of",
-          "start": 3.006,
-          "end": 3.173
+          "start": 2.732,
+          "end": 2.937
         },
         {
           "w": "survival",
-          "start": 3.173,
-          "end": 3.853
+          "start": 2.937,
+          "end": 3.552
         },
         {
           "w": "each",
-          "start": 4.43,
-          "end": 4.567
+          "start": 3.702,
+          "end": 4.008
         },
         {
           "w": "heartbeat",
-          "start": 4.567,
-          "end": 5.101
+          "start": 4.008,
+          "end": 4.62
         },
         {
           "w": "begins",
-          "start": 5.101,
-          "end": 5.65
+          "start": 4.62,
+          "end": 5.049
         },
         {
           "w": "as",
-          "start": 5.65,
-          "end": 5.802
+          "start": 5.049,
+          "end": 5.233
         },
         {
           "w": "an",
-          "start": 5.802,
-          "end": 5.939
+          "start": 5.233,
+          "end": 5.416
         },
         {
           "w": "electrical",
-          "start": 5.939,
-          "end": 6.58
+          "start": 5.416,
+          "end": 6.09
         },
         {
           "w": "impulse",
-          "start": 6.58,
-          "end": 7.098
+          "start": 6.09,
+          "end": 6.579
         },
         {
           "w": "that",
-          "start": 7.098,
-          "end": 7.388
+          "start": 6.579,
+          "end": 6.886
         },
         {
           "w": "spreads",
-          "start": 7.388,
-          "end": 7.785
+          "start": 6.886,
+          "end": 7.375
         },
         {
           "w": "through",
-          "start": 7.785,
-          "end": 7.998
+          "start": 7.375,
+          "end": 7.865
         },
         {
           "w": "the",
-          "start": 7.998,
-          "end": 8.151
+          "start": 7.865,
+          "end": 8.11
         },
         {
           "w": "muscle",
-          "start": 8.151,
-          "end": 8.722
+          "start": 8.11,
+          "end": 8.539
         },
         {
           "w": "so",
-          "start": 8.722,
-          "end": 9.057
+          "start": 8.539,
+          "end": 8.722
         },
         {
           "w": "the",
-          "start": 9.057,
-          "end": 9.286
+          "start": 8.722,
+          "end": 8.967
         },
         {
           "w": "atria",
-          "start": 9.286,
-          "end": 9.744
+          "start": 8.967,
+          "end": 9.334
         },
         {
           "w": "and",
-          "start": 9.744,
-          "end": 9.896
+          "start": 9.334,
+          "end": 9.579
         },
         {
           "w": "then",
-          "start": 9.896,
-          "end": 10.049
+          "start": 9.579,
+          "end": 9.885
         },
         {
           "w": "the",
-          "start": 10.049,
-          "end": 10.201
+          "start": 9.885,
+          "end": 10.13
         },
         {
           "w": "ventricles",
-          "start": 10.201,
-          "end": 10.887
+          "start": 10.13,
+          "end": 10.804
         },
         {
           "w": "contract",
-          "start": 10.887,
-          "end": 11.528
+          "start": 10.804,
+          "end": 11.355
         },
         {
           "w": "in",
-          "start": 11.528,
-          "end": 11.65
+          "start": 11.355,
+          "end": 11.538
         },
         {
           "w": "sequence",
-          "start": 11.65,
-          "end": 12.411
+          "start": 11.538,
+          "end": 12.089
         },
         {
           "w": "pushing",
-          "start": 12.411,
-          "end": 12.853
+          "start": 12.089,
+          "end": 12.579
         },
         {
           "w": "blood",
-          "start": 12.853,
-          "end": 13.174
+          "start": 12.579,
+          "end": 12.946
         },
         {
           "w": "out",
-          "start": 13.174,
-          "end": 13.311
+          "start": 12.946,
+          "end": 13.191
         },
         {
           "w": "to",
-          "start": 13.311,
-          "end": 13.463
+          "start": 13.191,
+          "end": 13.375
         },
         {
           "w": "the",
-          "start": 13.463,
-          "end": 13.616
+          "start": 13.375,
+          "end": 13.62
         },
         {
           "w": "body",
-          "start": 13.616,
-          "end": 14.016
+          "start": 13.62,
+          "end": 13.926
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 485,
+      "durationInFrames": 476,
       "startFrame": 96
     },
     {
       "index": 3,
       "type": "stage",
-      "hash": "a75a5b316218",
+      "hash": "e3968d06b4cc",
       "narration": "Cardiac arrest is an electrical problem. In ventricular fibrillation, the chambers lose their coordination: muscle fibres fire out of step, and the ventricles quiver instead of contracting. A quivering ventricle ejects no blood, so cardiac output falls to zero and the pulse is lost within seconds. Without blood to the brain, the patient loses consciousness. Occasional gasping is not normal breathing. This patient is unresponsive, with no pulse.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-3.mp3",
-      "voDurationInSeconds": 31.728,
-      "voDurationInFrames": 952,
+      "voDurationInSeconds": 29.04,
+      "voDurationInFrames": 872,
       "captions": [
         {
           "text": "Cardiac arrest is an electrical problem.",
-          "start": 0.137,
-          "end": 3.1430000000000002
+          "start": 0,
+          "end": 2.55
         },
         {
           "text": "In ventricular fibrillation, the chambers",
-          "start": 3.431,
-          "end": 6.143
+          "start": 2.55,
+          "end": 5.142
         },
         {
           "text": "lose their coordination:",
-          "start": 6.143,
-          "end": 7.588
+          "start": 5.142,
+          "end": 6.66
         },
         {
           "text": "muscle fibres fire out of step, and the",
-          "start": 7.588,
-          "end": 10.054
+          "start": 6.66,
+          "end": 9.126
         },
         {
           "text": "ventricles quiver instead of contracting.",
-          "start": 10.054,
-          "end": 12.822
+          "start": 9.126,
+          "end": 11.868
         },
         {
           "text": "A quivering ventricle ejects no blood, so",
-          "start": 12.965,
-          "end": 15.782
+          "start": 11.868,
+          "end": 14.7
         },
         {
           "text": "cardiac output falls to zero and the pulse",
-          "start": 15.782,
-          "end": 18.573
+          "start": 14.7,
+          "end": 17.671
         },
         {
           "text": "is lost within seconds.",
-          "start": 18.573,
-          "end": 20.252
+          "start": 17.671,
+          "end": 19.41
         },
         {
           "text": "Without blood to the brain, the patient",
-          "start": 20.531,
-          "end": 22.949
+          "start": 19.41,
+          "end": 21.726
         },
         {
           "text": "loses consciousness.",
-          "start": 22.949,
-          "end": 24.698
+          "start": 21.726,
+          "end": 23.064
         },
         {
           "text": "Occasional gasping is not normal",
-          "start": 24.955,
-          "end": 27.212
+          "start": 23.064,
+          "end": 25.108
         },
         {
           "text": "breathing. This patient is unresponsive,",
-          "start": 27.212,
-          "end": 30.433
+          "start": 25.108,
+          "end": 27.966
         },
         {
           "text": "with no pulse.",
-          "start": 30.433,
-          "end": 31.622
+          "start": 27.966,
+          "end": 29.174
         }
       ],
       "words": [
         {
           "w": "cardiac",
-          "start": 0.137,
-          "end": 0.808
+          "start": 0,
+          "end": 0.48
         },
         {
           "w": "arrest",
-          "start": 0.808,
-          "end": 1.342
+          "start": 0.48,
+          "end": 0.9
         },
         {
           "w": "is",
-          "start": 1.342,
-          "end": 1.494
+          "start": 0.9,
+          "end": 1.08
         },
         {
           "w": "an",
-          "start": 1.494,
-          "end": 1.723
+          "start": 1.08,
+          "end": 1.26
         },
         {
           "w": "electrical",
-          "start": 1.723,
-          "end": 2.333
+          "start": 1.26,
+          "end": 1.92
         },
         {
           "w": "problem",
-          "start": 2.333,
-          "end": 2.943
+          "start": 1.92,
+          "end": 2.4
         },
         {
           "w": "in",
-          "start": 3.431,
-          "end": 3.568
+          "start": 2.55,
+          "end": 2.74
         },
         {
           "w": "ventricular",
-          "start": 3.568,
-          "end": 4.346
+          "start": 2.74,
+          "end": 3.498
         },
         {
           "w": "fibrillation",
-          "start": 4.346,
-          "end": 5.396
+          "start": 3.498,
+          "end": 4.32
         },
         {
           "w": "the",
-          "start": 5.396,
-          "end": 5.594
+          "start": 4.32,
+          "end": 4.573
         },
         {
           "w": "chambers",
-          "start": 5.594,
-          "end": 6.143
+          "start": 4.573,
+          "end": 5.142
         },
         {
           "w": "lose",
-          "start": 6.143,
-          "end": 6.448
+          "start": 5.142,
+          "end": 5.458
         },
         {
           "w": "their",
-          "start": 6.448,
-          "end": 6.662
+          "start": 5.458,
+          "end": 5.838
         },
         {
           "w": "coordination",
-          "start": 6.662,
-          "end": 7.588
+          "start": 5.838,
+          "end": 6.66
         },
         {
           "w": "muscle",
-          "start": 7.588,
-          "end": 8.091
+          "start": 6.66,
+          "end": 7.102
         },
         {
           "w": "fibres",
-          "start": 8.091,
-          "end": 8.625
+          "start": 7.102,
+          "end": 7.545
         },
         {
           "w": "fire",
-          "start": 8.625,
-          "end": 9.021
+          "start": 7.545,
+          "end": 7.861
         },
         {
           "w": "out",
-          "start": 9.021,
-          "end": 9.235
+          "start": 7.861,
+          "end": 8.114
         },
         {
           "w": "of",
-          "start": 9.235,
-          "end": 9.357
+          "start": 8.114,
+          "end": 8.304
         },
         {
           "w": "step",
-          "start": 9.357,
-          "end": 9.78
+          "start": 8.304,
+          "end": 8.62
         },
         {
           "w": "and",
-          "start": 9.78,
-          "end": 9.902
+          "start": 8.62,
+          "end": 8.873
         },
         {
           "w": "the",
-          "start": 9.902,
-          "end": 10.054
+          "start": 8.873,
+          "end": 9.126
         },
         {
           "w": "ventricles",
-          "start": 10.054,
-          "end": 10.741
+          "start": 9.126,
+          "end": 9.821
         },
         {
           "w": "quiver",
-          "start": 10.741,
-          "end": 11.137
+          "start": 9.821,
+          "end": 10.264
         },
         {
           "w": "instead",
-          "start": 11.137,
-          "end": 11.579
+          "start": 10.264,
+          "end": 10.77
         },
         {
           "w": "of",
-          "start": 11.579,
-          "end": 11.732
+          "start": 10.77,
+          "end": 10.959
         },
         {
           "w": "contracting",
-          "start": 11.732,
-          "end": 12.622
+          "start": 10.959,
+          "end": 11.718
         },
         {
           "w": "a",
-          "start": 12.965,
-          "end": 13.087
+          "start": 11.868,
+          "end": 12.006
         },
         {
           "w": "quivering",
-          "start": 13.087,
-          "end": 13.667
+          "start": 12.006,
+          "end": 12.697
         },
         {
           "w": "ventricle",
-          "start": 13.667,
-          "end": 14.322
+          "start": 12.697,
+          "end": 13.388
         },
         {
           "w": "ejects",
-          "start": 14.322,
-          "end": 14.78
+          "start": 13.388,
+          "end": 13.871
         },
         {
           "w": "no",
-          "start": 14.78,
-          "end": 15.039
+          "start": 13.871,
+          "end": 14.079
         },
         {
           "w": "blood",
-          "start": 15.039,
-          "end": 15.554
+          "start": 14.079,
+          "end": 14.493
         },
         {
           "w": "so",
-          "start": 15.554,
-          "end": 15.782
+          "start": 14.493,
+          "end": 14.7
         },
         {
           "w": "cardiac",
-          "start": 15.782,
-          "end": 16.514
+          "start": 14.7,
+          "end": 15.253
         },
         {
           "w": "output",
-          "start": 16.514,
-          "end": 16.896
+          "start": 15.253,
+          "end": 15.737
         },
         {
           "w": "falls",
-          "start": 16.896,
-          "end": 17.307
+          "start": 15.737,
+          "end": 16.151
         },
         {
           "w": "to",
-          "start": 17.307,
-          "end": 17.506
+          "start": 16.151,
+          "end": 16.358
         },
         {
           "w": "zero",
-          "start": 17.506,
-          "end": 17.963
+          "start": 16.358,
+          "end": 16.704
         },
         {
           "w": "and",
-          "start": 17.963,
-          "end": 18.039
+          "start": 16.704,
+          "end": 16.98
         },
         {
           "w": "the",
-          "start": 18.039,
-          "end": 18.192
+          "start": 16.98,
+          "end": 17.257
         },
         {
           "w": "pulse",
-          "start": 18.192,
-          "end": 18.573
+          "start": 17.257,
+          "end": 17.671
         },
         {
           "w": "is",
-          "start": 18.573,
-          "end": 18.726
+          "start": 17.671,
+          "end": 17.878
         },
         {
           "w": "lost",
-          "start": 18.726,
-          "end": 19.061
+          "start": 17.878,
+          "end": 18.224
         },
         {
           "w": "within",
-          "start": 19.061,
-          "end": 19.442
+          "start": 18.224,
+          "end": 18.707
         },
         {
           "w": "seconds",
-          "start": 19.442,
-          "end": 20.052
+          "start": 18.707,
+          "end": 19.26
         },
         {
           "w": "without",
-          "start": 20.531,
-          "end": 21.05
+          "start": 19.41,
+          "end": 19.885
         },
         {
           "w": "blood",
-          "start": 21.05,
-          "end": 21.355
+          "start": 19.885,
+          "end": 20.241
         },
         {
           "w": "to",
-          "start": 21.355,
-          "end": 21.583
+          "start": 20.241,
+          "end": 20.42
         },
         {
           "w": "the",
-          "start": 21.583,
-          "end": 21.66
+          "start": 20.42,
+          "end": 20.657
         },
         {
           "w": "brain",
-          "start": 21.66,
-          "end": 22.248
+          "start": 20.657,
+          "end": 21.014
         },
         {
           "w": "the",
-          "start": 22.248,
-          "end": 22.446
+          "start": 21.014,
+          "end": 21.251
         },
         {
           "w": "patient",
-          "start": 22.446,
-          "end": 22.949
+          "start": 21.251,
+          "end": 21.726
         },
         {
           "w": "loses",
-          "start": 22.949,
-          "end": 23.468
+          "start": 21.726,
+          "end": 22.083
         },
         {
           "w": "consciousness",
-          "start": 23.468,
-          "end": 24.498
+          "start": 22.083,
+          "end": 22.914
         },
         {
           "w": "occasional",
-          "start": 24.955,
-          "end": 25.596
+          "start": 23.064,
+          "end": 23.745
         },
         {
           "w": "gasping",
-          "start": 25.596,
-          "end": 26.251
+          "start": 23.745,
+          "end": 24.241
         },
         {
           "w": "is",
-          "start": 26.251,
-          "end": 26.48
+          "start": 24.241,
+          "end": 24.427
         },
         {
           "w": "not",
-          "start": 26.48,
-          "end": 26.77
+          "start": 24.427,
+          "end": 24.675
         },
         {
           "w": "normal",
-          "start": 26.77,
-          "end": 27.212
+          "start": 24.675,
+          "end": 25.108
         },
         {
           "w": "breathing",
-          "start": 27.212,
-          "end": 27.886
+          "start": 25.108,
+          "end": 25.728
         },
         {
           "w": "this",
-          "start": 28.273,
-          "end": 28.502
+          "start": 25.878,
+          "end": 26.238
         },
         {
           "w": "patient",
-          "start": 28.502,
-          "end": 29.036
+          "start": 26.238,
+          "end": 26.814
         },
         {
           "w": "is",
-          "start": 29.036,
-          "end": 29.31
+          "start": 26.814,
+          "end": 27.03
         },
         {
           "w": "unresponsive",
-          "start": 29.31,
-          "end": 30.433
+          "start": 27.03,
+          "end": 27.966
         },
         {
           "w": "with",
-          "start": 30.433,
-          "end": 30.769
+          "start": 27.966,
+          "end": 28.326
         },
         {
           "w": "no",
-          "start": 30.769,
-          "end": 30.952
+          "start": 28.326,
+          "end": 28.542
         },
         {
           "w": "pulse",
-          "start": 30.952,
-          "end": 31.422
+          "start": 28.542,
+          "end": 28.974
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 1008,
-      "startFrame": 581
+      "durationInFrames": 928,
+      "startFrame": 572
     },
     {
       "index": 4,
       "type": "stage",
-      "hash": "01d3edc2846e",
+      "hash": "27b09bfb0d7c",
       "narration": "A heart attack is a different problem. The coronary arteries on the surface of the heart supply its muscle with blood. In a heart attack, one is blocked, and the part of the muscle it supplies is starved of blood. That is a circulation problem, and the patient is usually conscious, often with chest pain. A heart attack can trigger cardiac arrest, but arrest itself is the electrical failure of the whole pump.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-4.mp3",
-      "voDurationInSeconds": 27.288,
-      "voDurationInFrames": 819,
+      "voDurationInSeconds": 24.552,
+      "voDurationInFrames": 737,
       "captions": [
         {
           "text": "A heart attack is a different problem.",
-          "start": 0.187,
-          "end": 2.6750000000000003
+          "start": 0,
+          "end": 2.262
         },
         {
           "text": "The coronary arteries on the surface of",
-          "start": 2.927,
-          "end": 5.52
+          "start": 2.262,
+          "end": 4.595
         },
         {
           "text": "the heart supply its muscle with blood.",
-          "start": 5.52,
-          "end": 8.096
+          "start": 4.595,
+          "end": 7.02
         },
         {
           "text": "In a heart attack, one is blocked, and the",
-          "start": 8.261,
-          "end": 10.86
+          "start": 7.02,
+          "end": 9.491
         },
         {
           "text": "part of the muscle it supplies is starved",
-          "start": 10.86,
-          "end": 13.3
+          "start": 9.491,
+          "end": 12.022
         },
         {
           "text": "of blood. That is a circulation problem,",
-          "start": 13.3,
-          "end": 16.497
+          "start": 12.022,
+          "end": 14.542
         },
         {
           "text": "and the patient is usually conscious,",
-          "start": 16.497,
-          "end": 18.876
+          "start": 14.542,
+          "end": 16.797
         },
         {
           "text": "often with chest pain.",
-          "start": 18.876,
-          "end": 20.451999999999998
+          "start": 16.797,
+          "end": 18.288
         },
         {
           "text": "A heart attack can trigger cardiac arrest,",
-          "start": 20.633,
-          "end": 23.362
+          "start": 18.288,
+          "end": 20.798
         },
         {
           "text": "but arrest itself is the electrical",
-          "start": 23.362,
-          "end": 25.634
+          "start": 20.798,
+          "end": 22.95
         },
         {
           "text": "failure of the whole pump.",
-          "start": 25.634,
-          "end": 27.332
+          "start": 22.95,
+          "end": 24.704
         }
       ],
       "words": [
         {
           "w": "a",
-          "start": 0.187,
-          "end": 0.263
+          "start": 0,
+          "end": 0.111
         },
         {
           "w": "heart",
-          "start": 0.263,
-          "end": 0.645
+          "start": 0.111,
+          "end": 0.445
         },
         {
           "w": "attack",
-          "start": 0.645,
-          "end": 1.178
+          "start": 0.445,
+          "end": 0.834
         },
         {
           "w": "is",
-          "start": 1.178,
-          "end": 1.331
+          "start": 0.834,
+          "end": 1
         },
         {
           "w": "a",
-          "start": 1.331,
-          "end": 1.422
+          "start": 1,
+          "end": 1.112
         },
         {
           "w": "different",
-          "start": 1.422,
-          "end": 1.865
+          "start": 1.112,
+          "end": 1.667
         },
         {
           "w": "problem",
-          "start": 1.865,
-          "end": 2.475
+          "start": 1.667,
+          "end": 2.112
         },
         {
           "w": "the",
-          "start": 2.927,
-          "end": 3.064
+          "start": 2.262,
+          "end": 2.495
         },
         {
           "w": "coronary",
-          "start": 3.064,
-          "end": 3.979
+          "start": 2.495,
+          "end": 3.02
         },
         {
           "w": "arteries",
-          "start": 3.979,
-          "end": 4.513
+          "start": 3.02,
+          "end": 3.545
         },
         {
           "w": "on",
-          "start": 4.513,
-          "end": 4.666
+          "start": 3.545,
+          "end": 3.72
         },
         {
           "w": "the",
-          "start": 4.666,
-          "end": 4.803
+          "start": 3.72,
+          "end": 3.954
         },
         {
           "w": "surface",
-          "start": 4.803,
-          "end": 5.352
+          "start": 3.954,
+          "end": 4.42
         },
         {
           "w": "of",
-          "start": 5.352,
-          "end": 5.52
+          "start": 4.42,
+          "end": 4.595
         },
         {
           "w": "the",
-          "start": 5.52,
-          "end": 5.672
+          "start": 4.595,
+          "end": 4.828
         },
         {
           "w": "heart",
-          "start": 5.672,
-          "end": 5.977
+          "start": 4.828,
+          "end": 5.178
         },
         {
           "w": "supply",
-          "start": 5.977,
-          "end": 6.572
+          "start": 5.178,
+          "end": 5.587
         },
         {
           "w": "its",
-          "start": 6.572,
-          "end": 6.74
+          "start": 5.587,
+          "end": 5.82
         },
         {
           "w": "muscle",
-          "start": 6.74,
-          "end": 7.136
+          "start": 5.82,
+          "end": 6.228
         },
         {
           "w": "with",
-          "start": 7.136,
-          "end": 7.426
+          "start": 6.228,
+          "end": 6.52
         },
         {
           "w": "blood",
-          "start": 7.426,
-          "end": 7.896
+          "start": 6.52,
+          "end": 6.87
         },
         {
           "w": "in",
-          "start": 8.261,
-          "end": 8.398
+          "start": 7.02,
+          "end": 7.201
         },
         {
           "w": "a",
-          "start": 8.398,
-          "end": 8.475
+          "start": 7.201,
+          "end": 7.321
         },
         {
           "w": "heart",
-          "start": 8.475,
-          "end": 8.856
+          "start": 7.321,
+          "end": 7.683
         },
         {
           "w": "attack",
-          "start": 8.856,
-          "end": 9.477
+          "start": 7.683,
+          "end": 8.105
         },
         {
           "w": "one",
-          "start": 9.477,
-          "end": 9.752
+          "start": 8.105,
+          "end": 8.346
         },
         {
           "w": "is",
-          "start": 9.752,
-          "end": 9.98
+          "start": 8.346,
+          "end": 8.527
         },
         {
           "w": "blocked",
-          "start": 9.98,
-          "end": 10.631
+          "start": 8.527,
+          "end": 9.009
         },
         {
           "w": "and",
-          "start": 10.631,
-          "end": 10.707
+          "start": 9.009,
+          "end": 9.25
         },
         {
           "w": "the",
-          "start": 10.707,
-          "end": 10.86
+          "start": 9.25,
+          "end": 9.491
         },
         {
           "w": "part",
-          "start": 10.86,
-          "end": 11.241
+          "start": 9.491,
+          "end": 9.792
         },
         {
           "w": "of",
-          "start": 11.241,
-          "end": 11.317
+          "start": 9.792,
+          "end": 9.973
         },
         {
           "w": "the",
-          "start": 11.317,
-          "end": 11.485
+          "start": 9.973,
+          "end": 10.214
         },
         {
           "w": "muscle",
-          "start": 11.485,
-          "end": 11.927
+          "start": 10.214,
+          "end": 10.636
         },
         {
           "w": "it",
-          "start": 11.927,
-          "end": 12.08
+          "start": 10.636,
+          "end": 10.816
         },
         {
           "w": "supplies",
-          "start": 12.08,
-          "end": 12.705
+          "start": 10.816,
+          "end": 11.359
         },
         {
           "w": "is",
-          "start": 12.705,
-          "end": 12.857
+          "start": 11.359,
+          "end": 11.54
         },
         {
           "w": "starved",
-          "start": 12.857,
-          "end": 13.3
+          "start": 11.54,
+          "end": 12.022
         },
         {
           "w": "of",
-          "start": 13.3,
-          "end": 13.452
+          "start": 12.022,
+          "end": 12.202
         },
         {
           "w": "blood",
-          "start": 13.452,
-          "end": 13.922
+          "start": 12.202,
+          "end": 12.564
         },
         {
           "w": "that",
-          "start": 14.291,
-          "end": 14.581
+          "start": 12.714,
+          "end": 13.019
         },
         {
           "w": "is",
-          "start": 14.581,
-          "end": 14.733
+          "start": 13.019,
+          "end": 13.202
         },
         {
           "w": "a",
-          "start": 14.733,
-          "end": 14.81
+          "start": 13.202,
+          "end": 13.323
         },
         {
           "w": "circulation",
-          "start": 14.81,
-          "end": 15.725
+          "start": 13.323,
+          "end": 14.055
         },
         {
           "w": "problem",
-          "start": 15.725,
-          "end": 16.497
+          "start": 14.055,
+          "end": 14.542
         },
         {
           "w": "and",
-          "start": 16.497,
-          "end": 16.573
+          "start": 14.542,
+          "end": 14.786
         },
         {
           "w": "the",
-          "start": 16.573,
-          "end": 16.695
+          "start": 14.786,
+          "end": 15.03
         },
         {
           "w": "patient",
-          "start": 16.695,
-          "end": 17.29
+          "start": 15.03,
+          "end": 15.517
         },
         {
           "w": "is",
-          "start": 17.29,
-          "end": 17.443
+          "start": 15.517,
+          "end": 15.7
         },
         {
           "w": "usually",
-          "start": 17.443,
-          "end": 17.976
+          "start": 15.7,
+          "end": 16.188
         },
         {
           "w": "conscious",
-          "start": 17.976,
-          "end": 18.876
+          "start": 16.188,
+          "end": 16.797
         },
         {
           "w": "often",
-          "start": 18.876,
-          "end": 19.242
+          "start": 16.797,
+          "end": 17.163
         },
         {
           "w": "with",
-          "start": 19.242,
-          "end": 19.441
+          "start": 17.163,
+          "end": 17.468
         },
         {
           "w": "chest",
-          "start": 19.441,
-          "end": 19.852
+          "start": 17.468,
+          "end": 17.833
         },
         {
           "w": "pain",
-          "start": 19.852,
-          "end": 20.252
+          "start": 17.833,
+          "end": 18.138
         },
         {
           "w": "a",
-          "start": 20.633,
-          "end": 20.755
+          "start": 18.288,
+          "end": 18.408
         },
         {
           "w": "heart",
-          "start": 20.755,
-          "end": 21.075
+          "start": 18.408,
+          "end": 18.766
         },
         {
           "w": "attack",
-          "start": 21.075,
-          "end": 21.487
+          "start": 18.766,
+          "end": 19.185
         },
         {
           "w": "can",
-          "start": 21.487,
-          "end": 21.731
+          "start": 19.185,
+          "end": 19.424
         },
         {
           "w": "trigger",
-          "start": 21.731,
-          "end": 22.219
+          "start": 19.424,
+          "end": 19.902
         },
         {
           "w": "cardiac",
-          "start": 22.219,
-          "end": 22.753
+          "start": 19.902,
+          "end": 20.38
         },
         {
           "w": "arrest",
-          "start": 22.753,
-          "end": 23.362
+          "start": 20.38,
+          "end": 20.798
         },
         {
           "w": "but",
-          "start": 23.362,
-          "end": 23.651
+          "start": 20.798,
+          "end": 21.037
         },
         {
           "w": "arrest",
-          "start": 23.651,
-          "end": 24.048
+          "start": 21.037,
+          "end": 21.456
         },
         {
           "w": "itself",
-          "start": 24.048,
-          "end": 24.566
+          "start": 21.456,
+          "end": 21.874
         },
         {
           "w": "is",
-          "start": 24.566,
-          "end": 24.719
+          "start": 21.874,
+          "end": 22.053
         },
         {
           "w": "the",
-          "start": 24.719,
-          "end": 24.948
+          "start": 22.053,
+          "end": 22.293
         },
         {
           "w": "electrical",
-          "start": 24.948,
-          "end": 25.634
+          "start": 22.293,
+          "end": 22.95
         },
         {
           "w": "failure",
-          "start": 25.634,
-          "end": 26.091
+          "start": 22.95,
+          "end": 23.428
         },
         {
           "w": "of",
-          "start": 26.091,
-          "end": 26.244
+          "start": 23.428,
+          "end": 23.607
         },
         {
           "w": "the",
-          "start": 26.244,
-          "end": 26.396
+          "start": 23.607,
+          "end": 23.847
         },
         {
           "w": "whole",
-          "start": 26.396,
-          "end": 26.732
+          "start": 23.847,
+          "end": 24.205
         },
         {
           "w": "pump",
-          "start": 26.732,
-          "end": 27.132
+          "start": 24.205,
+          "end": 24.504
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 875,
-      "startFrame": 1589
+      "durationInFrames": 793,
+      "startFrame": 1500
     },
     {
       "index": 5,
       "type": "stage",
-      "hash": "04d251f3459f",
+      "hash": "a8360c48acc5",
       "narration": "Cardiac arrest has four rhythms, and the rhythm decides the treatment. Two are shockable: ventricular fibrillation, and pulseless ventricular tachycardia, where the ventricles beat so fast they cannot fill. A shock depolarises the muscle at once, letting the heart's own pacemaker restore an organised rhythm. The other two are not shockable: pulseless electrical activity, organised electrical activity without a pulse, and asystole, no electrical activity. These are treated with cardiopulmonary resuscitation and the search for reversible causes.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-5.mp3",
-      "voDurationInSeconds": 37.056,
-      "voDurationInFrames": 1112,
+      "voDurationInSeconds": 35.016,
+      "voDurationInFrames": 1051,
       "captions": [
         {
           "text": "Cardiac arrest has four rhythms, and the",
-          "start": 0.137,
-          "end": 2.839
+          "start": 0,
+          "end": 2.379
         },
         {
           "text": "rhythm decides the treatment.",
-          "start": 2.839,
-          "end": 4.9030000000000005
+          "start": 2.379,
+          "end": 4.254
         },
         {
           "text": "Two are shockable:",
-          "start": 5.087,
-          "end": 6.285
+          "start": 4.254,
+          "end": 5.439
         },
         {
           "text": "ventricular fibrillation, and pulseless",
-          "start": 6.285,
-          "end": 8.911
+          "start": 5.439,
+          "end": 8.006
         },
         {
           "text": "ventricular tachycardia, where the",
-          "start": 8.911,
-          "end": 11.039
+          "start": 8.006,
+          "end": 10.243
         },
         {
           "text": "ventricles beat so fast they cannot fill.",
-          "start": 11.039,
-          "end": 13.774
+          "start": 10.243,
+          "end": 13.092
         },
         {
           "text": "A shock depolarises the muscle at once,",
-          "start": 13.973,
-          "end": 16.831
+          "start": 13.092,
+          "end": 15.491
         },
         {
           "text": "letting the heart's own pacemaker restore",
-          "start": 16.831,
-          "end": 19.271
+          "start": 15.491,
+          "end": 18.198
         },
         {
           "text": "an organised rhythm.",
-          "start": 19.271,
-          "end": 20.804
+          "start": 18.198,
+          "end": 19.578
         },
         {
           "text": "The other two are not shockable:",
-          "start": 20.963,
-          "end": 22.903
+          "start": 19.578,
+          "end": 21.77
         },
         {
           "text": "pulseless electrical activity, organised",
-          "start": 22.903,
-          "end": 25.607
+          "start": 21.77,
+          "end": 24.51
         },
         {
           "text": "electrical activity without a pulse, and",
-          "start": 25.607,
-          "end": 28.234
+          "start": 24.51,
+          "end": 27.25
         },
         {
           "text": "asystole, no electrical activity.",
-          "start": 28.234,
-          "end": 30.889
+          "start": 27.25,
+          "end": 29.592
         },
         {
           "text": "These are treated with cardiopulmonary",
-          "start": 31.121,
-          "end": 33.5
+          "start": 29.592,
+          "end": 31.922
         },
         {
           "text": "resuscitation and the search for",
-          "start": 33.5,
-          "end": 35.483
+          "start": 31.922,
+          "end": 33.893
         },
         {
           "text": "reversible causes.",
-          "start": 35.483,
-          "end": 36.924
+          "start": 33.893,
+          "end": 35.168000000000006
         }
       ],
       "words": [
         {
           "w": "cardiac",
-          "start": 0.137,
-          "end": 0.732
+          "start": 0,
+          "end": 0.476
         },
         {
           "w": "arrest",
-          "start": 0.732,
-          "end": 1.189
+          "start": 0.476,
+          "end": 0.892
         },
         {
           "w": "has",
-          "start": 1.189,
-          "end": 1.494
+          "start": 0.892,
+          "end": 1.13
         },
         {
           "w": "four",
-          "start": 1.494,
-          "end": 1.784
+          "start": 1.13,
+          "end": 1.427
         },
         {
           "w": "rhythms",
-          "start": 1.784,
-          "end": 2.534
+          "start": 1.427,
+          "end": 1.903
         },
         {
           "w": "and",
-          "start": 2.534,
-          "end": 2.687
+          "start": 1.903,
+          "end": 2.141
         },
         {
           "w": "the",
-          "start": 2.687,
-          "end": 2.839
+          "start": 2.141,
+          "end": 2.379
         },
         {
           "w": "rhythm",
-          "start": 2.839,
-          "end": 3.16
+          "start": 2.379,
+          "end": 2.795
         },
         {
           "w": "decides",
-          "start": 3.16,
-          "end": 3.785
+          "start": 2.795,
+          "end": 3.271
         },
         {
           "w": "the",
-          "start": 3.785,
-          "end": 3.953
+          "start": 3.271,
+          "end": 3.509
         },
         {
           "w": "treatment",
-          "start": 3.953,
-          "end": 4.703
+          "start": 3.509,
+          "end": 4.104
         },
         {
           "w": "two",
-          "start": 5.087,
-          "end": 5.377
+          "start": 4.254,
+          "end": 4.517
         },
         {
           "w": "are",
-          "start": 5.377,
-          "end": 5.468
+          "start": 4.517,
+          "end": 4.781
         },
         {
           "w": "shockable",
-          "start": 5.468,
-          "end": 6.285
+          "start": 4.781,
+          "end": 5.439
         },
         {
           "w": "ventricular",
-          "start": 6.285,
-          "end": 7.048
+          "start": 5.439,
+          "end": 6.229
         },
         {
           "w": "fibrillation",
-          "start": 7.048,
-          "end": 8.149
+          "start": 6.229,
+          "end": 7.084
         },
         {
           "w": "and",
-          "start": 8.149,
-          "end": 8.301
+          "start": 7.084,
+          "end": 7.347
         },
         {
           "w": "pulseless",
-          "start": 8.301,
-          "end": 8.911
+          "start": 7.347,
+          "end": 8.006
         },
         {
           "w": "ventricular",
-          "start": 8.911,
-          "end": 9.613
+          "start": 8.006,
+          "end": 8.795
         },
         {
           "w": "tachycardia",
-          "start": 9.613,
-          "end": 10.719
+          "start": 8.795,
+          "end": 9.585
         },
         {
           "w": "where",
-          "start": 10.719,
-          "end": 10.872
+          "start": 9.585,
+          "end": 9.98
         },
         {
           "w": "the",
-          "start": 10.872,
-          "end": 11.039
+          "start": 9.98,
+          "end": 10.243
         },
         {
           "w": "ventricles",
-          "start": 11.039,
-          "end": 11.71
+          "start": 10.243,
+          "end": 10.967
         },
         {
           "w": "beat",
-          "start": 11.71,
-          "end": 12.015
+          "start": 10.967,
+          "end": 11.297
         },
         {
           "w": "so",
-          "start": 12.015,
-          "end": 12.244
+          "start": 11.297,
+          "end": 11.494
         },
         {
           "w": "fast",
-          "start": 12.244,
-          "end": 12.625
+          "start": 11.494,
+          "end": 11.823
         },
         {
           "w": "they",
-          "start": 12.625,
-          "end": 12.702
+          "start": 11.823,
+          "end": 12.152
         },
         {
           "w": "cannot",
-          "start": 12.702,
-          "end": 13.174
+          "start": 12.152,
+          "end": 12.613
         },
         {
           "w": "fill",
-          "start": 13.174,
-          "end": 13.574
+          "start": 12.613,
+          "end": 12.942
         },
         {
           "w": "a",
-          "start": 13.973,
-          "end": 14.11
+          "start": 13.092,
+          "end": 13.215
         },
         {
           "w": "shock",
-          "start": 14.11,
-          "end": 14.492
+          "start": 13.215,
+          "end": 13.584
         },
         {
           "w": "depolarises",
-          "start": 14.492,
-          "end": 15.422
+          "start": 13.584,
+          "end": 14.322
         },
         {
           "w": "the",
-          "start": 15.422,
-          "end": 15.59
+          "start": 14.322,
+          "end": 14.568
         },
         {
           "w": "muscle",
-          "start": 15.59,
-          "end": 16.047
+          "start": 14.568,
+          "end": 14.999
         },
         {
           "w": "at",
-          "start": 16.047,
-          "end": 16.2
+          "start": 14.999,
+          "end": 15.183
         },
         {
           "w": "once",
-          "start": 16.2,
-          "end": 16.831
+          "start": 15.183,
+          "end": 15.491
         },
         {
           "w": "letting",
-          "start": 16.831,
-          "end": 17.181
+          "start": 15.491,
+          "end": 15.983
         },
         {
           "w": "the",
-          "start": 17.181,
-          "end": 17.38
+          "start": 15.983,
+          "end": 16.229
         },
         {
           "w": "hearts",
-          "start": 17.38,
-          "end": 17.822
+          "start": 16.229,
+          "end": 16.844
         },
         {
           "w": "own",
-          "start": 17.822,
-          "end": 18.051
+          "start": 16.844,
+          "end": 17.09
         },
         {
           "w": "pacemaker",
-          "start": 18.051,
-          "end": 18.706
+          "start": 17.09,
+          "end": 17.706
         },
         {
           "w": "restore",
-          "start": 18.706,
-          "end": 19.271
+          "start": 17.706,
+          "end": 18.198
         },
         {
           "w": "an",
-          "start": 19.271,
-          "end": 19.53
+          "start": 18.198,
+          "end": 18.382
         },
         {
           "w": "organised",
-          "start": 19.53,
-          "end": 20.064
+          "start": 18.382,
+          "end": 18.997
         },
         {
           "w": "rhythm",
-          "start": 20.064,
-          "end": 20.604
+          "start": 18.997,
+          "end": 19.428
         },
         {
           "w": "the",
-          "start": 20.963,
-          "end": 21.161
+          "start": 19.578,
+          "end": 19.852
         },
         {
           "w": "other",
-          "start": 21.161,
-          "end": 21.497
+          "start": 19.852,
+          "end": 20.263
         },
         {
           "w": "two",
-          "start": 21.497,
-          "end": 21.726
+          "start": 20.263,
+          "end": 20.537
         },
         {
           "w": "are",
-          "start": 21.726,
-          "end": 21.817
+          "start": 20.537,
+          "end": 20.811
         },
         {
           "w": "not",
-          "start": 21.817,
-          "end": 22.183
+          "start": 20.811,
+          "end": 21.085
         },
         {
           "w": "shockable",
-          "start": 22.183,
-          "end": 22.903
+          "start": 21.085,
+          "end": 21.77
         },
         {
           "w": "pulseless",
-          "start": 22.903,
-          "end": 23.589
+          "start": 21.77,
+          "end": 22.455
         },
         {
           "w": "electrical",
-          "start": 23.589,
-          "end": 24.214
+          "start": 22.455,
+          "end": 23.209
         },
         {
           "w": "activity",
-          "start": 24.214,
-          "end": 25.088
+          "start": 23.209,
+          "end": 23.825
         },
         {
           "w": "organised",
-          "start": 25.088,
-          "end": 25.607
+          "start": 23.825,
+          "end": 24.51
         },
         {
           "w": "electrical",
-          "start": 25.607,
-          "end": 26.293
+          "start": 24.51,
+          "end": 25.264
         },
         {
           "w": "activity",
-          "start": 26.293,
-          "end": 26.903
+          "start": 25.264,
+          "end": 25.88
         },
         {
           "w": "without",
-          "start": 26.903,
-          "end": 27.36
+          "start": 25.88,
+          "end": 26.428
         },
         {
           "w": "a",
-          "start": 27.36,
-          "end": 27.437
+          "start": 26.428,
+          "end": 26.565
         },
         {
           "w": "pulse",
-          "start": 27.437,
-          "end": 28.082
+          "start": 26.565,
+          "end": 26.976
         },
         {
           "w": "and",
-          "start": 28.082,
-          "end": 28.234
+          "start": 26.976,
+          "end": 27.25
         },
         {
           "w": "asystole",
-          "start": 28.234,
-          "end": 29.048
+          "start": 27.25,
+          "end": 27.866
         },
         {
           "w": "no",
-          "start": 29.048,
-          "end": 29.277
+          "start": 27.866,
+          "end": 28.072
         },
         {
           "w": "electrical",
-          "start": 29.277,
-          "end": 30.009
+          "start": 28.072,
+          "end": 28.826
         },
         {
           "w": "activity",
-          "start": 30.009,
-          "end": 30.689
+          "start": 28.826,
+          "end": 29.442
         },
         {
           "w": "these",
-          "start": 31.121,
-          "end": 31.365
+          "start": 29.592,
+          "end": 29.95
         },
         {
           "w": "are",
-          "start": 31.365,
-          "end": 31.563
+          "start": 29.95,
+          "end": 30.189
         },
         {
           "w": "treated",
-          "start": 31.563,
-          "end": 32.036
+          "start": 30.189,
+          "end": 30.667
         },
         {
           "w": "with",
-          "start": 32.036,
-          "end": 32.25
+          "start": 30.667,
+          "end": 30.966
         },
         {
           "w": "cardiopulmonary",
-          "start": 32.25,
-          "end": 33.5
+          "start": 30.966,
+          "end": 31.922
         },
         {
           "w": "resuscitation",
-          "start": 33.5,
-          "end": 34.613
+          "start": 31.922,
+          "end": 32.758
         },
         {
           "w": "and",
-          "start": 34.613,
-          "end": 34.781
+          "start": 32.758,
+          "end": 32.997
         },
         {
           "w": "the",
-          "start": 34.781,
-          "end": 34.934
+          "start": 32.997,
+          "end": 33.236
         },
         {
           "w": "search",
-          "start": 34.934,
-          "end": 35.3
+          "start": 33.236,
+          "end": 33.654
         },
         {
           "w": "for",
-          "start": 35.3,
-          "end": 35.483
+          "start": 33.654,
+          "end": 33.893
         },
         {
           "w": "reversible",
-          "start": 35.483,
-          "end": 36.184
+          "start": 33.893,
+          "end": 34.55
         },
         {
           "w": "causes",
-          "start": 36.184,
-          "end": 36.724
+          "start": 34.55,
+          "end": 34.968
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 1168,
-      "startFrame": 2464
+      "durationInFrames": 1107,
+      "startFrame": 2293
     },
     {
       "index": 6,
       "type": "stage",
-      "hash": "88ce04335b2b",
+      "hash": "55f349c1a997",
       "narration": "How often do patients survive? About 350,000 people a year in the United States have an out-of-hospital cardiac arrest, and it results in death about 90% of the time. Survival to discharge is approximately 10.5% overall, 21.1% in a public place, and 8.9% at home, where fewer arrests are witnessed. In hospital it is 23.6% in adults and 45.2% in children, because help is close by. Yet only about 41% receive bystander compressions before help arrives.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-6.mp3",
-      "voDurationInSeconds": 38.448,
-      "voDurationInFrames": 1154,
+      "voDurationInSeconds": 36.072,
+      "voDurationInFrames": 1083,
       "captions": [
         {
           "text": "How often do patients survive?",
-          "start": 0.187,
-          "end": 2.5220000000000002
+          "start": 0,
+          "end": 1.998
         },
         {
           "text": "About 350,000 people a year in the United",
-          "start": 2.735,
-          "end": 6.166
+          "start": 1.998,
+          "end": 4.85
         },
         {
           "text": "States have an out-of-hospital cardiac",
-          "start": 6.166,
-          "end": 8.515
+          "start": 4.85,
+          "end": 7.424
         },
         {
           "text": "arrest, and it results in death about 90%",
-          "start": 8.515,
-          "end": 11.561
+          "start": 7.424,
+          "end": 10.763
         },
         {
           "text": "of the time. Survival to discharge is",
-          "start": 11.561,
-          "end": 14.31
+          "start": 10.763,
+          "end": 13.745
         },
         {
           "text": "approximately 10.5% overall, 21.1% in a",
-          "start": 14.31,
-          "end": 19.181
+          "start": 13.745,
+          "end": 17.82
         },
         {
           "text": "public place, and 8.9% at home, where",
-          "start": 19.181,
-          "end": 22.328
+          "start": 17.82,
+          "end": 21.175
         },
         {
           "text": "fewer arrests are witnessed.",
-          "start": 22.328,
-          "end": 24.209
+          "start": 21.175,
+          "end": 23.562
         },
         {
           "text": "In hospital it is 23.6% in adults and",
-          "start": 24.371,
-          "end": 28.245
+          "start": 23.562,
+          "end": 27.184
         },
         {
           "text": "45.2% in children, because help is close",
-          "start": 28.245,
-          "end": 31.971
+          "start": 27.184,
+          "end": 30.971
         },
         {
           "text": "by. Yet only about 41% receive bystander",
-          "start": 31.971,
-          "end": 36.125
+          "start": 30.971,
+          "end": 34.029
         },
         {
           "text": "compressions before help arrives.",
-          "start": 36.125,
-          "end": 38.445
+          "start": 34.029,
+          "end": 36.224000000000004
         }
       ],
       "words": [
         {
           "w": "how",
-          "start": 0.187,
-          "end": 0.507
+          "start": 0,
+          "end": 0.246
         },
         {
           "w": "often",
-          "start": 0.507,
-          "end": 0.873
+          "start": 0.246,
+          "end": 0.616
         },
         {
           "w": "do",
-          "start": 0.873,
-          "end": 1.102
+          "start": 0.616,
+          "end": 0.801
         },
         {
           "w": "patients",
-          "start": 1.102,
-          "end": 1.712
+          "start": 0.801,
+          "end": 1.355
         },
         {
           "w": "survive",
-          "start": 1.712,
-          "end": 2.322
+          "start": 1.355,
+          "end": 1.848
         },
         {
           "w": "about",
-          "start": 2.735,
-          "end": 3.116
+          "start": 1.998,
+          "end": 2.415
         },
         {
           "w": "350000",
-          "start": 3.116,
-          "end": 4.626
+          "start": 2.415,
+          "end": 2.902
         },
         {
           "w": "people",
-          "start": 4.626,
-          "end": 4.962
+          "start": 2.902,
+          "end": 3.389
         },
         {
           "w": "a",
-          "start": 4.962,
-          "end": 5.114
+          "start": 3.389,
+          "end": 3.528
         },
         {
           "w": "year",
-          "start": 5.114,
-          "end": 5.389
+          "start": 3.528,
+          "end": 3.876
         },
         {
           "w": "in",
-          "start": 5.389,
-          "end": 5.48
+          "start": 3.876,
+          "end": 4.085
         },
         {
           "w": "the",
-          "start": 5.48,
-          "end": 5.617
+          "start": 4.085,
+          "end": 4.363
         },
         {
           "w": "united",
-          "start": 5.617,
-          "end": 6.166
+          "start": 4.363,
+          "end": 4.85
         },
         {
           "w": "states",
-          "start": 6.166,
-          "end": 6.609
+          "start": 4.85,
+          "end": 5.337
         },
         {
           "w": "have",
-          "start": 6.609,
-          "end": 6.837
+          "start": 5.337,
+          "end": 5.685
         },
         {
           "w": "an",
-          "start": 6.837,
-          "end": 7.005
+          "start": 5.685,
+          "end": 5.894
         },
         {
           "w": "outofhospital",
-          "start": 7.005,
-          "end": 7.951
+          "start": 5.894,
+          "end": 6.868
         },
         {
           "w": "cardiac",
-          "start": 7.951,
-          "end": 8.515
+          "start": 6.868,
+          "end": 7.424
         },
         {
           "w": "arrest",
-          "start": 8.515,
-          "end": 9.136
+          "start": 7.424,
+          "end": 7.911
         },
         {
           "w": "and",
-          "start": 9.136,
-          "end": 9.258
+          "start": 7.911,
+          "end": 8.189
         },
         {
           "w": "it",
-          "start": 9.258,
-          "end": 9.411
+          "start": 8.189,
+          "end": 8.398
         },
         {
           "w": "results",
-          "start": 9.411,
-          "end": 9.944
+          "start": 8.398,
+          "end": 8.955
         },
         {
           "w": "in",
-          "start": 9.944,
-          "end": 10.097
+          "start": 8.955,
+          "end": 9.163
         },
         {
           "w": "death",
-          "start": 10.097,
-          "end": 10.341
+          "start": 9.163,
+          "end": 9.581
         },
         {
           "w": "about",
-          "start": 10.341,
-          "end": 10.707
+          "start": 9.581,
+          "end": 9.998
         },
         {
           "w": "90",
-          "start": 10.707,
-          "end": 11.561
+          "start": 9.998,
+          "end": 10.763
         },
         {
           "w": "of",
-          "start": 11.561,
-          "end": 11.698
+          "start": 10.763,
+          "end": 10.972
         },
         {
           "w": "the",
-          "start": 11.698,
-          "end": 11.851
+          "start": 10.972,
+          "end": 11.25
         },
         {
           "w": "time",
-          "start": 11.851,
-          "end": 12.251
+          "start": 11.25,
+          "end": 11.598
         },
         {
           "w": "survival",
-          "start": 12.74,
-          "end": 13.258
+          "start": 11.748,
+          "end": 12.467
         },
         {
           "w": "to",
-          "start": 13.258,
-          "end": 13.411
+          "start": 12.467,
+          "end": 12.707
         },
         {
           "w": "discharge",
-          "start": 13.411,
-          "end": 14.097
+          "start": 12.707,
+          "end": 13.506
         },
         {
           "w": "is",
-          "start": 14.097,
-          "end": 14.31
+          "start": 13.506,
+          "end": 13.745
         },
         {
           "w": "approximately",
-          "start": 14.31,
-          "end": 15.225
+          "start": 13.745,
+          "end": 14.864
         },
         {
           "w": "105",
-          "start": 15.225,
-          "end": 16.689
+          "start": 14.864,
+          "end": 15.822
         },
         {
           "w": "overall",
-          "start": 16.689,
-          "end": 17.351
+          "start": 15.822,
+          "end": 16.462
         },
         {
           "w": "211",
-          "start": 17.351,
-          "end": 18.952
+          "start": 16.462,
+          "end": 17.42
         },
         {
           "w": "in",
-          "start": 18.952,
-          "end": 19.074
+          "start": 17.42,
+          "end": 17.66
         },
         {
           "w": "a",
-          "start": 19.074,
-          "end": 19.181
+          "start": 17.66,
+          "end": 17.82
         },
         {
           "w": "public",
-          "start": 19.181,
-          "end": 19.638
+          "start": 17.82,
+          "end": 18.379
         },
         {
           "w": "place",
-          "start": 19.638,
-          "end": 20.233
+          "start": 18.379,
+          "end": 18.858
         },
         {
           "w": "and",
-          "start": 20.233,
-          "end": 20.371
+          "start": 18.858,
+          "end": 19.178
         },
         {
           "w": "89",
-          "start": 20.371,
-          "end": 21.514
+          "start": 19.178,
+          "end": 20.057
         },
         {
           "w": "at",
-          "start": 21.514,
-          "end": 21.743
+          "start": 20.057,
+          "end": 20.296
         },
         {
           "w": "home",
-          "start": 21.743,
-          "end": 22.115
+          "start": 20.296,
+          "end": 20.696
         },
         {
           "w": "where",
-          "start": 22.115,
-          "end": 22.328
+          "start": 20.696,
+          "end": 21.175
         },
         {
           "w": "fewer",
-          "start": 22.328,
-          "end": 22.786
+          "start": 21.175,
+          "end": 21.654
         },
         {
           "w": "arrests",
-          "start": 22.786,
-          "end": 23.167
+          "start": 21.654,
+          "end": 22.294
         },
         {
           "w": "are",
-          "start": 23.167,
-          "end": 23.259
+          "start": 22.294,
+          "end": 22.613
         },
         {
           "w": "witnessed",
-          "start": 23.259,
-          "end": 24.009
+          "start": 22.613,
+          "end": 23.412
         },
         {
           "w": "in",
-          "start": 24.371,
-          "end": 24.508
+          "start": 23.562,
+          "end": 23.809
         },
         {
           "w": "hospital",
-          "start": 24.508,
-          "end": 25.271
+          "start": 23.809,
+          "end": 24.55
         },
         {
           "w": "it",
-          "start": 25.271,
-          "end": 25.423
+          "start": 24.55,
+          "end": 24.797
         },
         {
           "w": "is",
-          "start": 25.423,
-          "end": 25.576
+          "start": 24.797,
+          "end": 25.044
         },
         {
           "w": "236",
-          "start": 25.576,
-          "end": 27.421
+          "start": 25.044,
+          "end": 26.032
         },
         {
           "w": "in",
-          "start": 27.421,
-          "end": 27.604
+          "start": 26.032,
+          "end": 26.279
         },
         {
           "w": "adults",
-          "start": 27.604,
-          "end": 28.092
+          "start": 26.279,
+          "end": 26.855
         },
         {
           "w": "and",
-          "start": 28.092,
-          "end": 28.245
+          "start": 26.855,
+          "end": 27.184
         },
         {
           "w": "452",
-          "start": 28.245,
-          "end": 29.953
+          "start": 27.184,
+          "end": 28.172
         },
         {
           "w": "in",
-          "start": 29.953,
-          "end": 30.075
+          "start": 28.172,
+          "end": 28.419
         },
         {
           "w": "children",
-          "start": 30.075,
-          "end": 30.736
+          "start": 28.419,
+          "end": 29.16
         },
         {
           "w": "because",
-          "start": 30.736,
-          "end": 31.072
+          "start": 29.16,
+          "end": 29.819
         },
         {
           "w": "help",
-          "start": 31.072,
-          "end": 31.346
+          "start": 29.819,
+          "end": 30.23
         },
         {
           "w": "is",
-          "start": 31.346,
-          "end": 31.575
+          "start": 30.23,
+          "end": 30.477
         },
         {
           "w": "close",
-          "start": 31.575,
-          "end": 31.971
+          "start": 30.477,
+          "end": 30.971
         },
         {
           "w": "by",
-          "start": 31.971,
-          "end": 32.231
+          "start": 30.971,
+          "end": 31.218
         },
         {
           "w": "yet",
-          "start": 32.755,
-          "end": 33.03
+          "start": 31.368,
+          "end": 31.61
         },
         {
           "w": "only",
-          "start": 33.03,
-          "end": 33.289
+          "start": 31.61,
+          "end": 31.912
         },
         {
           "w": "about",
-          "start": 33.289,
-          "end": 33.746
+          "start": 31.912,
+          "end": 32.275
         },
         {
           "w": "41",
-          "start": 33.746,
-          "end": 34.89
+          "start": 32.275,
+          "end": 32.94
         },
         {
           "w": "receive",
-          "start": 34.89,
-          "end": 35.363
+          "start": 32.94,
+          "end": 33.424
         },
         {
           "w": "bystander",
-          "start": 35.363,
-          "end": 36.125
+          "start": 33.424,
+          "end": 34.029
         },
         {
           "w": "compressions",
-          "start": 36.125,
-          "end": 36.903
+          "start": 34.029,
+          "end": 34.815
         },
         {
           "w": "before",
-          "start": 36.903,
-          "end": 37.269
+          "start": 34.815,
+          "end": 35.238
         },
         {
           "w": "help",
-          "start": 37.269,
-          "end": 37.635
+          "start": 35.238,
+          "end": 35.54
         },
         {
           "w": "arrives",
-          "start": 37.635,
-          "end": 38.245
+          "start": 35.54,
+          "end": 36.024
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 1210,
-      "startFrame": 3632
+      "durationInFrames": 1139,
+      "startFrame": 3400
     },
     {
       "index": 7,
       "type": "stage",
-      "hash": "548186167923",
+      "hash": "1e09511300e1",
       "narration": "That is why the nearest person matters. Chest compressions squeeze the heart between the sternum and the spine, pushing blood to the brain and the heart muscle, and they keep circulation going until the heart is restarted. Given immediately, they can double or even triple the chance of survival, because every minute without compressions or a shock lowers it. The actions of the nearest person in the first three minutes matter more than everything done afterwards.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-7.mp3",
-      "voDurationInSeconds": 28.416,
-      "voDurationInFrames": 853,
+      "voDurationInSeconds": 27.36,
+      "voDurationInFrames": 821,
       "captions": [
         {
           "text": "That is why the nearest person matters.",
-          "start": 0.137,
-          "end": 2.991
+          "start": 0,
+          "end": 2.766
         },
         {
           "text": "Chest compressions squeeze the heart",
-          "start": 3.385,
-          "end": 5.291
+          "start": 2.766,
+          "end": 4.853
         },
         {
           "text": "between the sternum and the spine, pushing",
-          "start": 5.291,
-          "end": 7.633
+          "start": 4.853,
+          "end": 7.222
         },
         {
           "text": "blood to the brain and the heart muscle,",
-          "start": 7.633,
-          "end": 9.779
+          "start": 7.222,
+          "end": 9.478
         },
         {
           "text": "and they keep circulation going until the",
-          "start": 9.779,
-          "end": 11.884
+          "start": 9.478,
+          "end": 11.846
         },
         {
           "text": "heart is restarted.",
-          "start": 11.884,
-          "end": 13.367999999999999
+          "start": 11.846,
+          "end": 13.068
         },
         {
           "text": "Given immediately, they can double or even",
-          "start": 13.687,
-          "end": 16.36
+          "start": 13.068,
+          "end": 15.666
         },
         {
           "text": "triple the chance of survival, because",
-          "start": 16.36,
-          "end": 18.806
+          "start": 15.666,
+          "end": 18.017
         },
         {
           "text": "every minute without compressions or a",
-          "start": 18.806,
-          "end": 20.819
+          "start": 18.017,
+          "end": 20.43
         },
         {
           "text": "shock lowers it. The actions of the",
-          "start": 20.819,
-          "end": 23.259
+          "start": 20.43,
+          "end": 22.608
         },
         {
           "text": "nearest person in the first three minutes",
-          "start": 23.259,
-          "end": 25.638
+          "start": 22.608,
+          "end": 24.902
         },
         {
           "text": "matter more than everything done",
-          "start": 25.638,
-          "end": 27.438
+          "start": 24.902,
+          "end": 26.705
         },
         {
           "text": "afterwards.",
-          "start": 27.438,
-          "end": 28.458
+          "start": 26.705,
+          "end": 27.506
         }
       ],
       "words": [
         {
           "w": "that",
-          "start": 0.137,
-          "end": 0.427
+          "start": 0,
+          "end": 0.335
         },
         {
           "w": "is",
-          "start": 0.427,
-          "end": 0.656
+          "start": 0.335,
+          "end": 0.537
         },
         {
           "w": "why",
-          "start": 0.656,
-          "end": 0.961
+          "start": 0.537,
+          "end": 0.805
         },
         {
           "w": "the",
-          "start": 0.961,
-          "end": 1.113
+          "start": 0.805,
+          "end": 1.073
         },
         {
           "w": "nearest",
-          "start": 1.113,
-          "end": 1.647
+          "start": 1.073,
+          "end": 1.61
         },
         {
           "w": "person",
-          "start": 1.647,
-          "end": 2.181
+          "start": 1.61,
+          "end": 2.079
         },
         {
           "w": "matters",
-          "start": 2.181,
-          "end": 2.791
+          "start": 2.079,
+          "end": 2.616
         },
         {
           "w": "chest",
-          "start": 3.385,
-          "end": 3.705
+          "start": 2.766,
+          "end": 3.104
         },
         {
           "w": "compressions",
-          "start": 3.705,
-          "end": 4.422
+          "start": 3.104,
+          "end": 3.838
         },
         {
           "w": "squeeze",
-          "start": 4.422,
-          "end": 4.758
+          "start": 3.838,
+          "end": 4.289
         },
         {
           "w": "the",
-          "start": 4.758,
-          "end": 4.91
+          "start": 4.289,
+          "end": 4.514
         },
         {
           "w": "heart",
-          "start": 4.91,
-          "end": 5.291
+          "start": 4.514,
+          "end": 4.853
         },
         {
           "w": "between",
-          "start": 5.291,
-          "end": 5.673
+          "start": 4.853,
+          "end": 5.304
         },
         {
           "w": "the",
-          "start": 5.673,
-          "end": 5.825
+          "start": 5.304,
+          "end": 5.53
         },
         {
           "w": "sternum",
-          "start": 5.825,
-          "end": 6.389
+          "start": 5.53,
+          "end": 5.981
         },
         {
           "w": "and",
-          "start": 6.389,
-          "end": 6.511
+          "start": 5.981,
+          "end": 6.206
         },
         {
           "w": "the",
-          "start": 6.511,
-          "end": 6.664
+          "start": 6.206,
+          "end": 6.432
         },
         {
           "w": "spine",
-          "start": 6.664,
-          "end": 7.176
+          "start": 6.432,
+          "end": 6.77
         },
         {
           "w": "pushing",
-          "start": 7.176,
-          "end": 7.633
+          "start": 6.77,
+          "end": 7.222
         },
         {
           "w": "blood",
-          "start": 7.633,
-          "end": 7.877
+          "start": 7.222,
+          "end": 7.56
         },
         {
           "w": "to",
-          "start": 7.877,
-          "end": 8.014
+          "start": 7.56,
+          "end": 7.729
         },
         {
           "w": "the",
-          "start": 8.014,
-          "end": 8.243
+          "start": 7.729,
+          "end": 7.955
         },
         {
           "w": "brain",
-          "start": 8.243,
-          "end": 8.548
+          "start": 7.955,
+          "end": 8.293
         },
         {
           "w": "and",
-          "start": 8.548,
-          "end": 8.701
+          "start": 8.293,
+          "end": 8.519
         },
         {
           "w": "the",
-          "start": 8.701,
-          "end": 8.853
+          "start": 8.519,
+          "end": 8.744
         },
         {
           "w": "heart",
-          "start": 8.853,
-          "end": 9.158
+          "start": 8.744,
+          "end": 9.083
         },
         {
           "w": "muscle",
-          "start": 9.158,
-          "end": 9.779
+          "start": 9.083,
+          "end": 9.478
         },
         {
           "w": "and",
-          "start": 9.779,
-          "end": 9.978
+          "start": 9.478,
+          "end": 9.703
         },
         {
           "w": "they",
-          "start": 9.978,
-          "end": 10.13
+          "start": 9.703,
+          "end": 9.985
         },
         {
           "w": "keep",
-          "start": 10.13,
-          "end": 10.359
+          "start": 9.985,
+          "end": 10.267
         },
         {
           "w": "circulation",
-          "start": 10.359,
-          "end": 11.045
+          "start": 10.267,
+          "end": 10.944
         },
         {
           "w": "going",
-          "start": 11.045,
-          "end": 11.503
+          "start": 10.944,
+          "end": 11.282
         },
         {
           "w": "until",
-          "start": 11.503,
-          "end": 11.808
+          "start": 11.282,
+          "end": 11.621
         },
         {
           "w": "the",
-          "start": 11.808,
-          "end": 11.884
+          "start": 11.621,
+          "end": 11.846
         },
         {
           "w": "heart",
-          "start": 11.884,
-          "end": 12.265
+          "start": 11.846,
+          "end": 12.185
         },
         {
           "w": "is",
-          "start": 12.265,
-          "end": 12.418
+          "start": 12.185,
+          "end": 12.354
         },
         {
           "w": "restarted",
-          "start": 12.418,
-          "end": 13.168
+          "start": 12.354,
+          "end": 12.918
         },
         {
           "w": "given",
-          "start": 13.687,
-          "end": 14.068
+          "start": 13.068,
+          "end": 13.439
         },
         {
           "w": "immediately",
-          "start": 14.068,
-          "end": 14.972
+          "start": 13.439,
+          "end": 14.182
         },
         {
           "w": "they",
-          "start": 14.972,
-          "end": 15.232
+          "start": 14.182,
+          "end": 14.491
         },
         {
           "w": "can",
-          "start": 15.232,
-          "end": 15.43
+          "start": 14.491,
+          "end": 14.738
         },
         {
           "w": "double",
-          "start": 15.43,
-          "end": 15.918
+          "start": 14.738,
+          "end": 15.171
         },
         {
           "w": "or",
-          "start": 15.918,
-          "end": 16.055
+          "start": 15.171,
+          "end": 15.357
         },
         {
           "w": "even",
-          "start": 16.055,
-          "end": 16.36
+          "start": 15.357,
+          "end": 15.666
         },
         {
           "w": "triple",
-          "start": 16.36,
-          "end": 16.802
+          "start": 15.666,
+          "end": 16.099
         },
         {
           "w": "the",
-          "start": 16.802,
-          "end": 16.97
+          "start": 16.099,
+          "end": 16.347
         },
         {
           "w": "chance",
-          "start": 16.97,
-          "end": 17.412
+          "start": 16.347,
+          "end": 16.78
         },
         {
           "w": "of",
-          "start": 17.412,
-          "end": 17.489
+          "start": 16.78,
+          "end": 16.966
         },
         {
           "w": "survival",
-          "start": 17.489,
-          "end": 18.303
+          "start": 16.966,
+          "end": 17.522
         },
         {
           "w": "because",
-          "start": 18.303,
-          "end": 18.806
+          "start": 17.522,
+          "end": 18.017
         },
         {
           "w": "every",
-          "start": 18.806,
-          "end": 19.065
+          "start": 18.017,
+          "end": 18.389
         },
         {
           "w": "minute",
-          "start": 19.065,
-          "end": 19.446
+          "start": 18.389,
+          "end": 18.822
         },
         {
           "w": "without",
-          "start": 19.446,
-          "end": 19.828
+          "start": 18.822,
+          "end": 19.317
         },
         {
           "w": "compressions",
-          "start": 19.828,
-          "end": 20.56
+          "start": 19.317,
+          "end": 20.121
         },
         {
           "w": "or",
-          "start": 20.56,
-          "end": 20.666
+          "start": 20.121,
+          "end": 20.306
         },
         {
           "w": "a",
-          "start": 20.666,
-          "end": 20.819
+          "start": 20.306,
+          "end": 20.43
         },
         {
           "w": "shock",
-          "start": 20.819,
-          "end": 21.139
+          "start": 20.43,
+          "end": 20.801
         },
         {
           "w": "lowers",
-          "start": 21.139,
-          "end": 21.52
+          "start": 20.801,
+          "end": 21.234
         },
         {
           "w": "it",
-          "start": 21.52,
-          "end": 21.78
+          "start": 21.234,
+          "end": 21.42
         },
         {
           "w": "the",
-          "start": 22.283,
-          "end": 22.497
+          "start": 21.57,
+          "end": 21.789
         },
         {
           "w": "actions",
-          "start": 22.497,
-          "end": 22.985
+          "start": 21.789,
+          "end": 22.226
         },
         {
           "w": "of",
-          "start": 22.985,
-          "end": 23.137
+          "start": 22.226,
+          "end": 22.389
         },
         {
           "w": "the",
-          "start": 23.137,
-          "end": 23.259
+          "start": 22.389,
+          "end": 22.608
         },
         {
           "w": "nearest",
-          "start": 23.259,
-          "end": 23.793
+          "start": 22.608,
+          "end": 23.045
         },
         {
           "w": "person",
-          "start": 23.793,
-          "end": 24.281
+          "start": 23.045,
+          "end": 23.427
         },
         {
           "w": "in",
-          "start": 24.281,
-          "end": 24.403
+          "start": 23.427,
+          "end": 23.591
         },
         {
           "w": "the",
-          "start": 24.403,
-          "end": 24.601
+          "start": 23.591,
+          "end": 23.81
         },
         {
           "w": "first",
-          "start": 24.601,
-          "end": 24.952
+          "start": 23.81,
+          "end": 24.138
         },
         {
           "w": "three",
-          "start": 24.952,
-          "end": 25.181
+          "start": 24.138,
+          "end": 24.465
         },
         {
           "w": "minutes",
-          "start": 25.181,
-          "end": 25.638
+          "start": 24.465,
+          "end": 24.902
         },
         {
           "w": "matter",
-          "start": 25.638,
-          "end": 26.035
+          "start": 24.902,
+          "end": 25.285
         },
         {
           "w": "more",
-          "start": 26.035,
-          "end": 26.248
+          "start": 25.285,
+          "end": 25.558
         },
         {
           "w": "than",
-          "start": 26.248,
-          "end": 26.553
+          "start": 25.558,
+          "end": 25.831
         },
         {
           "w": "everything",
-          "start": 26.553,
-          "end": 27.148
+          "start": 25.831,
+          "end": 26.432
         },
         {
           "w": "done",
-          "start": 27.148,
-          "end": 27.438
+          "start": 26.432,
+          "end": 26.705
         },
         {
           "w": "afterwards",
-          "start": 27.438,
-          "end": 28.258
+          "start": 26.705,
+          "end": 27.306
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 909,
-      "startFrame": 4842
+      "durationInFrames": 877,
+      "startFrame": 4539
     },
     {
       "index": 8,
       "type": "stage",
-      "hash": "c8fd001f545c",
+      "hash": "598f460e117a",
       "narration": "The 2025 guidelines replace four separate chains with one Chain of Survival, for adults and children, in hospital and out. Six links, in order. Early recognition and emergency activation. High-quality cardiopulmonary resuscitation, now including breaths, especially in children and in opioid-related arrest. Defibrillation, a cornerstone of care. Advanced resuscitation. Post-cardiac arrest care. And recovery and survivorship. The details vary between settings, but the chain is the same.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-8.mp3",
-      "voDurationInSeconds": 37.872,
-      "voDurationInFrames": 1137,
+      "voDurationInSeconds": 34.344,
+      "voDurationInFrames": 1031,
       "captions": [
         {
           "text": "The 2025 guidelines replace four separate",
-          "start": 0.137,
-          "end": 3.492
+          "start": 0,
+          "end": 2.965
         },
         {
           "text": "chains with one Chain of Survival, for",
-          "start": 3.492,
-          "end": 5.821
+          "start": 2.965,
+          "end": 5.648
         },
         {
           "text": "adults and children, in hospital and out.",
-          "start": 5.821,
-          "end": 8.703
+          "start": 5.648,
+          "end": 8.622
         },
         {
           "text": "Six links, in order.",
-          "start": 8.966,
-          "end": 10.965
+          "start": 8.622,
+          "end": 10.524
         },
         {
           "text": "Early recognition and emergency",
-          "start": 11.228,
-          "end": 13.576
+          "start": 10.524,
+          "end": 12.667
         },
         {
           "text": "activation. High-quality cardiopulmonary",
-          "start": 13.576,
-          "end": 16.847
+          "start": 12.667,
+          "end": 15.482
         },
         {
           "text": "resuscitation, now including breaths,",
-          "start": 16.847,
-          "end": 19.485
+          "start": 15.482,
+          "end": 17.962
         },
         {
           "text": "especially in children and in",
-          "start": 19.485,
-          "end": 21.223
+          "start": 17.962,
+          "end": 20.028
         },
         {
           "text": "opioid-related arrest.",
-          "start": 21.223,
-          "end": 22.985
+          "start": 20.028,
+          "end": 21.624
         },
         {
           "text": "Defibrillation, a cornerstone of care.",
-          "start": 23.227,
-          "end": 26.118
+          "start": 21.624,
+          "end": 24.63
         },
         {
           "text": "Advanced resuscitation.",
-          "start": 26.401,
-          "end": 28.165
+          "start": 24.63,
+          "end": 26.46
         },
         {
           "text": "Post-cardiac arrest care.",
-          "start": 28.589,
-          "end": 30.806
+          "start": 26.46,
+          "end": 28.338
         },
         {
           "text": "And recovery and survivorship.",
-          "start": 31.069,
-          "end": 33.403000000000006
+          "start": 28.338,
+          "end": 30.816
         },
         {
           "text": "The details vary between settings, but the",
-          "start": 33.665,
-          "end": 36.549
+          "start": 30.816,
+          "end": 33.252
         },
         {
           "text": "chain is the same.",
-          "start": 36.549,
-          "end": 37.896
+          "start": 33.252,
+          "end": 34.496
         }
       ],
       "words": [
         {
           "w": "the",
-          "start": 0.137,
-          "end": 0.274
+          "start": 0,
+          "end": 0.282
         },
         {
           "w": "2025",
-          "start": 0.274,
-          "end": 1.571
+          "start": 0.282,
+          "end": 0.635
         },
         {
           "w": "guidelines",
-          "start": 1.571,
-          "end": 2.257
+          "start": 0.635,
+          "end": 1.412
         },
         {
           "w": "replace",
-          "start": 2.257,
-          "end": 2.791
+          "start": 1.412,
+          "end": 1.977
         },
         {
           "w": "four",
-          "start": 2.791,
-          "end": 2.974
+          "start": 1.977,
+          "end": 2.33
         },
         {
           "w": "separate",
-          "start": 2.974,
-          "end": 3.492
+          "start": 2.33,
+          "end": 2.965
         },
         {
           "w": "chains",
-          "start": 3.492,
-          "end": 3.858
+          "start": 2.965,
+          "end": 3.459
         },
         {
           "w": "with",
-          "start": 3.858,
-          "end": 4.026
+          "start": 3.459,
+          "end": 3.812
         },
         {
           "w": "one",
-          "start": 4.026,
-          "end": 4.346
+          "start": 3.812,
+          "end": 4.095
         },
         {
           "w": "chain",
-          "start": 4.346,
-          "end": 4.636
+          "start": 4.095,
+          "end": 4.518
         },
         {
           "w": "of",
-          "start": 4.636,
-          "end": 4.788
+          "start": 4.518,
+          "end": 4.73
         },
         {
           "w": "survival",
-          "start": 4.788,
-          "end": 5.547
+          "start": 4.73,
+          "end": 5.366
         },
         {
           "w": "for",
-          "start": 5.547,
-          "end": 5.821
+          "start": 5.366,
+          "end": 5.648
         },
         {
           "w": "adults",
-          "start": 5.821,
-          "end": 6.355
+          "start": 5.648,
+          "end": 6.142
         },
         {
           "w": "and",
-          "start": 6.355,
-          "end": 6.508
+          "start": 6.142,
+          "end": 6.425
         },
         {
           "w": "children",
-          "start": 6.508,
-          "end": 7.166
+          "start": 6.425,
+          "end": 7.06
         },
         {
           "w": "in",
-          "start": 7.166,
-          "end": 7.319
+          "start": 7.06,
+          "end": 7.272
         },
         {
           "w": "hospital",
-          "start": 7.319,
-          "end": 7.929
+          "start": 7.272,
+          "end": 7.907
         },
         {
           "w": "and",
-          "start": 7.929,
-          "end": 8.173
+          "start": 7.907,
+          "end": 8.19
         },
         {
           "w": "out",
-          "start": 8.173,
-          "end": 8.503
+          "start": 8.19,
+          "end": 8.472
         },
         {
           "w": "six",
-          "start": 8.966,
-          "end": 9.332
+          "start": 8.622,
+          "end": 8.991
         },
         {
           "w": "links",
-          "start": 9.332,
-          "end": 9.99
+          "start": 8.991,
+          "end": 9.544
         },
         {
           "w": "in",
-          "start": 9.99,
-          "end": 10.295
+          "start": 9.544,
+          "end": 9.821
         },
         {
           "w": "order",
-          "start": 10.295,
-          "end": 10.765
+          "start": 9.821,
+          "end": 10.374
         },
         {
           "w": "early",
-          "start": 11.228,
-          "end": 11.533
+          "start": 10.524,
+          "end": 10.926
         },
         {
           "w": "recognition",
-          "start": 11.533,
-          "end": 12.448
+          "start": 10.926,
+          "end": 11.73
         },
         {
           "w": "and",
-          "start": 12.448,
-          "end": 12.737
+          "start": 11.73,
+          "end": 11.997
         },
         {
           "w": "emergency",
-          "start": 12.737,
-          "end": 13.576
+          "start": 11.997,
+          "end": 12.667
         },
         {
           "w": "activation",
-          "start": 13.576,
-          "end": 14.396
+          "start": 12.667,
+          "end": 13.404
         },
         {
           "w": "highquality",
-          "start": 14.941,
-          "end": 15.734
+          "start": 13.554,
+          "end": 14.38
         },
         {
           "w": "cardiopulmonary",
-          "start": 15.734,
-          "end": 16.847
+          "start": 14.38,
+          "end": 15.482
         },
         {
           "w": "resuscitation",
-          "start": 16.847,
-          "end": 17.961
+          "start": 15.482,
+          "end": 16.447
         },
         {
           "w": "now",
-          "start": 17.961,
-          "end": 18.205
+          "start": 16.447,
+          "end": 16.722
         },
         {
           "w": "including",
-          "start": 18.205,
-          "end": 18.8
+          "start": 16.722,
+          "end": 17.411
         },
         {
           "w": "breaths",
-          "start": 18.8,
-          "end": 19.485
+          "start": 17.411,
+          "end": 17.962
         },
         {
           "w": "especially",
-          "start": 19.485,
-          "end": 20.156
+          "start": 17.962,
+          "end": 18.719
         },
         {
           "w": "in",
-          "start": 20.156,
-          "end": 20.262
+          "start": 18.719,
+          "end": 18.926
         },
         {
           "w": "children",
-          "start": 20.262,
-          "end": 20.888
+          "start": 18.926,
+          "end": 19.546
         },
         {
           "w": "and",
-          "start": 20.888,
-          "end": 20.994
+          "start": 19.546,
+          "end": 19.821
         },
         {
           "w": "in",
-          "start": 20.994,
-          "end": 21.223
+          "start": 19.821,
+          "end": 20.028
         },
         {
           "w": "opioidrelated",
-          "start": 21.223,
-          "end": 22.245
+          "start": 20.028,
+          "end": 20.992
         },
         {
           "w": "arrest",
-          "start": 22.245,
-          "end": 22.785
+          "start": 20.992,
+          "end": 21.474
         },
         {
           "w": "defibrillation",
-          "start": 23.227,
-          "end": 24.496
+          "start": 21.624,
+          "end": 22.782
         },
         {
           "w": "a",
-          "start": 24.496,
-          "end": 24.572
+          "start": 22.782,
+          "end": 22.936
         },
         {
           "w": "cornerstone",
-          "start": 24.572,
-          "end": 25.335
+          "start": 22.936,
+          "end": 23.862
         },
         {
           "w": "of",
-          "start": 25.335,
-          "end": 25.518
+          "start": 23.862,
+          "end": 24.094
         },
         {
           "w": "care",
-          "start": 25.518,
-          "end": 25.918
+          "start": 24.094,
+          "end": 24.48
         },
         {
           "w": "advanced",
-          "start": 26.401,
-          "end": 26.935
+          "start": 24.63,
+          "end": 25.287
         },
         {
           "w": "resuscitation",
-          "start": 26.935,
-          "end": 27.965
+          "start": 25.287,
+          "end": 26.31
         },
         {
           "w": "postcardiac",
-          "start": 28.589,
-          "end": 29.718
+          "start": 26.46,
+          "end": 27.324
         },
         {
           "w": "arrest",
-          "start": 29.718,
-          "end": 30.206
+          "start": 27.324,
+          "end": 27.828
         },
         {
           "w": "care",
-          "start": 30.206,
-          "end": 30.606
+          "start": 27.828,
+          "end": 28.188
         },
         {
           "w": "and",
-          "start": 31.069,
-          "end": 31.222
+          "start": 28.338,
+          "end": 28.648
         },
         {
           "w": "recovery",
-          "start": 31.222,
-          "end": 32.06
+          "start": 28.648,
+          "end": 29.347
         },
         {
           "w": "and",
-          "start": 32.06,
-          "end": 32.243
+          "start": 29.347,
+          "end": 29.657
         },
         {
           "w": "survivorship",
-          "start": 32.243,
-          "end": 33.203
+          "start": 29.657,
+          "end": 30.666
         },
         {
           "w": "the",
-          "start": 33.665,
-          "end": 33.863
+          "start": 30.816,
+          "end": 31.048
         },
         {
           "w": "details",
-          "start": 33.863,
-          "end": 34.489
+          "start": 31.048,
+          "end": 31.512
         },
         {
           "w": "vary",
-          "start": 34.489,
-          "end": 34.9
+          "start": 31.512,
+          "end": 31.802
         },
         {
           "w": "between",
-          "start": 34.9,
-          "end": 35.404
+          "start": 31.802,
+          "end": 32.266
         },
         {
           "w": "settings",
-          "start": 35.404,
-          "end": 36.152
+          "start": 32.266,
+          "end": 32.788
         },
         {
           "w": "but",
-          "start": 36.152,
-          "end": 36.381
+          "start": 32.788,
+          "end": 33.02
         },
         {
           "w": "the",
-          "start": 36.381,
-          "end": 36.549
+          "start": 33.02,
+          "end": 33.252
         },
         {
           "w": "chain",
-          "start": 36.549,
-          "end": 36.915
+          "start": 33.252,
+          "end": 33.6
         },
         {
           "w": "is",
-          "start": 36.915,
-          "end": 37.083
+          "start": 33.6,
+          "end": 33.774
         },
         {
           "w": "the",
-          "start": 37.083,
-          "end": 37.296
+          "start": 33.774,
+          "end": 34.006
         },
         {
           "w": "same",
-          "start": 37.296,
-          "end": 37.696
+          "start": 34.006,
+          "end": 34.296
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 1193,
-      "startFrame": 5751
+      "durationInFrames": 1087,
+      "startFrame": 5416
     },
     {
       "index": 9,
       "type": "stage",
-      "hash": "00f31d7c0ab8",
+      "hash": "daf7eb68cb20",
       "narration": "If you trained on the 2020 guidelines, you are updating, not relearning. Four separate chains became one. The term rescue breaths is no longer used: breaths means assisted breathing, and ventilation is reserved for mechanical support. The compression rate stays at 100 to 120 a minute, and single-rescuer adult resuscitation stays at 30 compressions to 2 breaths.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-9.mp3",
-      "voDurationInSeconds": 26.016,
-      "voDurationInFrames": 781,
+      "voDurationInSeconds": 24.768,
+      "voDurationInFrames": 744,
       "captions": [
         {
           "text": "If you trained on the 2020 guidelines, you",
-          "start": 0.187,
-          "end": 3.294
+          "start": 0,
+          "end": 2.808
         },
         {
           "text": "are updating, not relearning.",
-          "start": 3.294,
-          "end": 5.595
+          "start": 2.808,
+          "end": 4.83
         },
         {
           "text": "Four separate chains became one.",
-          "start": 5.785,
-          "end": 8.068999999999999
+          "start": 4.83,
+          "end": 7.044
         },
         {
           "text": "The term rescue breaths is no longer used:",
-          "start": 8.309,
-          "end": 11.089
+          "start": 7.044,
+          "end": 9.708
         },
         {
           "text": "breaths means assisted breathing, and",
-          "start": 11.089,
-          "end": 13.282
+          "start": 9.708,
+          "end": 12.055
         },
         {
           "text": "ventilation is reserved for mechanical",
-          "start": 13.282,
-          "end": 15.661
+          "start": 12.055,
+          "end": 14.529
         },
         {
           "text": "support. The compression rate stays at 100",
-          "start": 15.661,
-          "end": 18.996
+          "start": 14.529,
+          "end": 17.757
         },
         {
           "text": "to 120 a minute, and single-rescuer adult",
-          "start": 18.996,
-          "end": 22.332
+          "start": 17.757,
+          "end": 20.782
         },
         {
           "text": "resuscitation stays at 30 compressions to",
-          "start": 22.332,
-          "end": 25.077
+          "start": 20.782,
+          "end": 23.958
         },
         {
           "text": "2 breaths.",
-          "start": 25.077,
-          "end": 26.112
+          "start": 23.958,
+          "end": 24.913999999999998
         }
       ],
       "words": [
         {
           "w": "if",
-          "start": 0.187,
-          "end": 0.324
+          "start": 0,
+          "end": 0.201
         },
         {
           "w": "you",
-          "start": 0.324,
-          "end": 0.462
+          "start": 0.201,
+          "end": 0.468
         },
         {
           "w": "trained",
-          "start": 0.462,
-          "end": 0.95
+          "start": 0.468,
+          "end": 1.003
         },
         {
           "w": "on",
-          "start": 0.95,
-          "end": 1.102
+          "start": 1.003,
+          "end": 1.203
         },
         {
           "w": "the",
-          "start": 1.102,
-          "end": 1.255
+          "start": 1.203,
+          "end": 1.471
         },
         {
           "w": "2020",
-          "start": 1.255,
-          "end": 2.215
+          "start": 1.471,
+          "end": 1.805
         },
         {
           "w": "guidelines",
-          "start": 2.215,
-          "end": 3.157
+          "start": 1.805,
+          "end": 2.541
         },
         {
           "w": "you",
-          "start": 3.157,
-          "end": 3.294
+          "start": 2.541,
+          "end": 2.808
         },
         {
           "w": "are",
-          "start": 3.294,
-          "end": 3.462
+          "start": 2.808,
+          "end": 3.075
         },
         {
           "w": "updating",
-          "start": 3.462,
-          "end": 4.27
+          "start": 3.075,
+          "end": 3.677
         },
         {
           "w": "not",
-          "start": 4.27,
-          "end": 4.575
+          "start": 3.677,
+          "end": 3.945
         },
         {
           "w": "relearning",
-          "start": 4.575,
-          "end": 5.395
+          "start": 3.945,
+          "end": 4.68
         },
         {
           "w": "four",
-          "start": 5.785,
-          "end": 6.06
+          "start": 4.83,
+          "end": 5.153
         },
         {
           "w": "separate",
-          "start": 6.06,
-          "end": 6.639
+          "start": 5.153,
+          "end": 5.733
         },
         {
           "w": "chains",
-          "start": 6.639,
-          "end": 7.081
+          "start": 5.733,
+          "end": 6.185
         },
         {
           "w": "became",
-          "start": 7.081,
-          "end": 7.539
+          "start": 6.185,
+          "end": 6.636
         },
         {
           "w": "one",
-          "start": 7.539,
-          "end": 7.869
+          "start": 6.636,
+          "end": 6.894
         },
         {
           "w": "the",
-          "start": 8.309,
-          "end": 8.507
+          "start": 7.044,
+          "end": 7.298
         },
         {
           "w": "term",
-          "start": 8.507,
-          "end": 8.828
+          "start": 7.298,
+          "end": 7.615
         },
         {
           "w": "rescue",
-          "start": 8.828,
-          "end": 9.361
+          "start": 7.615,
+          "end": 8.059
         },
         {
           "w": "breaths",
-          "start": 9.361,
-          "end": 9.666
+          "start": 8.059,
+          "end": 8.566
         },
         {
           "w": "is",
-          "start": 9.666,
-          "end": 9.895
+          "start": 8.566,
+          "end": 8.757
         },
         {
           "w": "no",
-          "start": 9.895,
-          "end": 10.124
+          "start": 8.757,
+          "end": 8.947
         },
         {
           "w": "longer",
-          "start": 10.124,
-          "end": 10.536
+          "start": 8.947,
+          "end": 9.391
         },
         {
           "w": "used",
-          "start": 10.536,
-          "end": 11.089
+          "start": 9.391,
+          "end": 9.708
         },
         {
           "w": "breaths",
-          "start": 11.089,
-          "end": 11.577
+          "start": 9.708,
+          "end": 10.215
         },
         {
           "w": "means",
-          "start": 11.577,
-          "end": 11.943
+          "start": 10.215,
+          "end": 10.596
         },
         {
           "w": "assisted",
-          "start": 11.943,
-          "end": 12.492
+          "start": 10.596,
+          "end": 11.167
         },
         {
           "w": "breathing",
-          "start": 12.492,
-          "end": 13.206
+          "start": 11.167,
+          "end": 11.801
         },
         {
           "w": "and",
-          "start": 13.206,
-          "end": 13.282
+          "start": 11.801,
+          "end": 12.055
         },
         {
           "w": "ventilation",
-          "start": 13.282,
-          "end": 14.045
+          "start": 12.055,
+          "end": 12.816
         },
         {
           "w": "is",
-          "start": 14.045,
-          "end": 14.197
+          "start": 12.816,
+          "end": 13.006
         },
         {
           "w": "reserved",
-          "start": 14.197,
-          "end": 14.762
+          "start": 13.006,
+          "end": 13.577
         },
         {
           "w": "for",
-          "start": 14.762,
-          "end": 14.96
+          "start": 13.577,
+          "end": 13.831
         },
         {
           "w": "mechanical",
-          "start": 14.96,
-          "end": 15.661
+          "start": 13.831,
+          "end": 14.529
         },
         {
           "w": "support",
-          "start": 15.661,
-          "end": 16.234
+          "start": 14.529,
+          "end": 15.036
         },
         {
           "w": "the",
-          "start": 16.571,
-          "end": 16.708
+          "start": 15.186,
+          "end": 15.488
         },
         {
           "w": "compression",
-          "start": 16.708,
-          "end": 17.425
+          "start": 15.488,
+          "end": 16.396
         },
         {
           "w": "rate",
-          "start": 17.425,
-          "end": 17.7
+          "start": 16.396,
+          "end": 16.774
         },
         {
           "w": "stays",
-          "start": 17.7,
-          "end": 18.081
+          "start": 16.774,
+          "end": 17.228
         },
         {
           "w": "at",
-          "start": 18.081,
-          "end": 18.31
+          "start": 17.228,
+          "end": 17.455
         },
         {
           "w": "100",
-          "start": 18.31,
-          "end": 18.996
+          "start": 17.455,
+          "end": 17.757
         },
         {
           "w": "to",
-          "start": 18.996,
-          "end": 19.133
+          "start": 17.757,
+          "end": 17.984
         },
         {
           "w": "120",
-          "start": 19.133,
-          "end": 20.14
+          "start": 17.984,
+          "end": 18.286
         },
         {
           "w": "a",
-          "start": 20.14,
-          "end": 20.216
+          "start": 18.286,
+          "end": 18.438
         },
         {
           "w": "minute",
-          "start": 20.216,
-          "end": 20.746
+          "start": 18.438,
+          "end": 18.967
         },
         {
           "w": "and",
-          "start": 20.746,
-          "end": 20.913
+          "start": 18.967,
+          "end": 19.269
         },
         {
           "w": "singlerescuer",
-          "start": 20.913,
-          "end": 21.981
+          "start": 19.269,
+          "end": 20.328
         },
         {
           "w": "adult",
-          "start": 21.981,
-          "end": 22.332
+          "start": 20.328,
+          "end": 20.782
         },
         {
           "w": "resuscitation",
-          "start": 22.332,
-          "end": 23.247
+          "start": 20.782,
+          "end": 21.84
         },
         {
           "w": "stays",
-          "start": 23.247,
-          "end": 23.628
+          "start": 21.84,
+          "end": 22.294
         },
         {
           "w": "at",
-          "start": 23.628,
-          "end": 23.78
+          "start": 22.294,
+          "end": 22.521
         },
         {
           "w": "30",
-          "start": 23.78,
-          "end": 24.238
+          "start": 22.521,
+          "end": 22.748
         },
         {
           "w": "compressions",
-          "start": 24.238,
-          "end": 24.924
+          "start": 22.748,
+          "end": 23.731
         },
         {
           "w": "to",
-          "start": 24.924,
-          "end": 25.077
+          "start": 23.731,
+          "end": 23.958
         },
         {
           "w": "2",
-          "start": 25.077,
-          "end": 25.305
+          "start": 23.958,
+          "end": 24.109
         },
         {
           "w": "breaths",
-          "start": 25.305,
-          "end": 25.912
+          "start": 24.109,
+          "end": 24.714
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 837,
-      "startFrame": 6944
+      "durationInFrames": 800,
+      "startFrame": 6503
     },
     {
       "index": 10,
       "type": "stage",
-      "hash": "2a15f803d59a",
+      "hash": "2f6cbb36bfe5",
       "narration": "To summarise. Cardiac arrest is an electrical failure that stops the heart's output, unlike a heart attack, which is a circulation problem. Two of its four rhythms can be shocked. Survival depends on six links, and the nearest person is the first of them. This is a knowledge course: it does not replace hands-on basic life support training with manikin skills assessment.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-10.mp3",
-      "voDurationInSeconds": 25.176,
-      "voDurationInFrames": 756,
+      "voDurationInSeconds": 22.152,
+      "voDurationInFrames": 665,
       "captions": [
         {
           "text": "To summarise. Cardiac arrest is an",
-          "start": 0.187,
-          "end": 3.137
+          "start": 0,
+          "end": 2.311
         },
         {
           "text": "electrical failure that stops the heart's",
-          "start": 3.137,
-          "end": 5.577
+          "start": 2.311,
+          "end": 4.778
         },
         {
           "text": "output, unlike a heart attack, which is a",
-          "start": 5.577,
-          "end": 7.981
+          "start": 4.778,
+          "end": 7.021
         },
         {
           "text": "circulation problem.",
-          "start": 7.981,
-          "end": 9.645
+          "start": 7.021,
+          "end": 8.292
         },
         {
           "text": "Two of its four rhythms can be shocked.",
-          "start": 9.871,
-          "end": 12.617999999999999
+          "start": 8.292,
+          "end": 10.722
         },
         {
           "text": "Survival depends on six links, and the",
-          "start": 12.818,
-          "end": 15.374
+          "start": 10.722,
+          "end": 13.113
         },
         {
           "text": "nearest person is the first of them.",
-          "start": 15.374,
-          "end": 17.881
+          "start": 13.113,
+          "end": 15.528
         },
         {
           "text": "This is a knowledge course:",
-          "start": 18.065,
-          "end": 19.7
+          "start": 15.528,
+          "end": 17.085
         },
         {
           "text": "it does not replace hands-on basic life",
-          "start": 19.7,
-          "end": 22.14
+          "start": 17.085,
+          "end": 19.335
         },
         {
           "text": "support training with manikin skills",
-          "start": 22.14,
-          "end": 24.153
+          "start": 19.335,
+          "end": 21.469
         },
         {
           "text": "assessment.",
-          "start": 24.153,
-          "end": 25.173
+          "start": 21.469,
+          "end": 22.304
         }
       ],
       "words": [
         {
           "w": "to",
-          "start": 0.187,
-          "end": 0.34
+          "start": 0,
+          "end": 0.227
         },
         {
           "w": "summarise",
-          "start": 0.34,
-          "end": 1.09
+          "start": 0.227,
+          "end": 0.984
         },
         {
           "w": "cardiac",
-          "start": 1.703,
-          "end": 2.222
+          "start": 1.134,
+          "end": 1.583
         },
         {
           "w": "arrest",
-          "start": 2.222,
-          "end": 2.755
+          "start": 1.583,
+          "end": 1.975
         },
         {
           "w": "is",
-          "start": 2.755,
-          "end": 2.923
+          "start": 1.975,
+          "end": 2.143
         },
         {
           "w": "an",
-          "start": 2.923,
-          "end": 3.137
+          "start": 2.143,
+          "end": 2.311
         },
         {
           "w": "electrical",
-          "start": 3.137,
-          "end": 3.823
+          "start": 2.311,
+          "end": 2.928
         },
         {
           "w": "failure",
-          "start": 3.823,
-          "end": 4.28
+          "start": 2.928,
+          "end": 3.377
         },
         {
           "w": "that",
-          "start": 4.28,
-          "end": 4.509
+          "start": 3.377,
+          "end": 3.657
         },
         {
           "w": "stops",
-          "start": 4.509,
-          "end": 4.967
+          "start": 3.657,
+          "end": 3.993
         },
         {
           "w": "the",
-          "start": 4.967,
-          "end": 5.134
+          "start": 3.993,
+          "end": 4.218
         },
         {
           "w": "hearts",
-          "start": 5.134,
-          "end": 5.577
+          "start": 4.218,
+          "end": 4.778
         },
         {
           "w": "output",
-          "start": 5.577,
-          "end": 6.18
+          "start": 4.778,
+          "end": 5.171
         },
         {
           "w": "unlike",
-          "start": 6.18,
-          "end": 6.622
+          "start": 5.171,
+          "end": 5.563
         },
         {
           "w": "a",
-          "start": 6.622,
-          "end": 6.698
+          "start": 5.563,
+          "end": 5.675
         },
         {
           "w": "heart",
-          "start": 6.698,
-          "end": 7.003
+          "start": 5.675,
+          "end": 6.012
         },
         {
           "w": "attack",
-          "start": 7.003,
-          "end": 7.523
+          "start": 6.012,
+          "end": 6.404
         },
         {
           "w": "which",
-          "start": 7.523,
-          "end": 7.767
+          "start": 6.404,
+          "end": 6.74
         },
         {
           "w": "is",
-          "start": 7.767,
-          "end": 7.905
+          "start": 6.74,
+          "end": 6.909
         },
         {
           "w": "a",
-          "start": 7.905,
-          "end": 7.981
+          "start": 6.909,
+          "end": 7.021
         },
         {
           "w": "circulation",
-          "start": 7.981,
-          "end": 8.835
+          "start": 7.021,
+          "end": 7.693
         },
         {
           "w": "problem",
-          "start": 8.835,
-          "end": 9.445
+          "start": 7.693,
+          "end": 8.142
         },
         {
           "w": "two",
-          "start": 9.871,
-          "end": 10.024
+          "start": 8.292,
+          "end": 8.526
         },
         {
           "w": "of",
-          "start": 10.024,
-          "end": 10.252
+          "start": 8.526,
+          "end": 8.701
         },
         {
           "w": "its",
-          "start": 10.252,
-          "end": 10.481
+          "start": 8.701,
+          "end": 8.935
         },
         {
           "w": "four",
-          "start": 10.481,
-          "end": 10.786
+          "start": 8.935,
+          "end": 9.227
         },
         {
           "w": "rhythms",
-          "start": 10.786,
-          "end": 11.244
+          "start": 9.227,
+          "end": 9.695
         },
         {
           "w": "can",
-          "start": 11.244,
-          "end": 11.625
+          "start": 9.695,
+          "end": 9.929
         },
         {
           "w": "be",
-          "start": 11.625,
-          "end": 11.884
+          "start": 9.929,
+          "end": 10.104
         },
         {
           "w": "shocked",
-          "start": 11.884,
-          "end": 12.418
+          "start": 10.104,
+          "end": 10.572
         },
         {
           "w": "survival",
-          "start": 12.818,
-          "end": 13.412
+          "start": 10.722,
+          "end": 11.288
         },
         {
           "w": "depends",
-          "start": 13.412,
-          "end": 13.961
+          "start": 11.288,
+          "end": 11.792
         },
         {
           "w": "on",
-          "start": 13.961,
-          "end": 14.175
+          "start": 11.792,
+          "end": 11.98
         },
         {
           "w": "six",
-          "start": 14.175,
-          "end": 14.51
+          "start": 11.98,
+          "end": 12.232
         },
         {
           "w": "links",
-          "start": 14.51,
-          "end": 15.13
+          "start": 12.232,
+          "end": 12.61
         },
         {
           "w": "and",
-          "start": 15.13,
-          "end": 15.283
+          "start": 12.61,
+          "end": 12.861
         },
         {
           "w": "the",
-          "start": 15.283,
-          "end": 15.374
+          "start": 12.861,
+          "end": 13.113
         },
         {
           "w": "nearest",
-          "start": 15.374,
-          "end": 15.939
+          "start": 13.113,
+          "end": 13.616
         },
         {
           "w": "person",
-          "start": 15.939,
-          "end": 16.427
+          "start": 13.616,
+          "end": 14.057
         },
         {
           "w": "is",
-          "start": 16.427,
-          "end": 16.579
+          "start": 14.057,
+          "end": 14.245
         },
         {
           "w": "the",
-          "start": 16.579,
-          "end": 16.732
+          "start": 14.245,
+          "end": 14.497
         },
         {
           "w": "first",
-          "start": 16.732,
-          "end": 17.113
+          "start": 14.497,
+          "end": 14.875
         },
         {
           "w": "of",
-          "start": 17.113,
-          "end": 17.281
+          "start": 14.875,
+          "end": 15.063
         },
         {
           "w": "them",
-          "start": 17.281,
-          "end": 17.681
+          "start": 15.063,
+          "end": 15.378
         },
         {
           "w": "this",
-          "start": 18.065,
-          "end": 18.279
+          "start": 15.528,
+          "end": 15.816
         },
         {
           "w": "is",
-          "start": 18.279,
-          "end": 18.446
+          "start": 15.816,
+          "end": 15.989
         },
         {
           "w": "a",
-          "start": 18.446,
-          "end": 18.507
+          "start": 15.989,
+          "end": 16.105
         },
         {
           "w": "knowledge",
-          "start": 18.507,
-          "end": 19.041
+          "start": 16.105,
+          "end": 16.682
         },
         {
           "w": "course",
-          "start": 19.041,
-          "end": 19.7
+          "start": 16.682,
+          "end": 17.085
         },
         {
           "w": "it",
-          "start": 19.7,
-          "end": 19.776
+          "start": 17.085,
+          "end": 17.259
         },
         {
           "w": "does",
-          "start": 19.776,
-          "end": 20.081
+          "start": 17.259,
+          "end": 17.547
         },
         {
           "w": "not",
-          "start": 20.081,
-          "end": 20.34
+          "start": 17.547,
+          "end": 17.778
         },
         {
           "w": "replace",
-          "start": 20.34,
-          "end": 20.783
+          "start": 17.778,
+          "end": 18.239
         },
         {
           "w": "handson",
-          "start": 20.783,
-          "end": 21.377
+          "start": 18.239,
+          "end": 18.701
         },
         {
           "w": "basic",
-          "start": 21.377,
-          "end": 21.835
+          "start": 18.701,
+          "end": 19.047
         },
         {
           "w": "life",
-          "start": 21.835,
-          "end": 22.14
+          "start": 19.047,
+          "end": 19.335
         },
         {
           "w": "support",
-          "start": 22.14,
-          "end": 22.613
+          "start": 19.335,
+          "end": 19.797
         },
         {
           "w": "training",
-          "start": 22.613,
-          "end": 23.055
+          "start": 19.797,
+          "end": 20.316
         },
         {
           "w": "with",
-          "start": 23.055,
-          "end": 23.253
+          "start": 20.316,
+          "end": 20.604
         },
         {
           "w": "manikin",
-          "start": 23.253,
-          "end": 23.817
+          "start": 20.604,
+          "end": 21.066
         },
         {
           "w": "skills",
-          "start": 23.817,
-          "end": 24.153
+          "start": 21.066,
+          "end": 21.469
         },
         {
           "w": "assessment",
-          "start": 24.153,
-          "end": 24.973
+          "start": 21.469,
+          "end": 22.104
         }
       ],
       "leadFrames": 21,
       "tailFrames": 35,
-      "durationInFrames": 812,
-      "startFrame": 7781
+      "durationInFrames": 721,
+      "startFrame": 7303
     },
     {
       "index": 11,
       "type": "outro",
-      "hash": "f0f200d744a2",
+      "hash": "17bd01cb15b5",
       "narration": "Keep learning with MedSkills.",
       "audioFile": "audio/vo/pilot-bls/B1/scene-11.mp3",
-      "voDurationInSeconds": 2.328,
-      "voDurationInFrames": 70,
+      "voDurationInSeconds": 1.896,
+      "voDurationInFrames": 57,
       "captions": [
         {
           "text": "Keep learning with MedSkills.",
-          "start": 0.187,
-          "end": 2.128
+          "start": 0,
+          "end": 2.048
         }
       ],
       "words": [
         {
           "w": "keep",
-          "start": 0.187,
-          "end": 0.507
+          "start": 0,
+          "end": 0.319
         },
         {
           "w": "learning",
-          "start": 0.507,
-          "end": 0.873
+          "start": 0.319,
+          "end": 0.892
         },
         {
           "w": "with",
-          "start": 0.873,
-          "end": 1.178
+          "start": 0.892,
+          "end": 1.211
         },
         {
           "w": "medskills",
-          "start": 1.178,
-          "end": 1.928
+          "start": 1.211,
+          "end": 1.848
         }
       ],
       "leadFrames": 21,
       "tailFrames": 136,
-      "durationInFrames": 227,
-      "startFrame": 8593
+      "durationInFrames": 214,
+      "startFrame": 8024
     }
   ]
 }

@@ -1,7 +1,17 @@
 {
-  "name": "Audit probe (a lesson that MUST fail the text audit — test corpus)",
+  "name": "Audit probe (a lesson that MUST fail the text audit \u2014 test corpus)",
   "series": "Pipeline tests",
   "music": null,
-  "length": {"minutes": [0, 100]},
-  "rules": {"first": "intro", "last": "recap", "requireOneOf": [], "grounding": "off"}
+  "length": {
+    "minutes": [
+      0.5,
+      7
+    ]
+  },
+  "rules": {
+    "first": "intro",
+    "last": "recap",
+    "requireOneOf": [],
+    "grounding": "off"
+  }
 }

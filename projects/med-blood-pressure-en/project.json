@@ -40,6 +40,9 @@
     "dir": "MedSkills/EN_Blood_Pressure"
   },
   "voice": {
+    "name": "en-IN-NeerjaNeural",
+    "rate": "+10%",
+    "pitch": "+0Hz",
     "wpm": 132
   }
 }

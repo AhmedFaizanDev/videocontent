@@ -111,7 +111,8 @@ export const PROJECT_DEFAULTS: Omit<ProjectConfig, 'slug' | 'name' | 'series'> =
   pacing: {sentencePause: 0.15, beat: 0.45, breathe: 0.8},
   lexicon: {},
   terms: [],
-  music: 'audio/music/bed.mp3',
+  // no background music: owner, 2026-10-27 (narration only, for medical education)
+  music: null,
   length: {minutes: [4.5, 7]},
   rules: {first: 'intro', last: 'recap', requireOneOf: [], sync: 'error', minFigures: 0, grounding: 'error', minIllustrated: 0, maxScreenWords: 0},
   style: {},

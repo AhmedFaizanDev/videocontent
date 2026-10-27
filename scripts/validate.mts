@@ -283,7 +283,8 @@ function checkSpec(project: string, id: string, seenFiles: Map<string, string>):
   }
   const [lo, hi] = cfg.length.minutes;
   const wordsFor = (m: number) => Math.round((m - overhead / 1800 - pauses / 60) * cfg.voice.wpm);
-  if (estMin < lo - 0.15 || estMin > hi + 0.15) warn(id, `estimated ${fmt(estMin)} (${totalWords} words at ${cfg.voice.wpm} wpm) — target ${lo}–${hi} min ≈ ${wordsFor(estMin < lo ? lo + 0.1 : hi - 0.1)} words`);
+  // too short is an error: voiceover refuses it, so the batch's repair must lengthen the script first
+  if (estMin < lo - 0.15 || estMin > hi + 0.15) (estMin < lo - 0.15 ? err : warn)(id, `estimated ${fmt(estMin)} (${totalWords} words at ${cfg.voice.wpm} wpm) — target ${lo}–${hi} min ≈ ${wordsFor(estMin < lo ? lo + 0.1 : hi - 0.1)} words${estMin < lo ? ': add depth (mechanism, why, consequence) across the scenes — no new facts' : ''}`);
   // 5:00 is the house standard; longer only when the plan says why (owner, 2026-10-03)
   const planPath = join(ROOT, 'projects', cfg.slug, 'plans', `${id}.md`);
   const lengthWhy = existsSync(planPath) && /##\s*Length[\s\S]*?\b(because|needs?|requires?)\b/i.test(readFileSync(planPath, 'utf8'));

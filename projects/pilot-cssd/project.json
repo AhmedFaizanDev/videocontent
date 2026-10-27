@@ -14,12 +14,6 @@
     "episodeLabel": "EP.",
     "watermark": "bottom-right"
   },
-  "voice": {
-    "name": "en-IN-NeerjaNeural",
-    "rate": "+10%",
-    "pitch": "+0Hz",
-    "wpm": 147
-  },
   "pacing": {
     "sentencePause": 0.15,
     "beat": 0.45,
@@ -27,10 +21,10 @@
   },
   "lexicon": {},
   "terms": [],
-  "music": "audio/music/bed.mp3",
+  "music": null,
   "length": {
     "minutes": [
-      4.5,
+      4,
       7
     ]
   },

@@ -1,6 +1,6 @@
 {
   "name": "Breathing and the Lungs",
-  "series": "MedSkills \u00b7 Clinical Foundations",
+  "series": "MedSkills · Clinical Foundations",
   "lang": "en",
   "brand": {
     "art": {
@@ -39,7 +39,7 @@
     "haemoglobin",
     "respiratory membrane"
   ],
-  "music": "audio/music/bed.mp3",
+  "music": null,
   "length": {
     "minutes": [
       4.5,

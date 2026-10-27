@@ -7,10 +7,10 @@
       "at": "2026-10-11T06:52:05.908Z"
     },
     "preflight": {
-      "seconds": 6.6,
+      "seconds": 11.9,
       "batch": 1,
       "errors": 0,
-      "at": "2026-10-17T07:50:58.915Z"
+      "at": "2026-10-27T11:34:20.315Z"
     },
     "check": {
       "seconds": 6,
@@ -22,14 +22,14 @@
       "at": "2026-10-11T07:30:42.413Z"
     },
     "voiceover": {
-      "seconds": 27.3,
+      "seconds": 54.1,
       "scenesVoiced": 10,
       "scenes": 11,
       "characters": 3802,
-      "audioSeconds": 271.8,
-      "wpm": 135,
-      "voice": "Kajal",
-      "at": "2026-10-17T07:50:51.899Z"
+      "audioSeconds": 252.4,
+      "wpm": 146,
+      "voice": "Kiara",
+      "at": "2026-10-27T11:35:14.628Z"
     },
     "voiceover-check": {
       "seconds": 0,
@@ -53,6 +53,6 @@
   },
   "authoring": [],
   "lang": "en",
-  "runtimeMinutes": 4.9,
+  "runtimeMinutes": 4.58,
   "words": 597
 }

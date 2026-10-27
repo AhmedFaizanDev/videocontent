@@ -1,388 +1,388 @@
 1
-00:00:04,000 --> 00:00:06,261
+00:00:03,900 --> 00:00:06,244
 Module ten: flexible endoscope
 
 2
-00:00:06,261 --> 00:00:09,714
+00:00:06,244 --> 00:00:09,042
 reprocessing. Here is the whole device,
 
 3
-00:00:09,714 --> 00:00:12,009
+00:00:09,042 --> 00:00:11,588
 from control body to insertion tube to
 
 4
-00:00:12,009 --> 00:00:15,121
+00:00:11,588 --> 00:00:13,764
 distal tip. It is semi-critical,
 
 5
-00:00:15,121 --> 00:00:17,689
+00:00:13,764 --> 00:00:16,519
 heat-labile, mechanically complex, and the
 
 6
-00:00:17,689 --> 00:00:19,825
+00:00:16,519 --> 00:00:19,135
 source of the most serious documented
 
 7
-00:00:19,825 --> 00:00:20,741
+00:00:19,135 --> 00:00:20,024
 outbreaks.
 
 8
-00:00:23,367 --> 00:00:25,731
+00:00:21,767 --> 00:00:24,257
 Cut across the insertion tube and you see
 
 9
-00:00:25,731 --> 00:00:27,640
+00:00:24,257 --> 00:00:26,333
 why these devices are mechanically
 
 10
-00:00:27,640 --> 00:00:30,984
+00:00:26,333 --> 00:00:28,859
 complex. Inside the sheath run several
 
 11
-00:00:30,984 --> 00:00:33,132
+00:00:28,859 --> 00:00:31,333
 narrow channels of different diameters:
 
 12
-00:00:33,132 --> 00:00:35,359
+00:00:31,333 --> 00:00:33,743
 the suction or biopsy channel, the air
 
 13
-00:00:35,359 --> 00:00:37,252
+00:00:33,743 --> 00:00:35,795
 channel, and the water channel.
 
 14
-00:00:38,091 --> 00:00:40,614
+00:00:35,795 --> 00:00:38,412
 Some are difficult to access, and some are
 
 15
-00:00:40,614 --> 00:00:43,742
+00:00:38,412 --> 00:00:40,774
 easy to forget. These channels run the
 
 16
-00:00:43,742 --> 00:00:46,037
+00:00:40,774 --> 00:00:43,106
 whole length of the scope, so every one of
 
 17
-00:00:46,037 --> 00:00:48,203
+00:00:43,106 --> 00:00:45,361
 them must be reached during cleaning.
 
 18
-00:00:50,833 --> 00:00:52,624
+00:00:47,100 --> 00:00:49,002
 Heat is the first difference.
 
 19
-00:00:53,479 --> 00:00:56,093
+00:00:49,002 --> 00:00:51,464
 Flexible endoscopes are heat-labile, so
 
 20
-00:00:56,093 --> 00:00:58,099
+00:00:51,464 --> 00:00:53,688
 they cannot be steam sterilised.
 
 21
-00:00:58,933 --> 00:01:00,956
+00:00:53,688 --> 00:00:55,919
 High-level disinfection is the usual
 
 22
-00:01:00,956 --> 00:01:03,410
+00:00:55,919 --> 00:00:58,460
 process, and it has a smaller margin than
 
 23
-00:01:03,410 --> 00:01:06,452
+00:00:58,460 --> 00:01:00,857
 sterilisation. They are also heavily
 
 24
-00:01:06,452 --> 00:01:09,247
+00:01:00,857 --> 00:01:03,489
 contaminated in use, with organic material
 
 25
-00:01:09,247 --> 00:01:10,947
+00:01:03,489 --> 00:01:05,268
 and a high bacterial load.
 
 26
-00:01:11,809 --> 00:01:14,218
+00:01:05,268 --> 00:01:07,780
 And they are expensive, so hospitals own
 
 27
-00:01:14,218 --> 00:01:16,229
+00:01:07,780 --> 00:01:10,167
 few and there is constant pressure on
 
 28
-00:01:16,229 --> 00:01:17,407
+00:01:10,167 --> 00:01:11,372
 turnaround time.
 
 29
-00:01:20,033 --> 00:01:22,188
+00:01:13,100 --> 00:01:15,095
 The sequence starts at the bedside,
 
 30
-00:01:22,203 --> 00:01:24,556
+00:01:15,095 --> 00:01:17,546
 immediately after the procedure and before
 
 31
-00:01:24,556 --> 00:01:25,983
+00:01:17,546 --> 00:01:19,178
 the scope leaves the room.
 
 32
-00:01:26,831 --> 00:01:29,149
+00:01:19,178 --> 00:01:21,422
 Wipe the insertion tube and suction or
 
 33
-00:01:29,149 --> 00:01:30,797
+00:01:21,422 --> 00:01:23,436
 flush the channels with the agreed
 
 34
-00:01:30,797 --> 00:01:34,409
+00:01:23,436 --> 00:01:26,201
 solution. Organic material begins to dry
 
 35
-00:01:34,409 --> 00:01:36,738
+00:01:26,201 --> 00:01:28,839
 and to form biofilm within minutes, and
 
 36
-00:01:36,738 --> 00:01:39,386
+00:01:28,839 --> 00:01:31,544
 once it has, no subsequent step reliably
 
 37
-00:01:39,386 --> 00:01:42,633
+00:01:31,544 --> 00:01:34,322
 removes it. This is the step performed by
 
 38
-00:01:42,633 --> 00:01:45,019
+00:01:34,322 --> 00:01:36,896
 the busiest person at the busiest moment,
 
 39
-00:01:45,019 --> 00:01:47,481
+00:01:36,896 --> 00:01:39,670
 and it is the one most often abbreviated.
 
 40
-00:01:50,100 --> 00:01:52,611
+00:01:41,400 --> 00:01:43,968
 Before immersion, every time, without
 
 41
-00:01:52,611 --> 00:01:55,016
+00:01:43,968 --> 00:01:46,614
 exception, the scope is pressurised.
 
 42
-00:01:55,866 --> 00:01:57,980
+00:01:46,614 --> 00:01:48,894
 Bubbles escaping show a breach in the
 
 43
-00:01:57,980 --> 00:02:00,384
+00:01:48,894 --> 00:01:51,204
 outer sheath, and the pressure falls.
 
 44
-00:02:01,224 --> 00:02:04,072
+00:01:51,204 --> 00:01:54,426
 Scopes are fragile, so damage is common.
 
 45
-00:02:04,902 --> 00:02:07,436
+00:01:54,426 --> 00:01:57,065
 An immersed, damaged scope admits fluid
 
 46
-00:02:07,436 --> 00:02:09,447
+00:01:57,065 --> 00:01:59,569
 into its interior, where it cannot be
 
 47
-00:02:09,447 --> 00:02:11,697
+00:01:59,569 --> 00:02:02,073
 cleaned or disinfected and organisms
 
 48
-00:02:11,697 --> 00:02:14,734
+00:02:02,073 --> 00:02:04,284
 multiply. It is then contaminated
 
 49
-00:02:14,734 --> 00:02:16,927
+00:02:04,284 --> 00:02:06,643
 internally and irreparably, and will be
 
 50
-00:02:16,927 --> 00:02:19,393
+00:02:06,643 --> 00:02:09,245
 used on patients until the damage is found
 
 51
-00:02:19,393 --> 00:02:22,681
+00:02:09,245 --> 00:02:11,579
 by other means. The test takes a minute,
 
 52
-00:02:22,681 --> 00:02:24,363
+00:02:11,579 --> 00:02:13,708
 and is skipped when the list is running
 
 53
-00:02:24,363 --> 00:02:24,926
+00:02:13,708 --> 00:02:14,174
 late.
 
 54
-00:02:27,567 --> 00:02:29,097
+00:02:15,933 --> 00:02:17,403
 Look at the channel wall.
 
 55
-00:02:29,925 --> 00:02:32,391
+00:02:17,403 --> 00:02:19,823
 Biofilm forms readily there, and once
 
 56
-00:02:32,391 --> 00:02:34,095
+00:02:19,823 --> 00:02:21,916
 established it resists chemical
 
 57
-00:02:34,095 --> 00:02:35,784
+00:02:21,916 --> 00:02:23,505
 disinfection entirely.
 
 58
-00:02:36,699 --> 00:02:39,358
+00:02:23,505 --> 00:02:25,959
 Disinfectant alone cannot clear it, which
 
 59
-00:02:39,358 --> 00:02:41,819
+00:02:25,959 --> 00:02:28,503
 is why manual cleaning is irreplaceable.
 
 60
-00:02:42,657 --> 00:02:44,884
+00:02:28,503 --> 00:02:30,886
 The brush must be of the correct diameter
 
 61
-00:02:44,884 --> 00:02:46,941
+00:02:30,886 --> 00:02:32,871
 and length for that specific model,
 
 62
-00:02:46,941 --> 00:02:49,437
+00:02:32,871 --> 00:02:35,517
 following the manufacturer's instructions.
 
 63
-00:02:50,271 --> 00:02:52,339
+00:02:35,517 --> 00:02:37,935
 It is passed through every channel until
 
 64
-00:02:52,339 --> 00:02:54,771
+00:02:37,935 --> 00:02:40,353
 it emerges visibly clean, and brushing is
 
 65
-00:02:54,771 --> 00:02:56,437
+00:02:40,353 --> 00:02:41,859
 repeated until it does.
 
 66
-00:02:57,285 --> 00:02:59,137
+00:02:41,859 --> 00:02:44,144
 Two scopes that look similar may have
 
 67
-00:02:59,137 --> 00:03:00,944
+00:02:44,144 --> 00:02:46,189
 different channels, connectors and
 
 68
-00:03:00,944 --> 00:03:01,940
+00:02:46,189 --> 00:02:47,171
 instructions.
 
 69
-00:03:04,600 --> 00:03:06,509
+00:02:48,933 --> 00:02:50,834
 Here is the sequence through manual
 
 70
-00:03:06,509 --> 00:03:10,142
+00:02:50,834 --> 00:02:53,489
 cleaning. Bedside pre-clean comes first,
 
 71
-00:03:10,142 --> 00:03:11,421
+00:02:53,489 --> 00:02:54,969
 then the leak test.
 
 72
-00:03:12,268 --> 00:03:13,768
+00:02:54,969 --> 00:02:56,993
 Then immerse fully in the correct
 
 73
-00:03:13,768 --> 00:03:15,745
+00:02:56,993 --> 00:02:59,254
 detergent at the correct dilution and
 
 74
-00:03:15,745 --> 00:03:17,973
+00:02:59,254 --> 00:03:01,516
 temperature, and wipe the exterior and
 
 75
-00:03:17,973 --> 00:03:21,696
+00:03:01,516 --> 00:03:04,553
 insertion tube. Brush every channel, plus
 
 76
-00:03:21,696 --> 00:03:24,340
+00:03:04,553 --> 00:03:07,653
 ports, valves and the elevator recess.
 
 77
-00:03:25,168 --> 00:03:27,429
+00:03:07,653 --> 00:03:09,967
 Flush all channels with detergent, then
 
 78
-00:03:27,429 --> 00:03:29,941
+00:03:09,967 --> 00:03:12,400
 water, using the connectors specified for
 
 79
-00:03:29,941 --> 00:03:33,803
+00:03:12,400 --> 00:03:15,239
 that model. Remove, clean and disinfect or
 
 80
-00:03:33,803 --> 00:03:36,314
+00:03:15,239 --> 00:03:17,818
 replace valves, buttons and caps, which
 
 81
-00:03:36,314 --> 00:03:37,833
+00:03:17,818 --> 00:03:19,665
 are frequently forgotten.
 
 82
-00:03:38,668 --> 00:03:41,236
+00:03:19,665 --> 00:03:22,502
 Finally, inspect for damage and residual
 
 83
-00:03:41,236 --> 00:03:41,857
+00:03:22,502 --> 00:03:23,057
 soil.
 
 84
-00:03:44,500 --> 00:03:48,067
+00:03:24,800 --> 00:03:27,507
 To summarise. Flexible endoscopes are
 
 85
-00:03:48,067 --> 00:03:50,647
+00:03:27,507 --> 00:03:30,208
 heat-labile, mechanically complex, heavily
 
 86
-00:03:50,647 --> 00:03:53,204
+00:03:30,208 --> 00:03:32,775
 soiled, expensive and fragile, which is
 
 87
-00:03:53,204 --> 00:03:55,181
+00:03:32,775 --> 00:03:35,543
 why they have caused several of the most
 
 88
-00:03:55,181 --> 00:03:57,290
+00:03:35,543 --> 00:03:37,652
 serious documented outbreaks.
 
 89
-00:03:58,120 --> 00:04:00,359
+00:03:37,652 --> 00:03:40,335
 Pre-clean at the bedside within minutes,
 
 90
-00:04:00,359 --> 00:04:02,911
+00:03:40,335 --> 00:03:42,962
 because biofilm resists later steps.
 
 91
-00:04:03,742 --> 00:04:06,401
+00:03:42,962 --> 00:03:45,663
 Leak test before every immersion, without
 
 92
-00:04:06,401 --> 00:04:10,001
+00:03:45,663 --> 00:03:48,328
 exception. Then clean manually, brushing
 
 93
-00:04:10,001 --> 00:04:12,160
+00:03:48,328 --> 00:03:50,760
 every channel until the brush emerges
 
 94
-00:04:12,160 --> 00:04:15,337
+00:03:50,760 --> 00:03:53,211
 visibly clean. Next, we look at the
 
 95
-00:04:15,337 --> 00:04:17,871
+00:03:53,211 --> 00:03:56,020
 duodenoscope elevator, and at drying and
 
 96
-00:04:17,871 --> 00:04:18,628
+00:03:56,020 --> 00:03:56,782
 storage.
 
 97
-00:04:21,267 --> 00:04:23,035
+00:03:58,533 --> 00:04:00,581
 Keep learning with MedSkills.
 

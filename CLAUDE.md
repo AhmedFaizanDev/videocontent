@@ -1,6 +1,6 @@
 # CLAUDE.md — start here
 
-Turns MedSkills course PDFs into ~5-minute narrated, animated teaching videos (Remotion + free
+Turns MedSkills course PDFs into 9–10-minute narrated, animated teaching videos (no music; each recaps the previous video and previews the next) (Remotion +
 Amazon Polly Kiara generative; Edge TTS only for mr/kn/hi/ja). State and next steps: **`HANDOFF.md`**. Commands: **`README.md`**.
 
 ## The pipeline (one path)
@@ -18,7 +18,7 @@ the batch stops otherwise (no subagent fallback — it cost 100× more).
   structures, devices and procedures are taught on their picture; flowcharts and tables only for
   decisions, sequences, comparisons and numbers.
 - **Every reveal hears its word** (`src/sync.ts`); nothing on screen sits still > 7 s.
-- **Source only** — no invented facts or numbers (grounding gate). No abbreviations in narration.
+- **Facts:** the client PDF is the backbone; added depth only from authoritative sources, logged in `source/added/<id>.md` (grounding gate). No abbreviations in narration.
 - Scientific look (muted palette, thin outlines, precise motion), Sora headings / Noto body,
   MedSkills brand. Indian English female voice; `lang` en/hi/mr/kn.
 

@@ -33,7 +33,7 @@ export const SCRIPT_SCHEMA = {
     scenes: {
       type: 'array',
       minItems: 5,
-      maxItems: 11,
+      maxItems: 24,
       items: {
         anyOf: [
           scene('opener', {title: str(60), art: str(40), act: {type: 'array', items: str(30)}, notes}, ['title']),
@@ -45,6 +45,8 @@ export const SCRIPT_SCHEMA = {
         ],
       },
     },
+    // depth beyond the client's material: each added fact with its authoritative source (→ source/added/<id>.md)
+    added: {type: 'array', maxItems: 30, items: {type: 'object', additionalProperties: false, properties: {fact: str(300), source: str(160)}, required: ['fact', 'source']}},
   },
   required: ['id', 'title', 'outputFilename', 'module', 'scenes'],
 };

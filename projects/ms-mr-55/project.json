@@ -28,11 +28,11 @@
   },
   "lexicon": {},
   "terms": [],
-  "music": "audio/music/bed.mp3",
+  "music": null,
   "length": {
     "minutes": [
-      4.5,
-      7
+      9,
+      10
     ]
   },
   "rules": {
