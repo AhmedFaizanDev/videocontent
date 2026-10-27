@@ -20,6 +20,10 @@ if [ "$AUTOPILOT_DETACHED" != 1 ]; then
   echo "started (pid $!) — tail -f $A/log"; exit 0
 fi
 CLAUDE="${CLAUDE_BIN:-claude}"
+# no permission bypass: file edits + the pipeline's own commands only (plus .claude/settings.json);
+# anything else is refused in headless mode, never run
+ALLOW="Read Edit Write Glob Grep Bash(node:*) Bash(npm:*) Bash(npx:*) Bash(.venv/bin/python:*) Bash(ffmpeg:*) Bash(ffprobe:*) Bash(pdftotext:*) Bash(pdfinfo:*) Bash(git add:*) Bash(git commit:*) Bash(git status:*) Bash(git diff:*) Bash(git log:*) Bash(ls:*) Bash(cat:*) Bash(head:*) Bash(tail:*) Bash(wc:*) Bash(grep:*) Bash(find:*) Bash(mkdir:*) Bash(cp:*) Bash(mv:*) Bash(touch:*) Bash(echo:*) Bash(nohup:*) Bash(timeout:*) Bash(sleep:*) Bash(kill:*) Bash(ps:*) Bash(pgrep:*) Bash(free:*) Bash(nproc:*) Bash(dmesg:*) Bash(date:*) Bash(jq:*) Bash(sort:*) Bash(cut:*) Bash(awk:*) Bash(sed:*)"
+set -f  # $ALLOW is split into words, never globbed
 log() { echo "━━ $(date '+%F %T') $*"; }
 
 # one Claude turn; waits out usage limits and retries crashes on the same session
@@ -30,13 +34,14 @@ turn() {
     if [ -f "$A/session" ]; then s="--resume $(cat "$A/session")"
     else id=$(cat /proc/sys/kernel/random/uuid 2>/dev/null || uuidgen | tr A-Z a-z); s="--session-id $id"; fi
     log "claude ($model): $(echo "$1" | head -c 80)"
-    "$CLAUDE" -p $s --model "$model" --dangerously-skip-permissions "$1" > "$A/last" 2>&1
+    "$CLAUDE" -p $s --model "$model" --permission-mode acceptEdits --allowedTools $ALLOW --disallowedTools "Bash(git push:*)" "Bash(curl:*)" "Bash(wget:*)" "Bash(sudo:*)" "Bash(rm -rf:*)" "Read(.env)" "Read(~/.aws/**)" -- "$1" < /dev/null > "$A/last" 2>&1
     code=$?
     tail -c 1500 "$A/last"; echo
     [ -f "$A/session" ] || { [ $code = 0 ] && echo "$id" > "$A/session"; }
     if grep -qiE "usage limit|limit reached|rate limit|resets|overloaded|429|529" "$A/last" && [ $(wc -c < "$A/last") -lt 3000 ]; then
       log "usage limit — retrying in 15 min"; sleep 900; continue
     fi
+    grep -qiE "failed to authenticate|please run /login|not logged in" "$A/last" && { log "Claude is not logged in — run claude, /login, then re-run this script"; exit 1; }
     if grep -qi "no conversation found" "$A/last"; then rm -f "$A/session"; continue; fi
     [ $code = 0 ] && return 0
     fails=$((fails + 1)); [ $fails -ge 8 ] && { log "claude failed 8× in a row — stopping"; exit 1; }
