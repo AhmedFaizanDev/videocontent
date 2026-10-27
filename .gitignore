@@ -4,3 +4,4 @@ node_modules/
 iterations/
 dist/
 output/Delivery/
+output/**/*.mp4
