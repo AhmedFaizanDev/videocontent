@@ -20,6 +20,7 @@
 import {parseMermaid, type GStep} from './art/mermaid.ts';
 import {keywordsOf, normWord, wordMatches} from './sync.ts';
 import {spoken} from './project.ts';
+import {cols, speechLen} from './lang.ts';
 import {direct} from './director.ts';
 import {PLAYS, isArtPlay, type ArtPlay} from './playbooks.ts';
 
@@ -221,7 +222,7 @@ const echo = (words: string[], beats: any[], items: {target: string; text: strin
 const OPENING = 24; // spoken characters (≈ 1.7 s) before an opening still picture moves
 const breathe = (words: string[], beats: any[], items: {target: string; text: string; at: number}[], lead?: string, gap = 64, inPlace = false): any[] => {
   // the gap is measured in spoken characters (≈ 4.5 s at the house pace): long clinical words take longer to say
-  const cum = words.reduce((a, w) => [...a, a[a.length - 1] + w.length + 1], [0]);
+  const cum = words.reduce((a, w) => [...a, a[a.length - 1] + speechLen(w) + 1], [0]);
   const len = (a: number, b: number) => cum[Math.max(0, b)] - cum[Math.max(0, a + 1)];
   const marks = () => [...beats, ...extra].map((b) => b._pos).filter((p) => p != null && p >= 0).sort((a, b) => a - b);
   const extra: any[] = [];
@@ -235,8 +236,8 @@ const breathe = (words: string[], beats: any[], items: {target: string; text: st
     // a content word near the middle, not spoken earlier in the gap (cues are matched in order)
     let mid = a + 1;
     while (mid < b - 1 && len(a, mid) < Math.min((a < 0 ? OPENING : gap) * 0.8, len(a, b) / 2)) mid++;
-    // alphabetic only: the voice reports numbers as it reads them ("2025" → "twenty twenty-five")
-    const ok = (j: number) => j > a && j < b && /^[a-z]{4,}$/.test(words[j] ?? '') && !STOP.has(words[j]) && !said(j) && !words.slice(a + 1, j).includes(words[j]);
+    // letters only: the voice reports numbers as it reads them ("2025" → "twenty twenty-five")
+    const ok = (j: number) => j > a && j < b && /^\p{L}[\p{L}\p{M}]*$/u.test(words[j] ?? '') && cols(words[j]) >= 4 && !STOP.has(words[j]) && !said(j) && !words.slice(a + 1, j).includes(words[j]);
     const j = [0, 1, -1, 2, -2, 3, -3, 4, -4].map((d) => mid + d).find(ok);
     if (j === undefined) break;
     const near = new Set(words.slice(a + 1, b));
@@ -540,7 +541,10 @@ function artPlay(s: any, p: ArtPlay): any {
       if (m.optional) continue;
       throw new Error(`play "${p.id}": the moment "${m.slot}" is never spoken — say one of [${m.hint.join(', ')}] after the previous moment, or give cues.${m.slot}`);
     }
-    const b = momentBeat(m.beat);
+    // a translated lesson relabels the moment in its own language (labels.<slot>)
+    const lab = s.labels?.[m.slot];
+    const relabel = (l: any) => (Array.isArray(l) ? l.map((x, i) => ({...x, text: [lab].flat()[i] ?? x.text})) : {...l, text: [lab].flat()[0]});
+    const b = momentBeat(lab != null && m.beat.label ? {...m.beat, label: relabel(m.beat.label)} : m.beat);
     beats.push({say: cue ?? [words[pos]], _pos: pos, ...b});
     for (const l of [b.label ?? []].flat()) items.push({target: l.on, text: l.text, at: pos});
     cursor = pos + 1;
@@ -556,7 +560,7 @@ const playScene = (s: any): any => {
   const p = PLAYS[s.play];
   if (!p) throw new Error(`unknown play "${s.play}" — known: ${Object.keys(PLAYS).join(', ')}`);
   if (isArtPlay(p)) return artPlay(s, p);
-  const {play: _p, cues: _c, skip: _s, ...rest} = s;
+  const {play: _p, cues: _c, skip: _s, labels: _l, ...rest} = s;
   return {...p.preset, ...rest, type: p.kind};
 };
 

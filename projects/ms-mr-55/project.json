@@ -1,0 +1,83 @@
+{
+  "name": "Medical Records and Clinical Documentation",
+  "series": "MedSkills · MS-MR-55 Medical Records",
+  "lang": "en",
+  "brand": {
+    "art": {
+      "lockup": "brand/medskills-lockup.png",
+      "icon": "brand/medskills-icon.png",
+      "lockupAspect": 3.677,
+      "iconAspect": 0.972
+    },
+    "name": "MedSkills",
+    "signoff": "Keep learning with MedSkills.",
+    "episodeLabel": "EP."
+  },
+  "voice": {
+    "name": "Kiara",
+    "engine": "generative",
+    "lang": "en-IN",
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "wpm": 148
+  },
+  "pacing": {
+    "sentencePause": 0.15,
+    "beat": 0.45,
+    "breathe": 0.8
+  },
+  "lexicon": {},
+  "terms": [],
+  "music": "audio/music/bed.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      7
+    ]
+  },
+  "rules": {
+    "first": "ident",
+    "last": "outro",
+    "requireOneOf": [],
+    "sync": "error",
+    "minFigures": 3,
+    "grounding": "error",
+    "minIllustrated": 0.75,
+    "maxScreenWords": 20,
+    "requirePlan": false,
+    "maxIdle": 7,
+    "variety": true,
+    "taste": true
+  },
+  "style": {},
+  "frame": {
+    "ident": true,
+    "outro": "Keep learning with MedSkills.",
+    "direct": true
+  },
+  "output": {
+    "dir": "MedSkills/MS_MR_55"
+  },
+  "arts": [],
+  "fullForms": {
+    "NABH": "National Accreditation Board for Hospitals and Healthcare Providers",
+    "MRD": "medical records department",
+    "EMR": "electronic medical record",
+    "EHR": "electronic health record",
+    "ICD": "International Classification of Diseases",
+    "DPDP": "Digital Personal Data Protection",
+    "IMC": "Indian Medical Council",
+    "DAMA": "discharge against medical advice",
+    "MLC": "medico-legal case",
+    "HIV": "human immunodeficiency virus",
+    "AIDS": "acquired immune deficiency syndrome",
+    "MTP": "Medical Termination of Pregnancy",
+    "TPA": "third party administrator",
+    "PMJAY": "Pradhan Mantri Jan Arogya Yojana",
+    "MCCD": "medical certificate of cause of death",
+    "ABDM": "Ayushman Bharat Digital Mission",
+    "ABHA": "Ayushman Bharat Health Account",
+    "CDI": "clinical documentation improvement",
+    "LMS": "learning management system"
+  }
+}

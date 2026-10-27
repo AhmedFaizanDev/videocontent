@@ -1,0 +1,40 @@
+{
+  "project": "pilot-cssd-ja",
+  "id": "P2",
+  "stages": {
+    "preflight": {
+      "seconds": 0.1,
+      "batch": 2,
+      "errors": 0,
+      "at": "2026-10-14T13:31:22.122Z"
+    },
+    "voiceover": {
+      "seconds": 2.6,
+      "scenesVoiced": 1,
+      "scenes": 11,
+      "characters": 247,
+      "audioSeconds": 308.7,
+      "wpm": 74,
+      "voice": "ja-JP-NanamiNeural",
+      "at": "2026-10-14T13:31:31.805Z"
+    },
+    "render": {
+      "seconds": 507,
+      "totalSeconds": 525,
+      "frames": 9927,
+      "fps": 19.6,
+      "bytes": 65752425,
+      "at": "2026-10-14T13:58:30.935Z"
+    },
+    "qa": {
+      "seconds": 49,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-14T14:00:08.503Z"
+    }
+  },
+  "authoring": [],
+  "lang": "ja",
+  "runtimeMinutes": 5.51,
+  "words": 371
+}

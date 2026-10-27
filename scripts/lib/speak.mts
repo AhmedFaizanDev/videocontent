@@ -67,3 +67,9 @@ export function speakTokens(narration: string, lexicon: Record<string, string> =
       return {d, s: `${pre}${s}${post}`};
     });
 }
+
+/** scripts/lib/tts.py's voice arguments: Polly when `engine` is set, Edge for Edge voice names ("…Neural"). */
+export const voiceArgs = (v: {name: string; rate: string; pitch: string; engine?: string; lang?: string}) => {
+  const polly = !!v.engine && v.engine !== 'edge' && !/Neural$/.test(v.name);
+  return ['--engine', polly ? v.engine! : 'edge', '--voice', v.name, ...(polly && v.lang ? ['--lang', v.lang] : []), `--rate=${v.rate}`, `--pitch=${v.pitch}`];
+};

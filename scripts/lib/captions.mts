@@ -1,4 +1,5 @@
-/** Build readable caption lines from a per-word timeline (edge-tts). */
+/** Build readable caption lines from a per-word timeline (Polly or Edge). */
+import {WIDE} from '../../src/lang.ts';
 export type Word = {w: string; raw: string; start: number; end: number};
 export type Caption = {text: string; start: number; end: number};
 
@@ -10,7 +11,8 @@ export function captionsFromWords(words: Word[], max = 42): Caption[] {
   const flush = () => {
     if (!chunk.length) return;
     caps.push({
-      text: chunk.map((w) => w.raw).join(' '),
+      // Japanese narration is phrase-spaced for timing; on screen it reads unspaced
+      text: chunk.map((w) => w.raw).join(' ').replace(new RegExp(`(?<=${WIDE.source}) (?=${WIDE.source})`, 'gu'), ''),
       start: chunk[0].start,
       end: chunk[chunk.length - 1].end,
     });
@@ -20,7 +22,7 @@ export function captionsFromWords(words: Word[], max = 42): Caption[] {
     const len = chunk.map((x) => x.raw).join(' ').length;
     if (len > 0 && len + 1 + w.raw.length > MAX) flush();
     chunk.push(w);
-    if (/[.!?…—:।॥]$/.test(w.raw) && chunk.map((x) => x.raw).join(' ').length > 16) flush();
+    if (/[.!?…—:।॥。！？]$/.test(w.raw) && chunk.map((x) => x.raw).join(' ').length > 16) flush();
   }
   flush();
   for (let i = 0; i < caps.length; i++) {

@@ -1,7 +1,6 @@
 # Preflight — pilot-bls
 
-## B1 — OK with warnings (2026-10-11T06:59:12.860Z)
+## B1 — OK with warnings (2026-10-17T07:50:58.914Z)
 
-- ⚠️ **language** pronunciation — audition these once (node scripts/say.mts pilot-bls "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: coordination, opioid-related, Defibrillation
 - ⚠️ **timing** scene[8] beats: "beat 3" and "beat 4" reveal 0.4 s apart — give each its own sentence
 - ⚠️ **timing** scene[8] beats: "beat 4" and "beat 5" reveal 0.5 s apart — give each its own sentence

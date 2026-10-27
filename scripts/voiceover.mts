@@ -1,6 +1,6 @@
 /**
- * Narration for a project's lessons, with FREE Microsoft Edge neural TTS (no key, no quota)
- * via scripts/lib/tts_edge.py. Voice comes from project.json.
+ * Narration for a project's lessons via scripts/lib/tts.py: Amazon Polly (voice.engine set; AWS
+ * credentials from ~/.aws) or free Edge TTS for languages Polly lacks. Voice comes from project.json.
  *
  *   node scripts/voiceover.mts <project> [ids… | --all] [--force]
  *
@@ -21,21 +21,21 @@ import {ROOT, FPS, loadProject, parseArgs, readSpec, timingsPath, voDir, voStati
 import {writeRegistry} from './prepare-registry.mts';
 import {recordStage} from './lib/metrics.mts';
 import {BREATHE_RANGE, fitBreathe, holdsRange, paceOf, retime} from '../src/schedule.ts';
-import {speakTokens} from './lib/speak.mts';
+import {speakTokens, voiceArgs} from './lib/speak.mts';
 import {revealTimes} from '../src/sync.ts';
 import {spoken} from '../src/project.ts';
 import {isIndic} from '../src/lang.ts';
 
-const PY = join(ROOT, 'scripts', 'lib', 'tts_edge.py');
+const PY = join(ROOT, 'scripts', 'lib', 'tts.py');
 const PYTHON = existsSync(join(ROOT, '.venv', 'bin', 'python')) ? join(ROOT, '.venv', 'bin', 'python') : 'python3';
 
-type Voice = {name: string; rate: string; pitch: string};
+type Voice = {name: string; rate: string; pitch: string; engine?: string; lang?: string};
 type Pace = {sentencePause: number; beat: number; lexicon: Record<string, string>; english: boolean};
 
 function synth(text: string, mp3: string, wordsJson: string, v: Voice, pace: Pace) {
   for (let attempt = 1; ; attempt++) {
     try {
-      execFileSync(PYTHON, [PY, '--voice', v.name, `--rate=${v.rate}`, `--pitch=${v.pitch}`, '--pause', String(pace.sentencePause), '--beat', String(pace.beat), '--out', mp3, '--words', wordsJson], {
+      execFileSync(PYTHON, [PY, ...voiceArgs(v), '--pause', String(pace.sentencePause), '--beat', String(pace.beat), '--out', mp3, '--words', wordsJson], {
         input: JSON.stringify({tokens: speakTokens(text, pace.lexicon, pace.english)}),
         stdio: ['pipe', 'ignore', 'pipe'],
         timeout: 15 * 60 * 1000, // backstop if the helper itself wedges; retried below
@@ -73,7 +73,7 @@ async function buildOne(project: string, id: string, force: boolean) {
     }
     const mp3 = join(dir, `scene-${i + 1}.mp3`);
     // legacy projects keep their original cache key; others hash exactly what is spoken
-    const key = legacy ? [s.narration, v.name, v.rate, v.pitch] : [speakTokens(s.narration, pace.lexicon, pace.english), v.name, v.rate, v.pitch, pace.sentencePause, pace.beat];
+    const key = legacy ? [s.narration, v.name, v.rate, v.pitch] : [speakTokens(s.narration, pace.lexicon, pace.english), v.name, v.rate, v.pitch, pace.sentencePause, pace.beat, ...(v.engine ? [v.engine, v.lang] : [])];
     const hash = createHash('sha1').update(JSON.stringify(key)).digest('hex').slice(0, 12);
     const cached = prev?.scenes?.[i];
     if (!force && cached?.hash === hash && existsSync(mp3)) {
@@ -114,7 +114,7 @@ async function buildOne(project: string, id: string, force: boolean) {
   // speaking pace excludes the silence we add, so it stays comparable to voice.wpm
   const toks = spec.scenes.flatMap((s: any) => (s.narration ?? "").split(/\s+/).filter(Boolean));
   const words = toks.filter((t: string) => !/^\[pause\]$/i.test(t)).length;
-  const added = toks.filter((t: string) => /[.!?…।॥]["')\]”’]*$/.test(t)).length * pace.sentencePause + toks.filter((t: string) => /^\[pause\]$/i.test(t)).length * pace.beat;
+  const added = toks.filter((t: string) => /[.!?…।॥。！？]["')\]”’]*$/.test(t)).length * pace.sentencePause + toks.filter((t: string) => /^\[pause\]$/i.test(t)).length * pace.beat;
   const audioSec = scenes.reduce((n, s) => n + s.voDurationInSeconds, 0);
   const voSec = audioSec - added;
   const runtimeMinutes = +(timings.totalDurationInFrames / FPS / 60).toFixed(2);

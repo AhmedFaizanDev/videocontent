@@ -29,6 +29,7 @@
 import React from 'react';
 import {fonts, ink} from '../theme';
 import {E, clamp01, estLines, mix, tw} from '../motion';
+import {cols, units} from '../lang';
 import {INK, T, rect, type ArtCtx, type ArtDef, type ArtFactory} from './kit';
 
 export const TONES: Record<string, {fill: string; text: string}> = {
@@ -124,14 +125,14 @@ const graph: ArtFactory = (raw: GData) => {
   const maxRow = Math.max(...layers.map((l) => l.length));
   // sizes: main axis = layers, cross axis = nodes within a layer
   // layers leave room for their edge labels (mono ≈ 11.4 px/char at 19 px) — labels never sit on a node
-  const longestLabel = Math.max(0, ...edges.filter((e) => !TB).map((e) => (e.label ?? '').length));
+  const longestLabel = Math.max(0, ...edges.filter((e) => !TB).map((e) => cols(e.label ?? '')));
   const gapMain = Math.max(92, Math.min(300, longestLabel * 17 + 50)); // edge labels are ≈0.72·fs (≈30 px) bold
   const gapCross = 34;
   const span = W - 120;
   // few layers → wider boxes: fewer wrapped lines, a shorter diagram, so it is scaled down less on its plate
   const nodeW = TB ? Math.min(maxRow <= 3 ? 380 : 320, (span - (maxRow - 1) * gapCross) / maxRow) : Math.max(170, Math.min(L <= 3 ? 420 : 320, (span - (L - 1) * gapMain) / L));
   // never wider than the box: the longest single word must fit on one line (Noto Sans ≈ 0.56 em/char at 500)
-  const longestWord = Math.max(...nodes.map((n) => Math.max(...n.label.split(/\s+/).map((w) => w.length))), 1);
+  const longestWord = Math.max(...nodes.map((n) => Math.max(...units(n.label).map(cols))), 1);
   const fs = Math.min(Math.max(28, Math.min(44, nodeW / 7.5)), (nodeW - 44) / (longestWord * 0.56));
   const boxH = (n: GNode) => 58 + estLines(n.label, nodeW - 40, fs, 0.5) * fs * 1.14;
   const rowBox = Math.max(...nodes.filter((n) => n.shape !== 'circle').map(boxH), 0);

@@ -1,0 +1,101 @@
+/**
+ * Abbreviations and spellings — content rules, not voice rules. The narration never speaks an
+ * abbreviation: the fixer (scripts/lib/fix.mts) and the writer brief turn each into its spoken
+ * full form, while the screen keeps the abbreviation. House spelling is British.
+ * Pronunciation itself is the voice's job (Amazon Polly); a word it still gets wrong goes in
+ * project.json `lexicon` as IPA ("chordae": "/ˈkɔːdiː/").
+ */
+import type {Lang} from './lang.ts';
+
+const FULL: Record<string, string> = {
+  CPR: 'cardiopulmonary resuscitation',
+  AED: 'automated external defibrillator',
+  BLS: 'basic life support',
+  ACLS: 'advanced cardiovascular life support',
+  VF: 'ventricular fibrillation',
+  VT: 'ventricular tachycardia',
+  PEA: 'pulseless electrical activity',
+  ROSC: 'return of spontaneous circulation',
+  EMS: 'emergency medical services',
+  ECG: 'electrocardiogram',
+  CSSD: 'central sterile services department',
+  PPE: 'personal protective equipment',
+  ICU: 'intensive care unit',
+  IV: 'intravenous',
+  IO: 'intraosseous',
+  SA: 'sinoatrial',
+  AV: 'atrioventricular',
+  BP: 'blood pressure',
+  HR: 'heart rate',
+  WHO: 'World Health Organization',
+  AHA: 'American Heart Association',
+  mmHg: 'millimetres of mercury',
+  NABH: 'National Accreditation Board for Hospitals and Healthcare Providers',
+  NABL: 'National Accreditation Board for Testing and Calibration Laboratories',
+  ISO: 'International Organization for Standardization',
+  OT: 'operation theatre',
+  BMW: 'bio-medical waste',
+  MLT: 'medical laboratory technology',
+  DMLT: 'Diploma in Medical Laboratory Technology',
+  DPDP: 'Digital Personal Data Protection',
+  POSH: 'Prevention of Sexual Harassment',
+  'PC-PNDT': 'Pre-Conception and Pre-Natal Diagnostic Techniques',
+  PNDT: 'Pre-Natal Diagnostic Techniques',
+  AERB: 'Atomic Energy Regulatory Board',
+  SBAR: 'Situation, Background, Assessment, Recommendation',
+  NICU: 'neonatal intensive care unit',
+  MLC: 'medico-legal case',
+  EQAS: 'external quality assessment scheme',
+  ANM: 'auxiliary nurse midwife',
+  SOP: 'standard operating procedure',
+  ICD: 'International Classification of Diseases',
+  CAPA: 'corrective and preventive action',
+  SSI: 'surgical site infection',
+  NQAS: 'National Quality Assurance Standards',
+  HDU: 'high dependency unit',
+  FMS: 'facility management and safety',
+  TLD: 'thermoluminescent dosimeter',
+  PT: 'proficiency testing',
+  POCT: 'point-of-care testing',
+  PHC: 'primary health centre',
+  NOC: 'no objection certificate',
+  LASA: 'look-alike, sound-alike',
+  KPI: 'key performance indicator',
+  IT: 'information technology',
+  IQC: 'internal quality control',
+  IPC: 'infection prevention and control',
+  HIC: 'hospital infection control',
+  HAI: 'healthcare-associated infection',
+  EMR: 'electronic medical record',
+  HIS: 'hospital information system',
+  BSc: 'Bachelor of Science',
+  RSO: 'radiological safety officer',
+  RACE: 'Rescue, Alarm, Contain, Extinguish',
+  QMS: 'quality management system',
+  PRO: 'public relations officer',
+  PMNDP: 'Pradhan Mantri National Dialysis Programme',
+  MTP: 'medical termination of pregnancy',
+  IPSG: 'International Patient Safety Goals',
+  GNM: 'General Nursing and Midwifery',
+  EMT: 'emergency medical technician',
+  ED: 'emergency department',
+  ASHA: 'Accredited Social Health Activist',
+};
+
+const SPELL: Record<string, string> = {
+  hemoglobin: 'haemoglobin',
+  anesthesia: 'anaesthesia',
+  edema: 'oedema',
+  ischemia: 'ischaemia',
+  pediatric: 'paediatric',
+  sterilization: 'sterilisation',
+  favorable: 'favourable',
+  color: 'colour',
+  liter: 'litre',
+  milliliter: 'millilitre',
+};
+
+/** Abbreviation → spoken full form. */
+export const fullForms = (lang: Lang): Record<string, string> => (lang === 'en' ? FULL : {});
+/** Variant → approved spelling. */
+export const spellings = (lang: Lang): Record<string, string> => (lang === 'en' ? SPELL : {});

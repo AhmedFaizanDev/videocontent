@@ -21,7 +21,7 @@ export function syntheticTimings(project: string, spec: any) {
       return {index: i + 1, type: s.type, narration: '', audioFile: 'audio/silence.mp3', voDurationInSeconds: sec, voDurationInFrames: Math.ceil(sec * FPS), captions: [], words: []};
     }
     const toks: string[] = spoken(s.narration).split(/\s+/).filter(Boolean);
-    const sec = (toks.length / voice.wpm) * 60 + toks.filter((t) => /[.!?…।॥]$/.test(t)).length * pacing.sentencePause;
+    const sec = (toks.length / voice.wpm) * 60 + toks.filter((t) => /[.!?…।॥。！？]$/.test(t)).length * pacing.sentencePause;
     const total = toks.reduce((n, t) => n + t.length + 1, 0);
     let t = 0.05;
     const words: Word[] = toks.map((raw) => {

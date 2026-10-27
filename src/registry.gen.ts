@@ -15,6 +15,11 @@ import p_ms_bls_29 from './../projects/ms-bls-29/project.json';
 import p_ms_bls_29_v5 from './../projects/ms-bls-29-v5/project.json';
 import p_ms_cssd_15 from './../projects/ms-cssd-15/project.json';
 import p_ms_intros from './../projects/ms-intros/project.json';
+import p_pilot_bls from './../projects/pilot-bls/project.json';
+import p_pilot_bls_ja from './../projects/pilot-bls-ja/project.json';
+import p_pilot_cssd from './../projects/pilot-cssd/project.json';
+import p_pilot_cssd_ja from './../projects/pilot-cssd-ja/project.json';
+import p_pilot_lungs from './../projects/pilot-lungs/project.json';
 import p_smoke from './../projects/smoke/project.json';
 import s_demo_asthma_en_AS01 from './../projects/demo-asthma-en/specs/AS01.json';
 import t_demo_asthma_en_AS01 from './../projects/demo-asthma-en/build/AS01.timings.json';
@@ -72,6 +77,20 @@ import s_ms_cssd_15_V805 from './../projects/ms-cssd-15/specs/V805.json';
 import t_ms_cssd_15_V805 from './../projects/ms-cssd-15/build/V805.timings.json';
 import s_ms_intros_MS_NABH_01 from './../projects/ms-intros/specs/MS-NABH-01.json';
 import t_ms_intros_MS_NABH_01 from './../projects/ms-intros/build/MS-NABH-01.timings.json';
+import s_pilot_bls_B1 from './../projects/pilot-bls/specs/B1.json';
+import t_pilot_bls_B1 from './../projects/pilot-bls/build/B1.timings.json';
+import s_pilot_bls_ja_B1 from './../projects/pilot-bls-ja/specs/B1.json';
+import t_pilot_bls_ja_B1 from './../projects/pilot-bls-ja/build/B1.timings.json';
+import s_pilot_cssd_P1 from './../projects/pilot-cssd/specs/P1.json';
+import t_pilot_cssd_P1 from './../projects/pilot-cssd/build/P1.timings.json';
+import s_pilot_cssd_P2 from './../projects/pilot-cssd/specs/P2.json';
+import t_pilot_cssd_P2 from './../projects/pilot-cssd/build/P2.timings.json';
+import s_pilot_cssd_ja_P1 from './../projects/pilot-cssd-ja/specs/P1.json';
+import t_pilot_cssd_ja_P1 from './../projects/pilot-cssd-ja/build/P1.timings.json';
+import s_pilot_cssd_ja_P2 from './../projects/pilot-cssd-ja/specs/P2.json';
+import t_pilot_cssd_ja_P2 from './../projects/pilot-cssd-ja/build/P2.timings.json';
+import s_pilot_lungs_L1 from './../projects/pilot-lungs/specs/L1.json';
+import t_pilot_lungs_L1 from './../projects/pilot-lungs/build/L1.timings.json';
 import s_smoke_S01 from './../projects/smoke/specs/S01.json';
 import t_smoke_S01 from './../projects/smoke/build/S01.timings.json';
 
@@ -104,5 +123,12 @@ export const READY: VideoProps[] = [
   {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V804 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V804 as VideoProps['timings']},
   {project: withDefaults('ms-cssd-15', p_ms_cssd_15 as never), spec: s_ms_cssd_15_V805 as unknown as VideoProps['spec'], timings: t_ms_cssd_15_V805 as VideoProps['timings']},
   {project: withDefaults('ms-intros', p_ms_intros as never), spec: s_ms_intros_MS_NABH_01 as unknown as VideoProps['spec'], timings: t_ms_intros_MS_NABH_01 as VideoProps['timings']},
+  {project: withDefaults('pilot-bls', p_pilot_bls as never), spec: s_pilot_bls_B1 as unknown as VideoProps['spec'], timings: t_pilot_bls_B1 as VideoProps['timings']},
+  {project: withDefaults('pilot-bls-ja', p_pilot_bls_ja as never), spec: s_pilot_bls_ja_B1 as unknown as VideoProps['spec'], timings: t_pilot_bls_ja_B1 as VideoProps['timings']},
+  {project: withDefaults('pilot-cssd', p_pilot_cssd as never), spec: s_pilot_cssd_P1 as unknown as VideoProps['spec'], timings: t_pilot_cssd_P1 as VideoProps['timings']},
+  {project: withDefaults('pilot-cssd', p_pilot_cssd as never), spec: s_pilot_cssd_P2 as unknown as VideoProps['spec'], timings: t_pilot_cssd_P2 as VideoProps['timings']},
+  {project: withDefaults('pilot-cssd-ja', p_pilot_cssd_ja as never), spec: s_pilot_cssd_ja_P1 as unknown as VideoProps['spec'], timings: t_pilot_cssd_ja_P1 as VideoProps['timings']},
+  {project: withDefaults('pilot-cssd-ja', p_pilot_cssd_ja as never), spec: s_pilot_cssd_ja_P2 as unknown as VideoProps['spec'], timings: t_pilot_cssd_ja_P2 as VideoProps['timings']},
+  {project: withDefaults('pilot-lungs', p_pilot_lungs as never), spec: s_pilot_lungs_L1 as unknown as VideoProps['spec'], timings: t_pilot_lungs_L1 as VideoProps['timings']},
   {project: withDefaults('smoke', p_smoke as never), spec: s_smoke_S01 as unknown as VideoProps['spec'], timings: t_smoke_S01 as VideoProps['timings']}
 ];

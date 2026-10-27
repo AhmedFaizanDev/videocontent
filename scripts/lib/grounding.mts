@@ -182,52 +182,6 @@ export function spellingProblems(texts: {where: string; text: string}[], system?
 }
 
 /* ------------------------------------------------------------------ speech */
-let DICT: Set<string> | null = null;
-const dict = () => {
-  if (DICT) return DICT;
-  try {
-    DICT = new Set(readFileSync('/usr/share/dict/words', 'utf8').split('\n').map((w) => w.toLowerCase()));
-  } catch {
-    DICT = new Set();
-  }
-  return DICT;
-};
-const known = (w0: string): boolean => {
-  const d = dict();
-  if (!d.size || d.has(w0)) return true;
-  // British → American spellings the 1934 dictionary knows (fibre→fiber, -isation→-ization, -our→-or)
-  const us = w0.replace(/isation/, 'ization').replace(/is(e|ed|es|ing)$/, 'iz$1').replace(/our(s)?$/, 'or$1').replace(/([^aeiou])re(s)?$/, '$1er$2').replace(/oe/, 'e').replace(/ae/, 'e');
-  if (us !== w0 && known(us)) return true;
-  const w = w0;
-  for (const [suf, rep] of [['ies', 'y'], ['es', ''], ['s', ''], ['ed', ''], ['ed', 'e'], ['ing', ''], ['ing', 'e'], ['ly', ''], ['al', ''], ['est', ''], ['est', 'e'], ['er', ''], ['er', 'e'], ['ier', 'y'], ['iest', 'y'], ['ation', 'ate'], ['ation', ''], ['ic', '']] as const)
-    if (w.endsWith(suf) && d.has(w.slice(0, -suf.length) + rep)) return true;
-  return false;
-};
-/**
- * English words the dictionary doesn't know (drug names, Latin anatomy, eponyms): the Indian
- * English voice may guess wrong. Audition each once (scripts/say.mts); if it's right, add it to
- * the lexicon as itself ("amiodarone": "amiodarone") — that marks it reviewed — else respell it.
- */
-/** A known word in an inflected form (omitted → omit, identified → identify, multiplied → multiply, coordinators → coordinator). */
-const knownForm = (w: string): boolean =>
-  known(w) ||
-  [/ies$/, /ied$/, /ers?$/, /ors?$/, /ings?$/, /ed$/, /es$/, /s$/, /ly$/, /ion$/].some((suf) => {
-    if (!suf.test(w)) return false;
-    const stem = w.replace(suf, '');
-    return [stem, stem + 'e', stem + 'y', stem.replace(/(.)\1$/, '$1'), stem + 'ion', stem + 'ate'].some((s) => s.length >= 3 && known(s));
-  });
-export function pronunciationWatch(narration: string, lexicon: Record<string, string>): string[] {
-  const lex = new Set(Object.keys(lexicon).map((k) => k.toLowerCase()));
-  const out = new Set<string>();
-  for (const tok of narration.split(/\s+/)) {
-    const w = tok.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, '').replace(/['’]s$/, '');
-    if (w.length < 7 || !/^[A-Za-z-]+$/.test(w) || /^[A-Z]/.test(w) && !/[a-z]/.test(w)) continue;
-    if (w.split('-').every((p) => !p || knownForm(p.toLowerCase())) || lex.has(w.toLowerCase())) continue;
-    out.add(w);
-  }
-  return [...out];
-}
-
 const UNIT_ABBR = /^(\d+(?:\.\d+)?)?(mL|ml|mmHg|bpm|kg|mg|g|cm|mm|km|L|s|ms|°C|°F|kcal|µm|nm)$/;
 export function speechHazards(narration: string, lexicon: Record<string, string>, english = true) {
   const out: string[] = [];
@@ -246,9 +200,6 @@ export function speechHazards(narration: string, lexicon: Record<string, string>
     // the voice spells abbreviations letter by letter: narration speaks the full form
     // (the abbreviation stays on screen, emphasised); a lexicon entry is the explicit override
     if (isAbbr(core) && !Object.keys(lexicon).some((k) => k.toLowerCase() === core.toLowerCase())) out.push(`"${d}" is an abbreviation the voice would spell out letter by letter — say its full form in the narration (keep "${core}" on screen)`);
-    // run-together names (MedSkills, PubMed, BioRender): the voice guesses where the words split,
-    // and the Indian English voice guesses wrong — they need a lexicon respelling (src/lexicon.ts)
-    if (d === s && /^[A-Z]?[a-z]+[A-Z][A-Za-z]*$/.test(core)) out.push(`"${d}" is a run-together name the voice may mispronounce — add a respelling to src/lexicon.ts (house) or project.json lexicon; audition with: node scripts/say.mts <project> "${core}"`);
   });
   return out;
 }

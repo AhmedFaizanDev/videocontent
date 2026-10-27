@@ -37,7 +37,7 @@ export const SCRIPT_SCHEMA = {
       items: {
         anyOf: [
           scene('opener', {title: str(60), art: str(40), act: {type: 'array', items: str(30)}, notes}, ['title']),
-          scene('play', {play: {enum: Object.keys(PLAYS)}, cues: {type: 'object', additionalProperties: words}, skip: {type: 'array', items: str(20)}, notes, ...flow, ...table}, ['play']),
+          scene('play', {play: {enum: Object.keys(PLAYS)}, cues: {type: 'object', additionalProperties: words}, labels: {type: 'object', additionalProperties: {type: 'string'}}, skip: {type: 'array', items: str(20)}, notes, ...flow, ...table}, ['play']),
           scene('explain', {art: str(40), points: {type: 'array', minItems: 2, maxItems: 8, items: {type: 'object', additionalProperties: false, properties: {on: str(30), label: str(28), act: str(30), note: str(90), say: words}}}}, ['art', 'points']),
           scene('flow', {...flow, notes}, ['mermaid']),
           scene('table', {...table, notes}, ['columns', 'rows']),

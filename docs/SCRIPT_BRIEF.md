@@ -47,5 +47,8 @@ Mermaid: `flowchart LR` (TD for decisions), `A[step]`, `B{question?}`, `-->|Yes|
 `:::red :::blue :::teal :::green`; nodes reveal in declaration order — narrate them in that order.
 
 ## Output
-JSON only: `{id, title, outputFilename, module, scenes}`. Kickers 1–3 words. Narration: precise,
-calm, explanatory (what, why, consequence, what the clinician does), British spelling, no filler.
+JSON only: `{id, title, outputFilename, module, scenes}`. Kickers 1–3 words. Narration: precise
+and explanatory (what, why, consequence, what the clinician does), told by a warm, enthusiastic
+teacher: open scenes with a curiosity hook or a question, invite ("Let's follow…"), land each idea
+with a short payoff line ("That's the whole trick."). Energy comes from wording and rhythm, never
+from invented facts. British spelling, no filler.

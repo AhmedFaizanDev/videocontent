@@ -7,7 +7,7 @@
  *                shape, rules, sync, source grounding, spelling, speech hazards, timing
  *                simulation, dry-run layout. Spec problems surface in minutes, not hours in.
  *   then, lesson by lesson, all the way to a QA'd MP4:
- *   2 voiceover  Edge TTS (hash-cached per scene); runtime vs target; sync vs the real voice
+ *   2 voiceover  Polly TTS (hash-cached per scene); runtime vs target; sync vs the real voice
  *   3 render     manifest-based: skipped when inputs and rendering code are unchanged
  *   4 qa         technical checks + MP4-vs-stills consistency + layout (skipped once passed)
  *   (--review adds director's stills with the real timings before rendering)

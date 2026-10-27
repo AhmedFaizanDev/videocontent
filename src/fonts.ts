@@ -45,10 +45,11 @@ export const useHouseFonts = () => {
 };
 
 const q = (f: string) => `'${f}'`;
+const JP = q('Noto Sans JP');
 /** Fallbacks after the script faces: broad Latin/Greek/Cyrillic, symbols, math. */
 const TAIL = [q('Noto Sans'), q('Noto Sans Symbols 2'), q('Noto Sans Math')].join(', ');
 export const STACKS = {
-  display: `${q('Sora')}, ${q('Anek Devanagari')}, ${q('Anek Kannada')}, ${TAIL}`,
-  body: `${q('Noto Sans')}, ${q('Noto Sans Devanagari')}, ${q('Noto Sans Kannada')}, ${TAIL}`,
-  mono: `${q('IBM Plex Mono')}, ${q('Noto Sans Devanagari')}, ${q('Noto Sans Kannada')}, ${TAIL}`,
+  display: `${q('Sora')}, ${q('Anek Devanagari')}, ${q('Anek Kannada')}, ${JP}, ${TAIL}`,
+  body: `${q('Noto Sans')}, ${q('Noto Sans Devanagari')}, ${q('Noto Sans Kannada')}, ${JP}, ${TAIL}`,
+  mono: `${q('IBM Plex Mono')}, ${q('Noto Sans Devanagari')}, ${q('Noto Sans Kannada')}, ${JP}, ${TAIL}`,
 };

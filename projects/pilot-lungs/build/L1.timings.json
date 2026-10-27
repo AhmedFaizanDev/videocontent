@@ -1,0 +1,3776 @@
+{
+  "id": "L1",
+  "fps": 30,
+  "totalDurationInFrames": 8132,
+  "voice": {
+    "id": "Kiara",
+    "name": "Kiara"
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "type": "ident",
+      "hash": "silent",
+      "narration": "",
+      "audioFile": "audio/silence.mp3",
+      "voDurationInSeconds": 3.2,
+      "voDurationInFrames": 96,
+      "captions": [],
+      "words": [],
+      "leadFrames": 0,
+      "tailFrames": 0,
+      "durationInFrames": 96,
+      "startFrame": 0
+    },
+    {
+      "index": 2,
+      "type": "stage",
+      "hash": "acc6506c1fa1",
+      "narration": "Breathing and gas exchange. Right now, without a single thought, you breathe in, and you breathe out. So what actually happens inside the chest with every breath? Let's find out!",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-2.mp3",
+      "voDurationInSeconds": 12.648,
+      "voDurationInFrames": 380,
+      "captions": [
+        {
+          "text": "Breathing and gas exchange.",
+          "start": 0,
+          "end": 2.118
+        },
+        {
+          "text": "Right now, without a single thought, you",
+          "start": 2.118,
+          "end": 5.153
+        },
+        {
+          "text": "breathe in, and you breathe out.",
+          "start": 5.153,
+          "end": 7.716
+        },
+        {
+          "text": "So what actually happens inside the chest",
+          "start": 7.716,
+          "end": 10.303
+        },
+        {
+          "text": "with every breath?",
+          "start": 10.303,
+          "end": 11.562
+        },
+        {
+          "text": "Let's find out!",
+          "start": 11.562,
+          "end": 12.793999999999999
+        }
+      ],
+      "words": [
+        {
+          "w": "breathing",
+          "start": 0,
+          "end": 0.729
+        },
+        {
+          "w": "and",
+          "start": 0.729,
+          "end": 1.02
+        },
+        {
+          "w": "gas",
+          "start": 1.02,
+          "end": 1.312
+        },
+        {
+          "w": "exchange",
+          "start": 1.312,
+          "end": 1.968
+        },
+        {
+          "w": "right",
+          "start": 2.118,
+          "end": 2.585
+        },
+        {
+          "w": "now",
+          "start": 2.585,
+          "end": 2.896
+        },
+        {
+          "w": "without",
+          "start": 2.896,
+          "end": 3.519
+        },
+        {
+          "w": "a",
+          "start": 3.519,
+          "end": 3.675
+        },
+        {
+          "w": "single",
+          "start": 3.675,
+          "end": 4.219
+        },
+        {
+          "w": "thought",
+          "start": 4.219,
+          "end": 4.842
+        },
+        {
+          "w": "you",
+          "start": 4.842,
+          "end": 5.153
+        },
+        {
+          "w": "breathe",
+          "start": 5.153,
+          "end": 5.776
+        },
+        {
+          "w": "in",
+          "start": 5.776,
+          "end": 6.009
+        },
+        {
+          "w": "and",
+          "start": 6.009,
+          "end": 6.321
+        },
+        {
+          "w": "you",
+          "start": 6.321,
+          "end": 6.632
+        },
+        {
+          "w": "breathe",
+          "start": 6.632,
+          "end": 7.255
+        },
+        {
+          "w": "out",
+          "start": 7.255,
+          "end": 7.566
+        },
+        {
+          "w": "so",
+          "start": 7.716,
+          "end": 7.901
+        },
+        {
+          "w": "what",
+          "start": 7.901,
+          "end": 8.209
+        },
+        {
+          "w": "actually",
+          "start": 8.209,
+          "end": 8.763
+        },
+        {
+          "w": "happens",
+          "start": 8.763,
+          "end": 9.256
+        },
+        {
+          "w": "inside",
+          "start": 9.256,
+          "end": 9.687
+        },
+        {
+          "w": "the",
+          "start": 9.687,
+          "end": 9.934
+        },
+        {
+          "w": "chest",
+          "start": 9.934,
+          "end": 10.303
+        },
+        {
+          "w": "with",
+          "start": 10.303,
+          "end": 10.611
+        },
+        {
+          "w": "every",
+          "start": 10.611,
+          "end": 10.981
+        },
+        {
+          "w": "breath",
+          "start": 10.981,
+          "end": 11.412
+        },
+        {
+          "w": "lets",
+          "start": 11.562,
+          "end": 12.048
+        },
+        {
+          "w": "find",
+          "start": 12.048,
+          "end": 12.351
+        },
+        {
+          "w": "out",
+          "start": 12.351,
+          "end": 12.594
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 436,
+      "startFrame": 96
+    },
+    {
+      "index": 3,
+      "type": "stage",
+      "hash": "cbab16eba170",
+      "narration": "Let's follow one breath down the trachea, the windpipe! Air enters through the nose or mouth, passes the pharynx and larynx, and drops into this tube. C-shaped rings of cartilage hold it open. At its base, the trachea divides into the right and left primary bronchi. These branch again and again into smaller bronchioles, and every tiny branch ends in air sacs called alveoli. That's where the real work happens.",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-3.mp3",
+      "voDurationInSeconds": 27.24,
+      "voDurationInFrames": 818,
+      "captions": [
+        {
+          "text": "Let's follow one breath down the trachea,",
+          "start": 0,
+          "end": 2.691
+        },
+        {
+          "text": "the windpipe! Air enters through the nose",
+          "start": 2.691,
+          "end": 5.539
+        },
+        {
+          "text": "or mouth, passes the pharynx and larynx,",
+          "start": 5.539,
+          "end": 8.163
+        },
+        {
+          "text": "and drops into this tube.",
+          "start": 8.163,
+          "end": 9.996
+        },
+        {
+          "text": "C-shaped rings of cartilage hold it open.",
+          "start": 9.996,
+          "end": 12.858
+        },
+        {
+          "text": "At its base, the trachea divides into the",
+          "start": 12.858,
+          "end": 15.482
+        },
+        {
+          "text": "right and left primary bronchi.",
+          "start": 15.482,
+          "end": 17.616
+        },
+        {
+          "text": "These branch again and again into smaller",
+          "start": 17.616,
+          "end": 20.5
+        },
+        {
+          "text": "bronchioles, and every tiny branch ends in",
+          "start": 20.5,
+          "end": 23.384
+        },
+        {
+          "text": "air sacs called alveoli.",
+          "start": 23.384,
+          "end": 25.182
+        },
+        {
+          "text": "That's where the real work happens!",
+          "start": 25.182,
+          "end": 27.374
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0,
+          "end": 0.501
+        },
+        {
+          "w": "follow",
+          "start": 0.501,
+          "end": 0.939
+        },
+        {
+          "w": "one",
+          "start": 0.939,
+          "end": 1.189
+        },
+        {
+          "w": "breath",
+          "start": 1.189,
+          "end": 1.627
+        },
+        {
+          "w": "down",
+          "start": 1.627,
+          "end": 1.94
+        },
+        {
+          "w": "the",
+          "start": 1.94,
+          "end": 2.19
+        },
+        {
+          "w": "trachea",
+          "start": 2.19,
+          "end": 2.691
+        },
+        {
+          "w": "the",
+          "start": 2.691,
+          "end": 2.941
+        },
+        {
+          "w": "windpipe",
+          "start": 2.941,
+          "end": 3.504
+        },
+        {
+          "w": "air",
+          "start": 3.654,
+          "end": 3.923
+        },
+        {
+          "w": "enters",
+          "start": 3.923,
+          "end": 4.394
+        },
+        {
+          "w": "through",
+          "start": 4.394,
+          "end": 4.933
+        },
+        {
+          "w": "the",
+          "start": 4.933,
+          "end": 5.202
+        },
+        {
+          "w": "nose",
+          "start": 5.202,
+          "end": 5.539
+        },
+        {
+          "w": "or",
+          "start": 5.539,
+          "end": 5.74
+        },
+        {
+          "w": "mouth",
+          "start": 5.74,
+          "end": 6.144
+        },
+        {
+          "w": "passes",
+          "start": 6.144,
+          "end": 6.615
+        },
+        {
+          "w": "the",
+          "start": 6.615,
+          "end": 6.885
+        },
+        {
+          "w": "pharynx",
+          "start": 6.885,
+          "end": 7.423
+        },
+        {
+          "w": "and",
+          "start": 7.423,
+          "end": 7.692
+        },
+        {
+          "w": "larynx",
+          "start": 7.692,
+          "end": 8.163
+        },
+        {
+          "w": "and",
+          "start": 8.163,
+          "end": 8.433
+        },
+        {
+          "w": "drops",
+          "start": 8.433,
+          "end": 8.836
+        },
+        {
+          "w": "into",
+          "start": 8.836,
+          "end": 9.173
+        },
+        {
+          "w": "this",
+          "start": 9.173,
+          "end": 9.509
+        },
+        {
+          "w": "tube",
+          "start": 9.509,
+          "end": 9.846
+        },
+        {
+          "w": "cshaped",
+          "start": 9.996,
+          "end": 10.538
+        },
+        {
+          "w": "rings",
+          "start": 10.538,
+          "end": 10.945
+        },
+        {
+          "w": "of",
+          "start": 10.945,
+          "end": 11.149
+        },
+        {
+          "w": "cartilage",
+          "start": 11.149,
+          "end": 11.827
+        },
+        {
+          "w": "hold",
+          "start": 11.827,
+          "end": 12.166
+        },
+        {
+          "w": "it",
+          "start": 12.166,
+          "end": 12.369
+        },
+        {
+          "w": "open",
+          "start": 12.369,
+          "end": 12.708
+        },
+        {
+          "w": "at",
+          "start": 12.858,
+          "end": 13.05
+        },
+        {
+          "w": "its",
+          "start": 13.05,
+          "end": 13.306
+        },
+        {
+          "w": "base",
+          "start": 13.306,
+          "end": 13.626
+        },
+        {
+          "w": "the",
+          "start": 13.626,
+          "end": 13.882
+        },
+        {
+          "w": "trachea",
+          "start": 13.882,
+          "end": 14.394
+        },
+        {
+          "w": "divides",
+          "start": 14.394,
+          "end": 14.906
+        },
+        {
+          "w": "into",
+          "start": 14.906,
+          "end": 15.226
+        },
+        {
+          "w": "the",
+          "start": 15.226,
+          "end": 15.482
+        },
+        {
+          "w": "right",
+          "start": 15.482,
+          "end": 15.866
+        },
+        {
+          "w": "and",
+          "start": 15.866,
+          "end": 16.122
+        },
+        {
+          "w": "left",
+          "start": 16.122,
+          "end": 16.442
+        },
+        {
+          "w": "primary",
+          "start": 16.442,
+          "end": 16.954
+        },
+        {
+          "w": "bronchi",
+          "start": 16.954,
+          "end": 17.466
+        },
+        {
+          "w": "these",
+          "start": 17.616,
+          "end": 18.028
+        },
+        {
+          "w": "branch",
+          "start": 18.028,
+          "end": 18.509
+        },
+        {
+          "w": "again",
+          "start": 18.509,
+          "end": 18.921
+        },
+        {
+          "w": "and",
+          "start": 18.921,
+          "end": 19.195
+        },
+        {
+          "w": "again",
+          "start": 19.195,
+          "end": 19.607
+        },
+        {
+          "w": "into",
+          "start": 19.607,
+          "end": 19.951
+        },
+        {
+          "w": "smaller",
+          "start": 19.951,
+          "end": 20.5
+        },
+        {
+          "w": "bronchioles",
+          "start": 20.5,
+          "end": 21.324
+        },
+        {
+          "w": "and",
+          "start": 21.324,
+          "end": 21.599
+        },
+        {
+          "w": "every",
+          "start": 21.599,
+          "end": 22.011
+        },
+        {
+          "w": "tiny",
+          "start": 22.011,
+          "end": 22.354
+        },
+        {
+          "w": "branch",
+          "start": 22.354,
+          "end": 22.835
+        },
+        {
+          "w": "ends",
+          "start": 22.835,
+          "end": 23.178
+        },
+        {
+          "w": "in",
+          "start": 23.178,
+          "end": 23.384
+        },
+        {
+          "w": "air",
+          "start": 23.384,
+          "end": 23.659
+        },
+        {
+          "w": "sacs",
+          "start": 23.659,
+          "end": 24.002
+        },
+        {
+          "w": "called",
+          "start": 24.002,
+          "end": 24.483
+        },
+        {
+          "w": "alveoli",
+          "start": 24.483,
+          "end": 25.032
+        },
+        {
+          "w": "thats",
+          "start": 25.182,
+          "end": 25.667
+        },
+        {
+          "w": "where",
+          "start": 25.667,
+          "end": 25.99
+        },
+        {
+          "w": "the",
+          "start": 25.99,
+          "end": 26.205
+        },
+        {
+          "w": "real",
+          "start": 26.205,
+          "end": 26.474
+        },
+        {
+          "w": "work",
+          "start": 26.474,
+          "end": 26.743
+        },
+        {
+          "w": "happens",
+          "start": 26.743,
+          "end": 27.174
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 874,
+      "startFrame": 532
+    },
+    {
+      "index": 4,
+      "type": "stage",
+      "hash": "ea9c697f6e94",
+      "narration": "How big is this exchange surface? Remarkably big! The lungs hold about 300 million alveoli. Spread flat, they would cover about 70 square metres, a huge surface for gas exchange packed inside your chest. The air arriving there is about 21% oxygen. And a healthy adult at rest refreshes it about 12 to 20 times a minute, every minute of the day. A vast surface, a steady supply of fresh air: that combination is what keeps every cell in your body supplied.",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-4.mp3",
+      "voDurationInSeconds": 32.232,
+      "voDurationInFrames": 967,
+      "captions": [
+        {
+          "text": "How big is this exchange surface?",
+          "start": 0,
+          "end": 2.214
+        },
+        {
+          "text": "Remarkably big! The lungs hold about 300",
+          "start": 2.214,
+          "end": 5.548
+        },
+        {
+          "text": "million alveoli. Spread flat, they would",
+          "start": 5.548,
+          "end": 8.476
+        },
+        {
+          "text": "cover about 70 square metres, a huge",
+          "start": 8.476,
+          "end": 10.933
+        },
+        {
+          "text": "surface for gas exchange packed inside",
+          "start": 10.933,
+          "end": 13.595
+        },
+        {
+          "text": "your chest. The air arriving there is",
+          "start": 13.595,
+          "end": 16.306
+        },
+        {
+          "text": "about 21% oxygen.",
+          "start": 16.306,
+          "end": 18.126
+        },
+        {
+          "text": "And a healthy adult at rest refreshes it",
+          "start": 18.126,
+          "end": 20.84
+        },
+        {
+          "text": "about 12 to 20 times a minute, every",
+          "start": 20.84,
+          "end": 23.223
+        },
+        {
+          "text": "minute of the day.",
+          "start": 23.223,
+          "end": 24.564
+        },
+        {
+          "text": "A vast surface, a steady supply of fresh",
+          "start": 24.564,
+          "end": 27.382
+        },
+        {
+          "text": "air: that combination is what keeps every",
+          "start": 27.382,
+          "end": 30.27
+        },
+        {
+          "text": "cell in your body supplied.",
+          "start": 30.27,
+          "end": 32.372
+        }
+      ],
+      "words": [
+        {
+          "w": "how",
+          "start": 0,
+          "end": 0.25
+        },
+        {
+          "w": "big",
+          "start": 0.25,
+          "end": 0.5
+        },
+        {
+          "w": "is",
+          "start": 0.5,
+          "end": 0.688
+        },
+        {
+          "w": "this",
+          "start": 0.688,
+          "end": 1.001
+        },
+        {
+          "w": "exchange",
+          "start": 1.001,
+          "end": 1.564
+        },
+        {
+          "w": "surface",
+          "start": 1.564,
+          "end": 2.064
+        },
+        {
+          "w": "remarkably",
+          "start": 2.214,
+          "end": 3.164
+        },
+        {
+          "w": "big",
+          "start": 3.164,
+          "end": 3.51
+        },
+        {
+          "w": "the",
+          "start": 3.66,
+          "end": 3.962
+        },
+        {
+          "w": "lungs",
+          "start": 3.962,
+          "end": 4.415
+        },
+        {
+          "w": "hold",
+          "start": 4.415,
+          "end": 4.793
+        },
+        {
+          "w": "about",
+          "start": 4.793,
+          "end": 5.246
+        },
+        {
+          "w": "300",
+          "start": 5.246,
+          "end": 5.548
+        },
+        {
+          "w": "million",
+          "start": 5.548,
+          "end": 6.152
+        },
+        {
+          "w": "alveoli",
+          "start": 6.152,
+          "end": 6.756
+        },
+        {
+          "w": "spread",
+          "start": 6.906,
+          "end": 7.384
+        },
+        {
+          "w": "flat",
+          "start": 7.384,
+          "end": 7.725
+        },
+        {
+          "w": "they",
+          "start": 7.725,
+          "end": 8.066
+        },
+        {
+          "w": "would",
+          "start": 8.066,
+          "end": 8.476
+        },
+        {
+          "w": "cover",
+          "start": 8.476,
+          "end": 8.885
+        },
+        {
+          "w": "about",
+          "start": 8.885,
+          "end": 9.295
+        },
+        {
+          "w": "70",
+          "start": 9.295,
+          "end": 9.5
+        },
+        {
+          "w": "square",
+          "start": 9.5,
+          "end": 9.978
+        },
+        {
+          "w": "metres",
+          "start": 9.978,
+          "end": 10.455
+        },
+        {
+          "w": "a",
+          "start": 10.455,
+          "end": 10.592
+        },
+        {
+          "w": "huge",
+          "start": 10.592,
+          "end": 10.933
+        },
+        {
+          "w": "surface",
+          "start": 10.933,
+          "end": 11.479
+        },
+        {
+          "w": "for",
+          "start": 11.479,
+          "end": 11.752
+        },
+        {
+          "w": "gas",
+          "start": 11.752,
+          "end": 12.025
+        },
+        {
+          "w": "exchange",
+          "start": 12.025,
+          "end": 12.64
+        },
+        {
+          "w": "packed",
+          "start": 12.64,
+          "end": 13.117
+        },
+        {
+          "w": "inside",
+          "start": 13.117,
+          "end": 13.595
+        },
+        {
+          "w": "your",
+          "start": 13.595,
+          "end": 13.936
+        },
+        {
+          "w": "chest",
+          "start": 13.936,
+          "end": 14.346
+        },
+        {
+          "w": "the",
+          "start": 14.496,
+          "end": 14.774
+        },
+        {
+          "w": "air",
+          "start": 14.774,
+          "end": 15.053
+        },
+        {
+          "w": "arriving",
+          "start": 15.053,
+          "end": 15.679
+        },
+        {
+          "w": "there",
+          "start": 15.679,
+          "end": 16.097
+        },
+        {
+          "w": "is",
+          "start": 16.097,
+          "end": 16.306
+        },
+        {
+          "w": "about",
+          "start": 16.306,
+          "end": 16.723
+        },
+        {
+          "w": "21",
+          "start": 16.723,
+          "end": 17.489
+        },
+        {
+          "w": "oxygen",
+          "start": 17.489,
+          "end": 17.976
+        },
+        {
+          "w": "and",
+          "start": 18.126,
+          "end": 18.391
+        },
+        {
+          "w": "a",
+          "start": 18.391,
+          "end": 18.523
+        },
+        {
+          "w": "healthy",
+          "start": 18.523,
+          "end": 19.053
+        },
+        {
+          "w": "adult",
+          "start": 19.053,
+          "end": 19.45
+        },
+        {
+          "w": "at",
+          "start": 19.45,
+          "end": 19.648
+        },
+        {
+          "w": "rest",
+          "start": 19.648,
+          "end": 19.979
+        },
+        {
+          "w": "refreshes",
+          "start": 19.979,
+          "end": 20.641
+        },
+        {
+          "w": "it",
+          "start": 20.641,
+          "end": 20.84
+        },
+        {
+          "w": "about",
+          "start": 20.84,
+          "end": 21.237
+        },
+        {
+          "w": "12",
+          "start": 21.237,
+          "end": 21.435
+        },
+        {
+          "w": "to",
+          "start": 21.435,
+          "end": 21.634
+        },
+        {
+          "w": "20",
+          "start": 21.634,
+          "end": 21.833
+        },
+        {
+          "w": "times",
+          "start": 21.833,
+          "end": 22.23
+        },
+        {
+          "w": "a",
+          "start": 22.23,
+          "end": 22.362
+        },
+        {
+          "w": "minute",
+          "start": 22.362,
+          "end": 22.825
+        },
+        {
+          "w": "every",
+          "start": 22.825,
+          "end": 23.223
+        },
+        {
+          "w": "minute",
+          "start": 23.223,
+          "end": 23.686
+        },
+        {
+          "w": "of",
+          "start": 23.686,
+          "end": 23.884
+        },
+        {
+          "w": "the",
+          "start": 23.884,
+          "end": 24.149
+        },
+        {
+          "w": "day",
+          "start": 24.149,
+          "end": 24.414
+        },
+        {
+          "w": "a",
+          "start": 24.564,
+          "end": 24.705
+        },
+        {
+          "w": "vast",
+          "start": 24.705,
+          "end": 25.057
+        },
+        {
+          "w": "surface",
+          "start": 25.057,
+          "end": 25.621
+        },
+        {
+          "w": "a",
+          "start": 25.621,
+          "end": 25.762
+        },
+        {
+          "w": "steady",
+          "start": 25.762,
+          "end": 26.255
+        },
+        {
+          "w": "supply",
+          "start": 26.255,
+          "end": 26.748
+        },
+        {
+          "w": "of",
+          "start": 26.748,
+          "end": 26.959
+        },
+        {
+          "w": "fresh",
+          "start": 26.959,
+          "end": 27.382
+        },
+        {
+          "w": "air",
+          "start": 27.382,
+          "end": 27.664
+        },
+        {
+          "w": "that",
+          "start": 27.664,
+          "end": 28.016
+        },
+        {
+          "w": "combination",
+          "start": 28.016,
+          "end": 28.861
+        },
+        {
+          "w": "is",
+          "start": 28.861,
+          "end": 29.072
+        },
+        {
+          "w": "what",
+          "start": 29.072,
+          "end": 29.425
+        },
+        {
+          "w": "keeps",
+          "start": 29.425,
+          "end": 29.847
+        },
+        {
+          "w": "every",
+          "start": 29.847,
+          "end": 30.27
+        },
+        {
+          "w": "cell",
+          "start": 30.27,
+          "end": 30.622
+        },
+        {
+          "w": "in",
+          "start": 30.622,
+          "end": 30.834
+        },
+        {
+          "w": "your",
+          "start": 30.834,
+          "end": 31.186
+        },
+        {
+          "w": "body",
+          "start": 31.186,
+          "end": 31.538
+        },
+        {
+          "w": "supplied",
+          "start": 31.538,
+          "end": 32.172
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 1023,
+      "startFrame": 1406
+    },
+    {
+      "index": 5,
+      "type": "stage",
+      "hash": "399dd56ec8d9",
+      "narration": "So how does air get in? Meet the diaphragm, a dome-shaped sheet of muscle under the lungs. When you inhale, the diaphragm contracts and flattens, moving down, while the external intercostal muscles lift the ribs. The chest cavity gets bigger, so the pressure inside the lungs falls below the air pressure outside, and air rushes in. During quiet breathing, the diaphragm alone accounts for about 75% of the air that enters. It is the star muscle of inhalation!",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-5.mp3",
+      "voDurationInSeconds": 30.288,
+      "voDurationInFrames": 909,
+      "captions": [
+        {
+          "text": "So how does air get in?",
+          "start": 0,
+          "end": 1.734
+        },
+        {
+          "text": "Meet the diaphragm, a dome-shaped sheet of",
+          "start": 1.734,
+          "end": 4.425
+        },
+        {
+          "text": "muscle under the lungs.",
+          "start": 4.425,
+          "end": 6.084
+        },
+        {
+          "text": "When you inhale, the diaphragm contracts",
+          "start": 6.084,
+          "end": 8.712
+        },
+        {
+          "text": "and flattens, moving down, while the",
+          "start": 8.712,
+          "end": 11.011
+        },
+        {
+          "text": "external intercostal muscles lift the",
+          "start": 11.011,
+          "end": 13.508
+        },
+        {
+          "text": "ribs. The chest cavity gets bigger, so the",
+          "start": 13.508,
+          "end": 16.209
+        },
+        {
+          "text": "pressure inside the lungs falls below the",
+          "start": 16.209,
+          "end": 18.802
+        },
+        {
+          "text": "air pressure outside, and air rushes in.",
+          "start": 18.802,
+          "end": 21.36
+        },
+        {
+          "text": "During quiet breathing, the diaphragm",
+          "start": 21.36,
+          "end": 23.802
+        },
+        {
+          "text": "alone accounts for about 75% of the air",
+          "start": 23.802,
+          "end": 26.904
+        },
+        {
+          "text": "that enters. It is the star muscle of",
+          "start": 26.904,
+          "end": 29.496
+        },
+        {
+          "text": "inhalation!",
+          "start": 29.496,
+          "end": 30.422
+        }
+      ],
+      "words": [
+        {
+          "w": "so",
+          "start": 0,
+          "end": 0.207
+        },
+        {
+          "w": "how",
+          "start": 0.207,
+          "end": 0.482
+        },
+        {
+          "w": "does",
+          "start": 0.482,
+          "end": 0.826
+        },
+        {
+          "w": "air",
+          "start": 0.826,
+          "end": 1.102
+        },
+        {
+          "w": "get",
+          "start": 1.102,
+          "end": 1.377
+        },
+        {
+          "w": "in",
+          "start": 1.377,
+          "end": 1.584
+        },
+        {
+          "w": "meet",
+          "start": 1.734,
+          "end": 2.062
+        },
+        {
+          "w": "the",
+          "start": 2.062,
+          "end": 2.325
+        },
+        {
+          "w": "diaphragm",
+          "start": 2.325,
+          "end": 2.981
+        },
+        {
+          "w": "a",
+          "start": 2.981,
+          "end": 3.112
+        },
+        {
+          "w": "domeshaped",
+          "start": 3.112,
+          "end": 3.834
+        },
+        {
+          "w": "sheet",
+          "start": 3.834,
+          "end": 4.228
+        },
+        {
+          "w": "of",
+          "start": 4.228,
+          "end": 4.425
+        },
+        {
+          "w": "muscle",
+          "start": 4.425,
+          "end": 4.884
+        },
+        {
+          "w": "under",
+          "start": 4.884,
+          "end": 5.278
+        },
+        {
+          "w": "the",
+          "start": 5.278,
+          "end": 5.54
+        },
+        {
+          "w": "lungs",
+          "start": 5.54,
+          "end": 5.934
+        },
+        {
+          "w": "when",
+          "start": 6.084,
+          "end": 6.412
+        },
+        {
+          "w": "you",
+          "start": 6.412,
+          "end": 6.675
+        },
+        {
+          "w": "inhale",
+          "start": 6.675,
+          "end": 7.135
+        },
+        {
+          "w": "the",
+          "start": 7.135,
+          "end": 7.398
+        },
+        {
+          "w": "diaphragm",
+          "start": 7.398,
+          "end": 8.055
+        },
+        {
+          "w": "contracts",
+          "start": 8.055,
+          "end": 8.712
+        },
+        {
+          "w": "and",
+          "start": 8.712,
+          "end": 8.975
+        },
+        {
+          "w": "flattens",
+          "start": 8.975,
+          "end": 9.566
+        },
+        {
+          "w": "moving",
+          "start": 9.566,
+          "end": 10.026
+        },
+        {
+          "w": "down",
+          "start": 10.026,
+          "end": 10.354
+        },
+        {
+          "w": "while",
+          "start": 10.354,
+          "end": 10.748
+        },
+        {
+          "w": "the",
+          "start": 10.748,
+          "end": 11.011
+        },
+        {
+          "w": "external",
+          "start": 11.011,
+          "end": 11.602
+        },
+        {
+          "w": "intercostal",
+          "start": 11.602,
+          "end": 12.391
+        },
+        {
+          "w": "muscles",
+          "start": 12.391,
+          "end": 12.916
+        },
+        {
+          "w": "lift",
+          "start": 12.916,
+          "end": 13.245
+        },
+        {
+          "w": "the",
+          "start": 13.245,
+          "end": 13.508
+        },
+        {
+          "w": "ribs",
+          "start": 13.508,
+          "end": 13.836
+        },
+        {
+          "w": "the",
+          "start": 13.986,
+          "end": 14.233
+        },
+        {
+          "w": "chest",
+          "start": 14.233,
+          "end": 14.603
+        },
+        {
+          "w": "cavity",
+          "start": 14.603,
+          "end": 15.036
+        },
+        {
+          "w": "gets",
+          "start": 15.036,
+          "end": 15.344
+        },
+        {
+          "w": "bigger",
+          "start": 15.344,
+          "end": 15.777
+        },
+        {
+          "w": "so",
+          "start": 15.777,
+          "end": 15.962
+        },
+        {
+          "w": "the",
+          "start": 15.962,
+          "end": 16.209
+        },
+        {
+          "w": "pressure",
+          "start": 16.209,
+          "end": 16.764
+        },
+        {
+          "w": "inside",
+          "start": 16.764,
+          "end": 17.197
+        },
+        {
+          "w": "the",
+          "start": 17.197,
+          "end": 17.444
+        },
+        {
+          "w": "lungs",
+          "start": 17.444,
+          "end": 17.814
+        },
+        {
+          "w": "falls",
+          "start": 17.814,
+          "end": 18.185
+        },
+        {
+          "w": "below",
+          "start": 18.185,
+          "end": 18.555
+        },
+        {
+          "w": "the",
+          "start": 18.555,
+          "end": 18.802
+        },
+        {
+          "w": "air",
+          "start": 18.802,
+          "end": 19.049
+        },
+        {
+          "w": "pressure",
+          "start": 19.049,
+          "end": 19.605
+        },
+        {
+          "w": "outside",
+          "start": 19.605,
+          "end": 20.099
+        },
+        {
+          "w": "and",
+          "start": 20.099,
+          "end": 20.346
+        },
+        {
+          "w": "air",
+          "start": 20.346,
+          "end": 20.593
+        },
+        {
+          "w": "rushes",
+          "start": 20.593,
+          "end": 21.025
+        },
+        {
+          "w": "in",
+          "start": 21.025,
+          "end": 21.21
+        },
+        {
+          "w": "during",
+          "start": 21.36,
+          "end": 21.822
+        },
+        {
+          "w": "quiet",
+          "start": 21.822,
+          "end": 22.218
+        },
+        {
+          "w": "breathing",
+          "start": 22.218,
+          "end": 22.878
+        },
+        {
+          "w": "the",
+          "start": 22.878,
+          "end": 23.142
+        },
+        {
+          "w": "diaphragm",
+          "start": 23.142,
+          "end": 23.802
+        },
+        {
+          "w": "alone",
+          "start": 23.802,
+          "end": 24.198
+        },
+        {
+          "w": "accounts",
+          "start": 24.198,
+          "end": 24.792
+        },
+        {
+          "w": "for",
+          "start": 24.792,
+          "end": 25.056
+        },
+        {
+          "w": "about",
+          "start": 25.056,
+          "end": 25.452
+        },
+        {
+          "w": "75",
+          "start": 25.452,
+          "end": 26.178
+        },
+        {
+          "w": "of",
+          "start": 26.178,
+          "end": 26.376
+        },
+        {
+          "w": "the",
+          "start": 26.376,
+          "end": 26.64
+        },
+        {
+          "w": "air",
+          "start": 26.64,
+          "end": 26.904
+        },
+        {
+          "w": "that",
+          "start": 26.904,
+          "end": 27.234
+        },
+        {
+          "w": "enters",
+          "start": 27.234,
+          "end": 27.696
+        },
+        {
+          "w": "it",
+          "start": 27.846,
+          "end": 28.044
+        },
+        {
+          "w": "is",
+          "start": 28.044,
+          "end": 28.242
+        },
+        {
+          "w": "the",
+          "start": 28.242,
+          "end": 28.506
+        },
+        {
+          "w": "star",
+          "start": 28.506,
+          "end": 28.836
+        },
+        {
+          "w": "muscle",
+          "start": 28.836,
+          "end": 29.298
+        },
+        {
+          "w": "of",
+          "start": 29.298,
+          "end": 29.496
+        },
+        {
+          "w": "inhalation",
+          "start": 29.496,
+          "end": 30.222
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 965,
+      "startFrame": 2429
+    },
+    {
+      "index": 6,
+      "type": "stage",
+      "hash": "350077aad10f",
+      "narration": "Now here's the elegant part. At rest, breathing out takes no effort at all: it is passive. When you exhale, the diaphragm and intercostal muscles simply relax. The diaphragm domes upward again, and the elastic lungs recoil, like a stretched spring letting go. The chest cavity gets smaller, the pressure in the lungs rises above the outside pressure, and air flows out. No pushing needed. Relaxation does the job!",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-6.mp3",
+      "voDurationInSeconds": 27.912,
+      "voDurationInFrames": 838,
+      "captions": [
+        {
+          "text": "Now here's the elegant part.",
+          "start": 0,
+          "end": 1.902
+        },
+        {
+          "text": "At rest, breathing out takes no effort at",
+          "start": 1.902,
+          "end": 5.138
+        },
+        {
+          "text": "all: it is passive.",
+          "start": 5.138,
+          "end": 6.708
+        },
+        {
+          "text": "When you exhale, the diaphragm and",
+          "start": 6.708,
+          "end": 9.071
+        },
+        {
+          "text": "intercostal muscles simply relax.",
+          "start": 9.071,
+          "end": 11.514
+        },
+        {
+          "text": "The diaphragm domes upward again, and the",
+          "start": 11.514,
+          "end": 14.111
+        },
+        {
+          "text": "elastic lungs recoil, like a stretched",
+          "start": 14.111,
+          "end": 16.518
+        },
+        {
+          "text": "spring letting go.",
+          "start": 16.518,
+          "end": 17.808
+        },
+        {
+          "text": "The chest cavity gets smaller, the",
+          "start": 17.808,
+          "end": 20.012
+        },
+        {
+          "text": "pressure in the lungs rises above the",
+          "start": 20.012,
+          "end": 22.475
+        },
+        {
+          "text": "outside pressure, and air flows out.",
+          "start": 22.475,
+          "end": 24.894
+        },
+        {
+          "text": "No pushing needed.",
+          "start": 24.894,
+          "end": 26.196
+        },
+        {
+          "text": "Relaxation does the job!",
+          "start": 26.196,
+          "end": 28.052
+        }
+      ],
+      "words": [
+        {
+          "w": "now",
+          "start": 0,
+          "end": 0.234
+        },
+        {
+          "w": "heres",
+          "start": 0.234,
+          "end": 0.759
+        },
+        {
+          "w": "the",
+          "start": 0.759,
+          "end": 0.993
+        },
+        {
+          "w": "elegant",
+          "start": 0.993,
+          "end": 1.46
+        },
+        {
+          "w": "part",
+          "start": 1.46,
+          "end": 1.752
+        },
+        {
+          "w": "at",
+          "start": 1.902,
+          "end": 2.139
+        },
+        {
+          "w": "rest",
+          "start": 2.139,
+          "end": 2.533
+        },
+        {
+          "w": "breathing",
+          "start": 2.533,
+          "end": 3.322
+        },
+        {
+          "w": "out",
+          "start": 3.322,
+          "end": 3.638
+        },
+        {
+          "w": "takes",
+          "start": 3.638,
+          "end": 4.112
+        },
+        {
+          "w": "no",
+          "start": 4.112,
+          "end": 4.348
+        },
+        {
+          "w": "effort",
+          "start": 4.348,
+          "end": 4.901
+        },
+        {
+          "w": "at",
+          "start": 4.901,
+          "end": 5.138
+        },
+        {
+          "w": "all",
+          "start": 5.138,
+          "end": 5.453
+        },
+        {
+          "w": "it",
+          "start": 5.453,
+          "end": 5.69
+        },
+        {
+          "w": "is",
+          "start": 5.69,
+          "end": 5.927
+        },
+        {
+          "w": "passive",
+          "start": 5.927,
+          "end": 6.558
+        },
+        {
+          "w": "when",
+          "start": 6.708,
+          "end": 7.055
+        },
+        {
+          "w": "you",
+          "start": 7.055,
+          "end": 7.333
+        },
+        {
+          "w": "exhale",
+          "start": 7.333,
+          "end": 7.82
+        },
+        {
+          "w": "the",
+          "start": 7.82,
+          "end": 8.098
+        },
+        {
+          "w": "diaphragm",
+          "start": 8.098,
+          "end": 8.793
+        },
+        {
+          "w": "and",
+          "start": 8.793,
+          "end": 9.071
+        },
+        {
+          "w": "intercostal",
+          "start": 9.071,
+          "end": 9.905
+        },
+        {
+          "w": "muscles",
+          "start": 9.905,
+          "end": 10.461
+        },
+        {
+          "w": "simply",
+          "start": 10.461,
+          "end": 10.947
+        },
+        {
+          "w": "relax",
+          "start": 10.947,
+          "end": 11.364
+        },
+        {
+          "w": "the",
+          "start": 11.514,
+          "end": 11.767
+        },
+        {
+          "w": "diaphragm",
+          "start": 11.767,
+          "end": 12.401
+        },
+        {
+          "w": "domes",
+          "start": 12.401,
+          "end": 12.781
+        },
+        {
+          "w": "upward",
+          "start": 12.781,
+          "end": 13.224
+        },
+        {
+          "w": "again",
+          "start": 13.224,
+          "end": 13.604
+        },
+        {
+          "w": "and",
+          "start": 13.604,
+          "end": 13.858
+        },
+        {
+          "w": "the",
+          "start": 13.858,
+          "end": 14.111
+        },
+        {
+          "w": "elastic",
+          "start": 14.111,
+          "end": 14.618
+        },
+        {
+          "w": "lungs",
+          "start": 14.618,
+          "end": 14.998
+        },
+        {
+          "w": "recoil",
+          "start": 14.998,
+          "end": 15.441
+        },
+        {
+          "w": "like",
+          "start": 15.441,
+          "end": 15.758
+        },
+        {
+          "w": "a",
+          "start": 15.758,
+          "end": 15.884
+        },
+        {
+          "w": "stretched",
+          "start": 15.884,
+          "end": 16.518
+        },
+        {
+          "w": "spring",
+          "start": 16.518,
+          "end": 16.961
+        },
+        {
+          "w": "letting",
+          "start": 16.961,
+          "end": 17.468
+        },
+        {
+          "w": "go",
+          "start": 17.468,
+          "end": 17.658
+        },
+        {
+          "w": "the",
+          "start": 17.808,
+          "end": 18.067
+        },
+        {
+          "w": "chest",
+          "start": 18.067,
+          "end": 18.456
+        },
+        {
+          "w": "cavity",
+          "start": 18.456,
+          "end": 18.91
+        },
+        {
+          "w": "gets",
+          "start": 18.91,
+          "end": 19.234
+        },
+        {
+          "w": "smaller",
+          "start": 19.234,
+          "end": 19.753
+        },
+        {
+          "w": "the",
+          "start": 19.753,
+          "end": 20.012
+        },
+        {
+          "w": "pressure",
+          "start": 20.012,
+          "end": 20.595
+        },
+        {
+          "w": "in",
+          "start": 20.595,
+          "end": 20.79
+        },
+        {
+          "w": "the",
+          "start": 20.79,
+          "end": 21.049
+        },
+        {
+          "w": "lungs",
+          "start": 21.049,
+          "end": 21.438
+        },
+        {
+          "w": "rises",
+          "start": 21.438,
+          "end": 21.827
+        },
+        {
+          "w": "above",
+          "start": 21.827,
+          "end": 22.216
+        },
+        {
+          "w": "the",
+          "start": 22.216,
+          "end": 22.475
+        },
+        {
+          "w": "outside",
+          "start": 22.475,
+          "end": 22.994
+        },
+        {
+          "w": "pressure",
+          "start": 22.994,
+          "end": 23.577
+        },
+        {
+          "w": "and",
+          "start": 23.577,
+          "end": 23.836
+        },
+        {
+          "w": "air",
+          "start": 23.836,
+          "end": 24.096
+        },
+        {
+          "w": "flows",
+          "start": 24.096,
+          "end": 24.485
+        },
+        {
+          "w": "out",
+          "start": 24.485,
+          "end": 24.744
+        },
+        {
+          "w": "no",
+          "start": 24.894,
+          "end": 25.086
+        },
+        {
+          "w": "pushing",
+          "start": 25.086,
+          "end": 25.598
+        },
+        {
+          "w": "needed",
+          "start": 25.598,
+          "end": 26.046
+        },
+        {
+          "w": "relaxation",
+          "start": 26.196,
+          "end": 26.955
+        },
+        {
+          "w": "does",
+          "start": 26.955,
+          "end": 27.3
+        },
+        {
+          "w": "the",
+          "start": 27.3,
+          "end": 27.576
+        },
+        {
+          "w": "job",
+          "start": 27.576,
+          "end": 27.852
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 894,
+      "startFrame": 3394
+    },
+    {
+      "index": 7,
+      "type": "stage",
+      "hash": "0bd8f6c237f5",
+      "narration": "Let's put the two side by side. On the way in, the diaphragm contracts; on the way out, it relaxes. The chest cavity grows, then shrinks. The pressure in the lungs drops below the outside air, then rises above it. And so the air flows in, then out. One muscle, two states, and the pressure difference does the moving.",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-7.mp3",
+      "voDurationInSeconds": 21.408,
+      "voDurationInFrames": 643,
+      "captions": [
+        {
+          "text": "Let's put the two side by side!",
+          "start": 0,
+          "end": 1.926
+        },
+        {
+          "text": "On the way in, the diaphragm contracts; on",
+          "start": 1.926,
+          "end": 4.97
+        },
+        {
+          "text": "the way out, it relaxes.",
+          "start": 4.97,
+          "end": 6.828
+        },
+        {
+          "text": "The chest cavity grows, then shrinks.",
+          "start": 6.828,
+          "end": 9.714
+        },
+        {
+          "text": "The pressure in the lungs drops below the",
+          "start": 9.714,
+          "end": 12.316
+        },
+        {
+          "text": "outside air, then rises above it.",
+          "start": 12.316,
+          "end": 14.448
+        },
+        {
+          "text": "And so the air flows in, then out.",
+          "start": 14.448,
+          "end": 17.214
+        },
+        {
+          "text": "One muscle, two states, and the pressure",
+          "start": 17.214,
+          "end": 19.653
+        },
+        {
+          "text": "difference does the moving.",
+          "start": 19.653,
+          "end": 21.541999999999998
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0,
+          "end": 0.431
+        },
+        {
+          "w": "put",
+          "start": 0.431,
+          "end": 0.646
+        },
+        {
+          "w": "the",
+          "start": 0.646,
+          "end": 0.861
+        },
+        {
+          "w": "two",
+          "start": 0.861,
+          "end": 1.076
+        },
+        {
+          "w": "side",
+          "start": 1.076,
+          "end": 1.345
+        },
+        {
+          "w": "by",
+          "start": 1.345,
+          "end": 1.507
+        },
+        {
+          "w": "side",
+          "start": 1.507,
+          "end": 1.776
+        },
+        {
+          "w": "on",
+          "start": 1.926,
+          "end": 2.149
+        },
+        {
+          "w": "the",
+          "start": 2.149,
+          "end": 2.446
+        },
+        {
+          "w": "way",
+          "start": 2.446,
+          "end": 2.743
+        },
+        {
+          "w": "in",
+          "start": 2.743,
+          "end": 2.965
+        },
+        {
+          "w": "the",
+          "start": 2.965,
+          "end": 3.262
+        },
+        {
+          "w": "diaphragm",
+          "start": 3.262,
+          "end": 4.005
+        },
+        {
+          "w": "contracts",
+          "start": 4.005,
+          "end": 4.747
+        },
+        {
+          "w": "on",
+          "start": 4.747,
+          "end": 4.97
+        },
+        {
+          "w": "the",
+          "start": 4.97,
+          "end": 5.267
+        },
+        {
+          "w": "way",
+          "start": 5.267,
+          "end": 5.564
+        },
+        {
+          "w": "out",
+          "start": 5.564,
+          "end": 5.861
+        },
+        {
+          "w": "it",
+          "start": 5.861,
+          "end": 6.084
+        },
+        {
+          "w": "relaxes",
+          "start": 6.084,
+          "end": 6.678
+        },
+        {
+          "w": "the",
+          "start": 6.828,
+          "end": 7.132
+        },
+        {
+          "w": "chest",
+          "start": 7.132,
+          "end": 7.588
+        },
+        {
+          "w": "cavity",
+          "start": 7.588,
+          "end": 8.12
+        },
+        {
+          "w": "grows",
+          "start": 8.12,
+          "end": 8.576
+        },
+        {
+          "w": "then",
+          "start": 8.576,
+          "end": 8.956
+        },
+        {
+          "w": "shrinks",
+          "start": 8.956,
+          "end": 9.564
+        },
+        {
+          "w": "the",
+          "start": 9.714,
+          "end": 9.962
+        },
+        {
+          "w": "pressure",
+          "start": 9.962,
+          "end": 10.519
+        },
+        {
+          "w": "in",
+          "start": 10.519,
+          "end": 10.705
+        },
+        {
+          "w": "the",
+          "start": 10.705,
+          "end": 10.953
+        },
+        {
+          "w": "lungs",
+          "start": 10.953,
+          "end": 11.325
+        },
+        {
+          "w": "drops",
+          "start": 11.325,
+          "end": 11.696
+        },
+        {
+          "w": "below",
+          "start": 11.696,
+          "end": 12.068
+        },
+        {
+          "w": "the",
+          "start": 12.068,
+          "end": 12.316
+        },
+        {
+          "w": "outside",
+          "start": 12.316,
+          "end": 12.811
+        },
+        {
+          "w": "air",
+          "start": 12.811,
+          "end": 13.059
+        },
+        {
+          "w": "then",
+          "start": 13.059,
+          "end": 13.369
+        },
+        {
+          "w": "rises",
+          "start": 13.369,
+          "end": 13.74
+        },
+        {
+          "w": "above",
+          "start": 13.74,
+          "end": 14.112
+        },
+        {
+          "w": "it",
+          "start": 14.112,
+          "end": 14.298
+        },
+        {
+          "w": "and",
+          "start": 14.448,
+          "end": 14.765
+        },
+        {
+          "w": "so",
+          "start": 14.765,
+          "end": 15.003
+        },
+        {
+          "w": "the",
+          "start": 15.003,
+          "end": 15.32
+        },
+        {
+          "w": "air",
+          "start": 15.32,
+          "end": 15.637
+        },
+        {
+          "w": "flows",
+          "start": 15.637,
+          "end": 16.113
+        },
+        {
+          "w": "in",
+          "start": 16.113,
+          "end": 16.351
+        },
+        {
+          "w": "then",
+          "start": 16.351,
+          "end": 16.747
+        },
+        {
+          "w": "out",
+          "start": 16.747,
+          "end": 17.064
+        },
+        {
+          "w": "one",
+          "start": 17.214,
+          "end": 17.464
+        },
+        {
+          "w": "muscle",
+          "start": 17.464,
+          "end": 17.902
+        },
+        {
+          "w": "two",
+          "start": 17.902,
+          "end": 18.152
+        },
+        {
+          "w": "states",
+          "start": 18.152,
+          "end": 18.59
+        },
+        {
+          "w": "and",
+          "start": 18.59,
+          "end": 18.84
+        },
+        {
+          "w": "the",
+          "start": 18.84,
+          "end": 19.09
+        },
+        {
+          "w": "pressure",
+          "start": 19.09,
+          "end": 19.653
+        },
+        {
+          "w": "difference",
+          "start": 19.653,
+          "end": 20.341
+        },
+        {
+          "w": "does",
+          "start": 20.341,
+          "end": 20.654
+        },
+        {
+          "w": "the",
+          "start": 20.654,
+          "end": 20.904
+        },
+        {
+          "w": "moving",
+          "start": 20.904,
+          "end": 21.342
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 699,
+      "startFrame": 4288
+    },
+    {
+      "index": 8,
+      "type": "stage",
+      "hash": "518dcbf75be5",
+      "narration": "Now zoom in to a single alveolus, wrapped in a pulmonary capillary. Here, each gas moves by diffusion, from where its partial pressure is higher to where it is lower. The alveolar wall and the capillary wall are each just one thin layer of cells. Together they form the respiratory membrane, only about 0.5 micrometres thick, so diffusion is fast. Red blood cells arrive deoxygenated. Oxygen diffuses into the blood, and carbon dioxide diffuses out, into the air sac.",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-8.mp3",
+      "voDurationInSeconds": 31.944,
+      "voDurationInFrames": 959,
+      "captions": [
+        {
+          "text": "Now zoom in to a single alveolus, wrapped",
+          "start": 0,
+          "end": 2.743
+        },
+        {
+          "text": "in a pulmonary capillary.",
+          "start": 2.743,
+          "end": 4.566
+        },
+        {
+          "text": "Here, each gas moves by diffusion, from",
+          "start": 4.566,
+          "end": 7.008
+        },
+        {
+          "text": "where its partial pressure is higher to",
+          "start": 7.008,
+          "end": 9.578
+        },
+        {
+          "text": "where it is lower.",
+          "start": 9.578,
+          "end": 10.884
+        },
+        {
+          "text": "The alveolar wall and the capillary wall",
+          "start": 10.884,
+          "end": 13.462
+        },
+        {
+          "text": "are each just one thin layer of cells.",
+          "start": 13.462,
+          "end": 16.002
+        },
+        {
+          "text": "Together they form the respiratory",
+          "start": 16.002,
+          "end": 18.574
+        },
+        {
+          "text": "membrane, only about 0.5 micrometres",
+          "start": 18.574,
+          "end": 21.146
+        },
+        {
+          "text": "thick, so diffusion is fast.",
+          "start": 21.146,
+          "end": 23.28
+        },
+        {
+          "text": "Red blood cells arrive deoxygenated.",
+          "start": 23.28,
+          "end": 26.07
+        },
+        {
+          "text": "Oxygen diffuses into the blood, and carbon",
+          "start": 26.07,
+          "end": 29.119
+        },
+        {
+          "text": "dioxide diffuses out, into the air sac.",
+          "start": 29.119,
+          "end": 32.078
+        }
+      ],
+      "words": [
+        {
+          "w": "now",
+          "start": 0,
+          "end": 0.268
+        },
+        {
+          "w": "zoom",
+          "start": 0.268,
+          "end": 0.602
+        },
+        {
+          "w": "in",
+          "start": 0.602,
+          "end": 0.803
+        },
+        {
+          "w": "to",
+          "start": 0.803,
+          "end": 1.004
+        },
+        {
+          "w": "a",
+          "start": 1.004,
+          "end": 1.137
+        },
+        {
+          "w": "single",
+          "start": 1.137,
+          "end": 1.606
+        },
+        {
+          "w": "alveolus",
+          "start": 1.606,
+          "end": 2.208
+        },
+        {
+          "w": "wrapped",
+          "start": 2.208,
+          "end": 2.743
+        },
+        {
+          "w": "in",
+          "start": 2.743,
+          "end": 2.944
+        },
+        {
+          "w": "a",
+          "start": 2.944,
+          "end": 3.078
+        },
+        {
+          "w": "pulmonary",
+          "start": 3.078,
+          "end": 3.747
+        },
+        {
+          "w": "capillary",
+          "start": 3.747,
+          "end": 4.416
+        },
+        {
+          "w": "here",
+          "start": 4.566,
+          "end": 4.887
+        },
+        {
+          "w": "each",
+          "start": 4.887,
+          "end": 5.209
+        },
+        {
+          "w": "gas",
+          "start": 5.209,
+          "end": 5.466
+        },
+        {
+          "w": "moves",
+          "start": 5.466,
+          "end": 5.851
+        },
+        {
+          "w": "by",
+          "start": 5.851,
+          "end": 6.044
+        },
+        {
+          "w": "diffusion",
+          "start": 6.044,
+          "end": 6.686
+        },
+        {
+          "w": "from",
+          "start": 6.686,
+          "end": 7.008
+        },
+        {
+          "w": "where",
+          "start": 7.008,
+          "end": 7.393
+        },
+        {
+          "w": "its",
+          "start": 7.393,
+          "end": 7.65
+        },
+        {
+          "w": "partial",
+          "start": 7.65,
+          "end": 8.164
+        },
+        {
+          "w": "pressure",
+          "start": 8.164,
+          "end": 8.742
+        },
+        {
+          "w": "is",
+          "start": 8.742,
+          "end": 8.935
+        },
+        {
+          "w": "higher",
+          "start": 8.935,
+          "end": 9.385
+        },
+        {
+          "w": "to",
+          "start": 9.385,
+          "end": 9.578
+        },
+        {
+          "w": "where",
+          "start": 9.578,
+          "end": 9.963
+        },
+        {
+          "w": "it",
+          "start": 9.963,
+          "end": 10.156
+        },
+        {
+          "w": "is",
+          "start": 10.156,
+          "end": 10.349
+        },
+        {
+          "w": "lower",
+          "start": 10.349,
+          "end": 10.734
+        },
+        {
+          "w": "the",
+          "start": 10.884,
+          "end": 11.136
+        },
+        {
+          "w": "alveolar",
+          "start": 11.136,
+          "end": 11.702
+        },
+        {
+          "w": "wall",
+          "start": 11.702,
+          "end": 12.016
+        },
+        {
+          "w": "and",
+          "start": 12.016,
+          "end": 12.267
+        },
+        {
+          "w": "the",
+          "start": 12.267,
+          "end": 12.519
+        },
+        {
+          "w": "capillary",
+          "start": 12.519,
+          "end": 13.148
+        },
+        {
+          "w": "wall",
+          "start": 13.148,
+          "end": 13.462
+        },
+        {
+          "w": "are",
+          "start": 13.462,
+          "end": 13.714
+        },
+        {
+          "w": "each",
+          "start": 13.714,
+          "end": 14.028
+        },
+        {
+          "w": "just",
+          "start": 14.028,
+          "end": 14.343
+        },
+        {
+          "w": "one",
+          "start": 14.343,
+          "end": 14.594
+        },
+        {
+          "w": "thin",
+          "start": 14.594,
+          "end": 14.909
+        },
+        {
+          "w": "layer",
+          "start": 14.909,
+          "end": 15.286
+        },
+        {
+          "w": "of",
+          "start": 15.286,
+          "end": 15.475
+        },
+        {
+          "w": "cells",
+          "start": 15.475,
+          "end": 15.852
+        },
+        {
+          "w": "together",
+          "start": 16.002,
+          "end": 16.663
+        },
+        {
+          "w": "they",
+          "start": 16.663,
+          "end": 17.031
+        },
+        {
+          "w": "form",
+          "start": 17.031,
+          "end": 17.398
+        },
+        {
+          "w": "the",
+          "start": 17.398,
+          "end": 17.692
+        },
+        {
+          "w": "respiratory",
+          "start": 17.692,
+          "end": 18.574
+        },
+        {
+          "w": "membrane",
+          "start": 18.574,
+          "end": 19.235
+        },
+        {
+          "w": "only",
+          "start": 19.235,
+          "end": 19.603
+        },
+        {
+          "w": "about",
+          "start": 19.603,
+          "end": 20.044
+        },
+        {
+          "w": "05",
+          "start": 20.044,
+          "end": 20.264
+        },
+        {
+          "w": "micrometres",
+          "start": 20.264,
+          "end": 21.146
+        },
+        {
+          "w": "thick",
+          "start": 21.146,
+          "end": 21.587
+        },
+        {
+          "w": "so",
+          "start": 21.587,
+          "end": 21.807
+        },
+        {
+          "w": "diffusion",
+          "start": 21.807,
+          "end": 22.542
+        },
+        {
+          "w": "is",
+          "start": 22.542,
+          "end": 22.763
+        },
+        {
+          "w": "fast",
+          "start": 22.763,
+          "end": 23.13
+        },
+        {
+          "w": "red",
+          "start": 23.28,
+          "end": 23.573
+        },
+        {
+          "w": "blood",
+          "start": 23.573,
+          "end": 24.013
+        },
+        {
+          "w": "cells",
+          "start": 24.013,
+          "end": 24.453
+        },
+        {
+          "w": "arrive",
+          "start": 24.453,
+          "end": 24.967
+        },
+        {
+          "w": "deoxygenated",
+          "start": 24.967,
+          "end": 25.92
+        },
+        {
+          "w": "oxygen",
+          "start": 26.07,
+          "end": 26.578
+        },
+        {
+          "w": "diffuses",
+          "start": 26.578,
+          "end": 27.232
+        },
+        {
+          "w": "into",
+          "start": 27.232,
+          "end": 27.595
+        },
+        {
+          "w": "the",
+          "start": 27.595,
+          "end": 27.885
+        },
+        {
+          "w": "blood",
+          "start": 27.885,
+          "end": 28.321
+        },
+        {
+          "w": "and",
+          "start": 28.321,
+          "end": 28.611
+        },
+        {
+          "w": "carbon",
+          "start": 28.611,
+          "end": 29.119
+        },
+        {
+          "w": "dioxide",
+          "start": 29.119,
+          "end": 29.7
+        },
+        {
+          "w": "diffuses",
+          "start": 29.7,
+          "end": 30.353
+        },
+        {
+          "w": "out",
+          "start": 30.353,
+          "end": 30.644
+        },
+        {
+          "w": "into",
+          "start": 30.644,
+          "end": 31.007
+        },
+        {
+          "w": "the",
+          "start": 31.007,
+          "end": 31.297
+        },
+        {
+          "w": "air",
+          "start": 31.297,
+          "end": 31.588
+        },
+        {
+          "w": "sac",
+          "start": 31.588,
+          "end": 31.878
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 1015,
+      "startFrame": 4987
+    },
+    {
+      "index": 9,
+      "type": "stage",
+      "hash": "4cb558ee5156",
+      "narration": "Oxygen leaves the alveolar air, and two journeys begin! It passes through the respiratory membrane into the blood, where it is carried mostly by haemoglobin inside red blood cells. The blood leaves the lungs oxygenated. Bright, oxygen-rich blood, ready for the whole body. Meanwhile, carbon dioxide, a waste product of the body's cells, makes the opposite trip: from the blood into the alveolus, and out with your next breath. In, and out. Beautifully simple!",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-9.mp3",
+      "voDurationInSeconds": 30.744,
+      "voDurationInFrames": 923,
+      "captions": [
+        {
+          "text": "Oxygen leaves the alveolar air, and two",
+          "start": 0,
+          "end": 2.721
+        },
+        {
+          "text": "journeys begin! It passes through the",
+          "start": 2.721,
+          "end": 5.184
+        },
+        {
+          "text": "respiratory membrane into the blood, where",
+          "start": 5.184,
+          "end": 7.602
+        },
+        {
+          "text": "it is carried mostly by haemoglobin inside",
+          "start": 7.602,
+          "end": 10.077
+        },
+        {
+          "text": "red blood cells. The blood leaves the",
+          "start": 10.077,
+          "end": 12.488
+        },
+        {
+          "text": "lungs oxygenated.",
+          "start": 12.488,
+          "end": 13.722
+        },
+        {
+          "text": "Bright, oxygen-rich blood, ready for the",
+          "start": 13.722,
+          "end": 16.588
+        },
+        {
+          "text": "whole body. Meanwhile, carbon dioxide, a",
+          "start": 16.588,
+          "end": 19.365
+        },
+        {
+          "text": "waste product of the body's cells, makes",
+          "start": 19.365,
+          "end": 22.161
+        },
+        {
+          "text": "the opposite trip:",
+          "start": 22.161,
+          "end": 23.359
+        },
+        {
+          "text": "from the blood into the alveolus, and out",
+          "start": 23.359,
+          "end": 26.088
+        },
+        {
+          "text": "with your next breath.",
+          "start": 26.088,
+          "end": 27.702
+        },
+        {
+          "text": "In, and out. Beautifully simple!",
+          "start": 27.702,
+          "end": 30.884
+        }
+      ],
+      "words": [
+        {
+          "w": "oxygen",
+          "start": 0,
+          "end": 0.488
+        },
+        {
+          "w": "leaves",
+          "start": 0.488,
+          "end": 0.977
+        },
+        {
+          "w": "the",
+          "start": 0.977,
+          "end": 1.256
+        },
+        {
+          "w": "alveolar",
+          "start": 1.256,
+          "end": 1.884
+        },
+        {
+          "w": "air",
+          "start": 1.884,
+          "end": 2.163
+        },
+        {
+          "w": "and",
+          "start": 2.163,
+          "end": 2.442
+        },
+        {
+          "w": "two",
+          "start": 2.442,
+          "end": 2.721
+        },
+        {
+          "w": "journeys",
+          "start": 2.721,
+          "end": 3.349
+        },
+        {
+          "w": "begin",
+          "start": 3.349,
+          "end": 3.768
+        },
+        {
+          "w": "it",
+          "start": 3.918,
+          "end": 4.091
+        },
+        {
+          "w": "passes",
+          "start": 4.091,
+          "end": 4.494
+        },
+        {
+          "w": "through",
+          "start": 4.494,
+          "end": 4.954
+        },
+        {
+          "w": "the",
+          "start": 4.954,
+          "end": 5.184
+        },
+        {
+          "w": "respiratory",
+          "start": 5.184,
+          "end": 5.875
+        },
+        {
+          "w": "membrane",
+          "start": 5.875,
+          "end": 6.393
+        },
+        {
+          "w": "into",
+          "start": 6.393,
+          "end": 6.681
+        },
+        {
+          "w": "the",
+          "start": 6.681,
+          "end": 6.911
+        },
+        {
+          "w": "blood",
+          "start": 6.911,
+          "end": 7.257
+        },
+        {
+          "w": "where",
+          "start": 7.257,
+          "end": 7.602
+        },
+        {
+          "w": "it",
+          "start": 7.602,
+          "end": 7.775
+        },
+        {
+          "w": "is",
+          "start": 7.775,
+          "end": 7.947
+        },
+        {
+          "w": "carried",
+          "start": 7.947,
+          "end": 8.408
+        },
+        {
+          "w": "mostly",
+          "start": 8.408,
+          "end": 8.811
+        },
+        {
+          "w": "by",
+          "start": 8.811,
+          "end": 8.983
+        },
+        {
+          "w": "haemoglobin",
+          "start": 8.983,
+          "end": 9.674
+        },
+        {
+          "w": "inside",
+          "start": 9.674,
+          "end": 10.077
+        },
+        {
+          "w": "red",
+          "start": 10.077,
+          "end": 10.307
+        },
+        {
+          "w": "blood",
+          "start": 10.307,
+          "end": 10.653
+        },
+        {
+          "w": "cells",
+          "start": 10.653,
+          "end": 10.998
+        },
+        {
+          "w": "the",
+          "start": 11.148,
+          "end": 11.403
+        },
+        {
+          "w": "blood",
+          "start": 11.403,
+          "end": 11.786
+        },
+        {
+          "w": "leaves",
+          "start": 11.786,
+          "end": 12.232
+        },
+        {
+          "w": "the",
+          "start": 12.232,
+          "end": 12.488
+        },
+        {
+          "w": "lungs",
+          "start": 12.488,
+          "end": 12.87
+        },
+        {
+          "w": "oxygenated",
+          "start": 12.87,
+          "end": 13.572
+        },
+        {
+          "w": "bright",
+          "start": 13.722,
+          "end": 14.25
+        },
+        {
+          "w": "oxygenrich",
+          "start": 14.25,
+          "end": 15.08
+        },
+        {
+          "w": "blood",
+          "start": 15.08,
+          "end": 15.532
+        },
+        {
+          "w": "ready",
+          "start": 15.532,
+          "end": 15.985
+        },
+        {
+          "w": "for",
+          "start": 15.985,
+          "end": 16.287
+        },
+        {
+          "w": "the",
+          "start": 16.287,
+          "end": 16.588
+        },
+        {
+          "w": "whole",
+          "start": 16.588,
+          "end": 17.041
+        },
+        {
+          "w": "body",
+          "start": 17.041,
+          "end": 17.418
+        },
+        {
+          "w": "meanwhile",
+          "start": 17.568,
+          "end": 18.234
+        },
+        {
+          "w": "carbon",
+          "start": 18.234,
+          "end": 18.7
+        },
+        {
+          "w": "dioxide",
+          "start": 18.7,
+          "end": 19.232
+        },
+        {
+          "w": "a",
+          "start": 19.232,
+          "end": 19.365
+        },
+        {
+          "w": "waste",
+          "start": 19.365,
+          "end": 19.764
+        },
+        {
+          "w": "product",
+          "start": 19.764,
+          "end": 20.297
+        },
+        {
+          "w": "of",
+          "start": 20.297,
+          "end": 20.497
+        },
+        {
+          "w": "the",
+          "start": 20.497,
+          "end": 20.763
+        },
+        {
+          "w": "bodys",
+          "start": 20.763,
+          "end": 21.362
+        },
+        {
+          "w": "cells",
+          "start": 21.362,
+          "end": 21.761
+        },
+        {
+          "w": "makes",
+          "start": 21.761,
+          "end": 22.161
+        },
+        {
+          "w": "the",
+          "start": 22.161,
+          "end": 22.427
+        },
+        {
+          "w": "opposite",
+          "start": 22.427,
+          "end": 23.026
+        },
+        {
+          "w": "trip",
+          "start": 23.026,
+          "end": 23.359
+        },
+        {
+          "w": "from",
+          "start": 23.359,
+          "end": 23.692
+        },
+        {
+          "w": "the",
+          "start": 23.692,
+          "end": 23.958
+        },
+        {
+          "w": "blood",
+          "start": 23.958,
+          "end": 24.357
+        },
+        {
+          "w": "into",
+          "start": 24.357,
+          "end": 24.69
+        },
+        {
+          "w": "the",
+          "start": 24.69,
+          "end": 24.956
+        },
+        {
+          "w": "alveolus",
+          "start": 24.956,
+          "end": 25.555
+        },
+        {
+          "w": "and",
+          "start": 25.555,
+          "end": 25.821
+        },
+        {
+          "w": "out",
+          "start": 25.821,
+          "end": 26.088
+        },
+        {
+          "w": "with",
+          "start": 26.088,
+          "end": 26.42
+        },
+        {
+          "w": "your",
+          "start": 26.42,
+          "end": 26.753
+        },
+        {
+          "w": "next",
+          "start": 26.753,
+          "end": 27.086
+        },
+        {
+          "w": "breath",
+          "start": 27.086,
+          "end": 27.552
+        },
+        {
+          "w": "in",
+          "start": 27.702,
+          "end": 28.069
+        },
+        {
+          "w": "and",
+          "start": 28.069,
+          "end": 28.557
+        },
+        {
+          "w": "out",
+          "start": 28.557,
+          "end": 29.046
+        },
+        {
+          "w": "beautifully",
+          "start": 29.196,
+          "end": 30.136
+        },
+        {
+          "w": "simple",
+          "start": 30.136,
+          "end": 30.684
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 979,
+      "startFrame": 6002
+    },
+    {
+      "index": 10,
+      "type": "stage",
+      "hash": "6ca786b4be1e",
+      "narration": "Let's recap! Air travels down the trachea and bronchi to about 300 million alveoli. Breathing in is active: the diaphragm contracts and the lungs fill. Breathing out at rest is passive: the muscles relax and the lungs recoil. And in each alveolus, oxygen diffuses into the blood while carbon dioxide diffuses out. Twelve to twenty times a minute, all day, all night. That's every breath you take, explained!",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-10.mp3",
+      "voDurationInSeconds": 29.304,
+      "voDurationInFrames": 880,
+      "captions": [
+        {
+          "text": "Let's recap! Air travels down the trachea",
+          "start": 0,
+          "end": 3.393
+        },
+        {
+          "text": "and bronchi to about 300 million alveoli.",
+          "start": 3.393,
+          "end": 6.636
+        },
+        {
+          "text": "Breathing in is active:",
+          "start": 6.636,
+          "end": 8.183
+        },
+        {
+          "text": "the diaphragm contracts and the lungs",
+          "start": 8.183,
+          "end": 10.74
+        },
+        {
+          "text": "fill. Breathing out at rest is passive:",
+          "start": 10.74,
+          "end": 13.459
+        },
+        {
+          "text": "the muscles relax and the lungs recoil.",
+          "start": 13.459,
+          "end": 16.248
+        },
+        {
+          "text": "And in each alveolus, oxygen diffuses into",
+          "start": 16.248,
+          "end": 19.307
+        },
+        {
+          "text": "the blood while carbon dioxide diffuses",
+          "start": 19.307,
+          "end": 22.221
+        },
+        {
+          "text": "out. Twelve to twenty times a minute, all",
+          "start": 22.221,
+          "end": 25.254
+        },
+        {
+          "text": "day, all night. That's every breath you",
+          "start": 25.254,
+          "end": 28.208
+        },
+        {
+          "text": "take, explained!",
+          "start": 28.208,
+          "end": 29.444
+        }
+      ],
+      "words": [
+        {
+          "w": "lets",
+          "start": 0,
+          "end": 0.603
+        },
+        {
+          "w": "recap",
+          "start": 0.603,
+          "end": 1.056
+        },
+        {
+          "w": "air",
+          "start": 1.206,
+          "end": 1.508
+        },
+        {
+          "w": "travels",
+          "start": 1.508,
+          "end": 2.111
+        },
+        {
+          "w": "down",
+          "start": 2.111,
+          "end": 2.488
+        },
+        {
+          "w": "the",
+          "start": 2.488,
+          "end": 2.79
+        },
+        {
+          "w": "trachea",
+          "start": 2.79,
+          "end": 3.393
+        },
+        {
+          "w": "and",
+          "start": 3.393,
+          "end": 3.695
+        },
+        {
+          "w": "bronchi",
+          "start": 3.695,
+          "end": 4.299
+        },
+        {
+          "w": "to",
+          "start": 4.299,
+          "end": 4.525
+        },
+        {
+          "w": "about",
+          "start": 4.525,
+          "end": 4.977
+        },
+        {
+          "w": "300",
+          "start": 4.977,
+          "end": 5.279
+        },
+        {
+          "w": "million",
+          "start": 5.279,
+          "end": 5.883
+        },
+        {
+          "w": "alveoli",
+          "start": 5.883,
+          "end": 6.486
+        },
+        {
+          "w": "breathing",
+          "start": 6.636,
+          "end": 7.309
+        },
+        {
+          "w": "in",
+          "start": 7.309,
+          "end": 7.511
+        },
+        {
+          "w": "is",
+          "start": 7.511,
+          "end": 7.712
+        },
+        {
+          "w": "active",
+          "start": 7.712,
+          "end": 8.183
+        },
+        {
+          "w": "the",
+          "start": 8.183,
+          "end": 8.452
+        },
+        {
+          "w": "diaphragm",
+          "start": 8.452,
+          "end": 9.125
+        },
+        {
+          "w": "contracts",
+          "start": 9.125,
+          "end": 9.798
+        },
+        {
+          "w": "and",
+          "start": 9.798,
+          "end": 10.067
+        },
+        {
+          "w": "the",
+          "start": 10.067,
+          "end": 10.336
+        },
+        {
+          "w": "lungs",
+          "start": 10.336,
+          "end": 10.74
+        },
+        {
+          "w": "fill",
+          "start": 10.74,
+          "end": 11.076
+        },
+        {
+          "w": "breathing",
+          "start": 11.226,
+          "end": 11.903
+        },
+        {
+          "w": "out",
+          "start": 11.903,
+          "end": 12.173
+        },
+        {
+          "w": "at",
+          "start": 12.173,
+          "end": 12.376
+        },
+        {
+          "w": "rest",
+          "start": 12.376,
+          "end": 12.715
+        },
+        {
+          "w": "is",
+          "start": 12.715,
+          "end": 12.918
+        },
+        {
+          "w": "passive",
+          "start": 12.918,
+          "end": 13.459
+        },
+        {
+          "w": "the",
+          "start": 13.459,
+          "end": 13.73
+        },
+        {
+          "w": "muscles",
+          "start": 13.73,
+          "end": 14.271
+        },
+        {
+          "w": "relax",
+          "start": 14.271,
+          "end": 14.677
+        },
+        {
+          "w": "and",
+          "start": 14.677,
+          "end": 14.948
+        },
+        {
+          "w": "the",
+          "start": 14.948,
+          "end": 15.218
+        },
+        {
+          "w": "lungs",
+          "start": 15.218,
+          "end": 15.624
+        },
+        {
+          "w": "recoil",
+          "start": 15.624,
+          "end": 16.098
+        },
+        {
+          "w": "and",
+          "start": 16.248,
+          "end": 16.539
+        },
+        {
+          "w": "in",
+          "start": 16.539,
+          "end": 16.758
+        },
+        {
+          "w": "each",
+          "start": 16.758,
+          "end": 17.122
+        },
+        {
+          "w": "alveolus",
+          "start": 17.122,
+          "end": 17.778
+        },
+        {
+          "w": "oxygen",
+          "start": 17.778,
+          "end": 18.287
+        },
+        {
+          "w": "diffuses",
+          "start": 18.287,
+          "end": 18.943
+        },
+        {
+          "w": "into",
+          "start": 18.943,
+          "end": 19.307
+        },
+        {
+          "w": "the",
+          "start": 19.307,
+          "end": 19.599
+        },
+        {
+          "w": "blood",
+          "start": 19.599,
+          "end": 20.036
+        },
+        {
+          "w": "while",
+          "start": 20.036,
+          "end": 20.473
+        },
+        {
+          "w": "carbon",
+          "start": 20.473,
+          "end": 20.982
+        },
+        {
+          "w": "dioxide",
+          "start": 20.982,
+          "end": 21.565
+        },
+        {
+          "w": "diffuses",
+          "start": 21.565,
+          "end": 22.221
+        },
+        {
+          "w": "out",
+          "start": 22.221,
+          "end": 22.512
+        },
+        {
+          "w": "twelve",
+          "start": 22.662,
+          "end": 23.166
+        },
+        {
+          "w": "to",
+          "start": 23.166,
+          "end": 23.382
+        },
+        {
+          "w": "twenty",
+          "start": 23.382,
+          "end": 23.886
+        },
+        {
+          "w": "times",
+          "start": 23.886,
+          "end": 24.318
+        },
+        {
+          "w": "a",
+          "start": 24.318,
+          "end": 24.462
+        },
+        {
+          "w": "minute",
+          "start": 24.462,
+          "end": 24.966
+        },
+        {
+          "w": "all",
+          "start": 24.966,
+          "end": 25.254
+        },
+        {
+          "w": "day",
+          "start": 25.254,
+          "end": 25.542
+        },
+        {
+          "w": "all",
+          "start": 25.542,
+          "end": 25.83
+        },
+        {
+          "w": "night",
+          "start": 25.83,
+          "end": 26.262
+        },
+        {
+          "w": "thats",
+          "start": 26.412,
+          "end": 27.034
+        },
+        {
+          "w": "every",
+          "start": 27.034,
+          "end": 27.448
+        },
+        {
+          "w": "breath",
+          "start": 27.448,
+          "end": 27.932
+        },
+        {
+          "w": "you",
+          "start": 27.932,
+          "end": 28.208
+        },
+        {
+          "w": "take",
+          "start": 28.208,
+          "end": 28.553
+        },
+        {
+          "w": "explained",
+          "start": 28.553,
+          "end": 29.244
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 35,
+      "durationInFrames": 936,
+      "startFrame": 6981
+    },
+    {
+      "index": 11,
+      "type": "outro",
+      "hash": "17bd01cb15b5",
+      "narration": "Keep learning with MedSkills.",
+      "audioFile": "audio/vo/pilot-lungs/L1/scene-11.mp3",
+      "voDurationInSeconds": 1.92,
+      "voDurationInFrames": 58,
+      "captions": [
+        {
+          "text": "Keep learning with MedSkills.",
+          "start": 0,
+          "end": 2.072
+        }
+      ],
+      "words": [
+        {
+          "w": "keep",
+          "start": 0,
+          "end": 0.323
+        },
+        {
+          "w": "learning",
+          "start": 0.323,
+          "end": 0.904
+        },
+        {
+          "w": "with",
+          "start": 0.904,
+          "end": 1.226
+        },
+        {
+          "w": "medskills",
+          "start": 1.226,
+          "end": 1.872
+        }
+      ],
+      "leadFrames": 21,
+      "tailFrames": 136,
+      "durationInFrames": 215,
+      "startFrame": 7917
+    }
+  ]
+}

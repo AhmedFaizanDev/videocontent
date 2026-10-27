@@ -22,15 +22,15 @@ import {matchPhrases, revealGroups, syncProblems} from '../src/sync.ts';
 import {paceOf, retime, planTransitions, fitBreathe} from '../src/schedule.ts';
 import {CATALOG, calloutsFor} from '../src/art/catalog.ts';
 import {withDefaults, spoken} from '../src/project.ts';
-import {speakTokens} from './lib/speak.mts';
+import {speakTokens, voiceArgs} from './lib/speak.mts';
 import {judgeRepair} from './lib/repair.mts';
-import {numbersIn, pronunciationWatch, speechHazards, spellingProblems} from './lib/grounding.mts';
+import {numbersIn, speechHazards, spellingProblems} from './lib/grounding.mts';
 import {parseMermaid} from '../src/art/mermaid.ts';
 import {compileScene, compileSpec, mergeSameWord, slotsFor} from '../src/compile.ts';
 import {direct, varietyProblems} from '../src/director.ts';
 import {fixSpec} from './lib/fix.mts';
 import {categorize} from './lib/categories.mts';
-import {fullForms, respellings} from '../src/dictionary.ts';
+import {fullForms} from '../src/abbreviations.ts';
 import {revealTimes} from '../src/sync.ts';
 import {uncovered} from './lib/coverage.mts';
 import {camAt, driftAt, camFor, fitCam, placeLabel, resolve, screenWords, stageProblems} from '../src/stage.ts';
@@ -66,8 +66,10 @@ step('3 units', () => {
   {
     // a word the voice reports differently ("16" as "sixteen hours") keeps its place in the timeline
     const py = existsSync(join(ROOT, '.venv', 'bin', 'python')) ? join(ROOT, '.venv', 'bin', 'python') : 'python3';
-    const r = spawnSync(py, ['-c', "import importlib.util as u;s=u.spec_from_file_location('t','scripts/lib/tts_edge.py');m=u.module_from_spec(s);s.loader.exec_module(m);print(' '.join(x['raw'] for x in m.timeline(['Over','16','hours','of','learning'],['Over','16','hours','of','learning'],[('Over',0.1,0.4),('sixteen hours',0.45,1.2),('of',1.21,1.35),('learning',1.36,1.85)],[],0)))"], {cwd: ROOT, encoding: 'utf8'});
+    const r = spawnSync(py, ['-c', "import importlib.util as u;s=u.spec_from_file_location('t','scripts/lib/tts.py');m=u.module_from_spec(s);s.loader.exec_module(m);print(' '.join(x['raw'] for x in m.timeline(['Over','16','hours','of','learning'],['Over','16','hours','of','learning'],[('Over',0.1,0.4),('sixteen hours',0.45,1.2),('of',1.21,1.35),('learning',1.36,1.85)],[],0)))"], {cwd: ROOT, encoding: 'utf8'});
     assert.equal(r.stdout.trim(), 'Over 16 hours of learning', 'no word is dropped from the voice timeline');
+    const q = spawnSync(py, ['-c', "import importlib.util as u;s=u.spec_from_file_location('t','scripts/lib/tts.py');m=u.module_from_spec(s);s.loader.exec_module(m);print(m.ssml_tokens([('The','The'),('chordae,','/ˈkɔːdiː/,'),('R&D','R&D')]))"], {cwd: ROOT, encoding: 'utf8'});
+    assert.equal(q.stdout.trim(), 'The <phoneme alphabet="ipa" ph="ˈkɔːdiː">chordae</phoneme>, R&amp;D', 'Polly: an /ipa/ lexicon value becomes <phoneme>; text is escaped');
   }
   {
     const e1 = '❌ M01 timing: scene[2] (stage): ~9 s with nothing new on screen';
@@ -153,13 +155,12 @@ step('3 units', () => {
   }
   // project defaults
   const p = withDefaults('demo', {name: 'Demo'});
-  assert.equal(p.voice.name, 'en-IN-NeerjaNeural');
+  assert.equal(p.voice.name, 'Kiara');
+  assert.equal(voiceArgs(withDefaults('h', {lang: 'hi'}).voice)[1], 'edge', 'Edge voices stay on Edge');
   // house standard v2: pronunciation, Mermaid flowcharts, tables
-  assert.equal(speakTokens('Welcome to MedSkills.', p.lexicon).map((t) => t.s).join(' '), 'Welcome to Medd Skills.', 'house lexicon: MedSkills is said as the owner chose (audition 2026-10-04)');
+  assert.equal(speakTokens('Welcome to MedSkills.', {MedSkills: 'Med Skills'}).map((t) => t.s).join(' '), 'Welcome to Med Skills.', 'the project lexicon reaches the voice');
   assert.equal(withDefaults('x', {lexicon: {MedSkills: 'Med-Skills'}}).lexicon.MedSkills, 'Med-Skills', 'project lexicon wins');
-  assert.ok(speechHazards('Open PubMed today.', p.lexicon).some((m) => m.includes('run-together')), 'run-together names need a respelling');
-  assert.equal(speechHazards('Welcome to MedSkills.', p.lexicon).length, 0, 'a lexicon entry clears it');
-  assert.deepEqual(pronunciationWatch('Give amiodarone after the third shock; the fibres contract.', {}), ['amiodarone'], 'unknown technical words are listed; British spellings are not');
+  assert.equal(speechHazards('Welcome to MedSkills.', {}).length, 0, 'brand names need no respelling');
   {
     const g = parseMermaid('flowchart LR\n A([Start]) --> B{Pulse?}\n B -->|No| C[CPR]:::red\n B -- Yes --> D((Monitor))\n C -.-> D\n class D teal');
     assert.equal(g.direction, 'LR');
@@ -252,10 +253,8 @@ step('3 units', () => {
     assert.equal(fixSpec({scenes: [{narration: 'Give 30:2. Who decides?'}]}).spec.scenes[0].narration, 'Give 30 to 2. Who decides?', '"Who" is not WHO');
     assert.deepEqual(mergeSameWord([{_pos: 3, act: 'a.r1'}, {_pos: 3, act: 'b.count'}, {_pos: 5, note: 'n'}]), [{_pos: 3, act: ['a.r1', 'b.count']}, {_pos: 5, note: 'n'}]);
     assert.equal(mergeSameWord([{_pos: 3, camera: 'overview'}, {_pos: 3, camera: {on: 'x'}}]).length, 2, 'two camera moves never merge');
-    assert.deepEqual(pronunciationWatch('Steps omitted, skipped or specified were identified; the duodenoscope multiplied risk.', {}), ['duodenoscope'], 'inflected common words are not pronunciation risks');
     assert.equal(categorize('❌ C01 layout: scene[4] (stage): text too small to read (19px < 22px'), 'tiny-text');
     assert.equal(categorize('❌ C01 timing: scene[2] (stage): ~9 s with nothing new on screen'), 'idle');
-    assert.equal(respellings('en').MedSkills, 'Medd Skills', 'the lexicon derives from the dictionary');
     assert.equal(fullForms('en').CPR, 'cardiopulmonary resuscitation');
   }
   assert.equal(p.output.dir, 'demo');

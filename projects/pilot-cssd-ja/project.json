@@ -1,0 +1,67 @@
+{
+  "name": "CSSDと滅菌業務",
+  "series": "モジュール10：軟性内視鏡の再処理",
+  "lang": "ja",
+  "brand": {
+    "art": {
+      "lockup": "brand/medskills-lockup.png",
+      "icon": "brand/medskills-icon.png",
+      "lockupAspect": 3.677,
+      "iconAspect": 0.972
+    },
+    "name": "MedSkills",
+    "signoff": "MedSkills で 学び続けましょう。",
+    "episodeLabel": "第",
+    "watermark": "bottom-right"
+  },
+  "voice": {
+    "name": "ja-JP-NanamiNeural",
+    "rate": "+10%",
+    "pitch": "+0Hz",
+    "wpm": 72
+  },
+  "pacing": {
+    "sentencePause": 0.15,
+    "beat": 0.45,
+    "breathe": 0.8
+  },
+  "lexicon": {},
+  "terms": [],
+  "music": "audio/music/bed.mp3",
+  "length": {
+    "minutes": [
+      4.5,
+      7
+    ]
+  },
+  "rules": {
+    "first": "ident",
+    "last": "outro",
+    "requireOneOf": [],
+    "sync": "error",
+    "minFigures": 3,
+    "grounding": "error",
+    "minIllustrated": 0.75,
+    "maxScreenWords": 20,
+    "requirePlan": false,
+    "maxIdle": 7,
+    "variety": true,
+    "taste": true
+  },
+  "frame": {
+    "ident": true,
+    "outro": "MedSkills で 学び続けましょう。",
+    "direct": true
+  },
+  "arts": [
+    "flexibleEndoscope",
+    "channelCutaway",
+    "duodenoscopeTip",
+    "leakTest",
+    "endoscopeReprocessor",
+    "dryingCabinet"
+  ],
+  "output": {
+    "dir": "MedSkills/Pilot_CSSD_JA"
+  }
+}

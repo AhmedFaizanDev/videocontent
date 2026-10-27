@@ -38,8 +38,10 @@ export const MusicBed: React.FC<{timings: VideoTimings}> = ({timings}) => {
   const total = timings.totalDurationInFrames;
   const wins = timings.scenes.map((s) => [s.startFrame + s.leadFrames, s.startFrame + s.leadFrames + s.voDurationInFrames]);
   const lastVoEnd = wins[wins.length - 1][1];
-  const GAP = 0.12; // between scenes: ~ -36 LUFS bed vs ~ -22 LUFS voice (measured 2026-10-11)
-  const UNDER = 0.05; // under narration: ~22 dB below the voice
+  // measured on the final MP4 (2026-10-17): 0.05 left the bed only ~16 dB under the voice; medical
+  // narration needs ≥ 20 dB (WCAG 1.4.7), and a smaller gap swell keeps the bed from pumping
+  const GAP = 0.09; // between scenes
+  const UNDER = 0.03; // under narration: ~20 dB below the voice
   const vol = (f: number) => {
     let duck = 0;
     for (const [s, e] of wins) {

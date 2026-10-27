@@ -17,6 +17,7 @@
 import React from 'react';
 import {fonts, ink} from '../theme';
 import {E, estLines, tw} from '../motion';
+import {cols as width, units} from '../lang';
 import {INK, type ArtCtx, type ArtDef, type ArtFactory} from './kit';
 
 type Align = 'left' | 'center' | 'right';
@@ -52,12 +53,12 @@ const table: ArtFactory = (data: TableData) => {
   // column widths: authored, else by content (longest cell, header counts a little less)
   // content widths; a header (bold, smaller) still needs its own length, and authored widths
   // never shrink a column below its longest single word
-  const longestWord = (j: number) => Math.max(...[cols[j], ...rows.map((r) => r[j] ?? '')].flatMap((t) => t.split(/\s+/).map((w) => w.length)), 4);
-  const want = cols.map((c, j) => Math.max(data.widths?.[j] ?? Math.max(c.length * 1.05, ...rows.map((r) => Math.min(48, (r[j] ?? '').length)), 4), 0));
+  const longestWord = (j: number) => Math.max(...[cols[j], ...rows.map((r) => r[j] ?? '')].flatMap((t) => units(t).map(width)), 4);
+  const want = cols.map((c, j) => Math.max(data.widths?.[j] ?? Math.max(width(c) * 1.05, ...rows.map((r) => Math.min(48, width(r[j] ?? ''))), 4), 0));
   const minShare = cols.map((_, j) => longestWord(j) * 1.15);
   const tot0 = want.reduce((a, b) => a + b, 0);
   // authored widths are relative: express the longest-word floor in the same units, then scale
-  const scale = data.widths ? tot0 / cols.map((c, j) => Math.max(c.length, ...rows.map((r) => Math.min(48, (r[j] ?? '').length)), 4)).reduce((a, b) => a + b, 0) : 1;
+  const scale = data.widths ? tot0 / cols.map((c, j) => Math.max(width(c), ...rows.map((r) => Math.min(48, width(r[j] ?? ''))), 4)).reduce((a, b) => a + b, 0) : 1;
   const want2 = want.map((x, j) => Math.max(x, minShare[j] * scale));
   const tot = want2.reduce((a, b) => a + b, 0);
   const cw = want2.map((x) => (x / tot) * W);

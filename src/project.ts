@@ -8,7 +8,6 @@
 /** Narration as spoken: [pause] markers are silence, not words. */
 export const spoken = (narration: string) => narration.replace(/\[pause\]/gi, ' ').replace(/\s+/g, ' ').trim();
 
-import {HOUSE_LEXICON} from './lexicon.ts';
 // measured pace (scripts/voiceover.mts keeps it current): what the voice really does wins over configuration
 import {PACE} from './pace.gen.ts';
 import type {Lang} from './lang.ts';
@@ -21,7 +20,7 @@ export type ProjectConfig = {
   name: string;
   /** Series line on the poster and intro, e.g. "CSSD & Sterilization Practices". */
   series: string;
-  /** Narration + on-screen language (src/lang.ts): 'en' | 'hi' | 'mr' | 'kn'. */
+  /** Narration + on-screen language (src/lang.ts): 'en' | 'hi' | 'mr' | 'kn' | 'ja'. */
   lang: Lang;
   brand: {
     /** Brand artwork (default: MedSkills). */
@@ -35,17 +34,18 @@ export type ProjectConfig = {
     /** Where the brand mark sits on every frame: top-right (default) or a subtle bottom-right watermark. */
     watermark?: 'top-right' | 'bottom-right';
   };
-  /** Edge neural voice. `wpm` = its speaking pace at this rate, pauses excluded (voiceover measures it). */
-  voice: {name: string; rate: string; pitch: string; wpm: number};
+  /** `engine` neural | generative | standard = Amazon Polly (`lang` its LanguageCode); absent or 'edge' = Edge TTS.
+   *  `wpm` = its speaking pace at this rate, pauses excluded (voiceover measures it). */
+  voice: {name: string; rate: string; pitch: string; wpm: number; engine?: string; lang?: string};
   /**
    * Breathing room. `sentencePause`: extra silence after every sentence (s; 0 = one-pass
    * legacy voicing). `beat`: silence at each [pause] marker in narration. `breathe`:
    * multiplier on the holds before/after each scene's narration (src/schedule.ts).
    */
   pacing: {sentencePause: number; beat: number; breathe: number};
-  /** Pronunciation fixes sent to the voice only, one token → one token: {"Purkinje": "Pur-kin-jee"}. */
+  /** Pronunciation fixes sent to the voice only, one token → one token: {"chordae": "/ˈkɔːdiː/"} (IPA, Polly) or plain respelt text. */
   lexicon: Record<string, string>;
-  /** project abbreviations → spoken full forms (merged over the house dictionary, src/dictionary.ts) */
+  /** project abbreviations → spoken full forms (merged over src/abbreviations.ts) */
   fullForms?: Record<string, string>;
   /**
    * Key terms of the subject, emphasised wherever they appear on screen (weight + brand
@@ -105,8 +105,9 @@ export const PROJECT_DEFAULTS: Omit<ProjectConfig, 'slug' | 'name' | 'series'> =
     episodeLabel: 'EP.',
   },
   // house voice: Indian English female, unhurried (owner's default, 2026-09-25)
-  // natural lecturer pace (+10%); the measured value in src/pace.gen.ts (~128 wpm) is what estimates use
-  voice: {name: 'en-IN-NeerjaNeural', rate: '+10%', pitch: '+0Hz', wpm: 147},
+  // Amazon Polly Kiara (generative, en-IN): as accurate as any of the 5 Indian voices on a full lesson (Whisper-checked)
+  // and the liveliest intonation; the owner asked for enthusiasm (2026-10-17). Generative ignores most rate changes.
+  voice: {name: 'Kiara', engine: 'generative', lang: 'en-IN', rate: '+0%', pitch: '+0Hz', wpm: 148},
   pacing: {sentencePause: 0.15, beat: 0.45, breathe: 0.8},
   lexicon: {},
   terms: [],
@@ -117,13 +118,15 @@ export const PROJECT_DEFAULTS: Omit<ProjectConfig, 'slug' | 'name' | 'series'> =
   output: {dir: ''},
 };
 
-/** House voice per language: Indian female neural voices (Edge), with their pace measured on real lessons (2026-09-26). */
+/** House voice per language: Indian female neural voices (en: Polly; others Edge — engine comes from the defaults for en only), with their pace measured on real lessons (2026-09-26). */
 export const HOUSE_VOICES: Record<Lang, {name: string; wpm: number}> = {
   // plain Neerja, slightly slowed: the Expressive variant read as dramatic (owner, 2026-10-01)
-  en: {name: 'en-IN-NeerjaNeural', wpm: 147},
+  en: {name: 'Kiara', wpm: 148},
   hi: {name: 'hi-IN-SwaraNeural', wpm: 121},
   mr: {name: 'mr-IN-AarohiNeural', wpm: 96},
   kn: {name: 'kn-IN-SapnaNeural', wpm: 83},
+  // no Indian Japanese voice exists: the house female voice for ja (wpm counts space-separated phrases)
+  ja: {name: 'ja-JP-NanamiNeural', wpm: 65},
 };
 
 /** A lesson's own `length` (spec.length) replaces the project's — e.g. a 60 s course intro and
@@ -141,7 +144,7 @@ export const withDefaults = (slug: string, raw: Partial<ProjectConfig>): Project
   brand: {...PROJECT_DEFAULTS.brand, ...raw.brand, art: {...PROJECT_DEFAULTS.brand.art, ...raw.brand?.art}},
   voice: ((v) => ({...v, wpm: PACE[`${v.name}|${v.rate}`]?.wpm ?? v.wpm}))({...PROJECT_DEFAULTS.voice, ...HOUSE_VOICES[raw.lang ?? 'en'], ...raw.voice}),
   pacing: {...PROJECT_DEFAULTS.pacing, ...raw.pacing},
-  lexicon: {...HOUSE_LEXICON[raw.lang ?? 'en'], ...raw.lexicon},
+  lexicon: {...raw.lexicon},
   terms: raw.terms ?? [],
   length: {...PROJECT_DEFAULTS.length, ...raw.length},
   rules: {...PROJECT_DEFAULTS.rules, ...raw.rules},

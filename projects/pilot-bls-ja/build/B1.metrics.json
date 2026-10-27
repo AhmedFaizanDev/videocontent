@@ -1,0 +1,45 @@
+{
+  "project": "pilot-bls-ja",
+  "id": "B1",
+  "stages": {
+    "preflight": {
+      "seconds": 0.2,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-14T13:30:54.663Z"
+    },
+    "voiceover": {
+      "seconds": 50.6,
+      "scenesVoiced": 10,
+      "scenes": 11,
+      "characters": 2004,
+      "audioSeconds": 324.5,
+      "wpm": 72,
+      "voice": "ja-JP-NanamiNeural",
+      "at": "2026-10-14T13:05:25.183Z"
+    },
+    "render": {
+      "seconds": 546,
+      "totalSeconds": 565,
+      "frames": 10401,
+      "fps": 19,
+      "bytes": 77031804,
+      "at": "2026-10-14T13:40:59.043Z"
+    },
+    "qa": {
+      "seconds": 53,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-14T13:41:52.512Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-10-14T13:31:29.070Z"
+    }
+  },
+  "authoring": [],
+  "lang": "ja",
+  "runtimeMinutes": 5.78,
+  "words": 379
+}

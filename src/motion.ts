@@ -1,7 +1,7 @@
 import React from 'react';
 import {Easing, interpolate, useCurrentFrame} from 'remotion';
 import {TX} from './schedule';
-import {isIndic, lang} from './lang';
+import {cols, isIndic, lang, units} from './lang';
 
 /**
  * Motion vocabulary v3. Easing is emotion: `out` (expo) = confident arrival,
@@ -53,10 +53,11 @@ export const SPAN = {x: 1640, y: 1040};
  */
 export const ADVANCE = {
   get serif() {
-    return isIndic(lang()) ? 0.62 : 0.53;
+    // Japanese is counted in columns (src/lang.ts cols): a kanji is two Latin advances
+    return isIndic(lang()) && lang() !== 'ja' ? 0.62 : 0.53;
   },
   get sans() {
-    return isIndic(lang()) ? 0.6 : 0.5;
+    return isIndic(lang()) && lang() !== 'ja' ? 0.6 : 0.5;
   },
   mono: 0.6,
 };
@@ -71,8 +72,8 @@ export const fitSize = (
   maxLines: number,
   opts: {max: number; min: number; advance: number},
 ) => {
-  const len = Math.max(1, text.length);
-  const longestWord = Math.max(...text.split(/\s+/).map((w) => w.length), 1);
+  const len = Math.max(1, cols(text));
+  const longestWord = Math.max(...units(text).map(cols), 1);
   const byArea = (width * maxLines * 0.86) / (len * opts.advance);
   const byWord = (width * 0.96) / (longestWord * opts.advance);
   return Math.round(Math.max(opts.min, Math.min(opts.max, byArea, byWord)));
@@ -83,12 +84,16 @@ export const estLines = (text: string, width: number, fontSize: number, advance:
   const perLine = Math.max(1, Math.floor(width / (fontSize * advance)));
   let lines = 1;
   let used = 0;
-  for (const w of text.split(/\s+/)) {
-    const need = (used ? 1 : 0) + w.length;
+  let prevWide = false;
+  for (const w of units(text)) {
+    // wide characters sit flush against each other; Latin words take a space
+    const wide = cols(w) > w.length;
+    const need = (used && !(wide && prevWide) ? 1 : 0) + cols(w);
     if (used + need > perLine && used > 0) {
       lines++;
-      used = w.length;
+      used = cols(w);
     } else used += need;
+    prevWide = wide;
   }
   return lines;
 };

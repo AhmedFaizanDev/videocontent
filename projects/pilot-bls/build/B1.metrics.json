@@ -7,20 +7,52 @@
       "at": "2026-10-11T06:52:05.908Z"
     },
     "preflight": {
-      "seconds": 4.5,
+      "seconds": 6.6,
       "batch": 1,
       "errors": 0,
-      "at": "2026-10-11T06:59:12.861Z"
+      "at": "2026-10-17T07:50:58.915Z"
     },
     "check": {
-      "seconds": 5,
+      "seconds": 6,
       "firstPass": true,
       "ok": true,
       "categories": [],
       "log": [],
       "remaining": [],
-      "at": "2026-10-11T06:59:12.872Z"
+      "at": "2026-10-11T07:30:42.413Z"
+    },
+    "voiceover": {
+      "seconds": 27.3,
+      "scenesVoiced": 10,
+      "scenes": 11,
+      "characters": 3802,
+      "audioSeconds": 271.8,
+      "wpm": 135,
+      "voice": "Kajal",
+      "at": "2026-10-17T07:50:51.899Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-10-11T07:30:48.515Z"
+    },
+    "render": {
+      "seconds": 445,
+      "totalSeconds": 459,
+      "frames": 8820,
+      "fps": 19.8,
+      "bytes": 66690997,
+      "at": "2026-10-17T08:18:27.758Z"
+    },
+    "qa": {
+      "seconds": 37,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-17T08:19:05.374Z"
     }
   },
-  "authoring": []
+  "authoring": [],
+  "lang": "en",
+  "runtimeMinutes": 4.9,
+  "words": 597
 }

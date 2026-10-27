@@ -24,6 +24,7 @@ const sequences: {id: string; seq: string}[] = [];
 import {BREATHE_RANGE, holds, holdsRange} from '../src/schedule.ts';
 import {spoken} from '../src/project.ts';
 import {screenWords, stageProblems} from '../src/stage.ts';
+import {wordCount} from '../src/lang.ts';
 
 const COLORS = ['variable', 'constant', 'accent'];
 const SCENE_TYPES = ['intro', 'hook', 'definition', 'steps', 'example', 'code', 'pseudocode', 'compare', 'mistake', 'recap', 'figure', 'check', 'answer', 'stage', 'outro', 'ident'];
@@ -57,7 +58,7 @@ function checkScene(id: string, i: number, s: any) {
     if (s.seconds !== undefined && !(s.seconds >= 2 && s.seconds <= 6)) err(id, `${where}: seconds must be 2–6`);
     return;
   }
-  if (!isStr(s.narration) || words(s.narration) < 4) err(id, `${where}: narration too short/missing`);
+  if (!isStr(s.narration) || wordCount(s.narration) < 4) err(id, `${where}: narration too short/missing`);
 
   switch (s.type) {
     case 'intro':
@@ -262,7 +263,7 @@ function checkSpec(project: string, id: string, seenFiles: Map<string, string>):
   const narr = spec.scenes.map((s: any) => (isStr(s?.narration) ? s.narration : ''));
   const identSec = spec.scenes.reduce((n: number, s: any) => n + (s?.type === 'ident' ? s.seconds ?? 3.2 : 0), 0);
   const totalWords = narr.reduce((n: number, t: string) => n + words(spoken(t)), 0);
-  const pauses = narr.reduce((n: number, t: string) => n + (spoken(t).match(/[.!?…।॥]["')\]”’]*(\s|$)/g) ?? []).length * cfg.pacing.sentencePause + (t.match(/\[pause\]/gi) ?? []).length * cfg.pacing.beat, 0);
+  const pauses = narr.reduce((n: number, t: string) => n + (spoken(t).match(/[.!?…।॥。！？]["')\]”’]*(\s|$)/g) ?? []).length * cfg.pacing.sentencePause + (t.match(/\[pause\]/gi) ?? []).length * cfg.pacing.beat, 0);
   const n = spec.scenes.length;
   // the schedule's own hold rules (src/schedule.ts), so estimates match what the render will do
   const overhead = cfg.pacing.breathe * holds(types as any).reduce((a, [l, t]) => a + l + t, 0);

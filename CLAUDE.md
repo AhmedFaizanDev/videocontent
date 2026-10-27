@@ -1,7 +1,7 @@
 # CLAUDE.md — start here
 
 Turns MedSkills course PDFs into ~5-minute narrated, animated teaching videos (Remotion + free
-Edge TTS). State and next steps: **`HANDOFF.md`**. Commands: **`README.md`**.
+Amazon Polly Kiara generative; Edge TTS only for mr/kn/hi/ja). State and next steps: **`HANDOFF.md`**. Commands: **`README.md`**.
 
 ## The pipeline (one path)
 ```

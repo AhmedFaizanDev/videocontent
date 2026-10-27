@@ -12,6 +12,7 @@ import type {Scene} from './spec';
 import {spoken} from './project.ts';
 import {calloutsFor} from './art/catalog.ts';
 import {arr} from './stage.ts';
+import {cols} from './lang.ts';
 
 /** A word's comparable core, in any script (letters, combining vowel signs, digits). */
 export const normWord = (s: string) => s.normalize('NFC').toLowerCase().replace(/[^\p{L}\p{M}\p{N}]/gu, '');
@@ -22,11 +23,11 @@ export const keywordsOf = (s: string, minLen = 4): string[] =>
     .normalize('NFC')
     .split(/[^\p{L}\p{M}\p{N}]+/u)
     .map((x) => x.toLowerCase())
-    .filter((x) => x.length >= minLen);
+    .filter((x) => cols(x) >= minLen);
 
-/** Does spoken word `w` (normalized) match any candidate? Substring matches need ≥4 chars. */
+/** Does spoken word `w` (normalized) match any candidate? Substring matches need ≥4 columns (a kanji counts 2). */
 export const wordMatches = (w: string, cands: string[]) =>
-  cands.some((c) => w === c || (c.length >= 4 && w.includes(c)) || (w.length >= 4 && c.includes(w)));
+  cands.some((c) => w === c || (cols(c) >= 4 && w.includes(c)) || (cols(w) >= 4 && c.includes(w)));
 
 /**
  * For each phrase in order, the index of the first spoken word at/after the previous hit

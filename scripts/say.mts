@@ -5,31 +5,18 @@
  *   node scripts/say.mts <project> "MedSkills" --as "Med Skills"   try a respelling before adding it
  *   node scripts/say.mts <project> "Keep learning with {}." --variants "MedSkills|Med Skills|Med-Skills"
  *       one audition file: each candidate spoken in that sentence, announced "Option 1, 2…", so the
- *       owner picks by ear; put the winner in src/dictionary.ts (house) or project.json lexicon.
- *   node scripts/say.mts <project> --pending      the dictionary's pending queue as one audition file
+ *       owner picks by ear; put the winner in project.json lexicon (IPA "/…/" for Polly voices).
  */
 import {execFileSync} from 'node:child_process';
 import {existsSync, mkdirSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT, loadProject} from './lib/paths.mts';
-import {speakTokens} from './lib/speak.mts';
+import {speakTokens, voiceArgs} from './lib/speak.mts';
 import {isIndic} from '../src/lang.ts';
-import {readPending} from './lib/pending.mts';
 
 const args = process.argv.slice(2);
 const varAt = args.indexOf('--variants');
-let variants = varAt >= 0 ? args.splice(varAt, 2)[1].split('|') : null;
-// --pending: one audition file of every term in the dictionary's pending queue (scripts/lib/pending.mts)
-if (args.includes('--pending')) {
-  args.splice(args.indexOf('--pending'), 1);
-  const q = readPending()[loadProject(args[0]).lang] ?? {};
-  variants = Object.keys(q).slice(0, 40);
-  if (!variants.length) {
-    console.log('pending queue is empty');
-    process.exit(0);
-  }
-  args[1] = '{}.';
-}
+const variants = varAt >= 0 ? args.splice(varAt, 2)[1].split('|') : null;
 const asAt = args.indexOf('--as');
 const as = asAt >= 0 ? args.splice(asAt, 2)[1] : null;
 const [project, text] = args;
@@ -44,7 +31,7 @@ if (variants) {
   mkdirSync(dir, {recursive: true});
   const PYV = existsSync(join(ROOT, '.venv', 'bin', 'python')) ? join(ROOT, '.venv', 'bin', 'python') : 'python3';
   const clip = (text: string, file: string) =>
-    execFileSync(PYV, [join(ROOT, 'scripts', 'lib', 'tts_edge.py'), '--voice', cfg.voice.name, `--rate=${cfg.voice.rate}`, `--pitch=${cfg.voice.pitch}`, '--out', file, '--words', join(dir, 'last.words.json')], {input: JSON.stringify({tokens: text.split(/\s+/).map((w) => ({d: w, s: w}))}), stdio: ['pipe', 'ignore', 'inherit']});
+    execFileSync(PYV, [join(ROOT, 'scripts', 'lib', 'tts.py'), ...voiceArgs(cfg.voice), '--out', file, '--words', join(dir, 'last.words.json')], {input: JSON.stringify({tokens: text.split(/\s+/).map((w) => ({d: w, s: w}))}), stdio: ['pipe', 'ignore', 'inherit']});
   const parts: string[] = [];
   variants.forEach((v, i) => {
     const a = join(dir, `v${i}a.mp3`);
@@ -65,6 +52,6 @@ const dir = join(ROOT, 'iterations', 'say', project);
 mkdirSync(dir, {recursive: true});
 const out = join(dir, `${text.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').slice(0, 40) || 'say'}${as ? '.as' : ''}.mp3`);
 const PY = existsSync(join(ROOT, '.venv', 'bin', 'python')) ? join(ROOT, '.venv', 'bin', 'python') : 'python3';
-execFileSync(PY, [join(ROOT, 'scripts', 'lib', 'tts_edge.py'), '--voice', cfg.voice.name, `--rate=${cfg.voice.rate}`, `--pitch=${cfg.voice.pitch}`, '--out', out, '--words', join(dir, 'last.words.json')], {input: JSON.stringify({tokens}), stdio: ['pipe', 'ignore', 'inherit']});
+execFileSync(PY, [join(ROOT, 'scripts', 'lib', 'tts.py'), ...voiceArgs(cfg.voice), '--out', out, '--words', join(dir, 'last.words.json')], {input: JSON.stringify({tokens}), stdio: ['pipe', 'ignore', 'inherit']});
 console.log(`${cfg.voice.name} says: "${tokens.map((t) => t.s).join(' ')}"\n→ ${out}`);
 if (process.platform === 'darwin' && !process.env.CI) execFileSync('afplay', [out]);

@@ -2,15 +2,15 @@
  * Deterministic fixers — repair the known failure classes without a model call (zero tokens),
  * before any repair prompt is spent. Each returns what it changed, for the metrics and the log.
  *
- *   abbreviation  an abbreviation in the narration → its spoken full form from the house
- *                 dictionary (src/dictionary.ts) or project.json `fullForms`; `say` words that
+ *   abbreviation  an abbreviation in the narration → its spoken full form from
+ *                 src/abbreviations.ts or project.json `fullForms`; `say` words that
  *                 named it follow (the screen keeps the abbreviation)
  *   spelling      a variant → the approved spelling (narration and on-screen text)
  *   ratio         "30:2" in the narration → "30 to 2"
  *   say           a phrase cue is split into words; a cue none of whose words the scene speaks
  *                 is dropped, so the compiler derives the cue from the item's own text instead
  */
-import {fullForms, spellings} from '../../src/dictionary.ts';
+import {fullForms, spellings} from '../../src/abbreviations.ts';
 import {normWord, wordMatches} from '../../src/sync.ts';
 import {spoken} from '../../src/project.ts';
 import type {Lang} from '../../src/lang.ts';

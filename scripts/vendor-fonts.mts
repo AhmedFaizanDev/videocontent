@@ -21,6 +21,8 @@ export const FAMILIES: Record<string, number[]> = {
   'Anek Kannada': [700],
   'Noto Sans Devanagari': [400, 500, 600, 700],
   'Noto Sans Kannada': [400, 500, 600, 700],
+  // Japanese (kanji + kana): one regular and one bold face serve body and headings
+  'Noto Sans JP': [400, 700],
   'IBM Plex Mono': [400, 500, 600],
   // all other text: Noto Sans (+ its Indic siblings above)
   'Noto Sans': [400, 500, 600, 700],

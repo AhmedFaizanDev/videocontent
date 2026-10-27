@@ -14,7 +14,7 @@ CLAUDE.md). Writer contract: **`docs/SCRIPT_BRIEF.md`**. Illustrations: **`docs/
 
 ```bash
 npm install
-python3 -m venv .venv && .venv/bin/pip install edge-tts     # free TTS, needs internet
+python3 -m venv .venv && .venv/bin/pip install boto3 edge-tts faster-whisper   # Polly (needs ~/.aws/credentials), Edge for mr/kn, Whisper check
 brew install ffmpeg                                         # probing, mastering, QA
 
 npm test -- --fast                                          # pipeline healthy?
@@ -31,7 +31,7 @@ Every tool takes `<project> [ids… | --all | --range A B]` (no ids = all).
 |---|---|
 | `npm run validate -- <p>` | text gate: shape, project rules, narration sync, runtime estimate (+ no SVG text) |
 | `npm run preflight -- <p>` | **before any audio/video**: validate + source grounding + spelling + speech hazards + timing simulation + dry-run layout → `projects/<p>/PREFLIGHT.md` |
-| `npm run voiceover -- <p>` | Edge TTS per sentence with pacing (hash-cached per scene), word timeline, runtime vs target, sync vs the real voice |
+| `npm run voiceover -- <p>` | Amazon Polly (Edge for languages Polly lacks) per sentence with pacing (hash-cached per scene), word timeline, runtime vs target, sync vs the real voice |
 | `npm run review -- <p> [ids] [--transitions]` | stills + contact sheet per lesson, layout gate |
 | `npm run render -- <p> [--force]` | render + master + SRT + thumbnail + YouTube chapters/credits + manifest; skips lessons already current |
 | `npm run qa -- <p>` | technical checks + MP4-vs-stills consistency + layout → `output/…/QA.md` |
@@ -92,7 +92,8 @@ archive/         retired pilot, ElevenLabs code, historical docs
 - **Render finishes frames then hangs at 0% CPU (macOS, no network):** Remotion's bundled
   ffmpeg is blocked by Gatekeeper. Symlink Homebrew ffmpeg@7 next to the bundled `remotion`
   binary and pass `--binaries-directory` (details: `archive/docs/HANDOFF_history.md` §7).
-- **edge-tts errors:** the helper must stay named `tts_edge.py` (`edge_tts.py` shadows the
-  package); SSML `<break>` doesn't work — pacing comes from project.json `pacing` (sentence
-  pauses, `[pause]` beats, scene holds) and `voice.rate`.
+- **Voice:** `scripts/lib/tts.py` (never name it `edge_tts.py`/`boto3.py` — it would shadow the
+  package). Pacing comes from project.json `pacing` and `voice.rate`. A word Polly says wrong goes in
+  project.json `lexicon` as IPA (`"asystole": "/eɪˈsɪstəli/"`). Check a voiced lesson by ear-proxy:
+  `.venv/bin/python scripts/hear.py <p> <id> --model medium.en` (Whisper; lists words heard differently).
 - **Music licence:** see `public/audio/music/CREDITS.md` before publishing.

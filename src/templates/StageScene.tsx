@@ -7,7 +7,7 @@
 import React from 'react';
 import {useVideoConfig} from 'remotion';
 import {brand, fonts, ink, surface} from '../theme';
-import {lh as lhS} from '../lang';
+import {cols, lh as lhS} from '../lang';
 import type {SceneTiming, StageScene as StageSpec} from '../spec';
 import {ARTS, ArtView, type ArtDef} from '../art';
 import {TONES} from '../art/graph';
@@ -26,7 +26,7 @@ const EDGE_FADE = 'linear-gradient(to right, transparent 0px, transparent 100px,
 const twx = (f: number, at: number, dur: number, ease?: (t: number) => number) => (Number.isFinite(at) ? tw(f, at, dur, ease) : 0);
 const LABEL_SIZE = 30;
 const LABEL_H = 54;
-const labelW = (t: string) => Math.round(t.length * LABEL_SIZE * ADVANCE.serif * 1.02 + 40);
+const labelW = (t: string) => Math.round(cols(t) * LABEL_SIZE * ADVANCE.serif * 1.02 + 40);
 const tone = (t?: string) => (t && TONES[t] ? TONES[t].fill : brand.magenta);
 
 type Built = {

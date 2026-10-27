@@ -22,7 +22,7 @@ import {mkdirSync, rmSync} from 'node:fs';
 import {join} from 'node:path';
 import {execFileSync, spawnSync} from 'node:child_process';
 import {ROOT, loadProject, mergeReport, parseArgs, projectDir, readSpec} from './lib/paths.mts';
-import {corpus, claimsOf, pronunciationWatch, speechHazards, spellingProblems, ungroundedNumbers, unknownTerms} from './lib/grounding.mts';
+import {corpus, claimsOf, speechHazards, spellingProblems, ungroundedNumbers, unknownTerms} from './lib/grounding.mts';
 import {syntheticTimings} from './lib/fake-timings.mts';
 import {closeBrowser, lesson, still} from './lib/remotion.mts';
 import {overflow, settledFrame, gateKind} from './lib/frames.mts';
@@ -30,7 +30,6 @@ import {revealGroups, revealTimes} from '../src/sync.ts';
 import {isIndic} from '../src/lang.ts';
 import {recordStage} from './lib/metrics.mts';
 import {uncovered} from './lib/coverage.mts';
-import {addPending} from './lib/pending.mts';
 
 const {project, ids, flags} = parseArgs();
 const cfg = loadProject(project);
@@ -81,12 +80,6 @@ for (const s of specs)
   s.scenes.forEach((sc: any, i: number) => {
     for (const m of speechHazards(sc.narration ?? '', cfg.lexicon, !isIndic(cfg.lang))) add(s.id, /units out/.test(m) ? 'warn' : 'error', 'language', `scene[${i}] ${m}`);
   });
-for (const s of specs) {
-  if (isIndic(cfg.lang)) continue;
-  const words = [...new Set(s.scenes.flatMap((sc: any) => pronunciationWatch(sc.narration ?? '', cfg.lexicon)))];
-  addPending(cfg.lang, words as string[], project);
-  if (words.length) add(s.id, 'warn', 'language', `pronunciation — audition these once (node scripts/say.mts ${project} "<word>"), then add each to project.json lexicon as itself if right or as a respelling if not: ${words.join(', ')}`);
-}
 
 // 4 timing — hear it at the voice's pace
 const synth = new Map(specs.map((s) => [s.id, syntheticTimings(project, s)]));

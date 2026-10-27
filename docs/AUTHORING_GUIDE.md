@@ -72,10 +72,9 @@ filler, no hype, no rhetorical questions.
 **6. Type** — headings are Sora Heavy; every other text (labels, notes, tables, captions,
 values) is Noto Sans. Automatic (theme.ts / fonts.ts) — never set families by hand.
 
-**7. Pronunciation** — the voice says what `src/lexicon.ts` (house) + project.json
-`lexicon` tell it (e.g. MedSkills → "Medd Skills"). Preflight errors on run-together names
-not in a lexicon and lists technical words to audition once (`node scripts/say.mts <p>
-"<word>"`); add each to the lexicon as itself if right, as a respelling if not.
+**7. Pronunciation** — Amazon Polly (Kiara generative) reads medical terms correctly without a
+dictionary. After voicing, `scripts/hear.py` lists any word Whisper heard differently; a real
+miss goes in project.json `lexicon` as IPA. Audition with `node scripts/say.mts <p> "<word>"`.
 
 **8. Length** — 5 to 7 minutes (`length.minutes [5, 7]`). Take the extra two minutes only
 when the depth of explanation needs them; never pad. (`length.exact` still exists for

@@ -47,9 +47,9 @@ Edit `projects/<slug>/project.json`:
   language is the default). Other languages need their UI words in `src/lang.ts` and a font
   stack for their script in `src/theme.ts`.
 - `terms`: the subject's key terms, emphasised on screen everywhere.
-- `voice`: pick an Edge neural voice matching the audience (`.venv/bin/edge-tts --list-voices`).
+- `voice`: pick a Polly voice (house en: Kiara generative); Edge only for languages Polly lacks.
   Audition 2 voices × 2 rates with `echo "<a real paragraph>" | .venv/bin/python
-  scripts/lib/tts_edge.py --voice <v> --rate=<r> --out x.mp3 --words x.json` and give the
+  scripts/lib/tts.py --engine neural --voice <v> --rate=<r> --out x.mp3 --words x.json` and give the
   user a sample. Set `wpm` from a measurement (voiceover prints it) — estimates depend on it.
 - `length`: new projects default to 5–7 minutes (`{"minutes":[5,7]}`) — 5 by default, up to 7
   when the depth of explanation needs it; `exact` only for a client's fixed-length deliverable. `rules.requireOneOf`: e.g. `[["check"]]` for certified

@@ -1,0 +1,49 @@
+{
+  "project": "pilot-lungs",
+  "id": "L1",
+  "stages": {
+    "preflight": {
+      "seconds": 7,
+      "batch": 1,
+      "errors": 0,
+      "at": "2026-10-17T09:47:35.045Z"
+    },
+    "check": {
+      "seconds": 7,
+      "firstPass": true,
+      "ok": true,
+      "categories": [],
+      "log": [],
+      "remaining": [],
+      "at": "2026-10-17T09:47:35.063Z"
+    },
+    "voiceover": {
+      "seconds": 5.4,
+      "scenesVoiced": 1,
+      "scenes": 11,
+      "characters": 467,
+      "audioSeconds": 248.8,
+      "wpm": 153,
+      "voice": "Kiara",
+      "at": "2026-10-17T09:47:40.709Z"
+    },
+    "render": {
+      "seconds": 276,
+      "totalSeconds": 289,
+      "frames": 8132,
+      "fps": 29.5,
+      "bytes": 58503520,
+      "at": "2026-10-17T09:52:49.813Z"
+    },
+    "qa": {
+      "seconds": 36,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-17T09:53:26.301Z"
+    }
+  },
+  "authoring": [],
+  "lang": "en",
+  "runtimeMinutes": 4.52,
+  "words": 613
+}

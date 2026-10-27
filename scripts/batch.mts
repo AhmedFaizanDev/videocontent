@@ -20,7 +20,7 @@ import {SCRIPT_SCHEMA} from './lib/script-schema.mts';
 import {OFFLINE, callModel} from './lib/llm.mts';
 import {CATALOG} from '../src/art/catalog.ts';
 import {VECTOR_MANIFESTS} from '../src/art/vector/manifests.gen.ts';
-import {fullForms} from '../src/dictionary.ts';
+import {fullForms} from '../src/abbreviations.ts';
 import {ALL_ART_PLAYS, DATA_PLAYS, isArtPlay} from '../src/playbooks.ts';
 import {fixSpec} from './lib/fix.mts';
 import {recordStage} from './lib/metrics.mts';

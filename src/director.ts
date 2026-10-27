@@ -11,6 +11,7 @@
  * The author always wins: an explicit `transition`, `mirror` or `drift` is kept.
  */
 import {PLAYS, isArtPlay} from './playbooks.ts';
+import {wordCount} from './lang.ts';
 
 const TEACH = new Set(['scene', 'explain', 'flow', 'table', 'summary', 'opener', 'stage', 'play']);
 /** what a play looks like on screen: its illustration, or its data kind */
@@ -89,7 +90,7 @@ export function varietyProblems(scenes: any[]): string[] {
 const DATA_ARTS = new Set(['graph', 'table', 'stat', 'bars', 'timeline', 'cycle', 'hub', 'stack', 'trace', 'flow']);
 export function tasteProblems(scenes: any[]): string[] {
   const out: string[] = [];
-  const words = scenes.reduce((n, s) => n + (typeof s?.narration === 'string' && s.type !== 'outro' ? s.narration.split(/\s+/).length : 0), 0);
+  const words = scenes.reduce((n, s) => n + (typeof s?.narration === 'string' && s.type !== 'outro' ? wordCount(s.narration) : 0), 0);
   const notes = scenes.reduce((n, s) => n + (s?.beats ?? []).filter((b: any) => b.note).length, 0);
   const allowed = Math.max(3, Math.floor(words / 55));
   if (notes > allowed) out.push(`${notes} text bars for ${words} words (max ${allowed}) — let the picture carry it: labels on the illustration, the chart's own nodes and cells, not notes`);

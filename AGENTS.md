@@ -17,7 +17,7 @@ One-off/custom lessons → the **`lesson-series`** skill (`.Codex/skills/lesson-
   5 videos, delivered. `fixtures`, `smoke` — test corpora.
 
 ## Framework
-Remotion (React) + Edge TTS. The HyperFrames/brag skills installed on this machine are a
+Remotion (React) + Amazon Polly TTS. The HyperFrames/brag skills installed on this machine are a
 different framework — use them only as motion/creative references (see the lesson-series
 skill), never to render lessons for this repo.
 
@@ -34,8 +34,8 @@ skill), never to render lessons for this repo.
 - **Motion:** visuals must actively explain — `node scripts/motion-audit.mts <p> <id>` flags
   frozen stretches during narration; stages drift, tables/flowcharts reveal progressively.
 - **Type:** Sora Heavy headings, Noto Sans everything else (automatic: fonts.ts/theme.ts).
-- **Pronunciation:** `src/lexicon.ts` (house, e.g. MedSkills → "Medd Skills") + project lexicon;
-  audition with `node scripts/say.mts <p> "<word>"`; preflight flags risky words.
+- **Pronunciation:** Amazon Polly Kiara (generative); check with `scripts/hear.py`; a real miss →
+  project.json `lexicon` as IPA; audition with `node scripts/say.mts <p> "<word>"`.
 - **5–7 minutes** (`length.minutes [5,7]`); 7 only when depth needs it. Picture-first gates
   (`minIllustrated`, `maxScreenWords`) still apply.
 

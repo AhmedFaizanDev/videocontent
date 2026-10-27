@@ -7,10 +7,10 @@
       "at": "2026-10-11T06:50:12.465Z"
     },
     "preflight": {
-      "seconds": 4.3,
-      "batch": 1,
+      "seconds": 0.1,
+      "batch": 2,
       "errors": 0,
-      "at": "2026-10-11T06:58:48.797Z"
+      "at": "2026-10-14T13:03:39.631Z"
     },
     "check": {
       "seconds": 5,
@@ -19,8 +19,40 @@
       "categories": [],
       "log": [],
       "remaining": [],
-      "at": "2026-10-11T06:58:48.810Z"
+      "at": "2026-10-11T07:52:18.051Z"
+    },
+    "voiceover": {
+      "seconds": 54.5,
+      "scenesVoiced": 9,
+      "scenes": 10,
+      "characters": 3491,
+      "audioSeconds": 247.9,
+      "wpm": 136,
+      "voice": "en-IN-NeerjaNeural",
+      "at": "2026-10-11T07:02:06.414Z"
+    },
+    "render": {
+      "seconds": 334,
+      "totalSeconds": 351,
+      "frames": 8046,
+      "fps": 24.1,
+      "bytes": 49697978,
+      "at": "2026-10-11T07:58:23.814Z"
+    },
+    "qa": {
+      "seconds": 35,
+      "pass": true,
+      "failed": [],
+      "at": "2026-10-11T07:58:59.449Z"
+    },
+    "voiceover-check": {
+      "seconds": 0,
+      "cached": true,
+      "at": "2026-10-11T07:52:31.807Z"
     }
   },
-  "authoring": []
+  "authoring": [],
+  "lang": "en",
+  "runtimeMinutes": 4.47,
+  "words": 546
 }

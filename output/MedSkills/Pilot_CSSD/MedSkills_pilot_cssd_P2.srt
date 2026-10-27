@@ -1,0 +1,408 @@
+1
+00:00:04,000 --> 00:00:06,182
+Reprocessing fails in ten documented
+
+2
+00:00:06,182 --> 00:00:09,436
+places. Each has been identified in a
+
+3
+00:00:09,436 --> 00:00:11,822
+published outbreak investigation, and none
+
+4
+00:00:11,822 --> 00:00:15,520
+is exotic. This lesson follows them across
+
+5
+00:00:15,520 --> 00:00:17,929
+the endoscope, then looks at traceability
+
+6
+00:00:17,929 --> 00:00:18,879
+and pressure.
+
+7
+00:00:21,533 --> 00:00:23,858
+Failure points one and two come early.
+
+8
+00:00:24,707 --> 00:00:27,275
+First, a delayed bedside pre-clean lets
+
+9
+00:00:27,275 --> 00:00:30,089
+material dry, so biofilm establishes.
+
+10
+00:00:30,929 --> 00:00:33,265
+Second, the leak test is omitted.
+
+11
+00:00:34,103 --> 00:00:36,228
+When the scope is pressurised, bubbles
+
+12
+00:00:36,228 --> 00:00:38,239
+rising from a breach in the sheath reveal
+
+13
+00:00:38,239 --> 00:00:40,394
+the damage, and the gauge falls.
+
+14
+00:00:41,237 --> 00:00:43,419
+Skip this test and a damaged scope is
+
+15
+00:00:43,419 --> 00:00:45,635
+immersed, letting fluid reach an interior
+
+16
+00:00:45,635 --> 00:00:47,062
+that cannot be cleaned.
+
+17
+00:00:49,700 --> 00:00:50,973
+Failure point three:
+
+18
+00:00:50,973 --> 00:00:53,223
+channels not brushed, or brushed with the
+
+19
+00:00:53,223 --> 00:00:56,684
+wrong brush. Along the channel wall, an
+
+20
+00:00:56,684 --> 00:00:58,714
+established biofilm adheres.
+
+21
+00:00:59,552 --> 00:01:01,779
+Chemical disinfection does not penetrate
+
+22
+00:01:01,779 --> 00:01:04,052
+it, soaking does not remove it, and
+
+23
+00:01:04,052 --> 00:01:05,854
+flushing does not remove it.
+
+24
+00:01:06,710 --> 00:01:09,062
+Only a brush that physically contacts the
+
+25
+00:01:09,062 --> 00:01:11,426
+wall disrupts it, and only then is the
+
+26
+00:01:11,426 --> 00:01:14,508
+channel clean. That is why brushing is
+
+27
+00:01:14,508 --> 00:01:17,076
+specified per channel, why brush diameter
+
+28
+00:01:17,076 --> 00:01:19,031
+matters, and why omitting it has
+
+29
+00:01:19,031 --> 00:01:20,867
+repeatedly caused outbreaks.
+
+30
+00:01:23,467 --> 00:01:25,717
+Failure point four sits in the automated
+
+31
+00:01:25,717 --> 00:01:27,258
+endoscope reprocessor.
+
+32
+00:01:28,105 --> 00:01:30,321
+The scope is placed in the basin, and
+
+33
+00:01:30,321 --> 00:01:32,150
+every channel must be attached to the
+
+34
+00:01:32,150 --> 00:01:34,112
+correct connector for that model.
+
+35
+00:01:34,951 --> 00:01:37,303
+A channel that is not connected is missed:
+
+36
+00:01:37,303 --> 00:01:40,060
+it is not perfused and is not disinfected.
+
+37
+00:01:40,861 --> 00:01:43,054
+Only when all are attached does fluid
+
+38
+00:01:43,054 --> 00:01:44,470
+flush through the channels.
+
+39
+00:01:45,307 --> 00:01:47,716
+Do not overload the reprocessor, or
+
+40
+00:01:47,716 --> 00:01:50,171
+process a scope alongside one it is not
+
+41
+00:01:50,171 --> 00:01:51,268
+validated for.
+
+42
+00:01:53,900 --> 00:01:56,048
+Failure point five is the duodenoscope
+
+43
+00:01:56,048 --> 00:01:58,514
+elevator, a mechanism at the distal tip
+
+44
+00:01:58,514 --> 00:02:00,236
+that directs accessories.
+
+45
+00:02:01,082 --> 00:02:03,627
+Its recess is narrow, mechanically complex
+
+46
+00:02:03,627 --> 00:02:05,702
+and extremely difficult to clean.
+
+47
+00:02:06,536 --> 00:02:08,468
+It has been implicated in multiple
+
+48
+00:02:08,468 --> 00:02:09,888
+international outbreaks of
+
+49
+00:02:09,888 --> 00:02:12,161
+multidrug-resistant organisms in patients
+
+50
+00:02:12,161 --> 00:02:14,156
+who had no other common exposure.
+
+51
+00:02:15,014 --> 00:02:17,480
+Where your hospital uses duodenoscopes,
+
+52
+00:02:17,480 --> 00:02:19,412
+follow the manufacturer's specific
+
+53
+00:02:19,412 --> 00:02:22,139
+instructions for the elevator exactly, and
+
+54
+00:02:22,139 --> 00:02:24,287
+keep in place any additional measures
+
+55
+00:02:24,287 --> 00:02:25,203
+specified.
+
+56
+00:02:27,833 --> 00:02:29,799
+In the controlled drying and storage
+
+57
+00:02:29,799 --> 00:02:32,788
+cabinet, scopes hang vertically, uncoiled,
+
+58
+00:02:32,788 --> 00:02:34,776
+with valves removed, because coiled
+
+59
+00:02:34,776 --> 00:02:36,363
+storage retains fluid.
+
+60
+00:02:37,199 --> 00:02:39,604
+Filtered air then dries each channel.
+
+61
+00:02:40,445 --> 00:02:42,604
+Residual moisture lets organisms,
+
+62
+00:02:42,604 --> 00:02:45,195
+particularly Pseudomonas, multiply between
+
+63
+00:02:45,195 --> 00:02:47,740
+uses, so forced air passes through every
+
+64
+00:02:47,740 --> 00:02:51,041
+channel. Failure points six to eight are
+
+65
+00:02:51,041 --> 00:02:53,552
+inadequate drying, coiled storage, and
+
+66
+00:02:53,552 --> 00:02:55,518
+contaminated rinse water, which
+
+67
+00:02:55,518 --> 00:02:57,620
+recontaminates the scope at the final
+
+68
+00:02:57,620 --> 00:02:58,206
+step.
+
+69
+00:03:00,833 --> 00:03:02,663
+Traceability links each scope to a
+
+70
+00:03:02,663 --> 00:03:05,117
+patient, a reprocessing cycle and an
+
+71
+00:03:05,117 --> 00:03:07,260
+operator, for every procedure.
+
+72
+00:03:08,111 --> 00:03:10,156
+Failure point ten is its absence:
+
+73
+00:03:10,156 --> 00:03:12,418
+transmission then cannot be investigated
+
+74
+00:03:12,418 --> 00:03:15,224
+or contained. When transmission is
+
+75
+00:03:15,224 --> 00:03:17,622
+suspected, quarantine the scope, review
+
+76
+00:03:17,622 --> 00:03:20,213
+the records, involve infection control and
+
+77
+00:03:20,213 --> 00:03:22,554
+microbiology, and consider patient
+
+78
+00:03:22,554 --> 00:03:23,595
+notification.
+
+79
+00:03:26,233 --> 00:03:28,808
+Underneath most failures is time pressure.
+
+80
+00:03:29,647 --> 00:03:32,102
+Long lists with too few scopes call for
+
+81
+00:03:32,102 --> 00:03:33,767
+adequate scope inventory.
+
+82
+00:03:34,645 --> 00:03:36,429
+When the cycle is shortened to meet the
+
+83
+00:03:36,429 --> 00:03:38,929
+list, adequate capacity and staffing is
+
+84
+00:03:38,929 --> 00:03:42,292
+the safeguard. Where model specific steps
+
+85
+00:03:42,292 --> 00:03:44,565
+are missed, staff must be trained and
+
+86
+00:03:44,565 --> 00:03:45,913
+competency-assessed.
+
+87
+00:03:46,753 --> 00:03:49,071
+When reprocessing cannot be completed,
+
+88
+00:03:49,071 --> 00:03:51,555
+staff need the right to hold a scope back.
+
+89
+00:03:52,399 --> 00:03:54,604
+Records of time and deviation make hidden
+
+90
+00:03:54,604 --> 00:03:55,735
+pressure visible.
+
+91
+00:03:58,367 --> 00:04:01,548
+To summarise. Ten failure points are
+
+92
+00:04:01,548 --> 00:04:03,737
+documented, and none is exotic.
+
+93
+00:04:04,571 --> 00:04:06,582
+Brushing is the only step that removes
+
+94
+00:04:06,582 --> 00:04:08,560
+biofilm, and the elevator needs the
+
+95
+00:04:08,560 --> 00:04:10,976
+manufacturer's exact instructions.
+
+96
+00:04:11,825 --> 00:04:14,041
+Every procedure must be traceable from
+
+97
+00:04:14,041 --> 00:04:16,514
+scope to patient to cycle to operator.
+
+98
+00:04:17,375 --> 00:04:19,409
+And because pressure underlies most
+
+99
+00:04:19,409 --> 00:04:21,886
+failures, capacity, training and the right
+
+100
+00:04:21,886 --> 00:04:23,670
+to hold a scope back are part of the
+
+101
+00:04:23,670 --> 00:04:24,484
+process.
+
+102
+00:04:27,100 --> 00:04:28,868
+Keep learning with MedSkills.
+

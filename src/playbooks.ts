@@ -8,7 +8,8 @@
  * The writer picks a playbook and writes narration that walks through its moments, naming each
  * moment's cue (or letting the compiler find it from the moment's hint words):
  *   {"type": "play", "play": "heart.failure", "kicker", "narration",
- *    "cues"?: {"quiver": ["quiver"], …}, "skip"?: ["regions"], "notes"?: [{say, note}]}
+ *    "cues"?: {"quiver": ["quiver"], …}, "skip"?: ["regions"], "notes"?: [{say, note}],
+ *    "labels"?: {"quiver": "…"}  (a translated lesson: the moment's label in its language)}
  * Optional moments the narration never reaches are left out; required ones must be spoken.
  * Variety comes from which playbooks a lesson uses, in what order, which optional moments it
  * plays, and the narration — the drawing and its choreography stay reference quality.
